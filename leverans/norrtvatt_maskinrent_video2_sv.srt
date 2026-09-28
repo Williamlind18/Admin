@@ -1,0 +1,587 @@
+1
+00:00:00,100 --> 00:00:02,473
+Det bor något i din tvättmaskin just nu.
+
+2
+00:00:02,553 --> 00:00:05,094
+Efter nitton år som reparatör vet jag att
+
+3
+00:00:04,994 --> 00:00:07,255
+inget medel på hyllan rår på det.
+
+4
+00:00:07,335 --> 00:00:09,727
+Och få husdjursägare känner till knepet
+
+5
+00:00:09,627 --> 00:00:11,869
+som tar bort det på en enda tvätt.
+
+6
+00:00:11,949 --> 00:00:14,564
+Jag har plockat isär över tusen maskiner,
+
+7
+00:00:14,464 --> 00:00:16,539
+och i husdjurshem är samtalet alltid
+
+8
+00:00:16,439 --> 00:00:17,154
+detsamma.
+
+9
+00:00:17,234 --> 00:00:19,663
+Handdukar som luktar unket innan de ens
+
+10
+00:00:19,563 --> 00:00:20,371
+torkat.
+
+11
+00:00:20,451 --> 00:00:23,169
+Den svaga doften av blöt hund i en
+
+12
+00:00:23,069 --> 00:00:24,370
+nytvättad tröja.
+
+13
+00:00:24,450 --> 00:00:27,438
+Du skäms i smyg och undrar om det är du
+
+14
+00:00:27,338 --> 00:00:27,987
+som luktar.
+
+15
+00:00:28,068 --> 00:00:31,168
+Så du byter tvättmedel, kör ättika och tar
+
+16
+00:00:31,068 --> 00:00:32,630
+en maskintablett i månaden.
+
+17
+00:00:32,710 --> 00:00:35,223
+Lukten försvinner en dag, sen kryper den
+
+18
+00:00:35,123 --> 00:00:35,763
+tillbaka.
+
+19
+00:00:35,843 --> 00:00:37,881
+Men här är det som överraskar alla.
+
+20
+00:00:37,960 --> 00:00:40,827
+Nio gånger av tio är maskinen helt felfri.
+
+21
+00:00:40,907 --> 00:00:42,963
+Lukten kommer från något som lever.
+
+22
+00:00:43,043 --> 00:00:45,584
+Bakom trumman finns ett förseglat utrymme
+
+23
+00:00:45,484 --> 00:00:47,558
+som vattnet forsar genom, men som du
+
+24
+00:00:47,458 --> 00:00:49,189
+aldrig ser eller når.
+
+25
+00:00:49,269 --> 00:00:51,512
+Det försluts på fabriken, och ingen
+
+26
+00:00:51,412 --> 00:00:53,561
+berättar att det är där problemen börjar.
+
+27
+00:00:53,641 --> 00:00:55,930
+Tvättmedel och sköljmedel lämnar en
+
+28
+00:00:55,830 --> 00:00:57,672
+kladdig hinna på allt där bakom.
+
+29
+00:00:57,752 --> 00:01:00,749
+Djurhår fastnar för gott, och mjäll och
+
+30
+00:01:00,649 --> 00:01:02,389
+hudfett lägger sig ovanpå.
+
+31
+00:01:02,469 --> 00:01:04,963
+Sen kommer bakterierna, som ser allt det
+
+32
+00:01:04,863 --> 00:01:05,801
+där som mat.
+
+33
+00:01:05,881 --> 00:01:08,375
+Och de bygger en slemmig sköld och gömmer
+
+34
+00:01:08,275 --> 00:01:08,897
+sig under den.
+
+35
+00:01:08,977 --> 00:01:11,657
+Skölden kallas biofilm, och därför
+
+36
+00:01:11,557 --> 00:01:13,753
+överlever den allt du försöker med.
+
+37
+00:01:13,834 --> 00:01:16,198
+Med husdjur kan den få fäste i en ny
+
+38
+00:01:16,098 --> 00:01:18,564
+maskin på två veckor, och växer sen varje
+
+39
+00:01:18,464 --> 00:01:18,983
+månad.
+
+40
+00:01:19,063 --> 00:01:21,846
+Så just nu lever det en koloni bakom din
+
+41
+00:01:21,746 --> 00:01:24,137
+trumma, under en rustning den byggt själv.
+
+42
+00:01:24,217 --> 00:01:26,003
+Den har överlevt varje tvätt och ger
+
+43
+00:01:25,903 --> 00:01:27,391
+lukten i dina kläder.
+
+44
+00:01:27,471 --> 00:01:29,993
+Lukten är en signal om att bakterier och
+
+45
+00:01:29,893 --> 00:01:32,732
+mögel följer med ut och sätter sig i allt
+
+46
+00:01:32,632 --> 00:01:33,207
+du bär.
+
+47
+00:01:33,287 --> 00:01:35,138
+Tvätten var aldrig smutsig, den har
+
+48
+00:01:35,038 --> 00:01:36,321
+tvättats i kolonin hela tiden.
+
+49
+00:01:36,402 --> 00:01:38,188
+Och det är därför inget du testat har
+
+50
+00:01:38,088 --> 00:01:38,700
+fungerat.
+
+51
+00:01:38,900 --> 00:01:41,460
+Ättika är en svag syra, och i en full
+
+52
+00:01:41,360 --> 00:01:43,542
+maskin blir den för utspädd för att göra
+
+53
+00:01:43,442 --> 00:01:43,800
+något.
+
+54
+00:01:44,000 --> 00:01:46,590
+Bikarbonat får aldrig chansen, den löser
+
+55
+00:01:46,490 --> 00:01:48,330
+sig knappt i kallt vatten och spolas bort
+
+56
+00:01:48,230 --> 00:01:48,820
+direkt.
+
+57
+00:01:49,100 --> 00:01:50,810
+Rengöringsprogrammet är bara varmt vatten,
+
+58
+00:01:50,710 --> 00:01:53,170
+men maskinen är ju alltid varm och fuktig.
+
+59
+00:01:53,430 --> 00:01:55,860
+Kolonin har levt i varmt vatten hela
+
+60
+00:01:55,760 --> 00:01:57,000
+livet, det tål den.
+
+61
+00:01:57,200 --> 00:02:00,709
+Sen har vi det jag kallar branschens
+
+62
+00:02:00,609 --> 00:02:01,587
+största skandal.
+
+63
+00:02:01,667 --> 00:02:04,578
+Vänd på de stora märkenas paket och läs
+
+64
+00:02:04,478 --> 00:02:05,326
+vad som finns i.
+
+65
+00:02:05,406 --> 00:02:07,211
+Det är samma kemikalie i allihop,
+
+66
+00:02:07,111 --> 00:02:08,945
+syrebaserat blekmedel.
+
+67
+00:02:09,025 --> 00:02:12,056
+Olika förpackningar och priser, men samma
+
+68
+00:02:11,956 --> 00:02:14,000
+formel från nittonhundrafyra.
+
+69
+00:02:14,200 --> 00:02:16,740
+Den kan irritera huden, men bryter ändå
+
+70
+00:02:16,640 --> 00:02:18,204
+inte igenom biofilm.
+
+71
+00:02:18,284 --> 00:02:20,476
+Utan husdjur spelar det mindre roll, då
+
+72
+00:02:20,376 --> 00:02:22,000
+finns knappt mat för en koloni.
+
+73
+00:02:22,200 --> 00:02:24,890
+Men ett hem med husdjur är en helt annan
+
+74
+00:02:24,790 --> 00:02:25,263
+värld.
+
+75
+00:02:25,343 --> 00:02:27,995
+Djurhår är protein, mjäll är fett, och
+
+76
+00:02:27,895 --> 00:02:28,998
+skölden är samma sak.
+
+77
+00:02:29,078 --> 00:02:31,701
+Och blekmedlet kan inte bryta ner protein
+
+78
+00:02:31,601 --> 00:02:33,058
+eller fett, det är ren kemi.
+
+79
+00:02:33,139 --> 00:02:35,810
+Det skummar bara, sköljer över skölden och
+
+80
+00:02:35,710 --> 00:02:37,081
+lämnar kolonin kvar.
+
+81
+00:02:37,161 --> 00:02:39,708
+Lukten kommer tillbaka, och du tror att du
+
+82
+00:02:39,608 --> 00:02:40,740
+köpt fel produkt.
+
+83
+00:02:40,820 --> 00:02:42,956
+Men inget av dem var någonsin gjort för
+
+84
+00:02:42,856 --> 00:02:43,300
+det här.
+
+85
+00:02:43,500 --> 00:02:46,176
+Det som bryter ner biofilm är inte
+
+86
+00:02:46,076 --> 00:02:48,621
+kemikalier, utan enzymer.
+
+87
+00:02:48,701 --> 00:02:51,424
+Enzymer löser upp skölden, eftersom varje
+
+88
+00:02:51,324 --> 00:02:53,700
+enzym bryter ner ett specifikt ämne.
+
+89
+00:02:53,900 --> 00:02:55,441
+Det är ingen konspiration, det kommer från
+
+90
+00:02:55,341 --> 00:02:56,461
+NASA:s forskning.
+
+91
+00:02:56,541 --> 00:02:59,495
+I rymdskepp växer biofilm i ledningarna,
+
+92
+00:02:59,395 --> 00:03:01,142
+där inget starkt får användas.
+
+93
+00:03:01,222 --> 00:03:03,998
+Så de tog fram enzymer som bara bryter ner
+
+94
+00:03:03,898 --> 00:03:05,000
+biofilmen.
+
+95
+00:03:05,200 --> 00:03:07,827
+Sen tog sjukhus och tvätterier efter, och
+
+96
+00:03:07,727 --> 00:03:09,746
+ingen av dem använder blekmedel.
+
+97
+00:03:09,826 --> 00:03:12,341
+Proffsen har vetat i årtionden, men du har
+
+98
+00:03:12,241 --> 00:03:13,155
+aldrig fått höra det.
+
+99
+00:03:13,236 --> 00:03:15,873
+För blekmedel är billigt att tillverka och
+
+100
+00:03:15,773 --> 00:03:17,005
+tjänar pengar på hyllan.
+
+101
+00:03:17,085 --> 00:03:19,553
+Därför har få husdjursägare haft en ren
+
+102
+00:03:19,453 --> 00:03:21,116
+maskin eller rena kläder.
+
+103
+00:03:21,197 --> 00:03:23,824
+Men nu finns de tre enzymerna som spelar
+
+104
+00:03:23,724 --> 00:03:25,500
+roll i en enda tablett.
+
+105
+00:03:25,700 --> 00:03:28,225
+Alfa-amylas löser upp hinnan som håller
+
+106
+00:03:28,125 --> 00:03:31,000
+fast kolonin, så att allt under blottas.
+
+107
+00:03:31,200 --> 00:03:34,164
+Proteas bryter ner proteinet i djurhåren,
+
+108
+00:03:34,064 --> 00:03:36,944
+det blekmedel inte rår på, så att håren
+
+109
+00:03:36,844 --> 00:03:37,600
+spolas ut.
+
+110
+00:03:37,800 --> 00:03:39,964
+Och lipas tar bort det feta lagret som
+
+111
+00:03:39,864 --> 00:03:41,933
+bakterierna lever av, så lukten inte
+
+112
+00:03:41,833 --> 00:03:42,700
+kommer tillbaka.
+
+113
+00:03:42,900 --> 00:03:46,190
+Ett blottar, ett förstör, och ett svälter
+
+114
+00:03:46,090 --> 00:03:47,000
+ut resten.
+
+115
+00:03:47,200 --> 00:03:48,952
+Jag gav den till min kund som behövde den
+
+116
+00:03:48,852 --> 00:03:51,241
+mest, en mamma med två schäfrar och en
+
+117
+00:03:51,141 --> 00:03:51,955
+grand danois.
+
+118
+00:03:52,035 --> 00:03:54,134
+Hon hade testat allt, jag hade varit där
+
+119
+00:03:54,034 --> 00:03:54,800
+tre gånger.
+
+120
+00:03:55,000 --> 00:03:57,104
+Dagarna efter ringde hon: handdukarna
+
+121
+00:03:57,004 --> 00:03:58,318
+luktade ingenting.
+
+122
+00:03:58,398 --> 00:04:00,600
+Hon hade sniffat på dem som en galning.
+
+123
+00:04:00,800 --> 00:04:03,045
+Så jag skruvade loss panelen själv.
+
+124
+00:04:03,125 --> 00:04:05,459
+Lagret var inte lossat, det var helt
+
+125
+00:04:05,359 --> 00:04:06,200
+bortspolat.
+
+126
+00:04:06,400 --> 00:04:08,929
+En tablett klarade det inget annat klarat
+
+127
+00:04:08,829 --> 00:04:09,701
+på nitton år.
+
+128
+00:04:09,781 --> 00:04:12,300
+Sen dess tipsar jag alla husdjursägare.
+
+129
+00:04:12,500 --> 00:04:14,694
+Hos en familj vägrade dottern sova med
+
+130
+00:04:14,594 --> 00:04:16,100
+filten, den luktade.
+
+131
+00:04:16,300 --> 00:04:18,587
+Snart kom en bild på henne under filten,
+
+132
+00:04:18,487 --> 00:04:19,695
+hunden vid fötterna.
+
+133
+00:04:19,775 --> 00:04:21,300
+Hon ville ha den tillbaka. Tack.
+
+134
+00:04:21,500 --> 00:04:24,733
+Den heter Maskinrent, från svenska
+
+135
+00:04:24,633 --> 00:04:25,488
+Norrtvätt.
+
+136
+00:04:25,568 --> 00:04:28,064
+Den är gjord för husdjursägare och löser
+
+137
+00:04:27,964 --> 00:04:29,790
+hår, fett och lukt utan att skada
+
+138
+00:04:29,690 --> 00:04:30,247
+maskinen.
+
+139
+00:04:30,327 --> 00:04:32,823
+Över femton tusen kunder har redan bytt.
+
+140
+00:04:32,903 --> 00:04:34,933
+Just nu är det höstrea med upp till femtio
+
+141
+00:04:34,833 --> 00:04:37,376
+procent rabatt och fri frakt, från tjugo
+
+142
+00:04:37,276 --> 00:04:38,402
+kronor per tablett.
+
+143
+00:04:38,482 --> 00:04:39,832
+Och du har trettio dagars
+
+144
+00:04:39,732 --> 00:04:40,978
+pengarna-tillbaka-garanti.
+
+145
+00:04:41,059 --> 00:04:44,507
+Har du husdjur och unken tvätt, sluta med
+
+146
+00:04:44,407 --> 00:04:47,146
+medel som aldrig var gjorda för biofilm.
+
+147
+00:04:47,225 --> 00:04:49,330
+Klicka på länken medan rean pågår.

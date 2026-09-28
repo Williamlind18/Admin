@@ -25,6 +25,14 @@
   sentences get 0.3 s around them.
 - Syncing the ~3 key visual moments matters more than following the original timing everywhere. Anchor
   only those.
+- Long videos (~5 min) with many key visuals: `plan_timeline.py` handles 20+ anchors. Above ~150 000
+  window combinations it switches to a chain search that is exact for the maximum tempo, so it no longer
+  coarsens the windows. Give each anchor a window of about 1-2 s and drop anchors whose line cannot fit
+  (e.g. a line pinned between two anchors only 3 s apart).
+- A fast English voiceover (~20-27 characters/s) needs the Swedish script about 25 % shorter to fit the
+  same cut. Merge repeated points instead of dropping beats. Speaking rates differ per voice ("Äldre man 1"
+  ran at ~15.5 characters/s), so generate a few sentences first, measure them with `align_words.py`, and
+  trim the rest before generating everything.
 - `align_words.py` "spread" column: this is how far the three methods disagree (median, seconds).
   Values ≤ 0.3 s are normal. For sentences with ≥ 0.6 s, look at the chunk timings more carefully in
   the check frames, and mention them to the user as places to double-check.

@@ -33,11 +33,17 @@ for the voice plus about 1 000 for the flash reference.
 2. One `creative_generate_speech` per sentence, using the text of `sent/NN.txt` verbatim,
    `model_id: eleven_v3`, `voice_id` from the user and **`generations_count: 1`**. The default is 4,
    which costs 4× as much. Fire up to ~13 calls in one message; they run in parallel.
+   Some subscriptions allow only **5 concurrent requests**. Extra calls then come back with
+   `status: failed` and "Too many concurrent requests" in the status result. Those were not
+   generated, so generate exactly those sentences again, at most 5 at a time.
 3. One more call with `eleven_flash_v2_5`, the same voice, and the whole of `sent/iso.txt` as the prompt
    ("word. word. word."). This is only the timing reference and is never heard in the video. Save it as
-   `sent/iso.mp3`.
+   `sent/iso.mp3`. A prompt may be at most **5 000 characters**. For a long script, split `iso.txt` at a
+   sentence boundary into two prompts, then join the two downloads with ~0.6 s of silence in between
+   (ffmpeg `concat`) into `sent/iso.mp3`.
 4. Poll `creative_get_flow_run_status` with the `session_ids`, up to ~14 per call. Clips usually finish
-   within 30 s. Never call generate again to "retry", because that charges again.
+   within 30 s. Never call generate again to "retry" a clip that completed or is still running, because
+   that charges again.
 5. Copy each `media[].url` exactly into a `urls.txt` file as `NN URL` lines (and `iso URL`). Then run
    `bash scripts/download_clips.sh urls.txt WORK/sent`. The URLs are signed storage.googleapis.com links
    that expire after about 2 h. Poll again for fresh ones.

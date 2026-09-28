@@ -6,7 +6,7 @@ The voice clips are laid out back to back with short, even gaps (default
 sentences to moments in the video (e.g. "this" on the close-up, "before/after"
 on the microscope shots). Between anchors every block gets one uniform tempo;
 the optimizer searches the anchor windows to keep the HIGHEST tempo as low as
-possible. Tempo > 1.10 starts to sound rushed: fix the script instead (shorten,
+possible (every combination for a few anchors, a chain search for many). Tempo > 1.10 starts to sound rushed: fix the script instead (shorten,
 merge, move lines) and ask the user before dropping content.
 
 Anchor syntax (repeat --anchor):
@@ -81,43 +81,85 @@ def main():
         raise SystemExit("two anchors fall on the same sentence boundary - keep one")
     video_end = a.video_duration - a.tail
 
+    EMPTY = "empty"
+
+    def one_block(b0, b1):
+        """Lay out the sentences between two boundaries: a block dict, EMPTY, or None if infeasible."""
+        ids = order[b0["pos"]:b1["pos"]]
+        t0 = b0["t"] if b0["kind"] == "start" else b0["t"] + a.anchor_gap
+        t1 = b1["t"] if b1["kind"] == "end" else b1["t"] - a.anchor_gap
+        if not ids:
+            return EMPTY if t1 >= t0 - 1e-6 else None
+        S, n = sum(dur[i] for i in ids), len(ids)
+        room = t1 - t0 - (n - 1) * a.gap
+        if room <= 0.05:
+            return None
+        f, gap, lead = S / room, a.gap, 0.0
+        if f < 1.0:
+            f = 1.0
+            spare = (t1 - t0) - S
+            gap = min(a.max_gap, spare / (n - 1)) if n > 1 else a.gap
+            leftover = spare - gap * (n - 1)
+            # keep an end-anchor exact: put leftover silence before the block
+            lead = leftover if b1["kind"] == "end" and b1["pos"] != len(order) else 0.0
+        return {"ids": ids, "t0": t0 + lead, "t1": t1, "tempo": f, "gap": gap}
+
+    first = {"pos": 0, "kind": "start", "t": a.lead}
+    last = {"pos": len(order), "kind": "end", "t": video_end}
+
     def blocks_for(times):
-        bnds = [{"pos": 0, "kind": "start", "t": a.lead}]
-        bnds += [{"pos": x["pos"], "kind": x["kind"], "t": t} for x, t in zip(anchors, times)]
-        bnds.append({"pos": len(order), "kind": "end", "t": video_end})
+        bnds = [first] + [{"pos": x["pos"], "kind": x["kind"], "t": t} for x, t in zip(anchors, times)] + [last]
         out = []
         for b0, b1 in zip(bnds[:-1], bnds[1:]):
-            ids = order[b0["pos"]:b1["pos"]]
-            t0 = b0["t"] if b0["kind"] == "start" else b0["t"] + a.anchor_gap
-            t1 = b1["t"] if b1["kind"] == "end" else b1["t"] - a.anchor_gap
-            if not ids:
-                if t1 < t0 - 1e-6:
-                    return None
-                continue
-            S, n = sum(dur[i] for i in ids), len(ids)
-            room = t1 - t0 - (n - 1) * a.gap
-            if room <= 0.05:
+            b = one_block(b0, b1)
+            if b is None:
                 return None
-            f, gap, lead = S / room, a.gap, 0.0
-            if f < 1.0:
-                f = 1.0
-                spare = (t1 - t0) - S
-                gap = min(a.max_gap, spare / (n - 1)) if n > 1 else a.gap
-                leftover = spare - gap * (n - 1)
-                # keep an end-anchor exact: put leftover silence before the block
-                lead = leftover if b1["kind"] == "end" and b1["pos"] != len(order) else 0.0
-            out.append({"ids": ids, "t0": t0 + lead, "t1": t1, "tempo": f, "gap": gap})
+            if b is not EMPTY:
+                out.append(b)
         return out
 
-    grids = []
-    step = a.step
-    while True:
-        grids = [np.arange(x["lo"], x["hi"] + 1e-9, step) if x["hi"] > x["lo"] else np.array([x["lo"]]) for x in anchors]
-        if np.prod([len(g) for g in grids]) <= 150000 or step > 1:
-            break
-        step *= 2
+    def chain_search(grids):
+        """Many anchors: each block only depends on its two boundary times, so a DP over the
+        anchors in order finds the layout with the lowest maximum tempo (ties: lowest sum of
+        squared tempi) without trying every combination."""
+        layers = [[first]] + [[{"pos": x["pos"], "kind": x["kind"], "t": float(t)} for t in g]
+                              for x, g in zip(anchors, grids)] + [[last]]
+        prev = [((0.0, 0.0), None)]
+        back = []
+        for k in range(1, len(layers)):
+            cur = []
+            for b1 in layers[k]:
+                best_c, best_j = None, None
+                for j, b0 in enumerate(layers[k - 1]):
+                    if prev[j][0] is None:
+                        continue
+                    b = one_block(b0, b1)
+                    if b is None:
+                        continue
+                    f = 1.0 if b is EMPTY else b["tempo"]
+                    c = (max(prev[j][0][0], f), prev[j][0][1] + f * f)
+                    if best_c is None or c < best_c:
+                        best_c, best_j = c, j
+                cur.append((best_c, best_j))
+            back.append(cur)
+            prev = cur
+        if prev[0][0] is None:
+            return None
+        j, times = prev[0][1], []
+        for k in range(len(back) - 2, -1, -1):
+            times.append(layers[k + 1][j]["t"])
+            j = back[k][j][1]
+        return tuple(reversed(times))
+
+    grids = [np.arange(x["lo"], x["hi"] + 1e-9, a.step) if x["hi"] > x["lo"] else np.array([x["lo"]]) for x in anchors]
+    candidates = [()]
+    if grids and np.prod([float(len(g)) for g in grids]) > 150000:
+        found = chain_search(grids)
+        candidates = [found] if found else []
+    elif grids:
+        candidates = itertools.product(*grids)
     best = None
-    for times in itertools.product(*grids) if grids else [()]:
+    for times in candidates:
         if any(t2 <= t1 for t1, t2 in zip(times, times[1:])):
             continue
         bl = blocks_for(times)

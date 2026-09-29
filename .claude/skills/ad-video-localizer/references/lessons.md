@@ -17,6 +17,17 @@
   `render.py --bed music.mp3 --bed-db -16`.
 - The loudness target -14 LUFS (`loudnorm`) suits TikTok, Reels and Shorts.
 - eleven_v3 speaks about 13 % slower than multilingual_v2, so budget for it.
+- Sentence-by-sentence generation (video 2, first version) made the voice uneven: pitch per clip varied
+  95-157 Hz for a ~110 Hz voice, stress and pronunciation changed, and one clip came out as a female
+  voice. The user heard it as "two different people" and "a bit robotic". Paragraph takes with
+  `language_code: "sv"` fixed it (pitch spread 35 Hz → 12 Hz with v3). See `references/elevenlabs.md`.
+- In paragraph takes eleven_v3 reads ~8 % slower than its single sentences, and eleven_v4 ~15 % faster
+  than v3. The user preferred v4 ("much more human, natural speed") but heard a slight echo; its word
+  tails ring ~20 ms longer than v3's. A gate or expander in ffmpeg does not measurably help. The
+  ElevenLabs Voice Isolator is made for this (~1 000 credits per minute), so offer it rather than run it.
+- Do not speed a slow take up past ~1.08 to make it fit: the user hears it as robotic. Pick a faster
+  model, trim the script with the user's consent, or let `plan_timeline.py --min-tempo` absorb spare
+  time when the voice is shorter than the video.
 - Up to about 1.08× tempo is inaudible. About 1.11× is fine for an offer or call-to-action section.
   Above about 1.13× it starts to sound rushed, so fix the script instead.
 

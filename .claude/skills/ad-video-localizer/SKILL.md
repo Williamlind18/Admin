@@ -1,6 +1,6 @@
 ---
 name: ad-video-localizer
-description: "Localize or re-voice short-form ad videos (TikTok, Reels, Shorts, UGC ads): translate or rewrite the voiceover script for a new language, brand, product and offer, generate the new voiceover with the user's ElevenLabs voice (eleven_v3, one clip per sentence), fit it to the video's length and key visuals with short natural pauses, and burn in word-synced captions plus an .srt file. Use this skill whenever the user wants to translate or dub a video, replace a voiceover, adapt a competitor's or supplier's ad to their own product or website, add synced captions or subtitles to a voiceover, or mentions ElevenLabs together with a video - also when they write in Swedish, e.g. 'översätt videon till svenska', 'lägg in synkade captions', 'ny voiceover med min röst', 'byt manuset till min produkt', 'redigera reklamvideon', even if they never say localize."
+description: "Localize or re-voice short-form ad videos (TikTok, Reels, Shorts, UGC ads): translate or rewrite the voiceover script for a new language, brand, product and offer, generate the new voiceover with the user's ElevenLabs voice (one take per paragraph with the Swedish language code, split into sentence clips), fit it to the video's length and key visuals with short natural pauses, and burn in word-synced captions plus an .srt file. Use this skill whenever the user wants to translate or dub a video, replace a voiceover, adapt a competitor's or supplier's ad to their own product or website, add synced captions or subtitles to a voiceover, or mentions ElevenLabs together with a video - also when they write in Swedish, e.g. 'översätt videon till svenska', 'lägg in synkade captions', 'ny voiceover med min röst', 'byt manuset till min produkt', 'redigera reklamvideon', even if they never say localize."
 compatibility: "Needs Bash + Python 3 with pip and internet for setup (ffmpeg via imageio-ffmpeg, librosa, espeak-ng, Google Fonts) and the ElevenLabs connector (or an ELEVENLABS_API_KEY environment secret). Built and tested in the Claude Code cloud sandbox."
 ---
 
@@ -18,8 +18,11 @@ worked, so run them instead of improvising new tooling. Talk to the user in thei
 for the original user), and keep them posted during slow steps (generation ~30 s, render ~3-4 min).
 
 ## The user's standing preferences
-- **Voice:** ElevenLabs **eleven_v3** with the voice ID they give for *this* project. Ask every time;
-  the ID changes and none is stored.
+- **Voice:** ElevenLabs with the voice ID they give for *this* project. Ask every time; the ID changes
+  and none is stored. Model: **eleven_v3** in video 1; in video 2 the user preferred **eleven_v4** (more
+  human, natural pace). Confirm the model per project, and send a short sample when in doubt.
+- **One consistent voice:** read the script in paragraph takes (6-9 sentences) with
+  `language_code: "sv"`, never sentence by sentence (that made the voice drift and once turned female).
 - **Pauses:** short and even, about 0.2 s between sentences. Long gaps were the main complaint.
 - **Script:** natural, flowing target language. You may rephrase for flow and fit, and should adapt it to
   their product, prices and offers.
@@ -73,10 +76,12 @@ Show the user the complete numbered script and get approval before spending cred
 compliance flags once in that same message.
 
 ### 4. Generate the voice
-Follow `references/elevenlabs.md`. You need one `eleven_v3` clip per sentence with
-`generations_count: 1`, plus one cheap `eleven_flash_v2_5` word-by-word reference made from
-`sent/iso.txt`. Download everything with `bash $SK/download_clips.sh urls.txt WORK/sent`. Keep a
-running total of credits for the report.
+Follow `references/elevenlabs.md`: one take per paragraph of 6-9 sentences with
+`language_code: "sv"` and `generations_count: 1` (at most 5 running at once), plus one cheap
+`eleven_flash_v2_5` word-by-word reference made from `sent/iso.txt`. Download with
+`bash $SK/download_clips.sh urls.txt WORK/takes`, split each take into sentence clips with
+`python3 $SK/split_takes.py WORK/takes/G01.mp3 WORK/sent 01 02 ...` (fix any `CHECK` line with
+`--cuts`), then `python3 $SK/tighten_pauses.py WORK/sent`. Keep a running total of credits.
 
 ### 5. Find the word timings
 `python3 $SK/align_words.py WORK/sent --lang sv`. For each boundary it takes the median of three
@@ -101,9 +106,12 @@ python3 $SK/plan_timeline.py WORK/sent --video-duration D \
   - drop "if it fits" extras.
   Ask the user before cutting anything they asked for.
 - **Gaps before an anchor.** If the voice runs ahead of the footage and leaves a long gap before an
-  anchor, it is usually because a condensed passage lost detail. Restore some of it.
-- **Changed sentences.** When you change a sentence: rerun split_script, regenerate that clip plus its
-  `isoNN.mp3` word reference, then rerun steps 5-6.
+  anchor, it is usually because a condensed passage lost detail. Restore some of it. When the whole
+  voice is simply shorter than the footage (e.g. a faster model), use `--gap 0.2 --max-gap 0.35
+  --min-tempo 0.95`: blocks may then slow down by up to 5 % (inaudible) instead of leaving silence, and
+  the planner spreads any spare time evenly. Check that no pause is longer than ~0.5 s.
+- **Changed sentences.** When you change a sentence: rerun split_script, regenerate its paragraph take
+  (see `references/elevenlabs.md`) plus its `isoNN.mp3` word reference, then rerun steps 5-6.
 
 ### 7. Build the voice track and captions
 ```

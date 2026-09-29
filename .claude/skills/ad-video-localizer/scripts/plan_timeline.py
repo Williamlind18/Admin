@@ -57,6 +57,8 @@ def main():
     ap.add_argument("--lead", type=float, default=0.10, help="first word starts here")
     ap.add_argument("--tail", type=float, default=0.25, help="last word ends this long before the video ends")
     ap.add_argument("--max-tempo", type=float, default=1.12, help="warn above this speed-up")
+    ap.add_argument("--min-tempo", type=float, default=1.0,
+                    help="may slow a block down to this (e.g. 0.96) instead of leaving long pauses when the voice is shorter than the footage")
     ap.add_argument("--step", type=float, default=0.1)
     a = ap.parse_args()
 
@@ -94,15 +96,17 @@ def main():
         room = t1 - t0 - (n - 1) * a.gap
         if room <= 0.05:
             return None
-        f, gap, lead = S / room, a.gap, 0.0
+        f, gap, lead, leftover = S / room, a.gap, 0.0, 0.0
         if f < 1.0:
-            f = 1.0
-            spare = (t1 - t0) - S
+            f = max(f, min(1.0, a.min_tempo))
+            spare = (t1 - t0) - S / f
             gap = min(a.max_gap, spare / (n - 1)) if n > 1 else a.gap
             leftover = spare - gap * (n - 1)
             # keep an end-anchor exact: put leftover silence before the block
             lead = leftover if b1["kind"] == "end" and b1["pos"] != len(order) else 0.0
-        return {"ids": ids, "t0": t0 + lead, "t1": t1, "tempo": f, "gap": gap}
+        # "slack" is silence the layout cannot hide in the normal gaps (it sits before an anchor)
+        slack = leftover if b1["pos"] != len(order) else 0.0
+        return {"ids": ids, "t0": t0 + lead, "t1": t1, "tempo": f, "gap": gap, "slack": slack}
 
     first = {"pos": 0, "kind": "start", "t": a.lead}
     last = {"pos": len(order), "kind": "end", "t": video_end}
@@ -121,10 +125,10 @@ def main():
     def chain_search(grids):
         """Many anchors: each block only depends on its two boundary times, so a DP over the
         anchors in order finds the layout with the lowest maximum tempo (ties: lowest sum of
-        squared tempi) without trying every combination."""
+        squared tempi, then the most even spread of spare silence) without trying every combination."""
         layers = [[first]] + [[{"pos": x["pos"], "kind": x["kind"], "t": float(t)} for t in g]
                               for x, g in zip(anchors, grids)] + [[last]]
-        prev = [((0.0, 0.0), None)]
+        prev = [((0.0, 0.0, 0.0), None)]
         back = []
         for k in range(1, len(layers)):
             cur = []
@@ -137,7 +141,10 @@ def main():
                     if b is None:
                         continue
                     f = 1.0 if b is EMPTY else b["tempo"]
-                    c = (max(prev[j][0][0], f), prev[j][0][1] + f * f)
+                    sl = 0.0 if b is EMPTY else b["slack"]
+                    # lowest max tempo first; then lowest sum of squared tempi; then spread any
+                    # spare time evenly instead of leaving one long silence before an anchor
+                    c = (round(max(prev[j][0][0], f), 3), round(prev[j][0][1] + f * f, 3), prev[j][0][2] + sl * sl)
                     if best_c is None or c < best_c:
                         best_c, best_j = c, j
                 cur.append((best_c, best_j))

@@ -72,13 +72,17 @@ def main():
                 "-movflags", "+faststart", a.preview])
         print(f"preview: {a.preview}  {os.path.getsize(a.preview) / 2 ** 20:.1f} MB ({kbps} kb/s video)")
 
-    # QA: every spoken moment has a caption, no long silences, no clipping
+    # QA: every spoken moment has a caption, no long silences, no clipping.
+    # Speech is measured on the voice track: a music bed would count as speech.
     import librosa
     tmp = a.out + ".qa.wav"
     to_wav16k(a.out, tmp)
     y, _ = librosa.load(tmp, sr=16000)
     os.remove(tmp)
-    db = db_curve(y)
+    to_wav16k(a.audio, tmp)
+    yv, _ = librosa.load(tmp, sr=16000)
+    os.remove(tmp)
+    db = db_curve(yv)
     speech = db > -45
     cov = np.zeros(len(db), bool)
     for s, e in ass_times(a.ass):

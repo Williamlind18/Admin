@@ -26,6 +26,21 @@
 - The user's subscription allows 5 concurrent ElevenLabs requests; more fail with "Too many
   concurrent requests" and must be started again.
 
+## Voice (learned on the "tre misstag" video, voice "Äldre man 1")
+- **Speaking rate differs per voice and per take.** The first take of this older male voice ran at
+  about 14 characters per second, much slower than `split_script.py` assumed (16.3), and needed x1.28.
+  The shorter retake of the same voice ran at about 16 characters per second. Measure the real speech
+  length with `align_words.py` straight after the take, before you plan anything.
+- If a take is far too long, shorten the script and make a new whole take (ask first, it costs
+  credits). Compute per-section characters per second from the first take to size the cuts.
+- **Reuse the word reference.** After a script change, cut the old `iso.mp3` into words
+  (`segment_isolated` in `align_words.py`) and only generate the new words ("ord. ord.") with
+  flash. That cost 36 credits instead of about 1 100.
+- **Check the take with Scribe.** `creative_transcribe_audio` has no timestamps, but it is a cheap
+  way to confirm that eleven_v3 did not skip or change words. Pass the take's node id as
+  `connect_from`. Diff the text against `script.txt`, especially for sentences that came out much
+  faster than expected.
+
 ## Audio
 - If the original ad has music under the voice, it cannot be separated here (source-separation models
   are blocked). The output is voice-only unless the user supplies the music file. Mix it with

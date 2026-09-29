@@ -67,6 +67,16 @@ It also speaks slightly faster. The same 2 103 characters were 135.5 s of speech
 140.4 s as 39 clips, so less speed-up is needed. Syncing still works because the take is cut into
 sentences at its pauses, and each sentence is then aligned and placed on its own exactly as before.
 
+## Music (eleven_music_v2_5)
+The connector can make an instrumental bed when the user has no music file. Use
+`creative_generate_in_flow` (node_type `music`, model `eleven_music_v2_5`, `generations_count: 1`,
+`estimate_only: true`) to create the node, then `creative_update_node` with
+`{"duration_seconds": <video length>, "lyrics_type": "instrumental", "instrumental": true}` and run
+it with `creative_run_flow_nodes`. Describe only the sound (genre, mood, instruments, tempo, "leaves
+room for a voice", no vocals). **Price it after setting the duration.** The first estimate uses the
+default length: it said about 1 600 credits, but 140 s cost 3 712 (about 26.5 credits per second).
+Its loudness matched the voice (-14 LUFS), so `render.py --bed music.mp3 --bed-db -16` worked.
+
 ## Concurrency and failures
 The user's subscription allows **5 concurrent requests**. More parallel calls come back with
 `status: failed` and "Too many concurrent requests". With one take plus the flash reference this no
@@ -75,7 +85,8 @@ that failed.
 
 ## Things that do not work
 - `creative_transcribe_audio` (Scribe) through the connector returns plain text with **no timestamps**,
-  so it is useless for syncing.
+  so it is useless for syncing. It is still a good check that the take says every word of the script
+  (see lessons.md).
 - Downloading speech-recognition models (Whisper and similar) is blocked in the cloud sandbox. That is
   why `align_words.py` combines three model-free methods.
 - Speeding the voice up with the **rubberband** filter. It sounded robotic to the user. `atempo` is

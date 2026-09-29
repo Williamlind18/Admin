@@ -71,6 +71,7 @@ Note down:
   appearing. Use the scene-cut times to get exact seconds.
 - **Where old captions sit**, often as blurred bars. The default y = 0.75 usually covers them.
 - **Background music** (the audio report says so). It cannot be separated, so warn the user now.
+  Offer a generated instrumental bed if they have no music file (see `references/elevenlabs.md`).
 - **Other brands visible in the footage**, and any burned-in text that will remain.
 
 ### 3. Write the script
@@ -117,6 +118,9 @@ python3 $SK/plan_timeline.py WORK/sent --video-duration D \
   Ask the user before cutting anything they asked for.
 - **Gaps before an anchor.** If the voice runs ahead of the footage and leaves a long gap before an
   anchor, it is usually because a condensed passage lost detail. Restore some of it.
+- **Voice shorter than the video.** If most blocks sit at x1.00 with 0.45 s gaps, run
+  `balance_plan.py` with the same arguments instead. It spreads the spare time evenly over the pauses
+  and may slow a block down to x0.96 (inaudible), so there are no long silences before anchors.
 - **Changed sentences.** Settle the script *before* the take. A sentence generated on its own later
   sounds like a different speaker, and a re-take is not guaranteed to be shorter (a trimmed line once
   came back 0.3 s longer). For a changed line, generate a new whole take (≈1 credit per character)
@@ -155,7 +159,7 @@ Follow `references/delivery.md`:
 See `references/lessons.md`. It covers:
 - the blocked hosts,
 - why the voice must be one take that is split, not one clip per sentence, and why atempo beats rubberband,
-- why Scribe transcripts don't help,
+- why Scribe transcripts don't help with timing (but do catch skipped words),
 - what to do when music, competitor branding or old burned-in text is in the footage.
 
 ## Security

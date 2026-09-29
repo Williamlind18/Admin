@@ -25,13 +25,24 @@ therefore has to come from how the audio is generated, which means **one take**.
 ## Models and cost (measured)
 | model | use | credits | Swedish speaking rate |
 |---|---|---|---|
-| `eleven_v3` | final voice (user's choice, most natural) | ~1 per character | ~15.5-16 chars/s |
+| `eleven_v3` | final voice (user's choice, most natural) | ~1 per character | ~15-16 chars/s |
 | `eleven_multilingual_v2` | older default; ~13 % faster speech | ~1 per character | ~19 chars/s |
 | `eleven_flash_v2_5` | word-by-word timing reference only | ~0.5 per character | — |
 | `eleven_v4` | offered by the connector, **untested** here | ? | ? |
 
 Pass `estimate_only: true` to price a call before generating. For a 135 s ad (≈2 100 characters),
 expect about 2 100 credits for the voice take plus about 1 200 for the flash reference.
+On video 5 a 3 737-character take ran slower than estimated: 242.6 s of speech (≈15.1 chars/s) and
+299 s with pauses, so budget with 15 chars/s for long scripts.
+
+## Background music
+The user may ask for music made in ElevenLabs when the original's music can't be separated. Use
+`eleven_music_v2_5`: `creative_add_flow_node` with `node_type: music`, a 1-3 sentence prompt about the
+sound (genre, instruments, tempo, "even energy, no big drops, sits under a voiceover, no vocals") and
+`model_parameters: {"duration_seconds": <video length + 1>, "instrumental": true, "lyrics_type":
+"instrumental"}`, then `creative_run_flow_nodes` with `generations_count: 1` (price it first with
+`estimate_only`). A 246 s track cost about 6 500 credits and was ready in about a minute. Mix it with
+`render.py --bed music.mp3 --bed-db -16`.
 
 ## Procedure
 1. `creative_create_flow` with a descriptive name. Pass its `flow_id` to every later call.

@@ -28,8 +28,10 @@
 
 ## Audio
 - If the original ad has music under the voice, it cannot be separated here (source-separation models
-  are blocked). The output is voice-only unless the user supplies the music file. Mix it with
-  `render.py --bed music.mp3 --bed-db -16`.
+  are blocked). The output is voice-only unless the user supplies the music file or asks for one made
+  with ElevenLabs Music (see elevenlabs.md). Mix it with `render.py --bed music.mp3 --bed-db -16`.
+- With a music bed, render.py's QA counts the music in sentence pauses as "speech without caption"
+  (about 1 s on video 5). Re-check coverage on `vo.wav` alone; that must be ~0.00 s.
 - The loudness target -14 LUFS (`loudnorm`) suits TikTok, Reels and Shorts.
 - eleven_v3 speaks about 13 % slower than multilingual_v2, so budget for it.
 - With atempo, up to about 1.08× tempo is inaudible. Keep the offer/CTA section at or under about 1.10×.
@@ -50,7 +52,8 @@
   handled by make_captions.py. Still read the chunk list: it splits blindly at colons and lists
   ("tre lager: filmen" → "lager filmen"). When several are clumsy, write the chunks by hand, one line
   per sentence with chunks separated by `|`, and build the Dialogue lines from `words_global.json`
-  with the same style and timing rule as make_captions.py (Maskinrent video 2 did this).
+  with the same style and timing rule as make_captions.py. `scripts/chunk_captions.py` does exactly
+  this from a `chunks.txt` ("NN: chunk | chunk"), and also draws the label boxes below (video 5).
 - **Burned-in foreign text** in the footage (e.g. English labels "FILM / PROTEIN / GREASE" on a close-up):
   the user wanted it covered by **white rounded boxes with black Montserrat ExtraBold text in the
   target language**. Add them as extra ASS events: a `\p1` rounded-rectangle drawing on layer 1 and the
@@ -66,3 +69,9 @@
 - When the user sends a re-cut of a video you already did, run `analyze_video.py NEW --reference OLD`.
   Unchanged sections keep their timestamps, so earlier anchors can be reused.
 - Rendering 1080×1920 for 110 s takes about 3.5 min on the sandbox. Tell the user it's coming.
+- **Cutting a shot out of the source** (e.g. a competitor's map): find the first and last frame at
+  30 fps, cut at a transition (a white flash cuts cleanly), and drop the frames with
+  `select='not(between(n,A,B))',setpts=N/FRAME_RATE/TB` (plus the same `aselect` on the audio),
+  re-encoded at crf 14. Every anchor after the cut moves earlier by (B-A+1)/fps.
+- **Leftover captions of the original** can flash by for a few frames (video 5: "every load," on a white
+  paper towel for 0.2 s). Scan the finer frame grids for them and blank them with a text-less label.

@@ -61,7 +61,8 @@ Ask in **one** message for whatever is missing:
 - **The ElevenLabs voice ID.** Check that the ElevenLabs connector tools are available; see
   `references/elevenlabs.md`.
 - **Product facts.** Try WebFetch on their page first; it is often blocked, so ask for screenshots.
-- **Lines or claims that must stay**, and whether they have music to put under the voice.
+- **Lines or claims that must stay**, and whether they have music to put under the voice (or want
+  one made with ElevenLabs Music, see `references/elevenlabs.md`).
 
 ### 2. Look at the video
 `python3 $SK/analyze_video.py WORK/src.mp4 --out WORK/analysis` (add `--reference OLD.mp4` for a
@@ -129,7 +130,8 @@ python3 $SK/plan_timeline.py WORK/sent --video-duration D \
 python3 $SK/build_voiceover.py WORK/sent --out WORK/vo.wav
 python3 $SK/make_captions.py WORK/words_global.json --video WORK/src.mp4 --out-dir WORK --lang sv
 ```
-`build_voiceover.py` speeds up with atempo by default. Do not switch to `--stretch rubberband`: it
+For hand-picked chunks and white label boxes over burned-in text, run `chunk_captions.py` instead
+(see its docstring). `build_voiceover.py` speeds up with atempo by default. Do not switch to `--stretch rubberband`: it
 sounded robotic to the user. Captions can be tuned with `--y` (vertical position), `--font`,
 `--size`, `--max-words`, `--max-chars` and `--upper`. Read the printed chunk list and fix any clumsy
 splits, e.g. "tre lager: filmen" should become "tre lager | filmen". See `references/lessons.md`
@@ -141,7 +143,8 @@ python3 $SK/render.py --video WORK/src.mp4 --audio WORK/vo.wav --ass WORK/captio
     --fonts WORK/fonts --out WORK/final.mp4 --preview WORK/preview.mp4 --check-frames 44.2,90.0 \
     [--bed music.mp3 --bed-db -16]
 ```
-The QA line must show 0.00 s of speech without a caption and no unintended pauses over 0.5 s. Open
+The QA line must show 0.00 s of speech without a caption (with a music bed, re-check on `vo.wav`
+alone, see lessons.md) and no unintended pauses over 0.5 s. Open
 the check frames at the anchor times with Read, and confirm that the caption shown matches the visual
 (e.g. "det här" on the close-up).
 

@@ -24,6 +24,9 @@ reliable channel is the GitHub repo attached to the session.
 - Commit the full-quality mp4 (≤ 100 MB) to the session's working branch together with the `.srt` and
   script, push it, and give the user the GitHub link to the file. They download it with the download
   button on that page.
+- Longer videos pass 100 MB at render.py's crf 21 (4:05 came out at about 155 MB). Then make a
+  two-pass copy at ~95 MB for GitHub: video kb/s = 95·8·1024 / seconds − 212, `-preset slow -pass 1/2`,
+  AAC audio at 192k, `-movflags +faststart`. Say in the report that GitHub caps files at 100 MB.
 - Never commit secrets. The repo may be public.
 
 ## Final report to the user (write it in their language; Swedish example)

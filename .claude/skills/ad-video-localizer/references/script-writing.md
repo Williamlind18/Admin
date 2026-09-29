@@ -32,7 +32,7 @@
 
 ## Length budget (check before spending credits)
 `split_script.py … --video-duration D` estimates the speech length. Rules of thumb:
-- eleven_v3 Swedish runs at about **16 characters per second** (spaces included). The script must fit
+- eleven_v3 Swedish runs at about **15-16 characters per second** (spaces included; long scripts nearer 15). The script must fit
   in `D − 0.35 − 0.18 × (lines − 1)` seconds at ≤ ~1.08× speed.
 - **The ending is where it breaks.** The offer and call to action usually come after the last visual
   anchor, and only the seconds after that anchor are available for them. Check that section on its own:

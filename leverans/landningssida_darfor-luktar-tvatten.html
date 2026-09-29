@@ -1,0 +1,320 @@
+<style>
+.main-page-title{display:none!important}
+.ntlp{--nt-teal:#0a93a8;--nt-teal-d:#077a8c;--nt-teal-l:#e6f5f7;--nt-navy:#13233f;--nt-ink:#22242e;--nt-mute:#5b6070;--nt-line:#e3e7ec;--nt-warn:#d9443a;--nt-star:#f5b400;--nt-green:#1f9d55;
+  color:var(--nt-ink);font-size:17px;line-height:1.62;max-width:680px;margin:0 auto;padding-bottom:40px;-webkit-font-smoothing:antialiased}
+.ntlp *{box-sizing:border-box}
+.ntlp p{margin:0 0 16px}
+.ntlp h1,.ntlp h2,.ntlp h3{color:var(--nt-navy);font-weight:800;letter-spacing:-.01em;margin:0}
+.ntlp h1{font-size:28px;line-height:1.22;margin:10px 0 14px}
+.ntlp h1 span{color:var(--nt-teal)}
+.ntlp h2{font-size:23px;line-height:1.28;margin:36px 0 14px}
+.ntlp h3{font-size:18px;line-height:1.35;margin:0 0 6px}
+.ntlp strong{color:var(--nt-navy)}
+.ntlp a{color:var(--nt-teal-d)}
+.ntlp .nt-ad{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--nt-mute);text-transform:uppercase;letter-spacing:.08em;margin-top:4px}
+.ntlp .nt-ad b{background:var(--nt-navy);color:#fff;padding:2px 7px;border-radius:4px;font-weight:700;letter-spacing:.1em}
+.ntlp .nt-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-size:14px;color:var(--nt-mute);border-top:1px solid var(--nt-line);border-bottom:1px solid var(--nt-line);padding:10px 0;margin-bottom:22px}
+.ntlp .nt-stars{color:var(--nt-star);letter-spacing:1px;font-size:15px}
+.ntlp .nt-media{margin:22px 0 24px;border-radius:14px;overflow:hidden;background:#dfe7ea;position:relative}
+.ntlp .nt-media video,.ntlp .nt-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 35%;border:0;margin:0}
+.ntlp .nt-media.v{aspect-ratio:4/5}
+.ntlp .nt-media.sq{aspect-ratio:1/1}
+.ntlp .nt-cap{font-size:13px;color:var(--nt-mute);text-align:center;margin:-14px 0 24px}
+.ntlp .nt-lead{font-size:19px;font-weight:700;color:var(--nt-navy);line-height:1.45}
+.ntlp ul.nt-list{list-style:none;padding:0;margin:0 0 18px}
+.ntlp ul.nt-list li{position:relative;padding:0 0 0 26px;margin:0 0 10px;font-weight:600}
+.ntlp ul.nt-list li:before{content:"";position:absolute;left:4px;top:.62em;width:9px;height:9px;border-radius:50%;background:var(--nt-warn)}
+.ntlp ul.nt-x li:before{content:"✕";background:none;color:var(--nt-warn);font-weight:800;top:0;left:2px;width:auto;height:auto}
+.ntlp ul.nt-check li:before{content:"✓";background:none;color:var(--nt-green);font-weight:800;top:0;left:2px;width:auto;height:auto}
+.ntlp ul.nt-soft li{font-weight:400}
+.ntlp .nt-quote{border-left:4px solid var(--nt-teal);padding:4px 0 4px 16px;margin:0 0 18px;font-weight:700;color:var(--nt-navy);font-size:19px;line-height:1.45}
+.ntlp .nt-big{font-size:22px;line-height:1.35;font-weight:800;color:var(--nt-navy);margin:26px 0 18px}
+.ntlp .nt-box{background:var(--nt-teal-l);border-radius:14px;padding:20px 18px;margin:24px 0}
+.ntlp .nt-box h3{color:var(--nt-teal-d)}
+.ntlp .nt-steps{list-style:none;padding:0;margin:14px 0 0;counter-reset:s}
+.ntlp .nt-steps li{position:relative;padding:0 0 16px 46px;margin:0;counter-increment:s}
+.ntlp .nt-steps li:before{content:counter(s);position:absolute;left:0;top:-1px;width:32px;height:32px;border-radius:50%;background:var(--nt-teal);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:15px}
+.ntlp .nt-steps li:not(:last-child):after{content:"";position:absolute;left:15px;top:34px;bottom:2px;border-left:2px dotted var(--nt-teal)}
+.ntlp .nt-ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 6px}
+.ntlp .nt-ba figure{margin:0;position:relative;border-radius:12px;overflow:hidden;aspect-ratio:1/1;background:#eee}
+.ntlp .nt-ba img{width:100%;height:100%;object-fit:cover;display:block;margin:0;border:0}
+.ntlp .nt-ba figcaption{position:absolute;left:8px;top:8px;background:var(--nt-navy);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;padding:3px 8px;border-radius:4px}
+.ntlp .nt-ba figure.after figcaption{background:var(--nt-teal)}
+.ntlp .nt-ba-t{font-weight:800;color:var(--nt-navy);margin:18px 0 8px}
+.ntlp .nt-reviews{display:grid;gap:12px;margin:10px 0 8px}
+.ntlp .nt-review{border:1px solid var(--nt-line);border-radius:14px;padding:16px;background:#fff}
+.ntlp .nt-review p{margin:6px 0 10px;font-size:16px}
+.ntlp .nt-review .who{font-size:13px;color:var(--nt-mute)}
+.ntlp .nt-review .who b{color:var(--nt-ink)}
+.ntlp .nt-verified{color:var(--nt-green);font-weight:700}
+.ntlp .nt-rating{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:15px;margin-bottom:6px}
+.ntlp .nt-rating .score{font-size:30px;font-weight:800;color:var(--nt-navy);line-height:1}
+.ntlp .nt-offer{border:2px solid var(--nt-teal);border-radius:18px;padding:22px 16px 18px;margin:30px 0;background:#fff;text-align:center}
+.ntlp .nt-pill{display:inline-block;background:var(--nt-warn);color:#fff;font-weight:800;font-size:12px;letter-spacing:.08em;padding:4px 10px;border-radius:999px;text-transform:uppercase}
+.ntlp .nt-offer h2{margin:12px 0 8px}
+.ntlp .nt-packs{display:grid;gap:10px;margin:18px 0;text-align:left}
+.ntlp .nt-pack{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--nt-teal-l);border-radius:12px;padding:12px 14px;text-decoration:none!important;color:var(--nt-ink)!important;border:2px solid transparent;position:relative}
+.ntlp .nt-pack.best{border-color:var(--nt-teal);background:#fff}
+.ntlp .nt-pack .t{font-weight:800;color:var(--nt-teal-d);font-size:17px}
+.ntlp .nt-pack .d{font-size:14px;color:var(--nt-mute)}
+.ntlp .nt-pack .off{background:var(--nt-teal);color:#fff;font-weight:800;font-size:13px;padding:4px 9px;border-radius:8px;white-space:nowrap}
+.ntlp .nt-pack .tag{position:absolute;right:12px;top:-11px;background:var(--nt-navy);color:#fff;font-size:11px;font-weight:800;padding:2px 8px;border-radius:6px;letter-spacing:.05em}
+.ntlp .nt-btn{display:block;width:100%;background:var(--nt-teal);color:#fff!important;text-decoration:none!important;font-weight:800;font-size:18px;text-align:center;padding:17px 16px;border-radius:12px;box-shadow:0 6px 16px rgba(10,147,168,.28);transition:background .15s}
+.ntlp .nt-btn:hover{background:var(--nt-teal-d)}
+.ntlp .nt-btn small{display:block;font-weight:600;font-size:13px;opacity:.9;margin-top:2px}
+.ntlp .nt-trust{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;font-size:14px;margin:14px 0 0;text-align:left}
+.ntlp .nt-trust span:before{content:"✓ ";color:var(--nt-green);font-weight:800}
+.ntlp .nt-guar{display:flex;gap:14px;align-items:flex-start;background:#fff8e6;border:1px solid #f3dfa6;border-radius:14px;padding:16px;margin:22px 0}
+.ntlp .nt-guar .seal{flex:0 0 56px;height:56px;border-radius:50%;background:var(--nt-navy);color:#fff;display:flex;align-items:center;justify-content:center;flex-direction:column;font-weight:800;line-height:1;font-size:18px}
+.ntlp .nt-guar .seal small{font-size:9px;letter-spacing:.06em;margin-top:2px}
+.ntlp .nt-guar p{margin:4px 0 0;font-size:15px}
+.ntlp details{border-bottom:1px solid var(--nt-line);padding:12px 0}
+.ntlp summary{cursor:pointer;font-weight:700;color:var(--nt-navy);list-style:none;display:flex;justify-content:space-between;gap:10px}
+.ntlp summary::-webkit-details-marker{display:none}
+.ntlp summary:after{content:"+";color:var(--nt-teal);font-weight:800;font-size:20px;line-height:1}
+.ntlp details[open] summary:after{content:"–"}
+.ntlp details p{margin:8px 0 2px;font-size:16px}
+.ntlp .nt-hr{border:0;border-top:1px solid var(--nt-line);margin:30px 0}
+.ntlp .nt-final{background:var(--nt-navy);color:#fff;border-radius:18px;padding:24px 18px;margin:32px 0 10px;text-align:center}
+.ntlp .nt-final h2{color:#fff;margin:0 0 10px}
+.ntlp .nt-final p{color:#dfe6ef}
+.ntlp .nt-final .nt-btn{box-shadow:none}
+.ntlp .nt-small{font-size:12px;color:var(--nt-mute);text-align:center;margin-top:16px}
+.nt-sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--nt-navy,#13233f);color:#fff;padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -6px 18px rgba(0,0,0,.18);font-family:inherit}
+.nt-sticky .txt{font-size:13px;line-height:1.3}
+.nt-sticky .txt b{display:block;font-size:15px;letter-spacing:.02em}
+.nt-sticky a{background:#0a93a8;color:#fff!important;text-decoration:none!important;font-weight:800;font-size:15px;padding:11px 16px;border-radius:10px;white-space:nowrap}
+body{padding-bottom:70px}
+@media (min-width:750px){.ntlp{font-size:18px}.ntlp h1{font-size:36px}.ntlp h2{font-size:27px}.ntlp .nt-media.v{aspect-ratio:16/11}.ntlp .nt-reviews{grid-template-columns:1fr 1fr}.ntlp .nt-trust{grid-template-columns:repeat(4,auto);justify-content:center}.nt-sticky{justify-content:center;gap:28px}}
+</style>
+
+<div class="ntlp">
+
+<div class="nt-ad"><b>Annons</b> Från Norrtvätt · svensk tvättvård för hem med husdjur</div>
+
+<h1>Ett dolt ekosystem inne i tvättmaskinen gör att nytvättat luktar unket – <span>och en NASA-inspirerad enzymmetod löser nu upp källan i stället för att bara dölja lukten</span></h1>
+
+<div class="nt-meta"><span>Av Norrtvätt · 4 min läsning</span><span><span class="nt-stars">★★★★★</span> 4,8 av 5 · 1 046 recensioner</span></div>
+
+<div class="nt-media v"><video autoplay muted loop playsinline preload="metadata" poster="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/preview_images/b7b26d1e7b3e40daa0ee0680bf5f95ce.thumbnail.0000000000.jpg?v=1790698187"><source src="https://cdn.shopify.com/videos/c/vp/b7b26d1e7b3e40daa0ee0680bf5f95ce/b7b26d1e7b3e40daa0ee0680bf5f95ce.HD-720p-1.6Mbps-95908990.mp4" type="video/mp4"></video></div>
+
+<p>Det är ett av de vanligaste klagomålen i svenska tvättstugor just nu:</p>
+
+<p class="nt-lead">Tvätten kommer ut ur maskinen – och luktar surt.</p>
+
+<ul class="nt-list nt-soft">
+<li>Handdukar som borde dofta rent luktar instängt.</li>
+<li>Filtar verkar fräscha, men har en svag unken ton som sitter kvar.</li>
+<li>Tröjor som ser nytvättade ut börjar lukta källare framåt eftermiddagen.</li>
+</ul>
+
+<p>För den som är noga med hemmet är det både pinsamt och förvirrande. Tvätt ska ju lukta rent.</p>
+
+<p>Och hur många gånger du än tvättar om, kommer lukten tillbaka.</p>
+
+<p><strong>I åratal har vi skyllt på de vanliga misstänkta:</strong></p>
+
+<ul class="nt-list">
+<li>Det hårda vattnet …</li>
+<li>Fukten i tvättstugan …</li>
+<li>Tvättmedlet, som plötsligt ”slutat fungera” …</li>
+</ul>
+
+<p>Men forskare som undersökt tvättmaskiner har hittat något helt annat. Lukten kommer inte från kläderna.</p>
+
+<p class="nt-quote">Den kommer från själva maskinen – på ett sätt som de flesta aldrig har fått höra talas om.</p>
+
+<h2>Moderna tvättmaskiner bygger upp sina egna små ekosystem</h2>
+
+<ul class="nt-list nt-soft">
+<li>De överlever varje tvättprogram.</li>
+<li>De lever på rester av tvättmedel, sköljmedel, hudfett och päls.</li>
+<li>Och de följer med ut i kläderna – tvätt efter tvätt.</li>
+</ul>
+
+<div class="nt-media v"><video autoplay muted loop playsinline preload="metadata" poster="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/preview_images/19e2da12d52e4641a2282f0e27988d09.thumbnail.0000000000.jpg?v=1790698187"><source src="https://cdn.shopify.com/videos/c/vp/19e2da12d52e4641a2282f0e27988d09/19e2da12d52e4641a2282f0e27988d09.HD-720p-1.6Mbps-95908988.mp4" type="video/mp4"></video></div>
+
+<p>Samma mönster har NASA studerat i åratal – i de slutna vattensystemen ombord på rymdstationen ISS.</p>
+
+<p>Varmt vatten, ständig fukt och nästan ingen luftcirkulation skapade den perfekta miljön för mikroskopiska samhällen att växa till sig. De fäste på ytorna, byggde upp sega lager av så kallad <strong>biofilm</strong> och satt kvar där vanlig rengöring inte kom åt.</p>
+
+<div class="nt-media v"><video autoplay muted loop playsinline preload="metadata" poster="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/preview_images/ad4d8cee649f41e1b79e2f1c4598407c.thumbnail.0000000000.jpg?v=1790698188"><source src="https://cdn.shopify.com/videos/c/vp/ad4d8cee649f41e1b79e2f1c4598407c/ad4d8cee649f41e1b79e2f1c4598407c.HD-720p-1.6Mbps-95908989.mp4" type="video/mp4"></video></div>
+
+<p><strong>Känner du igen något av det här?</strong></p>
+
+<ul class="nt-list">
+<li>Tvätten har fått en sur ton …</li>
+<li>Kläderna luktar svagt av hunden …</li>
+<li>Det slår emot dig en unken doft när du öppnar luckan …</li>
+</ul>
+
+<p>Då har du med stor sannolikhet samma dolda miljö i din maskin. Och det är inte ett städproblem – det är en beläggning som har byggts upp där vanlig rengöring inte når.</p>
+
+<h2>Varför kan maskinen inte bara rengöra sig själv?</h2>
+
+<p>Förr tänkte vi att tvättmaskinen höll sig ren av sig själv. Tvättmedel i, kör ett program, klart.</p>
+
+<p>Men dagens maskiner är inte som för 20 år sedan. EU:s krav på energi- och vattenförbrukning har gjort dem mycket snålare: de använder mindre vatten och har täta luckor som stänger inne fukten långt efter att programmet är klart.</p>
+
+<p>Till det kommer något väldigt svenskt. Vi tvättar allt oftare på 30 eller 40 grader, eller med eco-program, för att hålla nere elräkningen. Bra för plånboken – men maskinen blir aldrig riktigt varm.</p>
+
+<p>Resultatet är en sluten, fuktig miljö som beter sig mindre som en tvättmaskin och mer som ett växthus.</p>
+
+<p><strong>Varje tvätt lämnar något nytt efter sig:</strong></p>
+
+<ul class="nt-list">
+<li>Tvättmedelsrester fastnar på trummans utsida.</li>
+<li>Ludd och djurhår samlas där vattnet inte flödar.</li>
+<li>Och bit för bit byggs ett stabilt ekosystem upp.</li>
+</ul>
+
+<div class="nt-media v"><video autoplay muted loop playsinline preload="metadata" poster="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/preview_images/fbfb9ed3437d47329a1e63b34cee1264.thumbnail.0000000000.jpg?v=1790698188"><source src="https://cdn.shopify.com/videos/c/vp/fbfb9ed3437d47329a1e63b34cee1264/fbfb9ed3437d47329a1e63b34cee1264.HD-720p-1.6Mbps-95908983.mp4" type="video/mp4"></video></div>
+<p class="nt-cap">Så här kan det se ut bakom trumman – där du aldrig tittar.</p>
+
+<p>Det här ekosystemet släpper ifrån sig luktämnen i varje tvätt du kör. Därför är lukten så envis – och därför kommer den alltid tillbaka, hur många gånger du än tvättar om.</p>
+
+<h2>”Men jag har ju rengjort maskinen?”</h2>
+
+<p>De flesta knep vi har lärt oss rengör bara det som syns:</p>
+
+<ul class="nt-list nt-x">
+<li>Köra ett 90-gradersprogram</li>
+<li>Hälla i mer tvättmedel</li>
+<li>Ättika i facket</li>
+<li>Bikarbonat i trumman</li>
+<li>Maskinens eget rengöringsprogram</li>
+<li>Skrubba gummilisten för hand</li>
+</ul>
+
+<p>Allt det får maskinen att <em>se</em> ren ut. Men inget av det når delarna bakom trumman, där fukten aldrig hinner torka och beläggningen växer i lugn och ro. Ättika och klorin kan dessutom bryta ner gummilisten med tiden.</p>
+
+<div class="nt-media v"><video autoplay muted loop playsinline preload="metadata" poster="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/preview_images/2dccb9c9dcf74ea9861b9f163ea933d4.thumbnail.0000000000.jpg?v=1790698187"><source src="https://cdn.shopify.com/videos/c/vp/2dccb9c9dcf74ea9861b9f163ea933d4/2dccb9c9dcf74ea9861b9f163ea933d4.HD-720p-1.6Mbps-95908991.mp4" type="video/mp4"></video></div>
+
+<h2>NASA:s slutsats: det är inte ett ytproblem</h2>
+
+<p>Beläggningarna i de slutna vattensystemen betedde sig inte som vanlig smuts. De band ihop fibrer, fett, proteiner och mineraler till en seg sköld som stängde ute både värme, vatten och vanliga rengöringsmedel.</p>
+
+<p>Lösningen blev inte starkare kemikalier. <strong>Lösningen blev enzymer</strong> – biologiska rengörare som inte döljer smutsen eller bara sköljer bort den, utan bryter ner den inifrån.</p>
+
+<div class="nt-media v"><video autoplay muted loop playsinline preload="metadata" poster="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/preview_images/a1bf673cba6d4a269b22b5873c3bf0a8.thumbnail.0000000000.jpg?v=1790698188"><source src="https://cdn.shopify.com/videos/c/vp/a1bf673cba6d4a269b22b5873c3bf0a8/a1bf673cba6d4a269b22b5873c3bf0a8.HD-720p-1.6Mbps-95908986.mp4" type="video/mp4"></video></div>
+
+<div class="nt-box">
+<h3>Så fungerar en flerenzymsmetod</h3>
+<ol class="nt-steps">
+<li><strong>Proteas</strong> bryter ner protein – hår, hudflagor och mjäll.</li>
+<li><strong>Lipas</strong> bryter ner fett och oljor – bakteriernas mat.</li>
+<li><strong>Amylas</strong> bryter ner stärkelse och rester som håller ihop beläggningen.</li>
+<li>När lagren har släppt lyfter <strong>aktivt syre</strong> loss det som suttit fast i åratal, så att det spolas ut.</li>
+</ol>
+<p style="margin:4px 0 0"><strong>Bit för bit rasar ekosystemet ihop.</strong></p>
+</div>
+
+<p class="nt-big">Ingen mängd värme, ättika, bikarbonat eller rengöringsprogram når de slutna fickorna där den riktiga beläggningen sitter.</p>
+
+<h2>Därför tog vi fram Maskinrent</h2>
+
+<p>Norrtvätt är ett litet svenskt företag som tar fram tvättvård för hem med husdjur. Vi tog samma flerenzymsprincip och byggde in den i en enkel tablett som du lägger direkt i trumman.</p>
+
+<div class="nt-media sq"><img src="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/Use-the-product-box-from-the-reference-i_10.png?width=900" alt="Norrtvätt Maskinrent rengöringstabletter för tvättmaskin, 12 tabletter" loading="lazy" width="900" height="900"></div>
+
+<p><strong>Varje tablett innehåller:</strong></p>
+
+<ul class="nt-list nt-check nt-soft">
+<li><strong>Enzymer</strong> (proteas, lipas och amylas) som bryter ner hår, fett och rester bakom trumman.</li>
+<li><strong>Aktivt syre</strong> som lyfter den lösta smutsen – och sedan bryts ner till soda, vatten och syre.</li>
+<li><strong>Citronsyra</strong> som löser kalk på värmeslingan. Extra bra om du bor där vattnet är hårt, som i stora delar av Skåne och på Gotland.</li>
+<li><strong>Natriumsilikat</strong> som skyddar maskinens metalldelar medan tabletten arbetar.</li>
+</ul>
+
+<p>Tabletten är <strong>parfymfri</strong> – målet är inte att maskinen ska lukta citron, utan att den inte ska lukta någonting alls. Den är <strong>säker för enskilda avlopp</strong>, skonsam mot gummilisten och passar alla maskiner: front- och toppmatade, alla märken, även kombinerade tvätt- och torkmaskiner.</p>
+
+<p>Husdjursägare brukar märka störst skillnad. Päls och hudfett är precis den blandning som enzymerna är gjorda för att bryta ner.</p>
+
+<h2>Före och efter en tablett</h2>
+
+<p class="nt-ba-t">Djurhår i trumman</p>
+<div class="nt-ba">
+<figure><img src="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/1_2x_1.png?width=600" alt="Djurhår i trumman före rengöring" loading="lazy" width="600" height="600"><figcaption>FÖRE</figcaption></figure>
+<figure class="after"><img src="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/2_2x_1.png?width=600" alt="Trumman efter rengöring med Maskinrent" loading="lazy" width="600" height="600"><figcaption>EFTER</figcaption></figure>
+</div>
+
+<p class="nt-ba-t">Smuts och beläggningar</p>
+<div class="nt-ba">
+<figure><img src="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/1_2x_2.png?width=600" alt="Smutsig trumma före rengöring" loading="lazy" width="600" height="600"><figcaption>FÖRE</figcaption></figure>
+<figure class="after"><img src="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/2_2x_2.png?width=600" alt="Ren trumma efter rengöring" loading="lazy" width="600" height="600"><figcaption>EFTER</figcaption></figure>
+</div>
+
+<p class="nt-ba-t">Djurlukt och missfärgningar</p>
+<div class="nt-ba">
+<figure><img src="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/1_2x_3.png?width=600" alt="Missfärgad trumma före rengöring" loading="lazy" width="600" height="600"><figcaption>FÖRE</figcaption></figure>
+<figure class="after"><img src="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/2_2x_3.png?width=600" alt="Trumman efter rengöring" loading="lazy" width="600" height="600"><figcaption>EFTER</figcaption></figure>
+</div>
+
+<h2>Så enkelt är det</h2>
+
+<ol class="nt-steps">
+<li>Lägg en tablett direkt i den <strong>tomma</strong> trumman – inte i tvättmedelsfacket.</li>
+<li>Kör ett program på <strong>60 grader eller varmare</strong>, eller maskinens rengöringsprogram.</li>
+<li>Torka av gummilisten och låt luckan stå öppen en stund så att maskinen torkar.</li>
+<li>Upprepa <strong>en gång i månaden</strong>. Har det luktat länge kan du köra en gång i veckan de första tre veckorna.</li>
+</ol>
+
+<div class="nt-media sq"><img src="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/A-wide-flat-white-cardboard-box-opened.png?width=900" alt="Öppnad förpackning med 12 tabletter och ett schema för 12 månader" loading="lazy" width="900" height="900"></div>
+<p class="nt-cap">12 tabletter = 1 år. I locket finns ett schema där du bockar av varje månad.</p>
+
+<div class="nt-media v"><video autoplay muted loop playsinline preload="metadata" poster="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/preview_images/4183ae913c6d4bb8acd384ed2463f75d.thumbnail.0000000000.jpg?v=1790698187"><source src="https://cdn.shopify.com/videos/c/vp/4183ae913c6d4bb8acd384ed2463f75d/4183ae913c6d4bb8acd384ed2463f75d.HD-720p-1.6Mbps-95908987.mp4" type="video/mp4"></video></div>
+
+<h2>Vad andra husdjursägare säger</h2>
+
+<div class="nt-rating"><span class="score">4,8</span><span><span class="nt-stars">★★★★★</span><br>1 046 recensioner · över 15 000 kunder</span></div>
+
+<div class="nt-reviews">
+<div class="nt-review"><span class="nt-stars">★★★★★</span><h3>Perfekt när man har hund</h3><p>Vi har två hundar och tvättar filtar och hundbäddar hela tiden. Efteråt brukade hela maskinen lukta hund och det låg hår överallt. Efter att ha använt dessa känns maskinen mycket fräschare och framför allt luktar inte nästa tvätt hund längre.</p><div class="who"><b>Helena A.</b> · <span class="nt-verified">✓ Verifierad kund</span></div></div>
+<div class="nt-review"><span class="nt-stars">★★★★★</span><h3>Var skeptisk men blev positivt överraskad</h3><p>Trodde helt ärligt inte att en liten tablett skulle göra någon större skillnad. Maskinen såg redan ganska ren ut, men efter rengöringen märkte jag framför allt skillnad på lukten. Tvätten känns mycket fräschare nu.</p><div class="who"><b>Leif M.</b> · <span class="nt-verified">✓ Verifierad kund</span></div></div>
+<div class="nt-review"><span class="nt-stars">★★★★★</span><h3>Önskar att jag hade hittat dessa tidigare</h3><p>Jag hade aldrig ens tänkt på att själva tvättmaskinen behöver rengöras ordentligt. Vi har en golden retriever som fäller konstant och jag förstår nu hur mycket hår och smuts som faktiskt hamnar i maskinen.</p><div class="who"><b>Jessica B.</b> · <span class="nt-verified">✓ Verifierad kund</span></div></div>
+<div class="nt-review"><span class="nt-stars">★★★★★</span><h3>Stor skillnad på vår gamla maskin</h3><p>Vår tvättmaskin är flera år gammal och hade börjat få en lite unken lukt, framför allt runt gummilisten. Efter en rengöring luktade den betydligt fräschare och även handdukarna kändes renare efter tvätt.</p><div class="who"><b>Pernilla A.</b> · <span class="nt-verified">✓ Verifierad kund</span></div></div>
+</div>
+
+<div class="nt-offer" id="erbjudande">
+<span class="nt-pill">Tidig höstrea</span>
+<h2>Upp till 50 % rabatt just nu</h2>
+<p style="margin:0">Vill du se om enzymmetoden fungerar i din egen maskin? Maskinrent beställer du direkt från Norrtvätt.</p>
+
+<div class="nt-packs">
+<a class="nt-pack" href="/products/norrtvatt-maskinvard-for-tvattmaskiner"><span><span class="t">1-pack</span><br><span class="d">12 tabletter – räcker ett år</span></span><span class="off">−10 %</span></a>
+<a class="nt-pack best" href="/products/norrtvatt-maskinvard-for-tvattmaskiner"><span class="tag">MEST KÖPT</span><span><span class="t">2-pack</span><br><span class="d">Räcker i två år</span></span><span class="off">−40 %</span></a>
+<a class="nt-pack" href="/products/norrtvatt-maskinvard-for-tvattmaskiner"><span><span class="t">3-pack</span><br><span class="d">För familjer som tvättar ofta</span></span><span class="off">−45 %</span></a>
+<a class="nt-pack" href="/products/norrtvatt-maskinvard-for-tvattmaskiner"><span><span class="t">4-pack</span><br><span class="d">Lägst pris per tablett</span></span><span class="off">−50 %</span></a>
+</div>
+
+<a class="nt-btn" href="/products/norrtvatt-maskinvard-for-tvattmaskiner">Se priser och lagerstatus →<small>Begränsat antal i lager under höstrean</small></a>
+
+<div class="nt-trust"><span>Fri frakt</span><span>30 dagars garanti</span><span>Betala med Klarna</span><span>Svensk kundservice</span></div>
+</div>
+
+<div class="nt-guar">
+<div class="seal">30<small>DAGAR</small></div>
+<div><h3>Prova helt riskfritt i 30 dagar</h3><p>Kör tabletten tre gånger. Om maskinen inte luktar bättre mejlar du oss, så får du pengarna tillbaka.</p></div>
+</div>
+
+<h2>Vanliga frågor</h2>
+
+<details><summary>Kan jag ha kläder i maskinen samtidigt?</summary><p>Nej, maskinen ska vara tom när du kör tabletten.</p></details>
+<details><summary>Vilken temperatur ska jag köra?</summary><p>60 grader eller varmare, alternativt maskinens eget rengöringsprogram.</p></details>
+<details><summary>Hur ofta behöver jag använda den?</summary><p>En gång i månaden räcker för att hålla maskinen ren. Har den luktat länge kan du köra en gång i veckan de första tre veckorna.</p></details>
+<details><summary>Passar den min maskin?</summary><p>Ja. Den fungerar i alla maskiner oavsett märke och modell – front- och toppmatade, även kombinerade tvätt- och torkmaskiner.</p></details>
+<details><summary>Kan den skada maskinen?</summary><p>Nej, den är framtagen för att vara skonsam mot både gummilister och metalldelar.</p></details>
+<details><summary>Luktar tabletten något?</summary><p>Nej, den är helt parfymfri.</p></details>
+
+<div class="nt-final">
+<div class="nt-media sq" style="margin:0 0 18px"><video autoplay muted loop playsinline preload="metadata" poster="https://cdn.shopify.com/s/files/1/1055/3239/1772/files/preview_images/551a8eeda0784e278ca4d1f4dfd2c28d.thumbnail.0000000000.jpg?v=1790698187"><source src="https://cdn.shopify.com/videos/c/vp/551a8eeda0784e278ca4d1f4dfd2c28d/551a8eeda0784e278ca4d1f4dfd2c28d.HD-720p-1.6Mbps-95908985.mp4" type="video/mp4"></video></div>
+<h2>Luktar tvätten fortfarande instängt?</h2>
+<p>Då är det inte tvättmedlets fel. Det är ekosystemet inne i din tvättmaskin – och nu vet du hur du blir av med det.</p>
+<a class="nt-btn" href="/products/norrtvatt-maskinvard-for-tvattmaskiner">Beställ Maskinrent →<small>Upp till 50 % rabatt · fri frakt · 30 dagars garanti</small></a>
+</div>
+
+<p class="nt-small">Det här är en annons från Norrtvätt. Uttalanden om NASA avser forskningen kring biofilm i slutna vattensystem; Maskinrent är inte utvecklad av eller associerad med NASA.</p>
+
+</div>
+
+<div class="nt-sticky"><div class="txt"><b>TIDIG HÖSTREA</b>Upp till 50 % rabatt + fri frakt</div><a href="/products/norrtvatt-maskinvard-for-tvattmaskiner">Se erbjudandet</a></div>

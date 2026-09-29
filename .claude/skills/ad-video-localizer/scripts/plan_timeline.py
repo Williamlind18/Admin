@@ -19,7 +19,7 @@ IDs refer to the NN of NN.txt/NN.mp3.
 Usage:
   plan_timeline.py SENT_DIR --video-duration 110.4 [--order 1,2,3,...]
                    [--anchor 9:end=44.3-46.6 --anchor 19:start=87.4-89.6]
-                   [--gap 0.18] [--max-tempo 1.12]
+                   [--gap 0.18] [--max-tempo 1.10]
 Writes SENT_DIR/plan.json.
 """
 import argparse
@@ -56,7 +56,7 @@ def main():
     ap.add_argument("--max-gap", type=float, default=0.45, help="never stretch pauses beyond this")
     ap.add_argument("--lead", type=float, default=0.10, help="first word starts here")
     ap.add_argument("--tail", type=float, default=0.25, help="last word ends this long before the video ends")
-    ap.add_argument("--max-tempo", type=float, default=1.12, help="warn above this speed-up")
+    ap.add_argument("--max-tempo", type=float, default=1.10, help="warn above this speed-up (aim <= 1.08)")
     ap.add_argument("--step", type=float, default=0.1)
     a = ap.parse_args()
 

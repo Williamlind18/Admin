@@ -73,7 +73,8 @@ def main():
                    "TOO LONG - shorten the script before generating")
         print(f"video {a.video_duration:.1f}s, room for speech {avail:.1f}s -> needs tempo x{need:.2f}: {verdict}")
     if changed:
-        print("CHANGED lines (old audio renamed to NN.old.mp3, regenerate these):", ", ".join(sid(i) for i in changed))
+        print("CHANGED lines (old audio renamed to NN.old.mp3; make a new whole take, see SKILL.md \"Changed sentences\"):",
+              ", ".join(sid(i) for i in changed))
 
 
 if __name__ == "__main__":

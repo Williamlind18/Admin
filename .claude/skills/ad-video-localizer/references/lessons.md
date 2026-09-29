@@ -30,6 +30,15 @@
 - If the original ad has music under the voice, it cannot be separated here (source-separation models
   are blocked). The output is voice-only unless the user supplies the music file. Mix it with
   `render.py --bed music.mp3 --bed-db -16`.
+- **Music from ElevenLabs** (Maskinrent video 3, when the user asked for new music):
+  - Add a `music` node with `creative_add_flow_node`, using `eleven_music_v2_5` and model_parameters
+    `{"duration_seconds": <video length>, "lyrics_type": "instrumental", "instrumental": true}`.
+  - Run it with `creative_run_flow_nodes` and `generations_count: 1`. It cost ≈2 700 credits for 102 s.
+  - Describe the sound, not the story: genre, mood, instruments, tempo and how the energy develops.
+  - The track came back at about -15 LUFS. Trim it to the video length with a 1-1.5 s fade-out, and mix it
+    with `render.py --bed music_bed.wav --bed-db -14`, about 15 dB under the voice.
+  - With a bed, render.py's QA line counts the music as speech. Check caption coverage and pauses
+    against `vo.wav` instead.
 - The loudness target -14 LUFS (`loudnorm`) suits TikTok, Reels and Shorts.
 - eleven_v3 speaks about 13 % slower than multilingual_v2, so budget for it.
 - With atempo, up to about 1.08× tempo is inaudible. Keep the offer/CTA section at or under about 1.10×.
@@ -58,6 +67,18 @@
   may move and flicker). Look at gridded frames every 0.2 s, and size each box to cover the full
   extent plus a margin. End the boxes exactly at the scene cut; find it with frame differences at
   30 fps. Then check a 0.2 s grid of the render to confirm that nothing peeks out.
+
+- **Foreign text on a moving object** (Maskinrent video 3: a "Lipase" label on a bottle that tilts and moves
+  while it pours):
+  - Track the text in every frame. Mask the white paper, fill its holes, keep the dark ink pixels, and
+    take their centroid and PCA angle.
+  - Smooth the track over about 5 frames.
+  - Write one ASS event per video frame with `\pos`, `\org` and `\frz`. Put the event boundaries
+    halfway between frames, floored to centiseconds.
+  - End the box once the edge of the frame cuts the word to letters that read the same in Swedish
+    ("Lip…").
+  - Build ASS lines in a Python file or a quoted heredoc (`<<'EOF'`). An unquoted bash heredoc turns
+    `\\an`, `\\frz` and `\\bord` into Python escape characters, and the tags silently stop working.
 
 ## Footage and content
 - Look for **other brands in the footage** (packaging, websites, logos) and warn the user. Offer to cover

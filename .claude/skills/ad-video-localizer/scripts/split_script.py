@@ -16,7 +16,7 @@ to NN.old.mp3 so a stale clip is never used - regenerate those sentences.
 
 Also prints a length budget so you can see *before spending credits* whether
 the script fits the video.
-Usage: split_script.py SCRIPT.txt SENT_DIR [--video-duration SEC] [--model eleven_v3]
+Usage: split_script.py SCRIPT.txt SENT_DIR [--video-duration SEC] [--model eleven_v3] [--rate CHARS_PER_S]
 """
 import argparse
 import os
@@ -26,7 +26,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import clean_word, save_json, sid  # noqa: E402
 
 # Measured speaking rates (characters incl. spaces per second of speech) for a
-# Swedish female voice. Other voices/languages differ by +-15 %.
+# Swedish female voice. Other voices differ a lot: the slow, older male voice
+# "Äldre man 1" read eleven_v3 at only ~13.9 chars/s. Pass --rate for the voice
+# in use (see references/elevenlabs.md) - a take that runs long costs a re-take.
 RATE = {"eleven_v3": 16.3, "eleven_multilingual_v2": 19.3, "eleven_flash_v2_5": 18.0}
 
 
@@ -37,6 +39,7 @@ def main():
     ap.add_argument("--video-duration", type=float)
     ap.add_argument("--model", default="eleven_v3")
     ap.add_argument("--gap", type=float, default=0.18)
+    ap.add_argument("--rate", type=float, help="speaking rate of this voice in chars/s (overrides the model default)")
     a = ap.parse_args()
     os.makedirs(a.sent_dir, exist_ok=True)
     lines = [l.strip() for l in open(a.script, encoding="utf-8") if l.strip()]
@@ -58,12 +61,12 @@ def main():
         fh.write(" ".join(w + "." for w in iso_words) + "\n")
     save_json(iso_map, os.path.join(a.sent_dir, "iso_map.json"))
 
-    rate = RATE.get(a.model, 16.3)
+    rate = a.rate or RATE.get(a.model, 16.3)
     chars = sum(len(l) for l in lines)
     est = chars / rate
     print(f"{len(lines)} sentences, {chars} characters (~{chars} credits with {a.model}, "
           f"~{len(' '.join(w + '.' for w in iso_words)) // 2} credits for the flash word reference)")
-    print(f"estimated speech with {a.model}: {est:.1f}s")
+    print(f"estimated speech with {a.model} at {rate:.1f} chars/s: {est:.1f}s")
     if a.video_duration:
         avail = a.video_duration - 0.35 - (len(lines) - 1) * a.gap
         need = est / avail

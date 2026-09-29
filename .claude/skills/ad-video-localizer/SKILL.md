@@ -76,7 +76,9 @@ Note down:
 ### 3. Write the script
 Follow `references/script-writing.md`. Save the result as `WORK/script.txt`, one sentence per line, in
 spoken order. Then check the length:
-`python3 $SK/split_script.py WORK/script.txt WORK/sent --video-duration D`.
+`python3 $SK/split_script.py WORK/script.txt WORK/sent --video-duration D [--rate R]`.
+The speaking rate depends on the voice. For a voice you have not measured, check its rate first (see
+`references/elevenlabs.md`).
 Show the user the complete numbered script and get approval before spending credits. Mention any
 compliance flags once in that same message.
 

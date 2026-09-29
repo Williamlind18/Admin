@@ -30,6 +30,14 @@ therefore has to come from how the audio is generated, which means **one take**.
 | `eleven_flash_v2_5` | word-by-word timing reference only | ~0.5 per character | — |
 | `eleven_v4` | offered by the connector, **untested** here | ? | ? |
 
+**The speaking rate depends on the voice.** The eleven_v3 rate above was measured with the female voice
+of the first projects. On Maskinrent video 3 ("UV-testet") the voice "Äldre man 1" read at only
+**~13.9 chars/s**. A script budgeted at 16.3 chars/s came back as a 149 s take for a 101.6 s video and had
+to be shortened and taken again, which wasted about 1 700 credits. With a voice you have not measured,
+generate the first 3-4 lines once with eleven_v3 (~150-250 credits) and divide their characters by the
+seconds of speech. Then pass that rate as `split_script.py --rate R`. If the voice was used in an earlier
+project, use the rate measured there.
+
 Pass `estimate_only: true` to price a call before generating. For a 135 s ad (≈2 100 characters),
 expect about 2 100 credits for the voice take plus about 1 200 for the flash reference.
 

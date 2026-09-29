@@ -8,6 +8,10 @@ Usage:
   render.py --video SRC.mp4 --audio WORK/vo.wav --ass WORK/captions.ass --fonts WORK/fonts
             --out WORK/final.mp4 [--preview WORK/preview.mp4 --preview-mb 28]
             [--bed music.mp3 --bed-db -16] [--check-frames 44.5,90]
+            [--overlay card.png --overlay-start 26.1 --overlay-end 29.95]
+--overlay puts a transparent PNG the size of the video (e.g. an end card with the
+product image and offer box) over the picture between the given times, fading in,
+under the captions.
 """
 import argparse
 import os
@@ -44,23 +48,34 @@ def main():
     ap.add_argument("--preview")
     ap.add_argument("--preview-mb", type=float, default=28.0)
     ap.add_argument("--check-frames", default="", help="times to export as PNG for a visual check")
+    ap.add_argument("--overlay", help="transparent PNG, same size as the video, shown under the captions")
+    ap.add_argument("--overlay-start", type=float, default=0.0)
+    ap.add_argument("--overlay-end", type=float, default=1e9)
+    ap.add_argument("--overlay-fade", type=float, default=0.25, help="fade-in seconds")
     a = ap.parse_args()
 
     ass = a.ass.replace("\\", "/").replace(":", "\\:")
     fonts = a.fonts.replace("\\", "/").replace(":", "\\:")
     vf = f"ass={ass}:fontsdir={fonts}"
+    inputs, fc = ["-i", a.video, "-i", a.audio], []
     if a.bed:
+        inputs += ["-i", a.bed]
         gain = 10 ** (a.bed_db / 20)
-        af = (f"[1:a]aresample=44100[v];[2:a]aresample=44100,volume={gain:.3f},aloop=loop=-1:size=2e9[b];"
-              f"[v][b]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
-        run_ff(["-i", a.video, "-i", a.audio, "-i", a.bed, "-filter_complex", af, "-map", "0:v", "-map", "[a]",
-                "-vf", vf, "-c:v", "libx264", "-crf", str(a.crf), "-preset", "fast", "-pix_fmt", "yuv420p",
-                "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-movflags", "+faststart", "-shortest", a.out])
+        fc.append(f"[1:a]aresample=44100[v];[2:a]aresample=44100,volume={gain:.3f},aloop=loop=-1:size=2e9[b];"
+                  f"[v][b]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
     else:
-        run_ff(["-i", a.video, "-i", a.audio, "-map", "0:v", "-map", "1:a", "-vf", vf,
-                "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-c:v", "libx264", "-crf", str(a.crf), "-preset", "fast",
-                "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-movflags", "+faststart",
-                "-shortest", a.out])
+        fc.append("[1:a]loudnorm=I=-14:TP=-1.5:LRA=11[a]")
+    if a.overlay:
+        n = len(inputs) // 2
+        inputs += ["-loop", "1", "-i", a.overlay]
+        s0, s1 = a.overlay_start, a.overlay_end
+        fc.append(f"[{n}:v]format=rgba,fade=t=in:st={s0}:d={a.overlay_fade}:alpha=1[ov];"
+                  f"[0:v][ov]overlay=0:0:enable='between(t,{s0},{s1})':shortest=1,{vf}[vo]")
+    else:
+        fc.append(f"[0:v]{vf}[vo]")
+    run_ff(inputs + ["-filter_complex", ";".join(fc), "-map", "[vo]", "-map", "[a]", "-c:v", "libx264",
+                     "-crf", str(a.crf), "-preset", "fast", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k",
+                     "-ar", "44100", "-movflags", "+faststart", "-shortest", a.out])
     info = probe(a.out)
     size_mb = os.path.getsize(a.out) / 2 ** 20
     print(f"final: {a.out}  {info['width']}x{info['height']}  {info['duration']:.2f}s  {size_mb:.1f} MB")

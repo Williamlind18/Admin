@@ -44,6 +44,8 @@ def main():
     ap.add_argument("--max-words", type=int, default=3)
     ap.add_argument("--max-chars", type=int, default=15)
     ap.add_argument("--upper", action="store_true", help="ALL CAPS captions")
+    ap.add_argument("--chunks", help="hand-picked chunks: one line per sentence, chunks separated by '|' "
+                                     "(replaces the automatic split)")
     a = ap.parse_args()
     G = load_json(a.words)
     info = probe(a.video)
@@ -76,6 +78,19 @@ def main():
         else:
             merged.append(c)
     chunks = merged
+
+    if a.chunks:  # hand-picked chunks, matched word by word against words_global.json
+        chunks, i = [], 0
+        for line in open(a.chunks, encoding="utf-8"):
+            for part in [p.split() for p in line.split("|") if p.strip()]:
+                c = G[i:i + len(part)]
+                got = [clean(x["w"]).lower() for x in c]
+                if got != [clean(w).lower() for w in part]:
+                    sys.exit(f"--chunks mismatch at word {i}: file has {part}, words_global.json has {got}")
+                chunks.append(c)
+                i += len(part)
+        if i != len(G):
+            sys.exit(f"--chunks covers {i} words but words_global.json has {len(G)}")
 
     events = []
     for n, c in enumerate(chunks):

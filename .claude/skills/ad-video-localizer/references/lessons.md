@@ -66,3 +66,20 @@
 - When the user sends a re-cut of a video you already did, run `analyze_video.py NEW --reference OLD`.
   Unchanged sections keep their timestamps, so earlier anchors can be reused.
 - Rendering 1080×1920 for 110 s takes about 3.5 min on the sandbox. Tell the user it's coming.
+
+## Short ads and end cards (learned on Maskinrent video 3, 30 s)
+- **Voices differ in speed.** The voice "30 år kvinna" spoke about 15.3 characters per second, not the
+  16.3 that `split_script.py` assumes. The first take (487 characters, estimated ×1.07) needed ×1.14.
+  Trimming 36 characters of wording without losing content ("tvättmaskinen" → "maskinen", dropping
+  "fortfarande", "De har NASA-klassade enzymer som …" → "NASA-klassade enzymer …") and a new take
+  gave ×1.00-1.06. With a voice you haven't measured yet, aim for an estimate of ≤ ×1.00 before the take.
+- In a short ad the original's timestamps were almost the same as the scene cuts, and the unanchored
+  plan already landed within ~0.3 s of every key visual. One anchor (the NASA line on the microscope/
+  astronaut shot) was enough. More anchors pushed single blocks up to ×1.16.
+- The original had no price. The user wanted the offer anyway, and a 30 s voice has no room for it, so it
+  went on an **end card** instead (`make_endcard.py` + `render.py --overlay`): the product photo, and
+  under it a white box saying "HÖSTREA / Upp till 50 % rabatt", from the CTA to the end.
+- **Product photo:** the store domain was blocked, and the connected Shopify connector belonged to a
+  different store (Hjärtelag SE, not Norrtvätt). Cropping the product photo from the user's screenshot
+  (about 520 px, scaled up to about 560 px) looked sharp enough.
+- On this video the user said the competitor's box may stay visible, the same as on video 2.

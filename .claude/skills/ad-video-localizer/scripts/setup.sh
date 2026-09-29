@@ -9,7 +9,7 @@ set -u
 WORK="${1:-.}"
 mkdir -p "$WORK/fonts"
 
-pip install -q imageio-ffmpeg librosa soundfile numpy scipy 2>&1 | grep -vi "warning" | tail -2
+pip install -q imageio-ffmpeg librosa soundfile numpy scipy pillow 2>&1 | grep -vi "warning" | tail -2
 
 if ! command -v espeak-ng >/dev/null 2>&1; then
   apt-get install -y -qq espeak-ng >/dev/null 2>&1 || \

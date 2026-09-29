@@ -132,14 +132,23 @@ python3 $SK/make_captions.py WORK/words_global.json --video WORK/src.mp4 --out-d
 `build_voiceover.py` speeds up with atempo by default. Do not switch to `--stretch rubberband`: it
 sounded robotic to the user. Captions can be tuned with `--y` (vertical position), `--font`,
 `--size`, `--max-words`, `--max-chars` and `--upper`. Read the printed chunk list and fix any clumsy
-splits, e.g. "tre lager: filmen" should become "tre lager | filmen". See `references/lessons.md`
-for hand-picked chunks and for covering burned-in foreign text with label boxes.
+splits, e.g. "tre lager: filmen" should become "tre lager | filmen". To fix them, write
+`WORK/chunks.txt` (one line per sentence, chunks separated by `|`, same words as the script) and rerun
+with `--chunks WORK/chunks.txt`. Never split a particle verb ("bryter | ner"). See
+`references/lessons.md` for covering burned-in foreign text with label boxes.
+
+**Offer end card (if the user wants one).** A product photo with a white offer box under it, e.g.
+"HÖSTREA / Upp till 50 % rabatt":
+`python3 $SK/make_endcard.py --product shot.png --crop x0,y0,x1,y1 --video WORK/src.mp4 --title "HÖSTREA"
+--subtitle "Upp till 50 % rabatt" --font WORK/fonts/Montserrat-ExtraBold.ttf --out WORK/card.png`,
+then pass it to render.py with `--overlay`. Show it from the start of the CTA sentences to the end.
+Only put offers on it that are on the user's page ("upp till 50 %" when only the biggest pack has 50 %).
 
 ### 8. Render and check
 ```
 python3 $SK/render.py --video WORK/src.mp4 --audio WORK/vo.wav --ass WORK/captions.ass \
     --fonts WORK/fonts --out WORK/final.mp4 --preview WORK/preview.mp4 --check-frames 44.2,90.0 \
-    [--bed music.mp3 --bed-db -16]
+    [--bed music.mp3 --bed-db -16] [--overlay WORK/card.png --overlay-start 26.0 --overlay-end 29.95]
 ```
 The QA line must show 0.00 s of speech without a caption and no unintended pauses over 0.5 s. Open
 the check frames at the anchor times with Read, and confirm that the caption shown matches the visual

@@ -29,6 +29,7 @@ therefore has to come from how the audio is generated, which means **one take**.
 | `eleven_multilingual_v2` | older default; ~13 % faster speech | ~1 per character | ~19 chars/s |
 | `eleven_flash_v2_5` | word-by-word timing reference only | ~0.5 per character | — |
 | `eleven_v4` | offered by the connector, **untested** here | ? | ? |
+| `eleven_music_v2_5` | background music bed (see lessons.md, Audio) | 5 250 for 198 s | — |
 
 Pass `estimate_only: true` to price a call before generating. For a 135 s ad (≈2 100 characters),
 expect about 2 100 credits for the voice take plus about 1 200 for the flash reference.

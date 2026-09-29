@@ -21,6 +21,8 @@ reliable channel is the GitHub repo attached to the session.
 ## Returning results
 - The chat file tool (SendUserFile) accepts ≤ 30 MB per file. Send `preview.mp4` (render.py makes it
   ≤ 28 MB) plus the `.srt` and the final script as a `.txt`.
+- GitHub rejects files over 100 MB. A 198 s 1080×1908 render at the default `--crf 21` was 121 MB;
+  `--crf 23` brings it under the limit. Check the size before committing.
 - Commit the full-quality mp4 (≤ 100 MB) to the session's working branch together with the `.srt` and
   script, push it, and give the user the GitHub link to the file. They download it with the download
   button on that page.

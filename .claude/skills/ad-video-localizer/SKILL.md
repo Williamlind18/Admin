@@ -61,7 +61,8 @@ Ask in **one** message for whatever is missing:
 - **The ElevenLabs voice ID.** Check that the ElevenLabs connector tools are available; see
   `references/elevenlabs.md`.
 - **Product facts.** Try WebFetch on their page first; it is often blocked, so ask for screenshots.
-- **Lines or claims that must stay**, and whether they have music to put under the voice.
+- **Lines or claims that must stay**, and whether they have music to put under the voice, or want it
+  generated with ElevenLabs music (see `references/lessons.md`, Audio).
 
 ### 2. Look at the video
 `python3 $SK/analyze_video.py WORK/src.mp4 --out WORK/analysis` (add `--reference OLD.mp4` for a

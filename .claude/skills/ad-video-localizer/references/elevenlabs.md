@@ -21,14 +21,14 @@ catch a wrong ID early.
 ## Models and cost (measured)
 | model | use | credits | Swedish speaking rate |
 |---|---|---|---|
-| `eleven_v4` | final voice in video 2: the user found it the most human, natural pace (a slight echo) | showed 0 in the status results (Sept 2026); check `price` | ~18 chars/s in paragraph takes |
-| `eleven_v3` | final voice in video 1 (user's first choice); the most even pitch in paragraph takes, but reads slowly | ~1 per character | ~15 chars/s |
+| `eleven_v4` | **standard final voice** (user's choice from video 2): most human, natural pace; a slight echo | showed 0 in the status results (Sept 2026); check `price` | ~18 chars/s in paragraph takes |
+| `eleven_v3` | video 1's voice; the most even pitch in paragraph takes, but reads ~15 % slower than v4 | ~1 per character | ~15 chars/s |
 | `eleven_multilingual_v2` | older default; ~13 % faster speech than v3 | ~1 per character | ~19 chars/s |
 | `eleven_flash_v2_5` | word-by-word timing reference only | ~0.5 per character | — |
 | Voice Isolator (`audio_isolation`) | removes echo/room sound from finished audio | ~1 000 per minute of audio | — |
 
 Pass `estimate_only: true` to price a call before generating. For a 110 s ad, expect about 1 900 credits
-for the voice plus about 1 000 for the flash reference. Confirm the model with the user per project.
+for the voice plus about 1 000 for the flash reference.
 
 ## Procedure: one take per paragraph, then split into sentences
 Reading each sentence as a separate generation made the voice drift: different pitch, stress and

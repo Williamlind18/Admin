@@ -5,8 +5,17 @@
   script to the user's product, use the `ad-video-localizer` skill in `.claude/skills/ad-video-localizer/`
   and follow its SKILL.md step by step.
 - Standing preferences for video work:
-  - ElevenLabs `eleven_v3`, one clip per sentence. Ask for the voice ID in every project.
-  - Short pauses of about 0.2 s. Natural, flowing Swedish.
+  - ElevenLabs `eleven_v4` with `language_code: "sv"`. Ask for the voice ID in every project.
+  - Read the script in paragraph takes of 6-9 sentences, never one sentence per generation.
+    Per-sentence takes made the voice sound like different people, and once like a woman.
+    Split each take into sentence clips with `split_takes.py`, then run `tighten_pauses.py`.
+  - The voice must be one consistent speaker. Check pitch per sentence and regenerate the whole
+    paragraph take if a sentence deviates.
+  - Natural speed: never speed the voice up past about x1.08, because it sounds robotic. A slow-down
+    of up to 5 % (`plan_timeline.py --min-tempo 0.95`) is fine.
+  - v4 has a slight echo. Offer the ElevenLabs Voice Isolator (about 1 000 credits per minute) rather
+    than running it unasked.
+  - Pauses of about 0.2-0.3 s, never over about 0.5 s. Natural, flowing Swedish.
   - Never remove content the user wants to keep.
   - Captions are 1-3 words in Montserrat ExtraBold.
   - Deliver a preview in chat, full quality on GitHub and an .srt file.

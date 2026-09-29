@@ -18,12 +18,15 @@ worked, so run them instead of improvising new tooling. Talk to the user in thei
 for the original user), and keep them posted during slow steps (generation ~30 s, render ~3-4 min).
 
 ## The user's standing preferences
-- **Voice:** ElevenLabs with the voice ID they give for *this* project. Ask every time; the ID changes
-  and none is stored. Model: **eleven_v3** in video 1; in video 2 the user preferred **eleven_v4** (more
-  human, natural pace). Confirm the model per project, and send a short sample when in doubt.
-- **One consistent voice:** read the script in paragraph takes (6-9 sentences) with
-  `language_code: "sv"`, never sentence by sentence (that made the voice drift and once turned female).
-- **Pauses:** short and even, about 0.2 s between sentences. Long gaps were the main complaint.
+- **Voice:** ElevenLabs **eleven_v4** with `language_code: "sv"` (the user's standard since Sept 2026:
+  more human, natural pace than eleven_v3) and the voice ID they give for *this* project. Ask for the
+  ID every time; it changes and none is stored.
+- **One consistent voice:** read the script in paragraph takes (6-9 sentences), never sentence by
+  sentence. Per-sentence takes made the voice drift ("two different people") and once turned female.
+  Check the pitch per sentence and regenerate the whole paragraph take if one deviates.
+- **Natural speed:** never speed the voice up past ~x1.08 (it sounds robotic); slowing down by up to
+  5 % is fine (`--min-tempo 0.95`). v4 has a slight echo: offer the Voice Isolator, don't run it unasked.
+- **Pauses:** short and even, about 0.2-0.3 s between sentences, never over ~0.5 s. Long gaps were the main complaint.
 - **Script:** natural, flowing target language. You may rephrase for flow and fit, and should adapt it to
   their product, prices and offers.
 - **Never remove content the user wants kept.** Flag risky claims once and let them decide.

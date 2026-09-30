@@ -17,6 +17,9 @@ När du öppnar en mapp visas en tabell med annonsnamn och AI-märkning, följd 
 
 **Ladda ner:** öppna filen på GitHub och klicka på nedladdningsknappen (pilen uppe till höger).
 
+**Nya bilder med kartongen** (annonsbilder och herobilder till hemsidan) ligger i
+[`NYA_BILDER/`](NYA_BILDER). Där står det också vilken annonsgrupp varje bild passar i.
+
 ---
 
 ## Så här sätter du upp det

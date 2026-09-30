@@ -36,3 +36,27 @@ Bilderna har tom yta till vänster (desktop) eller ovanför kartongen (mobil) f�
 | `hero_desktop_julgran.jpg` | `hero_mobil_julgran.jpg` | **Årets julklapp för hela familjen** – Snabbt puckspel som samlar alla runt bordet. [Handla nu] |
 | `hero_desktop_ljust-bord.jpg` | `hero_mobil_ljust-bord.jpg` | **Inga skärmar. Bara skratt.** – Puckspelet för två spelare, från 6 år. [Handla nu] |
 | `hero_desktop_premium-mork.jpg` | `hero_mobil_premium-mork.jpg` | **Bli av med dina puckar först!** – Beställ i tid till jul. [Handla nu] |
+
+## Produktbilder till hemsidan – [`produktbilder_1x1/`](produktbilder_1x1) (2048×2048, 1:1)
+
+| Bild | Typ |
+|---|---|
+| `01_vit-bakgrund_kartong-och-spel.jpg` | Klassisk packshot på vit bakgrund, kartong och spel (bra som huvudbild) |
+| `02_vit-bakgrund_kartong-och-spel_variant.jpg` | Packshot, lite annan vinkel |
+| `03_vit-bakgrund_snett-fran-sidan.jpg` | Packshot, kartongen snett så att kortsidan syns |
+| `04_vit-bakgrund_ovanifran.jpg` | Kartong och spel ovanifrån, vit bakgrund |
+| `05_produktfakta.jpg` | Produktfakta: 2 spelare, från 6 år, trä, inga batterier, ingen skärm, snabba rundor |
+| `06_sa-spelar-du.jpg` | Så spelar du i tre steg (reglerna från kartongen) |
+| `07_innehall_flat-lay.jpg` | Kartong, bräde och 10 puckar prydligt upplagda |
+| `08_detalj_gummibandet.jpg` | Närbild: pucken dras mot gummibandet |
+| `09_action_puck-genom-halet.jpg` | Mörk actionbild: pucken flyger genom hålet |
+| `10_studio_rod-jul.jpg` | Studio, röd julbakgrund |
+| `11_studio_salviagron.jpg` | Studio, ljus salviagrön bakgrund |
+| `12_present_vit-bakgrund.jpg` | Presentbild med rosett, vit bakgrund |
+| `13_jul_mysigt-soffbord.jpg` | Julmys vid soffbordet |
+| `14_familj_vardagsrum.jpg` | Pappa och barn spelar i vardagsrummet |
+| `15_ovanifran_barn-mot-vuxen.jpg` | Ovanifrån: barn mot vuxen |
+| `16_vinterstuga.jpg` | Vinterstuga med snö utanför |
+| `17_sommar_tradgard.jpg` | Sommar i trädgården (säljer även efter jul) |
+
+Vit bakgrund i 01–04 och 12 är justerad till ren vit (#FFFFFF), som i en vanlig webbutik.

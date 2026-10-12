@@ -61,7 +61,7 @@ Gotthards föräldrar är inte kända. En extra sökning i oktober 2026 hittade 
 | 1100–1400-tal | Riddarsläkten von Brenken (rosor i vapnet, men andra färger). Albracht v. Brenken 1343 = kanske ordensriddaren Albert de Brinken, komtur i Livland 1371–1387 | Lucka: Johanns ursprung okänt. Släkten uppgav 1620 bara "aus Westphalen". Han kan också ha hört till en inhemsk livländsk släkt Brinck |
 | omkr. 1455–1482 | Johann von den Brincken (Sessilen 1462) ∞ Styne tor Deernhorst; förste säkert kände i Kurland | Möjligt: Martin son eller sonson (det fanns fler Brincke, t.ex. Bartholomäus 1486–1500) |
 | 1497–1507 | Martin (Merten) Brincke, stiftsfogde | **Styrkt**: "Hinryck vann dem Bryncke, Mertensz szonne" (Hapsal 1556) |
-| 1556–1558 | Heinrich, Martins son (söner Hermann, Heinrich, Luleff) | Spekulativt: sonen Heinrich = Heinrich på Wallaten och Zezern? Wallaten pekar snarare mot Johann på Perbohnen och Wallaten |
+| 1556–1558 | Heinrich, Martins son; pantsatte 1556 byn Scheden (söner Hermann, Heinrich, Luleff) | Spekulativt: sonen Heinrich = Heinrich på Wallaten och Zezern? Wallaten pekar snarare mot Johann på Perbohnen och Wallaten |
 | död före 1606 | Heinrich på Wallaten och Zezern ∞ Margaretha v. Keyserling | Troligt: arvskiftet 7 aug 1606 |
 | 1606–före 1622 | Heinrich d.ä. på Zezern ∞ Elisabeth v. Stromberg | Troligt: brödernas förlikning 1622, kvitto 1632 |
 | 1622–1660 | Heinrich på Zezern och Sessilen, överhauptman i Goldingen 1648 ∞ I Maria Magdalena v. Lüdinghausen gen. Wolff, ∞ II okänd; far till landhovmästaren Heinrich Christian (1648–1729) | Möjligt, svagt: riddarskapets tabeller kallar Johann Friedrich "Erbh. a. Zezern, Sessilen und Dworsahten", men ingen samtida handling. Fadern kan också vara Barthold |
@@ -83,6 +83,11 @@ Gotthards föräldrar är inte kända. En extra sökning i oktober 2026 hittade 
 4. LVVA Riga: Strasden-processen 1714–1728, om handlingarna finns kvar (Tuckum-domstolens akter eller Groß-Strasdens godsarkiv).
 5. raduraksti.arhivi.lv: Mitau S:t Trinitatis dop 1642–1700 (LVVA 235/5/24) med namnregister (235/5/23), år 1680–1682; även Oberland (Nerft, Salwen, Selburg) om böckerna finns kvar.
 6. Johanns ärvda sigill 1480 (brevet finns bara i avskrift): ett original med sigillet skulle visa rosor, hjort eller kullar.
+7. Martins brev från 1497 finns i original i Riksarkivet i Stockholm (Livonica I, vol. 26). Sitter hans ärvda sigill kvar visar det släktens vapen redan 1497.
+8. Det spekulativa ledet före 1606: en dom 23 februari 1607 gäller "Heinrich von Brinken zur Nitten" (Ziegenhorn 1772, bilaga 97). Är han Heinrich den yngre från arvskiftet 1606 blir ledet Heinrich (1556) → Heinrich på Wallaten starkare.
+9. Heinrich Ernsts äktenskapskontrakt 1700/01 (Herder-Institut, DSHI 190 Kurland XIV,3a Sergemiten 011) kan nämna brudgummens föräldrar och syskon.
+
+Sedan oktober 2026 visas den möjliga linjen direkt i släktträdet (index.html), med ett kort per person och två märken: om personen är belagd och hur säkert släktskapet är med personen ovanför.
 
 ## Vapnet
 

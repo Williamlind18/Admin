@@ -112,9 +112,14 @@ section { display: grid; gap: 1.2rem; padding-block: 3rem 0; }
 /* Generationer */
 .gens { display: grid; gap: 0; }
 .gen { position: relative; display: grid; grid-template-columns: 6.2rem minmax(0, 1fr); gap: 1rem; padding-bottom: 1.6rem; }
-.gen::before { content: ""; position: absolute; left: 2.9rem; top: 0; bottom: 0; width: 4px; background: var(--azure); }
-.gen.likely::before { background: none; border-left: 4px dashed var(--azure); }
-.gen:last-child::before { bottom: auto; height: 2rem; }
+/* Varje sträcka ritas efter betyget på just den länken: ovanför pricken = länken till föräldern, nedanför = länken till nästa kort. */
+.gen::before, .gen::after { content: ""; position: absolute; left: 2.9rem; width: 4px; background: var(--azure); }
+.gen::before { top: 0; height: 1.35rem; }
+.gen::after { top: 1.35rem; bottom: 0; }
+.gen.likely::before, .gen:has(+ .gen.likely)::after { background: none; border-left: 4px dashed var(--azure); }
+.gen.spec::before, .gen:has(+ .gen.spec)::after { background: none; border-left: 4px dotted var(--argent); }
+.gen.first::before { display: none; }
+.gen:last-child::after { display: none; }
 .gen .rail { position: relative; z-index: 1; display: grid; justify-items: center; align-content: start; gap: .3rem; padding-top: .6rem; }
 .gen .dot { width: 1.5rem; height: 1.5rem; border-radius: 50%; background: var(--sheet); border: 5px solid var(--azure); }
 .gen.meet .dot { background: var(--or); border-color: var(--or); }
@@ -163,16 +168,8 @@ figcaption { font-size: var(--small); color: var(--muted); }
 /* Möjlig väg bakåt */
 .badge.maybe { background: var(--azure-soft); color: var(--azure); }
 .badge.maybe::before { border: 3px solid var(--azure); background: transparent; }
-.hypo { display: grid; gap: 0; }
-.hnode { background: var(--sheet); border: 1px solid var(--line); border-radius: 12px; padding: .9rem 1.1rem; display: grid; gap: .3rem; min-width: 0; }
-.hnode .y { font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; font-size: var(--small); }
-.hnode .n { font-weight: 700; font-size: var(--step-1); line-height: 1.3; }
-.hnode.us { border: 2px solid var(--azure); }
-.hlink { display: grid; grid-template-columns: 2.6rem minmax(0, 1fr); gap: .8rem; padding: .5rem 0; }
-.hlink .bar { justify-self: center; width: 0; min-height: 3.5rem; border-left: 5px solid var(--azure); }
-.hlink.l-maybe .bar, .hlink.l-likely .bar { border-left-style: dashed; }
-.hlink.l-spec .bar, .hlink.l-gap .bar { border-left-style: dotted; border-color: var(--argent); }
-.hlink .why { display: grid; gap: .35rem; font-size: var(--small); align-content: center; min-width: 0; }
+.badges { display: flex; flex-wrap: wrap; gap: .4rem; }
+.gen.gaprow .gapbox { margin-bottom: 0; }
 
 /* Svinhufvud */
 .branch { display: grid; gap: 0; border-left: 4px solid var(--or); margin-left: .6rem; }
@@ -199,6 +196,7 @@ tr:last-child td { border-bottom: 0; }
 
 /* Nästa steg */
 ol.steps { margin: 0; padding-left: 1.5rem; display: grid; gap: 1rem; }
+#nasta h3 { color: var(--azure); margin-top: .6rem; }
 ol.steps li { padding-left: .3rem; }
 ol.steps li > strong { display: block; }
 code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .92em; background: var(--azure-soft); padding: .05rem .3rem; border-radius: 4px; overflow-wrap: anywhere; }
@@ -210,15 +208,14 @@ footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line
   .hero img { max-width: 12rem; margin: 0 auto; }
   .facts3, .pics, .people, .arms-pair { grid-template-columns: minmax(0, 1fr); }
   .gen { grid-template-columns: 3.4rem minmax(0, 1fr); gap: .6rem; }
-  .gen::before { left: 1.55rem; }
+  .gen::before, .gen::after { left: 1.55rem; }
   .gen .num { font-size: .85rem; }
   .spine li { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .tl { grid-template-columns: minmax(0, 1fr); gap: .3rem; }
   dl.data { grid-template-columns: minmax(0, 1fr); gap: 0; }
   dl.data dd { margin-bottom: .4rem; }
   .person { grid-template-columns: 5rem minmax(0, 1fr); }
-  .hlink { grid-template-columns: 1.6rem minmax(0, 1fr); gap: .5rem; }
-}
+  }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 @media print {
   @page { size: A4; margin: 14mm 13mm; }
@@ -248,7 +245,7 @@ footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line
 </header>
 
 <div class="dedication">
-  <p><strong>Till farfar Christer.</strong> Du har lagt år på att resa runt och läsa kyrkböcker. Den här sidan fortsätter där din antavla slutar. Den visar vägen från Samuel Lindström, född 1858, bakåt till Gotthard Diedrich von den Brincken och hans släkt i Kurland och Tyskland.</p>
+  <p><strong>Till farfar Christer.</strong> Du har lagt år på att resa runt och läsa kyrkböcker. Den här sidan fortsätter där din antavla slutar. Den visar vägen från Samuel Lindström, född 1858, bakåt till Gotthard Diedrich von den Brincken och hans släkt i Kurland. Den visar också ett osäkert spår ännu längre bakåt.</p>
   <p class="small muted">Allt här bygger på källor som går att kontrollera. Under varje person finns länkar där man kan läsa mer. Där något är osäkert står det tydligt.</p>
 </div>
 
@@ -275,17 +272,24 @@ footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line
 <section aria-labelledby="h-linje">
   <div class="section-intro">
     <h2 id="h-linje">Stamlinjen i korthet</h2>
-    <p>Klicka på ett namn för att läsa mer om personen längre ner.</p>
+    <p>Klicka på ett namn för att läsa mer om personen längre ner. Allt ovanför Gotthard är ett spår, inte bevis.</p>
   </div>
   <div class="legend">
-    <div class="row"><span class="ln"></span><span><strong>Heldragen linje:</strong> styrkt i kyrkböcker eller tryckta källor.</span></div>
-    <div class="row"><span class="ln dash"></span><span><strong>Streckad linje:</strong> mycket troligt, men vilar på en slutsats.</span></div>
-    <div class="row"><span class="ln dot"></span><span><strong>Prickad linje:</strong> släkttradition eller ännu okänt led.</span></div>
+    <div class="row"><span class="ln"></span><span><strong>Heldragen linje:</strong> styrkt i kyrkböcker eller andra handlingar.</span></div>
+    <div class="row"><span class="ln dash"></span><span><strong>Streckad linje:</strong> troligt eller möjligt, men vilar på en slutsats.</span></div>
+    <div class="row"><span class="ln dot"></span><span><strong>Prickad linje:</strong> spekulativt, tradition eller ett okänt led.</span></div>
   </div>
   <ol class="spine">
-    <li class="gap"><span class="y">1100-talet</span><span>Conradus de Brincken, plats okänd <span class="r">Släkttradition, inte bevisad</span></span></li>
-    <li class="gap"><span class="y">1461</span><span><a href="#kurland">Johann von den Brincken</a> får jord i Kurland <span class="r">Den förste säkert kände i Kurland. En möjlig väg ned till Gotthard finns, se <a href="#mojlig">Möjlig väg bakåt</a>.</span></span></li>
-    <li><span class="y">1681–1735</span><span><a href="#gotthard">Gotthard Diedrich von den Brincken</a><span class="r">Krigsfånge, sedan löjtnant vid Upplands regemente</span></span></li>
+    <li class="gap"><span class="y">1100-talet</span><span><a href="#conradus">Conradus de Brincken</a><span class="r">Nämnd en gång. Ingen påvisbar koppling</span></span></li>
+    <li class="gap"><span class="y">1100–1400-t.</span><span><a href="#brenken">Släkten von Brenken</a><span class="r">Spekulativt. Bara vår egen gissning</span></span></li>
+    <li class="gap"><span class="y">ca 1455–1482</span><span><a href="#johann">Johann von den Brincken</a><span class="r">Förste säkert kände i Kurland. Ursprung okänt</span></span></li>
+    <li class="likely"><span class="y">1497–1507</span><span><a href="#martin">Martin Brincke</a><span class="r">Stiftsfogde. Johanns son eller sonson?</span></span></li>
+    <li><span class="y">1556</span><span><a href="#heinrich1556">Heinrich, Martins son</a><span class="r">Styrkt son till Martin</span></span></li>
+    <li class="gap"><span class="y">d. före 1606</span><span><a href="#heinrichwallaten">Heinrich på Wallaten och Zezern</a><span class="r">Spekulativt led</span></span></li>
+    <li class="likely"><span class="y">1606</span><span><a href="#heinrich1606">Heinrich den äldre på Zezern</a></span></li>
+    <li class="likely"><span class="y">1622–1660</span><span><a href="#heinrich1622">Heinrich på Zezern och Sessilen</a><span class="r">Överhauptman i Goldingen</span></span></li>
+    <li class="likely"><span class="y">d. senast 1691</span><span><a href="#jf">Kapten Johann Friedrich</a><span class="r">Gift med Agnesa Buttlar. Möjligen Gotthards far</span></span></li>
+    <li class="likely"><span class="y">1681–1735</span><span><a href="#gotthard">Gotthard Diedrich von den Brincken</a><span class="r">Krigsfånge, sedan löjtnant vid Upplands regemente</span></span></li>
     <li><span class="y">1730–1803</span><span><a href="#henrik">Henrik Fredrik von den Brincken</a><span class="r">Sergeant. Gift med Märta Johanna Svinhufvud af Qvalstad</span></span></li>
     <li class="likely"><span class="y">1770–1808</span><span><a href="#axel">Axel Magnus Brink</a><span class="r">Korpral vid Upplands regemente</span></span></li>
     <li><span class="y">1794–1869</span><span><a href="#lena">Lena Johanna Brink</a><span class="r">Bondhustru i Lilla Moga, Almunge</span></span></li>
@@ -310,7 +314,7 @@ footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line
       <div class="what">
         <h3>Conradus de Brincken</h3>
         <span class="badge trad">Släkttradition</span>
-        <p>Namnet finns i en odaterad förteckning från 1100-talet över greve Siegfried IV av Boyneburgs gods: ”de gods som Conradus de Brincken innehade”. Senare författare kallade honom den förste kände mannen i släkten och daterade honom till omkring 1130. Det är den enda kända uppgiften om honom, och kopplingen till den kurländska släkten är inte bevisad.</p>
+        <p>Namnet finns en enda gång, i en odaterad förteckning från 1100-talet. Senare författare gjorde honom till släktens förste man ”omkring 1130”, men kopplingen till den kurländska släkten är inte bevisad. <a href="#conradus">Mer om Conradus i trädet</a>.</p>
         <p class="links"><a href="https://www.digitale-sammlungen.de/de/view/bsb10016257?page=369">Kindlinger 1793, s. 37 (digitaliserad)</a><a href="https://de.wikipedia.org/wiki/Brincken_(baltisches_Adelsgeschlecht)">Släktartikel på tyska Wikipedia</a></p>
       </div>
     </div>
@@ -328,7 +332,7 @@ footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line
       <div class="what">
         <h3>Johann von den Brincken – Kurland</h3>
         <span class="badge ok">Styrkt i urkunder</span>
-        <p>Den förste säkert kände von den Brincken i Kurland, och släkten räknar honom som sin stamfar. Åren 1461 och 1462 fick Johann von den Brincken jord i Kurland av ordensmästaren Johann von Mengede. Han var sändebud för Livländska orden och togs 1464 upp i Tyska ordens brödraskap i Königsberg. Tyska Wikipedia menar att det rör sig om två kusiner med samma namn. Utgivarna av de kurländska godsbreven vid Herder-Institut räknar däremot med en enda Johann. Åren 1429–1439 var en Arnold von Brinken domprost i Riga. Ingen handling visar att han var släkt med Johann.</p>
+        <p>Den förste säkert kände von den Brincken i Kurland, och släkten räknar honom som sin stamfar. Åren 1461–1465 fick han jord i Kurland av ordensmästaren Johann von Mengede. Åren 1429–1439 var en Arnold von Brinken domprost i Riga, men ingen handling visar att han var släkt med Johann. <a href="#johann">Mer om Johann i trädet</a>.</p>
         <p class="links"><a href="https://de.wikipedia.org/wiki/Johann_von_den_Brincken">Johann von den Brincken (tyska Wikipedia)</a><a href="https://bbld.de/GND12881201X">Baltisches Biografisches Lexikon</a></p>
       </div>
     </div>
@@ -342,157 +346,255 @@ footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line
       </div>
     </div>
     <div class="gapbox">
-      <strong>Här tar källorna slut: Gotthards föräldrar är okända</strong>
-      <p>Ingen källa vi hittat namnger Gotthards far och mor. Han var född i Kurland 1681 och bar släktens namn. I en dombok från 1736–1737 kallas han ”välborne”. Så tilltalade man adelsmän. Exakt var han passar in i den kurländska släkten är nästa stora forskningsuppgift. Ett möjligt spår finns i avsnittet <a href="#mojlig">Möjlig väg bakåt</a>.</p>
+      <strong>Här tar de säkra källorna slut: Gotthards föräldrar är inte bevisade</strong>
+      <p>Ingen källa vi hittat namnger Gotthards far och mor. Han var född i Kurland 1681 och bar släktens namn. I en dombok från 1736–1737 kallas han ”välborne”. Så tilltalade man adelsmän. Exakt var han passar in i den kurländska släkten är nästa stora forskningsuppgift. Ett spår, med betyg på varje led, finns i trädet nedan från <a href="#conradus">Conradus</a> till <a href="#gotthard">Gotthard</a>.</p>
     </div>
-  </div>
-</section>
-
-<section aria-labelledby="h-mojlig" id="mojlig">
-  <div class="section-intro">
-    <h2 id="h-mojlig">Möjlig väg bakåt</h2>
-    <p>Gotthards föräldrar är inte kända. Men en extra sökning har hittat ett spår, och från det spåret går det att dra en <strong>möjlig</strong> linje bakåt genom den kurländska släkten till Johann von den Brincken (1461). Längre bakåt än Johann finns inga handlingar, bara gissningar om Westfalen.</p>
-    <p class="note"><strong>Det här är spår, inte bevis.</strong> Varje led har fått ett betyg efter att granskare prövat det mot källorna. Linjen ska inte föras in i antavlan som säker förrän de svaga leden har prövats.</p>
-  </div>
-  <div class="legend">
-    <div class="row"><span class="ln"></span><span><strong>Styrkt</strong>: står i handlingar.</span></div>
-    <div class="row"><span class="ln dash"></span><span><strong>Troligt</strong> eller <strong>möjligt</strong>: följer av handlingarna, eller passar i tid, plats och namn. Märket vid varje led visar vilket.</span></div>
-    <div class="row"><span class="ln dot"></span><span><strong>Spekulativt</strong> eller <strong>lucka</strong>: en tänkbar förklaring, eller ett okänt antal led.</span></div>
-  </div>
-  <div class="hypo">
-
-    <div class="hnode">
-      <span class="y">1100-talet</span>
-      <span class="n">Conradus de Brincken</span>
-      <p class="small">Nämns en enda gång, som tidigare innehavare av gods i en förteckning över greve Siegfried IV av Boyneburgs egendomar. Han är den äldste kände med ett liknande namn. Någon koppling till släkten går inte att visa.</p>
-    </div>
-    <div class="hlink l-spec">
-      <span class="bar"></span>
-      <div class="why"><span class="badge trad">Spekulativt</span><p>En tänkbar förklaring är att han hörde till släkten von Brenken nära Paderborn. Deras namn skrevs ibland ”de Brinken”, men bara mellan 1275 och 1363. På 1100-talet skrevs släkten Brenken eller Brenkun, och ingen Conrad är känd i den.</p></div>
-    </div>
-
-    <div class="hnode">
-      <span class="y">1100–1400-talet</span>
-      <span class="n">Riddarsläkten von Brenken vid Paderborn</span>
-      <p class="small">Westfalisk släkt. Ingen gammal källa säger att von den Brincken kom från den här släkten. Tanken kommer från vår egen sökning. Deras vapen har rosor, liksom det kurländska, men i andra färger och en annan uppställning. Rosor är vanliga i vapen, så likheten säger inte mycket. År 1343 nämns bröderna Friedrich, Volmar och <strong>Albracht</strong> von Brenken. En <strong>Albert de Brinken</strong> var riddare i Tyska orden i Livland 1371–1387, bland annat komtur, alltså chef för ordens borg och område, i Pernau och Riga. Det kan vara samma man (möjligt). Som ordensriddare var han ogift, så han kan inte vara Johanns förfader. Men han visar att släkten kan ha haft band till Livland.</p>
-      <p class="links"><a href="https://www.westfaelische-geschichte.de/que86462">Handlingen från 1343 (Westfälische Geschichte)</a></p>
-    </div>
-    <div class="hlink l-gap">
-      <span class="bar"></span>
-      <div class="why"><span class="badge trad">Lucka</span><p>Ingen handling visar var Johann kom ifrån. Släkten uppgav själv 1620 bara att den kom ”aus Westphalen”. Ingen källa säger att den kom från släkten von Brenken. Den kopplingen är vår egen gissning. De utförligare stamtavlorna från 1700- och 1800-talet har lånat in sägner från andra släkter med liknande namn. Johann kan lika gärna ha hört till en inhemsk livländsk släkt Brinck, som nämns 1408–1504. Ett sigill från den släkten år 1504 visar en hjort. Men Johanns eget vapen är okänt, så det avgör inte frågan.</p></div>
-    </div>
-
-    <div class="hnode">
-      <span class="y">nämnd omkring 1455–1482</span>
-      <span class="n">Johann von den Brincken</span>
-      <p class="small">Sändebud för Livländska orden till de tyska länderna omkring 1455. Fick Sessilen och annan jord i Kurland 1461–1465. Gift med Styne (Christina) tor Deernhorst. Han är den förste säkert kände von den Brincken i Kurland, och släkten har sedan 1620 räknat honom som sin stamfar. Men ingen handling säger vem som var hans son.</p>
-    </div>
-    <div class="hlink l-maybe">
-      <span class="bar"></span>
-      <div class="why"><span class="badge maybe">Möjligt</span><p>Martin kan vara Johanns son eller sonson. Martin beseglade 1497 ett brev med sitt ärvda släktsigill, så han var av adlig börd. Han hade redan då bönder i Goldingens område, där Johann bodde 1467. Men det fanns fler med namnet Brincke i Kurland, till exempel Bartholomäus (nämnd 1486–1500). Uppgiften om en Heinrich däremellan, omkring 1490, går inte att belägga.</p></div>
-    </div>
-
-    <div class="hnode">
-      <span class="y">nämnd 1497–1507</span>
-      <span class="n">Martin (Merten) Brincke</span>
-      <p class="small">Herre till Nitten och Scheden. Fick 1505 jord i Amboten av biskopen i Kurland. Stiftsfogde, alltså biskopens fogde i Kurland, 1506–1507.</p>
-    </div>
-    <div class="hlink l-ok">
-      <span class="bar"></span>
-      <div class="why"><span class="badge ok">Styrkt</span><p>I en handling från Hapsal 1556 kallar sig sonen ”Hinryck vann dem Bryncke, Mertensz szonne”, alltså Martins son.</p></div>
-    </div>
-
-    <div class="hnode">
-      <span class="y">nämnd 1556–1558</span>
-      <span class="n">Heinrich von dem Brincke, Martins son</span>
-      <p class="small">Hade Nitten och Scheden. En Heinrich som troligen är samma man hade jord vid Goldingen och nämner 1556 sina söner Hermann, Heinrich och Luleff.</p>
-    </div>
-    <div class="hlink l-spec">
-      <span class="bar"></span>
-      <div class="why"><span class="badge trad">Spekulativt</span><p>Att hans son Heinrich är samma man som Heinrich på Wallaten och Zezern bygger bara på namnet och tiden. I varje generation fanns minst två vuxna män som hette Heinrich. Godset Wallaten låg långt västerut, nära Perbohnen. Det pekar snarare mot en Johann på Perbohnen och Wallaten. Senare släkttabeller gör honom till Martins son, men det är inte belagt. Vägen mellan Martin och Zezern-grenen är alltså oklar.</p></div>
-    </div>
-
-    <div class="hnode">
-      <span class="y">död före 1606</span>
-      <span class="n">Heinrich på Wallaten och Zezern</span>
-      <p class="small">Gift med Margaretha von Keyserling.</p>
-    </div>
-    <div class="hlink l-likely">
-      <span class="bar"></span>
-      <div class="why"><span class="badge likely">Troligt</span><p>Den 7 augusti 1606 delade bröderna Heinrich den äldre, Heinrich den yngre och Adrian sin fars arv. Heinrich den äldre fick Zezern. Handlingen från 1606 nämner inte faderns namn. Men släkttabeller som Klopmann återger 1856 säger att Heinrich på Wallaten och Zezern hade en son Heinrich på Zezern, gift med Elisabeth von Stromberg.</p></div>
-    </div>
-
-    <div class="hnode">
-      <span class="y">fick Zezern 1606 · död före 1622</span>
-      <span class="n">Heinrich den äldre på Zezern</span>
-      <p class="small">Gift med Elisabeth von Stromberg.</p>
-    </div>
-    <div class="hlink l-likely">
-      <span class="bar"></span>
-      <div class="why"><span class="badge likely">Troligt</span><p>År 1622 gjorde bröderna Barthold, Christian och Heinrich, ”söner till Heinrich”, upp om Zezern. Barthold hade ärvt Zezern som äldste son, så fadern hade haft Zezern, och det var Heinrich den äldre som fick Zezern 1606. År 1632 gav systern Anna Margaretha ett kvitto på sin hemgift till Heinrich och till ”modern Elisabeth von Stromberg”.</p></div>
-    </div>
-
-    <div class="hnode">
-      <span class="y">nämnd 1622–1660</span>
-      <span class="n">Heinrich på Zezern och Sessilen</span>
-      <p class="small">Överhauptman, alltså högste ämbetsman, i Goldingens distrikt 1648. Gift först med Maria Magdalena von Lüdinghausen, kallad Wolff. Gifte senare om sig, med en kvinna vars namn är okänt. Far till Heinrich Christian (1648–1729), som blev landhovmästare, alltså regeringschef, i Kurland.</p>
-    </div>
-    <div class="hlink l-maybe">
-      <span class="bar"></span>
-      <div class="why"><span class="badge maybe">Möjligt, svagt</span><p>Riddarskapets släkttabeller kallar Johann Friedrich ”herre till Zezern, Sessilen och Dworsahten”. Zezern och Sessilen var den här grenens gods. Men tabellerna är ofta felaktiga, och ingen handling från hans egen tid kallar honom herre till Zezern eller Sessilen. En tryckt stamtavla från 1843 kallar också Heinrichs bror Barthold herre till Zezern och Sessilen. Fadern kan alltså lika gärna vara Barthold. Om fadern är Heinrich kan modern vara Maria eller hans andra hustru.</p></div>
-    </div>
-
-    <div class="hnode">
-      <span class="y">död senast 1691</span>
-      <span class="n">Kapten Johann Friedrich von den Brincken</span>
-      <p class="small">Herre till Dworsahten 1671. Kapten när han dog. Troligen samma man som löjtnanten Johann Friedrich på Rittenhof i Oberland, som levde 1687. Gift andra gången, senast 1671, med <strong>Agnesa Buttlar</strong> från godset Groß-Strasden i Kandau socken.</p>
-      <p class="links"><a href="https://dspace.ut.ee/server/api/core/bitstreams/bf8e69ae-9125-4cfa-9cf8-926be86b5d90/content">Fircks 1900, om Strasden (bokens s. 104–113, sidorna 107–116 i PDF-filen)</a></p>
-    </div>
-    <div class="hlink l-maybe">
-      <span class="bar"></span>
-      <div class="why"><span class="badge maybe">Möjligt, svagt</span><p>Paret hade omyndiga barn 1691, så en son född 1681 passar. Gotthard gav sina egna barn namn som Fridrich, Magnus och Didrich. Sådana namn fanns i Johann Friedrichs och Agnesas släkt, men de var vanliga i Kurland. Några Brincken-arvingar processade om pengar från Strasden och fick betalt vid en förlikning i januari 1728. Året därpå fick Gotthard lov att resa till Kurland, men tidpunkten bevisar inte mycket. Ingen källa nämner en son Gotthard. De som krävde pengarna var Friedrich, hans omyndige brorson och Sybilla Barbara, och de verkar ha fått hela summan.</p></div>
-    </div>
-
-    <div class="hnode us">
-      <span class="y">1681–1735</span>
-      <span class="n"><a href="#gotthard">Gotthard Diedrich von den Brincken</a></span>
-      <p class="small">Härifrån och ned till William är linjen styrkt i källorna, utom ett led. Att korpralen Axel Magnus är Henrik Fredriks son är mycket troligt, men det är en slutsats.</p>
-    </div>
-  </div>
-
-  <div class="panel">
-    <h3>Andra möjligheter</h3>
-    <ul class="small" style="margin:0;padding-left:1.2rem;display:grid;gap:.35rem">
-      <li>Gotthards föräldrar kan också vara Ernst von den Brincken på Wormen och Catharina Agnes von der Brüggen från Klein-Strasden. Det spåret är svagare.</li>
-      <li>Johann Friedrichs far kan vara Barthold, bror till Heinrich på Zezern.</li>
-      <li>Martin kan vara Johanns son eller sonson. Han kan också vara släkt med en annan Brincke i Kurland, till exempel Bartholomäus (nämnd 1486–1500), och inte med Johann.</li>
-      <li>Johann kan ha tillhört en inhemsk livländsk släkt Brinck i stället för att komma från Westfalen.</li>
-      <li>Om släkten kom från Westfalen kan den lika gärna höra ihop med riddarsläkten von Brinke vid Borgholzhausen, se <a href="#kurland">Släkten före Gotthard</a>. Släktens gamla sägner passar bättre med den släkten, men den hade tre kullar i vapnet, inte rosor.</li>
-    </ul>
-  </div>
-
-  <div class="panel">
-    <h3>Så kan spåret prövas</h3>
-    <ol class="small" style="margin:0;padding-left:1.3rem;display:grid;gap:.5rem">
-      <li><strong>Ett enda uppslag kan avgöra mycket.</strong> <em>Genealogisches Handbuch des Adels, Freiherrliche Häuser B, band V</em> (= GHdA band 48, 1970), sidorna 67–85, har hela släkten Brincken. Boken finns på Uppsala universitetsbibliotek, Kungliga biblioteket och Riksarkivets bibliotek. Titta efter Johann Friedrich, hans barn och en Gotthard i svensk tjänst.</li>
-      <li><strong>Riddarskapets egna släkttabeller</strong> finns hos Herder-Institut i Marburg: DSHI 190 Kurland VI,2 Nr. 36 (tre band). Frågor kan skickas till dshi@herder-institut.de. För att se själva tabellerna krävs tillstånd från Kurländska riddarskapets ordförande. Be därför också om en kopia av den moderna avskriften av alla tabellerna, DSHI 190 Kurland VI,3 Brincken Nr. 3.</li>
-      <li><strong>Gotthards resetillstånd 31 mars 1729</strong> söktes av regementschefen, generalmajor Otto Wilhelm Staël von Holstein. Ansökan i Riksarkivet eller Krigsarkivet kan säga vad resan gällde, till exempel ett arv.</li>
-      <li><strong>Strasden-processen 1714–1728</strong> kan finnas i Lettlands historiska statsarkiv (LVVA) i Riga, i domstolens akter från Tuckum eller i godset Groß-Strasdens arkiv. Vi vet inte om handlingarna finns kvar. Om de gör det kan de räkna upp alla arvingar.</li>
-      <li><strong>Dopböcker:</strong> Mitau S:t Trinitatis 1642–1700 (LVVA 235/5/24) finns gratis på raduraksti.arhivi.lv efter registrering. Börja med församlingens namnregister (LVVA 235/5/23) och sök under B efter Brincken, åren 1680–1682. Familjen kan också ha bott i Oberland, i socknarna Nerft, Salwen eller Selburg. Sök där också om böckerna finns kvar.</li>
-      <li><strong>Sigillen:</strong> Johann beseglade 1480 ett brev med sitt ärvda sigill, men brevet finns bara i avskrift. Hittas ett original med hans sigill visar det vilket vapen han förde: rosor som den kurländska släkten, en hjort som den livländska släkten Brinck, eller tre kullar som de westfaliska släkterna Brinke och Brinck. Det skulle säga mycket om var han kom ifrån.</li>
-    </ol>
   </div>
 </section>
 
 <section aria-labelledby="h-gen">
   <div class="section-intro">
     <h2 id="h-gen">Generation för generation</h2>
-    <p>Från Gotthard och framåt i tiden. Siffran till vänster visar hur många generationer före William personen levde.</p>
+    <p>Från den äldsta möjliga förfadern och framåt i tiden. Siffran till vänster visar hur många generationer före William personen levde.</p>
+    <p class="note"><strong>Korten ovanför Gotthard är ett spår, inte bevis.</strong> Varje sådant kort har två märken. Det första visar om personen själv finns i källorna. Det andra visar hur säkert släktskapet är med personen ovanför. Från Gotthard och nedåt är linjen styrkt, utom ett led (Axel Magnus).</p>
+  </div>
+  <div class="legend">
+    <div class="row"><span class="ln"></span><span><strong>Heldragen linje:</strong> styrkt.</span></div>
+    <div class="row"><span class="ln dash"></span><span><strong>Streckad linje:</strong> troligt eller möjligt. Märket på kortet visar vilket.</span></div>
+    <div class="row"><span class="ln dot"></span><span><strong>Prickad linje:</strong> spekulativt, tradition eller ett okänt antal led.</span></div>
   </div>
 
   <div class="gens">
 
+    <div class="gen first">
+      <div class="rail"><span class="dot"></span><span class="num">?</span></div>
+      <article class="card" id="conradus">
+        <div class="head">
+          <span class="years">1100-talet</span>
+          <h3>Conradus de Brincken</h3>
+          <p class="role">Den äldste kände med ett liknande namn</p>
+          <p class="kin">Ingen påvisbar koppling till släkten</p>
+          <div class="badges"><span class="badge ok">Personen: nämnd i en källa</span><span class="badge trad">Släktskap: tradition</span></div>
+        </div>
+        <p>Conradus nämns en enda gång, i en förteckning över greve Siegfried IV av Boyneburgs egendomar. Där står att Bernhard av Lippe nu har det mesta av de gods ”som Conradus de Brincken innehade”. Förteckningen saknar datum. Forskare har daterat den olika, från 1130-talet till omkring 1190.</p>
+        <p>Senare författare gjorde honom till släktens förste man ”omkring 1130”. Någon koppling till von den Brincken i Kurland går inte att visa.</p>
+        <dl class="data">
+          <dt>Källa</dt><dd>Kindlinger, <em>Münsterische Beiträge</em> III (1793), urkund 13, s. 37.</dd>
+          <dt>Plats</dt><dd>Okänd. Ingen plats och inga släktingar nämns.</dd>
+        </dl>
+        <p class="links">
+          <a href="https://www.digitale-sammlungen.de/de/view/bsb10016257?page=369">Kindlinger 1793, s. 37 (digitaliserad)</a>
+          <a href="https://de.wikipedia.org/wiki/Brincken_(baltisches_Adelsgeschlecht)">Släktartikel på tyska Wikipedia</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="gen spec">
+      <div class="rail"><span class="dot"></span><span class="num">?</span></div>
+      <article class="card" id="brenken">
+        <div class="head">
+          <span class="years">1100–1400-talet</span>
+          <h3>Riddarsläkten von Brenken vid Paderborn</h3>
+          <p class="role">Westfalisk adelssläkt i Brenken vid floden Alme</p>
+          <p class="kin">Tänkbar ursprungssläkt. Spekulativt, bara vår egen gissning</p>
+          <div class="badges"><span class="badge ok">Släkten: styrkt</span><span class="badge trad">Koppling till Conradus: spekulativ</span></div>
+        </div>
+        <p>Släkten von Brenken tjänade biskopen av Paderborn. Mellan 1275 och 1363 skrevs namnet ibland ”de Brinken” eller ”van den Brincken”. På 1100-talet skrevs det Brenken eller Brenkun, och ingen Conrad är känd i släkten. Ingen gammal källa säger att von den Brincken kom härifrån. Tanken kommer från vår egen sökning.</p>
+        <p>Den 8 februari 1343 nämns bröderna Friedrich, Volmar och Albracht von Brenken. En Albert de Brinken var riddare i Tyska orden i Livland 1371–1387, bland annat komtur, alltså chef för ordens borg och område, i Pernau och Riga. Det kan vara samma man som Albracht. Som ordensriddare var han ogift, så han kan inte vara Johanns förfader. Men han visar att släkten kan ha haft band till Livland.</p>
+        <dl class="data">
+          <dt>Vapen</dt><dd>Rosor, liksom det kurländska vapnet, men i andra färger och en annan uppställning. Rosor är vanliga i vapen, så likheten säger inte mycket.</dd>
+        </dl>
+        <p class="links">
+          <a href="https://www.westfaelische-geschichte.de/que86462">Handlingen från 1343 (Westfälische Geschichte)</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="gen spec gaprow">
+      <div class="rail"><span class="dot"></span><span class="num">?</span></div>
+      <div class="gapbox">
+        <strong>Lucka: ett okänt antal led</strong>
+        <p>Ingen handling visar var Johann kom ifrån. Släkten uppgav själv 1620 bara att den kom ”aus Westphalen”. Ingen källa säger att den kom från släkten von Brenken. De utförligare stamtavlorna från 1700- och 1800-talet har lånat in sägner från andra släkter med liknande namn. Johann kan lika gärna ha hört till en inhemsk livländsk släkt Brinck, som nämns 1408–1504.</p>
+      </div>
+    </div>
+
+    <div class="gen spec">
+      <div class="rail"><span class="dot"></span><span class="num">17–18 led</span></div>
+      <article class="card" id="johann">
+        <div class="head">
+          <span class="years">nämnd omkring 1455–1482</span>
+          <h3>Johann von den Brincken</h3>
+          <p class="role">Ordensvasall i Kurland · herre till Sessilen</p>
+          <p class="kin">Möjlig förfader · Martins far eller farfar</p>
+          <div class="badges"><span class="badge ok">Personen: styrkt i urkunder</span><span class="badge trad">Ursprung: okänt</span></div>
+        </div>
+        <p>Johann är den förste säkert kände von den Brincken i Kurland, och släkten har sedan 1620 räknat honom som sin stamfar. Omkring 1455 utsåg Livländska orden en Johan Brinck till sändebud till de tyska länderna. Troligen var det han. Ordensmästaren Johann von Mengede gav honom sedan jord i Kurland i flera omgångar.</p>
+        <dl class="data">
+          <dt>Förläningar</dt><dd>9 oktober 1461 vid Windau, 11 januari 1462, 5 juli 1462 Sessilen nära Frauenburg, och 12 maj 1465.</dd>
+          <dt>Tyska orden</dt><dd>Upptagen i ordens brödraskap i Königsberg den 26 mars 1464.</dd>
+          <dt>Senare</dt><dd>Kallas ”olde Johan” vid domstolen i Goldingen 1480. Ett av fyra ombud för vasallerna i Kurland vid adelns möte i Waimel 1482.</dd>
+          <dt>Öppen fråga</dt><dd>Släktartikeln om Brincken på tyska Wikipedia menar att det fanns två kusiner som hette Johann. Utgivarna av de kurländska godsbreven räknar med en.</dd>
+        </dl>
+        <div class="spouse">
+          <p class="who">Gift med Styne (Christina) tor Deernhorst</p>
+          <p class="small">Hon nämns 1467 och 1471.</p>
+        </div>
+        <p class="note small">Ingen handling säger vem som var Johanns son. Martin, som följer här, kan vara hans son eller sonson.</p>
+        <p class="links">
+          <a href="https://de.wikipedia.org/wiki/Johann_von_den_Brincken">Johann von den Brincken (tyska Wikipedia)</a>
+          <a href="https://dbs.herder-institut.de/kurlaendische-gueterurkunden/?lang=de&amp;suchstring1=Brincke">Godsbreven (Herder-Institut)</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="gen likely">
+      <div class="rail"><span class="dot"></span><span class="num">16 led</span></div>
+      <article class="card" id="martin">
+        <div class="head">
+          <span class="years">nämnd 1497–1507</span>
+          <h3>Martin (Merten) Brincke</h3>
+          <p class="role">Herre till Nitten och Scheden · stiftsfogde</p>
+          <p class="kin">Möjlig förfader · Gotthards farfars farfars farfar, om spåret stämmer</p>
+          <div class="badges"><span class="badge ok">Personen: styrkt i urkunder</span><span class="badge maybe">Son eller sonson till Johann: möjligt</span></div>
+        </div>
+        <p>Martin beseglade 1497 ett brev med sitt ärvda släktsigill, så han var av adlig börd. Han hade redan då bönder i Goldingens område, där Johann bodde 1467.</p>
+        <dl class="data">
+          <dt>Gods</dt><dd>Köpte Nitten och Scheden 1500 och fick dem i förläning 1501. Fick samma år jord vid Goldingen.</dd>
+          <dt>Biskopens tjänst</dt><dd>Fick den 3 mars 1505 jord i Amboten av biskop Heinrich II av Kurland. Stiftsfogde, alltså biskopens fogde, 1506–1507.</dd>
+          <dt>Gift</dt><dd>Senare släktböcker säger Anna von Lambsdorff. Men släktens egen anlista från 1620 talar emot det. Den tyder snarare på en hustru av släkten Sacken eller Buttler.</dd>
+          <dt>Öppen fråga</dt><dd>Tyska Wikipedia menar att förläningarna 1501 och 1505 gällde två olika män som hette Martin. Registret till <em>Livländisches Urkundenbuch</em> räknar med en.</dd>
+        </dl>
+        <p class="note small">Varför möjligt? Martin kan vara Johanns son eller sonson. Men det fanns fler med namnet Brincke i Kurland, till exempel Bartholomäus (nämnd 1486–1500). Uppgiften om en Heinrich mellan Johann och Martin, omkring 1490, går inte att belägga.</p>
+        <p class="links">
+          <a href="https://dbs.herder-institut.de/kurlaendische-gueterurkunden/?lang=de&amp;suchstring1=Brincke">Godsbreven (Herder-Institut)</a>
+          <a href="https://www.digitale-sammlungen.de/de/view/bsb00134097?page=590">Livländisches Urkundenbuch II:2</a>
+        </p>
+      </article>
+    </div>
+
     <div class="gen">
+      <div class="rail"><span class="dot"></span><span class="num">15 led</span></div>
+      <article class="card" id="heinrich1556">
+        <div class="head">
+          <span class="years">nämnd 1556–1558</span>
+          <h3>Heinrich von dem Brincke</h3>
+          <p class="role">Martins son · Nitten och Scheden</p>
+          <p class="kin">Möjlig förfader · Gotthards farfars farfars far, om spåret stämmer</p>
+          <div class="badges"><span class="badge ok">Personen: styrkt</span><span class="badge ok">Son till Martin: styrkt</span></div>
+        </div>
+        <p>I ett brev skrivet i Hapsal 1556 kallar han sig ”Hinryck vann dem Bryncke, Mertensz szonne”, alltså Martins son. Där pantsätter han byn Scheden, som låg nära hans gård Nitten. Martin hade förvärvat både Nitten och Scheden.</p>
+        <dl class="data">
+          <dt>Gods</dt><dd>Nitten och Scheden. En Heinrich som troligen är samma man hade jord vid Goldingen.</dd>
+          <dt>Söner</dt><dd>En Heinrich, troligen samma man, nämner 1556 sina söner Hermann, Heinrich och Luleff.</dd>
+          <dt>Gift</dt><dd>Osäkert. Olika källor nämner Elisabeth von Hastfer och Margarethe Korff.</dd>
+        </dl>
+        <p class="note small">Varför är nästa led spekulativt? I varje generation fanns minst två vuxna män som hette Heinrich. Att sonen Heinrich är samma man som Heinrich på Wallaten och Zezern bygger bara på namnet och tiden. Godset Wallaten låg vid Hasenpoth, ungefär sju mil väster om Zezern. Det pekar snarare mot en Johann på Perbohnen och Wallaten. Tyska Wikipedia och en tysk adelskalender gör också den Johann till Martins son, men det är inte belagt.</p>
+        <p class="links">
+          <a href="https://dbs.herder-institut.de/kurlaendische-gueterurkunden/?lang=de&amp;suchstring1=erg0327">Brevet från Hapsal 1556 (Herder-Institut)</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="gen spec">
+      <div class="rail"><span class="dot"></span><span class="num">14 led</span></div>
+      <article class="card" id="heinrichwallaten">
+        <div class="head">
+          <span class="years">död före 1606</span>
+          <h3>Heinrich von den Brincken på Wallaten och Zezern</h3>
+          <p class="role">Herre till Wallaten och Zezern</p>
+          <p class="kin">Möjlig förfader · Gotthards farfars farfar, om spåret stämmer</p>
+          <div class="badges"><span class="badge likely">Personen: troligt</span><span class="badge trad">Son till Heinrich (1556): spekulativt</span></div>
+        </div>
+        <p>Riddarskapets släkttabeller, som Klopmann återger 1856, nämner honom som herre till Wallaten och Zezern. En Heinrich Brinck i Frauenburg nämns 1574. Han var troligen far till de bröder som delade sin fars arv den 7 augusti 1606. Då var fadern död.</p>
+        <dl class="data">
+          <dt>Gift</dt><dd>Med Margaretha von Keyserling från Okten, enligt senare släktböcker.</dd>
+          <dt>Barn</dt><dd>Troligen Heinrich den äldre, Heinrich den yngre och Adrian. Några av bröderna var utomlands 1606. Det kan ha funnits fler bröder.</dd>
+          <dt>Obs</dt><dd>Tyska Wikipedia säger att han nämns i en handling från 1528. Det stämmer inte. Handlingen från 1528 nämner bara en bondgård som hörde till släkten Brincken. Den nämner ingen Heinrich.</dd>
+        </dl>
+        <p class="links">
+          <a href="https://www.digitale-sammlungen.de/de/view/bsb10782878?page=143">Klopmann 1856, s. 123</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="gen likely">
+      <div class="rail"><span class="dot"></span><span class="num">13 led</span></div>
+      <article class="card" id="heinrich1606">
+        <div class="head">
+          <span class="years">fick Zezern 1606 · död före 1622</span>
+          <h3>Heinrich von den Brincken den äldre</h3>
+          <p class="role">Herre till Zezern</p>
+          <p class="kin">Möjlig förfader · Gotthards farfars far, om spåret stämmer</p>
+          <div class="badges"><span class="badge ok">Personen: styrkt</span><span class="badge likely">Son till Heinrich på Wallaten: troligt</span></div>
+        </div>
+        <p>Den 7 augusti 1606 delade han och bröderna Heinrich den yngre och Adrian sin fars arv. Heinrich den äldre fick Zezern. Han betalade var och en av bröderna 5 500 rigiska mark.</p>
+        <dl class="data">
+          <dt>Död</dt><dd>Före 22 december 1622.</dd>
+          <dt>Barn</dt><dd>Troligen sönerna Barthold (äldst), Christian (riddarskapets fänrik, herre till Schwarden) och Heinrich. Det fanns minst fem döttrar. Tre av dem är kända: Anna Margaretha (gift med Johann Blomberg), Dorothea (gift med Johann Pfiel) och Sophie (gift med Johann von Walden).</dd>
+        </dl>
+        <div class="spouse">
+          <p class="who">Gift med Elisabeth von Stromberg</p>
+          <p class="small">Änka 1622, levde den 6 april 1632. Enligt senare släkttavlor dotter till Christian von Stromberg på Bresilgen.</p>
+        </div>
+        <p class="note small">Varför troligt? Handlingen från 1606 nämner inte faderns namn. Men släkttabellerna säger att Heinrich på Wallaten och Zezern hade en son Heinrich på Zezern, gift med Elisabeth von Stromberg.</p>
+        <p class="links">
+          <a href="https://www.digitale-sammlungen.de/de/view/bsb10782878?page=143">Klopmann 1856, s. 123–124</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="gen likely">
+      <div class="rail"><span class="dot"></span><span class="num">12 led</span></div>
+      <article class="card" id="heinrich1622">
+        <div class="head">
+          <span class="years">nämnd 1622–1660</span>
+          <h3>Heinrich von den Brincken på Zezern och Sessilen</h3>
+          <p class="role">Överhauptman i Goldingen</p>
+          <p class="kin">Möjlig förfader · Gotthards farfar, om spåret stämmer</p>
+          <div class="badges"><span class="badge ok">Personen: styrkt</span><span class="badge likely">Son till Heinrich den äldre: troligt</span></div>
+        </div>
+        <p>Den 22 december 1622 gjorde bröderna Barthold, Christian och Heinrich, ”söner till Heinrich”, upp om Zezern. Barthold hade ärvt godset som äldste son men lämnade det till Heinrich. År 1632 gav systern Anna Margaretha ett kvitto på sin hemgift till Heinrich och till ”modern Elisabeth von Stromberg”.</p>
+        <p>År 1648 var han överhauptman, alltså högste ämbetsman, i Goldingens distrikt. År 1660 var han uppbördsman i Frauenburg.</p>
+        <dl class="data">
+          <dt>Gift</dt><dd>Först med Maria Magdalena von Lüdinghausen, kallad Wolff (nämnd 1635), dotter till Johann von Lüdinghausen, kallad Wolff, som var hertigens råd och hauptman i Frauenburg. Gifte senare om sig, med en kvinna vars namn är okänt.</dd>
+          <dt>Barn</dt><dd>Heinrich Christian (1648–1729), som blev landhovmästare, alltså regeringschef, i Kurland. Dottern Sophia Elisabeth, gift med F. G. von Offenberg. Kanske också Johann Friedrich.</dd>
+        </dl>
+        <p class="note small">Varför är nästa led bara möjligt? Riddarskapets släkttabeller kallar Johann Friedrich ”herre till Zezern, Sessilen och Dworsahten”. Zezern och Sessilen var den här grenens gods. Men tabellerna är ofta felaktiga, och ingen handling från hans egen tid kallar honom herre till Zezern eller Sessilen. En tryckt stamtavla från 1843 kallar också brodern Barthold herre till Zezern och Sessilen. Johann Friedrichs far kan alltså lika gärna vara Barthold.</p>
+        <p class="links">
+          <a href="https://bbld.de/GND1183495374">Om sonen Heinrich Christian (Baltisches Biografisches Lexikon)</a>
+          <a href="https://de.wikipedia.org/wiki/Heinrich_Christian_von_den_Brincken">Heinrich Christian (tyska Wikipedia)</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="gen likely">
+      <div class="rail"><span class="dot"></span><span class="num">11 led</span></div>
+      <article class="card" id="jf">
+        <div class="head">
+          <span class="years">död senast 1691</span>
+          <h3>Kapten Johann Friedrich von den Brincken</h3>
+          <p class="role">Herre till Dworsahten · kapten</p>
+          <p class="kin">Möjlig förfader · Gotthards far, om spåret stämmer</p>
+          <div class="badges"><span class="badge ok">Personen: styrkt</span><span class="badge maybe">Son till Heinrich på Zezern: möjligt, svagt</span></div>
+        </div>
+        <p>Johann Friedrich nämns som herre till Dworsahten 1671. Han är troligen samma man som löjtnanten Johann Friedrich på Rittenhof i Oberland, som var uppbördsman där 1684–1687. Han var kapten när han dog, senast i september 1691.</p>
+        <dl class="data">
+          <dt>Första äktenskapet</dt><dd>Hustruns namn är okänt. Sonen Heinrich Ernst ärvde godset Wolgund.</dd>
+          <dt>Barn med Agnesa</dt><dd>De var omyndiga 1691. Troligen sonen Friedrich och dottern Sybilla Barbara, gift med löjtnant Jakob Friedrich Henning. Troligen också en son som dog och lämnade en omyndig son. Kanske också Gotthard.</dd>
+        </dl>
+        <div class="spouse">
+          <p class="who">Gift andra gången, senast 1671, med Agnesa Buttlar</p>
+          <p class="small">Dotter till Magnus Buttlar på godset Groß-Strasden i Kandau socken. Ett kvitto på hennes hemgift, 6 000 polska floriner, finns från den 5 juli 1671.</p>
+        </div>
+        <p class="note small">Är han Gotthards far? Det är möjligt men svagt. Paret hade omyndiga barn 1691, så en son född 1681 passar. Gotthard gav sina egna barn namn som Fridrich, Magnus och Didrich, och sådana namn fanns i Johann Friedrichs och Agnesas släkt. Men namnen var vanliga i Kurland. Några Brincken-arvingar processade om pengar från Strasden och fick betalt vid en förlikning i januari 1728. Året därpå fick Gotthard lov att resa till Kurland, men tidpunkten bevisar inte mycket. Ingen källa nämner en son Gotthard. De som krävde pengarna var Friedrich, hans omyndige brorson och Sybilla Barbara, och de verkar ha fått hela summan.</p>
+        <p class="links">
+          <a href="https://dspace.ut.ee/server/api/core/bitstreams/bf8e69ae-9125-4cfa-9cf8-926be86b5d90/content">Fircks 1900, om Strasden (bokens s. 104–113, sidorna 107–116 i PDF-filen)</a>
+          <a href="https://archive.org/details/bub_gb_s5tDAAAAcAAJ/page/n291/mode/1up">Lantdagsbesluten 1684–1687, s. 263, 284 och 296 (Quellen des Curländischen Landrechts)</a>
+        </p>
+      </article>
+    </div>
+
+    <div class="gen likely">
       <div class="rail"><span class="dot"></span><span class="num">10 led</span></div>
       <article class="card" id="gotthard">
         <div class="head">
@@ -500,7 +602,7 @@ footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line
           <h3>Gotthard Diedrich von den Brincken</h3>
           <p class="role">Löjtnant vid Upplands regemente · född i Kurland</p>
           <p class="kin">Williams farfars farfars farmors morfars farfar</p>
-          <span class="badge ok">Styrkt i källor</span>
+          <div class="badges"><span class="badge ok">Personen: styrkt i källor</span><span class="badge maybe">Son till Johann Friedrich: möjligt, svagt</span></div>
         </div>
         <p>Gotthard var fanjunkare i gardet hos kurfursten av Sachsen och togs till fånga av svenskarna i slaget vid Fraustadt den 3 februari 1706. Omkring 370 sachsiska fångar skickades till Upplands städer.</p>
         <p>I Uppsala, på kvällen den 30 april 1707, spelade han och några andra fångar klot hos borgaren Mårten Sundman. Det blev bråk med grannen, akademivaktmästaren Per Persson Norman. Gotthard slog honom med en stör och kamraten von Gersdorph skar honom med kniv. Rådhusrätten i Uppsala dömde dem till böter, men de kunde inte betala. Enligt lagen var straffet då halshuggning. Med stöd av ett beslut från riksrådet den 12 juni 1707 mildrades straffet till tre veckor på vatten och bröd på Uppsala slott. Ett vittne hade sagt till Gotthard: <em>”Är I icke Een fånge skall I så regera i Sverrige!”</em></p>
@@ -802,6 +904,22 @@ footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line
   </div>
 </section>
 
+<section aria-labelledby="h-mojlig" id="mojlig">
+  <div class="section-intro">
+    <h2 id="h-mojlig">Andra möjligheter</h2>
+    <p>Spåret i trädet är det bästa vi har hittat, men det finns andra sätt att läsa källorna.</p>
+  </div>
+  <div class="panel">
+    <ul class="small" style="margin:0;padding-left:1.2rem;display:grid;gap:.35rem">
+      <li>Gotthards föräldrar kan också vara Ernst von den Brincken på Wormen och Catharina Agnes von der Brüggen från Klein-Strasden. Det spåret är svagare.</li>
+      <li>Johann Friedrichs far kan vara Barthold, bror till Heinrich på Zezern.</li>
+      <li>Martin kan vara Johanns son eller sonson. Han kan också vara släkt med en annan Brincke i Kurland, till exempel Bartholomäus (nämnd 1486–1500), och inte med Johann.</li>
+      <li>Johann kan ha tillhört en inhemsk livländsk släkt Brinck i stället för att komma från Westfalen.</li>
+      <li>Om släkten kom från Westfalen kan den lika gärna höra ihop med riddarsläkten von Brinke vid Borgholzhausen, se <a href="#kurland">Släkten före Gotthard</a>. Sägner som lades till släktens historia på 1700- och 1800-talet pekar mot den trakten. Men de är lånade från en annan släkt. Släkten von Brinke hade dessutom tre kullar i vapnet, inte rosor.</li>
+    </ul>
+  </div>
+</section>
+
 <section aria-labelledby="h-svin" id="svinhufvud">
   <div class="section-intro">
     <h2 id="h-svin">Märta Johannas släkt: Svinhufvud af Qvalstad</h2>
@@ -905,7 +1023,7 @@ footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line
         <tr><td>Henrik Fredrik, son till Gotthard</td><td><span class="badge ok">Styrkt</span></td><td>Dopboken i Alunda 1730 och Sven Larson 1979. Elgenstierna bekräftar att han gifte sig med Märta Johanna.</td></tr>
         <tr><td>Gotthards liv i Sverige</td><td><span class="badge ok">Styrkt</span></td><td>Lewenhaupt 1920, byggd på Riksarkivets handlingar, och Larson 1979, byggd på domböcker. Generalmönstringsrullan 1714.</td></tr>
         <tr><td>Gotthards föräldrar i Kurland</td><td><span class="badge trad">Okänt</span></td><td>Inte funna. Bästa spåret är kapten Johann Friedrich von den Brincken och Agnesa Buttlar, men det är bara möjligt. Geni anger godset Strasden som födelseort, men vi har inte sett någon källa för det.</td></tr>
-        <tr><td>Linjen från Johann Friedrich till Johann (1461)</td><td><span class="badge maybe">Blandat</span></td><td>Ett led är styrkt och två är troliga. Tre är möjliga och ett är spekulativt. Se <a href="#mojlig">Möjlig väg bakåt</a>.</td></tr>
+        <tr><td>Linjen från Johann Friedrich till Johann (1461)</td><td><span class="badge maybe">Blandat</span></td><td>Ett led är styrkt och två är troliga. Två är möjliga och ett är spekulativt. Se korten från <a href="#johann">Johann</a> till <a href="#jf">Johann Friedrich</a> i trädet.</td></tr>
         <tr><td>Conradus de Brincken, 1100-talet</td><td><span class="badge trad">Tradition</span></td><td>En enda odaterad uppgift. Kopplingen till Kurland är inte bevisad. En tänkbar bro via släkten von Brenken är spekulativ.</td></tr>
         <tr><td>Svinhufvud af Qvalstad till 1500-talet</td><td><span class="badge ok">Styrkt</span></td><td>Elgenstiernas ättartavlor.</td></tr>
       </tbody>
@@ -916,8 +1034,9 @@ footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line
 <section aria-labelledby="h-nasta" id="nasta">
   <div class="section-intro">
     <h2 id="h-nasta">Nästa steg för farfar</h2>
-    <p>Förslag på var forskningen kan fortsätta. Riksarkivets bilder är gratis att se på nätet.</p>
+    <p>Förslag på var forskningen kan fortsätta. De första stegen gäller den styrkta linjen. De följande gäller spåret bakåt från Gotthard. Riksarkivets bilder är gratis att se på nätet.</p>
   </div>
+  <h3>Den styrkta linjen</h3>
   <ol class="steps">
     <li><strong>Bekräfta de fem dopposterna i Riksarkivet</strong>
       Då har du själv sett de viktigaste länkarna i kedjan. Att soldaten Axel Magnus är pojken som föddes på Foghammar 1770 är ändå en slutsats. Klicka på ett bild-id så öppnas bilden hos Riksarkivet:
@@ -928,14 +1047,35 @@ footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line
       <br>Samuel 1858: Almunge C:4, <a href="https://sok.riksarkivet.se/bildvisning/C0030130_00100"><code>C0030130_00100</code></a></li>
     <li><strong>Gotthards dödsdag</strong>
       Begravningsnotisen finns i Knutby C:2, sidan 327 (1735). Datumet är svårläst, troligen oktober.</li>
-    <li><strong>Gotthards föräldrar i Kurland</strong>
-      Det här är den stora frågan. Börja med släktboken <em>Genealogisches Handbuch des Adels, Freiherrliche Häuser B, band V</em> (1970), sidorna 67–85, som finns på Uppsala universitetsbibliotek, KB och Riksarkivets bibliotek. Fler förslag finns under <a href="#mojlig">Möjlig väg bakåt</a>. Kurländska kyrkböcker finns digitalt hos Lettlands historiska statsarkiv på <a href="https://raduraksti.arhivi.lv/">raduraksti.arhivi.lv</a>.</li>
     <li><strong>Krigsarkivet i Stockholm</strong>
-      Upplands regementes rullor 1709–1733, med generalmönstringsrullan 1714 för majorens kompani. Kungens resetillstånd från mars 1729 kan finnas i Krigsarkivet eller i riksregistraturet. Det kan nämna familjen i Kurland.</li>
+      Upplands regementes rullor 1709–1733 för majorens kompani. Rullorna från 1710 och 1714 säger bara att han var född i Kurland. Senare rullor kan ge en socken eller ett gods.</li>
     <li><strong>Sachsiska arkiv</strong>
       Kursachsiska gardets rullor från 1702–1706 kan finnas i Sächsisches Hauptstaatsarchiv i Dresden. Sådana rullor anger ibland födelseort.</li>
     <li><strong>Övriga linjer</strong>
       Ingen koppling till Brincken hittades via Hedrén, Ersdotter, Olsson, Norberg eller farmor Ingrids linjer. De kan ändå ha egna spännande historier.</li>
+  </ol>
+  <h3>Spåret bakåt från Gotthard</h3>
+  <ol class="steps">
+    <li><strong>Slå upp släktboken. Det enskilt viktigaste steget.</strong>
+      <em>Genealogisches Handbuch des Adels, Freiherrliche Häuser B, band V</em> (= GHdA band 48, 1970), sidorna 67–85, har hela släkten Brincken. Boken finns på Uppsala universitetsbibliotek, Kungliga biblioteket och Riksarkivets bibliotek. Titta efter kapten Johann Friedrich, hans barn, barnen till Heinrich på Zezern och en Gotthard i svensk tjänst. Ett enda uppslag kan stärka eller fälla de två leden närmast ovanför Gotthard.</li>
+    <li><strong>Riddarskapets egna släkttabeller i Marburg</strong>
+      Herder-Institut i Marburg har Kurländska riddarskapets släkttabeller över Brincken, DSHI 190 Kurland VI,2 Nr. 36 (tre band). Frågor kan skickas till dshi@herder-institut.de. För att se själva tabellerna krävs tillstånd från riddarskapets ordförande. Be därför också om en kopia av den moderna avskriften av alla tabellerna, DSHI 190 Kurland VI,3 Brincken Nr. 3.</li>
+    <li><strong>Heinrich Ernsts äktenskapskontrakt</strong>
+      Johann Friedrichs son Heinrich Ernst gifte sig troligen 1700 eller 1701 med Sophia Amelia von Blomberg. Kontraktet finns i Marburg, DSHI 190 Kurland XIV,3a Sergemiten 011. Även för det krävs tillstånd från riddarskapets ordförande. Sådana kontrakt nämner ofta brudgummens föräldrar och syskon, och kanske Gotthard.</li>
+    <li><strong>Ansökan bakom Gotthards resa 1729</strong>
+      Resetillståndet den 31 mars 1729 söktes av regementschefen, generalmajor Otto Wilhelm Staël von Holstein. Kungens beslut finns troligen i riksregistraturet i Riksarkivet. Själva ansökan kan finnas bland regementschefernas skrivelser i Krigsarkivet. Den kan säga vad resan gällde, till exempel ett arv.</li>
+    <li><strong>Strasden-processen i Riga</strong>
+      Processen om pengarna från Strasden pågick 1714–1728. Handlingarna kan finnas i Lettlands historiska statsarkiv (LVVA) i Riga, i domstolens akter från Tuckum eller i godset Groß-Strasdens arkiv. Vi vet inte om de finns kvar. Om de gör det kan de räkna upp alla arvingar.</li>
+    <li><strong>Dopböcker i Kurland</strong>
+      Johann Friedrichs gods Wolgund låg i Mitaus socken. Dopboken för Mitau S:t Trinitatis 1642–1700 (LVVA 235/5/24) finns gratis på <a href="https://raduraksti.arhivi.lv/collections/1:4:11:2055:2394">raduraksti.arhivi.lv</a> efter registrering. Där heter namnregistret ”Alfabētiskais rādītājs”. Börja med församlingens namnregister (LVVA 235/5/23) och sök under B efter Brincken, åren 1680–1682. Familjen kan också ha bott i Oberland, i socknarna Nerft, Salwen eller Selburg. Kyrkböcker från så tidig tid finns troligen inte kvar där. I Kandau socken, där Strasden låg, börjar kyrkböckerna först 1747.</li>
+    <li><strong>Fråga var ”Strasden” kommer ifrån</strong>
+      Två svenska släktträd på MyHeritage anger Strasden i Kandau socken som Gotthards födelseort, men utan källa. Geni har uppgiften från dem. Skicka ett meddelande till dem som sköter träden och fråga var uppgiften kommer ifrån.</li>
+    <li><strong>Det spekulativa ledet före 1606</strong>
+      En dom från den 23 februari 1607 gäller ”Heinrich von Brinken zur Nitten”. Han hade alltså Martins gård Nitten efter att Heinrich på Wallaten och Zezern hade dött. Om han är samma man som Heinrich den yngre i arvskiftet 1606, blir ledet mellan Heinrich (1556) och Heinrich på Wallaten starkare. Domen är tryckt i en bok av Ziegenhorn från 1772, <a href="https://www.digitale-sammlungen.de/de/view/bsb10636385?page=502">bilaga 97</a>. Själva arvskiftet från 1606 kan finnas i godsarkiven för Zezern och Brotzen i Lettlands statsarkiv (LVVA). Det kan nämna faderns namn.</li>
+    <li><strong>Den medeltida delen</strong>
+      Klopmanns godskrönikor, del 2 (tryckt i Mitau 1894), sidan 18, kan visa om det fanns en Heinrich på godset Seppen omkring 1490, mellan Johann och Martin. Boken kan också visa vems son Martin var. Var Klopmanns handskrivna original finns i dag är oklart. Riddarskapets avskrifter av gamla godsbrev finns i Lettlands statsarkiv (LVVA, fond 640). Tyska ordens brevarkiv i Berlin (Geheimes Staatsarchiv, XX. HA Ordensbriefarchiv) har brev från 1454–1465 som kan säga var Johann kom ifrån. Originalet till förteckningen med Conradus finns i Landesarchiv NRW i Münster (Msc. I 132, s. 58 f.) och visar den exakta stavningen.</li>
+    <li><strong>Sigillen</strong>
+      Johann beseglade 1480 ett brev med sitt ärvda sigill, men brevet finns bara i avskrift. Hittas ett original med hans sigill visar det vilket vapen han förde: rosor som den kurländska släkten, en hjort som den livländska släkten Brinck, eller tre kullar som de westfaliska släkterna Brinke och Brinck. Det skulle säga mycket om var han kom ifrån. Ett enklare steg finns i Sverige. Martins brev från 1497 finns i original i Riksarkivet i Stockholm (Livonica I, volym 26). Brevet nämner Martins ärvda sigill. Sitter sigillet på det exemplaret, visar det släktens vapen redan 1497.</li>
   </ol>
 </section>
 

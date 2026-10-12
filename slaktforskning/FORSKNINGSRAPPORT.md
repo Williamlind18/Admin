@@ -74,7 +74,7 @@ Gotthards föräldrar är inte kända. En extra sökning i oktober 2026 hittade 
 - Martin kan vara son till Johann eller till en okänd mellangeneration.
 - Johann kan ha hört till en inhemsk livländsk släkt Brinck (hjort i vapnet).
 
-**Viktigaste källorna för spåret:** Fircks, *Neue Kurländische Güter-Chroniken, Kirchspiel Kandau* (1900) s. 104–113; Klopmann, *Kurländische Güter-Chroniken* I (1856) s. 118–125; Herder-Institut, Kurländische Güterurkunden; Westfälisches Urkundenbuch / DWUD (Archiv Erpernburg).
+**Viktigaste källorna för spåret:** Fircks, *Neue Kurländische Güter-Chroniken, Kirchspiel Kandau* (1900) s. 104–113; Klopmann, *Kurländische Güter-Chroniken* I (1856) s. 118–125 och II (1894) s. 18–19 <https://kpbc.umk.pl/dlibra/publication/49398/edition/56820>; Herder-Institut, Kurländische Güterurkunden; Westfälisches Urkundenbuch / DWUD (Archiv Erpernburg).
 
 **Så kan spåret prövas:**
 1. *Genealogisches Handbuch des Adels, Freiherrliche Häuser B, band V* (GHdA band 48, 1970) s. 67–85: Uppsala UB, KB, Riksarkivets bibliotek.
@@ -86,8 +86,18 @@ Gotthards föräldrar är inte kända. En extra sökning i oktober 2026 hittade 
 7. Martins brev från 1497 finns i original i Riksarkivet i Stockholm (Livonica I, vol. 26). Sitter hans ärvda sigill kvar visar det släktens vapen redan 1497.
 8. Det spekulativa ledet före 1606: en dom 23 februari 1607 gäller "Heinrich von Brinken zur Nitten" (Ziegenhorn 1772, bilaga 97). Är han Heinrich den yngre från arvskiftet 1606 blir ledet Heinrich (1556) → Heinrich på Wallaten starkare.
 9. Heinrich Ernsts äktenskapskontrakt 1700/01 (Herder-Institut, DSHI 190 Kurland XIV,3a Sergemiten 011) kan nämna brudgummens föräldrar och syskon.
+10. *Kurländische Güter-Chroniken, Neue Folge* I, Lieferung 3 (Mitau 1895), s. 161–266. Sidan 179 handlar om försäljningen av Scheden 1729 och kan nämna vilka Brincken som samtyckte. Häftet finns inte digitalt, bara i tryck (t.ex. PAN Kórnik; troligen även LNB Riga och Herder-Institut).
 
 Sedan oktober 2026 visas den möjliga linjen direkt i släktträdet (index.html), med ett kort per person och två märken: om personen är belagd och hur säkert släktskapet är med personen ovanför.
+
+**Tredje sökomgången (oktober 2026).** En sista, kort sökning gick igenom de digitala källor som återstod. Inga betyg ändrades, och ingen ny källa nämner Gotthard eller hans föräldrar.
+- Osten-Sackens förteckning över ingifta (*Vierteljahrsschrift für Wappen-, Siegel- und Familienkunde* 25, 1897, s. 244–246, fritt hos MDZ, bsb11811789) bekräftar paret Gotthard Wilhelm v.d.B. × Maria v.d. Osten-Sacken (född omkring 1639), men utan barn eller gods. Maria var omkring 42 år 1681, så paret är ett svagare alternativ än Johann Friedrich och Agnesa Buttlar. Ewald på Klein-Bercken var gift 1668 med Agnesa Dorothea v.d. Osten-Sacken (1645–1684); ingen Gotthard nämns.
+- *Kurländische Güter-Chroniken* II (1894) s. 18–19: rittmästaren Georg Sigismund v.d.B. på Diensdorf hade 1683 bara en son, Ewald Johann. Den familjen kan därför knappast vara Gotthards. Samma sida nämner ett avtal 1528 mellan bröderna Heinrich och Johann v.d. Brincken om gården Seppen och sex bondgårdar vid Frauenburg.
+- Fircks 1900 s. 109: Agnesa Buttlar gifte om sig med Salomon Friedrich von Dorthesen efter Johann Friedrichs död.
+- Universitetsmatriklarna i Greifswald, Rostock, Strassburg, Utrecht och Åbo nämner ingen av de tänkbara fäderna. Leiden 1668 har en kurländsk "Johannes Ernestus a Brinken", 23 år; om han är Ernst på Wormen är okänt.
+- Siebmacher 1898 (Wrocławs universitetsbibliotek) ger ingen Brincken-stamtavla för 1650–1730. Bornmanns tillfällesdikter och *Baltische Hefte* (fotnot 72) finns inte digitalt.
+
+Därmed är de digitala källor vi kan nå genomgångna. Det som återstår finns i bibliotek och arkiv, se listan ovan.
 
 ## Vapnet
 

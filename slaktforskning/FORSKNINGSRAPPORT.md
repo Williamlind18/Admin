@@ -47,9 +47,42 @@ Linjen går genom två kvinnor, Maja Stina Andersdotter och Lena Johanna Brink. 
 
 ## Släkten före Gotthard
 
-- **Gotthards föräldrar är okända.** Ingen källa vi hittat namnger dem. Genealogisches Handbuch der baltischen Ritterschaften, Teil Kurland, band 1 (1939) har ingen Brincken-artikel.
+- **Gotthards föräldrar är okända.** Ingen källa vi hittat namnger dem. Ett möjligt spår beskrivs under "Möjlig väg bakåt" nedan. Genealogisches Handbuch der baltischen Ritterschaften, Teil Kurland, band 1 (1939) har ingen Brincken-artikel.
 - Den kurländska släkten von den Brincken är belagd från 1461, då Johann von den Brincken fick jord i Kurland av ordensmästaren Johann von Mengede. Den inskrevs 17 okt 1620 i första klassen av Kurlands adelsmatrikel, som nr 41 (senare nr 40). Ryska senaten erkände friherrlig värdighet 1855 och 1862.
 - **”Conrad de Brincken 1130”** är tradition. Namnet ”Conradus de Brincken” förekommer en gång, i en odaterad 1100-talsförteckning över greve Siegfried IV av Boyneburgs gods (Kindlinger, *Münsterische Beiträge* III, 1793, s. 37). Fahne (1858) gjorde det till ”omkring 1130” och ”kyrkliga stiftelser” utan källa. Kopplingen till den kurländska släkten är inte bevisad. De westfaliska släkterna Brinke/Brinck hade andra vapen, med kullar i stället för rosor.
+
+## Möjlig väg bakåt (spår, inte bevis)
+
+Gotthards föräldrar är inte kända. En extra sökning i oktober 2026 hittade ett spår. Från det går det att dra en *möjlig* linje genom den kurländska släkten. Betygen nedan är satta efter två omgångar skeptisk granskning.
+
+| Led | Person | Länk till nästa (yngre) led |
+|---|---|---|
+| 1100-tal | Conradus de Brincken (nämns en gång, Kindlinger 1793 s. 37) | Spekulativt: kanske släkten von Brenken vid Paderborn |
+| 1100–1400-tal | Riddarsläkten von Brenken (rosor i vapnet). Albracht v. Brenken 1343 = kanske ordensriddaren Albert de Brinken i Livland 1371–1387 | Lucka: Johanns ursprung okänt. Släkten uppgav 1620 bara "aus Westphalen" |
+| 1454–1483 | Johann von den Brincken (Sessilen 1462) ∞ Styne tor Deernhorst | Möjligt: Martin son eller sonson |
+| 1497–1507 | Martin (Merten) Brincke, stiftsfogde | **Styrkt**: "Hinryck vann dem Bryncke, Mertensz szonne" (Hapsal 1556) |
+| 1556–1558 | Heinrich, Martins son (söner Hermann, Heinrich, Luleff) | Spekulativt: sonen Heinrich = Heinrich på Wallaten och Zezern? |
+| död före 1606 | Heinrich på Wallaten och Zezern ∞ Margaretha v. Keyserling | Troligt: arvskiftet 7 aug 1606 |
+| 1606–före 1622 | Heinrich d.ä. på Zezern ∞ Elisabeth v. Stromberg | Troligt: brödernas förlikning 1622, kvitto 1632 |
+| 1622–1660 | Heinrich på Zezern och Sessilen, överhauptman i Goldingen 1648 ∞ Maria Magdalena v. Lüdinghausen gen. Wolff; far till landhovmästaren Heinrich Christian (1648–1729) | Möjligt, svagt: riddarskapets tabeller kallar Johann Friedrich "Erbh. a. Zezern, Sessilen und Dworsahten". Fadern kan också vara Barthold |
+| död 1687–1691 | Kapten Johann Friedrich v.d. Brincken (Dworsahten 1671) ∞ II senast 1671 Agnesa Buttlar av Groß-Strasden | Möjligt, svagt: omyndiga barn 1691; Strasden-förlikningen jan 1728, Gotthards resetillstånd mars 1729. Ingen källa nämner en son Gotthard |
+| 1681–1735 | Gotthard Diedrich von den Brincken | Härifrån är linjen styrkt |
+
+**Andra möjligheter:**
+- Gotthards föräldrar kan vara Ernst v.d.B. på Wormen och Catharina Agnes v.d. Brüggen av Klein-Strasden (svagare).
+- Johann Friedrichs far kan vara Barthold.
+- Martin kan vara son till Johann eller till en okänd mellangeneration.
+- Johann kan ha hört till en inhemsk livländsk släkt Brinck (hjort i vapnet).
+
+**Viktigaste källorna för spåret:** Fircks, *Neue Kurländische Güter-Chroniken, Kirchspiel Kandau* (1900) s. 104–113; Klopmann, *Kurländische Güter-Chroniken* I (1856) s. 118–125; Herder-Institut, Kurländische Güterurkunden; Westfälisches Urkundenbuch / DWUD (Archiv Erpernburg).
+
+**Så kan spåret prövas:**
+1. *Genealogisches Handbuch des Adels, Freiherrliche Häuser B, band V* (GHdA band 48, 1970) s. 67–85: Uppsala UB, KB, Riksarkivets bibliotek.
+2. Herder-Institut Marburg, DSHI 190 Kurland VI,2 Nr. 36 (riddarskapets Brincken-tabeller, tre band). Kontakt: dshi@herder-institut.de.
+3. Riksarkivet/Krigsarkivet: ansökan bakom resetillståndet 31 mars 1729 (via överste Staël von Holstein).
+4. LVVA Riga: Strasden-processen 1714–1728 (alla Agnesas arvingar).
+5. raduraksti.arhivi.lv: Mitau S:t Trinitatis dop 1642–1700 (LVVA 235/5/24), år 1680–1682.
+6. Johanns ärvda sigill 1480: rosor, hjort eller kullar?
 
 ## Vapnet
 

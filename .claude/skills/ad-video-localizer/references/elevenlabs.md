@@ -35,6 +35,14 @@ expect about 2 100 credits for the voice take plus about 1 200 for the flash ref
 On video 5 a 3 737-character take ran slower than estimated: 242.6 s of speech (≈15.1 chars/s) and
 299 s with pauses, so budget with 15 chars/s for long scripts.
 
+**The rate depends on the voice.** With a voice you have not used before, read the first 3-4 lines once
+(about 250 credits) and measure chars per second of speech. A short test reads faster than the whole
+take, so budget with about 0.9 × the test rate. Measured so far (eleven_v3, Swedish):
+| voice | short test | whole take |
+|---|---|---|
+| "30 år kvinna" (p47LfPZdd7LXERMMfx1R) | — | 15.1 chars/s |
+| "Äldre man 50-60 år - SE" (OvO33bxTqNfwQfoR6mVh) | 16.5 chars/s | 15.0 chars/s (video 11) |
+
 ## Background music
 The user may ask for music made in ElevenLabs when the original's music can't be separated. Use
 `eleven_music_v2_5`: `creative_add_flow_node` with `node_type: music`, a 1-3 sentence prompt about the

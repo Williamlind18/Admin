@@ -21,6 +21,11 @@ Usage:
                    [--anchor 9:end=44.3-46.6 --anchor 19:start=87.4-89.6]
                    [--gap 0.18] [--max-tempo 1.10]
 Writes SENT_DIR/plan.json.
+
+With few anchors every combination of anchor times is tried. With many anchors
+(e.g. 20+ on a 4-minute ad) that grid explodes, so a dynamic programme over the
+anchors is used instead: it minimises the highest tempo exactly at --step
+resolution and breaks ties on the sum of squared tempos.
 """
 import argparse
 import itertools
@@ -81,52 +86,92 @@ def main():
         raise SystemExit("two anchors fall on the same sentence boundary - keep one")
     video_end = a.video_duration - a.tail
 
+    def block(b0, b1):
+        """Layout between two boundaries: a block dict, "empty" when no sentence lies between, or None."""
+        ids = order[b0["pos"]:b1["pos"]]
+        t0 = b0["t"] if b0["kind"] == "start" else b0["t"] + a.anchor_gap
+        t1 = b1["t"] if b1["kind"] == "end" else b1["t"] - a.anchor_gap
+        if not ids:
+            return None if t1 < t0 - 1e-6 else "empty"
+        S, n = sum(dur[i] for i in ids), len(ids)
+        room = t1 - t0 - (n - 1) * a.gap
+        if room <= 0.05:
+            return None
+        f, gap, lead = S / room, a.gap, 0.0
+        if f < 1.0:
+            f = 1.0
+            spare = (t1 - t0) - S
+            gap = min(a.max_gap, spare / (n - 1)) if n > 1 else a.gap
+            leftover = spare - gap * (n - 1)
+            # keep an end-anchor exact: put leftover silence before the block
+            lead = leftover if b1["kind"] == "end" and b1["pos"] != len(order) else 0.0
+        return {"ids": ids, "t0": t0 + lead, "t1": t1, "tempo": f, "gap": gap}
+
+    first = {"pos": 0, "kind": "start", "t": a.lead}
+    last = {"pos": len(order), "kind": "end", "t": video_end}
+
     def blocks_for(times):
-        bnds = [{"pos": 0, "kind": "start", "t": a.lead}]
-        bnds += [{"pos": x["pos"], "kind": x["kind"], "t": t} for x, t in zip(anchors, times)]
-        bnds.append({"pos": len(order), "kind": "end", "t": video_end})
+        bnds = [first] + [{"pos": x["pos"], "kind": x["kind"], "t": t} for x, t in zip(anchors, times)] + [last]
         out = []
         for b0, b1 in zip(bnds[:-1], bnds[1:]):
-            ids = order[b0["pos"]:b1["pos"]]
-            t0 = b0["t"] if b0["kind"] == "start" else b0["t"] + a.anchor_gap
-            t1 = b1["t"] if b1["kind"] == "end" else b1["t"] - a.anchor_gap
-            if not ids:
-                if t1 < t0 - 1e-6:
-                    return None
-                continue
-            S, n = sum(dur[i] for i in ids), len(ids)
-            room = t1 - t0 - (n - 1) * a.gap
-            if room <= 0.05:
+            b = block(b0, b1)
+            if b is None:
                 return None
-            f, gap, lead = S / room, a.gap, 0.0
-            if f < 1.0:
-                f = 1.0
-                spare = (t1 - t0) - S
-                gap = min(a.max_gap, spare / (n - 1)) if n > 1 else a.gap
-                leftover = spare - gap * (n - 1)
-                # keep an end-anchor exact: put leftover silence before the block
-                lead = leftover if b1["kind"] == "end" and b1["pos"] != len(order) else 0.0
-            out.append({"ids": ids, "t0": t0 + lead, "t1": t1, "tempo": f, "gap": gap})
+            if b != "empty":
+                out.append(b)
         return out
 
-    grids = []
-    step = a.step
-    while True:
+    def dp_search(step):
+        """Exact minimax over anchor times on a `step` grid, in O(anchors x grid^2)."""
         grids = [np.arange(x["lo"], x["hi"] + 1e-9, step) if x["hi"] > x["lo"] else np.array([x["lo"]]) for x in anchors]
-        if np.prod([len(g) for g in grids]) <= 150000 or step > 1:
-            break
-        step *= 2
+        # layer k holds, per grid time of anchor k, (max tempo, sum of squared tempos, previous index)
+        prev = [(0.0, 0.0, -1)]
+        prev_b = [first]
+        back = []
+        for k, x in enumerate(anchors + [None]):
+            cur_b = [last] if x is None else [{"pos": x["pos"], "kind": x["kind"], "t": float(t)} for t in grids[k]]
+            cur = []
+            for bc in cur_b:
+                best_c = None
+                for j, (bp, st) in enumerate(zip(prev_b, prev)):
+                    if st is None or bc["t"] <= bp["t"] and x is not None and k > 0:
+                        continue
+                    b = block(bp, bc)
+                    if b is None:
+                        continue
+                    f = 1.0 if b == "empty" else b["tempo"]
+                    cand = (max(st[0], f), st[1] + f * f, j)
+                    if best_c is None or cand[:2] < best_c[:2]:
+                        best_c = cand
+                cur.append(best_c)
+            back.append(cur)
+            prev, prev_b = cur, cur_b
+        if prev[0] is None:
+            return None
+        times, j = [], prev[0][2]
+        for k in range(len(anchors) - 1, -1, -1):
+            times.append(float(grids[k][j]))
+            j = back[k][j][2]
+        return tuple(reversed(times))
+
+    grids = [np.arange(x["lo"], x["hi"] + 1e-9, a.step) if x["hi"] > x["lo"] else np.array([x["lo"]]) for x in anchors]
     best = None
-    for times in itertools.product(*grids) if grids else [()]:
-        if any(t2 <= t1 for t1, t2 in zip(times, times[1:])):
-            continue
-        bl = blocks_for(times)
-        if not bl:
-            continue
-        fs = [b["tempo"] for b in bl]
-        score = max(fs) + 0.02 * float(np.std(fs))
-        if best is None or score < best[0]:
-            best = (score, times, bl)
+    if np.prod([float(len(g)) for g in grids]) <= 150000:
+        for times in itertools.product(*grids) if grids else [()]:
+            if any(t2 <= t1 for t1, t2 in zip(times, times[1:])):
+                continue
+            bl = blocks_for(times)
+            if not bl:
+                continue
+            fs = [b["tempo"] for b in bl]
+            score = max(fs) + 0.02 * float(np.std(fs))
+            if best is None or score < best[0]:
+                best = (score, times, bl)
+    else:
+        times = dp_search(a.step)
+        bl = blocks_for(times) if times is not None else None
+        if bl:
+            best = (None, times, bl)
     if best is None:
         raise SystemExit("no feasible layout - anchors too tight or script far too long for the video")
     _, times, bl = best

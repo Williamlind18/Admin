@@ -107,6 +107,9 @@ python3 $SK/plan_timeline.py WORK/sent --video-duration D \
 - **Anchors.** Only add anchors for the key moments from step 2, with a window of about ±1 s around
   each. `end` anchors suit lines whose pointing word comes last. `start` anchors suit lines that open
   on the visual.
+- **Many anchors are fine.** A 4-minute ad can need 20+. Above ~150 000 combinations the planner
+  switches from trying every combination to an exact dynamic programme, so it stays at 0.1 s
+  resolution and finishes in well under a second.
 - **Max tempo.** The planner lays sentences out with 0.18 s gaps and picks one tempo per block between
   anchors, keeping the highest as low as possible. Aim for **≤ 1.08**, and **≤ 1.10** only for the final
   offer/CTA section (a one-take voice usually lands at 1.00-1.09). Anchor windows can be narrow

@@ -25,7 +25,7 @@ Writes SENT_DIR/plan.json.
 With few anchors every combination of anchor times is tried. With many anchors
 (e.g. 20+ on a 4-minute ad) that grid explodes, so a dynamic programme over the
 anchors is used instead: it minimises the highest tempo exactly at --step
-resolution and breaks ties on the sum of squared tempos.
+resolution, then keeps silences short (sum of squared leftover silence) and the voice near natural speed.
 """
 import argparse
 import itertools
@@ -63,6 +63,11 @@ def main():
     ap.add_argument("--tail", type=float, default=0.25, help="last word ends this long before the video ends")
     ap.add_argument("--max-tempo", type=float, default=1.10, help="warn above this speed-up (aim <= 1.08)")
     ap.add_argument("--step", type=float, default=0.1)
+    ap.add_argument("--min-tempo", type=float, default=1.0,
+                    help="when the video has time to spare, slow the voice down to this before stretching pauses "
+                         "(0.95 = up to 5 %% slower, inaudible); 1.0 = never slow down")
+    ap.add_argument("--soft-gap", type=float, default=0.30,
+                    help="with time to spare, first widen pauses up to this, then slow down, then widen to --max-gap")
     a = ap.parse_args()
 
     F = load_json(os.path.join(a.sent_dir, "fused.json"))
@@ -99,13 +104,22 @@ def main():
             return None
         f, gap, lead = S / room, a.gap, 0.0
         if f < 1.0:
-            f = 1.0
-            spare = (t1 - t0) - S
+            # time to spare: widen pauses up to --soft-gap, then slow down to --min-tempo, then widen to --max-gap
+            span = t1 - t0
+            if n > 1 and (span - S) / (n - 1) <= a.soft_gap:
+                f = 1.0
+            else:
+                soft = max(a.gap, min(a.soft_gap, a.max_gap))
+                f = min(1.0, max(a.min_tempo, S / (span - (n - 1) * soft)))
+            spare = span - S / f
             gap = min(a.max_gap, spare / (n - 1)) if n > 1 else a.gap
             leftover = spare - gap * (n - 1)
             # keep an end-anchor exact: put leftover silence before the block
             lead = leftover if b1["kind"] == "end" and b1["pos"] != len(order) else 0.0
-        return {"ids": ids, "t0": t0 + lead, "t1": t1, "tempo": f, "gap": gap}
+            idle = max(0.0, leftover)
+        else:
+            idle = 0.0
+        return {"ids": ids, "t0": t0 + lead, "t1": t1, "tempo": f, "gap": gap, "idle": idle}
 
     first = {"pos": 0, "kind": "start", "t": a.lead}
     last = {"pos": len(order), "kind": "end", "t": video_end}
@@ -139,8 +153,9 @@ def main():
                     b = block(bp, bc)
                     if b is None:
                         continue
-                    f = 1.0 if b == "empty" else b["tempo"]
-                    cand = (max(st[0], f), st[1] + f * f, j)
+                    f, idle = (1.0, 0.0) if b == "empty" else (b["tempo"], b["idle"])
+                    # first never speed up more than needed, then avoid long silences, then stay near natural speed
+                    cand = (max(st[0], f, 1.0), st[1] + idle ** 2 + 0.1 * (f - 1.0) ** 2, j)
                     if best_c is None or cand[:2] < best_c[:2]:
                         best_c = cand
                 cur.append(best_c)
@@ -164,7 +179,8 @@ def main():
             if not bl:
                 continue
             fs = [b["tempo"] for b in bl]
-            score = max(fs) + 0.02 * float(np.std(fs))
+            score = (max(1.0, max(fs)) + 0.02 * float(np.std(fs))
+                     + 0.01 * sum(b["idle"] ** 2 + 0.1 * (b["tempo"] - 1.0) ** 2 for b in bl))
             if best is None or score < best[0]:
                 best = (score, times, bl)
     else:

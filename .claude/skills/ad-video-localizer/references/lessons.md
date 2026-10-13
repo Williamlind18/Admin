@@ -80,5 +80,24 @@
   ElevenLabs priced at about 56 600 credits (fast) or 72 000 (precise) for 85 s; Higgsfield cannot
   quote a price in advance. Never run those unasked. Running a downloaded upscaler binary such as
   Real-ESRGAN was blocked by the session's safety classifier.
+- **Removing burned-in text without a box** (video 15: "60 DAY MONEY BACK" built itself over a 3D
+  tablet for 30 frames). Cut the text frames out and fill the gap with the clean frames just before it,
+  slowed down with motion interpolation, so the shot keeps its exact length and every later timestamp
+  stays valid. Work on PNG sequences, because `select`/`trim` into mp4 drops frames:
+  `select='between(n,A,B)' -fps_mode passthrough f/%03d.png`, then
+  `setpts=PTS*K,minterpolate=fps=30:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1:scd=none` and adjust
+  K until the output count is exactly right; splice with `trim=end_frame` + `concat`. Count frames with
+  `-vf showinfo` (grep "n:"), not ffmpeg's progress line.
+- **Moving labels** (a sign on an animated truck): track the coloured element per frame (colour mask +
+  `scipy.ndimage` closing + largest component) and write one label per frame. Use floored centisecond
+  times, `start=floor(n/30*100)/100, end=floor((n+1)/30*100)/100`, so consecutive boxes neither overlap
+  nor leave a gap, and the last one ends exactly at the scene cut.
+- **Short text flashes** inside motion graphics ("3 REASONS" wiping in for 3-35 frames): scan the
+  graphic's text band frame by frame; cover each flash with one steady box for its whole span rather
+  than many flickering ones.
+- **Label text size:** libass renders Montserrat ExtraBold at about half the `\fs` value in cap height
+  (`\fs86` gave ~43 px caps). Size labels so text fills ~80 % of the box width: about
+  `fs ≈ box_width / (0.41 × characters)`.
+- `chunk_captions.py` writes only the ASS file. Get the .srt from `make_captions.py ... --out-dir OTHER_DIR`.
 - **Leftover captions of the original** can flash by for a few frames (video 5: "every load," on a white
   paper towel for 0.2 s). Scan the finer frame grids for them and blank them with a text-less label.

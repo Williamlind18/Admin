@@ -68,6 +68,18 @@ expect about 2 100 credits for the voice take plus about 1 200 for the flash ref
    `sent/NN.mp3`. In the tested take every sentence pause was 0.42-0.78 s and comma pauses were shorter.
    The first version of the splitter cut at a 0.30 s comma pause, which is why long pauses now weigh
    much more. Check the printed table: no row should be marked `<-- check`.
+   **Takes with very short pauses.** The voice "manlig röst 40-50 år skånsk - SE" once read a whole script
+   with sentence pauses of only 0.1-0.2 s (Maskinrent video 5). Every row was then marked `<-- check`,
+   and the syllable guide put some cuts mid-sentence. For example, a 45-character line came out as
+   1.8 s and the next line 0.6 s too long.
+   - Make better length guesses with espeak: run `espeak-ng -v sv -s 170 -w NN.wav "<line>"` for each
+     line, trim the silence, and write the result as `{id: seconds}` JSON. Rerun with
+     `split_take.py … --expect that.json`.
+   - Any pair that still has a ratio below ~0.7 next to one above ~1.15 needs fixing. Recut those two
+     clips by hand at the short silence between them, with the same padding as split_take: start
+     −0.06 s, end + half the pause.
+   - Rerun align_words. A spread under ~0.25 s on both lines confirms the cut.
+   Such a take often fits the video almost as it is, with tempos of about 1.00-1.03.
 7. If you must change a sentence after the take, see "Changed sentences" in SKILL.md. The best option is
    a new whole take. A separately generated sentence will not sound like the same speaker. Give a
    changed sentence its own word reference, a small flash take of its words ("ord. ord.") saved as

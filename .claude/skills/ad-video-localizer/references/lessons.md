@@ -73,5 +73,12 @@
   30 fps, cut at a transition (a white flash cuts cleanly), and drop the frames with
   `select='not(between(n,A,B))',setpts=N/FRAME_RATE/TB` (plus the same `aselect` on the audio),
   re-encoded at crf 14. Every anchor after the cut moves earlier by (B-A+1)/fps.
+- **Low-resolution sources** (e.g. a 480×832 download): upscale before rendering so the captions are
+  sharp. Best free chain, checked on animated footage: `hqdn3d=1.5:1.5:3:3,deband=1thr=0.015:2thr=0.015:
+  3thr=0.015:range=12:blur=1,scale=1080:1872:flags=lanczos,cas=strength=0.6`, x264 crf 16, then render
+  from that file and build the captions against it. AI upscaling exists but is expensive: Topaz in
+  ElevenLabs priced at about 56 600 credits (fast) or 72 000 (precise) for 85 s; Higgsfield cannot
+  quote a price in advance. Never run those unasked. Running a downloaded upscaler binary such as
+  Real-ESRGAN was blocked by the session's safety classifier.
 - **Leftover captions of the original** can flash by for a few frames (video 5: "every load," on a white
   paper towel for 0.2 s). Scan the finer frame grids for them and blank them with a text-less label.

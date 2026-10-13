@@ -87,3 +87,16 @@
 - When the user sends a re-cut of a video you already did, run `analyze_video.py NEW --reference OLD`.
   Unchanged sections keep their timestamps, so earlier anchors can be reused.
 - Rendering 1080×1920 for 110 s takes about 3.5 min on the sandbox. Tell the user it's coming.
+- **Long videos (5 min, Maskinrent video 4):**
+  - Rendering takes about 10-12 min.
+  - At CRF 21 the full-quality mp4 is far over GitHub's 100 MB limit per file. Re-encode it for the
+    repo with a two-pass bitrate target of about 95 MB, from the source with the same ASS filter.
+  - render.py's chat preview gets only ~0.5 Mb/s at 1080p for 5 min. Make the preview at 720p
+    instead.
+  - Full-length music costs about 26.5 credits per second (≈8 300 for 313 s). Offer a ~100 s loop as
+    the cheaper option.
+- **Highlighted lines on a moving label** (an ingredient list with a marker sweep): track the coloured
+  highlight. The centroid moves while the highlight sweeps, so compute the line's y at the box centre
+  from the centroid and the angle: `y = cy + (cx - x_box) * tan(angle)`. Fit the band of a static,
+  tilted highlight with a least-squares line through its pixels. Eyeballed angles were 3° off, and the
+  box missed by half a line.

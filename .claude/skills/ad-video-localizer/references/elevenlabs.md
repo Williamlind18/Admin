@@ -48,9 +48,15 @@ expect about 2 100 credits for the voice take plus about 1 200 for the flash ref
    `voice_id` and **`generations_count: 1`**. The default is 4, which costs 4× as much. A 2 141-character
    script was accepted in one call. It took about 2 minutes to generate and came back as 158.6 s of
    audio, sentence pauses included.
+   **A call takes at most 5 000 characters,** counting the spaces between the joined lines. A longer
+   call fails ("Prompt must be at most 5000 characters"). For a 5-minute ad, trim the script to fit
+   (`paste -sd' ' script.txt | wc -m`) rather than splitting the voice into two takes.
 3. **The timing reference.** One call with `eleven_flash_v2_5`, the same voice, and the whole of
    `sent/iso.txt` as the prompt ("word. word. word."). This is only the timing reference and is never
    heard in the video. Save it as `sent/iso.mp3`.
+   If `iso.txt` is over 5 000 characters, split it at a sentence boundary and generate the parts.
+   Then join them in order with ffmpeg into one `sent/iso.mp3`, with a 0.6 s pause between parts.
+   Splitting is fine here because nobody hears it.
 4. Poll `creative_get_flow_run_status` with the `session_ids`. For the long take, wait between polls,
    e.g. with a background `until`-loop of ~45 s, instead of polling every few seconds. Never call
    generate again to "retry", because that charges again.

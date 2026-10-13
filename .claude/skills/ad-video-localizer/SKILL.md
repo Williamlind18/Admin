@@ -117,6 +117,11 @@ python3 $SK/plan_timeline.py WORK/sent --video-duration D \
   - tighten wording,
   - drop "if it fits" extras.
   Ask the user before cutting anything they asked for.
+- **Many anchors (long videos).** plan_timeline.py tries every combination of window times, so with more
+  than about 6 windows it coarsens its grid and the result gets worse. For a long video (Maskinrent
+  video 4 had 21 key moments in 5 min), run `optimize_anchors.py` with the same `--gap`,
+  `--anchor-gap`, `--tail` and windows. Then pass the exact `--anchor` times it prints to
+  plan_timeline.py. Wide windows (±1-2 s) give it room to move slack from loose passages to dense ones.
 - **Gaps before an anchor.** If the voice runs ahead of the footage and leaves a long gap before an
   anchor, it is usually because a condensed passage lost detail. Restore some of it.
 - **Changed sentences.** Settle the script *before* the take. A sentence generated on its own later

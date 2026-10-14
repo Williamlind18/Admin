@@ -124,6 +124,10 @@ python3 $SK/plan_timeline.py WORK/sent --video-duration D \
   plan_timeline.py. Wide windows (±1-2 s) give it room to move slack from loose passages to dense ones.
 - **Gaps before an anchor.** If the voice runs ahead of the footage and leaves a long gap before an
   anchor, it is usually because a condensed passage lost detail. Restore some of it.
+- **Take shorter than the video.** When the whole take with ~0.3 s pauses ends before the footage and its
+  natural flow already lands near the key moments, skip the anchors. They only push the slack into long
+  silences (0.8-2 s on Maskinrent video 6) in front of each anchor. Plan with even gaps instead
+  (`--gap 0.3 --max-gap 0.34 --lead 0.15 --tail 0.3`) and let the music carry the last seconds.
 - **Changed sentences.** Settle the script *before* the take. A sentence generated on its own later
   sounds like a different speaker, and a re-take is not guaranteed to be shorter (a trimmed line once
   came back 0.3 s longer). For a changed line, generate a new whole take (≈1 credit per character)

@@ -48,6 +48,21 @@ The dark documentary voice paused only 0.15-0.3 s between sentences, so split_ta
 `<-- check`. That is expected for such a voice: confirm the ratios are near 1 and that the energy at
 the tightest boundaries drops far below the speech level (it fell to about -70 dB vs -18 dB).
 
+## Avoiding drawn-out words (video 15)
+The user heard "tvätte---n", "slu---t": eleven_v3 lengthens words before commas, colons and full
+stops, and this voice ("Äldre man 50-60 år - SE") does it a lot. What fixed it:
+- Set the language: add the tts node with `creative_add_flow_node` and
+  `model_parameters: {"language_code": "sv"}` (`creative_generate_speech` has no language field), then
+  `creative_run_flow_nodes`.
+- Start the take with one delivery tag, `[confident]`. It holds for the whole take.
+- Fewer commas and colons: "Anledning nummer två. De flesta…" instead of "Anledning två: de flesta…",
+  and no comma before "så"/"men"/"och" where Swedish allows it.
+- Generate 3 takes (`generations_count: 3`, ≈2 000 credits each for 2 000 characters), split and align
+  each into its own folder and pick with `scripts/score_takes.py` (fewest drawn-out words, higher rate).
+  The chosen take had 18 drawn-out words against 27 in the take the user rejected.
+- Plan for a small speed-up (1.01-1.04) rather than a slow-down: atempo above 1 hides lengthening,
+  below 1 exposes it. If the take is short, restore detail from the original ad before the take.
+
 ## Background music
 The user may ask for music made in ElevenLabs when the original's music can't be separated. Use
 `eleven_music_v2_5`: `creative_add_flow_node` with `node_type: music`, a 1-3 sentence prompt about the

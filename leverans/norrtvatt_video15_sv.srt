@@ -1,231 +1,259 @@
 1
-00:00:00,100 --> 00:00:02,550
-Efter snart tjugo år med tvättmaskiner kan
+00:00:00,100 --> 00:00:01,764
+Efter snart tjugo år som
 
 2
-00:00:02,450 --> 00:00:04,970
-jag förklara din unkna tvätt med tre
+00:00:01,664 --> 00:00:04,299
+tvättmaskinsreparatör kan jag förklara din
 
 3
-00:00:04,870 --> 00:00:05,690
-anledningar.
+00:00:04,199 --> 00:00:06,130
+unkna tvätt med tre anledningar.
 
 4
-00:00:05,990 --> 00:00:08,270
+00:00:06,210 --> 00:00:08,557
 Har du husdjur och luktar kläderna mögel
 
 5
-00:00:08,170 --> 00:00:10,440
-efter tvätten, så inbillar du dig inte.
+00:00:08,457 --> 00:00:10,161
+varje gång de kommer ur tvätten så
 
 6
-00:00:10,740 --> 00:00:11,840
-Jag har sett allt.
+00:00:10,061 --> 00:00:11,369
+inbillar du dig inte.
 
 7
-00:00:12,140 --> 00:00:14,300
-Och det finns tre anledningar till att
+00:00:11,449 --> 00:00:12,727
+Jag har sett allt.
 
 8
-00:00:14,200 --> 00:00:18,000
-lukten aldrig går bort, vad du än testar.
+00:00:12,807 --> 00:00:14,739
+Och det finns tre anledningar till att du
 
 9
-00:00:18,200 --> 00:00:19,840
-Anledning ett: lukten kommer inte från
+00:00:14,639 --> 00:00:17,352
+aldrig blir av med lukten hur mycket du än
 
 10
-00:00:19,740 --> 00:00:20,350
-kläderna.
+00:00:17,252 --> 00:00:17,600
+försöker.
 
 11
-00:00:20,850 --> 00:00:23,180
-Den kommer från ett stängt utrymme bakom
+00:00:17,800 --> 00:00:20,358
+Anledning nummer ett. Lukten kommer inte
 
 12
-00:00:23,080 --> 00:00:23,890
-trumman.
+00:00:20,258 --> 00:00:21,372
+från dina kläder.
 
 13
-00:00:24,390 --> 00:00:26,950
-Du ser det inte, du når det inte, och det
+00:00:21,452 --> 00:00:24,000
+Den kommer från ett stängt utrymme bakom
 
 14
-00:00:26,850 --> 00:00:27,770
-torkar aldrig.
+00:00:23,900 --> 00:00:24,565
+trumman.
 
 15
-00:00:28,270 --> 00:00:30,710
-Där växer ett biologiskt lager för varje
+00:00:24,645 --> 00:00:27,047
+Du ser det inte, du når det inte och det
 
 16
-00:00:30,610 --> 00:00:32,720
-tvätt, och bitar av det följer med
+00:00:26,947 --> 00:00:27,973
+torkar aldrig.
 
 17
-00:00:32,620 --> 00:00:34,040
-tillbaka in i kläderna.
+00:00:28,053 --> 00:00:30,581
+Där växer ett biologiskt lager för varje
 
 18
-00:00:34,540 --> 00:00:36,940
-Med husdjur går det fortare, för hudfettet
+00:00:30,481 --> 00:00:32,590
+tvätt och bitar av beläggningen följer med
 
 19
-00:00:36,840 --> 00:00:39,020
-i djurhåren fungerar som lim.
+00:00:32,490 --> 00:00:33,995
+tillbaka in i kläderna.
 
 20
-00:00:39,520 --> 00:00:41,790
-Det klistrar fast håret i trumman och ger
+00:00:34,075 --> 00:00:36,574
+Har du husdjur växer det ännu fortare, för
 
 21
-00:00:41,690 --> 00:00:43,660
-mat åt bakterierna som luktar.
+00:00:36,474 --> 00:00:38,905
+hudfettet i djurhåren fungerar som ett
 
 22
-00:00:44,100 --> 00:00:45,830
-Anledning två: de flesta
+00:00:38,805 --> 00:00:39,812
+naturligt lim.
 
 23
-00:00:45,730 --> 00:00:48,000
-rengöringstabletter är värdelösa mot
+00:00:39,892 --> 00:00:42,040
+Det klistrar fast håret i trumman och ger
 
 24
-00:00:47,900 --> 00:00:48,610
-djurhår.
+00:00:41,940 --> 00:00:44,400
+mat åt bakterierna som orsakar lukten.
 
 25
-00:00:49,100 --> 00:00:51,840
-Tabletterna i butiken är syreblekmedel.
+00:00:44,600 --> 00:00:46,453
+Anledning nummer två. De flesta
 
 26
-00:00:52,340 --> 00:00:54,860
-Det löser upp tvålrester och kalk, men rår
+00:00:46,353 --> 00:00:48,579
+rengöringstabletter är värdelösa mot
 
 27
-00:00:54,760 --> 00:00:57,140
-inte på keratinet och hudfettet i
+00:00:48,479 --> 00:00:49,200
+djurhår.
 
 28
-00:00:57,040 --> 00:00:57,870
-djurhåren.
+00:00:49,400 --> 00:00:51,607
+Tabletterna du köper i butiken är
 
 29
-00:00:58,370 --> 00:01:00,670
-Det sköljer bara över beläggningen och för
+00:00:51,507 --> 00:00:52,427
+syreblekmedel.
 
 30
-00:01:00,570 --> 00:01:02,170
-lukten tillbaka till kläderna.
+00:00:52,507 --> 00:00:54,978
+Det löser upp tvålrester och kalk men rår
 
 31
-00:01:02,670 --> 00:01:05,390
-Doft döljer lukten ett par dagar, men inom
+00:00:54,878 --> 00:00:57,231
+inte på keratinet och hudfettet i
 
 32
-00:01:05,290 --> 00:01:06,630
-en vecka är den tillbaka.
+00:00:57,131 --> 00:00:57,894
+djurhåren.
 
 33
-00:01:07,100 --> 00:01:09,810
-Anledning tre: bara en sak löser upp
+00:00:57,974 --> 00:00:59,615
+I stället sköljer det bara över
 
 34
-00:01:09,710 --> 00:01:12,330
-proteinet och fettet i djurhår, och det är
+00:00:59,515 --> 00:01:01,771
+beläggningen och för stanken tillbaka till
 
 35
-00:01:12,230 --> 00:01:12,790
-enzymer.
+00:01:01,671 --> 00:01:02,308
+kläderna.
 
 36
-00:01:13,300 --> 00:01:15,100
-Amylas löser upp hinnan.
+00:01:02,388 --> 00:01:04,546
+Doft kan dölja lukten ett par dagar men
 
 37
-00:01:15,600 --> 00:01:18,450
-Proteas bryter ner proteinet i djurhåren.
+00:01:04,446 --> 00:01:06,878
+inom en vecka är den tillbaka som om den
 
 38
-00:01:18,950 --> 00:01:21,640
-Lipas tar bort fettet som luktbakterierna
+00:01:06,778 --> 00:01:07,600
+aldrig försvunnit.
 
 39
-00:01:21,540 --> 00:01:22,200
-lever av.
+00:01:07,800 --> 00:01:10,486
+Anledning nummer tre. Bara en sak löser
 
 40
-00:01:22,700 --> 00:01:24,760
-Tillsammans blir de en knockout mot
+00:01:10,386 --> 00:01:13,122
+upp proteinet och fettet i djurhår och det
 
 41
-00:01:24,660 --> 00:01:26,780
-månader av djurhår i maskinen.
+00:01:13,022 --> 00:01:13,800
+är enzymer.
 
 42
-00:01:27,300 --> 00:01:29,750
-Det här rann ut ur en ettårig maskin efter
+00:01:14,000 --> 00:01:16,510
+Amylas löser upp hinnan av tvättmedel och
 
 43
-00:01:29,650 --> 00:01:31,360
-en enda enzymtvätt.
+00:01:16,410 --> 00:01:17,229
+sköljmedel.
 
 44
-00:01:31,800 --> 00:01:34,480
-Därför har över femton tusen kunder valt
+00:01:17,309 --> 00:01:20,052
+Proteas bryter ner proteinet i djurhåren.
 
 45
-00:01:34,380 --> 00:01:36,770
-Maskinrent från Norrtvätt, och de köper
+00:01:20,133 --> 00:01:22,847
+Lipas tar bort fettet som luktbakterierna
 
 46
-00:01:36,670 --> 00:01:37,340
-igen.
+00:01:22,747 --> 00:01:23,391
+lever av.
 
 47
-00:01:37,800 --> 00:01:39,790
-En tablett och ett varmt program i
+00:01:23,471 --> 00:01:25,505
+Tillsammans blir de en knockout mot
 
 48
-00:01:39,690 --> 00:01:40,380
-månaden.
+00:01:25,405 --> 00:01:27,400
+månader av djurhår i maskinen.
 
 49
-00:01:40,880 --> 00:01:43,040
-Runt tjugo kronor per tablett, och du
+00:01:27,600 --> 00:01:30,012
+Det här rann ut ur en ettårig maskin efter
 
 50
-00:01:42,940 --> 00:01:44,220
-slipper lukttesta tvätten.
+00:01:29,912 --> 00:01:31,700
+en enda enzymtvätt.
 
 51
-00:01:44,700 --> 00:01:46,310
-Du har trettio dagars
+00:01:31,900 --> 00:01:34,198
+Därför har över femton tusen kunder valt
 
 52
-00:01:46,210 --> 00:01:47,800
-pengarna-tillbaka-garanti.
+00:01:34,098 --> 00:01:36,426
+Maskinrent från Norrtvätt och de kommer
 
 53
-00:01:48,300 --> 00:01:50,810
-Och just nu får du fyra paket för priset
+00:01:36,326 --> 00:01:37,000
+tillbaka.
 
 54
-00:01:50,710 --> 00:01:52,680
-av två, plus fri frakt.
+00:01:37,200 --> 00:01:38,888
+Det är bara en tablett och ett varmt
 
 55
-00:01:52,900 --> 00:01:55,300
-Klicka på länken innan erbjudandet tar
+00:01:38,788 --> 00:01:40,583
+program en gång i månaden.
 
 56
-00:01:55,200 --> 00:01:55,530
-slut.
+00:01:40,663 --> 00:01:43,121
+Runt tjugo kronor per tablett för tvätt du
 
 57
-00:01:56,030 --> 00:01:57,810
-Och är du inte nöjd får du pengarna
+00:01:43,021 --> 00:01:44,700
+aldrig mer behöver lukttesta.
 
 58
-00:01:57,710 --> 00:01:59,520
-tillbaka. Inga frågor.
+00:01:44,900 --> 00:01:46,745
+Varje beställning har trettio dagars
+
+59
+00:01:46,645 --> 00:01:48,200
+pengarna-tillbaka-garanti.
+
+60
+00:01:48,400 --> 00:01:50,726
+Och just nu får du fyra paket för priset
+
+61
+00:01:50,626 --> 00:01:52,400
+av två plus fri frakt.
+
+62
+00:01:52,600 --> 00:01:55,095
+Klicka på länken nu och säkra erbjudandet
+
+63
+00:01:54,995 --> 00:01:56,068
+medan det gäller.
+
+64
+00:01:56,148 --> 00:01:58,078
+Och är du inte imponerad får du hela
+
+65
+00:01:57,978 --> 00:02:00,220
+pengarna tillbaka. Inga frågor.

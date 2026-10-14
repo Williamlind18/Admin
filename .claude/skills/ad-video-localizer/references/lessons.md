@@ -80,6 +80,13 @@
   ElevenLabs priced at about 56 600 credits (fast) or 72 000 (precise) for 85 s; Higgsfield cannot
   quote a price in advance. Never run those unasked. Running a downloaded upscaler binary such as
   Real-ESRGAN was blocked by the session's safety classifier.
+- **Blurry or empty graphics** (video 15: a "3 REASONS" transition held a smeared panel for 3.5 s): the
+  user wants real footage there. Cut the graphic out on its scene cuts and fill the exact frame count with
+  footage that fits the line, reused from elsewhere in the ad. Mirror it (`hflip`) so the repeat is less
+  obvious, and keep the total length so every later timestamp stays valid.
+- **Banners over a montage** (e.g. "15 000+ KUNDER" over customer photos): keep one steady banner for
+  the whole montage, from the frame the photos appear to the frame the next shot's subject appears.
+  Don't make it follow the counter on and off.
 - **Removing burned-in text without a box** (video 15: "60 DAY MONEY BACK" built itself over a 3D
   tablet for 30 frames). Cut the text frames out and fill the gap with the clean frames just before it,
   slowed down with motion interpolation, so the shot keeps its exact length and every later timestamp

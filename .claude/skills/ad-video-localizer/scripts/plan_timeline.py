@@ -66,6 +66,9 @@ def main():
     ap.add_argument("--min-tempo", type=float, default=1.0,
                     help="when the video has time to spare, slow the voice down to this before stretching pauses "
                          "(0.95 = up to 5 %% slower, inaudible); 1.0 = never slow down")
+    ap.add_argument("--break-before", default="",
+                    help="comma-separated sentence ids (chapter starts such as 'Reason two') where a longer "
+                         "silence is welcome; spare time collects there and at the end instead of in every pause")
     ap.add_argument("--soft-gap", type=float, default=0.30,
                     help="with time to spare, first widen pauses up to this, then slow down, then widen to --max-gap")
     a = ap.parse_args()
@@ -119,8 +122,11 @@ def main():
             idle = max(0.0, leftover)
         else:
             idle = 0.0
+        if b1["pos"] in breaks or b1["pos"] == len(order):
+            idle = 0.0  # silence before a chapter break or at the very end is welcome
         return {"ids": ids, "t0": t0 + lead, "t1": t1, "tempo": f, "gap": gap, "idle": idle}
 
+    breaks = {pos[int(x)] for x in a.break_before.split(",") if x.strip()}
     first = {"pos": 0, "kind": "start", "t": a.lead}
     last = {"pos": len(order), "kind": "end", "t": video_end}
 

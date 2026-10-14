@@ -10,6 +10,8 @@
     clip per sentence: it sounds robotic and like different people.
   - Speed the voice up only with `atempo` (the default in `build_voiceover.py`), never rubberband, which
     sounds robotic. Keep speed-ups at or under about 1.08.
+  - Never slow the voice down. A 5 % slow-down (video 15) made eleven_v3's lengthened word endings sound
+    drawn out ("tvätte---n", "slu---t"). Spread spare time over the pauses instead (`--max-gap 0.6`).
   - Cover burned-in foreign text in the footage with white boxes holding black Swedish text.
   - Short pauses of about 0.2 s. Natural, flowing Swedish.
   - Never remove content the user wants to keep.

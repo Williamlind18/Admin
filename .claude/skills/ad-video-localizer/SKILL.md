@@ -107,10 +107,12 @@ python3 $SK/plan_timeline.py WORK/sent --video-duration D \
 - **Anchors.** Only add anchors for the key moments from step 2, with a window of about ±1 s around
   each. `end` anchors suit lines whose pointing word comes last. `start` anchors suit lines that open
   on the visual.
-- **Time to spare.** When the voice is shorter than the video, pass `--min-tempo 0.95`: pauses first
-  grow to 0.30 s, then the voice slows by up to 5 % (inaudible), and only then do pauses grow to the
-  0.45 s cap. Among equally fast layouts the planner now picks the one with the least leftover silence,
-  so long gaps before anchors disappear (video 15 went from 1.3 s gaps to none over 0.45 s).
+- **Time to spare.** When the voice is shorter than the video, never slow it down: the user heard a
+  5 % slow-down (`--min-tempo 0.95`) as drawn-out words, because eleven_v3 already lengthens words before
+  commas and full stops. Raise `--max-gap` to about 0.6 so the spare time spreads evenly over the pauses
+  (video 15: every pause 0.5-0.62 s). Among equally fast layouts the planner picks the one with the least
+  leftover silence. `--break-before ID,...` lets spare time gather before chapter starts instead, but it
+  quickly makes 2-3 s gaps; use it only when there is little to spare.
 - **Many anchors are fine.** A 4-minute ad can need 20+. Above ~150 000 combinations the planner
   switches from trying every combination to an exact dynamic programme, so it stays at 0.1 s
   resolution and finishes in well under a second.

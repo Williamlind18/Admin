@@ -15,13 +15,13 @@
   - Never remove content the user wants to keep.
   - Captions are 1-3 words in Montserrat ExtraBold.
   - Deliver a preview in chat, full quality on GitHub and an .srt file.
-- For any product page copy, build on the user's fixed five-section template, which converts well for them.
-  Below the buy box, in this order:
+- For any product page copy, use the user's five-section template as a guiding thread (it converts well for
+  them), not a rigid rule. Below the buy box:
   1. Image + text that stirs emotion and recognition in the avatar and names the problems in their everyday life.
   2. Image + text that introduces the product, its USPs, how it works and how it solves the problems from section 1.
   3. Image + text with bullet points, each with an explanatory subheading.
   4. Guarantee (the user's default is 30 days; use the product's real terms, e.g. 60 days for the PDRN stick).
   5. Reviews (only genuine reviews; never invent reviews, ratings or customer counts).
-  Base the copy on the avatar: the better the avatar is known, the better the conversion. Additions beyond the
-  template are welcome when the product or avatar calls for them, but all five parts must stay recognisable.
+  Base the copy on the avatar: the better the avatar is known, the better the conversion. Feel free to add
+  sections, reorder or take other angles whenever that suits the avatar better.
 - This repo is public. Never commit API keys or other secrets.

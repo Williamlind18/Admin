@@ -1,0 +1,383 @@
+{%- comment -%}
+  Svea Premium – Jämförelse. Three columns + row labels.
+  ≥750px: a real <table> (caption, th scope=col / scope=row); the highlighted column is subtly tinted, topped by a thin
+  wine rule and a small marker (setting highlight_label, default "Svea").
+  <750px: no horizontal scroll – one block per row (label as a non-heading <p> styled like an h3, the three values as a
+  labelled list), so the row labels never add headings to the page outline; the table uses <th scope="row">. The highlighted
+  value tinted. Only one of the two renderings is displayed at a time (display:none hides the other from assistive tech).
+  A column is shown when its heading or any of its values is filled in. Rows without any content are skipped.
+  Extra settings beyond CONTRACT.md: highlight_label.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign tone = s.tone | default: 'cream'
+  assign pad = s.pad | default: 'm'
+  assign anchor_id = s.anchor | remove: '#' | handleize
+  assign hl = s.highlight_col | default: '3' | append: ''
+
+  assign show1 = false
+  assign show2 = false
+  assign show3 = false
+  if s.col1 != blank
+    assign show1 = true
+  endif
+  if s.col2 != blank
+    assign show2 = true
+  endif
+  if s.col3 != blank
+    assign show3 = true
+  endif
+  assign rows = 0
+  for block in section.blocks
+    assign b = block.settings
+    if b.label != blank or b.c1 != blank or b.c2 != blank or b.c3 != blank
+      assign rows = rows | plus: 1
+    endif
+    if b.c1 != blank
+      assign show1 = true
+    endif
+    if b.c2 != blank
+      assign show2 = true
+    endif
+    if b.c3 != blank
+      assign show3 = true
+    endif
+  endfor
+  assign ncols = 0
+  if show1
+    assign ncols = ncols | plus: 1
+  endif
+  if show2
+    assign ncols = ncols | plus: 1
+  endif
+  if show3
+    assign ncols = ncols | plus: 1
+  endif
+
+  assign caption = s.heading | strip_html | strip
+  if caption == blank
+    assign caption = s.eyebrow | strip
+  endif
+  if caption == blank
+    assign caption = 'Jämförelse'
+  endif
+
+  assign has_head = false
+  if s.eyebrow != blank or s.heading != blank or s.intro != blank
+    assign has_head = true
+  endif
+-%}
+<div id="svp-{{ section.id }}" class="svp svp-compare svp-compare--hl{{ hl }} svp-tone--{{ tone }} svp-pad--{{ pad }}">
+  {%- if anchor_id != blank -%}<span class="svp-anchor" id="{{ anchor_id }}"></span>{%- endif -%}
+  <div class="svp-container">
+    {%- if has_head -%}
+      <div class="svp-compare__head svp-reveal">
+        {%- if s.eyebrow != blank -%}<p class="svp-eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
+        {%- if s.heading != blank -%}<h2 class="svp-h2 svp-compare__h">{{ s.heading }}</h2>{%- endif -%}
+        {%- if s.intro != blank -%}<div class="svp-rte svp-compare__intro">{{ s.intro }}</div>{%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if rows > 0 and ncols > 0 -%}
+      <div class="svp-compare__body svp-reveal">
+        {%- comment -%} Desktop / tablet: accessible table {%- endcomment -%}
+        <table class="svp-compare__table svp-only-desktop" style="--svp-compare-cols: {{ ncols }};">
+          <caption class="svp-sr">{{ caption | escape }}</caption>
+          <thead>
+            <tr>
+              <td class="svp-compare__corner"></td>
+              {%- for n in (1..3) -%}
+                {%- liquid
+                  assign key = 'col' | append: n
+                  assign nstr = n | append: ''
+                  case n
+                    when 1
+                      assign on = show1
+                    when 2
+                      assign on = show2
+                    else
+                      assign on = show3
+                  endcase
+                -%}
+                {%- if on -%}
+                  <th scope="col" class="svp-compare__col{% if nstr == hl %} svp-compare__is-hl{% endif %}">
+                    {%- if nstr == hl and s.highlight_label != blank -%}<span class="svp-compare__mark">{{ s.highlight_label | escape }}</span>{%- endif -%}
+                    <span class="svp-compare__colname">{{ s[key] | escape }}</span>
+                  </th>
+                {%- endif -%}
+              {%- endfor -%}
+            </tr>
+          </thead>
+          <tbody>
+            {%- for block in section.blocks -%}
+              {%- assign b = block.settings -%}
+              {%- unless b.label == blank and b.c1 == blank and b.c2 == blank and b.c3 == blank -%}
+                <tr {{ block.shopify_attributes }}>
+                  <th scope="row" class="svp-compare__rowname">{{ b.label | escape }}</th>
+                  {%- for n in (1..3) -%}
+                    {%- liquid
+                      assign key = 'c' | append: n
+                      assign nstr = n | append: ''
+                      case n
+                        when 1
+                          assign on = show1
+                        when 2
+                          assign on = show2
+                        else
+                          assign on = show3
+                      endcase
+                    -%}
+                    {%- if on -%}
+                      <td class="svp-compare__cell{% if nstr == hl %} svp-compare__is-hl{% endif %}">{% if b[key] != blank %}{{ b[key] | escape }}{% else %}<span aria-hidden="true">–</span><span class="svp-sr">Ingen uppgift</span>{% endif %}</td>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </tr>
+              {%- endunless -%}
+            {%- endfor -%}
+          </tbody>
+        </table>
+
+        {%- comment -%} Mobile: one block per row, no horizontal scroll {%- endcomment -%}
+        <ul class="svp-compare__rows svp-only-mobile" role="list">
+          {%- for block in section.blocks -%}
+            {%- assign b = block.settings -%}
+            {%- unless b.label == blank and b.c1 == blank and b.c2 == blank and b.c3 == blank -%}
+              <li class="svp-compare__row">
+                {%- if b.label != blank -%}<p class="svp-h3 svp-compare__q">{{ b.label | escape }}</p>{%- endif -%}
+                <dl class="svp-compare__dl">
+                  {%- for n in (1..3) -%}
+                    {%- liquid
+                      assign ckey = 'col' | append: n
+                      assign vkey = 'c' | append: n
+                      assign nstr = n | append: ''
+                      case n
+                        when 1
+                          assign on = show1
+                        when 2
+                          assign on = show2
+                        else
+                          assign on = show3
+                      endcase
+                    -%}
+                    {%- if on -%}
+                      <div class="svp-compare__pair{% if nstr == hl %} svp-compare__is-hl{% endif %}">
+                        <dt>{% if nstr == hl %}<span class="svp-compare__dot" aria-hidden="true"></span>{% endif %}{{ s[ckey] | escape }}</dt>
+                        <dd>{% if b[vkey] != blank %}{{ b[vkey] | escape }}{% else %}<span aria-hidden="true">–</span><span class="svp-sr">Ingen uppgift</span>{% endif %}</dd>
+                      </div>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </dl>
+              </li>
+            {%- endunless -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%- endif -%}
+
+    {%- if s.footnote != blank -%}
+      <div class="svp-rte svp-compare__foot svp-reveal">{{ s.footnote }}</div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% stylesheet %}
+  .svp-compare { --svp-compare-hl: var(--svp-white); }
+  .svp-compare.svp-tone--cream, .svp-compare.svp-tone--white { --svp-compare-hl: var(--svp-blush); }
+  .svp-compare.svp-tone--wine { --svp-compare-hl: rgba(250, 247, 242, .08); }
+
+  .svp-compare .svp-compare__head { max-width: 820px; margin: 0 auto 40px; text-align: center; }
+  .svp-compare .svp-compare__h { margin: 0; }
+  .svp-compare .svp-compare__intro { max-width: 640px; margin: 20px auto 0; }
+  .svp-compare .svp-compare__body { max-width: 1080px; margin: 0 auto; }
+  .svp-compare .svp-compare__foot { max-width: 680px; margin: 36px auto 0; text-align: center; color: var(--svp-fg-soft); }
+
+  /* Mobile: one block per row */
+  .svp-compare .svp-compare__rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--svp-rule); }
+  .svp-compare .svp-compare__row { padding: 20px 0 18px; border-bottom: 1px solid var(--svp-rule); }
+  .svp-compare .svp-compare__q { margin: 0 0 8px; font-weight: 400; text-wrap: balance; }
+  .svp-compare .svp-compare__dl { margin: 0; }
+  .svp-compare .svp-compare__pair { display: grid; grid-template-columns: minmax(0, 38%) minmax(0, 1fr); column-gap: 16px; align-items: baseline; padding: 7px 12px; margin: 0 -12px; }
+  .svp-compare .svp-compare__pair dt { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 15px; line-height: 1.4; color: var(--svp-fg-soft); }
+  .svp-compare .svp-compare__pair dd { margin: 0; font-size: 17px; line-height: 1.45; color: var(--svp-fg); }
+  .svp-compare .svp-compare__pair.svp-compare__is-hl { background: var(--svp-compare-hl); }
+  .svp-compare .svp-compare__pair.svp-compare__is-hl dt { color: var(--svp-accent); font-weight: 500; }
+  .svp-compare .svp-compare__pair.svp-compare__is-hl dd { font-weight: 500; }
+  .svp-compare .svp-compare__dot { flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--svp-accent); }
+
+  /* ≥750: table */
+  .svp-compare .svp-compare__table { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; margin: 0; font-size: 17px; line-height: 1.45; }
+  .svp-compare .svp-compare__table th, .svp-compare .svp-compare__table td { padding: 20px 20px; text-align: left; vertical-align: top; border: 0; border-bottom: 1px solid var(--svp-rule); background: none; font-weight: 400; color: var(--svp-fg-soft); }
+  .svp-compare .svp-compare__table thead th, .svp-compare .svp-compare__table thead td { vertical-align: bottom; padding-top: 44px; padding-bottom: 18px; border-bottom-color: var(--svp-fg); }
+  .svp-compare .svp-compare__corner { width: 24%; }
+  .svp-compare .svp-compare__table .svp-compare__col { font-family: var(--svp-font-serif); font-size: 24px; line-height: 1.2; letter-spacing: -0.005em; color: var(--svp-heading) !important; }
+  .svp-compare .svp-compare__colname { display: block; }
+  .svp:not(#svp_) .svp-compare__colname { font-family: var(--svp-font-serif) !important; font-weight: 400 !important; }
+  .svp-compare .svp-compare__table .svp-compare__rowname { font-size: 16px; font-weight: 500 !important; letter-spacing: .01em; color: var(--svp-fg) !important; }
+  .svp-compare .svp-compare__table .svp-compare__is-hl { background: var(--svp-compare-hl); color: var(--svp-fg); font-weight: 500; }
+  .svp-compare .svp-compare__table thead th.svp-compare__is-hl { position: relative; box-shadow: inset 0 2px 0 var(--svp-accent); color: var(--svp-em) !important; font-weight: 400; }
+  .svp-compare .svp-compare__table tbody tr:last-child td.svp-compare__is-hl { padding-bottom: 32px; }
+  .svp-compare .svp-compare__table tbody tr:last-child th, .svp-compare .svp-compare__table tbody tr:last-child td { border-bottom: 0; padding-bottom: 32px; }
+  .svp-compare .svp-compare__mark { display: flex; align-items: center; gap: 8px; margin: 0 0 10px; font-family: var(--svp-font-sans); font-size: 13px; font-weight: 500; line-height: 1.3; letter-spacing: .14em; text-transform: uppercase; color: var(--svp-accent); }
+  .svp-compare .svp-compare__mark::before { content: ""; flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--svp-coral); }
+
+  @media (min-width: 990px) {
+    .svp-compare .svp-compare__head { margin-bottom: 56px; }
+    .svp-compare .svp-compare__table th, .svp-compare .svp-compare__table td { padding: 24px 28px; font-size: 18px; }
+    .svp-compare .svp-compare__table thead th, .svp-compare .svp-compare__table thead td { padding-top: 48px; padding-bottom: 20px; }
+    .svp-compare .svp-compare__table .svp-compare__col { font-size: 28px; }
+    .svp-compare .svp-compare__table .svp-compare__rowname { font-size: 17px; }
+    .svp-compare .svp-compare__table tbody tr:last-child th, .svp-compare .svp-compare__table tbody tr:last-child td { padding-bottom: 36px; }
+    .svp-compare .svp-compare__foot { margin-top: 44px; }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Svea Premium – Jämförelse",
+  "class": "svp-section",
+  "max_blocks": 10,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Innehåll"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Etikett ovanför rubriken",
+      "default": "Tre vägar"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Rubrik",
+      "info": "Gör ett eller två ord kursiva för betoning.",
+      "default": "Tre sätt att ta hand om huden. <em>De gör olika saker.</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "label": "Ingress"
+    },
+    {
+      "type": "header",
+      "content": "Kolumner"
+    },
+    {
+      "type": "text",
+      "id": "col1",
+      "label": "Kolumn 1, rubrik",
+      "default": "Fuktkräm"
+    },
+    {
+      "type": "text",
+      "id": "col2",
+      "label": "Kolumn 2, rubrik",
+      "default": "Klinikbesök"
+    },
+    {
+      "type": "text",
+      "id": "col3",
+      "label": "Kolumn 3, rubrik",
+      "default": "Stiftet"
+    },
+    {
+      "type": "select",
+      "id": "highlight_col",
+      "label": "Markerad kolumn",
+      "options": [
+        { "value": "1", "label": "Kolumn 1" },
+        { "value": "2", "label": "Kolumn 2" },
+        { "value": "3", "label": "Kolumn 3" }
+      ],
+      "default": "3"
+    },
+    {
+      "type": "text",
+      "id": "highlight_label",
+      "label": "Märkning över markerad kolumn",
+      "info": "Liten text ovanför kolumnrubriken. Lämna tomt för att dölja.",
+      "default": "Svea"
+    },
+    {
+      "type": "richtext",
+      "id": "footnote",
+      "label": "Fotnot under jämförelsen"
+    },
+    {
+      "type": "header",
+      "content": "Utseende"
+    },
+    {
+      "type": "select",
+      "id": "tone",
+      "label": "Bakgrund",
+      "options": [
+        { "value": "cream", "label": "Kräm" },
+        { "value": "sand", "label": "Sand" },
+        { "value": "blush", "label": "Rosa" },
+        { "value": "white", "label": "Vit" },
+        { "value": "wine", "label": "Mörk vinröd" }
+      ],
+      "default": "cream"
+    },
+    {
+      "type": "select",
+      "id": "pad",
+      "label": "Luft ovanför och under",
+      "options": [
+        { "value": "s", "label": "Liten" },
+        { "value": "m", "label": "Mellan" },
+        { "value": "l", "label": "Stor" }
+      ],
+      "default": "m"
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Ankar-id för sektionen",
+      "info": "Till exempel jamforelse. Då kan knappar länka hit med #jamforelse."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Rad",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Radrubrik",
+          "default": "Nål"
+        },
+        {
+          "type": "text",
+          "id": "c1",
+          "label": "Kolumn 1",
+          "info": "Kort text, några ord."
+        },
+        {
+          "type": "text",
+          "id": "c2",
+          "label": "Kolumn 2"
+        },
+        {
+          "type": "text",
+          "id": "c3",
+          "label": "Kolumn 3"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Svea Premium – Jämförelse",
+      "blocks": [
+        { "type": "row", "settings": { "label": "Nål", "c1": "Nej", "c2": "Ja", "c3": "Nej" } },
+        { "type": "row", "settings": { "label": "Var du gör det", "c1": "Hemma", "c2": "På kliniken", "c3": "Hemma eller på resa" } },
+        { "type": "row", "settings": { "label": "Tid per dag", "c1": "Beror på rutinen", "c2": "Bokade besök", "c3": "30 sekunder, morgon och kväll" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

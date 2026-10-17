@@ -1,0 +1,68 @@
+{%- comment -%}
+  Svea Premium – responsive media in a fixed aspect box. Falls back to svp-placeholder when empty.
+  Priority: video (if given) → image (if given) → placeholder.
+
+  Params:
+  - image:    image object (image_picker setting, product.featured_image, media.preview_image …) or blank
+  - video:    Shopify video object (video setting) – renders <video autoplay muted loop playsinline> with poster
+  - ratio:    "4:5" (default) | "1:1" | "3:4" | "16:9" | any "W:H" | "natural" (image's own ratio)
+  - word:     placeholder word when empty (e.g. section.settings.placeholder_word)
+  - sizes:    sizes attribute, default "(min-width: 990px) 50vw, 100vw"
+  - class:    extra classes on the aspect box
+  - loading:  "lazy" (default) | "eager"
+  - priority: true → loading eager + fetchpriority high (use for the hero / LCP image only)
+  - alt:      alt text override (default image.alt; pass alt: '' for purely decorative images)
+
+  Usage:
+  {% render 'svp-image', image: section.settings.image, video: section.settings.video, ratio: section.settings.ratio,
+     word: section.settings.placeholder_word, sizes: '(min-width: 990px) 50vw, 100vw', priority: true %}
+{%- endcomment -%}
+{%- liquid
+  assign _ratio = ratio | default: '4:5' | strip
+  if _ratio == 'natural'
+    if image != blank and image.width and image.height
+      assign _ratio = image.width | append: ':' | append: image.height
+    elsif video != blank and video.preview_image
+      assign _ratio = video.preview_image.width | append: ':' | append: video.preview_image.height
+    else
+      assign _ratio = '4:5'
+    endif
+  endif
+  assign _parts = _ratio | split: ':'
+  assign _w = _parts[0] | plus: 0
+  assign _h = _parts[1] | plus: 0
+  if _w <= 0 or _h <= 0
+    assign _w = 4
+    assign _h = 5
+  endif
+  assign _pad = _h | times: 100.0 | divided_by: _w | round: 3
+  assign _sizes = sizes | default: '(min-width: 990px) 50vw, 100vw'
+  assign _loading = loading | default: 'lazy'
+  assign _fp = 'auto'
+  if priority
+    assign _loading = 'eager'
+    assign _fp = 'high'
+  endif
+  assign _cls = 'svp-media svp-ar'
+  if class != blank
+    assign _cls = _cls | append: ' ' | append: class
+  endif
+-%}
+{%- if video != blank -%}
+  <div class="{{ _cls }}" style="--svp-ar: {{ _w }} / {{ _h }}; --svp-ar-pad: {{ _pad }}%;">
+    {{- video | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true, preload: 'metadata', image_size: '1400x', class: 'svp-media__el' -}}
+  </div>
+{%- elsif image != blank -%}
+  {%- liquid
+    assign _alt = image.alt | default: ''
+    if alt != nil
+      assign _alt = alt
+    endif
+    assign _pos = 'object-position: ' | append: image.presentation.focal_point
+  -%}
+  <div class="{{ _cls }}" style="--svp-ar: {{ _w }} / {{ _h }}; --svp-ar-pad: {{ _pad }}%;">
+    {{- image | image_url: width: 2000 | image_tag: widths: '360, 540, 720, 900, 1100, 1400, 1800', sizes: _sizes, loading: _loading, fetchpriority: _fp, alt: _alt, class: 'svp-media__el', style: _pos -}}
+  </div>
+{%- else -%}
+  {%- render 'svp-placeholder', word: word, ratio: _ratio, class: class -%}
+{%- endif -%}

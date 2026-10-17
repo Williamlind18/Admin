@@ -1,0 +1,237 @@
+{%- comment -%}
+  Svea Premium – Textsektion (REFERENCE implementation for all svp- sections).
+  Conventions: root id "svp-{{ section.id }}" + classes "svp svp-<name> svp-tone--* svp-pad--*", inner .svp-container,
+  empty fields are never rendered, heading tag h2 unless heading_tag, button_anchor beats button_url.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign tone = s.tone | default: 'cream'
+  assign pad = s.pad | default: 'm'
+  assign align = s.align | default: 'center'
+  assign size = s.size | default: 'm'
+  assign htag = 'h2'
+  if s.heading_tag == 'h1'
+    assign htag = 'h1'
+  endif
+  # Visual scale: an h1 always gets the H1 scale (contract: clamp(38px,6vw,72px)); size "l" lifts an h2 to it too.
+  assign hclass = 'svp-h2'
+  if size == 'l' or htag == 'h1'
+    assign hclass = 'svp-h1'
+  endif
+
+  assign anchor_id = s.anchor | remove: '#' | handleize
+  assign btn_href = blank
+  if s.button_anchor != blank
+    assign btn_anchor = s.button_anchor | remove: '#' | handleize
+    assign btn_href = '#' | append: btn_anchor
+  elsif s.button_url != blank
+    assign btn_href = s.button_url
+  endif
+  assign show_btn = false
+  if s.button_label != blank and btn_href != blank
+    assign show_btn = true
+  endif
+  assign btn_style = s.button_style | default: 'link'
+
+  assign has_body = false
+  if s.body != blank or show_btn or s.signature != blank
+    assign has_body = true
+  endif
+-%}
+<div id="svp-{{ section.id }}" class="svp svp-statement svp-statement--{{ align }} svp-statement--{{ size }} svp-tone--{{ tone }} svp-pad--{{ pad }}">
+  {%- if anchor_id != blank -%}<span class="svp-anchor" id="{{ anchor_id }}"></span>{%- endif -%}
+  <div class="svp-container">
+    <div class="svp-statement__grid svp-reveal">
+      {%- if s.eyebrow != blank or s.heading != blank -%}
+        <div class="svp-statement__head">
+          {%- if s.eyebrow != blank -%}
+            <p class="svp-eyebrow">{{ s.eyebrow | escape }}</p>
+          {%- endif -%}
+          {%- if s.heading != blank -%}
+            <{{ htag }} class="svp-statement__h {{ hclass }}">{{ s.heading }}</{{ htag }}>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+      {%- if has_body -%}
+        <div class="svp-statement__body">
+          {%- if s.body != blank -%}
+            <div class="svp-rte{% if size == 'l' %} svp-lead{% endif %}">{{ s.body }}</div>
+          {%- endif -%}
+          {%- if show_btn -%}
+            <div class="svp-actions">
+              <a class="svp-cta svp-cta--{{ btn_style }}{% if btn_style != 'link' %} svp-cta--full-mobile{% endif %}" href="{{ btn_href }}">
+                <span>{{ s.button_label | escape }}</span>
+                {%- if btn_style == 'link' -%}{%- render 'svp-icon', name: 'arrow', size: 18, class: 'svp-cta__arrow' -%}{%- endif -%}
+              </a>
+            </div>
+          {%- endif -%}
+          {%- if s.signature != blank -%}
+            <div class="svp-statement__sig">
+              <span class="svp-ornament" aria-hidden="true"></span>
+              <p class="svp-serif">{{ s.signature | escape }}</p>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .svp-statement .svp-statement__grid { display: grid; grid-template-columns: minmax(0, 1fr); row-gap: 24px; }
+  .svp-statement .svp-statement__h { margin: 0; text-wrap: balance; }
+  .svp-statement .svp-statement__body { max-width: 640px; }
+  .svp-statement .svp-statement__sig { margin-top: 36px; }
+  .svp-statement .svp-statement__sig p { margin: 14px 0 0; font-style: italic; font-size: 20px; line-height: 1.4; color: var(--svp-fg-soft); }
+
+  .svp-statement--center .svp-statement__grid { justify-items: center; text-align: center; }
+  .svp-statement--center .svp-statement__head { max-width: 860px; }
+  .svp-statement--center.svp-statement--l .svp-statement__head { max-width: 1040px; }
+  .svp-statement--center .svp-actions { justify-content: center; }
+  .svp-statement--center .svp-statement__sig .svp-ornament { margin: 0 auto; }
+
+  @media (min-width: 990px) {
+    .svp-statement .svp-statement__grid { row-gap: 32px; }
+    .svp-statement--left .svp-statement__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); column-gap: clamp(48px, 7vw, 120px); align-items: start; }
+    .svp-statement--left.svp-statement--l .svp-statement__grid { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); }
+    .svp-statement--left .svp-statement__body { padding-top: 10px; }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Svea Premium – Text",
+  "class": "svp-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Innehåll"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Etikett ovanför rubriken"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Rubrik",
+      "info": "Gör ett eller två ord kursiva för betoning.",
+      "default": "Hudvård som hellre säger för lite <em>än för mycket.</em>"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Rubriknivå",
+      "info": "Bara en H1 per sida.",
+      "options": [
+        { "value": "h2", "label": "H2 (standard)" },
+        { "value": "h1", "label": "H1" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text",
+      "default": "<p>Vi visar hellre än lovar. Därför står det bara sådant här som vi kan stå för.</p>"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "Justering",
+      "options": [
+        { "value": "center", "label": "Centrerad" },
+        { "value": "left", "label": "Vänster (två spalter på dator)" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "size",
+      "label": "Storlek",
+      "options": [
+        { "value": "m", "label": "Normal" },
+        { "value": "l", "label": "Stor" }
+      ],
+      "default": "m"
+    },
+    {
+      "type": "header",
+      "content": "Knapp"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Knapptext"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Länk"
+    },
+    {
+      "type": "text",
+      "id": "button_anchor",
+      "label": "Ankare på sidan",
+      "info": "Till exempel kop. Länkar till #kop på samma sida och går före länken ovan."
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Knappstil",
+      "options": [
+        { "value": "link", "label": "Textlänk med pil" },
+        { "value": "primary", "label": "Fylld" },
+        { "value": "secondary", "label": "Kontur" }
+      ],
+      "default": "link"
+    },
+    {
+      "type": "text",
+      "id": "signature",
+      "label": "Signatur",
+      "info": "Visas i kursiv under texten."
+    },
+    {
+      "type": "header",
+      "content": "Utseende"
+    },
+    {
+      "type": "select",
+      "id": "tone",
+      "label": "Bakgrund",
+      "options": [
+        { "value": "cream", "label": "Kräm" },
+        { "value": "sand", "label": "Sand" },
+        { "value": "blush", "label": "Rosa" },
+        { "value": "white", "label": "Vit" },
+        { "value": "wine", "label": "Mörk vinröd" }
+      ],
+      "default": "cream"
+    },
+    {
+      "type": "select",
+      "id": "pad",
+      "label": "Luft ovanför och under",
+      "options": [
+        { "value": "s", "label": "Liten" },
+        { "value": "m", "label": "Mellan" },
+        { "value": "l", "label": "Stor" }
+      ],
+      "default": "m"
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Ankar-id för sektionen",
+      "info": "Till exempel mekanism. Då kan knappar länka hit med #mekanism."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Svea Premium – Textsektion"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,176 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "custom-footer",
+      "blocks": {
+        "social_column_yXDLEk": {
+          "type": "social_column",
+          "disabled": true,
+          "settings": {
+            "heading": "Följ oss",
+            "icon_color": "#14100f",
+            "icon_hover_color": "#ef4a65",
+            "icon_size": 24,
+            "icon_spacing": 8,
+            "heading_color": "",
+            "heading_font_size": 16,
+            "heading_margin_bottom": 12
+          }
+        },
+        "text_column_LAFNDR": {
+          "type": "text_column",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "text": "<p></p>",
+            "text_font_size": 14,
+            "text_line_height": 1.5,
+            "text_color": "",
+            "link_color": "",
+            "heading_font_size": 16,
+            "heading_color": "",
+            "heading_margin_bottom": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "text_column_awK7Ua": {
+          "type": "text_column",
+          "settings": {
+            "heading": "",
+            "text": "<p>Hudvård i stiftformat från ett svenskt bolag. Tydligt innehåll och löften vi kan stå för, däribland 60 dagars öppet köp, även på påbörjad produkt.<br/><br/><br/>559443-5934<br/>Karlbergsvägen 84<br/>113 35 Stockholm<br/>kontakt@sveaskincare.se</p>",
+            "text_font_size": 13,
+            "text_line_height": 1.6,
+            "text_color": "",
+            "link_color": "",
+            "heading_font_size": 16,
+            "heading_color": "",
+            "heading_margin_bottom": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "menu_column_1": {
+          "type": "menu_column",
+          "settings": {
+            "heading": "Kundservice",
+            "menu": "kontakt-hj-lp"
+          }
+        },
+        "menu_column_DCQR4F": {
+          "type": "menu_column",
+          "settings": {
+            "heading": "Företagsinformation",
+            "menu": "f-retagsinformation"
+          }
+        },
+        "menu_column_2": {
+          "type": "menu_column",
+          "settings": {
+            "heading": "Guider",
+            "menu": "guider"
+          }
+        }
+      },
+      "block_order": [
+        "social_column_yXDLEk",
+        "text_column_LAFNDR",
+        "text_column_awK7Ua",
+        "menu_column_1",
+        "menu_column_DCQR4F",
+        "menu_column_2"
+      ],
+      "custom_css": [
+        ".footer-bottom {align-items: center; justify-content: center; margin-top: 54px;}"
+      ],
+      "settings": {
+        "use_theme_colors": false,
+        "show_newsletter": true,
+        "newsletter_title": "Få våra guider innan alla andra",
+        "newsletter_title_alignment": "center",
+        "newsletter_title_color": "",
+        "newsletter_subtitle": "Hudvård utan överdrifter — vad som faktiskt fungerar, när nya produkter släpps och erbjudanden före alla andra.",
+        "newsletter_subtitle_alignment": "center",
+        "newsletter_subtitle_color": "",
+        "newsletter_subtitle_margin_top": 16,
+        "newsletter_placeholder": "Din e-postadress",
+        "newsletter_button_text": "Anmäl mig",
+        "show_button_text": false,
+        "newsletter_button_bg_color": "",
+        "newsletter_button_text_color": "#ffffff",
+        "newsletter_button_border_radius": 40,
+        "show_brand_column": true,
+        "logo": "shopify://shop_images/svea-skin-wordmark-svart.png",
+        "logo_width": 300,
+        "brand_name": "Svea Skin",
+        "logo_description": "",
+        "brand_description": "",
+        "footer_columns": "4",
+        "mobile_columns": "1",
+        "show_footer_bottom": true,
+        "copyright_text": "© 2026 SVEA SKIN® — Svenska Utbildningsinstitutet AB. Alla rättigheter förbehållna.",
+        "show_payment_icons": false,
+        "custom_payment_icons": "visa, mastercard, maestro, apple_pay, google_pay, shopify_pay, klarna",
+        "payment_icon_height": 24,
+        "payment_icon_spacing": 8,
+        "show_localization": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "show_social": true,
+        "show_copyright": true,
+        "newsletter_bg_color": "#ffffff",
+        "newsletter_text_color": "#14100f",
+        "newsletter_button_color": "#000000",
+        "footer_bg_color": "#ffffff",
+        "footer_text_color": "#4a4a4a",
+        "footer_link_color": "#ef4a65",
+        "footer_link_hover_color": "#970933",
+        "footer_heading_color": "#14100f",
+        "footer_border_color": "#e5e5e5",
+        "footer_menu_color": "#4a4a4a",
+        "footer_menu_hover_color": "#970933",
+        "footer_divider_color": "#e5e5e5",
+        "localization_label_color": "#b0b0b0",
+        "footer_heading_size": 15,
+        "footer_text_size": 14,
+        "newsletter_title_size": 32,
+        "newsletter_subtitle_size": 16,
+        "copyright_text_size": 11,
+        "localization_label_size": 14,
+        "newsletter_section_padding_top": 100,
+        "newsletter_section_padding_bottom": 80,
+        "newsletter_section_padding_top_mobile": 40,
+        "newsletter_section_padding_bottom_mobile": 40,
+        "newsletter_form_max_width": 580,
+        "newsletter_form_margin_top": 32,
+        "newsletter_input_padding_vertical": 24,
+        "newsletter_input_padding_horizontal": 24,
+        "newsletter_input_border_radius": 8,
+        "newsletter_input_border_width": 1,
+        "newsletter_input_border_color": "#e0e0e0",
+        "newsletter_input_font_size": 14,
+        "newsletter_input_height": 48,
+        "newsletter_input_bg_color": "#ffffff",
+        "newsletter_input_text_color": "#000000",
+        "enable_section_top_border": true,
+        "section_top_border_width": 1,
+        "section_top_border_style": "dotted",
+        "section_top_border_color": "#e5e5e5"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

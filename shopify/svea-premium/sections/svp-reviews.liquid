@@ -1,0 +1,300 @@
+{%- comment -%}
+  Svea Premium – Omdömen. Two states:
+  1. No review block with a quote → the honesty statement: eyebrow set into the top line of a hairline frame,
+     fallback heading, ornament, fallback body and an optional link (for example to the guarantee). Calm and
+     deliberate, never an empty "no reviews yet" box.
+  2. One or more review blocks → head (eyebrow, heading, intro) and quote cards: serif quote, name and detail in
+     small sans, "Verifierat köp" only when the block's verified box is ticked. 1 column on mobile, 2 on tablet,
+     2 or 3 on desktop depending on the count. Never stars, ratings or aggregate numbers.
+  Extra settings beyond CONTRACT.md: link_label, link_url, button_anchor (beats link_url), link_style.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign tone = s.tone | default: 'cream'
+  assign pad = s.pad | default: 'm'
+  assign anchor_id = s.anchor | remove: '#' | handleize
+
+  assign count = 0
+  for block in section.blocks
+    if block.type == 'review' and block.settings.quote != blank
+      assign count = count | plus: 1
+    endif
+  endfor
+
+  assign lnk_href = blank
+  if s.button_anchor != blank
+    assign lnk_anchor = s.button_anchor | remove: '#' | handleize
+    assign lnk_href = '#' | append: lnk_anchor
+  elsif s.link_url != blank
+    assign lnk_href = s.link_url
+  endif
+  assign show_link = false
+  if s.link_label != blank and lnk_href != blank
+    assign show_link = true
+  endif
+  assign lnk_style = s.link_style | default: 'link'
+
+  assign has_fallback = false
+  if s.fallback_heading != blank or s.fallback_body != blank or show_link
+    assign has_fallback = true
+  endif
+
+  # Column layout: 1 → one wide card, 2 and 4 → two columns, 3 and 5+ → three columns on desktop.
+  assign cols = 3
+  if count == 1
+    assign cols = 1
+  elsif count == 2 or count == 4
+    assign cols = 2
+  endif
+  assign odd = count | modulo: 2
+-%}
+{%- if count > 0 or has_fallback -%}
+<div id="svp-{{ section.id }}" class="svp svp-reviews{% if count > 0 %} svp-reviews--list svp-reviews--c{{ cols }}{% if odd == 1 and count > 1 %} svp-reviews--odd{% endif %}{% else %} svp-reviews--empty{% endif %} svp-tone--{{ tone }} svp-pad--{{ pad }}">
+  {%- if anchor_id != blank -%}<span class="svp-anchor" id="{{ anchor_id }}"></span>{%- endif -%}
+  <div class="svp-container">
+    {%- if count > 0 -%}
+      {%- if s.eyebrow != blank or s.heading != blank or s.intro != blank -%}
+        <div class="svp-reviews__head svp-reveal">
+          {%- if s.eyebrow != blank -%}<p class="svp-eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
+          {%- if s.heading != blank -%}<h2 class="svp-h2 svp-reviews__h">{{ s.heading }}</h2>{%- endif -%}
+          {%- if s.intro != blank -%}<div class="svp-rte svp-reviews__intro">{{ s.intro }}</div>{%- endif -%}
+        </div>
+      {%- endif -%}
+      <ul class="svp-reviews__grid" role="list">
+        {%- assign n = 0 -%}
+        {%- for block in section.blocks -%}
+          {%- assign b = block.settings -%}
+          {%- if block.type == 'review' and b.quote != blank -%}
+            {%- assign delay = n | modulo: 3 | times: 0.08 -%}
+            {%- assign n = n | plus: 1 -%}
+            <li class="svp-reviews__item svp-reveal" style="--svp-delay: {{ delay }}s;" {{ block.shopify_attributes }}>
+              <figure class="svp-reviews__card">
+                <span class="svp-reviews__mark" aria-hidden="true">&ldquo;</span>
+                <blockquote class="svp-reviews__q svp-rte">{{ b.quote }}</blockquote>
+                {%- if b.name != blank or b.detail != blank or b.verified -%}
+                  <figcaption class="svp-reviews__by">
+                    {%- if b.name != blank -%}<span class="svp-reviews__name">{{ b.name | escape }}</span>{%- endif -%}
+                    {%- if b.detail != blank -%}<span class="svp-reviews__detail">{{ b.detail | escape }}</span>{%- endif -%}
+                    {%- if b.verified -%}
+                      <span class="svp-reviews__ver">{%- render 'svp-icon', name: 'check', size: 16, class: 'svp-reviews__ver-icon' -%}<span>Verifierat köp</span></span>
+                    {%- endif -%}
+                  </figcaption>
+                {%- endif -%}
+              </figure>
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+      {%- if show_link -%}
+        <div class="svp-actions svp-reviews__actions">
+          <a class="svp-cta svp-cta--{{ lnk_style }}" href="{{ lnk_href }}">
+            <span>{{ s.link_label | escape }}</span>
+            {%- if lnk_style == 'link' -%}{%- render 'svp-icon', name: 'arrow', size: 18, class: 'svp-cta__arrow' -%}{%- endif -%}
+          </a>
+        </div>
+      {%- endif -%}
+    {%- else -%}
+      <div class="svp-reviews__honest svp-reveal{% if s.eyebrow == blank %} svp-reviews__honest--plain{% endif %}">
+        {%- if s.eyebrow != blank -%}<p class="svp-eyebrow svp-reviews__tag">{{ s.eyebrow | escape }}</p>{%- endif -%}
+        {%- if s.fallback_heading != blank -%}<h2 class="svp-h2 svp-reviews__fh">{{ s.fallback_heading }}</h2>{%- endif -%}
+        {%- if s.fallback_heading != blank and s.fallback_body != blank -%}<span class="svp-ornament svp-reviews__orn" aria-hidden="true"></span>{%- endif -%}
+        {%- if s.fallback_body != blank -%}<div class="svp-rte svp-lead svp-reviews__fb">{{ s.fallback_body }}</div>{%- endif -%}
+        {%- if show_link -%}
+          <div class="svp-actions svp-actions--center svp-reviews__actions">
+            <a class="svp-cta svp-cta--{{ lnk_style }}" href="{{ lnk_href }}">
+              <span>{{ s.link_label | escape }}</span>
+              {%- if lnk_style == 'link' -%}{%- render 'svp-icon', name: 'arrow', size: 18, class: 'svp-cta__arrow' -%}{%- endif -%}
+            </a>
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+{%- elsif request.design_mode -%}
+<div id="svp-{{ section.id }}" class="svp svp-reviews svp-tone--{{ tone }} svp-pad--s">
+  <div class="svp-container"><p class="svp-small svp-center">Omdömen: lägg till ett omdöme eller fyll i reservtexten.</p></div>
+</div>
+{%- endif -%}
+
+{% stylesheet %}
+  .svp-reviews { --svp-reviews-frame: var(--svp-rule); }
+  @supports (color: color-mix(in srgb, red 50%, transparent)) {
+    .svp-reviews { --svp-reviews-frame: color-mix(in srgb, var(--svp-fg) 16%, transparent); }
+  }
+
+  /* Honesty statement (no reviews) */
+  .svp-reviews .svp-reviews__honest { position: relative; max-width: 920px; margin: 14px auto 0; padding: 56px 22px 44px; text-align: center; border: 1px solid var(--svp-reviews-frame); }
+  .svp-reviews .svp-reviews__honest--plain { margin-top: 0; }
+  .svp-reviews .svp-reviews__tag { position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); width: max-content; max-width: calc(100% - 40px); margin: 0; padding: 0 16px; background: var(--svp-bg); }
+  .svp-reviews .svp-reviews__fh { max-width: 760px; margin: 0 auto; text-wrap: balance; }
+  .svp-reviews .svp-reviews__orn { margin: 32px auto 0; }
+  .svp-reviews .svp-reviews__fb { max-width: 560px; margin: 28px auto 0; text-wrap: pretty; }
+  .svp-reviews .svp-reviews__fh + .svp-reviews__fb { margin-top: 24px; }
+  .svp.svp-reviews .svp-reviews__honest .svp-reviews__actions { margin-top: 24px; }
+
+  /* Review cards */
+  .svp-reviews .svp-reviews__head { max-width: 760px; margin: 0 0 36px; }
+  .svp-reviews .svp-reviews__h { margin: 0; text-wrap: balance; }
+  .svp-reviews .svp-reviews__intro { margin-top: 20px; max-width: 600px; color: var(--svp-fg); }
+  .svp-reviews .svp-reviews__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .svp-reviews .svp-reviews__item { margin: 0; padding: 0; display: flex; }
+  .svp-reviews .svp-reviews__item::before, .svp-reviews .svp-reviews__item::marker { content: none; }
+  .svp-reviews .svp-reviews__card { display: flex; flex-direction: column; width: 100%; margin: 0; padding: 28px 24px 26px; background: var(--svp-panel); border-radius: 0; }
+  .svp:not(#svp_) .svp-reviews__mark { display: block; height: 30px; margin: 0 0 6px -2px; font-family: var(--svp-font-serif) !important; font-size: 64px; font-weight: 400 !important; font-style: normal; line-height: .9; color: var(--svp-em); }
+  .svp-reviews .svp-reviews__q { margin: 0; padding: 0; border: 0; quotes: none; font-style: normal; color: var(--svp-fg); }
+  .svp-reviews .svp-reviews__q::before, .svp-reviews .svp-reviews__q::after { content: none; }
+  .svp:not(#svp_) .svp-reviews__q, .svp:not(#svp_) .svp-reviews__q p, .svp:not(#svp_) .svp-reviews__q li, .svp:not(#svp_) .svp-reviews__q span { font-family: var(--svp-font-serif) !important; font-weight: 400 !important; font-size: 21px; line-height: 1.45; letter-spacing: -0.005em; }
+  .svp:not(#svp_) .svp-reviews__q strong, .svp:not(#svp_) .svp-reviews__q b { font-family: inherit !important; font-weight: 500 !important; }
+  .svp:not(#svp_) .svp-reviews__q em, .svp:not(#svp_) .svp-reviews__q i { font-family: var(--svp-font-serif) !important; font-style: italic !important; font-size: 1em; color: inherit; }
+  .svp-reviews .svp-reviews__q p { margin: 0 0 .7em; }
+  .svp-reviews .svp-reviews__q, .svp-reviews .svp-reviews__fb { -webkit-hyphens: auto; hyphens: auto; }
+  .svp-reviews .svp-reviews__by { display: flex; flex-direction: column; gap: 2px; margin-top: auto; padding-top: 22px; }
+  .svp-reviews .svp-reviews__by::before { content: ""; display: block; width: 32px; height: 1px; margin: 0 0 16px; background: var(--svp-reviews-frame); }
+  .svp-reviews .svp-reviews__name { font-size: 16px; font-weight: 500; line-height: 1.4; color: var(--svp-fg); }
+  .svp-reviews .svp-reviews__detail { font-size: 15px; line-height: 1.45; color: var(--svp-fg-soft); }
+  .svp-reviews .svp-reviews__ver { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 13px; font-weight: 500; line-height: 1.3; letter-spacing: .04em; color: var(--svp-accent); }
+  .svp-reviews .svp-reviews__ver-icon { flex: none; }
+  .svp.svp-reviews--list .svp-reviews__actions { margin-top: 32px; }
+
+  @media (min-width: 750px) {
+    .svp-reviews .svp-reviews__honest { padding: 72px 56px 56px; }
+    .svp-reviews .svp-reviews__head { margin-bottom: 44px; }
+    .svp-reviews--c2 .svp-reviews__grid, .svp-reviews--c3 .svp-reviews__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .svp-reviews--c3.svp-reviews--odd .svp-reviews__item:last-child { grid-column: 1 / -1; }
+    .svp-reviews .svp-reviews__card { padding: 32px 32px 30px; }
+    .svp-reviews--c1 .svp-reviews__head { margin-left: auto; margin-right: auto; text-align: center; }
+    .svp-reviews--c1 .svp-reviews__intro { margin-left: auto; margin-right: auto; }
+    .svp-reviews--c1 .svp-reviews__grid { max-width: 860px; margin: 0 auto; }
+    .svp-reviews--c1 .svp-reviews__card { text-align: center; }
+    .svp-reviews--c1 .svp-reviews__by { align-items: center; }
+    .svp-reviews--c1 .svp-reviews__by::before { margin-left: auto; margin-right: auto; }
+    .svp.svp-reviews--c1 .svp-reviews__actions { justify-content: center; }
+    .svp-reviews--c1 .svp-reviews__card { padding: 44px 48px 40px; }
+    .svp.svp-reviews--c1:not(#svp_) .svp-reviews__q, .svp.svp-reviews--c1:not(#svp_) .svp-reviews__q p { font-size: 26px; line-height: 1.4; }
+  }
+  @media (min-width: 990px) {
+    .svp-reviews .svp-reviews__honest { margin-top: 16px; padding: 96px 88px 76px; }
+    .svp-reviews .svp-reviews__orn { margin-top: 40px; }
+    .svp-reviews .svp-reviews__fb { margin-top: 32px; }
+    .svp-reviews .svp-reviews__head { margin-bottom: 56px; }
+    .svp-reviews--c3 .svp-reviews__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+    .svp-reviews--c3.svp-reviews--odd .svp-reviews__item:last-child { grid-column: auto; }
+    .svp-reviews--c2 .svp-reviews__grid { gap: 24px; }
+    .svp-reviews .svp-reviews__card { padding: 40px 40px 36px; }
+    .svp:not(#svp_) .svp-reviews__q, .svp:not(#svp_) .svp-reviews__q p { font-size: 22px; }
+    .svp.svp-reviews--c2:not(#svp_) .svp-reviews__q, .svp.svp-reviews--c2:not(#svp_) .svp-reviews__q p { font-size: 24px; }
+    .svp.svp-reviews--c1:not(#svp_) .svp-reviews__q, .svp.svp-reviews--c1:not(#svp_) .svp-reviews__q p { font-size: 30px; line-height: 1.38; }
+    .svp-reviews--c1 .svp-reviews__card { padding: 56px 64px 48px; }
+    .svp.svp-reviews--list .svp-reviews__actions { margin-top: 40px; }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Svea Premium – Omdömen",
+  "class": "svp-section",
+  "max_blocks": 12,
+  "settings": [
+    { "type": "header", "content": "När det finns omdömen" },
+    { "type": "text", "id": "eyebrow", "label": "Etikett ovanför rubriken", "info": "Visas i båda lägena.", "default": "Omdömen" },
+    { "type": "inline_richtext", "id": "heading", "label": "Rubrik", "info": "Gör ett eller två ord kursiva för betoning." },
+    { "type": "richtext", "id": "intro", "label": "Ingress" },
+    { "type": "header", "content": "Reservtext (när omdömen saknas)" },
+    {
+      "type": "paragraph",
+      "content": "Utan omdömesblock visar sektionen den här texten i stället. Lägg bara in äkta omdömen från riktiga kunder, ordagrant återgivna."
+    },
+    {
+      "type": "inline_richtext",
+      "id": "fallback_heading",
+      "label": "Rubrik",
+      "default": "Vi lanserade nyss. <em>Vi kunde ha köpt hundratals omdömen.</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "fallback_body",
+      "label": "Text",
+      "default": "<p>Du får 60 dagars öppet köp i stället. Prova stiftet, och berätta sedan för oss hur det gick.</p>"
+    },
+    { "type": "header", "content": "Länk" },
+    { "type": "text", "id": "link_label", "label": "Länktext", "info": "Till exempel en länk till villkoren för öppet köp. Visas i båda lägena." },
+    { "type": "url", "id": "link_url", "label": "Länk" },
+    {
+      "type": "text",
+      "id": "button_anchor",
+      "label": "Ankare på sidan",
+      "info": "Till exempel garanti. Länkar till #garanti på samma sida och går före länken ovan."
+    },
+    {
+      "type": "select",
+      "id": "link_style",
+      "label": "Länkstil",
+      "options": [
+        { "value": "link", "label": "Textlänk med pil" },
+        { "value": "secondary", "label": "Kontur" },
+        { "value": "primary", "label": "Fylld" }
+      ],
+      "default": "link"
+    },
+    { "type": "header", "content": "Utseende" },
+    {
+      "type": "select",
+      "id": "tone",
+      "label": "Bakgrund",
+      "options": [
+        { "value": "cream", "label": "Kräm" },
+        { "value": "sand", "label": "Sand" },
+        { "value": "blush", "label": "Rosa" },
+        { "value": "white", "label": "Vit" },
+        { "value": "wine", "label": "Mörk vinröd" }
+      ],
+      "default": "cream"
+    },
+    {
+      "type": "select",
+      "id": "pad",
+      "label": "Luft ovanför och under",
+      "options": [
+        { "value": "s", "label": "Liten" },
+        { "value": "m", "label": "Mellan" },
+        { "value": "l", "label": "Stor" }
+      ],
+      "default": "m"
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Ankar-id för sektionen",
+      "info": "Till exempel omdomen. Då kan knappar länka hit med #omdomen."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Omdöme",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Bara äkta omdömen från riktiga kunder, ordagrant återgivna och med deras tillåtelse. Inga betyg eller stjärnor."
+        },
+        { "type": "richtext", "id": "quote", "label": "Omdöme" },
+        { "type": "text", "id": "name", "label": "Namn", "info": "Till exempel förnamn och första bokstaven i efternamnet." },
+        { "type": "text", "id": "detail", "label": "Detalj", "info": "Till exempel 52 år, Uppsala." },
+        {
+          "type": "checkbox",
+          "id": "verified",
+          "label": "Verifierat köp",
+          "info": "Kryssa bara i om omdömet kommer från en kund som har köpt produkten.",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Svea Premium – Omdömen"
+    }
+  ]
+}
+{% endschema %}

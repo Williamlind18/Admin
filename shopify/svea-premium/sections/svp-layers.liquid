@@ -1,0 +1,331 @@
+{%- comment -%}
+  Svea Premium – Hudens våningar. A coded cross-section: stacked horizontal bands that get deeper and darker
+  (cream → sand → blush → wine-tinted), one band per "layer" block. Label (and note) on the left, title and text on the
+  right; highlighted bands get a wine marker. No image, no arrow from the surface downwards: it explains where the
+  fullness sits versus where creams act, it never shows a product travelling into the skin.
+  Band colours are computed per position (color-mix of the design tokens), so 2–6 bands always run light → deep.
+  The bands carry their own light palette, so the slab reads the same on every tone (wine included).
+  Desktop (≥990) adds a quiet, decorative tissue texture on the right of each band (CSS mask, aria-hidden).
+  Extra settings beyond CONTRACT.md: footnote_style (small | lead). "lead" sets the footnote as a lead paragraph
+  (19/21px) across the full text width, so the bridge from the illustration to the product is not missed.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign tone = s.tone | default: 'white'
+  assign pad = s.pad | default: 'm'
+  assign anchor_id = s.anchor | remove: '#' | handleize
+
+  assign count = 0
+  for block in section.blocks
+    if block.settings.label != blank or block.settings.title != blank or block.settings.text != blank or block.settings.note != blank
+      assign count = count | plus: 1
+    endif
+  endfor
+  assign last = count | minus: 1
+  if last < 1
+    assign last = 1
+  endif
+
+  assign has_head = false
+  if s.eyebrow != blank or s.heading != blank or s.intro != blank
+    assign has_head = true
+  endif
+-%}
+<div id="svp-{{ section.id }}" class="svp svp-layers svp-tone--{{ tone }} svp-pad--{{ pad }}">
+  {%- if anchor_id != blank -%}<span class="svp-anchor" id="{{ anchor_id }}"></span>{%- endif -%}
+  <div class="svp-container">
+    {%- if has_head -%}
+      <div class="svp-layers__head{% if s.intro != blank and s.heading != blank %} svp-layers__head--2{% endif %} svp-reveal">
+        {%- if s.eyebrow != blank or s.heading != blank -%}
+          <div class="svp-layers__hl">
+            {%- if s.eyebrow != blank -%}<p class="svp-eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
+            {%- if s.heading != blank -%}<h2 class="svp-h2 svp-layers__h">{{ s.heading }}</h2>{%- endif -%}
+          </div>
+        {%- endif -%}
+        {%- if s.intro != blank -%}<div class="svp-rte svp-layers__intro">{{ s.intro }}</div>{%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if count > 0 -%}
+      <ol class="svp-layers__stack svp-reveal" role="list">
+        {%- assign i = 0 -%}
+        {%- for block in section.blocks -%}
+          {%- assign b = block.settings -%}
+          {%- unless b.label == blank and b.title == blank and b.text == blank and b.note == blank -%}
+            {%- liquid
+              # depth 0 → 1 from the first to the last band
+              assign t = i | times: 1.0 | divided_by: last
+              assign blush_pct = t | times: 100 | round
+              assign wine_pct = t | times: 19 | plus: 3 | round: 1
+              assign variant = i | modulo: 4
+            -%}
+            <li class="svp-layers__band{% if b.highlight %} svp-layers__band--hl{% endif %}{% if i == 0 %} svp-layers__band--top{% endif %}" style="--svp-band: color-mix(in srgb, var(--svp-wine) {{ wine_pct }}%, color-mix(in srgb, var(--svp-blush) {{ blush_pct }}%, var(--svp-cream))); --svp-i: {{ i }};" {{ block.shopify_attributes }}>
+              <svg class="svp-layers__edge" viewBox="0 0 1200 16" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                {%- case variant -%}
+                  {%- when 0 -%}{%- assign wave = 'M0 8 Q33.3 2.8 66.7 8 T133.3 8 T200 8 T266.7 8 T333.3 8 T400 8 T466.7 8 T533.3 8 T600 8 T666.7 8 T733.3 8 T800 8 T866.7 8 T933.3 8 T1000 8 T1066.7 8 T1133.3 8 T1200 8' -%}
+                  {%- when 1 -%}{%- assign wave = 'M0 8 Q18.8 14.2 37.5 8 T75 8 T112.5 8 T150 8 T187.5 8 T225 8 T262.5 8 T300 8 T337.5 8 T375 8 T412.5 8 T450 8 T487.5 8 T525 8 T562.5 8 T600 8 T637.5 8 T675 8 T712.5 8 T750 8 T787.5 8 T825 8 T862.5 8 T900 8 T937.5 8 T975 8 T1012.5 8 T1050 8 T1087.5 8 T1125 8 T1162.5 8 T1200 8' -%}
+                  {%- when 2 -%}{%- assign wave = 'M0 8 Q60 1.6 120 8 T240 8 T360 8 T480 8 T600 8 T720 8 T840 8 T960 8 T1080 8 T1200 8' -%}
+                  {%- else -%}{%- assign wave = 'M0 8 Q100 15.4 200 8 T400 8 T600 8 T800 8 T1000 8 T1200 8' -%}
+                {%- endcase -%}
+                <path class="svp-layers__fill" d="{{ wave }} L1200 16 L0 16 Z"/>
+                <path class="svp-layers__line" d="{{ wave }}" vector-effect="non-scaling-stroke"/>
+              </svg>
+              <span class="svp-layers__motif svp-layers__motif--{{ variant }}" aria-hidden="true"></span>
+              <div class="svp-layers__in">
+                {%- if b.label != blank -%}
+                  <p class="svp-layers__label">{% if b.highlight %}<span class="svp-layers__pin" aria-hidden="true"></span>{% endif %}{{ b.label | escape }}</p>
+                {%- endif -%}
+                {%- if b.title != blank -%}
+                  <h3 class="svp-h3 svp-layers__name">{{ b.title | escape }}</h3>
+                {%- endif -%}
+                {%- if b.text != blank -%}
+                  <div class="svp-rte svp-layers__text">{{ b.text }}</div>
+                {%- endif -%}
+                {%- if b.note != blank -%}
+                  <p class="svp-layers__note"><span class="svp-layers__tick" aria-hidden="true"></span>{{ b.note | escape }}</p>
+                {%- endif -%}
+              </div>
+            </li>
+            {%- assign i = i | plus: 1 -%}
+          {%- endunless -%}
+        {%- endfor -%}
+      </ol>
+    {%- endif -%}
+
+    {%- if s.footnote != blank -%}
+      <div class="svp-layers__foot{% if s.footnote_style == 'lead' %} svp-layers__foot--lead{% endif %} svp-reveal">
+        <span class="svp-ornament" aria-hidden="true"></span>
+        <div class="svp-rte{% if s.footnote_style == 'lead' %} svp-lead{% endif %}">{{ s.footnote }}</div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% stylesheet %}
+  /* Head: eyebrow + h2, intro under it (mobile) or beside it (≥990) */
+  .svp-layers .svp-layers__head { margin: 0 0 40px; max-width: 760px; }
+  .svp-layers .svp-layers__h { margin: 0; }
+  .svp-layers .svp-layers__intro { margin-top: 20px; color: var(--svp-fg); }
+
+  /* The slab. Every band sets its own light palette so text stays ink on any section tone. */
+  .svp-layers .svp-layers__stack { list-style: none; margin: 0 calc(var(--svp-gutter) * -1); padding: 14px 0 0; }
+  .svp-layers .svp-layers__band {
+    --svp-fg: var(--svp-ink); --svp-fg-soft: var(--svp-ink); --svp-heading: var(--svp-ink); --svp-em: var(--svp-wine);
+    --svp-accent: var(--svp-wine); --svp-link: var(--svp-wine); --svp-focus: var(--svp-wine);
+    position: relative; margin: 0; padding: calc(30px + var(--svp-i, 0) * 4px) 20px calc(32px + var(--svp-i, 0) * 5px);
+    background-color: var(--svp-band, var(--svp-sand)); color: var(--svp-ink);
+  }
+  .svp-layers .svp-layers__edge { position: absolute; left: 0; top: -13px; display: block; width: 100%; height: 14px; overflow: visible; color: var(--svp-band, var(--svp-sand)); pointer-events: none; }
+  .svp-layers .svp-layers__fill { fill: currentColor; }
+  .svp-layers .svp-layers__line { fill: none; stroke: var(--svp-ink); stroke-opacity: .08; stroke-width: 1; }
+  .svp-layers.svp-tone--wine .svp-layers__band--top .svp-layers__line { stroke: var(--svp-cream); stroke-opacity: .5; }
+
+  /* the theme's injected p { font-weight } !important rule needs the guard prefix */
+  .svp:not(#svp_) .svp-layers__label, .svp:not(#svp_) .svp-layers__note { font-weight: 500 !important; }
+
+  /* Highlight: wine bar on the left edge, wine pin before the label, note in wine text with a dot (not a button) */
+  .svp-layers .svp-layers__band--hl::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--svp-wine); }
+
+  .svp-layers .svp-layers__in { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); }
+  .svp-layers .svp-layers__label { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; font-size: 13px; line-height: 1.35; letter-spacing: .14em; text-transform: uppercase; color: var(--svp-wine); }
+  .svp-layers .svp-layers__pin { flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--svp-wine); box-shadow: 0 0 0 4px rgba(116, 4, 36, .14); }
+  .svp-layers .svp-layers__name { margin: 0 0 8px; }
+  .svp-layers .svp-layers__text { max-width: 560px; color: var(--svp-ink); }
+  .svp-layers .svp-layers__note { display: inline-flex; align-items: flex-start; gap: 10px; justify-self: start; margin: 16px 0 0; font-size: 15px; line-height: 1.35; letter-spacing: .01em; color: var(--svp-ink); }
+  .svp-layers .svp-layers__tick { flex: none; width: 18px; height: 1px; margin-top: .68em; background: currentColor; opacity: .55; }
+  .svp-layers .svp-layers__band--hl .svp-layers__note { padding: 0; background: none; color: var(--svp-wine); border-radius: 0; }
+  .svp-layers .svp-layers__band--hl .svp-layers__tick { width: 8px; height: 8px; margin-top: .42em; border-radius: 50%; opacity: 1; background: var(--svp-wine); }
+  .svp-layers .svp-layers__motif { display: none; }
+  /* Browsers without color-mix (e.g. iOS < 16.2): fixed light → deep ramp */
+  @supports not (color: color-mix(in srgb, red 50%, blue)) {
+    .svp-layers .svp-layers__band { --svp-band: #F6F0EC !important; }
+    .svp-layers .svp-layers__band:nth-child(2) { --svp-band: #ECDCDB !important; }
+    .svp-layers .svp-layers__band:nth-child(3) { --svp-band: #E1C7C8 !important; }
+    .svp-layers .svp-layers__band:nth-child(n+4) { --svp-band: #D8B5BA !important; }
+  }
+
+  /* Footnote: the honesty note, aligned with the band text on desktop */
+  .svp-layers .svp-layers__foot { display: grid; grid-template-columns: minmax(0, 1fr); row-gap: 18px; margin-top: 40px; max-width: 680px; }
+  .svp-layers .svp-layers__foot .svp-ornament { margin-top: 2px; }
+  .svp-layers .svp-layers__foot .svp-rte { color: var(--svp-fg); }
+
+  @media (min-width: 750px) {
+    .svp-layers .svp-layers__stack { margin: 0; }
+    .svp-layers .svp-layers__band { padding: calc(36px + var(--svp-i, 0) * 6px) 36px calc(38px + var(--svp-i, 0) * 7px); }
+    .svp-layers .svp-layers__in { grid-template-columns: 168px minmax(0, 1fr); grid-template-areas: "label name" "note text"; grid-template-rows: auto 1fr; column-gap: 32px; }
+    .svp-layers .svp-layers__label { grid-area: label; margin: 6px 0 0; }
+    .svp-layers .svp-layers__name { grid-area: name; }
+    .svp-layers .svp-layers__text { grid-area: text; }
+    .svp-layers .svp-layers__note { grid-area: note; align-self: start; margin-top: 14px; }
+    .svp-layers .svp-layers__foot { grid-template-columns: 168px minmax(0, 1fr); column-gap: 32px; max-width: none; padding: 0 36px; }
+    .svp-layers .svp-layers__foot .svp-ornament { margin-top: 14px; }
+    .svp-layers .svp-layers__foot .svp-rte { max-width: 640px; }
+  }
+  @media (min-width: 990px) {
+    .svp-layers .svp-layers__head { max-width: none; margin-bottom: 56px; }
+    .svp-layers .svp-layers__head--2 { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); column-gap: clamp(48px, 7vw, 112px); align-items: end; }
+    .svp-layers .svp-layers__head--2 .svp-layers__intro { margin-top: 0; }
+    .svp-layers .svp-layers__head:not(.svp-layers__head--2) { max-width: 860px; }
+    .svp-layers .svp-layers__band { padding: calc(40px + var(--svp-i, 0) * 8px) 48px calc(42px + var(--svp-i, 0) * 9px); }
+    .svp-layers .svp-layers__in { grid-template-columns: 200px minmax(0, 540px); column-gap: 40px; }
+    .svp-layers .svp-layers__name { margin: 0 0 10px; }
+    .svp-layers .svp-layers__note { margin-top: 16px; }
+    .svp-layers .svp-layers__foot { grid-template-columns: 200px minmax(0, 1fr); column-gap: 40px; padding: 0 48px; margin-top: 48px; }
+    /* Quiet tissue texture on the right of each band (surface flakes, cells, fibres, soft lobules); decorative only */
+    .svp-layers .svp-layers__motif { display: block; position: absolute; top: 0; right: 0; bottom: 0; width: clamp(240px, 38%, 480px); background: var(--svp-wine); opacity: .17; pointer-events: none;
+      -webkit-mask-image: var(--svp-motif), linear-gradient(to right, transparent 0%, rgba(0, 0, 0, .35) 35%, #000 85%); mask-image: var(--svp-motif), linear-gradient(to right, transparent 0%, rgba(0, 0, 0, .35) 35%, #000 85%);
+      -webkit-mask-size: var(--svp-motif-size), 100% 100%; mask-size: var(--svp-motif-size), 100% 100%;
+      -webkit-mask-repeat: repeat, no-repeat; mask-repeat: repeat, no-repeat; -webkit-mask-position: right top, 0 0; mask-position: right top, 0 0;
+      -webkit-mask-composite: source-in; mask-composite: intersect; }
+    .svp-layers .svp-layers__motif--0 { --svp-motif: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='20'%3E%3Cpath d='M4 6h24M40 15h24' stroke='%23000' stroke-width='1.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); --svp-motif-size: 72px 20px; }
+    .svp-layers .svp-layers__motif--1 { --svp-motif: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='34'%3E%3Ccircle cx='10' cy='9' r='5' stroke='%23000' stroke-width='1.2' fill='none'/%3E%3Ccircle cx='30' cy='26' r='5' stroke='%23000' stroke-width='1.2' fill='none'/%3E%3C/svg%3E"); --svp-motif-size: 40px 34px; }
+    .svp-layers .svp-layers__motif--2 { --svp-motif: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='26'%3E%3Cpath d='M0 7C30 0 30 14 60 7S90 0 120 7M0 20C30 13 30 27 60 20S90 13 120 20' stroke='%23000' stroke-width='1.2' fill='none'/%3E%3C/svg%3E"); --svp-motif-size: 120px 26px; }
+    .svp-layers .svp-layers__motif--3 { --svp-motif: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='84'%3E%3Ccircle cx='22' cy='22' r='16' stroke='%23000' stroke-width='1.2' fill='none'/%3E%3Ccircle cx='64' cy='18' r='12' stroke='%23000' stroke-width='1.2' fill='none'/%3E%3Ccircle cx='46' cy='58' r='18' stroke='%23000' stroke-width='1.2' fill='none'/%3E%3Ccircle cx='85' cy='60' r='9' stroke='%23000' stroke-width='1.2' fill='none'/%3E%3Ccircle cx='10' cy='66' r='7' stroke='%23000' stroke-width='1.2' fill='none'/%3E%3C/svg%3E"); --svp-motif-size: 96px 84px; }
+  }
+
+  /* footnote_style: lead – ingress size across the full text width, ornament above */
+  .svp-layers .svp-layers__foot.svp-layers__foot--lead { grid-template-columns: minmax(0, 1fr); max-width: 820px; }
+  .svp-layers .svp-layers__foot.svp-layers__foot--lead .svp-rte { max-width: none; }
+  @media (min-width: 750px) {
+    .svp-layers .svp-layers__foot.svp-layers__foot--lead { padding: 0 36px; row-gap: 20px; }
+    .svp-layers .svp-layers__foot.svp-layers__foot--lead .svp-ornament { margin-top: 0; }
+  }
+  @media (min-width: 990px) {
+    .svp-layers .svp-layers__foot.svp-layers__foot--lead { padding: 0 48px; max-width: 916px; }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Svea Premium – Våningar",
+  "class": "svp-section",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Innehåll"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Etikett ovanför rubriken",
+      "default": "Hudens fyra våningar"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Rubrik",
+      "info": "Gör ett eller två ord kursiva för betoning.",
+      "default": "Linjerna syns på ytan. <em>Fylligheten sitter längre ner.</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "label": "Ingress",
+      "default": "<p>Tänk dig huden som fyra våningar, räknat från ytan och nedåt.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "footnote",
+      "label": "Fotnot under illustrationen",
+      "info": "Här hör ärlighetsmeningen hemma: att inget man stryker på når ner till den djupaste våningen.",
+      "default": "<p>Inget man stryker på når ner till den djupaste våningen. Det som stryks på verkar på ytan och kan få huden att se fylligare och mer utvilad ut där det används.</p>"
+    },
+    {
+      "type": "select",
+      "id": "footnote_style",
+      "label": "Fotnotens stil",
+      "options": [
+        { "value": "small", "label": "Vanlig text" },
+        { "value": "lead", "label": "Ingress (större, full bredd)" }
+      ],
+      "default": "small"
+    },
+    {
+      "type": "header",
+      "content": "Utseende"
+    },
+    {
+      "type": "select",
+      "id": "tone",
+      "label": "Bakgrund",
+      "info": "Våningarna har alltid sina egna ljusa toner.",
+      "options": [
+        { "value": "cream", "label": "Kräm" },
+        { "value": "sand", "label": "Sand" },
+        { "value": "blush", "label": "Rosa" },
+        { "value": "white", "label": "Vit" },
+        { "value": "wine", "label": "Mörk vinröd" }
+      ],
+      "default": "white"
+    },
+    {
+      "type": "select",
+      "id": "pad",
+      "label": "Luft ovanför och under",
+      "options": [
+        { "value": "s", "label": "Liten" },
+        { "value": "m", "label": "Mellan" },
+        { "value": "l", "label": "Stor" }
+      ],
+      "default": "m"
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Ankar-id för sektionen",
+      "info": "Till exempel vaningar. Då kan knappar länka hit med #vaningar."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "layer",
+      "name": "Våning",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Etikett",
+          "info": "Till exempel Våning 1.",
+          "default": "Våning 1"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Rubrik",
+          "default": "Ytan"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "note",
+          "label": "Notering",
+          "info": "Kort, till exempel Hit når en fuktkräm."
+        },
+        {
+          "type": "checkbox",
+          "id": "highlight",
+          "label": "Markera våningen",
+          "info": "Vinröd markering i kanten och en vinröd prick vid noteringen.",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Svea Premium – Hudens våningar",
+      "blocks": [
+        { "type": "layer", "settings": { "label": "Våning 1", "title": "Ytan", "text": "<p>Det yttersta lagret, tunnare än ett papper. Här syns torrhet och fina linjer först.</p>", "note": "Hit når en kräm, och hit når stiftet" } },
+        { "type": "layer", "settings": { "label": "Våning 2", "title": "Överhuden", "text": "<p>Hudens skyddande lager. Med åren blir det tunnare, och huden ser mattare ut.</p>" } },
+        { "type": "layer", "settings": { "label": "Våning 3", "title": "Läderhuden", "text": "<p>Kollagen och elastin håller huden spänstig. Med åren blir nätet glesare. Kollagen i en kräm eller ett stift stannar på ytan och ersätter inte det här nätet.</p>" } },
+        { "type": "layer", "settings": { "label": "Våning 4", "title": "Underhuden", "text": "<p>Det som ger kinderna och området under ögonen sin fyllighet. Med åren krymper det, och ansiktet ser plattare ut.</p>", "note": "Här sitter fylligheten", "highlight": true } }
+      ]
+    }
+  ]
+}
+{% endschema %}

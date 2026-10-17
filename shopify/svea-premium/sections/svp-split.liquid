@@ -1,0 +1,321 @@
+{%- comment -%}
+  Svea Premium – Bild och text.
+  Image (or Shopify video, or placeholder word) beside text from 750px; image first on mobile.
+  Blocks "point" render as a hairline list under the body (numbered 01, 02 … unless "numbered" is off).
+  From 750px the media is top-aligned and sticky inside its row: when the text column is taller than the media (e.g. a
+  16:9 image next to several points) the image starts level with the text and stays in view while reading, instead of
+  floating in the middle of a large empty area. When the media is the taller column the text stays vertically centred.
+  Extra settings beyond CONTRACT.md: button_anchor (beats button_url), numbered.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign tone = s.tone | default: 'cream'
+  assign pad = s.pad | default: 'm'
+  assign side = s.image_side | default: 'left'
+  assign ratio = s.ratio | default: '4:5'
+  assign anchor_id = s.anchor | remove: '#' | handleize
+
+  assign btn_href = blank
+  if s.button_anchor != blank
+    assign btn_anchor = s.button_anchor | remove: '#' | handleize
+    assign btn_href = '#' | append: btn_anchor
+  elsif s.button_url != blank
+    assign btn_href = s.button_url
+  endif
+  assign show_btn = false
+  if s.button_label != blank and btn_href != blank
+    assign show_btn = true
+  endif
+  assign btn_style = s.button_style | default: 'link'
+
+  assign pt_count = 0
+  for block in section.blocks
+    if block.type == 'point'
+      if block.settings.title != blank or block.settings.text != blank
+        assign pt_count = pt_count | plus: 1
+      endif
+    endif
+  endfor
+  assign list_tag = 'ul'
+  if s.numbered
+    assign list_tag = 'ol'
+  endif
+-%}
+<div id="svp-{{ section.id }}" class="svp svp-split svp-split--media-{{ side }} svp-tone--{{ tone }} svp-pad--{{ pad }}">
+  {%- if anchor_id != blank -%}<span class="svp-anchor" id="{{ anchor_id }}"></span>{%- endif -%}
+  <div class="svp-container">
+    <div class="svp-split__grid">
+      <div class="svp-split__media svp-reveal" data-svp-vidbox>
+        {%- render 'svp-image', video: s.video, image: s.image, ratio: ratio, word: s.placeholder_word, sizes: '(min-width: 1320px) 600px, (min-width: 750px) 48vw, 100vw', class: 'svp-split__ar' -%}
+        {%- if s.video != blank -%}
+          <button type="button" class="svp-vidctl" data-svp-vidctl hidden aria-label="Pausa filmen">
+            <svg class="svp-vidctl__pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg class="svp-vidctl__play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 5.5v13a1 1 0 0 0 1.52.85l10.4-6.5a1 1 0 0 0 0-1.7L9.52 4.65A1 1 0 0 0 8 5.5z"/></svg>
+          </button>
+        {%- endif -%}
+      </div>
+
+      <div class="svp-split__text svp-reveal" style="--svp-delay: .08s">
+        {%- if s.eyebrow != blank -%}
+          <p class="svp-eyebrow">{{ s.eyebrow | escape }}</p>
+        {%- endif -%}
+        {%- if s.heading != blank -%}
+          <h2 class="svp-split__h svp-h2">{{ s.heading }}</h2>
+        {%- endif -%}
+        {%- if s.body != blank -%}
+          <div class="svp-split__body svp-rte">{{ s.body }}</div>
+        {%- endif -%}
+
+        {%- if pt_count > 0 -%}
+          <{{ list_tag }} class="svp-split__pts{% if s.numbered %} svp-split__pts--num{% endif %}" role="list">
+            {%- assign n = 0 -%}
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'point' -%}
+                {%- if block.settings.title != blank or block.settings.text != blank -%}
+                  {%- assign n = n | plus: 1 -%}
+                  <li class="svp-split__pt" {{ block.shopify_attributes }}>
+                    {%- if s.numbered -%}<span class="svp-split__no svp-num" aria-hidden="true">{% if n < 10 %}0{% endif %}{{ n }}</span>{%- endif -%}
+                    <div class="svp-split__ptbody">
+                      {%- if block.settings.title != blank -%}
+                        <h3 class="svp-h3 svp-split__name">{{ block.settings.title | escape | replace: '–', '&#8288;–&#8288;' }}</h3>
+                      {%- endif -%}
+                      {%- if block.settings.text != blank -%}
+                        <div class="svp-split__ptx svp-rte">{{ block.settings.text }}</div>
+                      {%- endif -%}
+                    </div>
+                  </li>
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+          </{{ list_tag }}>
+        {%- endif -%}
+
+        {%- if show_btn -%}
+          <div class="svp-actions svp-split__actions">
+            <a class="svp-cta svp-cta--{{ btn_style }}{% if btn_style != 'link' %} svp-cta--full-mobile{% endif %}" href="{{ btn_href }}">
+              <span>{{ s.button_label | escape }}</span>
+              {%- if btn_style == 'link' -%}{%- render 'svp-icon', name: 'arrow', size: 18, class: 'svp-cta__arrow' -%}{%- endif -%}
+            </a>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+  {%- if s.video != blank -%}
+    <script>
+      (function () {
+        if (!window.SvpMediaCtl) {
+          window.SvpMediaCtl = {
+            init: function (root) {
+              (root || document).querySelectorAll('[data-svp-vidctl]').forEach(function (btn) {
+                if (btn.__svp) return;
+                var box = btn.closest('[data-svp-vidbox]');
+                var v = box && box.querySelector('video');
+                if (!v) return;
+                btn.__svp = true;
+                var sync = function () {
+                  var p = v.paused;
+                  btn.classList.toggle('is-paused', p);
+                  btn.setAttribute('aria-label', p ? 'Spela filmen' : 'Pausa filmen');
+                };
+                v.addEventListener('play', sync);
+                v.addEventListener('pause', sync);
+                btn.addEventListener('click', function () {
+                  if (v.paused) { var pr = v.play(); if (pr && pr.catch) pr.catch(function () {}); } else { v.pause(); }
+                });
+                btn.hidden = false;
+                sync();
+                setTimeout(sync, 600);
+              });
+            }
+          };
+        }
+        var run = function () { window.SvpMediaCtl.init(document.getElementById('svp-{{ section.id }}')); };
+        if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', run); } else { run(); }
+      })();
+    </script>
+  {%- endif -%}
+</div>
+
+{% stylesheet %}
+  .svp-split .svp-split__grid { display: grid; grid-template-columns: minmax(0, 1fr); row-gap: 36px; align-items: center; }
+  .svp-split .svp-split__media { position: relative; min-width: 0; }
+  .svp-split .svp-split__text { min-width: 0; max-width: 580px; }
+  .svp-split .svp-split__h { margin: 0; text-wrap: balance; }
+  .svp-split .svp-split__body { margin-top: 20px; }
+
+  .svp-split .svp-split__pts { list-style: none; margin: 32px 0 0; padding: 0; }
+  .svp-split .svp-split__pt { display: block; margin: 0; padding: 20px 0 22px; border-top: 1px solid var(--svp-rule); }
+  .svp-split .svp-split__pt:last-child { border-bottom: 1px solid var(--svp-rule); }
+  .svp-split .svp-split__pts--num .svp-split__pt { display: grid; grid-template-columns: 40px minmax(0, 1fr); column-gap: 8px; }
+  .svp-split .svp-split__no { display: block; padding-top: 5px; line-height: 1.4; }
+  .svp-split .svp-split__name { margin: 0; }
+  .svp-split .svp-split__ptx { margin-top: 6px; color: var(--svp-fg-soft); }
+  .svp-split .svp-split__actions { margin-top: 32px; }
+
+  @media (max-width: 749px) {
+    .svp-split .svp-split__grid { row-gap: 32px; }
+  }
+  @media (min-width: 750px) {
+    .svp-split .svp-split__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: clamp(40px, 7vw, 120px); }
+    .svp-split--media-right .svp-split__media { order: 2; }
+    .svp-split .svp-split__media { align-self: start; position: sticky; top: 32px; }
+  }
+  @media (min-width: 990px) {
+    .svp-split .svp-split__body { margin-top: 24px; }
+    .svp-split .svp-split__pts { margin-top: 40px; }
+    .svp-split .svp-split__pt { padding: 22px 0 24px; }
+    .svp-split .svp-split__actions { margin-top: 40px; }
+  }
+
+  /* Pause/play for autoplay video (WCAG 2.2.2) */
+  .svp-split .svp-vidctl { position: absolute; right: 12px; bottom: 12px; z-index: 2; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; min-height: 0; padding: 0; margin: 0; border: 0; border-radius: 2px; background: rgba(250, 247, 242, .9); color: var(--svp-ink); cursor: pointer; box-shadow: none; -webkit-appearance: none; appearance: none; }
+  .svp-split .svp-vidctl[hidden] { display: none; }
+  .svp-split .svp-vidctl:hover { background: var(--svp-cream); }
+  .svp-split .svp-vidctl:focus-visible { outline: 2px solid var(--svp-wine); outline-offset: 2px; }
+  .svp-split .svp-vidctl .svp-vidctl__play { display: none; }
+  .svp-split .svp-vidctl.is-paused .svp-vidctl__play { display: block; }
+  .svp-split .svp-vidctl.is-paused .svp-vidctl__pause { display: none; }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Svea Premium – Bild/text",
+  "class": "svp-section",
+  "max_blocks": 6,
+  "settings": [
+    { "type": "header", "content": "Bild eller film" },
+    { "type": "image_picker", "id": "image", "label": "Bild" },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Film (valfri)",
+      "info": "Spelas upp utan ljud i en slinga och ersätter bilden. Besökaren kan pausa den."
+    },
+    {
+      "type": "text",
+      "id": "placeholder_word",
+      "label": "Ord i platshållaren",
+      "info": "Visas stort och kursivt när ingen bild är vald, till exempel Lyster."
+    },
+    {
+      "type": "select",
+      "id": "ratio",
+      "label": "Bildformat",
+      "options": [
+        { "value": "4:5", "label": "Stående 4:5" },
+        { "value": "3:4", "label": "Stående 3:4" },
+        { "value": "1:1", "label": "Kvadrat 1:1" },
+        { "value": "16:9", "label": "Liggande 16:9" }
+      ],
+      "default": "4:5"
+    },
+    {
+      "type": "select",
+      "id": "image_side",
+      "label": "Bildens placering (dator)",
+      "info": "På mobil ligger bilden alltid överst.",
+      "options": [
+        { "value": "left", "label": "Vänster" },
+        { "value": "right", "label": "Höger" }
+      ],
+      "default": "left"
+    },
+    { "type": "header", "content": "Text" },
+    { "type": "text", "id": "eyebrow", "label": "Etikett ovanför rubriken" },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Rubrik",
+      "info": "Gör ett eller två ord kursiva för betoning.",
+      "default": "Gjort för att faktiskt <em>bli använt.</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text",
+      "default": "<p>Det som står i badrummet hjälper bara om det används. Därför är formatet lika viktigt som innehållet.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "numbered",
+      "label": "Numrera punkterna (01, 02 …)",
+      "default": true
+    },
+    { "type": "header", "content": "Knapp" },
+    { "type": "text", "id": "button_label", "label": "Knapptext" },
+    { "type": "url", "id": "button_url", "label": "Länk" },
+    {
+      "type": "text",
+      "id": "button_anchor",
+      "label": "Ankare på sidan",
+      "info": "Till exempel kop. Länkar till #kop på samma sida och går före länken ovan."
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Knappstil",
+      "options": [
+        { "value": "link", "label": "Textlänk med pil" },
+        { "value": "primary", "label": "Fylld" },
+        { "value": "secondary", "label": "Kontur" }
+      ],
+      "default": "link"
+    },
+    { "type": "header", "content": "Utseende" },
+    {
+      "type": "select",
+      "id": "tone",
+      "label": "Bakgrund",
+      "options": [
+        { "value": "cream", "label": "Kräm" },
+        { "value": "sand", "label": "Sand" },
+        { "value": "blush", "label": "Rosa" },
+        { "value": "white", "label": "Vit" },
+        { "value": "wine", "label": "Mörk vinröd" }
+      ],
+      "default": "cream"
+    },
+    {
+      "type": "select",
+      "id": "pad",
+      "label": "Luft ovanför och under",
+      "options": [
+        { "value": "s", "label": "Liten" },
+        { "value": "m", "label": "Mellan" },
+        { "value": "l", "label": "Stor" }
+      ],
+      "default": "m"
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Ankar-id för sektionen",
+      "info": "Till exempel format. Då kan knappar länka hit med #format."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "point",
+      "name": "Punkt",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Rubrik" },
+        { "type": "richtext", "id": "text", "label": "Text" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Svea Premium – Bild och text",
+      "settings": {
+        "placeholder_word": "Lyster."
+      },
+      "blocks": [
+        { "type": "point", "settings": { "title": "Ett steg, morgon och kväll", "text": "<p>Ryms i vardagen utan att bli ännu en sak att komma ihåg.</p>" } },
+        { "type": "point", "settings": { "title": "Skickas från Sverige", "text": "<p>Från svenskt lager med PostNord, 1–3 arbetsdagar.</p>" } },
+        { "type": "point", "settings": { "title": "60 dagars öppet köp", "text": "<p>Även på påbörjad produkt.</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

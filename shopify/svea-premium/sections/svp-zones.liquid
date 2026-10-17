@@ -1,0 +1,327 @@
+{%- comment -%}
+  Svea Premium – Ansiktskarta. A calm, coded line drawing of a face (front view, closed eyes, side parting) with
+  numbered dots placed by each zone block's "point"; the numbered list sits beside it (≥990) or below it (<990).
+  Points (viewBox 0 0 360 470): under_eyes, cheekbones, nasolabial, lip_contour, mouth_corners, jawline, neck.
+  Dots alternate sides of the face (left: under eyes, lip contour, jaw; right: cheekbone, nasolabial line, mouth corner)
+  so they never pile up; a point that is used twice is mirrored to the other side.
+  Blocks without title and text are skipped and get no number. The drawing is decorative (aria-hidden): the list
+  carries all information. Hovering a list item lifts its dot (CSS :has, progressive enhancement).
+  Extra settings beyond CONTRACT.md: figure_side (left|right, default left).
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign tone = s.tone | default: 'cream'
+  assign pad = s.pad | default: 'm'
+  assign side = s.figure_side | default: 'left'
+  assign anchor_id = s.anchor | remove: '#' | handleize
+
+  assign count = 0
+  for block in section.blocks
+    if block.settings.title != blank or block.settings.text != blank
+      assign count = count | plus: 1
+    endif
+  endfor
+
+  assign has_head = false
+  if s.eyebrow != blank or s.heading != blank or s.intro != blank
+    assign has_head = true
+  endif
+-%}
+<div id="svp-{{ section.id }}" class="svp svp-zones svp-zones--fig-{{ side }} svp-tone--{{ tone }} svp-pad--{{ pad }}">
+  {%- if anchor_id != blank -%}<span class="svp-anchor" id="{{ anchor_id }}"></span>{%- endif -%}
+  <div class="svp-container">
+    <div class="svp-zones__grid{% if count == 0 %} svp-zones__grid--nofig{% endif %}">
+      {%- if has_head -%}
+        <div class="svp-zones__head svp-reveal">
+          {%- if s.eyebrow != blank -%}<p class="svp-eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
+          {%- if s.heading != blank -%}<h2 class="svp-h2 svp-zones__h">{{ s.heading }}</h2>{%- endif -%}
+          {%- if s.intro != blank -%}<div class="svp-rte svp-zones__intro">{{ s.intro }}</div>{%- endif -%}
+        </div>
+      {%- endif -%}
+
+      {%- if count > 0 -%}
+        <div class="svp-zones__fig svp-reveal" aria-hidden="true">
+          <div class="svp-zones__panel">
+            <svg class="svp-zones__svg" viewBox="56 40 248 424" focusable="false" role="presentation">
+              <g class="svp-zones__ink">
+                <path class="svp-zones__ln svp-zones__ln--soft" d="M96 340 C66 280 62 176 88 116 C108 70 144 48 180 46 C230 46 272 76 286 134 C300 196 294 282 266 340"/>
+                <path class="svp-zones__ln svp-zones__ln--soft" d="M88 160 C94 124 118 98 150 90"/>
+                <path class="svp-zones__ln svp-zones__ln--soft" d="M150 90 C186 96 236 112 272 160"/>
+                <path class="svp-zones__ln svp-zones__ln--soft" d="M150 90 C147 78 144 66 142 57"/>
+                <path class="svp-zones__ln" d="M88 160 C82 214 86 268 100 306 C112 344 146 382 180 385 C214 382 248 344 260 306 C274 268 278 214 272 160"/>
+                <path class="svp-zones__ln svp-zones__ln--soft" d="M112 192 C126 183 146 182 162 187"/>
+                <path class="svp-zones__ln svp-zones__ln--soft" d="M198 187 C214 182 234 183 248 192"/>
+                <path class="svp-zones__ln" d="M118 214 C127 223 147 223 156 214"/>
+                <path class="svp-zones__ln" d="M204 214 C213 223 233 223 242 214"/>
+                <path class="svp-zones__ln svp-zones__ln--soft" d="M124.5 218.3 l-2.5 4 M132.7 220.5 l-1 4.5 M141.3 220.5 l1 4.5 M149.5 218.3 l2.5 4"/>
+                <path class="svp-zones__ln svp-zones__ln--soft" d="M235.5 218.3 l2.5 4 M227.3 220.5 l1 4.5 M218.7 220.5 l-1 4.5 M210.5 218.3 l-2.5 4"/>
+                <path class="svp-zones__ln" d="M174 200 C175 226 171 250 164 266 C160 274 165 281 172 280"/>
+                <path class="svp-zones__ln svp-zones__ln--soft" d="M172 280 C176 284 184 284 188 280 C195 281 199 274 195 267"/>
+                <path class="svp-zones__ln" d="M150 318 C159 313 168 308 175 310 C178 311 182 311 185 310 C192 308 201 313 210 318"/>
+                <path class="svp-zones__ln" d="M150 318 C165 322 195 322 210 318"/>
+                <path class="svp-zones__ln svp-zones__ln--soft" d="M156 321 C165 333 195 333 204 321"/>
+                <path class="svp-zones__ln" d="M136 364 C140 396 138 424 128 450 C106 458 76 462 46 468"/>
+                <path class="svp-zones__ln" d="M224 364 C220 396 222 424 232 450 C254 458 284 462 314 468"/>
+              </g>
+              {%- assign used = ',' -%}
+              {%- assign n = 0 -%}
+              {%- for block in section.blocks -%}
+                {%- assign b = block.settings -%}
+                {%- unless b.title == blank and b.text == blank -%}
+                  {%- liquid
+                    assign n = n | plus: 1
+                    case b.point
+                      when 'cheekbones'
+                        assign px = 252
+                        assign py = 266
+                      when 'nasolabial'
+                        assign px = 207
+                        assign py = 289
+                      when 'lip_contour'
+                        assign px = 163
+                        assign py = 300
+                      when 'mouth_corners'
+                        assign px = 214
+                        assign py = 328
+                      when 'jawline'
+                        assign px = 103
+                        assign py = 320
+                      when 'neck'
+                        assign px = 196
+                        assign py = 420
+                      else
+                        assign px = 137
+                        assign py = 244
+                    endcase
+                    assign ptag = ',' | append: b.point | append: ','
+                    if used contains ptag
+                      if px == 180
+                        assign py = py | plus: 34
+                      else
+                        assign px = 360 | minus: px
+                      endif
+                    endif
+                    assign used = used | append: b.point | append: ','
+                  -%}
+                  <g class="svp-zones__dot" data-n="{{ n }}" transform="translate({{ px }} {{ py }})">
+                    <circle class="svp-zones__halo" r="19"/>
+                    <circle class="svp-zones__disc" r="12.5"/>
+                    <text class="svp-zones__num" text-anchor="middle" dy="4.6">{{ n }}</text>
+                  </g>
+                {%- endunless -%}
+              {%- endfor -%}
+            </svg>
+          </div>
+        </div>
+
+        <div class="svp-zones__body">
+          <ol class="svp-zones__list svp-reveal" role="list">
+            {%- assign n = 0 -%}
+            {%- for block in section.blocks -%}
+              {%- assign b = block.settings -%}
+              {%- unless b.title == blank and b.text == blank -%}
+                {%- assign n = n | plus: 1 -%}
+                <li class="svp-zones__item" data-n="{{ n }}" {{ block.shopify_attributes }}>
+                  <span class="svp-zones__badge" aria-hidden="true">{{ n }}</span>
+                  <div class="svp-zones__copy">
+                    {%- if b.title != blank -%}<h3 class="svp-h3 svp-zones__name">{{ b.title | escape }}</h3>{%- endif -%}
+                    {%- if b.text != blank -%}<div class="svp-rte svp-zones__text">{{ b.text }}</div>{%- endif -%}
+                  </div>
+                </li>
+              {%- endunless -%}
+            {%- endfor -%}
+          </ol>
+          {%- if s.note != blank -%}
+            <div class="svp-rte svp-zones__note svp-reveal">{{ s.note }}</div>
+          {%- endif -%}
+        </div>
+      {%- elsif s.note != blank -%}
+        <div class="svp-zones__body">
+          <div class="svp-rte svp-zones__note svp-reveal">{{ s.note }}</div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .svp-zones { --svp-zones-dot: var(--svp-wine); --svp-zones-dot-fg: var(--svp-cream); }
+  .svp-zones.svp-tone--wine { --svp-zones-dot: var(--svp-cream); --svp-zones-dot-fg: var(--svp-wine); }
+
+  .svp-zones .svp-zones__grid { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "fig" "body"; }
+  .svp-zones .svp-zones__head { grid-area: head; margin-bottom: 32px; }
+  .svp-zones .svp-zones__h { margin: 0; }
+  .svp-zones .svp-zones__intro { margin-top: 18px; max-width: 600px; }
+
+  /* Drawing */
+  .svp-zones .svp-zones__fig { grid-area: fig; margin: 0 0 36px; }
+  .svp-zones .svp-zones__panel { position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 5 / 6; padding: 6% 8% 0; background: var(--svp-panel); overflow: hidden; }
+  .svp-zones .svp-zones__svg { display: block; width: auto; height: 100%; max-width: 100%; color: var(--svp-fg); overflow: hidden; }
+  .svp-zones .svp-zones__ln { fill: none; stroke: currentColor; stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; opacity: .72; vector-effect: non-scaling-stroke; }
+  .svp-zones .svp-zones__ln--soft { opacity: .38; }
+  .svp-zones .svp-zones__halo { fill: var(--svp-zones-dot); opacity: .13; transition: transform .25s ease, opacity .25s ease; transform-box: fill-box; transform-origin: center; }
+  .svp-zones .svp-zones__disc { fill: var(--svp-zones-dot); }
+  .svp-zones .svp-zones__num { fill: var(--svp-zones-dot-fg); font-family: var(--svp-font-sans); font-size: 13.5px; font-weight: 500; letter-spacing: 0; }
+
+  /* List */
+  .svp-zones .svp-zones__body { grid-area: body; min-width: 0; }
+  .svp-zones .svp-zones__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--svp-rule); }
+  .svp-zones .svp-zones__item { display: grid; grid-template-columns: 32px minmax(0, 1fr); column-gap: 18px; padding: 22px 0 22px; border-bottom: 1px solid var(--svp-rule); }
+  .svp-zones .svp-zones__badge { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; margin-top: 1px; border-radius: 50%; background: var(--svp-zones-dot); color: var(--svp-zones-dot-fg); font-size: 14px; font-weight: 500; line-height: 1; font-variant-numeric: tabular-nums; }
+  .svp-zones .svp-zones__name { margin: 2px 0 6px; }
+  .svp-zones .svp-zones__text { color: var(--svp-fg-soft); }
+  .svp-zones .svp-zones__note { margin-top: 28px; padding: 18px 20px; border-left: 2px solid var(--svp-accent); background: var(--svp-panel); color: var(--svp-fg); }
+
+  /* Hover a list item → its dot lifts */
+  .svp-zones:has(.svp-zones__item[data-n="1"]:hover) .svp-zones__dot[data-n="1"] .svp-zones__halo,
+  .svp-zones:has(.svp-zones__item[data-n="2"]:hover) .svp-zones__dot[data-n="2"] .svp-zones__halo,
+  .svp-zones:has(.svp-zones__item[data-n="3"]:hover) .svp-zones__dot[data-n="3"] .svp-zones__halo,
+  .svp-zones:has(.svp-zones__item[data-n="4"]:hover) .svp-zones__dot[data-n="4"] .svp-zones__halo,
+  .svp-zones:has(.svp-zones__item[data-n="5"]:hover) .svp-zones__dot[data-n="5"] .svp-zones__halo,
+  .svp-zones:has(.svp-zones__item[data-n="6"]:hover) .svp-zones__dot[data-n="6"] .svp-zones__halo,
+  .svp-zones:has(.svp-zones__item[data-n="7"]:hover) .svp-zones__dot[data-n="7"] .svp-zones__halo { transform: scale(1.45); opacity: .22; }
+  @media (prefers-reduced-motion: reduce) { .svp-zones .svp-zones__halo { transition: none; } }
+
+  @media (min-width: 750px) {
+    .svp-zones .svp-zones__fig { max-width: 480px; margin-bottom: 44px; }
+    .svp-zones .svp-zones__head { margin-bottom: 36px; }
+    .svp-zones .svp-zones__panel { aspect-ratio: 4 / 5; }
+  }
+  @media (min-width: 990px) {
+    .svp-zones .svp-zones__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); grid-template-areas: "fig head" "fig body"; grid-template-rows: auto 1fr; column-gap: clamp(48px, 6vw, 112px); }
+    .svp-zones--fig-right .svp-zones__grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); grid-template-areas: "head fig" "body fig"; }
+    .svp-zones .svp-zones__grid--nofig { grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "body"; }
+    .svp-zones .svp-zones__fig { max-width: none; margin: 0; align-self: start; position: sticky; top: 96px; }
+    .svp-zones .svp-zones__head { margin-bottom: 44px; padding-top: 8px; }
+    .svp-zones .svp-zones__item { grid-template-columns: 34px minmax(0, 1fr); column-gap: 24px; padding: 26px 0; }
+    .svp-zones .svp-zones__badge { width: 32px; height: 32px; }
+    .svp-zones .svp-zones__note { margin-top: 32px; padding: 20px 24px; }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Svea Premium – Ansikte",
+  "class": "svp-section",
+  "max_blocks": 7,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Innehåll"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Etikett ovanför rubriken",
+      "default": "Var du drar stiftet"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Rubrik",
+      "info": "Gör ett eller två ord kursiva för betoning.",
+      "default": "Ett stift. <em>Flera ställen.</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "label": "Ingress"
+    },
+    {
+      "type": "richtext",
+      "id": "note",
+      "label": "Notering under listan",
+      "info": "Till exempel råd om ögonområdet och retinol."
+    },
+    {
+      "type": "header",
+      "content": "Utseende"
+    },
+    {
+      "type": "select",
+      "id": "figure_side",
+      "label": "Teckningens placering (dator)",
+      "options": [
+        { "value": "left", "label": "Vänster" },
+        { "value": "right", "label": "Höger" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "tone",
+      "label": "Bakgrund",
+      "options": [
+        { "value": "cream", "label": "Kräm" },
+        { "value": "sand", "label": "Sand" },
+        { "value": "blush", "label": "Rosa" },
+        { "value": "white", "label": "Vit" },
+        { "value": "wine", "label": "Mörk vinröd" }
+      ],
+      "default": "cream"
+    },
+    {
+      "type": "select",
+      "id": "pad",
+      "label": "Luft ovanför och under",
+      "options": [
+        { "value": "s", "label": "Liten" },
+        { "value": "m", "label": "Mellan" },
+        { "value": "l", "label": "Stor" }
+      ],
+      "default": "m"
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Ankar-id för sektionen",
+      "info": "Till exempel zoner. Då kan knappar länka hit med #zoner."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "zone",
+      "name": "Område",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Rubrik",
+          "default": "Under ögonen"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "select",
+          "id": "point",
+          "label": "Punkt på teckningen",
+          "options": [
+            { "value": "under_eyes", "label": "Under ögonen" },
+            { "value": "cheekbones", "label": "Kindbenen" },
+            { "value": "nasolabial", "label": "Mellan näsa och mungipa" },
+            { "value": "lip_contour", "label": "Läppkonturen" },
+            { "value": "mouth_corners", "label": "Mungiporna" },
+            { "value": "jawline", "label": "Käklinjen" },
+            { "value": "neck", "label": "Halsen" }
+          ],
+          "default": "under_eyes"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Svea Premium – Ansiktskarta",
+      "blocks": [
+        { "type": "zone", "settings": { "title": "Under ögonen", "point": "under_eyes", "text": "<p>Klappa in med ringfingret, en bit under fransraden.</p>" } },
+        { "type": "zone", "settings": { "title": "Kindbenen", "point": "cheekbones", "text": "<p>Dra uppåt och utåt längs kindbenet.</p>" } },
+        { "type": "zone", "settings": { "title": "Läppkonturen", "point": "lip_contour", "text": "<p>Längs kanten ovanför läppen.</p>" } },
+        { "type": "zone", "settings": { "title": "Käklinjen", "point": "jawline", "text": "<p>Dra uppåt, från halsen mot käken.</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

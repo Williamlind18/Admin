@@ -1,0 +1,211 @@
+{%- comment -%}
+  Svea Premium – Garanti. Pure typography: a big serif number ("60") with its label, then heading, body, the terms as
+  a numbered hairline list and a text link. Desktop: number left, text right. Mobile: number and label side by side
+  on top. No seal graphics. Extra settings beyond CONTRACT.md: button_label, button_url, button_anchor (beats
+  button_url), button_style – an optional button (e.g. "Välj antal stift" → #kop) shown before the text link.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign tone = s.tone | default: 'sand'
+  assign pad = s.pad | default: 'm'
+  assign anchor_id = s.anchor | remove: '#' | handleize
+
+  assign count = 0
+  for block in section.blocks
+    if block.settings.title != blank or block.settings.text != blank
+      assign count = count | plus: 1
+    endif
+  endfor
+
+  assign has_big = false
+  if s.big_number != blank or s.big_label != blank
+    assign has_big = true
+  endif
+  assign show_link = false
+  if s.link_label != blank and s.link_url != blank
+    assign show_link = true
+  endif
+  assign num_len = s.big_number | strip | size
+
+  assign btn_href = blank
+  if s.button_anchor != blank
+    assign btn_anchor = s.button_anchor | remove: '#' | handleize
+    assign btn_href = '#' | append: btn_anchor
+  elsif s.button_url != blank
+    assign btn_href = s.button_url
+  endif
+  assign show_btn = false
+  if s.button_label != blank and btn_href != blank
+    assign show_btn = true
+  endif
+  assign btn_style = s.button_style | default: 'primary'
+-%}
+<div id="svp-{{ section.id }}" class="svp svp-guarantee{% unless has_big %} svp-guarantee--nobig{% endunless %}{% if num_len > 3 %} svp-guarantee--long{% endif %} svp-tone--{{ tone }} svp-pad--{{ pad }}">
+  {%- if anchor_id != blank -%}<span class="svp-anchor" id="{{ anchor_id }}"></span>{%- endif -%}
+  <div class="svp-container">
+    <div class="svp-guarantee__wrap">
+      {%- if has_big -%}
+        <div class="svp-guarantee__big svp-reveal">
+          <p class="svp-guarantee__fig">
+            {%- if s.big_number != blank -%}<span class="svp-guarantee__num">{{ s.big_number | escape }}</span>{% endif %} {% if s.big_label != blank -%}<span class="svp-guarantee__label">{{ s.big_label | escape }}</span>{%- endif -%}
+          </p>
+        </div>
+      {%- endif -%}
+      <div class="svp-guarantee__main svp-reveal" style="--svp-delay: .08s;">
+        {%- if s.eyebrow != blank -%}<p class="svp-eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
+        {%- if s.heading != blank -%}<h2 class="svp-h2 svp-guarantee__h">{{ s.heading }}</h2>{%- endif -%}
+        {%- if s.body != blank -%}<div class="svp-rte svp-guarantee__body">{{ s.body }}</div>{%- endif -%}
+        {%- if count > 0 -%}
+          <ol class="svp-guarantee__terms" role="list">
+            {%- assign n = 0 -%}
+            {%- for block in section.blocks -%}
+              {%- assign b = block.settings -%}
+              {%- if b.title != blank or b.text != blank -%}
+                {%- assign n = n | plus: 1 -%}
+                <li class="svp-guarantee__term" {{ block.shopify_attributes }}>
+                  <span class="svp-num svp-guarantee__n" aria-hidden="true">{% if n < 10 %}0{% endif %}{{ n }}</span>
+                  <div class="svp-guarantee__tt">
+                    {%- if b.title != blank -%}<h3 class="svp-h3 svp-guarantee__name">{{ b.title | escape }}</h3>{%- endif -%}
+                    {%- if b.text != blank -%}<div class="svp-rte svp-guarantee__text">{{ b.text }}</div>{%- endif -%}
+                  </div>
+                </li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ol>
+        {%- endif -%}
+        {%- if show_btn or show_link -%}
+          <div class="svp-actions svp-guarantee__actions">
+            {%- if show_btn -%}
+              <a class="svp-cta svp-cta--{{ btn_style }}{% if btn_style != 'link' %} svp-cta--full-mobile{% endif %}" href="{{ btn_href }}">
+                <span>{{ s.button_label | escape }}</span>
+                {%- if btn_style == 'link' -%}{%- render 'svp-icon', name: 'arrow', size: 18, class: 'svp-cta__arrow' -%}{%- endif -%}
+              </a>
+            {%- endif -%}
+            {%- if show_link -%}
+              <a class="svp-cta svp-cta--link" href="{{ s.link_url }}">
+                <span>{{ s.link_label | escape }}</span>
+                {%- render 'svp-icon', name: 'arrow', size: 18, class: 'svp-cta__arrow' -%}
+              </a>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .svp-guarantee .svp-guarantee__big { margin: 0 0 36px; padding-bottom: 28px; border-bottom: 1px solid var(--svp-rule); }
+  .svp-guarantee .svp-guarantee__fig { display: flex; align-items: flex-end; gap: 18px; margin: 0; }
+  .svp:not(#svp_) .svp-guarantee__num { display: block; flex: none; font-family: var(--svp-font-serif) !important; font-size: 132px; font-weight: 400; line-height: .78; letter-spacing: -0.04em; font-variant-numeric: lining-nums; color: var(--svp-em); }
+  .svp.svp-guarantee--long:not(#svp_) .svp-guarantee__num { font-size: 88px; letter-spacing: -0.02em; }
+  .svp:not(#svp_) .svp-guarantee__label { display: block; max-width: 11ch; padding-bottom: 2px; font-family: var(--svp-font-serif) !important; font-style: italic; font-size: 26px; line-height: 1.1; color: var(--svp-heading); text-wrap: balance; }
+  .svp-guarantee .svp-guarantee__h { margin: 0; max-width: 760px; }
+  .svp-guarantee .svp-guarantee__body { margin-top: 20px; max-width: 600px; }
+
+  .svp-guarantee .svp-guarantee__terms { list-style: none; margin: 36px 0 0; padding: 0; max-width: 640px; border-bottom: 1px solid var(--svp-rule); }
+  .svp-guarantee .svp-guarantee__term { display: grid; grid-template-columns: 40px minmax(0, 1fr); column-gap: 12px; margin: 0; padding: 22px 0; border-top: 1px solid var(--svp-rule); }
+  .svp-guarantee .svp-guarantee__n { padding-top: 5px; line-height: 1.2; }
+  .svp-guarantee .svp-guarantee__name { margin: 0; }
+  .svp-guarantee .svp-guarantee__name + .svp-guarantee__text { margin-top: 6px; }
+  .svp-guarantee .svp-guarantee__text { color: var(--svp-fg); }
+  .svp.svp-guarantee .svp-guarantee__actions { margin-top: 24px; }
+
+  @media (min-width: 750px) {
+    .svp:not(#svp_) .svp-guarantee__num { font-size: 168px; }
+    .svp:not(#svp_) .svp-guarantee__label { font-size: 30px; }
+  }
+  @media (min-width: 990px) {
+    .svp-guarantee .svp-guarantee__wrap { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: clamp(48px, 6vw, 96px); align-items: start; }
+    .svp-guarantee--nobig .svp-guarantee__wrap { grid-template-columns: minmax(0, 1fr); }
+    .svp-guarantee .svp-guarantee__big { margin: 0; padding: 8px 0 0; border-bottom: 0; }
+    .svp-guarantee .svp-guarantee__fig { flex-direction: column; align-items: flex-start; gap: 28px; }
+    .svp:not(#svp_) .svp-guarantee__num { font-size: clamp(190px, 19vw, 270px); }
+    .svp.svp-guarantee--long:not(#svp_) .svp-guarantee__num { font-size: clamp(120px, 11vw, 160px); }
+    .svp:not(#svp_) .svp-guarantee__label { width: 100%; max-width: 340px; padding: 24px 0 0; border-top: 1px solid var(--svp-rule); font-size: 34px; }
+    .svp-guarantee .svp-guarantee__terms { margin-top: 44px; }
+    .svp-guarantee .svp-guarantee__term { grid-template-columns: 56px minmax(0, 1fr); padding: 26px 0; }
+    .svp.svp-guarantee .svp-guarantee__actions { margin-top: 32px; }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Svea Premium – Garanti",
+  "class": "svp-section",
+  "max_blocks": 6,
+  "settings": [
+    { "type": "header", "content": "Stor siffra" },
+    { "type": "text", "id": "big_number", "label": "Siffra", "default": "60" },
+    { "type": "text", "id": "big_label", "label": "Text vid siffran", "default": "dagars öppet köp" },
+    { "type": "header", "content": "Innehåll" },
+    { "type": "text", "id": "eyebrow", "label": "Etikett ovanför rubriken", "default": "Öppet köp" },
+    { "type": "inline_richtext", "id": "heading", "label": "Rubrik", "info": "Gör ett eller två ord kursiva för betoning.", "default": "Du får sextio dagar på dig <em>att ändra dig.</em>" },
+    { "type": "richtext", "id": "body", "label": "Text", "default": "<p>Sextio dagar från leveransdagen, även om du har börjat använda produkten.</p>" },
+    { "type": "text", "id": "link_label", "label": "Länktext", "default": "Läs hela villkoren" },
+    { "type": "url", "id": "link_url", "label": "Länk", "info": "Länken visas bara när både text och länk är ifyllda." },
+    { "type": "header", "content": "Knapp (valfri)" },
+    { "type": "text", "id": "button_label", "label": "Knapptext", "info": "Till exempel Välj antal stift. Visas före länken." },
+    { "type": "url", "id": "button_url", "label": "Knappens länk" },
+    {
+      "type": "text",
+      "id": "button_anchor",
+      "label": "Ankare på sidan",
+      "info": "Till exempel kop. Länkar till #kop på samma sida och går före knappens länk."
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Knappstil",
+      "options": [
+        { "value": "primary", "label": "Fylld" },
+        { "value": "secondary", "label": "Kontur" },
+        { "value": "link", "label": "Textlänk med pil" }
+      ],
+      "default": "primary"
+    },
+    { "type": "header", "content": "Utseende" },
+    {
+      "type": "select", "id": "tone", "label": "Bakgrund",
+      "options": [
+        { "value": "cream", "label": "Kräm" },
+        { "value": "sand", "label": "Sand" },
+        { "value": "blush", "label": "Rosa" },
+        { "value": "white", "label": "Vit" },
+        { "value": "wine", "label": "Mörk vinröd" }
+      ],
+      "default": "sand"
+    },
+    {
+      "type": "select", "id": "pad", "label": "Luft ovanför och under",
+      "options": [
+        { "value": "s", "label": "Liten" },
+        { "value": "m", "label": "Mellan" },
+        { "value": "l", "label": "Stor" }
+      ],
+      "default": "m"
+    },
+    { "type": "text", "id": "anchor", "label": "Ankar-id för sektionen", "info": "Till exempel garanti. Då kan knappar länka hit med #garanti." }
+  ],
+  "blocks": [
+    {
+      "type": "term",
+      "name": "Villkor",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Rubrik", "default": "Villkor" },
+        { "type": "richtext", "id": "text", "label": "Text" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Svea Premium – Garanti",
+      "blocks": [
+        { "type": "term", "settings": { "title": "Hör av dig", "text": "<p>Inom sextio dagar från leveransdagen.</p>" } },
+        { "type": "term", "settings": { "title": "Skicka tillbaka det som är kvar", "text": "<p>Även påbörjad produkt, tillsammans med förpackningen. Returfrakten står du för.</p>" } },
+        { "type": "term", "settings": { "title": "Pengarna tillbaka", "text": "<p>Inom 14 dagar från att returen har kommit fram.</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

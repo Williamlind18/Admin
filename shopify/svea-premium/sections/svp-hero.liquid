@@ -1,0 +1,441 @@
+{%- comment -%}
+  Svea Premium – Hero.
+  Layouts: split (image + text side by side from 750px) and stacked (desktop: text centred above a wide image).
+  Mobile (<750px), both layouts: the image comes first, full bleed and flush with the top, the text sits below on the
+  tone background. Media priority: video → image (+ optional image_mobile through <picture>) → placeholder word.
+  Extra settings beyond CONTRACT.md: button_anchor, button2_anchor, button2_style, ratio_mobile, ratio_wide, anchor.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign tone = s.tone | default: 'cream'
+  assign pad = s.pad | default: 'm'
+  assign layout = s.layout | default: 'split'
+  assign side = s.image_side | default: 'right'
+  assign ratio = s.ratio | default: '4:5'
+
+  assign htag = 'h1'
+  if s.heading_tag == 'h2'
+    assign htag = 'h2'
+  endif
+
+  assign anchor_id = s.anchor | remove: '#' | handleize
+
+  assign btn_href = blank
+  if s.button_anchor != blank
+    assign btn_anchor = s.button_anchor | remove: '#' | handleize
+    assign btn_href = '#' | append: btn_anchor
+  elsif s.button_url != blank
+    assign btn_href = s.button_url
+  endif
+  assign show_btn = false
+  if s.button_label != blank and btn_href != blank
+    assign show_btn = true
+  endif
+
+  assign btn2_href = blank
+  if s.button2_anchor != blank
+    assign btn2_anchor = s.button2_anchor | remove: '#' | handleize
+    assign btn2_href = '#' | append: btn2_anchor
+  elsif s.button2_url != blank
+    assign btn2_href = s.button2_url
+  endif
+  assign show_btn2 = false
+  if s.button2_label != blank and btn2_href != blank
+    assign show_btn2 = true
+  endif
+  assign btn2_style = s.button2_style | default: 'link'
+
+  # LCP: the hero is normally the first visible section (svp-design is index 1).
+  assign is_priority = true
+  if section.index > 3
+    assign is_priority = false
+  endif
+
+  assign parts = ratio | split: ':'
+  assign rw = parts[0] | plus: 0
+  assign rh = parts[1] | plus: 0
+  if rw <= 0 or rh <= 0
+    assign rw = 4
+    assign rh = 5
+  endif
+
+  assign root_style = ''
+  assign ratio_m = s.ratio_mobile | default: 'same'
+  if ratio_m != 'same'
+    assign rm = ratio_m | replace: ':', ' / '
+    assign root_style = root_style | append: '--svp-hero-ar-m: ' | append: rm | append: ';'
+  endif
+  assign ratio_w = s.ratio_wide | default: '2:1'
+  if ratio_w != 'same'
+    assign rwd = ratio_w | replace: ':', ' / '
+    assign root_style = root_style | append: '--svp-hero-ar-w: ' | append: rwd | append: ';'
+  endif
+
+  if layout == 'stacked'
+    assign sizes = '(min-width: 990px) 1240px, 100vw'
+  else
+    assign sizes = '(min-width: 1320px) 640px, (min-width: 750px) 52vw, 100vw'
+  endif
+
+  assign has_text = false
+  if s.eyebrow != blank or s.heading != blank or s.body != blank or show_btn or show_btn2 or s.note != blank
+    assign has_text = true
+  endif
+-%}
+<div id="svp-{{ section.id }}" class="svp svp-hero svp-hero--{{ layout }} svp-hero--media-{{ side }}{% if ratio_m != 'same' %} svp-hero--arm{% endif %}{% if ratio_w != 'same' %} svp-hero--arw{% endif %} svp-tone--{{ tone }} svp-pad--{{ pad }}"{% if root_style != '' %} style="{{ root_style }}"{% endif %}>
+  {%- if anchor_id != blank -%}<span class="svp-anchor" id="{{ anchor_id }}"></span>{%- endif -%}
+  <div class="svp-container svp-hero__grid">
+    <div class="svp-hero__media" data-svp-vidbox>
+      {%- if s.video != blank -%}
+        {%- render 'svp-image', video: s.video, image: s.image, ratio: ratio, word: s.placeholder_word, sizes: sizes, class: 'svp-hero__ar', priority: is_priority -%}
+      {%- elsif s.image != blank and s.image_mobile != blank -%}
+        {%- liquid
+          assign alt_d = s.image.alt | default: ''
+          assign pos_d = 'object-position: ' | append: s.image.presentation.focal_point
+          if is_priority
+            assign img_loading = 'eager'
+            assign img_fp = 'high'
+          else
+            assign img_loading = 'lazy'
+            assign img_fp = 'auto'
+          endif
+          assign mpad = rh | times: 100.0 | divided_by: rw | round: 3
+        -%}
+        <div class="svp-media svp-ar svp-hero__ar" style="--svp-ar: {{ rw }} / {{ rh }}; --svp-ar-pad: {{ mpad }}%;">
+          <picture>
+            <source media="(max-width: 749px)" sizes="100vw" width="{{ s.image_mobile.width }}" height="{{ s.image_mobile.height }}"
+              srcset="{{ s.image_mobile | image_url: width: 540 }} 540w, {{ s.image_mobile | image_url: width: 720 }} 720w, {{ s.image_mobile | image_url: width: 900 }} 900w, {{ s.image_mobile | image_url: width: 1100 }} 1100w, {{ s.image_mobile | image_url: width: 1400 }} 1400w">
+            {{- s.image | image_url: width: 2000 | image_tag: widths: '540, 720, 900, 1100, 1400, 1800', sizes: sizes, loading: img_loading, fetchpriority: img_fp, alt: alt_d, class: 'svp-media__el', style: pos_d -}}
+          </picture>
+        </div>
+      {%- elsif s.image_mobile != blank -%}
+        <div class="svp-only-mobile">
+          {%- render 'svp-image', image: s.image_mobile, ratio: ratio, word: s.placeholder_word, sizes: '100vw', class: 'svp-hero__ar', priority: is_priority -%}
+        </div>
+        <div class="svp-only-desktop">
+          {%- render 'svp-placeholder', word: s.placeholder_word, ratio: ratio, class: 'svp-hero__ar' -%}
+        </div>
+      {%- else -%}
+        {%- render 'svp-image', image: s.image, ratio: ratio, word: s.placeholder_word, sizes: sizes, class: 'svp-hero__ar', priority: is_priority -%}
+      {%- endif -%}
+      {%- if s.video != blank -%}
+        <button type="button" class="svp-vidctl" data-svp-vidctl hidden aria-label="Pausa filmen">
+          <svg class="svp-vidctl__pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+          <svg class="svp-vidctl__play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 5.5v13a1 1 0 0 0 1.52.85l10.4-6.5a1 1 0 0 0 0-1.7L9.52 4.65A1 1 0 0 0 8 5.5z"/></svg>
+        </button>
+      {%- endif -%}
+    </div>
+
+    {%- if has_text -%}
+      <div class="svp-hero__text">
+        <div class="svp-hero__inner">
+          {%- if s.eyebrow != blank -%}
+            <p class="svp-eyebrow">{{ s.eyebrow | escape }}</p>
+          {%- endif -%}
+          {%- if s.heading != blank -%}
+            <{{ htag }} class="svp-hero__h svp-h1">{{ s.heading }}</{{ htag }}>
+          {%- endif -%}
+          {%- if s.body != blank -%}
+            <div class="svp-hero__body svp-rte svp-lead">{{ s.body }}</div>
+          {%- endif -%}
+          {%- if show_btn or show_btn2 -%}
+            <div class="svp-actions svp-hero__actions">
+              {%- if show_btn -%}
+                <a class="svp-cta svp-cta--full-mobile" href="{{ btn_href }}"><span>{{ s.button_label | escape }}</span></a>
+              {%- endif -%}
+              {%- if show_btn2 -%}
+                <a class="svp-cta svp-cta--{{ btn2_style }}{% if btn2_style == 'secondary' %} svp-cta--full-mobile{% endif %}" href="{{ btn2_href }}">
+                  <span>{{ s.button2_label | escape }}</span>
+                  {%- if btn2_style == 'link' -%}{%- render 'svp-icon', name: 'arrow', size: 18, class: 'svp-cta__arrow' -%}{%- endif -%}
+                </a>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+          {%- if s.note != blank -%}
+            <p class="svp-hero__note svp-small">{{ s.note | escape | replace: '–', '&#8288;–&#8288;' }}</p>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+  {%- if s.video != blank -%}
+    <script>
+      (function () {
+        if (!window.SvpMediaCtl) {
+          window.SvpMediaCtl = {
+            init: function (root) {
+              (root || document).querySelectorAll('[data-svp-vidctl]').forEach(function (btn) {
+                if (btn.__svp) return;
+                var box = btn.closest('[data-svp-vidbox]');
+                var v = box && box.querySelector('video');
+                if (!v) return;
+                btn.__svp = true;
+                var sync = function () {
+                  var p = v.paused;
+                  btn.classList.toggle('is-paused', p);
+                  btn.setAttribute('aria-label', p ? 'Spela filmen' : 'Pausa filmen');
+                };
+                v.addEventListener('play', sync);
+                v.addEventListener('pause', sync);
+                btn.addEventListener('click', function () {
+                  if (v.paused) { var pr = v.play(); if (pr && pr.catch) pr.catch(function () {}); } else { v.pause(); }
+                });
+                btn.hidden = false;
+                sync();
+                setTimeout(sync, 600);
+              });
+            }
+          };
+        }
+        var run = function () { window.SvpMediaCtl.init(document.getElementById('svp-{{ section.id }}')); };
+        if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', run); } else { run(); }
+      })();
+    </script>
+  {%- endif -%}
+</div>
+
+{% stylesheet %}
+  .svp-hero .svp-hero__grid { display: grid; grid-template-columns: minmax(0, 1fr); row-gap: 32px; align-items: center; }
+  .svp-hero .svp-hero__media { position: relative; min-width: 0; }
+  .svp-hero .svp-hero__media picture > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .svp-hero .svp-hero__text { min-width: 0; }
+  .svp-hero .svp-hero__inner { max-width: 560px; }
+  .svp-hero .svp-hero__h { margin: 0; text-wrap: balance; }
+  .svp-hero .svp-eyebrow + .svp-hero__h { margin-top: 0; }
+  .svp-hero .svp-hero__body { margin-top: 20px; color: var(--svp-fg); }
+  .svp-hero .svp-hero__actions { margin-top: 28px; }
+  .svp-hero .svp-hero__note { margin: 18px 0 0; }
+  .svp-hero .svp-actions + .svp-hero__note { margin-top: 16px; }
+  /* Placeholder colour on sand/blush tones lives in svp-base.css. */
+
+  /* Mobile: image first, full bleed, flush with the top; text below on the tone background */
+  @media (max-width: 749px) {
+    .svp-hero.svp-pad--s, .svp-hero.svp-pad--m, .svp-hero.svp-pad--l { padding-top: 0; }
+    .svp-hero .svp-hero__grid { row-gap: 28px; }
+    .svp-hero .svp-hero__media { margin-left: calc(var(--svp-gutter) * -1); margin-right: calc(var(--svp-gutter) * -1); }
+    .svp-hero.svp-hero--arm .svp-hero__media .svp-ar { aspect-ratio: var(--svp-hero-ar-m) !important; }
+    /* Without a real image the panel stays low (5:4), so the H1 and the button reach the first screen */
+    .svp-hero:not(#svp_) .svp-hero__media .svp-ph { aspect-ratio: 5 / 4 !important; }
+    .svp-hero--stacked .svp-hero__inner { margin: 0 auto; text-align: center; }
+    .svp-hero--stacked .svp-hero__actions { justify-content: center; }
+    .svp-hero .svp-hero__body { margin-top: 16px; }
+  }
+
+  /* Split from 750px: two columns, ~55/45, text vertically centred */
+  @media (min-width: 750px) {
+    .svp-hero--split .svp-hero__grid { grid-template-columns: minmax(0, 11fr) minmax(0, 9fr); column-gap: clamp(32px, 6vw, 104px); }
+    .svp-hero--split.svp-hero--media-right .svp-hero__grid { grid-template-columns: minmax(0, 9fr) minmax(0, 11fr); }
+    .svp-hero--split.svp-hero--media-right .svp-hero__media { order: 2; }
+    .svp-hero--split .svp-hero__inner { padding: 24px 0; }
+
+    .svp-hero--stacked .svp-hero__grid { row-gap: clamp(48px, 6vw, 80px); }
+    .svp-hero--stacked .svp-hero__text { order: -1; }
+    .svp-hero--stacked .svp-hero__inner { max-width: 880px; margin: 0 auto; text-align: center; }
+    .svp-hero--stacked .svp-hero__body { max-width: 640px; margin-left: auto; margin-right: auto; }
+    .svp-hero--stacked .svp-hero__actions { justify-content: center; }
+    .svp-hero--stacked.svp-hero--arw .svp-hero__media .svp-ar { aspect-ratio: var(--svp-hero-ar-w) !important; }
+  }
+  @media (min-width: 990px) {
+    .svp-hero .svp-hero__body { margin-top: 24px; }
+    .svp-hero .svp-hero__actions { margin-top: 36px; }
+  }
+
+  /* Pause/play for autoplay video (WCAG 2.2.2) */
+  .svp-hero .svp-vidctl { position: absolute; right: 12px; bottom: 12px; z-index: 2; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; min-height: 0; padding: 0; margin: 0; border: 0; border-radius: 2px; background: rgba(250, 247, 242, .9); color: var(--svp-ink); cursor: pointer; box-shadow: none; -webkit-appearance: none; appearance: none; }
+  .svp-hero .svp-vidctl[hidden] { display: none; }
+  .svp-hero .svp-vidctl:hover { background: var(--svp-cream); }
+  .svp-hero .svp-vidctl:focus-visible { outline: 2px solid var(--svp-wine); outline-offset: 2px; }
+  .svp-hero .svp-vidctl .svp-vidctl__play { display: none; }
+  .svp-hero .svp-vidctl.is-paused .svp-vidctl__play { display: block; }
+  .svp-hero .svp-vidctl.is-paused .svp-vidctl__pause { display: none; }
+  @media (min-width: 750px) { .svp-hero .svp-vidctl { right: 16px; bottom: 16px; } }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Svea Premium – Hero",
+  "class": "svp-section",
+  "settings": [
+    { "type": "header", "content": "Bild eller film" },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "options": [
+        { "value": "split", "label": "Bild och text bredvid varandra" },
+        { "value": "stacked", "label": "Text över en bred bild" }
+      ],
+      "default": "split",
+      "info": "På mobil ligger bilden alltid överst och texten under."
+    },
+    {
+      "type": "select",
+      "id": "image_side",
+      "label": "Bildens placering (dator)",
+      "options": [
+        { "value": "left", "label": "Vänster" },
+        { "value": "right", "label": "Höger" }
+      ],
+      "default": "right"
+    },
+    { "type": "image_picker", "id": "image", "label": "Bild" },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Bild för mobil (valfri)",
+      "info": "Visas på mobil i stället för bilden ovan."
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Film (valfri)",
+      "info": "Spelas upp utan ljud i en slinga och ersätter bilden. Besökaren kan pausa den."
+    },
+    {
+      "type": "text",
+      "id": "placeholder_word",
+      "label": "Ord i platshållaren",
+      "info": "Visas stort och kursivt när ingen bild är vald, till exempel Utvilad."
+    },
+    {
+      "type": "select",
+      "id": "ratio",
+      "label": "Bildformat",
+      "options": [
+        { "value": "4:5", "label": "Stående 4:5" },
+        { "value": "3:4", "label": "Stående 3:4" },
+        { "value": "1:1", "label": "Kvadrat 1:1" }
+      ],
+      "default": "4:5"
+    },
+    {
+      "type": "select",
+      "id": "ratio_mobile",
+      "label": "Bildformat på mobil",
+      "info": "Utan vald bild visas platshållaren lägre (5:4) på mobil, så att rubriken och knappen syns direkt.",
+      "options": [
+        { "value": "same", "label": "Samma som ovan" },
+        { "value": "1:1", "label": "Kvadrat 1:1 (lägre)" },
+        { "value": "4:5", "label": "Stående 4:5" }
+      ],
+      "default": "1:1"
+    },
+    {
+      "type": "select",
+      "id": "ratio_wide",
+      "label": "Bildformat för bred bild (dator)",
+      "info": "Gäller layouten Text över en bred bild.",
+      "options": [
+        { "value": "2:1", "label": "Brett 2:1" },
+        { "value": "16:9", "label": "Brett 16:9" },
+        { "value": "3:2", "label": "3:2" },
+        { "value": "same", "label": "Samma som bildformatet" }
+      ],
+      "default": "2:1"
+    },
+    { "type": "header", "content": "Text" },
+    { "type": "text", "id": "eyebrow", "label": "Etikett ovanför rubriken" },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Rubrik",
+      "info": "Gör ett eller två ord kursiva för betoning.",
+      "default": "Svensk hudvård <em>utan överdrifter.</em>"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Rubriknivå",
+      "info": "Bara en H1 per sida.",
+      "options": [
+        { "value": "h1", "label": "H1 (standard)" },
+        { "value": "h2", "label": "H2" }
+      ],
+      "default": "h1"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text",
+      "default": "<p>Hudvård som är enkel att använda och lätt att förstå. Skickas från svenskt lager med PostNord.</p>"
+    },
+    { "type": "header", "content": "Knappar" },
+    { "type": "text", "id": "button_label", "label": "Knapptext" },
+    { "type": "url", "id": "button_url", "label": "Länk" },
+    {
+      "type": "text",
+      "id": "button_anchor",
+      "label": "Ankare på sidan",
+      "info": "Till exempel kop. Länkar till #kop på samma sida och går före länken ovan."
+    },
+    { "type": "text", "id": "button2_label", "label": "Andra knappens text" },
+    { "type": "url", "id": "button2_url", "label": "Andra knappens länk" },
+    {
+      "type": "text",
+      "id": "button2_anchor",
+      "label": "Andra knappens ankare",
+      "info": "Till exempel mekanism. Går före länken ovan."
+    },
+    {
+      "type": "select",
+      "id": "button2_style",
+      "label": "Andra knappens stil",
+      "options": [
+        { "value": "link", "label": "Textlänk med pil" },
+        { "value": "secondary", "label": "Kontur" }
+      ],
+      "default": "link"
+    },
+    {
+      "type": "text",
+      "id": "note",
+      "label": "Liten rad under knapparna",
+      "info": "Till exempel 60 dagars öppet köp · Skickas från svenskt lager"
+    },
+    { "type": "header", "content": "Utseende" },
+    {
+      "type": "select",
+      "id": "tone",
+      "label": "Bakgrund",
+      "options": [
+        { "value": "cream", "label": "Kräm" },
+        { "value": "sand", "label": "Sand" },
+        { "value": "blush", "label": "Rosa" },
+        { "value": "white", "label": "Vit" },
+        { "value": "wine", "label": "Mörk vinröd" }
+      ],
+      "default": "cream"
+    },
+    {
+      "type": "select",
+      "id": "pad",
+      "label": "Luft ovanför och under",
+      "info": "På mobil ligger bilden alltid kant i kant med överkanten.",
+      "options": [
+        { "value": "s", "label": "Liten" },
+        { "value": "m", "label": "Mellan" },
+        { "value": "l", "label": "Stor" }
+      ],
+      "default": "m"
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Ankar-id för sektionen",
+      "info": "Till exempel start. Då kan knappar länka hit med #start."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Svea Premium – Hero",
+      "settings": {
+        "placeholder_word": "Utvilad.",
+        "eyebrow": "Svea Skin",
+        "button_label": "Se produkterna",
+        "button_url": "shopify://collections/all",
+        "note": "60 dagars öppet köp · Skickas från svenskt lager"
+      }
+    }
+  ]
+}
+{% endschema %}

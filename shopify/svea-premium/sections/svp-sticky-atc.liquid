@@ -1,0 +1,246 @@
+{%- comment -%}
+  Svea Premium – Fast köpknapp. A fixed bar at the bottom of the viewport that appears once the main buy button
+  ([data-svp-buy] [type=submit], rendered by svp-pdp-main) has scrolled out of view above the viewport, and hides
+  again while the footer is visible. Visibility is computed from the real positions (main button bottom < 0, footer
+  top < viewport height) on IntersectionObserver callbacks AND on a passive, rAF-throttled scroll/resize listener
+  (plus load, pageshow and hashchange), so a fast swipe or a programmatic jump past the 58px button cannot leave
+  the bar in the wrong state.
+  mode "click":  clicks the main submit button, so app selections (Kaching) and the theme cart drawer apply.
+  mode "scroll": scrolls to the package choice (Kaching widget or native picker), else to the form, and moves focus
+                 to the main button when it is on screen, otherwise to the selected option.
+  Extra technical setting: hide_app_sticky hides Kaching Bundles' own "Välj paket" bar so only one fixed bar shows.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign mode = s.mode | default: 'click'
+  assign show_on = s.show_on | default: 'mobile'
+  assign label = s.label | default: 'Lägg i varukorgen'
+  assign anchor_id = s.target_anchor | default: 'kop' | remove: '#' | handleize
+-%}
+<div id="svp-{{ section.id }}" class="svp svp-sticky svp-sticky--{{ show_on }} svp-pad--0">
+  <svp-sticky-bar data-mode="{{ mode }}" data-anchor="{{ anchor_id }}">
+    <div class="svp-sticky__bar svp-tone--{{ s.tone | default: 'white' }}" data-svp-bar aria-hidden="true" inert>
+      <div class="svp-sticky__in">
+        <div class="svp-sticky__txt">
+          {%- if product != blank -%}<p class="svp-sticky__name svp-serif svp-only-desktop" data-svp-sticky-name>{{ product.title | escape }}</p>{%- endif -%}
+          {%- if s.sublabel != blank -%}
+            <p class="svp-sticky__sub">{%- render 'svp-icon', name: 'return', size: 18 -%}<span>{{ s.sublabel | escape }}</span></p>
+          {%- endif -%}
+        </div>
+        <button type="button" class="svp-cta no-enhanced-effects svp-sticky__cta" data-svp-sticky-btn{% if mode == 'scroll' %} aria-describedby="svp-sticky-d-{{ section.id }}"{% endif %}>
+          <span class="svp-sticky__t">{{ label | escape }}</span>
+          <div class="loading__spinner hidden">
+            <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle></svg>
+          </div>
+        </button>
+        {%- if mode == 'scroll' -%}<span class="svp-sr" id="svp-sticky-d-{{ section.id }}">Går till köprutan</span>{%- endif -%}
+      </div>
+    </div>
+  </svp-sticky-bar>
+</div>
+{%- if s.hide_app_sticky -%}
+<style>
+  /* Only one fixed bar: hide Kaching Bundles' own sticky "Välj paket" bar on pages that use this section. */
+  kaching-bundles-sticky-atc, .kaching-bundles-sticky-atc, [class*="kaching-bundles-sticky"], [id*="kaching-bundles-sticky"] { display: none !important; }
+</style>
+{%- endif -%}
+<script>
+(function () {
+  if (customElements.get('svp-sticky-bar')) return;
+  customElements.define('svp-sticky-bar', class extends HTMLElement {
+    connectedCallback() {
+      if (this._on) return;
+      this._on = true;
+      this.bar = this.querySelector('[data-svp-bar]');
+      this.btn = this.querySelector('[data-svp-sticky-btn]');
+      this.spin = this.btn && this.btn.querySelector('.loading__spinner');
+      this.mode = this.getAttribute('data-mode') || 'click';
+      this.vis = false; this.past = false; this.footerIn = false;
+      var self = this;
+      if (this.btn && !this._clk) { this._clk = true; this.btn.addEventListener('click', function (e) { self.onClick(e); }); }
+      if (!this.setup()) {
+        document.addEventListener('DOMContentLoaded', function () { self.setup(); }, { once: true });
+      }
+    }
+    disconnectedCallback() {
+      if (this.io) this.io.disconnect();
+      if (this.mo) this.mo.disconnect();
+      if (this._sched) {
+        window.removeEventListener('scroll', this._sched);
+        window.removeEventListener('resize', this._sched);
+        window.removeEventListener('load', this._sched);
+        window.removeEventListener('pageshow', this._sched);
+        window.removeEventListener('hashchange', this._sched);
+      }
+      this.main = null;
+      this._on = false;
+    }
+    setup() {
+      if (this.main) return true;
+      var main = document.querySelector('[data-svp-buy] [type="submit"]');
+      if (!main || !('IntersectionObserver' in window)) return false;
+      this.main = main;
+      var self = this;
+      var name = document.querySelector('[data-svp-name]');
+      var slot = this.querySelector('[data-svp-sticky-name]');
+      if (name && slot && name.textContent.trim()) slot.textContent = name.textContent.trim();
+      /* Both the observer and the scroll listener only schedule a re-measure; measure() reads the real positions. */
+      var raf = 0;
+      this._sched = function () {
+        if (raf) return;
+        raf = requestAnimationFrame(function () { raf = 0; self.measure(); });
+      };
+      this.io = new IntersectionObserver(this._sched);
+      this.io.observe(main);
+      window.addEventListener('scroll', this._sched, { passive: true });
+      window.addEventListener('resize', this._sched, { passive: true });
+      window.addEventListener('load', this._sched);
+      window.addEventListener('pageshow', this._sched);
+      window.addEventListener('hashchange', this._sched);
+      /* The footer is parsed after this section, so look for it once the document is ready. */
+      var watchFooter = function () {
+        var footer = document.querySelector('.shopify-section-group-footer-group, footer');
+        if (footer) { self.footer = footer; self.io.observe(footer); }
+        self._sched();
+      };
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', watchFooter, { once: true });
+      else watchFooter();
+      /* Mirror the main button's loading state (product-form.js toggles .loading). */
+      this.mo = new MutationObserver(function () {
+        var busy = self.main.classList.contains('loading');
+        self.btn.classList.toggle('loading', busy);
+        if (self.spin) self.spin.classList.toggle('hidden', !busy);
+        if (busy) self.btn.setAttribute('aria-disabled', 'true'); else self.btn.removeAttribute('aria-disabled');
+      });
+      this.mo.observe(main, { attributes: true, attributeFilter: ['class'] });
+      return true;
+    }
+    measure() {
+      if (!this.main) return;
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      var r = this.main.getBoundingClientRect();
+      /* A hidden main button (display:none) has an empty rect: never treat that as "scrolled past". */
+      this.past = (r.width > 0 || r.height > 0) && r.bottom < 0;
+      this.footerIn = !!this.footer && this.footer.getBoundingClientRect().top < vh;
+      this.update();
+    }
+    update() {
+      var show = this.past && !this.footerIn;
+      if (show === this.vis) return;
+      this.vis = show;
+      this.bar.classList.toggle('is-on', show);
+      this.bar.setAttribute('aria-hidden', show ? 'false' : 'true');
+      if (show) this.bar.removeAttribute('inert'); else this.bar.setAttribute('inert', '');
+      document.documentElement.classList.toggle('svp-sticky-on', show);
+    }
+    onClick(e) {
+      e.preventDefault();
+      if (!this.main || this.btn.getAttribute('aria-disabled') === 'true') return;
+      if (this.mode === 'scroll') {
+        /* Scroll to the choice (Kaching widget or native picker) when there is one, else to the form, and move focus
+           to the main button if it is on screen, otherwise to the selected option. */
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var root = this.main.closest('.svp-pdp') || document;
+        var choice = Array.prototype.filter.call(root.querySelectorAll('.svp-pdp__picker, kaching-bundle .kaching-bundles'), function (el) { return el.offsetParent !== null; })[0];
+        var target = choice || this.main.closest('form') || document.getElementById(this.getAttribute('data-anchor'));
+        var y = target.getBoundingClientRect().top + window.pageYOffset - 24;
+        window.scrollTo({ top: Math.max(0, y), behavior: reduce ? 'auto' : 'smooth' });
+        var m = this.main;
+        setTimeout(function () {
+          var r = m.getBoundingClientRect();
+          var el = (r.top >= 0 && r.bottom <= window.innerHeight) ? m : (target.querySelector('.kaching-bundles__bar--selected [role="button"]') || target.querySelector('input:checked') || m);
+          try { el.focus({ preventScroll: true }); } catch (err) { el.focus(); }
+        }, reduce ? 50 : 600);
+      } else {
+        this.main.click();
+      }
+    }
+  });
+})();
+</script>
+
+{% stylesheet %}
+  /* Svea Premium – Fast köpknapp */
+  .svp-sticky { background: transparent !important; height: 0; padding: 0; }
+  .svp .svp-sticky__bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; background: var(--svp-bg); color: var(--svp-fg); border-top: 1px solid var(--svp-rule); box-shadow: 0 -8px 24px rgba(43, 33, 36, .06); padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); transform: translateY(110%); visibility: hidden; transition: transform .3s ease, visibility 0s linear .3s; }
+  .svp .svp-sticky__bar.is-on { transform: none; visibility: visible; transition: transform .3s ease, visibility 0s linear 0s; }
+  .svp .svp-sticky__in { display: flex; align-items: center; gap: 14px; max-width: 1240px; margin: 0 auto; }
+  .svp .svp-sticky__txt { flex: 1 1 auto; min-width: 0; }
+  .svp .svp-sticky__name { margin: 0; font-family: var(--svp-font-serif); font-size: 20px; line-height: 1.25; color: var(--svp-heading); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .svp .svp-sticky__sub { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 15px; line-height: 1.3; color: var(--svp-fg-soft); }
+  .svp .svp-sticky__sub .svp-icon { color: var(--svp-accent); flex: none; }
+  .svp:not(#svp_) .svp-sticky__in .svp-sticky__cta { flex: 0 0 auto; min-height: 52px !important; padding: 0 22px !important; }
+  .svp .svp-sticky__txt:empty { display: none; }
+  .svp .svp-sticky__txt:empty + .svp-sticky__cta { flex: 1 1 auto; }
+  @media (max-width: 359px) { .svp .svp-sticky__sub { font-size: 14px; } .svp:not(#svp_) .svp-sticky__in .svp-sticky__cta { padding: 0 16px !important; } }
+  @media (min-width: 750px) {
+    .svp-sticky--mobile .svp-sticky__bar { display: none; }
+    .svp .svp-sticky__bar { padding: 12px 40px calc(12px + env(safe-area-inset-bottom, 0px)); }
+    .svp:not(#svp_) .svp-sticky__in .svp-sticky__cta { min-width: 260px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .svp .svp-sticky__bar, .svp .svp-sticky__bar.is-on { transition: none; } }
+  @media print { .svp-sticky { display: none !important; } }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Svea Premium – Fast köp",
+  "class": "svp-section",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "paragraph", "content": "Visas när köprutans knapp har scrollats förbi och döljs vid sidfoten. Kräver sektionen Svea Premium – Köpruta med blocket Köpknapp." },
+    { "type": "text", "id": "label", "label": "Knapptext", "default": "Lägg i varukorgen" },
+    { "type": "text", "id": "sublabel", "label": "Rad bredvid knappen", "default": "60 dagars öppet köp" },
+    {
+      "type": "select",
+      "id": "mode",
+      "label": "När man trycker",
+      "options": [
+        { "value": "click", "label": "Klicka huvudknappen" },
+        { "value": "scroll", "label": "Scrolla till köprutan" }
+      ],
+      "default": "click",
+      "info": "\"Klicka huvudknappen\" lägger varan i varukorgen med det paket som är valt i köprutan."
+    },
+    {
+      "type": "select",
+      "id": "show_on",
+      "label": "Visa på",
+      "options": [
+        { "value": "mobile", "label": "Bara mobil" },
+        { "value": "all", "label": "Mobil och dator" }
+      ],
+      "default": "mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_app_sticky",
+      "label": "Dölj appens egen fasta knapp",
+      "info": "Döljer Kaching Bundles fasta \"Välj paket\"-list så att bara en fast knapp syns.",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "target_anchor",
+      "label": "Ankare att scrolla till",
+      "info": "Gäller \"Scrolla till köprutan\". Samma som köprutans ankar-id.",
+      "default": "kop"
+    },
+    {
+      "type": "select",
+      "id": "tone",
+      "label": "Bakgrund",
+      "options": [
+        { "value": "white", "label": "Vit" },
+        { "value": "cream", "label": "Kräm" },
+        { "value": "sand", "label": "Sand" },
+        { "value": "wine", "label": "Mörk vinröd" }
+      ],
+      "default": "white"
+    }
+  ],
+  "presets": [
+    { "name": "Svea Premium – Fast köpknapp" }
+  ]
+}
+{% endschema %}

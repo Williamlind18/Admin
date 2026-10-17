@@ -1,0 +1,380 @@
+{%- comment -%}
+  Svea Premium – Utvald produkt.
+  Editorial product block: image (setting image → product image if use_product_image → placeholder), eyebrow,
+  heading (blank = product title), body, points, price ("Från 399 kr", min variant price, never struck through),
+  button to product.url (+ ?view=<view> when set), small note line.
+  No product chosen: renders nothing on the storefront; the editor shows the layout plus a hint.
+  Extra settings beyond CONTRACT.md: show_title, button_style, button_anchor (beats the product link), anchor.
+  The price prefix ("Från") is printed whenever it is filled in. The PDRN product has a single storefront variant
+  (product.price_varies is false) but Kaching bundles cost more, so "Från 399 kr" is true and an automatic rule would
+  drop it. Clear the field for products that only sell at one price.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign tone = s.tone | default: 'cream'
+  assign pad = s.pad | default: 'm'
+  assign side = s.image_side | default: 'right'
+  assign ratio = s.ratio | default: '4:5'
+  assign anchor_id = s.anchor | remove: '#' | handleize
+  assign p = s.product
+  assign has_product = false
+  if p != blank and p.url != blank
+    assign has_product = true
+  endif
+
+  assign p_href = blank
+  if has_product
+    assign p_href = p.url
+    assign view = s.view | strip | remove_first: '?view=' | remove_first: 'view=' | remove_first: 'product.' | remove: '.json'
+    if view != blank
+      assign view = view | handleize
+      assign p_href = p_href | append: '?view=' | append: view
+    endif
+  endif
+
+  assign btn_href = p_href
+  if s.button_anchor != blank
+    assign btn_anchor = s.button_anchor | remove: '#' | handleize
+    assign btn_href = '#' | append: btn_anchor
+  endif
+  assign show_btn = false
+  if s.button_label != blank and btn_href != blank
+    assign show_btn = true
+  endif
+  assign btn_style = s.button_style | default: 'primary'
+
+  assign media_image = s.image
+  if media_image == blank and s.use_product_image and has_product
+    assign media_image = p.featured_image
+  endif
+
+  assign heading = s.heading
+  assign heading_is_title = false
+  if heading == blank and has_product
+    assign heading = p.title | escape
+    assign heading_is_title = true
+  endif
+
+  assign show_name = false
+  if has_product and s.show_title and heading_is_title == false
+    assign show_name = true
+  endif
+
+  assign show_price = false
+  if has_product and s.show_price
+    assign show_price = true
+  endif
+
+  assign pt_count = 0
+  for block in section.blocks
+    if block.type == 'point' and block.settings.text != blank
+      assign pt_count = pt_count | plus: 1
+    endif
+  endfor
+
+  assign has_buy = false
+  if show_name or show_price or show_btn
+    assign has_buy = true
+  endif
+
+  assign render_section = false
+  if has_product or request.design_mode
+    assign render_section = true
+  endif
+-%}
+{%- if render_section -%}
+<div id="svp-{{ section.id }}" class="svp svp-product-feature svp-pfeat--media-{{ side }} svp-tone--{{ tone }} svp-pad--{{ pad }}">
+  {%- if anchor_id != blank -%}<span class="svp-anchor" id="{{ anchor_id }}"></span>{%- endif -%}
+  <div class="svp-container">
+    <div class="svp-pfeat__grid">
+      <div class="svp-pfeat__media svp-reveal">
+        {%- if p_href != blank -%}<a class="svp-pfeat__medialink" href="{{ p_href }}" tabindex="-1" aria-hidden="true">{%- endif -%}
+        {%- render 'svp-image', image: media_image, ratio: ratio, word: s.placeholder_word, sizes: '(min-width: 1320px) 680px, (min-width: 990px) 54vw, (min-width: 750px) 50vw, 100vw', class: 'svp-pfeat__ar' -%}
+        {%- if p_href != blank -%}</a>{%- endif -%}
+      </div>
+
+      <div class="svp-pfeat__text svp-reveal" style="--svp-delay: .08s">
+        {%- if s.eyebrow != blank -%}
+          <p class="svp-eyebrow">{{ s.eyebrow | escape }}</p>
+        {%- endif -%}
+        {%- if heading != blank -%}
+          <h2 class="svp-pfeat__h svp-h2">{{ heading }}</h2>
+        {%- endif -%}
+        {%- if s.body != blank -%}
+          <div class="svp-pfeat__body svp-rte">{{ s.body }}</div>
+        {%- endif -%}
+
+        {%- if pt_count > 0 -%}
+          <ul class="svp-pfeat__pts" role="list">
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'point' and block.settings.text != blank -%}
+                <li class="svp-pfeat__pt" {{ block.shopify_attributes }}>
+                  {%- render 'svp-icon', name: 'check', size: 18, class: 'svp-pfeat__ico' -%}
+                  <span>{{ block.settings.text | escape | replace: '–', '&#8288;–&#8288;' }}</span>
+                </li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+
+        {%- if has_buy -%}
+          <div class="svp-pfeat__buy">
+            {%- if show_name or show_price -%}
+              <div class="svp-pfeat__meta">
+                {%- if show_name -%}
+                  <p class="svp-pfeat__pname">{{ p.title | escape }}</p>
+                {%- endif -%}
+                {%- if show_price -%}
+                  <p class="svp-pfeat__price">
+                    {%- if s.price_prefix != blank -%}
+                      <span class="svp-pfeat__from">{{ s.price_prefix | escape }}</span>{{ ' ' }}
+                    {%- endif -%}
+                    <span class="svp-pfeat__amt svp-serif">{{ p.price_min | money_without_trailing_zeros }}</span>
+                    {%- unless p.available -%}
+                      <span class="svp-pfeat__soldout">Tillfälligt slut</span>
+                    {%- endunless -%}
+                  </p>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+            {%- if show_btn -%}
+              <a class="svp-cta svp-cta--{{ btn_style }} svp-pfeat__cta{% if btn_style != 'link' %} svp-cta--full-mobile{% endif %}" href="{{ btn_href }}">
+                <span>{{ s.button_label | escape }}</span>
+                {%- if btn_style == 'link' -%}{%- render 'svp-icon', name: 'arrow', size: 18, class: 'svp-cta__arrow' -%}{%- endif -%}
+              </a>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+
+        {%- if s.note != blank -%}
+          <p class="svp-pfeat__note">{{ s.note | escape | replace: '–', '&#8288;–&#8288;' }}</p>
+        {%- endif -%}
+
+        {%- if has_product == false and request.design_mode -%}
+          <p class="svp-pfeat__hint">Välj en produkt i sektionens inställningar. Utan produkt visas sektionen inte i butiken.</p>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+{%- endif -%}
+
+{% stylesheet %}
+  .svp-product-feature .svp-pfeat__grid { display: grid; grid-template-columns: minmax(0, 1fr); row-gap: 36px; align-items: center; }
+  .svp-product-feature .svp-pfeat__media { position: relative; min-width: 0; }
+  .svp-product-feature .svp-pfeat__medialink { display: block; color: inherit; text-decoration: none; }
+  .svp-product-feature .svp-pfeat__media .svp-media > img { transition: transform 1.2s cubic-bezier(.2, .6, .2, 1); }
+  .svp-product-feature .svp-pfeat__medialink:hover .svp-media > img { transform: scale(1.025); }
+  .svp-product-feature .svp-pfeat__text { min-width: 0; max-width: 540px; }
+  .svp-product-feature .svp-pfeat__h { margin: 0; text-wrap: balance; }
+  .svp-product-feature .svp-pfeat__body { margin-top: 20px; }
+
+  .svp-product-feature .svp-pfeat__pts { list-style: none; margin: 28px 0 0; padding: 0; }
+  .svp-product-feature .svp-pfeat__pt { display: grid; grid-template-columns: 18px minmax(0, 1fr); column-gap: 14px; align-items: start; margin: 0; padding: 0; line-height: 1.5; }
+  .svp-product-feature .svp-pfeat__pt + .svp-pfeat__pt { margin-top: 12px; }
+  .svp-product-feature .svp-pfeat__ico { margin-top: .2em; color: var(--svp-accent); }
+
+  .svp-product-feature .svp-pfeat__buy { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 24px; margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--svp-rule); }
+  .svp-product-feature .svp-pfeat__meta { min-width: 0; }
+  .svp-product-feature .svp-pfeat__pname { margin: 0 0 4px; font-size: 15px; line-height: 1.45; color: var(--svp-fg-soft); }
+  .svp-product-feature .svp-pfeat__price { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 8px; line-height: 1.2; }
+  .svp-product-feature .svp-pfeat__from { font-size: 16px; color: var(--svp-fg-soft); }
+  .svp-product-feature .svp-pfeat__amt { font-size: 30px; line-height: 1.1; letter-spacing: -0.01em; color: var(--svp-heading); font-variant-numeric: lining-nums; }
+  .svp-product-feature .svp-pfeat__soldout { font-size: 15px; color: var(--svp-fg-soft); }
+  .svp-product-feature .svp-pfeat__note { margin: 16px 0 0; font-size: 15px; line-height: 1.5; color: var(--svp-fg-soft); }
+  .svp-product-feature .svp-pfeat__hint { margin: 20px 0 0; padding: 14px 16px; border: 1px dashed var(--svp-rule); font-size: 15px; line-height: 1.5; color: var(--svp-fg-soft); }
+
+  /* Placeholder colour on sand/blush tones lives in svp-base.css. */
+
+  @media (max-width: 749px) {
+    .svp-product-feature .svp-pfeat__grid { row-gap: 32px; }
+    /* Full-bleed image on mobile (editorial), text keeps the gutter */
+    .svp-product-feature .svp-pfeat__media { margin-left: calc(var(--svp-gutter) * -1); margin-right: calc(var(--svp-gutter) * -1); }
+    .svp-product-feature .svp-pfeat__buy { flex-direction: column; align-items: stretch; }
+    .svp-product-feature .svp-pfeat__buy > .svp-cta--link { align-self: flex-start; }
+  }
+  @media (min-width: 750px) {
+    .svp-product-feature .svp-pfeat__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: clamp(40px, 6vw, 112px); }
+    .svp-product-feature.svp-pfeat--media-right .svp-pfeat__media { order: 2; }
+  }
+  @media (min-width: 990px) {
+    .svp-product-feature .svp-pfeat__grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+    .svp-product-feature.svp-pfeat--media-right .svp-pfeat__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+    .svp-product-feature .svp-pfeat__body { margin-top: 24px; }
+    .svp-product-feature .svp-pfeat__pts { margin-top: 32px; }
+    .svp-product-feature .svp-pfeat__buy { margin-top: 40px; padding-top: 32px; }
+    .svp-product-feature .svp-pfeat__amt { font-size: 34px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .svp-product-feature .svp-pfeat__media .svp-media > img { transition: none; }
+    .svp-product-feature .svp-pfeat__medialink:hover .svp-media > img { transform: none; }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Svea Premium – Utvald",
+  "class": "svp-section",
+  "max_blocks": 6,
+  "settings": [
+    { "type": "header", "content": "Produkt" },
+    { "type": "product", "id": "product", "label": "Produkt" },
+    {
+      "type": "text",
+      "id": "view",
+      "label": "Produktsidans mall (valfri)",
+      "info": "Mallens suffix, till exempel pdrn-a-mekanism. Länken blir då produktsidan med ?view=pdrn-a-mekanism. Tomt = standardmallen."
+    },
+    { "type": "header", "content": "Bild" },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Bild",
+      "info": "Tom = produktens första bild om rutan nedan är ikryssad, annars en tonad platshållare."
+    },
+    {
+      "type": "checkbox",
+      "id": "use_product_image",
+      "label": "Använd produktens första bild när ingen bild är vald",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "placeholder_word",
+      "label": "Ord i platshållaren",
+      "info": "Visas stort och kursivt när ingen bild visas, till exempel Spänst."
+    },
+    {
+      "type": "select",
+      "id": "ratio",
+      "label": "Bildformat",
+      "options": [
+        { "value": "4:5", "label": "Stående 4:5" },
+        { "value": "1:1", "label": "Kvadrat 1:1" }
+      ],
+      "default": "4:5"
+    },
+    {
+      "type": "select",
+      "id": "image_side",
+      "label": "Bildens placering (dator)",
+      "info": "På mobil ligger bilden alltid överst.",
+      "options": [
+        { "value": "left", "label": "Vänster" },
+        { "value": "right", "label": "Höger" }
+      ],
+      "default": "right"
+    },
+    { "type": "header", "content": "Text" },
+    { "type": "text", "id": "eyebrow", "label": "Etikett ovanför rubriken" },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Rubrik",
+      "info": "Tom = produktens namn. Gör ett eller två ord kursiva för betoning."
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Text",
+      "default": "<p>Dras på ren hud, morgon och kväll. Smälter in utan att kladda och fungerar både under och över smink.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_title",
+      "label": "Visa produktens namn ovanför priset",
+      "info": "Visas bara när rubriken är ifylld (annars är rubriken redan produktens namn).",
+      "default": true
+    },
+    { "type": "header", "content": "Pris och knapp" },
+    {
+      "type": "checkbox",
+      "id": "show_price",
+      "label": "Visa pris",
+      "info": "Lägsta pris bland varianterna. Visas aldrig överstruket.",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "price_prefix",
+      "label": "Ord före priset",
+      "info": "Till exempel Från, när produkten också säljs i paket till högre pris. Töm fältet om produkten bara säljs till ett enda pris.",
+      "default": "Från"
+    },
+    { "type": "text", "id": "button_label", "label": "Knapptext", "default": "Läs mer" },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Knappstil",
+      "options": [
+        { "value": "primary", "label": "Fylld" },
+        { "value": "secondary", "label": "Kontur" },
+        { "value": "link", "label": "Textlänk med pil" }
+      ],
+      "default": "primary"
+    },
+    {
+      "type": "text",
+      "id": "button_anchor",
+      "label": "Ankare på sidan (valfritt)",
+      "info": "Till exempel kop. Då länkar knappen till #kop på samma sida i stället för till produktsidan."
+    },
+    {
+      "type": "text",
+      "id": "note",
+      "label": "Liten rad under knappen",
+      "info": "Till exempel villkor för öppet köp."
+    },
+    { "type": "header", "content": "Utseende" },
+    {
+      "type": "select",
+      "id": "tone",
+      "label": "Bakgrund",
+      "options": [
+        { "value": "cream", "label": "Kräm" },
+        { "value": "sand", "label": "Sand" },
+        { "value": "blush", "label": "Rosa" },
+        { "value": "white", "label": "Vit" },
+        { "value": "wine", "label": "Mörk vinröd" }
+      ],
+      "default": "cream"
+    },
+    {
+      "type": "select",
+      "id": "pad",
+      "label": "Luft ovanför och under",
+      "options": [
+        { "value": "s", "label": "Liten" },
+        { "value": "m", "label": "Mellan" },
+        { "value": "l", "label": "Stor" }
+      ],
+      "default": "m"
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Ankar-id för sektionen",
+      "info": "Till exempel stiftet. Då kan knappar länka hit med #stiftet."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "point",
+      "name": "Egenskap",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Text" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Svea Premium – Utvald produkt",
+      "blocks": [
+        { "type": "point", "settings": { "text": "Smälter in utan att kladda" } },
+        { "type": "point", "settings": { "text": "Fungerar både under och över smink" } },
+        { "type": "point", "settings": { "text": "Ryms i handväskan" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

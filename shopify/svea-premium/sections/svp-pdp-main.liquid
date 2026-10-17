@@ -1,0 +1,840 @@
+{%- comment -%}
+  Svea Premium – Produkt (köpruta). Main section for product templates.
+  Gallery (selected positions / all product media / placeholder) + info column with blocks in block order:
+  text, benefits, facts, native_picker, @app (Kaching Bundles), buy_buttons, notice, details.
+  The buy form is Dawn compatible (<product-form> + {% form 'product' %} + hidden id/quantity + submit with
+  .loading__spinner) so assets/product-form.js adds to cart and opens the theme cart drawer. The form carries
+  data-svp-buy; svp-sticky-atc clicks its submit button.
+  Classes never contain "title", "heading", "button", "btn", "submit" (theme !important rules), see build/IMPL.md.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign tone = s.tone | default: 'cream'
+  assign pad = s.pad | default: 's'
+  assign anchor_id = s.anchor | remove: '#' | handleize
+  assign gmode = s.gallery_mode | default: 'selected'
+
+  assign cur = product.selected_or_first_available_variant
+  if cur == nil and product != blank
+    assign cur = product.variants.first
+  endif
+
+  assign ptitle = s.title_override | default: product.title
+
+  # Gallery: collect 0-based media indexes as a comma string, then split.
+  assign idx_str = ''
+  if product != blank and product.media.size > 0
+    if gmode == 'product'
+      for m in product.media
+        assign i0 = forloop.index0
+        assign idx_str = idx_str | append: i0 | append: ','
+      endfor
+    elsif gmode == 'selected'
+      assign plist = s.gallery_positions | default: '' | split: ','
+      for p in plist
+        assign n = p | strip | plus: 0
+        if n > 0 and n <= product.media.size
+          assign i0 = n | minus: 1
+          assign idx_str = idx_str | append: i0 | append: ','
+        endif
+      endfor
+    endif
+  endif
+  assign idxs = idx_str | split: ','
+  assign slide_count = idxs.size
+  if gmode == 'placeholder'
+    assign slide_count = 0
+  endif
+
+  # Mobile gallery ratio (< 750px). Desktop keeps 4:5. Applied as a scoped override of the aspect box variables.
+  assign m_ratio = s.gallery_ratio_mobile | default: '4:3' | strip
+  assign m_parts = m_ratio | split: ':'
+  assign m_w = m_parts[0] | plus: 0
+  assign m_h = m_parts[1] | plus: 0
+  if m_w <= 0 or m_h <= 0
+    assign m_w = 4
+    assign m_h = 3
+  endif
+  assign m_pad = m_h | times: 100.0 | divided_by: m_w | round: 3
+-%}
+{%- if product == blank -%}
+  {%- if request.design_mode -%}
+    <div id="svp-{{ section.id }}" class="svp svp-pdp svp-tone--{{ tone }} svp-pad--s">
+      <div class="svp-container"><p class="svp-small">Den här sektionen visar en produkt och fungerar bara i en produktmall.</p></div>
+    </div>
+  {%- endif -%}
+{%- else -%}
+{%- unless m_w == 4 and m_h == 5 -%}
+<style>
+  @media (max-width: 749px) {
+    #svp-{{ section.id }} .svp-pdp__gallery .svp-ar { --svp-ar: {{ m_w }} / {{ m_h }} !important; --svp-ar-pad: {{ m_pad }}% !important; }
+  }
+</style>
+{%- endunless -%}
+<div id="svp-{{ section.id }}" class="svp svp-pdp svp-tone--{{ tone }} svp-pad--{{ pad }}{% if s.app_style %} svp-pdp--appstyle{% endif %}{% if s.app_hide_compare %} svp-pdp--nocompare{% endif %}" data-svp-pdp>
+  <svp-pdp-watch hidden></svp-pdp-watch>
+  <div class="svp-container">
+    <div class="svp-pdp__grid">
+
+      {%- comment -%} ===== Gallery ===== {%- endcomment -%}
+      <div class="svp-pdp__gallery">
+        {%- if slide_count > 0 -%}
+          <svp-pdp-gallery class="svp-pdp__gal{% if slide_count > 1 %} svp-pdp__gal--multi{% endif %}">
+            <ul class="svp-pdp__track" data-svp-track{% if slide_count > 1 %} tabindex="0" aria-label="Produktbilder, {{ slide_count }} st. Svep eller använd piltangenterna."{% endif %}>
+              {%- for i in idxs -%}
+                {%- liquid
+                  assign n = i | plus: 0
+                  assign m = product.media[n]
+                  assign alt_text = m.alt | default: m.preview_image.alt
+                  if alt_text == blank
+                    assign alt_text = product.title
+                    if forloop.index > 1
+                      assign alt_text = product.title | append: ', bild ' | append: forloop.index
+                    endif
+                  endif
+                  assign is_first = false
+                  if forloop.first
+                    assign is_first = true
+                  endif
+                -%}
+                <li class="svp-pdp__slide" data-svp-slide>
+                  {%- render 'svp-image',
+                    image: m.preview_image,
+                    ratio: '4:5',
+                    word: s.placeholder_word,
+                    alt: alt_text,
+                    sizes: '(min-width: 990px) 58vw, (min-width: 750px) 90vw, 86vw',
+                    class: 'svp-pdp__media',
+                    priority: is_first
+                  -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+            {%- if slide_count > 1 -%}
+              <div class="svp-pdp__dots svp-only-mobile">
+                {%- for i in idxs -%}
+                  <button type="button" class="svp-pdp__dot" data-svp-go="{{ forloop.index0 }}" aria-label="Visa bild {{ forloop.index }} av {{ slide_count }}"{% if forloop.first %} aria-current="true"{% endif %}><span aria-hidden="true"></span></button>
+                {%- endfor -%}
+              </div>
+              <div class="svp-pdp__thumbs svp-only-desktop">
+                {%- for i in idxs -%}
+                  {%- assign n = i | plus: 0 -%}
+                  {%- assign m = product.media[n] -%}
+                  <button type="button" class="svp-pdp__thumb" data-svp-go="{{ forloop.index0 }}" aria-label="Visa bild {{ forloop.index }} av {{ slide_count }}"{% if forloop.first %} aria-current="true"{% endif %}>
+                    {{- m.preview_image | image_url: width: 240 | image_tag: loading: 'lazy', alt: '', class: 'svp-pdp__thumb-img', widths: '120, 240', sizes: '96px' -}}
+                  </button>
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+          </svp-pdp-gallery>
+        {%- else -%}
+          <div class="svp-pdp__gal">
+            {%- render 'svp-placeholder', word: s.placeholder_word, ratio: '4:5', class: 'svp-pdp__media' -%}
+          </div>
+        {%- endif -%}
+      </div>
+
+      {%- comment -%} ===== Info column ===== {%- endcomment -%}
+      <div class="svp-pdp__info">
+        {%- if anchor_id != blank -%}<span class="svp-anchor" id="{{ anchor_id }}"></span>{%- endif -%}
+        <div class="svp-pdp__head">
+          {%- if s.eyebrow != blank -%}<p class="svp-eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
+          <h1 class="svp-pdp__h" data-svp-name>{{ ptitle | escape }}</h1>
+          {%- if s.subtitle != blank -%}<p class="svp-pdp__sub">{{ s.subtitle | escape }}</p>{%- endif -%}
+          {%- if s.show_price or s.price_note != blank -%}
+            <div class="svp-pdp__price">
+              {%- if s.show_price and cur -%}
+                <span class="svp-pdp__amount" data-svp-price aria-live="polite">{{ cur.price | money_without_trailing_zeros }}</span>
+              {%- endif -%}
+              {%- if s.price_note != blank -%}<span class="svp-pdp__pnote">{{ s.price_note | escape }}</span>{%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+
+        {%- for block in section.blocks -%}
+          {%- liquid
+            assign b = block.settings
+            assign next_i = forloop.index
+            assign next_type = section.blocks[next_i].type
+            assign prev_type = ''
+            if forloop.index0 > 0
+              assign prev_i = forloop.index0 | minus: 1
+              assign prev_type = section.blocks[prev_i].type
+            endif
+          -%}
+          {%- case block.type -%}
+
+            {%- when '@app' -%}
+              <div class="svp-pdp__app" data-svp-app>{% render block %}</div>
+
+            {%- when 'text' -%}
+              {%- if b.text != blank -%}
+                <div class="svp-pdp__text svp-rte" {{ block.shopify_attributes }}>{{ b.text }}</div>
+              {%- endif -%}
+
+            {%- when 'benefits' -%}
+              {%- assign lines = b.lines | newline_to_br | split: '<br />' -%}
+              {%- if b.lines != blank -%}
+                <ul class="svp-pdp__benefits" {{ block.shopify_attributes }}>
+                  {%- for l in lines -%}
+                    {%- assign t = l | strip -%}
+                    {%- if t != blank -%}
+                      <li>{%- render 'svp-icon', name: 'check', size: 20, class: 'svp-pdp__bicon' -%}<span>{{ t | escape }}</span></li>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+
+            {%- when 'facts' -%}
+              {%- assign lines = b.lines | newline_to_br | split: '<br />' -%}
+              {%- if b.lines != blank -%}
+                <dl class="svp-pdp__facts" {{ block.shopify_attributes }}>
+                  {%- for l in lines -%}
+                    {%- assign t = l | strip -%}
+                    {%- if t != blank -%}
+                      {%- assign parts = t | split: '|' -%}
+                      <div class="svp-pdp__fact">
+                        <dt class="svp-pdp__fv">{{ parts[0] | strip | escape }}</dt>
+                        {%- if parts[1] != blank -%}<dd class="svp-pdp__fl">{{ parts[1] | strip | escape }}</dd>{%- endif -%}
+                      </div>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </dl>
+              {%- endif -%}
+
+            {%- when 'native_picker' -%}
+              {%- liquid
+                assign avail = product.variants | where: 'available'
+                assign sel = cur
+                if sel.available != true
+                  assign sel = avail.first
+                endif
+                assign name_lines = b.names | newline_to_br | split: '<br />'
+                assign count_lines = b.unit_counts | newline_to_br | split: '<br />'
+                assign unit = b.unit_label | default: 'st'
+              -%}
+              {%- if avail.size > 0 -%}
+                <svp-pdp-picker class="svp-pdp__picker{% if request.design_mode %} svp-pdp__picker--ed{% endif %}" data-section="{{ section.id }}" {{ block.shopify_attributes }}>
+                  {%- if request.design_mode -%}<p class="svp-pdp__appnote svp-small">Paketappen (Kaching) visar sitt eget val på den här produkten och styr antalet, så antalsväljaren och priset döljs för kunden.</p>{%- endif -%}
+                  <fieldset class="svp-pdp__fs">
+                    <legend class="svp-pdp__legend">{{ b.heading | default: 'Välj antal' | escape }}</legend>
+                    <div class="svp-pdp__opts">
+                      {%- for v in avail -%}
+                        {%- liquid
+                          assign vt = v.title | strip
+                          assign disp = vt
+                          assign sub = ''
+                          assign tag = ''
+                          for l in name_lines
+                            assign parts = l | strip | split: '|'
+                            assign key = parts[0] | strip
+                            if key == vt
+                              if parts[1] != blank
+                                assign disp = parts[1] | strip
+                              endif
+                              assign sub = parts[2] | strip
+                              assign tag = parts[3] | strip
+                              break
+                            endif
+                          endfor
+                          assign cnt = 0
+                          for l in count_lines
+                            assign parts = l | strip | split: '|'
+                            assign key = parts[0] | strip
+                            if key == vt
+                              assign cnt = parts[1] | strip | plus: 0
+                              break
+                            endif
+                          endfor
+                          if cnt == 0
+                            assign cnt = vt | split: ' ' | first | plus: 0
+                          endif
+                          assign per = ''
+                          if b.show_per_unit and cnt > 1
+                            assign per_cents = v.price | divided_by: cnt | divided_by: 100.0 | round | times: 100
+                            assign per = per_cents | money_without_trailing_zeros | append: ' per ' | append: unit
+                          endif
+                        -%}
+                        <label class="svp-pdp__opt">
+                          <input type="radio" class="svp-pdp__radio" name="svp-v-{{ section.id }}" value="{{ v.id }}" data-price="{{ v.price | money_without_trailing_zeros | escape }}"{% if v.id == sel.id %} checked{% endif %}>
+                          <span class="svp-pdp__ob">
+                            <span class="svp-pdp__mark" aria-hidden="true"></span>
+                            <span class="svp-pdp__ot">
+                              {%- if tag != blank -%}<span class="svp-pdp__tag">{{ tag | escape }}</span>{%- endif -%}
+                              <span class="svp-pdp__oname">{{ disp | escape }}</span>
+                              {%- if sub != blank -%}<span class="svp-pdp__osub">{{ sub | escape }}</span>{%- endif -%}
+                            </span>
+                            <span class="svp-pdp__op">
+                              <span class="svp-pdp__oprice">{{ v.price | money_without_trailing_zeros }}</span>
+                              {%- if per != blank -%}<span class="svp-pdp__oper">{{ per }}</span>{%- endif -%}
+                            </span>
+                          </span>
+                        </label>
+                      {%- endfor -%}
+                    </div>
+                  </fieldset>
+                </svp-pdp-picker>
+              {%- endif -%}
+
+            {%- when 'buy_buttons' -%}
+              {%- liquid
+                assign can_buy = true
+                if cur == nil or cur.available == false
+                  assign can_buy = false
+                endif
+                assign atc_text = s.atc_label | default: 'Lägg i varukorgen'
+                assign form_id = 'svp-form-' | append: section.id
+              -%}
+              <div class="svp-pdp__buy" {{ block.shopify_attributes }}>
+                <product-form class="product-form svp-pdp__pf" data-section-id="{{ section.id }}">
+                  <div class="product-form__error-message-wrapper svp-pdp__err" role="alert" hidden>
+                    <span class="product-form__error-message"></span>
+                  </div>
+                  {%- form 'product', product, id: form_id, class: 'svp-pdp__form', novalidate: 'novalidate', data-type: 'add-to-cart-form', data-svp-buy: section.id -%}
+                    <input type="hidden" name="id" value="{{ cur.id }}"{% unless can_buy %} disabled{% endunless %}>
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" name="add" id="svp-atc-{{ section.id }}" class="svp-cta svp-cta--full no-enhanced-effects svp-pdp__atc"{% unless can_buy %} disabled{% endunless %}>
+                      <span class="svp-pdp__atc-t">{% if can_buy %}{{ atc_text | escape }}{% else %}Slutsåld just nu{% endif %}</span>
+                      <div class="loading__spinner hidden">
+                        <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle></svg>
+                      </div>
+                    </button>
+                  {%- endform -%}
+                </product-form>
+                {%- if b.guarantee_line != blank or b.shipping_line != blank -%}
+                  <ul class="svp-pdp__assure">
+                    {%- if b.guarantee_line != blank -%}<li>{%- render 'svp-icon', name: 'return', size: 20 -%}<span>{{ b.guarantee_line | escape }}</span></li>{%- endif -%}
+                    {%- if b.shipping_line != blank -%}<li>{%- render 'svp-icon', name: 'truck', size: 20 -%}<span>{{ b.shipping_line | escape }}</span></li>{%- endif -%}
+                  </ul>
+                {%- endif -%}
+                {%- if b.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
+                  <div class="svp-pdp__pay">
+                    <span class="svp-sr">Betalsätt:</span>
+                    <ul class="svp-pdp__pay-list" role="list">
+                      {%- for type in shop.enabled_payment_types -%}
+                        <li>{{ type | payment_type_svg_tag: class: 'svp-pdp__pay-icon' }}</li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+                {%- endif -%}
+              </div>
+              <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
+            {%- when 'notice' -%}
+              {%- if b.text != blank -%}
+                <div class="svp-pdp__notice svp-pdp__notice--{{ b.style | default: 'boxed' }}" {{ block.shopify_attributes }}>
+                  {%- render 'svp-icon', name: 'sun', size: 22, class: 'svp-pdp__nicon' -%}
+                  <div class="svp-rte svp-pdp__ntext">{{ b.text }}</div>
+                </div>
+              {%- endif -%}
+
+            {%- when 'details' -%}
+              {%- if b.title != blank -%}
+                <details class="svp-acc svp-pdp__acc{% if next_type != 'details' %} svp-acc--last{% endif %}{% if prev_type != 'details' %} svp-pdp__acc--first{% endif %}"{% if b.open %} open{% endif %} {{ block.shopify_attributes }}>
+                  <summary>{{ b.title | escape }}</summary>
+                  {%- if b.content != blank -%}<div class="svp-acc__body svp-rte">{{ b.content }}</div>{%- endif -%}
+                </details>
+              {%- endif -%}
+
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  if (!customElements.get('svp-pdp-gallery')) {
+    customElements.define('svp-pdp-gallery', class extends HTMLElement {
+      connectedCallback() {
+        this.track = this.querySelector('[data-svp-track]');
+        this.slides = Array.prototype.slice.call(this.querySelectorAll('[data-svp-slide]'));
+        this.navs = Array.prototype.slice.call(this.querySelectorAll('[data-svp-go]'));
+        if (!this.track || this.slides.length < 2 || this._on) return;
+        this._on = true;
+        this.i = 0;
+        var self = this, raf = 0;
+        this.navs.forEach(function (b) {
+          b.addEventListener('click', function () { self.go(parseInt(b.getAttribute('data-svp-go'), 10)); });
+        });
+        this.track.addEventListener('scroll', function () {
+          cancelAnimationFrame(raf);
+          raf = requestAnimationFrame(function () { self.sync(); });
+        }, { passive: true });
+        this.track.addEventListener('keydown', function (e) {
+          if (e.key === 'ArrowRight') { e.preventDefault(); self.go(self.i + 1); }
+          if (e.key === 'ArrowLeft') { e.preventDefault(); self.go(self.i - 1); }
+        });
+      }
+      step() { return (this.slides[1].offsetLeft - this.slides[0].offsetLeft) || this.track.clientWidth || 1; }
+      go(n) {
+        n = Math.max(0, Math.min(this.slides.length - 1, n));
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        this.track.scrollTo({ left: this.slides[n].offsetLeft - this.slides[0].offsetLeft, behavior: reduce ? 'auto' : 'smooth' });
+        this.set(n);
+      }
+      sync() {
+        var max = this.track.scrollWidth - this.track.clientWidth;
+        var n = this.track.scrollLeft >= max - 2 ? this.slides.length - 1 : Math.round(this.track.scrollLeft / this.step());
+        this.set(n);
+      }
+      set(n) {
+        if (n === this.i && this._set) return;
+        this._set = true;
+        this.i = n;
+        this.navs.forEach(function (b) {
+          if (parseInt(b.getAttribute('data-svp-go'), 10) === n) b.setAttribute('aria-current', 'true');
+          else b.removeAttribute('aria-current');
+        });
+      }
+    });
+  }
+  if (!customElements.get('svp-pdp-watch')) {
+    /* Kaching Bundles can insert its own widget into the buy box (app block or automatic placement) and then
+       controls quantity and line properties. When it is present, hide the native picker and our own price so
+       what the customer sees matches what is added to the cart. */
+    customElements.define('svp-pdp-watch', class extends HTMLElement {
+      connectedCallback() {
+        var root = this.closest('.svp-pdp');
+        if (!root || this._on) return;
+        this._on = true;
+        var check = function () {
+          /* Kaching also inserts an empty <kaching-bundle> on products without a deal, so look for a rendered block. */
+          if (root.querySelector('.kaching-bundles__block')) { root.classList.add('svp-pdp--bundled'); return true; }
+          return false;
+        };
+        if (root.classList.contains('svp-pdp--appstyle')) {
+          var re = /(\d),00(?=\s*kr)/g; /* \s includes the no-break space */
+          var fixDec = function () {
+            root.querySelectorAll('.kaching-bundles').forEach(function (k) {
+              var tw = document.createTreeWalker(k, NodeFilter.SHOW_TEXT), n;
+              while ((n = tw.nextNode())) {
+                var v = n.nodeValue;
+                if (v && v.indexOf(',00') > -1) { var w = v.replace(re, '$1'); if (w !== v) n.nodeValue = w; }
+              }
+            });
+          };
+          fixDec();
+          new MutationObserver(fixDec).observe(root, { childList: true, subtree: true, characterData: true });
+        }
+        if (check()) return;
+        var mo = new MutationObserver(function () { if (check()) mo.disconnect(); });
+        mo.observe(root, { childList: true, subtree: true });
+        setTimeout(function () { mo.disconnect(); }, 20000);
+      }
+    });
+  }
+  if (!customElements.get('svp-pdp-picker')) {
+    customElements.define('svp-pdp-picker', class extends HTMLElement {
+      connectedCallback() {
+        if (this._on) return;
+        this._on = true;
+        var self = this;
+        this.addEventListener('change', function (e) {
+          if (e.target && e.target.classList.contains('svp-pdp__radio')) self.apply(e.target);
+        });
+        var c = this.querySelector('.svp-pdp__radio:checked');
+        if (c) this.apply(c);
+      }
+      apply(r) {
+        var root = document.getElementById('svp-' + this.getAttribute('data-section')) || document;
+        var input = root.querySelector('[data-svp-buy] input[name="id"]');
+        if (input) { input.value = r.value; input.disabled = false; }
+        var price = root.querySelector('[data-svp-price]');
+        if (price && r.getAttribute('data-price')) price.textContent = r.getAttribute('data-price');
+        document.dispatchEvent(new CustomEvent('svp:variant-change', { detail: { id: r.value } }));
+      }
+    });
+  }
+})();
+</script>
+{%- endif -%}
+
+{% stylesheet %}
+  /* Svea Premium – Produkt (köpruta). Static CSS, scoped to .svp-pdp. */
+  .svp-pdp .svp-pdp__grid { display: grid; grid-template-columns: minmax(0, 1fr); row-gap: 28px; }
+  @media (max-width: 749px) { .svp-pdp.svp-pad--s, .svp-pdp.svp-pad--m, .svp-pdp.svp-pad--l { padding-top: 12px; } }
+
+  /* Gallery */
+  .svp-pdp .svp-pdp__gal { display: block; position: relative; }
+  .svp-pdp .svp-pdp__track { list-style: none; margin: 0; padding: 0; display: flex; gap: 8px; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scroll-behavior: auto; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; scrollbar-width: none; position: relative; }
+  .svp-pdp .svp-pdp__track::-webkit-scrollbar { display: none; }
+  .svp-pdp .svp-pdp__track:focus-visible { outline: 2px solid var(--svp-focus); outline-offset: 3px; }
+  .svp-pdp .svp-pdp__slide { flex: 0 0 100%; scroll-snap-align: start; margin: 0; padding: 0; list-style: none; }
+  .svp-pdp .svp-pdp__gal--multi .svp-pdp__slide { flex-basis: 86%; }
+  .svp-pdp .svp-pdp__media { width: 100%; }
+  .svp-pdp .svp-pdp__dots { display: flex; justify-content: center; gap: 0; margin-top: 4px; }
+  .svp:not(#svp_) .svp-pdp__dot { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 44px; min-height: 0; padding: 0; margin: 0; border: 0; background: transparent; box-shadow: none; cursor: pointer; border-radius: 0; }
+  .svp .svp-pdp__dot span { display: block; width: 6px; height: 6px; border-radius: 3px; background: var(--svp-fg); opacity: .25; transition: width .25s ease, opacity .25s ease; }
+  .svp .svp-pdp__dot[aria-current="true"] span { width: 20px; opacity: 1; background: var(--svp-accent); }
+  .svp .svp-pdp__thumbs { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+  .svp:not(#svp_) .svp-pdp__thumb { display: block; width: 76px; height: 95px; padding: 0; margin: 0; border: 1px solid transparent; background: var(--svp-sand); cursor: pointer; border-radius: 0; box-shadow: none; overflow: hidden; opacity: .62; transition: opacity .2s ease, border-color .2s ease; }
+  .svp .svp-pdp__thumb:hover { opacity: 1; }
+  .svp:not(#svp_) .svp-pdp__thumb[aria-current="true"] { opacity: 1; border-color: var(--svp-fg); }
+  .svp .svp-pdp__thumb-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  /* Info column */
+  .svp-pdp .svp-pdp__info { min-width: 0; }
+  .svp-pdp .svp-pdp__info > * + * { margin-top: 24px; }
+  .svp-pdp .svp-pdp__info > .svp-anchor + * { margin-top: 0; }
+  .svp-pdp .svp-pdp__head .svp-eyebrow { margin-bottom: 12px; }
+  .svp:not(#svp_) .svp-pdp__h { font-size: clamp(38px, 4.4vw, 56px); line-height: 1.06; letter-spacing: -0.015em; margin: 0; text-wrap: balance; }
+  .svp .svp-pdp__sub { margin: 14px 0 0; font-size: 19px; line-height: 1.5; color: var(--svp-fg-soft); max-width: 34em; }
+  .svp .svp-pdp__price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-top: 18px; }
+  .svp .svp-pdp__amount { font-family: var(--svp-font-sans); font-size: 24px; font-weight: 500; letter-spacing: 0; font-variant-numeric: tabular-nums; color: var(--svp-fg); }
+  .svp .svp-pdp__pnote { font-size: 15px; line-height: 1.4; color: var(--svp-fg-soft); }
+
+  .svp .svp-pdp__text { font-size: 17px; }
+
+  .svp .svp-pdp__benefits { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .svp .svp-pdp__benefits li { display: grid; grid-template-columns: 20px minmax(0, 1fr); column-gap: 12px; align-items: start; margin: 0; padding: 0; font-size: 17px; line-height: 1.5; }
+  .svp .svp-pdp__bicon { color: var(--svp-accent); margin-top: 2px; }
+
+  .svp .svp-pdp__facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(92px, 1fr)); margin: 0; padding: 0; border-top: 1px solid var(--svp-rule); border-bottom: 1px solid var(--svp-rule); }
+  .svp .svp-pdp__fact { padding: 16px 8px 16px 12px; margin: 0; border-left: 1px solid var(--svp-rule); min-width: 0; }
+  .svp .svp-pdp__fact:first-child { border-left: 0; padding-left: 0; }
+  .svp .svp-pdp__fv { margin: 0; font-family: var(--svp-font-serif); font-size: 20px; line-height: 1.15; letter-spacing: -0.01em; color: var(--svp-heading); }
+  .svp .svp-pdp__fl { margin: 6px 0 0; font-size: 15px; line-height: 1.35; color: var(--svp-fg-soft); }
+  @media (min-width: 750px) { .svp .svp-pdp__fact { padding: 18px 12px 18px 16px; } .svp .svp-pdp__fv { font-size: 24px; } }
+
+  /* Native picker */
+  .svp .svp-pdp__fs { border: 0; margin: 0; padding: 0; min-width: 0; }
+  .svp .svp-pdp__legend { padding: 0; margin: 0 0 12px; font-family: var(--svp-font-sans); font-size: 13px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--svp-accent); }
+  .svp .svp-pdp__opts { display: grid; gap: 10px; }
+  .svp .svp-pdp__opt { position: relative; display: block; margin: 0; cursor: pointer; }
+  .svp .svp-pdp__radio { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; pointer-events: none; }
+  .svp .svp-pdp__ob { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; column-gap: 14px; align-items: center; min-height: 64px; padding: 14px 18px; background: var(--svp-panel); border: 1px solid var(--svp-rule); border-radius: 2px; transition: border-color .2s ease, box-shadow .2s ease; }
+  .svp .svp-pdp__opt:hover .svp-pdp__ob { border-color: var(--svp-fg-soft); }
+  .svp .svp-pdp__radio:checked + .svp-pdp__ob { border-color: var(--svp-accent); box-shadow: inset 0 0 0 1px var(--svp-accent); }
+  .svp .svp-pdp__radio:focus-visible + .svp-pdp__ob { outline: 2px solid var(--svp-focus); outline-offset: 3px; }
+  .svp .svp-pdp__mark { width: 20px; height: 20px; border-radius: 50%; border: 1px solid var(--svp-fg-soft); position: relative; }
+  .svp .svp-pdp__radio:checked + .svp-pdp__ob .svp-pdp__mark { border-color: var(--svp-accent); }
+  .svp .svp-pdp__radio:checked + .svp-pdp__ob .svp-pdp__mark::after { content: ""; position: absolute; top: 4px; left: 4px; width: 10px; height: 10px; border-radius: 50%; background: var(--svp-accent); }
+  .svp .svp-pdp__ot { display: flex; flex-direction: column; min-width: 0; }
+  .svp .svp-pdp__tag { font-size: 13px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--svp-accent); line-height: 1.3; margin-bottom: 2px; }
+  .svp .svp-pdp__oname { font-size: 18px; font-weight: 500; line-height: 1.3; color: var(--svp-fg); }
+  .svp .svp-pdp__osub { font-size: 15px; line-height: 1.4; color: var(--svp-fg-soft); margin-top: 2px; }
+  .svp .svp-pdp__op { display: flex; flex-direction: column; align-items: flex-end; text-align: right; }
+  .svp .svp-pdp__oprice { font-size: 18px; font-weight: 500; line-height: 1.3; font-variant-numeric: tabular-nums; color: var(--svp-fg); white-space: nowrap; }
+  .svp .svp-pdp__oper { font-size: 15px; line-height: 1.4; color: var(--svp-fg-soft); white-space: nowrap; margin-top: 2px; }
+
+  /* App block (Kaching). Kaching sets its colours as custom properties in inline styles; an !important author
+     declaration beats a normal inline one, so the widget can follow the Svea Premium palette (setting app_style). */
+  .svp .svp-pdp__app { min-width: 0; }
+  .svp-pdp--appstyle .kaching-bundles__block, .svp-pdp--appstyle .kaching-bundles__bar-container, .svp-pdp--appstyle .kaching-bundles__bar-most-popular {
+    --block-title-color: var(--svp-fg) !important; --block-title-font-size: 13px !important; --block-title-font-weight: 500 !important;
+    --bar-border-radius: 2px !important; --badge-concave-depth: 0px !important;
+    --bar-background-color: var(--svp-panel) !important; --bar-selected-background-color: var(--svp-panel) !important;
+    --bar-border-color: var(--svp-rule) !important; --bar-selected-border-color: var(--svp-accent) !important;
+    --bar-title-color: var(--svp-fg) !important; --bar-title-font-size: 18px !important; --bar-title-font-weight: 500 !important;
+    --bar-subtitle-color: var(--svp-fg-soft) !important; --bar-subtitle-font-size: 15px !important; --bar-subtitle-font-weight: 400 !important;
+    --bar-price-color: var(--svp-fg) !important; --bar-full-price-color: var(--svp-fg-soft) !important;
+    --bar-label-border-top-radius: 2px !important; --bar-label-background-color: var(--svp-blush) !important; --bar-label-color: var(--svp-wine) !important; --bar-label-font-size: 13px !important; --bar-label-font-weight: 500 !important;
+    --bar-most-popular-background-color: var(--svp-wine) !important; --bar-most-popular-color: var(--svp-cream) !important; --badge-text-size: 13px !important;
+    --kaching-bundles-unit-label-font-size: 15px !important; --kaching-bundles-unit-label-font-weight: 400 !important;
+  }
+  .svp-pdp--appstyle .kaching-bundles__bar-most-popular__content { letter-spacing: .1em; font-weight: 500; }
+  /* Unselected radio rings at 3:1+ (WCAG 1.4.11): Kaching draws the ring as a box-shadow in --bar-border-color */
+  .svp-pdp--appstyle .kaching-bundles .kaching-bundles__bar:not(.kaching-bundles__bar--selected) .kaching-bundles__bar-radio { box-shadow: 0 0 0 1.5px var(--svp-fg-soft) !important; }
+  .svp-pdp--appstyle .kaching-bundles .kaching-bundles__bar:not(.kaching-bundles__bar--selected):hover .kaching-bundles__bar-radio { box-shadow: 0 0 0 1.5px var(--svp-fg) !important; }
+  /* "Mest populär": a quiet 2px tag, no ribbon flaps */
+  .svp-pdp--appstyle .kaching-bundles__bar-most-popular__content::before,
+  .svp-pdp--appstyle .kaching-bundles__bar-most-popular__content::after { display: none !important; }
+  .svp-pdp--appstyle .kaching-bundles__bar-most-popular,
+  .svp-pdp--appstyle .kaching-bundles__bar-most-popular__content { border-radius: 2px !important; }
+  .svp-pdp--appstyle .kaching-bundles__bar-price { font-weight: 500; font-variant-numeric: tabular-nums; }
+  .svp-pdp--nocompare .kaching-bundles__bar-full-price, .svp-pdp--nocompare .kaching-bundles__bar-label { display: none !important; }
+  .svp-pdp--bundled .svp-pdp__picker, .svp-pdp--bundled .svp-pdp__fs, .svp-pdp--bundled .svp-pdp__amount { display: none !important; }
+  .svp-pdp--bundled .svp-pdp__picker--ed { display: block !important; }
+  .svp .svp-pdp__appnote { display: none; margin: 0; padding: 12px 14px; border: 1px dashed var(--svp-rule); }
+  .svp-pdp--bundled .svp-pdp__appnote { display: block; }
+
+  /* Buy box */
+  .svp .svp-pdp__pf { display: block; }
+  .svp .svp-pdp__form { margin: 0; }
+  .svp:not(#svp_) .svp-pdp__buy .svp-pdp__atc { min-height: 58px !important; font-size: 17px !important; }
+  .svp .svp-pdp__err { display: flex; gap: 10px; align-items: flex-start; margin: 0 0 12px; padding: 12px 16px; background: var(--svp-blush); color: var(--svp-ink); border-left: 2px solid var(--svp-wine); font-size: 16px; line-height: 1.45; }
+  .svp .svp-pdp__err[hidden] { display: none; }
+  .svp .svp-pdp__assure { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 8px; }
+  .svp .svp-pdp__assure li { display: flex; align-items: flex-start; gap: 12px; margin: 0; font-size: 17px; line-height: 1.45; color: var(--svp-fg); }
+  .svp .svp-pdp__assure .svp-icon { color: var(--svp-accent); flex: none; margin-top: 1px; }
+  .svp .svp-pdp__pay { margin-top: 16px; }
+  .svp .svp-pdp__pay-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .svp .svp-pdp__pay-list li { margin: 0; line-height: 0; }
+  .svp .svp-pdp__pay-icon { width: 38px; height: 24px; display: block; }
+
+  /* Notice (retinol etc.) */
+  .svp .svp-pdp__notice { display: grid; grid-template-columns: 22px minmax(0, 1fr); column-gap: 14px; align-items: start; font-size: 17px; line-height: 1.55; }
+  .svp .svp-pdp__notice--boxed { padding: 18px 20px; background: var(--svp-panel); border: 1px solid var(--svp-rule); }
+  .svp .svp-pdp__notice--subtle { padding-top: 18px; border-top: 1px solid var(--svp-rule); color: var(--svp-fg-soft); }
+  .svp .svp-pdp__nicon { color: var(--svp-accent); margin-top: 1px; }
+  .svp .svp-pdp__ntext p { margin: 0 0 .6em; }
+  .svp .svp-pdp__ntext strong { color: var(--svp-fg); }
+
+  /* Accordion (details blocks) */
+  .svp-pdp .svp-pdp__info > .svp-acc + .svp-acc { margin-top: 0; }
+  .svp-pdp .svp-pdp__info > .svp-pdp__acc--first { margin-top: 32px; }
+  .svp .svp-pdp__acc > summary { font-size: 17px; min-height: 60px; padding: 16px 0; }
+  .svp .svp-pdp__acc .svp-acc__body { padding: 0 8px 24px 0; font-size: 17px; }
+
+  /* Mobile: a compact head so the package choice (Kaching) starts within the first screen at 390x844 */
+  @media (max-width: 749px) {
+    .svp-pdp .svp-pdp__grid { row-gap: 20px; }
+    .svp-pdp .svp-pdp__info > * + * { margin-top: 20px; }
+    .svp-pdp .svp-pdp__head .svp-eyebrow { margin-bottom: 8px; }
+    .svp .svp-pdp__sub { margin-top: 8px; font-size: 17px; line-height: 1.5; }
+    .svp .svp-pdp__price { margin-top: 12px; }
+    .svp .svp-pdp__benefits { gap: 8px; }
+    .svp .svp-pdp__benefits li { line-height: 1.45; }
+  }
+  @media (min-width: 750px) and (max-width: 989px) {
+    .svp-pdp .svp-pdp__gal--multi .svp-pdp__slide { flex-basis: 72%; }
+    .svp-pdp .svp-pdp__info { max-width: 640px; }
+  }
+  @media (min-width: 990px) {
+    .svp-pdp .svp-pdp__grid { grid-template-columns: minmax(0, 1fr) clamp(440px, 38vw, 520px); column-gap: clamp(48px, 5vw, 88px); align-items: start; }
+    .svp-pdp .svp-pdp__gallery { position: sticky; top: var(--svp-pdp-top, 24px); }
+    .svp-pdp .svp-pdp__gal--multi .svp-pdp__slide { flex-basis: 100%; }
+    .svp-pdp .svp-pdp__track { gap: 0; }
+    .svp-pdp .svp-pdp__info { padding-top: 8px; }
+    .svp-pdp .svp-pdp__info > * + * { margin-top: 28px; }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Svea Premium – Köpruta",
+  "class": "svp-section",
+  "enabled_on": { "templates": ["product"] },
+  "max_blocks": 30,
+  "settings": [
+    { "type": "header", "content": "Galleri" },
+    {
+      "type": "select",
+      "id": "gallery_mode",
+      "label": "Bilder",
+      "options": [
+        { "value": "selected", "label": "Valda bildnummer" },
+        { "value": "product", "label": "Alla produktbilder" },
+        { "value": "placeholder", "label": "Tonad platshållare" }
+      ],
+      "default": "selected"
+    },
+    {
+      "type": "text",
+      "id": "gallery_positions",
+      "label": "Bildnummer",
+      "info": "Gäller \"Valda bildnummer\". Produktbildernas ordning i Shopify, kommaseparerat. Första numret visas först, t.ex. 15,1.",
+      "default": "15,1"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_word",
+      "label": "Ord i platshållaren",
+      "info": "Visas när det saknas bild.",
+      "default": "Spänst."
+    },
+    {
+      "type": "select",
+      "id": "gallery_ratio_mobile",
+      "label": "Bildformat på mobil",
+      "info": "Gäller skärmar under 750 px. Ett lägre format gör att köpvalet syns tidigare. På dator är formatet alltid 4:5.",
+      "options": [
+        { "value": "4:5", "label": "4:5 (stående)" },
+        { "value": "1:1", "label": "1:1 (kvadrat)" },
+        { "value": "4:3", "label": "4:3 (liggande)" },
+        { "value": "3:2", "label": "3:2 (bred)" }
+      ],
+      "default": "4:3"
+    },
+    { "type": "header", "content": "Rubrik och pris" },
+    { "type": "text", "id": "eyebrow", "label": "Etikett ovanför rubriken" },
+    {
+      "type": "text",
+      "id": "title_override",
+      "label": "Rubrik (H1)",
+      "info": "Lämna tomt för produktens namn."
+    },
+    { "type": "text", "id": "subtitle", "label": "Underrubrik" },
+    {
+      "type": "checkbox",
+      "id": "show_price",
+      "label": "Visa pris",
+      "info": "Visar vald variants pris. Stäng av när en app (t.ex. Kaching) visar priserna.",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "price_note",
+      "label": "Rad bredvid priset",
+      "info": "Till exempel Inklusive moms."
+    },
+    {
+      "type": "text",
+      "id": "atc_label",
+      "label": "Text på köpknappen",
+      "default": "Lägg i varukorgen"
+    },
+    { "type": "header", "content": "Utseende" },
+    {
+      "type": "select",
+      "id": "tone",
+      "label": "Bakgrund",
+      "options": [
+        { "value": "cream", "label": "Kräm" },
+        { "value": "sand", "label": "Sand" },
+        { "value": "blush", "label": "Rosa" },
+        { "value": "white", "label": "Vit" },
+        { "value": "wine", "label": "Mörk vinröd" }
+      ],
+      "default": "cream"
+    },
+    {
+      "type": "select",
+      "id": "pad",
+      "label": "Luft ovanför och under",
+      "info": "På mobil börjar galleriet alltid nära sidhuvudet.",
+      "options": [
+        { "value": "s", "label": "Liten" },
+        { "value": "m", "label": "Mellan" },
+        { "value": "l", "label": "Stor" }
+      ],
+      "default": "s"
+    },
+    { "type": "header", "content": "Paketapp (Kaching)" },
+    {
+      "type": "checkbox",
+      "id": "app_style",
+      "label": "Anpassa appens färger och former till Svea Premium",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "app_hide_compare",
+      "label": "Dölj appens överstrukna pris och spar-etikett",
+      "info": "Rekommenderas: överstrukna jämförpriser kräver att priset faktiskt tagits ut de senaste 30 dagarna. Texterna i paketen ändras i Kaching-appen.",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Ankar-id för köprutan",
+      "info": "Knappar längre ner på sidan kan länka hit med #kop.",
+      "default": "kop"
+    }
+  ],
+  "blocks": [
+    { "type": "@app" },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Beskriv kort vad som gör produkten värd att prova.</p>" }
+      ]
+    },
+    {
+      "type": "benefits",
+      "name": "Fördelar",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "lines",
+          "label": "Fördelar",
+          "info": "En fördel per rad. Visas som lista med bock.",
+          "default": "Får huden att se fylligare och mer utvilad ut\nUnder ögonen, längs kindbenen och kring munnen\nMorgon och kväll, under eller över sminket"
+        }
+      ]
+    },
+    {
+      "type": "facts",
+      "name": "Fakta",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "lines",
+          "label": "Fakta",
+          "info": "En per rad i formatet värde|etikett, t.ex. 10 g|stift för ansiktet.",
+          "default": "10 g|stift för ansiktet\nca 1 månad|räcker ett stift, morgon och kväll"
+        }
+      ]
+    },
+    {
+      "type": "native_picker",
+      "name": "Antalsväljare",
+      "limit": 1,
+      "settings": [
+        { "type": "paragraph", "content": "Visar produktens tillgängliga varianter som val. Använd inte samtidigt som en paketapp." },
+        { "type": "text", "id": "heading", "label": "Rubrik", "default": "Välj antal" },
+        {
+          "type": "textarea",
+          "id": "names",
+          "label": "Namn och undertexter",
+          "info": "En rad per variant: varianttitel|visningsnamn|underrad|etikett. Till exempel 2 Pack|2 stift|Ett hemma, ett i väskan|Vårt förslag"
+        },
+        { "type": "checkbox", "id": "show_per_unit", "label": "Visa pris per styck", "default": true },
+        { "type": "text", "id": "unit_label", "label": "Enhet", "default": "stift" },
+        {
+          "type": "textarea",
+          "id": "unit_counts",
+          "label": "Antal per variant",
+          "info": "En rad per variant: varianttitel|antal, t.ex. 2 Pack|2. Saknas raden används första talet i varianttiteln."
+        }
+      ]
+    },
+    {
+      "type": "buy_buttons",
+      "name": "Köpknapp",
+      "limit": 1,
+      "settings": [
+        { "type": "text", "id": "guarantee_line", "label": "Rad om öppet köp", "default": "60 dagars öppet köp, även på påbörjat stift" },
+        { "type": "text", "id": "shipping_line", "label": "Rad om leverans", "default": "Skickas från svenskt lager med PostNord, 1–3 arbetsdagar" },
+        { "type": "checkbox", "id": "show_payment_icons", "label": "Visa betalikoner", "default": true }
+      ]
+    },
+    {
+      "type": "notice",
+      "name": "Viktig information",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p><strong>Innehåller retinol (vitamin A).</strong> Använd solskydd på dagen. Rekommenderas inte vid graviditet eller amning.</p><p>Innehåller vitamin A. Tänk på ditt dagliga intag innan användning.</p><p>Ny på retinol? Börja med kvällar första veckan. Innehåller doftande blomoljor (pelargon, ylang ylang, bergamott, ros).</p>"
+        },
+        {
+          "type": "select",
+          "id": "style",
+          "label": "Stil",
+          "options": [
+            { "value": "boxed", "label": "Inramad" },
+            { "value": "subtle", "label": "Diskret" }
+          ],
+          "default": "boxed"
+        }
+      ]
+    },
+    {
+      "type": "details",
+      "name": "Utfällbar rad",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Rubrik", "default": "Så använder du den" },
+        { "type": "richtext", "id": "content", "label": "Innehåll", "default": "<p>Stryk på ren hud morgon och kväll och klappa in med fingertopparna.</p>" },
+        { "type": "checkbox", "id": "open", "label": "Öppen från start", "default": false }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Svea Premium – Produkt (köpruta)",
+      "blocks": [
+        { "type": "benefits" },
+        { "type": "facts" },
+        { "type": "buy_buttons" },
+        { "type": "notice" },
+        { "type": "details" }
+      ]
+    }
+  ]
+}
+{% endschema %}

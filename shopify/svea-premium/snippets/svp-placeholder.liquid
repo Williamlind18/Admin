@@ -1,0 +1,31 @@
+{%- comment -%}
+  Svea Premium – tonal image placeholder (sand → blush panel, optional large serif-italic word).
+  Decorative only (aria-hidden). Never shows "missing image" text.
+
+  Params:
+  - word:  string, optional (e.g. "Spänst."). Blank → a small spaced "Svea Skin" mark.
+  - ratio: "4:5" (default) | "1:1" | "3:4" | "16:9" | "9:16" | "3:2" | "2:3" | any "W:H"
+  - class: extra classes on the panel (e.g. "svp-hero__media")
+
+  Usage: {% render 'svp-placeholder', word: section.settings.placeholder_word, ratio: '4:5' %}
+{%- endcomment -%}
+{%- liquid
+  assign _ratio = ratio | default: '4:5' | strip
+  assign _parts = _ratio | split: ':'
+  assign _w = _parts[0] | plus: 0
+  assign _h = _parts[1] | plus: 0
+  if _w <= 0 or _h <= 0
+    assign _w = 4
+    assign _h = 5
+  endif
+  assign _pad = _h | times: 100.0 | divided_by: _w | round: 3
+-%}
+<div class="svp-ph svp-ar{% if class != blank %} {{ class }}{% endif %}" style="--svp-ar: {{ _w }} / {{ _h }}; --svp-ar-pad: {{ _pad }}%;" aria-hidden="true">
+  <div class="svp-ph__in">
+    {%- if word != blank -%}
+      <span class="svp-ph__word">{{ word | escape }}</span>
+    {%- else -%}
+      <span class="svp-ph__mark">Svea Skin</span>
+    {%- endif -%}
+  </div>
+</div>

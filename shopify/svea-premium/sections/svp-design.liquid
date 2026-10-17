@@ -1,0 +1,173 @@
+{%- comment -%}
+  Svea Premium – Design (lägg först)
+  Loads fonts (Shopify font library via font_picker), colour tokens and assets/svp-base.css for every svp- section.
+  Must be the FIRST section in every template that uses svp- sections. Renders nothing visible.
+  Order matters: the stylesheet link comes first, the :root token block after it, so editor colours win over
+  the fallbacks in svp-base.css. font.family is already quoted by Shopify when it has spaces
+  ("Bricolage Grotesque"), so never wrap it in extra quotes.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign f_serif = s.font_serif
+  assign f_sans = s.font_sans
+  assign f_serif_i = f_serif | font_modify: 'style', 'italic'
+  assign f_sans_m = f_sans | font_modify: 'weight', '500'
+-%}
+<!-- svp-design: serif={{ f_serif.family }} {{ f_serif.weight }} italic={% if f_serif_i %}{{ f_serif_i.style }}{% else %}none{% endif %} sans={{ f_sans.family }} {{ f_sans.weight }} sans500={% if f_sans_m %}{{ f_sans_m.weight }}{% else %}none{% endif %} -->
+{{ 'svp-base.css' | asset_url | stylesheet_tag }}
+{%- unless f_serif.system? -%}<link rel="preload" as="font" href="{{ f_serif | font_url }}" type="font/woff2" crossorigin>{%- endunless -%}
+{%- unless f_sans.system? -%}<link rel="preload" as="font" href="{{ f_sans | font_url }}" type="font/woff2" crossorigin>{%- endunless -%}
+<style>
+  {{ f_serif | font_face: font_display: 'swap' }}
+  {%- if f_serif_i %}{{ f_serif_i | font_face: font_display: 'swap' }}{% endif %}
+  {{ f_sans | font_face: font_display: 'swap' }}
+  {%- if f_sans_m %}{{ f_sans_m | font_face: font_display: 'swap' }}{% endif %}
+  :root {
+    --svp-font-serif: {{ f_serif.family }}, {{ f_serif.fallback_families }};
+    --svp-font-sans: {{ f_sans.family }}, {{ f_sans.fallback_families }};
+    --svp-ink: {{ s.c_ink }};
+    --svp-ink-soft: {{ s.c_ink_soft }};
+    --svp-cream: {{ s.c_cream }};
+    --svp-sand: {{ s.c_sand }};
+    --svp-blush: {{ s.c_blush }};
+    --svp-line: {{ s.c_line }};
+    --svp-wine: {{ s.c_wine }};
+    --svp-wine-deep: {{ s.c_wine_deep }};
+    --svp-coral: {{ s.c_coral }};
+  }
+</style>
+<script>
+  (function () {
+    if (window.__svpInit) return;
+    window.__svpInit = true;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function pauseVideos() {
+      if (!reduce) return;
+      document.querySelectorAll('.svp video[autoplay]').forEach(function (v) {
+        v.removeAttribute('autoplay');
+        try { v.pause(); } catch (e) {}
+      });
+    }
+    var io = null;
+    if (!reduce && 'IntersectionObserver' in window && !(window.Shopify && window.Shopify.designMode)) {
+      io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          var el = e.target;
+          if (e.isIntersecting) {
+            if (el.classList.contains('svp-pre')) el.classList.add('svp-in');
+            io.unobserve(el);
+          } else if (!el.classList.contains('svp-pre')) {
+            el.classList.add('svp-pre');
+          }
+        });
+      }, { rootMargin: '0px 0px -6% 0px', threshold: 0.01 });
+    }
+    function scan(root) {
+      pauseVideos();
+      if (!io) return;
+      (root || document).querySelectorAll('.svp-reveal:not(.svp-pre):not(.svp-in)').forEach(function (el) { io.observe(el); });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function () { scan(); });
+    } else {
+      scan();
+    }
+    document.addEventListener('shopify:section:load', function (e) { scan(e.target); });
+    window.addEventListener('beforeprint', function () {
+      document.querySelectorAll('.svp-reveal').forEach(function (el) { el.classList.add('svp-in'); });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Svea Premium – Design",
+  "class": "svp-design-root",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Laddar typsnitt, färger och gemensam stil för alla Svea Premium-sektioner. Lägg den först i mallen. Den syns inte på sidan."
+    },
+    {
+      "type": "header",
+      "content": "Typsnitt"
+    },
+    {
+      "type": "font_picker",
+      "id": "font_serif",
+      "label": "Rubriker (serif)",
+      "info": "Kursiv betoning i rubriker hämtas från samma familj.",
+      "default": "newsreader_n4"
+    },
+    {
+      "type": "font_picker",
+      "id": "font_sans",
+      "label": "Brödtext och knappar",
+      "default": "bricolage_grotesque_n4"
+    },
+    {
+      "type": "header",
+      "content": "Färger"
+    },
+    {
+      "type": "color",
+      "id": "c_ink",
+      "label": "Text",
+      "default": "#2B2124"
+    },
+    {
+      "type": "color",
+      "id": "c_ink_soft",
+      "label": "Dämpad text",
+      "default": "#5F5457"
+    },
+    {
+      "type": "color",
+      "id": "c_cream",
+      "label": "Bakgrund kräm (standard)",
+      "default": "#FAF7F2"
+    },
+    {
+      "type": "color",
+      "id": "c_sand",
+      "label": "Bakgrund sand",
+      "default": "#F2EBE4"
+    },
+    {
+      "type": "color",
+      "id": "c_blush",
+      "label": "Bakgrund rosa",
+      "default": "#F4E7E4"
+    },
+    {
+      "type": "color",
+      "id": "c_line",
+      "label": "Hårlinjer",
+      "default": "#E3D9D1"
+    },
+    {
+      "type": "color",
+      "id": "c_wine",
+      "label": "Vinröd (knappar, etiketter, länkar)",
+      "default": "#740424"
+    },
+    {
+      "type": "color",
+      "id": "c_wine_deep",
+      "label": "Mörk vinröd (mörka sektioner)",
+      "default": "#4A0D1F"
+    },
+    {
+      "type": "color",
+      "id": "c_coral",
+      "label": "Korall (bara detaljer, aldrig text)",
+      "default": "#EF4A65"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Svea Premium – Design (lägg först)"
+    }
+  ]
+}
+{% endschema %}

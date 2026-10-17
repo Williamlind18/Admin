@@ -1,0 +1,158 @@
+{%- comment -%}
+  Svea Premium – Tidslinje. A calm vertical timeline: a hairline rail with dots, "when" as an eyebrow, serif title,
+  short text. Desktop: heading left (sticky), timeline right. Mobile: stacked. The last dot is filled.
+  Extra settings beyond CONTRACT.md: none.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign tone = s.tone | default: 'cream'
+  assign pad = s.pad | default: 'm'
+  assign anchor_id = s.anchor | remove: '#' | handleize
+
+  assign count = 0
+  for block in section.blocks
+    if block.settings.when != blank or block.settings.title != blank or block.settings.text != blank
+      assign count = count | plus: 1
+    endif
+  endfor
+
+  assign has_head = false
+  if s.eyebrow != blank or s.heading != blank or s.intro != blank
+    assign has_head = true
+  endif
+-%}
+<div id="svp-{{ section.id }}" class="svp svp-timeline{% unless has_head %} svp-timeline--nohead{% endunless %} svp-tone--{{ tone }} svp-pad--{{ pad }}">
+  {%- if anchor_id != blank -%}<span class="svp-anchor" id="{{ anchor_id }}"></span>{%- endif -%}
+  <div class="svp-container">
+    <div class="svp-timeline__wrap">
+      {%- if has_head -%}
+        <div class="svp-timeline__head">
+          <div class="svp-timeline__head-in svp-reveal">
+            {%- if s.eyebrow != blank -%}<p class="svp-eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
+            {%- if s.heading != blank -%}<h2 class="svp-h2 svp-timeline__h">{{ s.heading }}</h2>{%- endif -%}
+            {%- if s.intro != blank -%}<div class="svp-rte svp-timeline__intro">{{ s.intro }}</div>{%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+      {%- if count > 0 or s.footnote != blank -%}
+        <div class="svp-timeline__body">
+          {%- if count > 0 -%}
+            <ol class="svp-timeline__list" role="list">
+              {%- for block in section.blocks -%}
+                {%- assign b = block.settings -%}
+                {%- if b.when != blank or b.title != blank or b.text != blank -%}
+                  <li class="svp-timeline__item svp-reveal" {{ block.shopify_attributes }}>
+                    <span class="svp-timeline__dot" aria-hidden="true"></span>
+                    {%- if b.when != blank -%}<p class="svp-eyebrow svp-timeline__when">{{ b.when | escape }}</p>{%- endif -%}
+                    {%- if b.title != blank -%}<h3 class="svp-h3 svp-timeline__name">{{ b.title | escape }}</h3>{%- endif -%}
+                    {%- if b.text != blank -%}<div class="svp-rte svp-timeline__text">{{ b.text }}</div>{%- endif -%}
+                  </li>
+                {%- endif -%}
+              {%- endfor -%}
+            </ol>
+          {%- endif -%}
+          {%- if s.footnote != blank -%}
+            <div class="svp-rte svp-timeline__foot svp-reveal">{{ s.footnote }}</div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .svp-timeline { --svp-tl-x: 5px; --svp-tl-pad: 40px; --svp-tl-dot: 11px; --svp-tl-line: var(--svp-rule); }
+  @supports (color: color-mix(in srgb, red 50%, transparent)) {
+    .svp-timeline { --svp-tl-line: color-mix(in srgb, var(--svp-accent) 32%, transparent); }
+  }
+  .svp-timeline .svp-timeline__head { margin-bottom: 40px; }
+  .svp-timeline .svp-timeline__h { margin: 0; max-width: 760px; }
+  .svp-timeline .svp-timeline__intro { margin-top: 20px; max-width: 560px; }
+
+  .svp-timeline .svp-timeline__list { list-style: none; margin: 0; padding: 0; }
+  .svp-timeline .svp-timeline__item { position: relative; margin: 0; padding: 0 0 40px var(--svp-tl-pad); }
+  .svp-timeline .svp-timeline__item:last-child { padding-bottom: 0; }
+  /* rail: from this dot's centre down to the next dot's centre */
+  .svp-timeline .svp-timeline__item::before { content: ""; position: absolute; left: var(--svp-tl-x); top: 9px; bottom: -9px; width: 1px; background: var(--svp-tl-line); }
+  .svp-timeline .svp-timeline__item:last-child::before { display: none; }
+  .svp-timeline .svp-timeline__dot { position: absolute; z-index: 1; left: calc(var(--svp-tl-x) - (var(--svp-tl-dot) - 1px) / 2); top: calc(9px - var(--svp-tl-dot) / 2); width: var(--svp-tl-dot); height: var(--svp-tl-dot); border-radius: 50%; border: 1px solid var(--svp-accent); background: var(--svp-bg); }
+  .svp-timeline .svp-timeline__item:last-child .svp-timeline__dot { background: var(--svp-em); border-color: var(--svp-em); }
+  .svp.svp-timeline .svp-timeline__when { margin: 0 0 8px; }
+  .svp-timeline .svp-timeline__name { margin: 0; text-wrap: balance; }
+  .svp-timeline .svp-timeline__name + .svp-timeline__text { margin-top: 8px; }
+  .svp-timeline .svp-timeline__when + .svp-timeline__text { margin-top: 0; }
+  .svp-timeline .svp-timeline__text { max-width: 560px; }
+
+  .svp-timeline .svp-timeline__foot { margin: 40px 0 0 var(--svp-tl-pad); padding-top: 24px; border-top: 1px solid var(--svp-rule); max-width: 560px; font-size: 16px; line-height: 1.6; color: var(--svp-fg-soft); }
+
+  @media (min-width: 990px) {
+    .svp-timeline { --svp-tl-x: 6px; --svp-tl-pad: 56px; --svp-tl-dot: 13px; }
+    .svp-timeline .svp-timeline__wrap { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: clamp(48px, 6vw, 96px); align-items: start; }
+    .svp-timeline--nohead .svp-timeline__wrap { grid-template-columns: minmax(0, 1fr); }
+    .svp-timeline--nohead .svp-timeline__body { max-width: 760px; }
+    .svp-timeline .svp-timeline__head { margin: 0; height: 100%; }
+    .svp-timeline .svp-timeline__head-in { position: sticky; top: 120px; }
+    .svp-timeline .svp-timeline__body { padding-top: 12px; }
+    .svp-timeline .svp-timeline__item { padding-bottom: 56px; }
+    .svp-timeline .svp-timeline__item:last-child { padding-bottom: 0; }
+    .svp-timeline .svp-timeline__foot { margin-top: 56px; }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Svea Premium – Tidslinje",
+  "class": "svp-section",
+  "max_blocks": 8,
+  "settings": [
+    { "type": "header", "content": "Innehåll" },
+    { "type": "text", "id": "eyebrow", "label": "Etikett ovanför rubriken", "default": "Vad du kan vänta dig" },
+    { "type": "inline_richtext", "id": "heading", "label": "Rubrik", "info": "Gör ett eller två ord kursiva för betoning.", "default": "Det mesta händer <em>i lugn takt.</em>" },
+    { "type": "richtext", "id": "intro", "label": "Ingress" },
+    { "type": "richtext", "id": "footnote", "label": "Fotnot", "info": "Liten text under tidslinjen.", "default": "<p>Hur huden svarar varierar från person till person.</p>" },
+    { "type": "header", "content": "Utseende" },
+    {
+      "type": "select", "id": "tone", "label": "Bakgrund",
+      "options": [
+        { "value": "cream", "label": "Kräm" },
+        { "value": "sand", "label": "Sand" },
+        { "value": "blush", "label": "Rosa" },
+        { "value": "white", "label": "Vit" },
+        { "value": "wine", "label": "Mörk vinröd" }
+      ],
+      "default": "cream"
+    },
+    {
+      "type": "select", "id": "pad", "label": "Luft ovanför och under",
+      "options": [
+        { "value": "s", "label": "Liten" },
+        { "value": "m", "label": "Mellan" },
+        { "value": "l", "label": "Stor" }
+      ],
+      "default": "m"
+    },
+    { "type": "text", "id": "anchor", "label": "Ankar-id för sektionen", "info": "Till exempel forvantningar. Då kan knappar länka hit med #forvantningar." }
+  ],
+  "blocks": [
+    {
+      "type": "moment",
+      "name": "Tidpunkt",
+      "settings": [
+        { "type": "text", "id": "when", "label": "När", "info": "Visas som liten etikett, till exempel Direkt eller Efter några veckor.", "default": "Direkt" },
+        { "type": "text", "id": "title", "label": "Rubrik" },
+        { "type": "richtext", "id": "text", "label": "Text", "info": "Skriv hur huden ser ut eller känns. Inga procent eller löften om exakta resultat." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Svea Premium – Tidslinje",
+      "blocks": [
+        { "type": "moment", "settings": { "when": "Direkt", "title": "Mjukare yta", "text": "<p>Huden känns mjukare och får en fuktig lyster.</p>" } },
+        { "type": "moment", "settings": { "when": "Efter några veckor", "title": "Mer utvilad", "text": "<p>Huden kan se jämnare och mer utvilad ut.</p>" } },
+        { "type": "moment", "settings": { "when": "Efter två månader", "title": "Jämför själv", "text": "<p>Ta en bild i samma ljus som dag ett och jämför.</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

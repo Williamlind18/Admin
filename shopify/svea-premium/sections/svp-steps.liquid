@@ -1,0 +1,237 @@
+{%- comment -%}
+  Svea Premium – Steg. Numbered steps with big serif numerals (01, 02 …), optional images and a tip box.
+  layout "row": columns side by side from 750px (2) / 990px (3 or 4); layout "list": heading left, steps right as rows.
+  Mobile (both layouts): numeral left, text right, hairline between steps. A step without an image shows no image.
+  Exception: row layout from 750px when OTHER steps have images; then it gets a quiet tonal panel so the row stays
+  aligned (no empty gap). Extra settings beyond CONTRACT.md: tip_label, image_ratio.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign tone = s.tone | default: 'cream'
+  assign pad = s.pad | default: 'm'
+  assign layout = s.layout | default: 'row'
+  assign anchor_id = s.anchor | remove: '#' | handleize
+  assign img_ratio = s.image_ratio | default: '4:5'
+
+  assign count = 0
+  assign has_img = false
+  for block in section.blocks
+    if block.settings.title != blank or block.settings.text != blank
+      assign count = count | plus: 1
+      if block.settings.image != blank
+        assign has_img = true
+      endif
+    endif
+  endfor
+  assign cols = count
+  if cols > 4
+    assign cols = 3
+  endif
+  if cols < 2
+    assign cols = 2
+  endif
+
+  assign has_head = false
+  if s.eyebrow != blank or s.heading != blank or s.intro != blank
+    assign has_head = true
+  endif
+  if layout == 'list'
+    assign img_sizes = '(min-width: 990px) 220px, 100vw'
+  else
+    assign img_sizes = '(min-width: 990px) 30vw, (min-width: 750px) 50vw, 100vw'
+  endif
+-%}
+<div id="svp-{{ section.id }}" class="svp svp-steps svp-steps--{{ layout }} svp-steps--c{{ cols }}{% if has_img %} svp-steps--img{% endif %}{% unless has_head %} svp-steps--nohead{% endunless %} svp-tone--{{ tone }} svp-pad--{{ pad }}">
+  {%- if anchor_id != blank -%}<span class="svp-anchor" id="{{ anchor_id }}"></span>{%- endif -%}
+  <div class="svp-container">
+    <div class="svp-steps__wrap">
+      {%- if has_head -%}
+        <div class="svp-steps__head">
+          <div class="svp-steps__head-in svp-reveal">
+            {%- if s.eyebrow != blank -%}<p class="svp-eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
+            {%- if s.heading != blank -%}<h2 class="svp-h2 svp-steps__h">{{ s.heading }}</h2>{%- endif -%}
+            {%- if s.intro != blank -%}<div class="svp-rte svp-steps__intro">{{ s.intro }}</div>{%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+      <div class="svp-steps__body">
+        {%- if count > 0 -%}
+          <ol class="svp-steps__list" role="list">
+            {%- assign n = 0 -%}
+            {%- for block in section.blocks -%}
+              {%- assign b = block.settings -%}
+              {%- if b.title != blank or b.text != blank -%}
+                {%- assign n = n | plus: 1 -%}
+                {%- assign delay = forloop.index0 | modulo: 4 | times: 0.08 -%}
+                <li class="svp-steps__item{% if b.image != blank %} svp-steps__item--img{% endif %} svp-reveal" style="--svp-delay: {{ delay }}s;" {{ block.shopify_attributes }}>
+                  {%- if b.image != blank -%}
+                    <div class="svp-steps__media">
+                      {%- render 'svp-image', image: b.image, ratio: img_ratio, sizes: img_sizes, class: 'svp-steps__img' -%}
+                    </div>
+                  {%- elsif has_img -%}
+                    <div class="svp-steps__media svp-steps__media--ph" aria-hidden="true">
+                      {%- render 'svp-placeholder', word: '', ratio: img_ratio -%}
+                    </div>
+                  {%- endif -%}
+                  <span class="svp-steps__n" aria-hidden="true">{% if n < 10 %}0{% endif %}{{ n }}</span>
+                  <div class="svp-steps__txt">
+                    {%- if b.title != blank -%}<h3 class="svp-h3 svp-steps__name">{{ b.title | escape }}</h3>{%- endif -%}
+                    {%- if b.text != blank -%}<div class="svp-rte svp-steps__text">{{ b.text }}</div>{%- endif -%}
+                  </div>
+                </li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ol>
+        {%- endif -%}
+        {%- if s.tip != blank -%}
+          <div class="svp-steps__tip svp-reveal" role="note">
+            {%- if s.tip_label != blank -%}<p class="svp-steps__tiplabel">{{ s.tip_label | escape }}</p>{%- endif -%}
+            <div class="svp-rte svp-steps__tiptext">{{ s.tip }}</div>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  /* Shared + mobile: numeral column left, text right, hairline between steps */
+  .svp-steps .svp-steps__head { margin-bottom: 36px; }
+  .svp-steps .svp-steps__h { margin: 0; max-width: 820px; }
+  .svp-steps .svp-steps__intro { margin-top: 20px; max-width: 600px; }
+  .svp-steps .svp-steps__list { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--svp-rule); }
+  .svp-steps .svp-steps__item { display: grid; grid-template-columns: 64px minmax(0, 1fr); column-gap: 16px; align-items: start; margin: 0; padding: 28px 0; border-top: 1px solid var(--svp-rule); }
+  .svp-steps .svp-steps__media { grid-column: 1 / -1; margin: 0 0 24px; }
+  .svp-steps .svp-steps__media--ph, .svp-steps--list .svp-steps__media--ph { display: none; }
+  @media (min-width: 750px) { .svp-steps--row .svp-steps__media--ph { display: block; } }
+  .svp:not(#svp_) .svp-steps__n { display: block; font-family: var(--svp-font-serif) !important; font-size: 48px; font-weight: 400; line-height: .9; letter-spacing: -0.02em; font-variant-numeric: lining-nums; color: var(--svp-em); }
+  .svp-steps .svp-steps__txt { min-width: 0; padding-top: 2px; }
+  .svp-steps .svp-steps__name { margin: 0; text-wrap: balance; }
+  .svp-steps .svp-steps__name + .svp-steps__text { margin-top: 8px; }
+
+  .svp-steps .svp-steps__tip { margin-top: 32px; padding: 24px 22px; background: var(--svp-panel); max-width: 820px; }
+  .svp-steps .svp-steps__tiplabel { margin: 0 0 8px; font-size: 13px; font-weight: 500; line-height: 1.35; letter-spacing: .14em; text-transform: uppercase; color: var(--svp-accent); }
+
+  /* Row layout from 750px: columns with the numeral on top and a hairline under it */
+  @media (min-width: 750px) {
+    .svp-steps--row .svp-steps__head { margin-bottom: 56px; }
+    .svp-steps--row .svp-steps__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; row-gap: 56px; border-bottom: 0; }
+    .svp-steps--row .svp-steps__item { display: flex; flex-direction: column; align-items: stretch; padding: 0; border-top: 0; }
+    .svp-steps--row .svp-steps__media { margin: 0 0 28px; }
+    .svp.svp-steps--row:not(#svp_) .svp-steps__n { font-size: 72px; padding-bottom: 22px; margin-bottom: 22px; border-bottom: 1px solid var(--svp-rule); }
+    .svp-steps--row .svp-steps__txt { padding-top: 0; }
+    .svp-steps--row .svp-steps__name + .svp-steps__text { margin-top: 10px; }
+    .svp-steps--row .svp-steps__tip { margin-top: 56px; display: grid; grid-template-columns: 180px minmax(0, 1fr); column-gap: 32px; align-items: baseline; padding: 28px 32px; }
+    .svp-steps--row .svp-steps__tiplabel { margin: 0; }
+    /* With images: keep numerals aligned across the row even when a step has no image */
+    .svp-steps--row.svp-steps--img .svp-steps__list { grid-auto-rows: auto; }
+    @supports (grid-template-rows: subgrid) {
+      .svp-steps--row.svp-steps--img .svp-steps__list { row-gap: 0; }
+      .svp-steps--row.svp-steps--img .svp-steps__item { display: grid; grid-row: span 3; grid-template-rows: subgrid; grid-template-columns: minmax(0, 1fr); align-items: stretch; row-gap: 0; padding-bottom: 56px; }
+      .svp-steps--row.svp-steps--img .svp-steps__media { grid-row: 1; grid-column: 1; }
+      .svp-steps--row.svp-steps--img .svp-steps__n { grid-row: 2; grid-column: 1; align-self: end; }
+      .svp-steps--row.svp-steps--img .svp-steps__txt { grid-row: 3; grid-column: 1; }
+      .svp-steps--row.svp-steps--img .svp-steps__tip { margin-top: 8px; }
+    }
+  }
+  @media (min-width: 990px) {
+    .svp-steps--row.svp-steps--c3 .svp-steps__list { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: clamp(32px, 4vw, 64px); }
+    .svp-steps--row.svp-steps--c4 .svp-steps__list { grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: clamp(28px, 3vw, 48px); }
+    .svp-steps--row .svp-steps__head { margin-bottom: 72px; }
+    .svp.svp-steps--row:not(#svp_) .svp-steps__n { font-size: 88px; }
+
+    /* List layout: heading left (sticky), steps right as rows */
+    .svp-steps--list .svp-steps__wrap { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: clamp(48px, 6vw, 96px); align-items: start; }
+    .svp-steps--list.svp-steps--nohead .svp-steps__wrap { grid-template-columns: minmax(0, 1fr); }
+    .svp-steps--list .svp-steps__head { margin: 0; height: 100%; }
+    .svp-steps--list .svp-steps__head-in { position: sticky; top: 120px; }
+    .svp-steps--list .svp-steps__item { grid-template-columns: 104px minmax(0, 1fr); column-gap: 24px; padding: 36px 0; }
+    .svp-steps--list .svp-steps__item--img { grid-template-columns: 104px minmax(0, 1fr) 200px; }
+    .svp-steps--list .svp-steps__item--img .svp-steps__media { grid-column: 3; grid-row: 1; margin: 0; }
+    .svp-steps--list .svp-steps__item--img .svp-steps__n { grid-column: 1; grid-row: 1; }
+    .svp-steps--list .svp-steps__item--img .svp-steps__txt { grid-column: 2; grid-row: 1; }
+    .svp.svp-steps--list:not(#svp_) .svp-steps__n { font-size: 72px; }
+    .svp-steps--list .svp-steps__txt { padding-top: 6px; }
+    .svp-steps--list .svp-steps__tip { margin-top: 40px; padding: 28px 32px; }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Svea Premium – Steg",
+  "class": "svp-section",
+  "max_blocks": 8,
+  "settings": [
+    { "type": "header", "content": "Innehåll" },
+    { "type": "text", "id": "eyebrow", "label": "Etikett ovanför rubriken", "default": "Ritualen" },
+    { "type": "inline_richtext", "id": "heading", "label": "Rubrik", "info": "Gör ett eller två ord kursiva för betoning.", "default": "Ett steg. <em>Morgon och kväll.</em>" },
+    { "type": "richtext", "id": "intro", "label": "Ingress" },
+    {
+      "type": "select", "id": "layout", "label": "Layout",
+      "options": [
+        { "value": "row", "label": "Steg bredvid varandra" },
+        { "value": "list", "label": "Lista (rubrik till vänster på dator)" }
+      ],
+      "default": "row"
+    },
+    { "type": "header", "content": "Tips" },
+    { "type": "text", "id": "tip_label", "label": "Etikett för tipsrutan", "default": "Bra att veta" },
+    { "type": "richtext", "id": "tip", "label": "Tips", "info": "Visas i en ruta under stegen. Döljs när fältet är tomt.", "default": "<p><strong>Ny på retinol?</strong> Börja med kvällar första veckan, och använd solskydd på dagen.</p>" },
+    { "type": "header", "content": "Bilder" },
+    {
+      "type": "select", "id": "image_ratio", "label": "Bildformat för stegbilder",
+      "info": "Gäller steg som har en bild. Har bara vissa steg bild får de andra en diskret tonad yta på dator, så att stegen står i linje.",
+      "options": [
+        { "value": "4:5", "label": "Stående 4:5" },
+        { "value": "1:1", "label": "Kvadrat 1:1" },
+        { "value": "3:4", "label": "Stående 3:4" },
+        { "value": "16:9", "label": "Liggande 16:9" }
+      ],
+      "default": "4:5"
+    },
+    { "type": "header", "content": "Utseende" },
+    {
+      "type": "select", "id": "tone", "label": "Bakgrund",
+      "options": [
+        { "value": "cream", "label": "Kräm" },
+        { "value": "sand", "label": "Sand" },
+        { "value": "blush", "label": "Rosa" },
+        { "value": "white", "label": "Vit" },
+        { "value": "wine", "label": "Mörk vinröd" }
+      ],
+      "default": "cream"
+    },
+    {
+      "type": "select", "id": "pad", "label": "Luft ovanför och under",
+      "options": [
+        { "value": "s", "label": "Liten" },
+        { "value": "m", "label": "Mellan" },
+        { "value": "l", "label": "Stor" }
+      ],
+      "default": "m"
+    },
+    { "type": "text", "id": "anchor", "label": "Ankar-id för sektionen", "info": "Till exempel ritualen. Då kan knappar länka hit med #ritualen." }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Steg",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Rubrik", "default": "Steg" },
+        { "type": "richtext", "id": "text", "label": "Text" },
+        { "type": "image_picker", "id": "image", "label": "Bild (valfri)", "info": "Utan bild visas steget utan bildyta (på dator en diskret tonad yta om andra steg har bild)." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Svea Premium – Steg",
+      "blocks": [
+        { "type": "step", "settings": { "title": "Vrid upp lite", "text": "<p>Några millimeter räcker.</p>" } },
+        { "type": "step", "settings": { "title": "Dra uppåt", "text": "<p>På ren hud, där huden behöver det mest.</p>" } },
+        { "type": "step", "settings": { "title": "Klappa in", "text": "<p>Med fingertopparna, tills det har smält in.</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

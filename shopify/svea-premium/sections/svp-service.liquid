@@ -1,0 +1,182 @@
+{%- comment -%}
+  Svea Premium – Trygghetsrad. Calm service row: line icon, short name, one line of text, optional link.
+  En dashes and hyphens get word joiners (U+2060) so "1–3" and "559443-5934" never break across lines.
+  2 x 2 on mobile (an odd last item spans the row), one row of up to 4 from 750px, hairlines between the cells.
+  The whole cell is clickable when a link is set (stretched link on the name).
+  Extra settings beyond CONTRACT.md: anchor.
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+  assign tone = s.tone | default: 'cream'
+  assign pad = s.pad | default: 's'
+  assign anchor_id = s.anchor | remove: '#' | handleize
+
+  assign count = 0
+  for block in section.blocks
+    if block.settings.title != blank or block.settings.text != blank
+      assign count = count | plus: 1
+    endif
+  endfor
+  assign cols = count
+  if cols > 4
+    assign cols = 4
+  endif
+  assign odd = count | modulo: 2
+-%}
+<div id="svp-{{ section.id }}" class="svp svp-service svp-tone--{{ tone }} svp-pad--{{ pad }}{% if odd == 1 %} svp-service--odd{% endif %}{% if s.heading != blank %} svp-service--has-h{% endif %}">
+  {%- if anchor_id != blank -%}<span class="svp-anchor" id="{{ anchor_id }}"></span>{%- endif -%}
+  <div class="svp-container">
+    {%- if s.heading != blank -%}
+      <h2 class="svp-service__h svp-reveal">{{ s.heading | escape }}</h2>
+    {%- endif -%}
+    {%- if count > 0 -%}
+      <ul class="svp-service__list svp-reveal" role="list" style="--svp-service-cols: {{ cols }};">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.title != blank or block.settings.text != blank -%}
+            {%- assign b = block.settings -%}
+            <li class="svp-service__item{% if b.link != blank %} svp-service__item--link{% endif %}" {{ block.shopify_attributes }}>
+              {%- render 'svp-icon', name: b.icon, size: 26, class: 'svp-service__icon' -%}
+              {%- if b.title != blank -%}
+                <p class="svp-service__name">
+                  {%- if b.link != blank -%}
+                    <a class="svp-service__a" href="{{ b.link }}">{{ b.title | escape | replace: '–', '&#8288;–&#8288;' | replace: '-', '&#8288;-&#8288;' }}</a>
+                  {%- else -%}
+                    {{ b.title | escape | replace: '–', '&#8288;–&#8288;' | replace: '-', '&#8288;-&#8288;' }}
+                  {%- endif -%}
+                </p>
+              {%- endif -%}
+              {%- if b.text != blank -%}
+                <p class="svp-service__text">
+                  {%- if b.link != blank and b.title == blank -%}
+                    <a class="svp-service__a" href="{{ b.link }}">{{ b.text | escape | replace: '–', '&#8288;–&#8288;' | replace: '-', '&#8288;-&#8288;' }}</a>
+                  {%- else -%}
+                    {{ b.text | escape | replace: '–', '&#8288;–&#8288;' | replace: '-', '&#8288;-&#8288;' }}
+                  {%- endif -%}
+                </p>
+              {%- endif -%}
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</div>
+
+{% stylesheet %}
+  .svp-service .svp-service__h { margin: 0 auto 28px; max-width: 760px; text-align: center; font-size: 24px; line-height: 1.25; }
+  .svp-service .svp-service__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: hidden; }
+  .svp-service--has-h .svp-service__list { border-top: 1px solid var(--svp-rule); }
+  /* Inner hairlines: each cell draws its left and top line 1px outside itself; the list clips the outer edges */
+  .svp-service .svp-service__item { position: relative; display: flex; flex-direction: column; align-items: center; margin: -1px 0 0 -1px; padding: 26px 12px 24px; border-left: 1px solid var(--svp-rule); border-top: 1px solid var(--svp-rule); text-align: center; min-width: 0; }
+  .svp-service--odd .svp-service__item:last-child { grid-column: 1 / -1; }
+  .svp-service .svp-service__icon { color: var(--svp-accent); margin-bottom: 14px; }
+  .svp:not(#svp_) .svp-service__name { margin: 0; font-family: var(--svp-font-sans) !important; font-size: 17px; font-weight: 500 !important; line-height: 1.35; color: var(--svp-fg); text-wrap: balance; }
+  .svp-service .svp-service__text { margin: 6px 0 0; max-width: 26ch; font-size: 15px; line-height: 1.45; color: var(--svp-fg-soft); text-wrap: balance; }
+  .svp-service .svp-service__a { color: inherit; text-decoration: none; }
+  .svp-service .svp-service__a::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; }
+  .svp-service .svp-service__item--link:hover .svp-service__a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; text-decoration-color: var(--svp-coral); }
+  .svp-service .svp-service__a:focus-visible { outline: none; }
+  .svp-service .svp-service__a:focus-visible::after { outline: 2px solid var(--svp-focus); outline-offset: -4px; }
+
+  @media (min-width: 750px) {
+    .svp-service .svp-service__list { grid-template-columns: repeat(var(--svp-service-cols, 4), minmax(0, 1fr)); }
+    .svp-service--odd .svp-service__item:last-child { grid-column: auto; }
+    .svp-service .svp-service__item { padding: 32px 20px 30px; }
+  }
+  @media (min-width: 990px) {
+    .svp-service .svp-service__h { font-size: 28px; margin-bottom: 36px; }
+    .svp-service .svp-service__item { padding: 36px 28px 34px; }
+    .svp-service .svp-service__icon { margin-bottom: 16px; }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Svea Premium – Trygghet",
+  "class": "svp-section",
+  "max_blocks": 8,
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Rubrik (valfri)"
+    },
+    {
+      "type": "select",
+      "id": "tone",
+      "label": "Bakgrund",
+      "options": [
+        { "value": "cream", "label": "Kräm" },
+        { "value": "sand", "label": "Sand" },
+        { "value": "blush", "label": "Rosa" },
+        { "value": "white", "label": "Vit" },
+        { "value": "wine", "label": "Mörk vinröd" }
+      ],
+      "default": "cream"
+    },
+    {
+      "type": "select",
+      "id": "pad",
+      "label": "Luft ovanför och under",
+      "options": [
+        { "value": "s", "label": "Liten" },
+        { "value": "m", "label": "Mellan" },
+        { "value": "l", "label": "Stor" }
+      ],
+      "default": "s"
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Ankar-id för sektionen",
+      "info": "Till exempel trygghet. Då kan knappar länka hit med #trygghet."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Trygghetspunkt",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Ikon",
+          "options": [
+            { "value": "truck", "label": "Lastbil (leverans)" },
+            { "value": "return", "label": "Pil tillbaka (retur)" },
+            { "value": "chat", "label": "Pratbubbla (kundtjänst)" },
+            { "value": "lock", "label": "Lås (säker betalning)" },
+            { "value": "pin", "label": "Kartnål (plats)" },
+            { "value": "leaf", "label": "Blad" },
+            { "value": "clock", "label": "Klocka" },
+            { "value": "drop", "label": "Droppe" },
+            { "value": "check", "label": "Bock" },
+            { "value": "card", "label": "Kort (betalning)" },
+            { "value": "sun", "label": "Sol" }
+          ],
+          "default": "check"
+        },
+        { "type": "text", "id": "title", "label": "Rubrik" },
+        { "type": "text", "id": "text", "label": "Text" },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Länk (valfri)",
+          "info": "Hela rutan blir klickbar."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Svea Premium – Trygghetsrad",
+      "blocks": [
+        { "type": "item", "settings": { "icon": "return", "title": "60 dagars öppet köp", "text": "Även på påbörjad produkt" } },
+        { "type": "item", "settings": { "icon": "truck", "title": "Skickas från Sverige", "text": "PostNord, 1–3 arbetsdagar" } },
+        { "type": "item", "settings": { "icon": "card", "title": "Fri frakt över 499 kr", "text": "Från svenskt lager" } },
+        { "type": "item", "settings": { "icon": "chat", "title": "Svensk kundtjänst", "text": "Vi svarar på svenska" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

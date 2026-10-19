@@ -533,8 +533,9 @@
   .svp:not(#svp_) .svp-pdp__dot { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 44px; min-height: 0; padding: 0; margin: 0; border: 0; background: transparent; box-shadow: none; cursor: pointer; border-radius: 0; }
   .svp .svp-pdp__dot span { display: block; width: 6px; height: 6px; border-radius: 3px; background: var(--svp-fg); opacity: .25; transition: width .25s ease, opacity .25s ease; }
   .svp .svp-pdp__dot[aria-current="true"] span { width: 20px; opacity: 1; background: var(--svp-accent); }
-  .svp .svp-pdp__thumbs { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
-  .svp:not(#svp_) .svp-pdp__thumb { display: block; width: 76px; height: 95px; padding: 0; margin: 0; border: 1px solid transparent; background: var(--svp-sand); cursor: pointer; border-radius: 0; box-shadow: none; overflow: hidden; opacity: .62; transition: opacity .2s ease, border-color .2s ease; }
+  /* Up to 8 thumbnails per row: 8 columns of at most 76px that shrink evenly when the gallery column is narrower. */
+  .svp .svp-pdp__thumbs { display: grid; grid-template-columns: repeat(8, minmax(0, 76px)); gap: 10px; margin-top: 12px; }
+  .svp:not(#svp_) .svp-pdp__thumb { display: block; width: 100%; height: auto; min-width: 0; min-height: 0; aspect-ratio: 4 / 5; padding: 0; margin: 0; border: 1px solid transparent; background: var(--svp-sand); cursor: pointer; border-radius: 0; box-shadow: none; overflow: hidden; opacity: .62; transition: opacity .2s ease, border-color .2s ease; }
   .svp .svp-pdp__thumb:hover { opacity: 1; }
   .svp:not(#svp_) .svp-pdp__thumb[aria-current="true"] { opacity: 1; border-color: var(--svp-fg); }
   .svp .svp-pdp__thumb-img { width: 100%; height: 100%; object-fit: cover; display: block; }

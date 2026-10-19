@@ -5,7 +5,7 @@
    --font-weight-bold, h3–h6 → --font-weight-semibold, all !important).
    Recolour headings/buttons through the variables (--svp-heading, --svp-cta-bg ...), never with color:. */
 
-:root{--svp-cream:#FAF7F2;--svp-sand:#F2EBE4;--svp-blush:#F4E7E4;--svp-white:#FFFFFF;--svp-line:#E3D9D1;--svp-ink:#2B2124;--svp-ink-soft:#5F5457;--svp-wine:#740424;--svp-wine-deep:#4A0D1F;--svp-coral:#EF4A65;--svp-font-serif:"Newsreader",Georgia,"Times New Roman",serif;--svp-font-sans:"Bricolage Grotesque",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+:root{--svp-cream:#FAF7F2;--svp-sand:#F4ECE8;--svp-blush:#F8E5E8;--svp-white:#FFFFFF;--svp-line:#E9DCDB;--svp-ink:#2B2124;--svp-ink-soft:#5F5457;--svp-wine:#A63A5A;--svp-wine-deep:#5E2238;--svp-coral:#EF4A65;--svp-font-serif:"Newsreader",Georgia,"Times New Roman",serif;--svp-font-sans:"Bricolage Grotesque",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 
 /* 1. Root: re-point the theme's font variables (read by typography-system.css, selective-heading-fonts.css,
    global-*-fix snippets) to our fonts, and set tone defaults. */
@@ -19,8 +19,8 @@
 
 /* 2. Tones (also usable on inner panels) */
 .svp-tone--cream{--svp-bg:var(--svp-cream)}
-.svp-tone--sand{--svp-bg:var(--svp-sand);--svp-rule:#D8CBC1}
-.svp-tone--blush{--svp-bg:var(--svp-blush);--svp-rule:#D8CBC1}
+.svp-tone--sand{--svp-bg:var(--svp-sand);--svp-rule:#DDCACC}
+.svp-tone--blush{--svp-bg:var(--svp-blush);--svp-rule:#DDCACC}
 .svp-tone--white{--svp-bg:var(--svp-white);--svp-panel:var(--svp-cream)}
 .svp-tone--wine{--svp-bg:var(--svp-wine-deep);--svp-fg:var(--svp-cream);--svp-fg-soft:rgba(250,247,242,.78);--svp-heading:var(--svp-cream);--svp-em:var(--svp-blush);--svp-accent:rgba(250,247,242,.8);--svp-link:var(--svp-cream);--svp-rule:rgba(250,247,242,.2);--svp-panel:rgba(250,247,242,.06);--svp-focus:var(--svp-cream);--svp-cta-bg:var(--svp-cream);--svp-cta-fg:var(--svp-wine);--svp-cta-hover:var(--svp-white);--svp-cta2-fg:var(--svp-cream);--svp-cta2-hover-bg:var(--svp-cream);--svp-cta2-hover-fg:var(--svp-wine-deep)}
 .svp-tone--cream,.svp-tone--sand,.svp-tone--blush,.svp-tone--white,.svp-tone--wine{background-color:var(--svp-bg);color:var(--svp-fg)}
@@ -162,8 +162,8 @@
 @media (prefers-reduced-motion:reduce){.svp-reveal.svp-pre{opacity:1;transform:none;transition:none}.svp .svp-cta__arrow,.svp .svp-acc>summary::after{transition:none}}
 
 /* 14. Global theme parts on Svea Premium pages only (this file is loaded only by svp-design, and every rule is
-   additionally scoped to body:has(.svp)). Footer newsletter: Newsreader heading, calm wine button with 2px radius.
-   Cart drawer: wine accents and a wine 2px checkout button without uppercase. Prices and totals are never hidden;
+   additionally scoped to body:has(.svp)). Footer newsletter: Newsreader heading, calm rose (--svp-wine) button with 2px radius.
+   Cart drawer: rose accents and a rose 2px checkout button without uppercase. Prices and totals are never hidden;
    only the struck-through per-line compare-at prices and the per-line "Spara X kr" badge are removed. */
 html body:has(.svp) .custom-footer{--footer-link-color:var(--svp-wine);--footer-link-hover-color:var(--svp-wine-deep);--footer-menu-hover-color:var(--svp-wine)}
 html body:has(.svp) .custom-footer .newsletter-section .newsletter-title{font-family:var(--svp-font-serif)!important;font-weight:400!important;font-style:normal!important;font-size:clamp(30px,4.2vw,44px)!important;line-height:1.15!important;letter-spacing:-0.01em!important;color:var(--svp-ink)!important;text-transform:none!important;text-wrap:balance}

@@ -123,25 +123,26 @@
   /* the theme's injected p { font-weight } !important rule needs the guard prefix */
   .svp:not(#svp_) .svp-layers__label, .svp:not(#svp_) .svp-layers__note { font-weight: 500 !important; }
 
-  /* Highlight: wine bar on the left edge, wine pin before the label, note in wine text with a dot (not a button) */
+  /* Highlight: accent bar on the left edge, accent pin before the label, note in deep accent text with a dot (not a button).
+     Labels and notes use --svp-wine-deep: the lighter rose accent is below 4.5:1 on the deepest bands. */
   .svp-layers .svp-layers__band--hl::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--svp-wine); }
 
   .svp-layers .svp-layers__in { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); }
-  .svp-layers .svp-layers__label { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; font-size: 13px; line-height: 1.35; letter-spacing: .14em; text-transform: uppercase; color: var(--svp-wine); }
-  .svp-layers .svp-layers__pin { flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--svp-wine); box-shadow: 0 0 0 4px rgba(116, 4, 36, .14); }
+  .svp-layers .svp-layers__label { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; font-size: 13px; line-height: 1.35; letter-spacing: .14em; text-transform: uppercase; color: var(--svp-wine-deep); }
+  .svp-layers .svp-layers__pin { flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--svp-wine); box-shadow: 0 0 0 4px rgba(166, 58, 90, .16); }
   .svp-layers .svp-layers__name { margin: 0 0 8px; }
   .svp-layers .svp-layers__text { max-width: 560px; color: var(--svp-ink); }
   .svp-layers .svp-layers__note { display: inline-flex; align-items: flex-start; gap: 10px; justify-self: start; margin: 16px 0 0; font-size: 15px; line-height: 1.35; letter-spacing: .01em; color: var(--svp-ink); }
   .svp-layers .svp-layers__tick { flex: none; width: 18px; height: 1px; margin-top: .68em; background: currentColor; opacity: .55; }
-  .svp-layers .svp-layers__band--hl .svp-layers__note { padding: 0; background: none; color: var(--svp-wine); border-radius: 0; }
+  .svp-layers .svp-layers__band--hl .svp-layers__note { padding: 0; background: none; color: var(--svp-wine-deep); border-radius: 0; }
   .svp-layers .svp-layers__band--hl .svp-layers__tick { width: 8px; height: 8px; margin-top: .42em; border-radius: 50%; opacity: 1; background: var(--svp-wine); }
   .svp-layers .svp-layers__motif { display: none; }
   /* Browsers without color-mix (e.g. iOS < 16.2): fixed light → deep ramp */
   @supports not (color: color-mix(in srgb, red 50%, blue)) {
-    .svp-layers .svp-layers__band { --svp-band: #F6F0EC !important; }
-    .svp-layers .svp-layers__band:nth-child(2) { --svp-band: #ECDCDB !important; }
-    .svp-layers .svp-layers__band:nth-child(3) { --svp-band: #E1C7C8 !important; }
-    .svp-layers .svp-layers__band:nth-child(n+4) { --svp-band: #D8B5BA !important; }
+    .svp-layers .svp-layers__band { --svp-band: #F7F1ED !important; }
+    .svp-layers .svp-layers__band:nth-child(2) { --svp-band: #F1E0E1 !important; }
+    .svp-layers .svp-layers__band:nth-child(3) { --svp-band: #ECCFD4 !important; }
+    .svp-layers .svp-layers__band:nth-child(n+4) { --svp-band: #E6BFC9 !important; }
   }
 
   /* Footnote: the honesty note, aligned with the band text on desktop */

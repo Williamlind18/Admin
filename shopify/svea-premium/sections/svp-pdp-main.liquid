@@ -2,6 +2,8 @@
   Svea Premium – Produkt (köpruta). Main section for product templates.
   Gallery (selected positions / all product media / placeholder) + info column with blocks in block order:
   text, benefits, facts, native_picker, @app (Kaching Bundles), buy_buttons, notice, details.
+  Exception: "rating" blocks (star line) always render first, above the eyebrow and the H1, wherever they sit in the
+  block list. Disabled blocks are not in section.blocks, so a disabled rating block renders nothing.
   The buy form is Dawn compatible (<product-form> + {% form 'product' %} + hidden id/quantity + submit with
   .loading__spinner) so assets/product-form.js adds to cart and opens the theme cart drawer. The form carries
   data-svp-buy; svp-sticky-atc clicks its submit button.
@@ -138,6 +140,51 @@
       <div class="svp-pdp__info">
         {%- if anchor_id != blank -%}<span class="svp-anchor" id="{{ anchor_id }}"></span>{%- endif -%}
         <div class="svp-pdp__head">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'rating' -%}
+              {%- liquid
+                assign rb = block.settings
+                assign r_stars = rb.stars | default: '5' | plus: 0.0
+                if r_stars > 5
+                  assign r_stars = 5.0
+                endif
+                if r_stars < 0
+                  assign r_stars = 0.0
+                endif
+                assign r_full = r_stars | floor
+                assign r_frac = r_stars | minus: r_full
+                assign r_fill = r_full | times: 18 | plus: 0.0
+                assign r_part = r_frac | times: 16
+                assign r_fill = r_fill | plus: r_part
+                if r_fill > 88
+                  assign r_fill = 88
+                endif
+                assign r_anchor = rb.link_anchor | remove: '#' | strip
+                assign r_custom = false
+                if rb.star_color != blank and rb.star_color.alpha != 0
+                  assign r_custom = true
+                endif
+                assign r_tag = 'div'
+                if r_anchor != blank
+                  assign r_tag = 'a'
+                endif
+              -%}
+              <div class="svp-pdp__rating" {{ block.shopify_attributes }}>
+                <{{ r_tag }} class="svp-pdp__rate"{% if r_anchor != blank %} href="#{{ r_anchor | escape }}" data-svp-rate-link{% endif %}>
+                  <span class="svp-pdp__stars" style="--svp-fill: {{ r_fill }}px;{% if r_custom %} --svp-star: {{ rb.star_color }};{% endif %}" aria-hidden="true">
+                    <span class="svp-pdp__srow svp-pdp__srow--base">{%- for si in (1..5) -%}<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.6l2.9 5.9 6.5.95-4.7 4.58 1.11 6.47L12 17.45l-5.81 3.05 1.11-6.47L2.6 9.45l6.5-.95z"/></svg>{%- endfor -%}</span>
+                    <span class="svp-pdp__srow svp-pdp__srow--fill">{%- for si in (1..5) -%}<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.6l2.9 5.9 6.5.95-4.7 4.58 1.11 6.47L12 17.45l-5.81 3.05 1.11-6.47L2.6 9.45l6.5-.95z"/></svg>{%- endfor -%}</span>
+                  </span>
+                  {%- if rb.text != blank -%}
+                    <span class="svp-pdp__rtext">{{ rb.text | escape }}</span>
+                  {%- else -%}
+                    <span class="svp-sr">{{ r_stars | replace: '.', ',' | remove: ',0' }} av 5 stjärnor</span>
+                  {%- endif -%}
+                  {%- if rb.subtext != blank -%}<span class="svp-pdp__rsub">{{ rb.subtext | escape }}</span>{%- endif -%}
+                </{{ r_tag }}>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
           {%- if s.eyebrow != blank -%}<p class="svp-eyebrow">{{ s.eyebrow | escape }}</p>{%- endif -%}
           <h1 class="svp-pdp__h" data-svp-name>{{ ptitle | escape }}</h1>
           {%- if s.subtitle != blank -%}<p class="svp-pdp__sub">{{ s.subtitle | escape }}</p>{%- endif -%}
@@ -163,6 +210,9 @@
             endif
           -%}
           {%- case block.type -%}
+
+            {%- when 'rating' -%}
+              {%- comment -%} Rendered above the eyebrow and the H1 (see .svp-pdp__head). {%- endcomment -%}
 
             {%- when '@app' -%}
               <div class="svp-pdp__app" data-svp-app>{% render block %}</div>
@@ -425,6 +475,21 @@
       }
     });
   }
+  if (!window.__svpRateLink) {
+    window.__svpRateLink = true;
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest ? e.target.closest('[data-svp-rate-link]') : null;
+      if (!a) return;
+      var id = (a.getAttribute('href') || '').replace(/^#/, '');
+      if (!id || document.getElementById(id)) return;
+      var safe = window.CSS && CSS.escape ? CSS.escape(id) : id.replace(/["\\]/g, '');
+      var target = document.querySelector('[id*="' + safe + '"]');
+      if (!target) return;
+      e.preventDefault();
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    });
+  }
   if (!customElements.get('svp-pdp-picker')) {
     customElements.define('svp-pdp-picker', class extends HTMLElement {
       connectedCallback() {
@@ -479,6 +544,19 @@
   .svp-pdp .svp-pdp__info > * + * { margin-top: 24px; }
   .svp-pdp .svp-pdp__info > .svp-anchor + * { margin-top: 0; }
   .svp-pdp .svp-pdp__head .svp-eyebrow { margin-bottom: 12px; }
+
+  /* Rating line above the eyebrow/H1 (block "rating"): small stars + text, no third-party branding */
+  .svp .svp-pdp__rating { margin: 0 0 14px; }
+  .svp .svp-pdp__rate { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-family: var(--svp-font-sans); font-size: 15px; line-height: 1.4; letter-spacing: 0; color: var(--svp-fg); }
+  .svp:not(#svp_) a.svp-pdp__rate { text-decoration: none !important; color: var(--svp-fg); }
+  .svp a.svp-pdp__rate:hover .svp-pdp__rtext { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; text-decoration-color: var(--svp-coral); }
+  .svp .svp-pdp__stars { position: relative; display: inline-block; flex: none; line-height: 0; color: var(--svp-star, var(--svp-accent)); }
+  .svp .svp-pdp__srow { display: inline-flex; gap: 2px; white-space: nowrap; }
+  .svp .svp-pdp__srow svg { display: block; flex: none; width: 16px; height: 16px; fill: currentColor; }
+  .svp .svp-pdp__srow--base { opacity: .22; }
+  .svp .svp-pdp__srow--fill { position: absolute; top: 0; left: 0; width: var(--svp-fill, 88px); overflow: hidden; }
+  .svp:not(#svp_) .svp-pdp__rtext { font-weight: 500 !important; }
+  .svp .svp-pdp__rsub { color: var(--svp-fg-soft); }
   .svp:not(#svp_) .svp-pdp__h { font-size: clamp(38px, 4.4vw, 56px); line-height: 1.06; letter-spacing: -0.015em; margin: 0; text-wrap: balance; }
   .svp .svp-pdp__sub { margin: 14px 0 0; font-size: 19px; line-height: 1.5; color: var(--svp-fg-soft); max-width: 34em; }
   .svp .svp-pdp__price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-top: 18px; }
@@ -583,6 +661,8 @@
     .svp-pdp .svp-pdp__grid { row-gap: 20px; }
     .svp-pdp .svp-pdp__info > * + * { margin-top: 20px; }
     .svp-pdp .svp-pdp__head .svp-eyebrow { margin-bottom: 8px; }
+    .svp .svp-pdp__rating { margin-bottom: 10px; }
+    .svp .svp-pdp__rate { font-size: 14px; }
     .svp .svp-pdp__sub { margin-top: 8px; font-size: 17px; line-height: 1.5; }
     .svp .svp-pdp__price { margin-top: 12px; }
     .svp .svp-pdp__benefits { gap: 8px; }
@@ -726,6 +806,51 @@
   ],
   "blocks": [
     { "type": "@app" },
+    {
+      "type": "rating",
+      "name": "Betyg ovanför rubriken",
+      "limit": 1,
+      "settings": [
+        { "type": "paragraph", "content": "Visas alltid överst, ovanför etiketten och rubriken, oavsett var blocket ligger i listan. Göm blocket (ögat) för att dölja raden." },
+        {
+          "type": "select",
+          "id": "stars",
+          "label": "Stjärnor",
+          "options": [
+            { "value": "5", "label": "5" },
+            { "value": "4.5", "label": "4,5" },
+            { "value": "4", "label": "4" }
+          ],
+          "default": "5"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "info": "Visa bara betyg som bygger på era riktiga omdömen.",
+          "default": "Utmärkt 4,7 av 5"
+        },
+        {
+          "type": "text",
+          "id": "subtext",
+          "label": "Extra text (valfri)",
+          "info": "Visas dämpad efter texten, t.ex. Baserat på [antal] omdömen."
+        },
+        {
+          "type": "text",
+          "id": "link_anchor",
+          "label": "Hoppa till sektion vid klick (valfritt)",
+          "info": "Sektionens ankar-id, t.ex. omdomen. Det räcker med en del av sektionens id, t.ex. testimonials för era omdömen längre ner. Lämna tomt för ingen länk."
+        },
+        {
+          "type": "color",
+          "id": "star_color",
+          "label": "Stjärnornas färg",
+          "info": "Töm fältet för att följa sidans accentfärg.",
+          "default": "#A63A5A"
+        }
+      ]
+    },
     {
       "type": "text",
       "name": "Text",

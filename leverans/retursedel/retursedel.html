@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<title>Retursedel NORTVÄTT</title>
+<style>
+  :root {
+    --ink: #0f1f2e;
+    --muted: #5b6b7a;
+    --line: #d5dde4;
+    --accent: #1d4e6e;
+    --soft: #eef3f7;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1240px; height: 1754px; background: #fff; }
+  body {
+    font-family: "Inter", "DejaVu Sans", sans-serif;
+    color: var(--ink);
+    padding: 90px 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 36px;
+    border-bottom: 4px solid var(--ink);
+  }
+  .brand {
+    font-family: "Inter Display", "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 76px;
+    letter-spacing: 0.06em;
+    line-height: 1;
+  }
+  .domain { font-size: 24px; color: var(--muted); margin-top: 14px; letter-spacing: 0.02em; }
+  .doc-title { text-align: right; }
+  .doc-title h1 {
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .doc-title p { font-size: 22px; color: var(--muted); margin-top: 14px; }
+
+  .intro { font-size: 26px; line-height: 1.5; margin: 44px 0 40px; max-width: 980px; }
+
+  .label-title {
+    font-size: 20px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 14px;
+  }
+  .address {
+    border: 3px dashed var(--ink);
+    border-radius: 18px;
+    padding: 40px 48px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: center;
+  }
+  .address .lines { font-size: 36px; line-height: 1.45; font-weight: 600; }
+  .address .lines .name { font-weight: 800; }
+  .address .meta { font-size: 22px; color: var(--muted); text-align: right; line-height: 1.6; }
+  .address .meta b { color: var(--ink); font-weight: 700; }
+
+  .note {
+    margin-top: 48px;
+    background: var(--soft);
+    border-left: 8px solid var(--accent);
+    border-radius: 14px;
+    padding: 40px 48px;
+  }
+  .note h2 { font-size: 34px; font-weight: 800; margin-bottom: 10px; }
+  .note > p { font-size: 24px; color: var(--muted); margin-bottom: 30px; line-height: 1.45; }
+  .fields { display: grid; gap: 26px; }
+  .field { display: grid; grid-template-columns: 330px 1fr; align-items: end; gap: 20px; font-size: 26px; font-weight: 600; }
+  .field .num {
+    display: inline-flex; width: 40px; height: 40px; border-radius: 50%;
+    background: var(--accent); color: #fff; font-size: 21px; font-weight: 700;
+    align-items: center; justify-content: center; margin-right: 14px; vertical-align: middle;
+  }
+  .field .blank { border-bottom: 2px solid #9aabb9; height: 40px; }
+  .field.tall .blank { height: 40px; }
+  .extra-line { border-bottom: 2px solid #9aabb9; height: 52px; margin-left: 350px; }
+
+  .steps { margin-top: 48px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .step { border: 2px solid var(--line); border-radius: 14px; padding: 28px 28px 30px; }
+  .step .k { font-size: 18px; font-weight: 700; letter-spacing: 0.14em; color: var(--accent); text-transform: uppercase; }
+  .step p { font-size: 22px; line-height: 1.45; margin-top: 10px; }
+
+  footer {
+    margin-top: auto;
+    padding-top: 30px;
+    border-top: 2px solid var(--line);
+    display: flex; justify-content: space-between;
+    font-size: 22px; color: var(--muted);
+  }
+  footer b { color: var(--ink); }
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="brand">NORTVÄTT</div>
+      <div class="domain">norrtvatt.se</div>
+    </div>
+    <div class="doc-title">
+      <h1>Retursedel</h1>
+      <p>Lägg med i paketet vid retur</p>
+    </div>
+  </header>
+
+  <p class="intro">
+    Vill du returnera din beställning? Skicka paketet till adressen nedan och
+    meddela oss gärna via e-post att returen är på väg.
+  </p>
+
+  <div class="label-title">Returadress</div>
+  <div class="address">
+    <div class="lines">
+      <div class="name">NORTVÄTT</div>
+      <div>Att: William Lindström</div>
+      <div>Bredgränd 18</div>
+      <div>753 20 Uppsala</div>
+      <div>Sverige</div>
+    </div>
+    <div class="meta">
+      Meddelande om retur:<br>
+      <b>info@norrtvatt.se</b>
+    </div>
+  </div>
+
+  <section class="note">
+    <h2>Lägg med en lapp i paketet</h2>
+    <p>För att vi snabbt ska kunna hantera din retur behöver lappen innehålla följande:</p>
+    <div class="fields">
+      <div class="field"><span><span class="num">1</span>Ordernummer</span><div class="blank"></div></div>
+      <div class="field"><span><span class="num">2</span>För- och efternamn</span><div class="blank"></div></div>
+      <div class="field"><span><span class="num">3</span>E-post</span><div class="blank"></div></div>
+      <div class="field"><span><span class="num">4</span>Anledning till retur</span><div class="blank"></div></div>
+      <div class="extra-line"></div>
+    </div>
+  </section>
+
+  <div class="steps">
+    <div class="step"><div class="k">Steg 1</div><p>Fyll i lappen och lägg den i paketet tillsammans med varan.</p></div>
+    <div class="step"><div class="k">Steg 2</div><p>Packa varan väl och skicka paketet till returadressen ovan.</p></div>
+    <div class="step"><div class="k">Steg 3</div><p>Mejla <b>info@norrtvatt.se</b> och meddela att returen är skickad.</p></div>
+  </div>
+
+  <footer>
+    <span><b>NORTVÄTT</b> · norrtvatt.se</span>
+    <span>Frågor? <b>info@norrtvatt.se</b></span>
+  </footer>
+</body>
+</html>

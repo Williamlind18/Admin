@@ -32,14 +32,40 @@
         assign idx_str = idx_str | append: i0 | append: ','
       endfor
     elsif gmode == 'selected'
+      # Each comma entry is a position (digits only, 1-based) or a filename text. A text picks the first media whose
+      # filename (preview_image.src or src, without path and query) starts with or contains it, case-insensitive.
+      # List order is kept, entries without a match are skipped. No match at all -> all product media.
       assign plist = s.gallery_positions | default: '' | split: ','
       for p in plist
-        assign n = p | strip | plus: 0
-        if n > 0 and n <= product.media.size
-          assign i0 = n | minus: 1
-          assign idx_str = idx_str | append: i0 | append: ','
+        assign pp = p | strip
+        if pp != ''
+          assign p_rest = pp | remove: '0' | remove: '1' | remove: '2' | remove: '3' | remove: '4' | remove: '5' | remove: '6' | remove: '7' | remove: '8' | remove: '9'
+          if p_rest == ''
+            assign n = pp | plus: 0
+            if n > 0 and n <= product.media.size
+              assign i0 = n | minus: 1
+              assign idx_str = idx_str | append: i0 | append: ','
+            endif
+          else
+            assign needle = pp | downcase
+            for gm in product.media
+              assign g_src = gm.preview_image.src | default: gm.src | append: ''
+              assign g_file = g_src | split: '?' | first | split: '/' | last | downcase
+              if g_file != blank and g_file contains needle
+                assign i0 = forloop.index0
+                assign idx_str = idx_str | append: i0 | append: ','
+                break
+              endif
+            endfor
+          endif
         endif
       endfor
+      if idx_str == ''
+        for m in product.media
+          assign i0 = forloop.index0
+          assign idx_str = idx_str | append: i0 | append: ','
+        endfor
+      endif
     endif
   endif
   assign idxs = idx_str | split: ','
@@ -706,7 +732,7 @@
       "type": "text",
       "id": "gallery_positions",
       "label": "Bildnummer",
-      "info": "Gäller \"Valda bildnummer\". Produktbildernas ordning i Shopify, kommaseparerat. Första numret visas först, t.ex. 15,1.",
+      "info": "Gäller \"Valda bildnummer\". Bildnummer eller filnamn, kommaseparerade, t.ex. svea-pdrn-g00,svea-pdrn-g01. Filnamn går inte sönder om bildordningen ändras. Hittas ingen bild visas alla produktbilder.",
       "default": "15,1"
     },
     {

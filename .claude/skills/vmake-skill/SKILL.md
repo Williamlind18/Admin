@@ -98,6 +98,22 @@ Do not ask them to paste keys into the chat.
 5. **Deliver** as CLAUDE.md says: a preview in chat and full quality on GitHub. If the step is part of an
    ad localization, continue with the `ad-video-localizer` skill using the cleaned video.
 
+## Tested in this sandbox (2026-10-21)
+
+- `install-deps`, `preflight`, `catalog` and an image `run-task` work end to end: upload to
+  `kapkap-common.stariidata.com`, quota, processing via `strategy.stariidata.com`, and the result on
+  `oss.vl.starii.com`.
+- The catalog had 7 tasks: SKM0001 video 2K repair, SKM0002 video subtitle removal, SKM0003 video smart
+  removal, SKM0004 image 2K repair, SKM0005 video smart removal Pro, SKM0006 image watermark removal,
+  SKM0007 video watermark removal. Always re-run `catalog`, because the list comes from the server.
+- **Known issue with SKM0006 (image watermark):** the server preset (`automatic: false`,
+  `requester: ai_refine`) returns only a grayscale **detection mask**, not a cleaned image. The pixel
+  values 0..N match `detected_boxes` in the response. Adding `"automatic": true` gave the same result.
+  Each attempt still uses quota, so do not keep guessing parameters. Tell the user, and suggest asking
+  Vmake support or using the Vmake web app for image watermarks. The video tasks have not been tested yet.
+- Result URLs contain the user's Access Key (`MT_AK`) in their path and are signed for about three
+  months. Never put them in commits, PRs or public files. Download the file and share that instead.
+
 ## Troubleshooting
 
 - **`CERTIFICATE_VERIFY_FAILED`:** the signed calls use `requests.Session.send()`, which ignores

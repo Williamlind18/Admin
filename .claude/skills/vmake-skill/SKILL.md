@@ -39,6 +39,9 @@ V=.claude/skills/vmake-skill/scripts/vmake_ai.py
 
 ## Setup (once per container)
 
+In cloud sessions, `.claude/hooks/session-start.sh` already runs `install-deps` and `preflight` at
+session start and reports `vmake-skill: ready` or that the keys are missing. To do it by hand:
+
 ```bash
 python3 $V install-deps   # pip-installs requests, alibabacloud-oss-v2 (and pytest) if missing
 python3 $V preflight      # prints ok or missing
@@ -131,4 +134,6 @@ Do not ask them to paste keys into the chat.
 
 - `SKILL.md` was replaced by this file. The original is `docs/openclaw-SKILL.md`.
 - The four signed `session.send()` calls in `scripts/client.py` and `scripts/ai/api.py` merge the
-  environment settings (CA bundle, proxy).
+  environment settings (CA bundle, proxy). The fake sessions in `scripts/test_agent_info.py` and
+  `scripts/test_catalog.py` were updated to match. Run the tests with
+  `cd .claude/skills/vmake-skill/scripts && python3 -m pytest test_agent_info.py test_catalog.py -q`.

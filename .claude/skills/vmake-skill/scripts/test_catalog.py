@@ -719,7 +719,7 @@ class InvokeTaskTypeTests(unittest.TestCase):
 
         def sign_request(_uri, _method, _headers, body):
             captured.update(json.loads(body))
-            return object()
+            return Mock(url=_uri)
 
         signer.sign.side_effect = sign_request
         response = Mock(
@@ -730,6 +730,7 @@ class InvokeTaskTypeTests(unittest.TestCase):
         )
         session = Mock()
         session.send.return_value = response
+        session.merge_environment_settings.return_value = {"verify": "ca.pem"}
         init_images = [{"url": "https://example.test/input.jpg"}]
 
         with patch("ai.api.sign.Signer", return_value=signer), patch(

@@ -64,9 +64,10 @@ class AgentInfoTests(unittest.TestCase):
             def sign(self, uri, method, headers, body):
                 observed["uri"] = uri
                 observed.update(headers)
-                return object()
+                return types.SimpleNamespace(url=uri)
         response = types.SimpleNamespace(status_code=200, content=json.dumps({"meta": {"code": 0}, "response": {"context": "ok"}}).encode())
-        session = types.SimpleNamespace(send=lambda *args, **kwargs: response)
+        session = types.SimpleNamespace(send=lambda *args, **kwargs: response,
+                                        merge_environment_settings=lambda *args: {"verify": "ca.pem"})
         env = dict(resolve_agent_info=resolve_agent_info, agent_headers=agent_headers,
                    app_config=vmake_ai.skill_config, sign=types.SimpleNamespace(Signer=Signer),
                    requests=types.SimpleNamespace(Session=lambda: session), json=json,

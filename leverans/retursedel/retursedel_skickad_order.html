@@ -47,10 +47,10 @@
   .doc-title p { font-size: 22px; color: var(--muted); margin-top: 14px; }
 
   .alert {
-    margin: 40px 0 36px;
+    margin: 32px 0 28px;
     border: 3px solid var(--accent);
     border-radius: 16px;
-    padding: 30px 40px;
+    padding: 26px 40px;
   }
   .alert h2 { font-size: 30px; font-weight: 800; color: var(--accent); margin-bottom: 10px; }
   .alert p { font-size: 23px; line-height: 1.5; }
@@ -70,7 +70,8 @@
   }
   .address .lines { font-size: 32px; line-height: 1.4; font-weight: 600; }
   .address .lines .name { font-weight: 800; }
-  .address .meta { font-size: 22px; color: var(--muted); text-align: right; line-height: 1.6; }
+  .address .meta { font-size: 22px; color: var(--muted); line-height: 1.5; width: 400px; }
+  .address .meta .ship { margin-top: 16px; padding-top: 16px; border-top: 2px solid var(--line); }
   .address .meta b { color: var(--ink); font-weight: 700; }
 
   .note {
@@ -82,7 +83,7 @@
   }
   .note h2 { font-size: 34px; font-weight: 800; margin-bottom: 10px; }
   .note > p { font-size: 24px; color: var(--muted); margin-bottom: 24px; line-height: 1.45; }
-  .fields { display: grid; gap: 20px; }
+  .fields { display: grid; gap: 16px; }
   .field { display: grid; grid-template-columns: 330px 1fr; align-items: end; gap: 20px; font-size: 26px; font-weight: 600; }
   .field .num {
     display: inline-flex; width: 40px; height: 40px; border-radius: 50%;
@@ -139,8 +140,8 @@
       <div>Sverige</div>
     </div>
     <div class="meta">
-      Meddelande om retur:<br>
-      <b>info@norrtvatt.se</b>
+      <div>Meddelande om retur:<br><b>info@norrtvatt.se</b></div>
+      <div class="ship"><b>Returfrakt</b><br>Enligt våra villkor står du för returfrakten. Om varan är defekt eller skadad står vi för den.</div>
     </div>
   </div>
 

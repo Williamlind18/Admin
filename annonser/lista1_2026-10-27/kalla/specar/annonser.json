@@ -1,0 +1,73 @@
+[
+ {
+  "format": "brev",
+  "out": "ut/SE_1_brev_4x5.png",
+  "product": "bilder/kartong_frilagd.png",
+  "produkt_frilagd": true,
+  "fonts": "file:///tmp/claude-0/-home-user-Admin/dbee76c8-48e9-534c-8ff4-bec7f5485105/scratchpad/bof/fonts/local.css",
+  "text": {
+   "rubrik": "Nu säger vi farväl",
+   "stycken": [
+    "Vår tidiga höstrea tar slut ikväll kl. 23:59.",
+    "Efter det går Maskinrent tillbaka till ordinarie pris.",
+    "Så om du har funderat – det här är din <b>sista chans att få upp till 50% RABATT.</b>",
+    "Fri frakt och 30 dagars pengarna-tillbaka-garanti, som vanligt."
+   ],
+   "signatur": "/ Teamet på Norrtvätt"
+  }
+ },
+ {
+  "format": "rea",
+  "out": "ut/SE_2_rea_4x5.png",
+  "bg": "bilder/pall_fixad.png",
+  "fonts": "file:///tmp/claude-0/-home-user-Admin/dbee76c8-48e9-534c-8ff4-bec7f5485105/scratchpad/bof/fonts/local.css",
+  "text": {
+   "upp": "UPP TILL",
+   "stor": "50% RABATT",
+   "ruta": "SISTA CHANSEN",
+   "under": "Fri frakt · 30 dagars pengarna-tillbaka"
+  }
+ },
+ {
+  "format": "postit",
+  "out": "ut/SE_3_postit_4x5.png",
+  "bg": "bilder/tvatt_fixad.png",
+  "fonts": "file:///tmp/claude-0/-home-user-Admin/dbee76c8-48e9-534c-8ff4-bec7f5485105/scratchpad/bof/fonts/local.css",
+  "text": {
+   "lappar": [
+    "KÖP 2 &amp;<br>SPARA<br>MER",
+    "JUST NU<br>UPP TILL<br><span class='big'>50% RABATT</span>",
+    "30 dagars<br>pengarna-<br>tillbaka ♡"
+   ]
+  },
+  "spots": [
+   [
+    34,
+    250,
+    -3
+   ],
+   [
+    740,
+    610,
+    2
+   ],
+   [
+    64,
+    950,
+    -1.5
+   ]
+  ]
+ },
+ {
+  "format": "hejda",
+  "out": "ut/SE_4_hejda_4x5.png",
+  "product": "bilder/kartong_frilagd.png",
+  "brand": "NORRTVÄTT",
+  "fonts": "file:///tmp/claude-0/-home-user-Admin/dbee76c8-48e9-534c-8ff4-bec7f5485105/scratchpad/bof/fonts/local.css",
+  "text": {
+   "ord1": "VI SÄGER",
+   "ord2": "HEJDÅ",
+   "under": "Höstrean avslutas ikväll 23:59"
+  }
+ }
+]

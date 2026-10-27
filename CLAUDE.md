@@ -18,4 +18,7 @@
 - To remove watermarks, logos or burned-in text, or to restore or upscale images and video with Vmake, use the
   `vmake-skill` skill in `.claude/skills/vmake-skill/`. It is a paid API, so ask before uploading. Its keys are
   `MT_AK`/`MT_SK`, in environment variables or the gitignored `scripts/.env`.
+- "Gör alla annonser på norska" means ONLY the ads listed in `annonser/lista1_2026-10-27/README.md`
+  (21 image ads, 1 video, 1 copy text, locked 2026-10-27). Ads made after that date are never included, even
+  if they are Swedish and made in the same session. Keep each ad the same; only the language changes.
 - This repo is public. Never commit API keys or other secrets.

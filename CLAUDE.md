@@ -17,4 +17,8 @@
   - Never remove content the user wants to keep.
   - Captions are 1-3 words in Montserrat ExtraBold.
   - Deliver a preview in chat, full quality on GitHub and an .srt file.
+- Norwegian versions: when the user writes "gör alla annonser på norska", make Norwegian versions of
+  ONLY the four ads listed in `leverans/norska/README.md` (videos 5, 11, 14 and 15, made 2026-09-29 to
+  2026-10-14), and follow that README. Swedish ads made later, and the older Maskinrent videos, are not
+  included unless the user names them.
 - This repo is public. Never commit API keys or other secrets.

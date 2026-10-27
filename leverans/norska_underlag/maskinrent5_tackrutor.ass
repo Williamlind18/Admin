@@ -1,0 +1,4 @@
+; Täckrutor (vit ruta = lager 1, svart text = lager 2) i norrtvatt_maskinrent5_sv.mp4, källa release video12.
+; Översätt bara texten efter sista }-blocket i lager 2-raderna.
+Dialogue: 1,0:00:00.00,0:00:05.11,Cap,,0,0,0,,{\an7\pos(50,288)\bord0\shad0\1c&HFFFFFF&\p1}m 38 0 l 942 0 b 980 0 980 0 980 38 l 980 296 b 980 334 980 334 942 334 l 38 334 b 0 334 0 334 0 296 l 0 38 b 0 0 0 0 38 0{\p0}
+Dialogue: 2,0:00:00.00,0:00:05.11,Cap,,0,0,0,,{\an5\pos(540,455)\fs88\bord0\shad0\1c&H000000&}Det här gör enzymskum\Ni de delar av tvättmaskinen\Ndu aldrig rengjort

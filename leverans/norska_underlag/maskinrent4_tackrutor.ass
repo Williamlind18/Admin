@@ -1,0 +1,4 @@
+; Täckrutor (vit ruta = lager 1, svart text = lager 2) i norrtvatt_maskinrent4_sv.mp4, källa release video10.
+; Översätt bara texten efter sista }-blocket i lager 2-raderna.
+Dialogue: 1,0:03:54.90,0:03:56.98,Cap,,0,0,0,,{\an7\pos(590,262)\bord0\shad0\1c&HFFFFFF&\p1}m 50 0 l 440 0 b 490 0 490 0 490 50 l 490 410 b 490 460 490 460 440 460 l 50 460 b 0 460 0 460 0 410 l 0 50 b 0 0 0 0 50 0{\p0}
+Dialogue: 2,0:03:54.90,0:03:56.98,Cap,,0,0,0,,{\an5\pos(835,492)\fs80\bord0\shad0\1c&H000000&}30 DAGARS\NPENGARNA\NTILLBAKA

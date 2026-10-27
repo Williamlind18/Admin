@@ -15,4 +15,7 @@
   - Never remove content the user wants to keep.
   - Captions are 1-3 words in Montserrat ExtraBold.
   - Deliver a preview in chat, full quality on GitHub and an .srt file.
+- **"Gör alla annonser på norska"** means ONLY the ads listed in `leverans/NORSKA-LISTA.md`. That list
+  was locked on 2026-10-27. Never add ads made after that to it, and never make them in Norwegian unless
+  the user asks for that specific ad. Read the file before starting.
 - This repo is public. Never commit API keys or other secrets.

@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+
+# Secrets (public repo): never commit API keys
+.env
+.env.*
+!.env.example

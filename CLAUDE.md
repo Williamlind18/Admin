@@ -15,6 +15,9 @@
   - Never remove content the user wants to keep.
   - Captions are 1-3 words in Montserrat ExtraBold.
   - Deliver a preview in chat, full quality on GitHub and an .srt file.
+- To remove watermarks, logos or burned-in text, or to restore or upscale images and video with Vmake, use the
+  `vmake-skill` skill in `.claude/skills/vmake-skill/`. It is a paid API, so ask before uploading. Its keys are
+  `MT_AK`/`MT_SK`, in environment variables or the gitignored `scripts/.env`.
 - **"Gör alla annonser på norska"** means ONLY the ads listed in `leverans/NORSKA-LISTA.md`. That list
   was locked on 2026-10-27. Never add ads made after that to it, and never make them in Norwegian unless
   the user asks for that specific ad. Read the file before starting.

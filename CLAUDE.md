@@ -20,3 +20,10 @@
   - Captions are 1-3 words in Montserrat ExtraBold.
   - Deliver a preview in chat, full quality on GitHub and an .srt file.
 - This repo is public. Never commit API keys or other secrets.
+
+## Norwegian versions ("gör alla annonser på norska") in this session
+In this session (branch `claude/inspiring-feynman-uo7z24`, session 01YTjhMMtce8VYyMS9aqb9JF) that command
+means ONLY the ad listed in `leverans/norska_underlag/inspiring-feynman.md`: the Maskinrent "repairman,
+19 years, biofilm" ad, `leverans/norrtvatt_maskinrent_video2_sv.mp4`. This is a closed list, fixed on
+2026-10-27. Swedish ads made later in this session are NOT included unless the user names them, and
+neither are older ads from other sessions. The file also says how to make the Norwegian version.

@@ -102,3 +102,46 @@
   `gh api repos/OWNER/REPO/releases`, which also lists drafts.
 - Check that the uploaded video matches the script before paying for anything. Video24 was a 3:43 ad
   that had nothing to do with the 20 s transcript. The right file was video25.
+
+## A 4-minute ad with everything replaced (learned on video30)
+- **No script from the user.** Scribe transcribed the original with word times (1,136 words, 243 s).
+  The Swedish script had to be condensed to about 60 % (3,941 characters) to fit, while every story
+  step was kept. One eleven_v3 take of all 3,941 characters worked; check it first with `estimate_only`.
+- **The voice "Äldre man 50-60 år - SE" pauses only 0.12-0.33 s between sentences.** `split_take.py`
+  marked almost every row `<-- check`, but the ratios were 0.7-1.26 and the alignment spreads were
+  mostly ≤ 0.3 s, so the cuts were right. Check the ratios and spreads before regenerating anything.
+- **Anchors.** Fifteen anchors pushed blocks to ×1.15-1.17. Seven anchors with ±2 s windows gave at
+  most ×1.06. Adding anchors can raise the tempo of *earlier* blocks. Labels that appear a couple of
+  seconds before the voice names them (the enzyme names) are fine.
+- **What Vmake (SKM0003) left behind on a long video:**
+  - It removed the plain captions and most of the flat labels.
+  - It did not remove glowing or stylised price text ("GET 2 FREE", "$9.99 per box"), badges (one
+    was removed but left a gray smear, the other stayed), or labels printed on 3D objects ("Alpha
+    Amylase", "Protease", "Lipase").
+  - It damaged an icon in an animated graphic.
+  - It turned 6.6 s of black frames at the end into noise. Trim the end or cover it with an end card.
+  - Always scan the cleaned video at 1 fps before building overlays.
+- **Fixes that worked:**
+  - White boxes with black text over the leftover text, timed to the exact shot cuts (found with frame
+    differences).
+  - Swedish badges with claims from the user's page ("AVKALKAR", "PASSAR ALLA TVÄTTMASKINER") in place
+    of claims we don't make (EWG, septic safe).
+  - Redrawn check marks.
+  - For the animated "PET HAIR = PROTEIN / SEBUM = FAT" graphic, the original footage was spliced back
+    in for those 1.7 s. Only the words that differ in Swedish were covered, with paper-texture patches
+    copied from the same frame: DJURHÅR and FETT.
+- **The user asked to remove the competitor's end image** and to make their own from the product page:
+  a full-screen end card with the stars and customer count, NORRTVÄTT, the product photo, HÖSTREA,
+  "4 PAKET –50 % · FRI FRAKT", a "SÄKRA ERBJUDANDET" button and the 30-day guarantee. Leave free space
+  at y ≈ 0.75 for the captions.
+- **Claims were adapted to the page:**
+  - "Over two million pet owners" became "+15 000 kunder".
+  - "Buy 2 get 2 free" became "4 paket till halva priset" (the 4-pack is 50 %).
+  - "$9.99/box" became "20 kr per tablett".
+  - The 60-day guarantee became the 30-day one.
+  - "One tablet every two weeks" became "en tablett i månaden", since 12 tablets last a year.
+  - The competitor's customer stories became generic advice, plus the real review from the page
+    (Erika, two dogs).
+  - Brand names (Afresh, OxiClean, Tide) became "vanliga maskinrengörare".
+- Rendering 247 s at 720×1280 with 14 overlays and music took about 7 min, and splicing the source
+  took 2 min. The full-quality file was 78 MB at crf 22, under GitHub's 100 MB limit.

@@ -9,9 +9,11 @@ Usage:
             --out WORK/final.mp4 [--preview WORK/preview.mp4 --preview-mb 28]
             [--bed music.mp3 --bed-db -16] [--check-frames 44.5,90]
             [--overlay card.png --overlay-start 26.1 --overlay-end 29.95]
+            [--overlay label1.png@65.6-66.5 --overlay label2.png@142.25-143.0 ...]
 --overlay puts a transparent PNG the size of the video (e.g. an end card with the
-product image and offer box) over the picture between the given times, fading in,
-under the captions.
+product image and offer box, or a label covering burned-in text) over the picture,
+fading in, under the captions. Repeat it for several; PATH@START-END gives each its
+own times, a plain PATH uses --overlay-start/--overlay-end.
 """
 import argparse
 import os
@@ -48,7 +50,8 @@ def main():
     ap.add_argument("--preview")
     ap.add_argument("--preview-mb", type=float, default=28.0)
     ap.add_argument("--check-frames", default="", help="times to export as PNG for a visual check")
-    ap.add_argument("--overlay", help="transparent PNG, same size as the video, shown under the captions")
+    ap.add_argument("--overlay", action="append", default=[],
+                    help="transparent PNG the size of the video, PATH or PATH@START-END (repeatable)")
     ap.add_argument("--overlay-start", type=float, default=0.0)
     ap.add_argument("--overlay-end", type=float, default=1e9)
     ap.add_argument("--overlay-fade", type=float, default=0.25, help="fade-in seconds")
@@ -65,14 +68,18 @@ def main():
                   f"[v][b]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
     else:
         fc.append("[1:a]loudnorm=I=-14:TP=-1.5:LRA=11[a]")
-    if a.overlay:
-        n = len(inputs) // 2
-        inputs += ["-loop", "1", "-i", a.overlay]
-        s0, s1 = a.overlay_start, a.overlay_end
-        fc.append(f"[{n}:v]format=rgba,fade=t=in:st={s0}:d={a.overlay_fade}:alpha=1[ov];"
-                  f"[0:v][ov]overlay=0:0:enable='between(t,{s0},{s1})':shortest=1,{vf}[vo]")
-    else:
-        fc.append(f"[0:v]{vf}[vo]")
+    last = "0:v"
+    for k, spec in enumerate(a.overlay):
+        path, s0, s1 = spec, a.overlay_start, a.overlay_end
+        if "@" in spec:
+            path, span = spec.rsplit("@", 1)
+            s0, s1 = (float(x) for x in span.split("-"))
+        n = sum(1 for x in inputs if x == "-i")
+        inputs += ["-loop", "1", "-t", f"{s1 + 1:.3f}", "-i", path]
+        fc.append(f"[{n}:v]format=rgba,fade=t=in:st={s0}:d={a.overlay_fade}:alpha=1[ov{k}];"
+                  f"[{last}][ov{k}]overlay=0:0:enable='between(t,{s0},{s1})':eof_action=pass[o{k}]")
+        last = f"o{k}"
+    fc.append(f"[{last}]{vf}[vo]")
     run_ff(inputs + ["-filter_complex", ";".join(fc), "-map", "[vo]", "-map", "[a]", "-c:v", "libx264",
                      "-crf", str(a.crf), "-preset", "fast", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k",
                      "-ar", "44100", "-movflags", "+faststart", "-shortest", a.out])
@@ -87,13 +94,17 @@ def main():
                 "-movflags", "+faststart", a.preview])
         print(f"preview: {a.preview}  {os.path.getsize(a.preview) / 2 ** 20:.1f} MB ({kbps} kb/s video)")
 
-    # QA: every spoken moment has a caption, no long silences, no clipping
+    # QA: every spoken moment has a caption, no long silences, no clipping. Speech is
+    # measured on the voice track (a music bed would count as "speech" in the mix).
     import librosa
     tmp = a.out + ".qa.wav"
     to_wav16k(a.out, tmp)
     y, _ = librosa.load(tmp, sr=16000)
     os.remove(tmp)
-    db = db_curve(y)
+    to_wav16k(a.audio, tmp)
+    yv, _ = librosa.load(tmp, sr=16000)
+    os.remove(tmp)
+    db = db_curve(yv)
     speech = db > -45
     cov = np.zeros(len(db), bool)
     for s, e in ass_times(a.ass):

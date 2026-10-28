@@ -56,7 +56,8 @@ which filters are available.
 ### 1. Intake
 Ask in **one** message for whatever is missing:
 - **The video.** See `references/delivery.md`. Files over 25 MB go through a GitHub release.
-- **The original voiceover text.** You cannot transcribe audio here.
+- **The original voiceover text.** If the user has none, transcribe the original audio with Scribe;
+  see "Getting the original script" in `references/elevenlabs.md`.
 - **Target language**, and whether to translate directly or adapt.
 - **The ElevenLabs voice ID.** Check that the ElevenLabs connector tools are available; see
   `references/elevenlabs.md`.
@@ -144,6 +145,13 @@ the user's own text in the same place: `python3 $SK/make_text_overlay.py --video
 --font WORK/fonts/Montserrat-ExtraBold.ttf --out WORK/title.png --line "112|2-PACK ~white|−40 %~accent" ...`
 (Swedish equivalents of the original headline with the user's real offer), then
 `render.py --overlay WORK/title.png --overlay-start 0 --overlay-fade 0.04`.
+
+**Several labels.** `render.py --overlay` can be repeated as `PATH@START-END`, one PNG for each
+label, badge or offer box. When Vmake damaged an animated graphic, splice the original footage back in
+for those seconds and cover only the English words (see lessons.md, video30).
+
+**Music (if the user asks for ElevenLabs music).** See "Music" in `references/elevenlabs.md`. Check
+that it has no vocals, lengthen it to the video's length and mix it with `--bed`.
 
 **Offer end card (if the user wants one).** A product photo with a white offer box under it, e.g.
 "HÖSTREA / Upp till 50 % rabatt":

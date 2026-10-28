@@ -74,8 +74,8 @@ longer matters. If you do run many generations, start at most 5 at a time, and r
 that failed.
 
 ## Things that do not work
-- `creative_transcribe_audio` (Scribe) through the connector returns plain text with **no timestamps**,
-  so it is useless for syncing.
+- Scribe can't time the new voice, because the pipeline needs the word reference and `align_words.py`.
+  It is useful for the **original** script, though (see "Getting the original script" below).
 - Downloading speech-recognition models (Whisper and similar) is blocked in the cloud sandbox. That is
   why `align_words.py` combines three model-free methods.
 - Speeding the voice up with the **rubberband** filter. It sounded robotic to the user. `atempo` is
@@ -89,3 +89,21 @@ that failed.
 - If a brand name is mispronounced, spell it phonetically in the TTS text only, and keep the correct
   spelling for the captions by editing `NN.txt` after generation.
 - eleven_v3 understands audio tags like `[excited]`. Use them sparingly; they are rarely needed for ads.
+
+## Getting the original script (when the user has none)
+Since 2026-10 `creative_transcribe_audio` (Scribe) returns the text **with per-word start/end times**
+(`words`, and the full list at `words_download_url`). Extract the audio with ffmpeg (mono mp3), then run
+`creative_create_asset_upload` → PUT → `creative_finalize_asset_upload` with the flow_id →
+`creative_transcribe_audio` with `connect_from`. It costs about 6 credits per second: 1,446 credits for
+a 243 s ad. Group the words into sentences by their end punctuation to get original start times for
+anchors.
+
+## Music
+- `creative_generate_in_flow` with `node_type: music`, `model_id: eleven_music_v2_5`. The call can't
+  set `instrumental` or the duration, and it ran with lyrics "auto". A "4-minute … no vocals" prompt
+  came back as 240 s of music for about 1,591 credits.
+- **Check for vocals before using it.** Cut three 20 s excerpts into one 60 s mp3 and transcribe it
+  (about 340 credits). An empty transcript means the music is instrumental.
+- If the music is shorter than the video, lengthen it with an `acrossfade` from a later section
+  (`atrim=0:235` + `atrim=start=222`, `d=3`), trim it to the video length and fade out the last 2 s.
+  Then use `render.py --bed music_bed.wav --bed-db -17`.

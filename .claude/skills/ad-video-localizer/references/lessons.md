@@ -145,3 +145,26 @@
   - Brand names (Afresh, OxiClean, Tide) became "vanliga maskinrengörare".
 - Rendering 247 s at 720×1280 with 14 overlays and music took about 7 min, and splicing the source
   took 2 min. The full-quality file was 78 MB at crf 22, under GitHub's 100 MB limit.
+
+### Round 2 of video30: what the user wanted changed
+- **Enzyme names had to be spoken exactly when their labelled 3D shots appear.** The voice was 3 s
+  late. The fix was a shorter script before each enzyme (−52 characters across s37-s45) and tight
+  anchors (`42:start=142.2-142.6`, `44:start=150.7-151.1`, `47:start=162.85-163.2`). The result was at
+  most ×1.044. Labels that appear before the voice names them are **not** fine for this user.
+- **Offer boxes must not cover the product packaging,** and nothing may sit outside the Meta 4:5 crop
+  (the 30-day box at y 0.83-0.93 was too low). The stylised English price text that sat on the
+  packaging ("GET 2 FREE", "$9.99 per box") could not be removed:
+  - a second SKM0003 pass changed nothing,
+  - SKM0005 "Smart Pro" needs a Vmake Pro membership (`membership_required`, no charge).
+
+  Those two shots (3 s and 2.4 s) were replaced with offer cards showing the user's own product photo,
+  a slow zoom made with `zoompan`, and the offer text above and below the product. They were spliced in
+  with `overlay … enable=between(t,…)` on the source.
+- **"Höstrea" became "rea som snart avslutas"**, which needed a new whole take. The first new take
+  came out 10 % slower (312 s with long pauses, 258 s of speech) and didn't fit. A second take of the
+  same text took 239 s. That take had 0.10-0.16 s sentence pauses, and the pause-based split put
+  sentences 55 and 59-61 wrong (ratio 1.34 and 0.69).
+- **Cutting by Scribe word times worked:** `split_take.py --words` matched 672 of 679 words, and every
+  sentence came out right with spreads ≤ 0.63 s. Scribe cost 1,360 credits for 239 s.
+- With a music bed, render.py's QA now measures speech on the voice track (the music had counted as
+  4.5 s of "speech without caption").

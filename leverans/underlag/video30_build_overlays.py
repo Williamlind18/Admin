@@ -122,12 +122,13 @@ for cx, cy in ((184, 320), (538, 320)):
     d.line([(cx - 52, cy + 2), (cx - 14, cy + 40), (cx + 56, cy - 34)], fill=WHITE, width=26, joint="curve")
 img.save(os.path.join(OUT, "checks.png"))
 
-# 6) Offer boxes covering the leftover English price text
-text_box("offer1.png", (24, 416, 696, 706), [("4 PAKET –50 %", 76), ("FRI FRAKT", 46)], r=30)
-text_box("offer2.png", (136, 486, 604, 794), [("20 KR", 92), ("PER TABLETT", 44)], r=30)
-text_box("offer3.png", (70, 1056, 650, 1196), [("30 DAGARS", 44), ("PENGARNA TILLBAKA", 40)], r=26)
+# 6) Offer lines: slim white bars in the lower third, above the captions and inside the 4:5 crop
+BAR = (40, 806, 680, 892)
+text_box("offer1.png", BAR, [("4 PAKET –50 %  ·  FRI FRAKT", 38)], r=26)
+text_box("offer2.png", BAR, [("BARA 20 KR PER TABLETT", 38)], r=26)
+text_box("offer3.png", BAR, [("30 DAGARS PENGARNA TILLBAKA", 36)], r=26)
 
-# 7) Full-screen end card from the product page
+# 7) Full-screen end card from the product page; everything inside y 200-1080 (Meta 4:5 crop)
 img = Image.new("RGBA", (W, H), WHITE)
 top, bot = (233, 246, 248), (196, 233, 240)
 g = ImageDraw.Draw(img)
@@ -147,31 +148,32 @@ def star(cx, cy, r, fill):
 
 
 for i in range(5):
-    star(250 + i * 38, 78, 17, (245, 179, 1, 255))
-d.text((360, 118), "4,8 av 5  ·  +15 000 kunder", font=f(24), fill=NAVY, anchor="mm")
+    star(276 + i * 42, 232, 17, (245, 179, 1, 255))
+d.text((360, 272), "4,8 av 5  ·  +15 000 kunder", font=f(24), fill=NAVY, anchor="mm")
 word = "NORRTVÄTT"
-fw = f(46)
-spacing = 10
+fw = f(42)
+spacing = 9
 total = sum(fw.getlength(c) for c in word) + spacing * (len(word) - 1)
 x = 360 - total / 2
 for c in word:
-    d.text((x, 178), c, font=fw, fill=NAVY, anchor="lm")
+    d.text((x, 322), c, font=fw, fill=NAVY, anchor="lm")
     x += fw.getlength(c) + spacing
-prod = Image.open(PRODUCT).convert("RGB").resize((500, 500), Image.LANCZOS)
-px, py = 110, 225
-shadow(img, (px, py, px + 500, py + 500), 30, blur=14, alpha=80, dy=8)
-frame = Image.new("RGBA", (516, 516), WHITE)
-m = Image.new("L", (516, 516), 0)
-ImageDraw.Draw(m).rounded_rectangle((0, 0, 515, 515), 36, fill=255)
-img.paste(frame, (px - 8, py - 8), m)
-m = Image.new("L", (500, 500), 0)
-ImageDraw.Draw(m).rounded_rectangle((0, 0, 499, 499), 30, fill=255)
+S = 380
+prod = Image.open(PRODUCT).convert("RGB").resize((S, S), Image.LANCZOS)
+px, py = (W - S) // 2, 360
+shadow(img, (px, py, px + S, py + S), 28, blur=14, alpha=80, dy=8)
+frame = Image.new("RGBA", (S + 14, S + 14), WHITE)
+m = Image.new("L", frame.size, 0)
+ImageDraw.Draw(m).rounded_rectangle((0, 0, S + 13, S + 13), 32, fill=255)
+img.paste(frame, (px - 7, py - 7), m)
+m = Image.new("L", (S, S), 0)
+ImageDraw.Draw(m).rounded_rectangle((0, 0, S - 1, S - 1), 26, fill=255)
 img.paste(prod, (px, py), m)
 d = ImageDraw.Draw(img)
-d.text((360, 790), "HÖSTREA", font=f(100), fill=TEAL, anchor="mm")
-d.text((360, 872), "4 PAKET –50 %  ·  FRI FRAKT", font=f(36), fill=NAVY, anchor="mm")
-d.rounded_rectangle((100, 1046, 620, 1136), 45, fill=TEAL)
-d.text((360, 1091), "SÄKRA ERBJUDANDET", font=f(36), fill=WHITE, anchor="mm")
-d.text((360, 1182), "Prova i 30 dagar – pengarna tillbaka", font=f(26), fill=NAVY, anchor="mm")
+d.text((360, 800), "REA – SNART SLUT", font=f(58), fill=TEAL, anchor="mm")
+d.text((360, 862), "4 PAKET –50 %  ·  FRI FRAKT", font=f(34), fill=NAVY, anchor="mm")
+d.rounded_rectangle((110, 1000, 610, 1072), 36, fill=TEAL)
+d.text((360, 1036), "SÄKRA ERBJUDANDET", font=f(32), fill=WHITE, anchor="mm")
+d.text((360, 906), "Prova i 30 dagar – pengarna tillbaka", font=f(24), fill=NAVY, anchor="mm")
 img.save(os.path.join(OUT, "endcard.png"))
 print("ok")

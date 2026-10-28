@@ -91,7 +91,10 @@ Download with `bash $SK/download_clips.sh urls.txt WORK` (names `take` and `iso`
 `iso.mp3` into `sent/`). Then cut the take into sentences:
 `python3 $SK/split_take.py WORK/take.mp3 WORK/sent`. Check its table: every `pause_after` should be a
 real sentence pause (≥ ~0.35 s; v3 takes usually have 0.4-0.8 s) and no row should be marked
-`<-- check`. Keep a running total of credits for the report.
+`<-- check`. If the voice pauses only ~0.1-0.3 s between sentences, the pause-based cuts are guesses:
+transcribe the take with Scribe and cut with `--words take_words.json` instead (exact; see lessons.md).
+Takes of the same text vary a lot in speed (239-312 s for one 3,866-character script): if a take is
+too slow for the visuals, generate a new whole take rather than speeding it up. Keep a running total of credits for the report.
 
 ### 5. Find the word timings
 `python3 $SK/align_words.py WORK/sent --lang sv`. For each boundary it takes the median of three
@@ -145,6 +148,11 @@ the user's own text in the same place: `python3 $SK/make_text_overlay.py --video
 --font WORK/fonts/Montserrat-ExtraBold.ttf --out WORK/title.png --line "112|2-PACK ~white|−40 %~accent" ...`
 (Swedish equivalents of the original headline with the user's real offer), then
 `render.py --overlay WORK/title.png --overlay-start 0 --overlay-fade 0.04`.
+
+**Safe area for Meta.** Feeds often show a 9:16 video cropped to 4:5, cutting about 15 % off the
+top and bottom. Keep every label, offer line, end-card element and the captions between y ≈ 0.15 and
+0.85 of the frame (190-1090 px of 1280). Don't put offer boxes over the product packaging; use a slim
+bar just above the captions instead.
 
 **Several labels.** `render.py --overlay` can be repeated as `PATH@START-END`, one PNG for each
 label, badge or offer box. When Vmake damaged an animated graphic, splice the original footage back in

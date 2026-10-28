@@ -43,6 +43,7 @@ take, so budget with about 0.9 × the test rate. Measured so far (eleven_v3, Swe
 | "30 år kvinna" (p47LfPZdd7LXERMMfx1R) | — | 15.1 chars/s |
 | "Äldre man 50-60 år - SE" (OvO33bxTqNfwQfoR6mVh) | 16.5 chars/s | 15.0 chars/s (video 11) |
 | "Man mörk röst - SE" (UkRAtFubBAJ0Ggc3W2XX) | 13.0 chars/s | 13.6 chars/s (video 14) |
+| "kvinna energisk - SE" (tY9FLUZCUCQXwZYDwvWw) | 18.0 chars/s | 15.4-15.9 chars/s (video 29) |
 
 The dark documentary voice paused only 0.15-0.3 s between sentences, so split_take.py marked most rows
 `<-- check`. That is expected for such a voice: confirm the ratios are near 1 and that the energy at
@@ -113,8 +114,11 @@ longer matters. If you do run many generations, start at most 5 at a time, and r
 that failed.
 
 ## Things that do not work
-- `creative_transcribe_audio` (Scribe) through the connector returns plain text with **no timestamps**,
-  so it is useless for syncing.
+- Older note: `creative_transcribe_audio` (Scribe) used to return plain text only. Since October 2026 it
+  returns **per-word start/end times** (`transcripts[].words`). On video 29 it gave the full original
+  voiceover with word timings for 620 credits (109 s), including the parts that had no burned-in
+  captions. Upload the audio with `creative_create_asset_upload` + PUT + `creative_finalize_asset_upload`
+  (with the flow_id), then pass the returned node_id as `connect_from`.
 - Downloading speech-recognition models (Whisper and similar) is blocked in the cloud sandbox. That is
   why `align_words.py` combines three model-free methods.
 - Speeding the voice up with the **rubberband** filter. It sounded robotic to the user. `atempo` is

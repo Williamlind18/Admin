@@ -141,3 +141,35 @@
 - Cut and reorder in one ffmpeg pass: `split=N`, then `trim=start_frame=A:end_frame=B+1,setpts=PTS-STARTPTS`
   per shot, then `concat`. Find exact cut frames from frame differences, and confirm the frame count
   afterwards (6 825 = 227.73 s).
+
+## Whiteboard animation with English handwriting (video 29)
+- The user asked for the English text in a whiteboard animation to be "written in Swedish" instead.
+  `scripts/whiteboard/` does it:
+  - OCR every frame (Tesseract) and track each line, predicting pans with global phase correlation,
+  - erase the original ink,
+  - re-write the line in Patrick Hand in the sampled colour, revealed in step with the hand.
+
+  See its README. About 110 lines were replaced; the coloured ribbons ("AMYLASE" in white on blue)
+  needed the MANUAL route.
+- Measure the global motion like this (frames A..B, ink made bright, caption band blanked):
+  `(dx, dy), resp = cv2.phaseCorrelate(prev, cur, cv2.createHanningWindow((W, H), cv2.CV_32F))` on
+  half-size `255 - gray` frames, saved as `motion.json` `{n: [dx*2, dy*2, resp]}`.
+- The animation's own captions were black text on white with no box. Inpaint the dark pixels and
+  their grey anti-aliased edges in the caption rows (`max < 225`); `remove_captions.py` is for boxed
+  captions on footage.
+- An on-screen title box and a "BUY 2 GET 2 FREE" offer graphic were replaced too:
+  - **Title:** an ASS rounded box in the same colour with Swedish text on top.
+  - **Offer:** push-pull fill of the white letters (the background was already defocused), then
+    Swedish lines in Montserrat ExtraBold timed to when each original line appeared.
+- **Font sizes in ASS vs PIL:** libass draws Montserrat ExtraBold with caps of about 0.5 × `\fs`, PIL with
+  about 0.7 × size. Measure widths with PIL at `fs × 0.5 / 0.7`, or ASS text comes out a third too small.
+- **Competitor packaging the user does not want shown:**
+  - cut the shots of their boxes and the drawn box,
+  - blur a defocused box further so its text cannot be read,
+  - give packets under a tablet close-up a soft blur below the hand (a feathered ramp, like depth of
+    field).
+- Swedish ran longer than the dense English voiceover in the animation. The first script needed
+  1.2-1.37× there; a 13 % shorter script plus wider anchor windows (±0.5-1 s on lines that only need to
+  land on their drawing) brought the peak to 1.066.
+- **Shell pitfall:** `until ! pgrep -f "some string"` waiting loops match their own command line and never
+  end. Wait on a PID or on an output file instead.

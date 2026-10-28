@@ -62,6 +62,10 @@
   takes with align_words.py and trim wording before planning. Trimming 80 characters across two
   paragraphs brought the maximum tempo from ~1.14 to 1.02.
 
+- Cutting a competitor end card (video23, the last 2.4 s): re-run `plan_timeline.py` with
+  `--video-duration` at the cut (find it with ffmpeg `select='gt(scene,0.25)',showinfo`), cut the clean
+  video with `-frames:v`, then rebuild the voice, captions and render. Drop or widen the late anchors so
+  the lost seconds spread over the last ~25 s (x1.07) instead of squeezing the call to action (x1.13).
 - After `split_takes.py` replaces sentence clips, `tighten_pauses.py` would restart from the old copies
   in `sent/raw/`. split_takes.py now deletes those stale copies itself.
 

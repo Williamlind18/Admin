@@ -137,6 +137,14 @@ splits, e.g. "tre lager: filmen" should become "tre lager | filmen". To fix them
 with `--chunks WORK/chunks.txt`. Never split a particle verb ("bryter | ner"). See
 `references/lessons.md` for covering burned-in foreign text with label boxes.
 
+**Removing the original burned-in text (only when the user asks).** Run the `vmake-skill` first
+(task "Smart - Video Smart Removal", paid, ask once) on the source video and use its result as
+`WORK/src.mp4`. Where the removed text overlapped other text in the footage the result is smeared, so put
+the user's own text in the same place: `python3 $SK/make_text_overlay.py --video WORK/src.mp4
+--font WORK/fonts/Montserrat-ExtraBold.ttf --out WORK/title.png --line "112|2-PACK ~white|−40 %~accent" ...`
+(Swedish equivalents of the original headline with the user's real offer), then
+`render.py --overlay WORK/title.png --overlay-start 0 --overlay-fade 0.04`.
+
 **Offer end card (if the user wants one).** A product photo with a white offer box under it, e.g.
 "HÖSTREA / Upp till 50 % rabatt":
 `python3 $SK/make_endcard.py --product shot.png --crop x0,y0,x1,y1 --video WORK/src.mp4 --title "HÖSTREA"

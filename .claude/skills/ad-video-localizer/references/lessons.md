@@ -83,3 +83,22 @@
   different store (Hjärtelag SE, not Norrtvätt). Cropping the product photo from the user's screenshot
   (about 520 px, scaled up to about 560 px) looked sharp enough.
 - On this video the user said the competitor's box may stay visible, the same as on video 2.
+
+## Removing the original text with Vmake (learned on video25, 20 s)
+- The user wanted all burned-in text removed and replaced by their own. Vmake "Smart - Video Smart
+  Removal" (SKM0003) removed a large static headline ("UPROOT CLEAN / BUY 2 GET 2 FREE / LAST CHANCE /
+  ONLY $9.99/PACK", about the top 40 % of the frame) from a 20 s 720×900 video in about 30 s. One paid run.
+- The video came back at 23.93 fps instead of 23.98, 0.1 s shorter, with its own audio (which isn't
+  used). Use the cleaned file as the video source and its duration for planning.
+- Where the removed text lay over packaging text, that text is smeared. A new headline in the same
+  place (`make_text_overlay.py`) hides most of it. Swedish equivalents with the user's real offer:
+  "NORRTVÄTT / 2-PACK −40 % / SISTA CHANSEN / ENDAST 25 KR/TABLETT".
+- The script for a 20 s ad came out at 15.4 s of speech with "kvinna energisk - SE", so the voice ends
+  about 2.7 s before the video. Pauses are capped at 0.45 s. The alternative is a spoken CTA line, which
+  needs a new whole take.
+- A release that is only a draft can't be fetched from github.com/…/releases/download (404) or with the
+  built-in `gh api` (it refuses the redirect). `curl -L -H "Accept: application/octet-stream"
+  https://api.github.com/repos/OWNER/REPO/releases/assets/ASSET_ID` works. Find ASSET_ID with
+  `gh api repos/OWNER/REPO/releases`, which also lists drafts.
+- Check that the uploaded video matches the script before paying for anything. Video24 was a 3:43 ad
+  that had nothing to do with the 20 s transcript. The right file was video25.

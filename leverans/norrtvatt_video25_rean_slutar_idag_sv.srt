@@ -1,0 +1,39 @@
+1
+00:00:00,100 --> 00:00:01,600
+Vadå, slutar rean idag?
+
+2
+00:00:01,950 --> 00:00:03,580
+Ja, rean slutar idag!
+
+3
+00:00:03,930 --> 00:00:06,040
+Det här är sista chansen att köpa
+
+4
+00:00:05,940 --> 00:00:08,200
+Maskinrent på Norrtvätts bästa rea
+
+5
+00:00:08,100 --> 00:00:08,860
+någonsin.
+
+6
+00:00:09,210 --> 00:00:11,330
+Passa på och köp två idag, för det här är
+
+7
+00:00:11,230 --> 00:00:12,450
+de sista timmarna.
+
+8
+00:00:12,800 --> 00:00:14,530
+Det här är din sista chans.
+
+9
+00:00:14,880 --> 00:00:16,990
+Ett sånt här erbjudande hittar du inte på
+
+10
+00:00:16,890 --> 00:00:17,850
+väldigt länge.

@@ -113,7 +113,11 @@ Do not ask them to paste keys into the chat.
   `requester: ai_refine`) returns only a grayscale **detection mask**, not a cleaned image. The pixel
   values 0..N match `detected_boxes` in the response. Adding `"automatic": true` gave the same result.
   Each attempt still uses quota, so do not keep guessing parameters. Tell the user, and suggest asking
-  Vmake support or using the Vmake web app for image watermarks. The video tasks have not been tested yet.
+  Vmake support or using the Vmake web app for image watermarks.
+- **SKM0003 video smart removal works (2026-10-28):** on a 20 s 720×900 ad it removed a large static
+  text headline in about 30 s, with default params. Text that the headline overlapped in the footage came
+  back smeared. The output was 23.93 fps instead of 23.98 and 0.1 s shorter. The other video tasks are
+  untested.
 - Result URLs contain the user's Access Key (`MT_AK`) in their path and are signed for about three
   months. Never put them in commits, PRs or public files. Download the file and share that instead.
 

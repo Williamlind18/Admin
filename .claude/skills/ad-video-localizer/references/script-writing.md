@@ -3,7 +3,8 @@
 ## What you need first
 - **The original voiceover text.** Speech cannot be transcribed in the sandbox, so ask the user to paste
   it. Ad-library transcripts with timestamps every ~5 s are ideal: they also tell you roughly when each
-  original line is spoken, which gives you starting points for the anchors.
+  original line is spoken, which gives you starting points for the anchors. If the ad has its own
+  word-synced captions, `scripts/caption_sheets.py` reads them with ~0.2 s timing and no paste is needed.
 - **The user's product facts:** brand and product name, what it does, pack size and duration, how to use
   it, prices and discounts, current campaign, guarantee, shipping, review score and customer count, and
   the target audience. Try WebFetch on their product page. Store domains are usually blocked in the

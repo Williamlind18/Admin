@@ -56,7 +56,8 @@ which filters are available.
 ### 1. Intake
 Ask in **one** message for whatever is missing:
 - **The video.** See `references/delivery.md`. Files over 25 MB go through a GitHub release.
-- **The original voiceover text.** You cannot transcribe audio here.
+- **The original voiceover text.** You cannot transcribe audio here. If the ad has word-synced
+  burned-in captions, read them yourself with `caption_sheets.py` (step 2) instead of asking.
 - **Target language**, and whether to translate directly or adapt.
 - **The ElevenLabs voice ID.** Check that the ElevenLabs connector tools are available; see
   `references/elevenlabs.md`.
@@ -71,6 +72,10 @@ Note down:
 - **Key visual moments** a line must hit, e.g. "this", a close-up, before/after shots, the product
   appearing. Use the scene-cut times to get exact seconds.
 - **Where old captions sit**, often as blurred bars. The default y = 0.75 usually covers them.
+  If they are still readable (e.g. black text in white boxes), they give you the transcript with
+  timestamps: `python3 $SK/caption_sheets.py WORK/src.mp4 WORK/caps --band T0-T1:Y0-Y1`, then read
+  the `caps_NN.png` sheets. When the user wants them gone, run `remove_captions.py` on the source
+  before anything else, and put the new captions at the old box's centre (see lessons.md, video 22).
 - **Background music** (the audio report says so). It cannot be separated, so warn the user now.
 - **Other brands visible in the footage**, and any burned-in text that will remain.
 

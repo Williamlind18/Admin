@@ -108,3 +108,36 @@
 - `chunk_captions.py` writes only the ASS file. Get the .srt from `make_captions.py ... --out-dir OTHER_DIR`.
 - **Leftover captions of the original** can flash by for a few frames (video 5: "every load," on a white
   paper towel for 0.2 s). Scan the finer frame grids for them and blank them with a text-less label.
+
+## Burned-in captions of the original (video 22)
+- **They are the transcript.** The ad had word-synced captions (black text in white rounded boxes,
+  centred, y 882-942 of 1280; y 300-360 for the first 9.4 s). `caption_sheets.py` crops that band every
+  5 frames, keeps only changed crops and tiles them with times: 327 crops on 4 sheets covered 4:28 and
+  gave every line with ~0.2 s timing. The user did not need to paste a transcript.
+- **Removing them.** `remove_captions.py` finds the box per frame (white columns around the centre,
+  black text inside, mirrored when one side merges with a white background) and fills it with a
+  push-pull fill: a blurred patch with no text. It found a box in 7 908 of 8 019 frames; the rest had
+  no caption (a 3-frame transition and the end card). It took 8 min on the sandbox.
+  - OpenCV Telea inpainting and a top/bottom row blend both left streaks; the push-pull fill looked
+    like a soft blur.
+  - Check afterwards: a "black text on white" signal (white pixels next to near-black ones) in the band
+    fell from a median of ~740 to 0. The few non-zero frames were a black-and-yellow drill, not text.
+- **Placing the new captions.** Put them at the box centre (video 22: `--y 0.713`), so the patch sits
+  behind them. Where the old captions sat elsewhere (the first 9.4 s at the top), move those Dialogue
+  lines with `\pos(540,491)` after `chunk_captions.py`.
+- Do the removal on the original resolution, then cut and upscale (720x1280 to 1080x1920 with lanczos
+  and `cas=strength=0.5`).
+
+## Cutting the competitor's bundle offer (video 22)
+- The original ended with a multi-product bundle (tablets plus washer and dryer sheets) and an end card.
+  The user sells only the tablets, so everything about the bundle and every packshot was cut: 205-255 s
+  and 260-268 s of the source.
+- The new offer and CTA (~22 s of speech) went over neutral shots kept from that stretch: suds in the
+  drum, a rubber broom pulling pet hair from a rug, a laundry room, dog hair, a blanket and a woman
+  smelling it. They were reordered so that the lines matched them, e.g. "Tre enzymer, gjorda för hem med
+  husdjur" over the pet hair on the rug.
+- Shots with leftover overlay text (a "making my clothes extra soft" title) and the competitor's own
+  box were left out as well.
+- Cut and reorder in one ffmpeg pass: `split=N`, then `trim=start_frame=A:end_frame=B+1,setpts=PTS-STARTPTS`
+  per shot, then `concat`. Find exact cut frames from frame differences, and confirm the frame count
+  afterwards (6 825 = 227.73 s).

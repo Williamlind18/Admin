@@ -13,7 +13,7 @@ This skill turns an existing short-form ad into a new version:
 3. The voice timed to the footage.
 4. Word-synced captions burned into the picture.
 
-It was built from a real project the user was very happy with. The scripts in `scripts/` encode what
+It was built from real projects the user was very happy with (best so far: Maskinrent video31). The scripts in `scripts/` encode what
 worked, so run them instead of improvising new tooling. Talk to the user in their language (Swedish
 for the original user), and keep them posted during slow steps (generation ~30 s, render ~3-4 min).
 
@@ -25,7 +25,9 @@ for the original user), and keep them posted during slow steps (generation ~30 s
   sentence. Per-sentence takes made the voice drift ("two different people") and once turned female.
   Check the pitch per sentence and regenerate the whole paragraph take if one deviates.
 - **Natural speed:** never speed the voice up past ~x1.08 (it sounds robotic); slowing down by up to
-  5 % is fine (`--min-tempo 0.95`). v4 has a slight echo: offer the Voice Isolator, don't run it unasked.
+  5 % is fine (`--min-tempo 0.95`). Stretch with **atempo** (the default in `build_voiceover.py`):
+  in another session rubberband sounded metallic/robotic at 1.05-1.09 while atempo sounded natural.
+  v4 has a slight echo: offer the Voice Isolator, don't run it unasked.
 - **Pauses:** short and even, about 0.2-0.3 s between sentences, never over ~0.5 s. Long gaps were the main complaint.
 - **Script for a lively voice:** write for the ear, following "Writing for a lively, human voice" in
   `references/script-writing.md`: short varied sentences, a colon before a reveal, the key word last, lists
@@ -80,7 +82,9 @@ Note down:
   screen). Then use `clean.mp4` as the video for steps 7-8 and put the captions at the old y (`--y`). The
   result is a soft smudge, not a perfect fill. The paid Vmake subtitle removal is cleaner, so offer it.
 - **Background music** (the audio report says so). It cannot be separated, so warn the user now.
-- **Other brands visible in the footage**, and any burned-in text that will remain.
+- **Other brands visible in the footage**, and any burned-in text that will remain. Foreign labels in
+  the picture (e.g. "FILM / PROTEIN" on a close-up) can be covered with white label boxes in the target
+  language. See `references/lessons.md`.
 
 ### 3. Write the script
 Follow `references/script-writing.md`. Save the result as `WORK/script.txt`, one sentence per line, in
@@ -96,6 +100,10 @@ Follow `references/elevenlabs.md`: one take per paragraph of 6-9 sentences with
 `bash $SK/download_clips.sh urls.txt WORK/takes`, split each take into sentence clips with
 `python3 $SK/split_takes.py WORK/takes/G01.mp3 WORK/sent 01 02 ...` (fix any `CHECK` line with
 `--cuts`), then `python3 $SK/tighten_pauses.py WORK/sent`. Keep a running total of credits.
+A short script (≤ ~650 characters) is simply one paragraph take. The other session's variant, one
+eleven_v3 take of the whole script cut with `split_take.py`, also keeps one speaker. Video31 showed that
+v4 paragraph takes sound more alive and are easier to fix, so use paragraph takes unless the user asks
+for v3.
 
 ### 5. Find the word timings
 `python3 $SK/align_words.py WORK/sent --lang sv`. For each boundary it takes the median of three
@@ -112,8 +120,8 @@ python3 $SK/plan_timeline.py WORK/sent --video-duration D \
   each. `end` anchors suit lines whose pointing word comes last. `start` anchors suit lines that open
   on the visual.
 - **Max tempo.** The planner lays sentences out with 0.18 s gaps and picks one tempo per block between
-  anchors, keeping the highest as low as possible. Aim for **≤ 1.10**, and **≤ 1.13** only for the final
-  offer/CTA section. If it is higher, fix the script, not the speed:
+  anchors, keeping the highest as low as possible. Aim for **≤ 1.05** (video31 stayed at 0.95-1.05), never
+  over **1.08**, and at most **1.10** for the final offer/CTA section. If it is higher, fix the script, not the speed:
   - move generic lines in front of an anchor with `--order` (the order file can differ from the
     numbering),
   - tighten wording,
@@ -132,8 +140,10 @@ python3 $SK/plan_timeline.py WORK/sent --video-duration D \
 python3 $SK/build_voiceover.py WORK/sent --out WORK/vo.wav
 python3 $SK/make_captions.py WORK/words_global.json --video WORK/src.mp4 --out-dir WORK --lang sv
 ```
+`build_voiceover.py` stretches with atempo by default. Don't switch to `--stretch rubberband`.
 Captions can be tuned with `--y` (vertical position), `--font`, `--size`, `--max-words`,
-`--max-chars` and `--upper`. Read the printed chunk list and fix any clumsy splits.
+`--max-chars` and `--upper`. Read the printed chunk list and fix any clumsy splits. See
+`references/lessons.md` for hand-written chunks.
 
 ### 8. Render and check
 ```
@@ -160,7 +170,7 @@ Follow `references/delivery.md`:
 ## When things go wrong
 See `references/lessons.md`. It covers:
 - the blocked hosts,
-- why a single long voice take cannot be synced,
+- why the voice must not be one clip per sentence, and why atempo beats rubberband,
 - why Scribe transcripts don't help,
 - what to do when music, competitor branding or old burned-in text is in the footage.
 

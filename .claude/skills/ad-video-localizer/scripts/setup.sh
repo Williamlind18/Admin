@@ -31,7 +31,7 @@ import imageio_ffmpeg, subprocess, shutil
 ff = imageio_ffmpeg.get_ffmpeg_exe()
 filters = subprocess.run([ff, "-hide_banner", "-filters"], capture_output=True, text=True).stdout
 print("ffmpeg:", ff)
-print("rubberband filter:", "yes" if " rubberband " in filters else "no (atempo fallback)")
+print("atempo filter (voice speed-up):", "yes" if " atempo " in filters else "NO")
 print("ass filter:", "yes" if " ass " in filters else "NO - captions cannot be burned in")
 print("espeak-ng:", "yes" if shutil.which("espeak-ng") else "no")
 EOF

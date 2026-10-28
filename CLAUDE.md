@@ -13,6 +13,7 @@
     paragraph take if a sentence deviates.
   - Natural speed: never speed the voice up past about x1.08, because it sounds robotic. A slow-down
     of up to 5 % (`plan_timeline.py --min-tempo 0.95`) is fine.
+  - Stretch with atempo (the `build_voiceover.py` default), never rubberband: it sounded metallic/robotic.
   - v4 has a slight echo. Offer the ElevenLabs Voice Isolator (about 1 000 credits per minute) rather
     than running it unasked.
   - Pauses of about 0.2-0.3 s, never over about 0.5 s. Natural, flowing Swedish.

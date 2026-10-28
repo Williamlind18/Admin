@@ -3,7 +3,7 @@
 ## Environment (Claude Code cloud sandbox)
 - **ffmpeg:** comes from the `imageio-ffmpeg` wheel (PyPI works). It has **no `drawtext` filter**, so
   all on-screen text goes through ASS subtitles (the `ass` filter, libass) with `fontsdir`.
-  `rubberband` is available for pitch-preserving tempo changes.
+  Tempo changes use `atempo`. `rubberband` is also installed, but don't use it for voice (see Audio).
 - **Reachable:** PyPI, Ubuntu apt (archive.ubuntu.com), Google Fonts, the session's GitHub repo and its
   releases, storage.googleapis.com (ElevenLabs downloads).
 - **Blocked:** Hugging Face, OpenAI model CDN, download.pytorch.org, Dropbox, Google Drive,
@@ -12,6 +12,16 @@
   signal analysis plus the known text. Say so honestly and ask the user to check the result.
 
 ## Audio
+- **rubberband sounds robotic; atempo does not** (another session, Maskinrent video 2 with eleven_v3).
+  The opening 9 s were unstretched and the rest sped up 5-8.5 % with rubberband. The user said: "perfect
+  for 9 seconds, then it went back to the robotic sound". The same take with `atempo` sounded "so much
+  better", so `build_voiceover.py` uses atempo by default. (Video31 used rubberband at only 0.95-1.05 and
+  sounded fine, but keep atempo.)
+- The connector exposes **no voice settings** (stability, seed, similarity, speed) for eleven_v3 or
+  multilingual_v2. The schema only has `voice_id` and `language_code`. Consistency has to come from
+  how the audio is generated: paragraph takes (v4) or one whole-script take (v3, `split_take.py`).
+- A regenerated sentence is not guaranteed to be shorter, even with fewer words: a trimmed line came back
+  0.3 s longer. Settle the wording before generating.
 - If the original ad has music under the voice, it cannot be separated here (source-separation models
   are blocked). The output is voice-only unless the user supplies the music file. Mix it with
   `render.py --bed music.mp3 --bed-db -16`.
@@ -52,6 +62,19 @@
   Say so.
 - Keep captions to 1-3 words, with no dangling "och / i / ett" at the end of a chunk. make_captions.py
   splits each phrase with a small search that penalises such endings and lone short words (strict 3-word limit).
+  Still read the chunk list. If several chunks are clumsy, write them by hand, one line per sentence with
+  chunks separated by `|`, and build the Dialogue lines from `words_global.json` with the same style and
+  timing rule as make_captions.py (another session did this for Maskinrent video 2).
+- **Burned-in foreign text in the picture** (e.g. English labels "FILM / PROTEIN / GREASE" on a close-up):
+  the user wanted it covered by **white rounded boxes with black Montserrat ExtraBold text in the target
+  language**.
+  - Add them as extra ASS events: a `\p1` rounded-rectangle drawing on layer 1 and the word on layer 2,
+    with the same start and end.
+  - Measure where the text sits over its whole lifetime, because it may move and flicker. Look at gridded
+    frames every 0.2 s, and size each box to cover the full extent plus a margin.
+  - End the boxes exactly at the scene cut; find it with frame differences at 30 fps.
+  - Check a 0.2 s grid of the render to confirm that nothing peeks out.
+  - For whole caption tracks, use `burned_captions.py` instead (see SKILL.md step 2).
 - Burned-in captions (video23, white rounded boxes with black text): `burned_captions.py detect` read all
   96 captions with their times, and the script was written and timed from them. A plain white-threshold
   box detector missed every box that touched a bright background (white machines, foam). The black-text
@@ -80,7 +103,9 @@
 
 ## Footage and content
 - Look for **other brands in the footage** (packaging, websites, logos) and warn the user. Offer to cover
-  those shots with the user's product image if they upload one.
+  those shots with the user's product image if they upload one. On Maskinrent video 2 (other session)
+  the user chose to keep the competitor's box shots; on video23 and video31 they asked to cut the
+  competitor's end card (and on video31 a trade-show clip).
 - When the user sends a re-cut of a video you already did, run `analyze_video.py NEW --reference OLD`.
   Unchanged sections keep their timestamps, so earlier anchors can be reused.
 - Rendering 1080×1920 for 110 s takes about 3.5 min on the sandbox. Tell the user it's coming.

@@ -2,11 +2,15 @@
 """Assemble the voice track from the per-sentence clips according to plan.json.
 
 For every planned sentence: cut the clip to its speech, shorten internal pauses
-longer than 0.30 s to 0.22 s, speed it up with the rubberband filter
-(pitch-preserving; atempo fallback), and place it so the first word starts at
-the planned time. Word timings from fused.json are transformed the same way.
+longer than 0.30 s to 0.22 s, speed it up with ffmpeg's atempo filter (WSOLA,
+pitch-preserving), and place it so the first word starts at the planned time.
+Word timings from fused.json are transformed the same way.
 
-Usage: build_voiceover.py SENT_DIR --out WORK/vo.wav
+Speed-up method: atempo is the default because the user heard the rubberband
+filter as metallic/robotic from the first sped-up sentence on, while atempo at
+~1.05-1.09 sounded natural. --stretch rubberband is kept only for comparison.
+
+Usage: build_voiceover.py SENT_DIR --out WORK/vo.wav [--stretch atempo|rubberband]
 Writes the wav (exactly video length) and words_global.json next to it.
 """
 import argparse
@@ -31,7 +35,7 @@ def has_rubberband():
     return " rubberband " in out
 
 
-def stretch(seg, f, rb):
+def stretch(seg, f, rb=False):
     if abs(f - 1.0) < 1e-3:
         return seg
     with tempfile.TemporaryDirectory() as td:
@@ -47,12 +51,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("sent_dir")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--stretch", choices=["atempo", "rubberband"], default="atempo",
+                    help="speed-up filter; atempo sounds natural on speech, rubberband sounded robotic")
     a = ap.parse_args()
     F = {s["id"]: s for s in load_json(os.path.join(a.sent_dir, "fused.json"))["sentences"]}
     P = load_json(os.path.join(a.sent_dir, "plan.json"))
-    rb = has_rubberband()
-    if not rb:
-        print("note: rubberband filter missing - using atempo (slightly lower quality)")
+    rb = a.stretch == "rubberband" and has_rubberband()
+    if a.stretch == "rubberband" and not rb:
+        print("note: rubberband filter missing - using atempo")
     total = P["video_duration"]
     track = np.zeros(int((total + 2) * SR), np.float32)
     words_out = []

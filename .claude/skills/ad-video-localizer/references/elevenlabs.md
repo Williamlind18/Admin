@@ -18,10 +18,13 @@ The voice ID changes between projects, so ask for it every time. Never reuse one
 The first status result shows the voice's display name. Mention it so the user can
 catch a wrong ID early.
 
+The connector exposes **no voice settings** (no stability, seed, similarity or speed; the schema only
+has `voice_id` and `language_code`). Consistency therefore has to come from how the audio is generated.
+
 ## Models and cost (measured)
 | model | use | credits | Swedish speaking rate |
 |---|---|---|---|
-| `eleven_v4` | **standard final voice** (user's choice from video 2): most human, natural pace; a slight echo | showed 0 in the status results (Sept 2026); check `price` | ~18 chars/s in paragraph takes |
+| `eleven_v4` | **standard final voice** (user's choice; video31 was the best so far): most human, natural pace; a slight echo | ~1 per character (Oct 2026); check `price` | ~16.5-18 chars/s in paragraph takes, depending on the voice |
 | `eleven_v3` | video 1's voice; the most even pitch in paragraph takes, but reads ~15 % slower than v4 | ~1 per character | ~15 chars/s |
 | `eleven_multilingual_v2` | older default; ~13 % faster speech than v3 | ~1 per character | ~19 chars/s |
 | `eleven_flash_v2_5` | word-by-word timing reference only | ~0.5 per character | — |
@@ -68,20 +71,31 @@ Check the result for odd sentences: median pitch per clip (librosa `pyin`) shoul
 ±15 Hz of the voice's median; a clip far above it (e.g. 157 Hz with peaks at 270 Hz for a ~110 Hz
 male voice) is a different voice and its take must be regenerated.
 
-## Why not one long take of the whole script
-One take of 5 minutes cannot be split or synced reliably, and a regenerated fix would change everything.
-Paragraph takes keep the voice consistent while every sentence still gets an exact start and end, and
-the planner can still move sentences onto visuals and set tempo per section.
+## Alternative: one take of the whole script (eleven_v3)
+Another session made eleven_v3 consistent by reading the **whole script in one call**. A 2 141-character
+script was accepted, took ~2 min and came back as 158.6 s with 0.4-0.8 s sentence pauses. It was cut
+with `python3 scripts/split_take.py WORK/take.mp3 WORK/sent`; check that no row is marked `<-- check`.
+It keeps one speaker too, but a fix means regenerating everything. Use it only if the user wants v3.
+
+## Why paragraph takes rather than one long take
+A 4-5 minute take is harder to cut exactly, and fixing one sentence means regenerating everything.
+Paragraph takes keep the voice consistent while every sentence still gets an exact start and end. A
+fix costs one paragraph (~500 credits), and the planner can still move sentences onto visuals and set
+tempo per section.
 
 ## Things that do not work
 - `creative_transcribe_audio` (Scribe) through the connector returns plain text with **no timestamps**,
   so it is useless for syncing.
+- Speeding the voice up with the **rubberband** filter. It sounded robotic to the user. `atempo` is the
+  default in `build_voiceover.py`.
 - Downloading speech-recognition models (Whisper and similar) is blocked in the cloud sandbox. That is
   why `align_words.py` combines three model-free methods.
 
 ## Writing text for TTS
 - For a lively, human delivery, follow "Writing for a lively, human voice" in `script-writing.md`.
 - Punctuation drives the pauses. A comma gives a short pause, "…" a longer one.
+- End every sentence with `.`, `?` or `!` (one per line in `script.txt`): the splitters cut at the
+  sentence pauses that full stops give.
 - Write numbers and symbols as words: "fyra komma åtta av fem", "sextio dagars", "femtio procent".
 - If a brand name is mispronounced, spell it phonetically in the TTS text only, and keep the correct
   spelling for the captions by editing `NN.txt` after generation.

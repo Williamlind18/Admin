@@ -2,7 +2,7 @@
 """Read and remove burned-in captions of the common TikTok style: a white (rounded) box with dark text.
 
   burned_captions.py detect SRC.mp4 OUT_DIR
-      Finds the caption box in every frame (box shape where it stands out from the footage, black
+      [--box-h 55]  Finds the caption box in every frame (box shape where it stands out from the footage, black
       glyphs on white where the box merges with a bright background), writes OUT_DIR/boxes.json,
       OUT_DIR/segments.json and contact sheets OUT_DIR/captions_N.png: one crop per caption with its
       start time, so the original script and its timing can be read with the Read tool.
@@ -39,14 +39,14 @@ def frames(src):
     return rd, meta["size"], meta["fps"]
 
 
-def by_box(img, W):
+def by_box(img, W, bh):
     white = (img.min(axis=2) >= 243).astype(np.uint8)
     closed = cv2.morphologyEx(white, cv2.MORPH_CLOSE, np.ones((21, 21), np.uint8))
     n, _, st, _ = cv2.connectedComponentsWithStats(closed, 8)
     best = None
     for i in range(1, n):
         x, y, w, h, area = st[i]
-        if not (44 <= h <= 66 and 70 <= w <= 700) or area / float(w * h) < 0.85:
+        if not (0.8 * bh <= h <= 1.2 * bh and 70 <= w <= 700) or area / float(w * h) < 0.85:
             continue
         dark = (img[y:y + h, x:x + w].max(axis=2) < 90).mean()
         if not (0.04 <= dark <= 0.45) or abs(x + w / 2 - W / 2) > 40:
@@ -56,7 +56,7 @@ def by_box(img, W):
     return best
 
 
-def by_text(img, W):
+def by_text(img, W, bh):
     dark = (img.max(axis=2) < 80).astype(np.uint8)
     near = cv2.dilate((img.min(axis=2) >= 235).astype(np.uint8), np.ones((5, 5), np.uint8))
     m = cv2.morphologyEx(dark & near, cv2.MORPH_CLOSE, np.ones((3, 19), np.uint8))
@@ -64,9 +64,9 @@ def by_text(img, W):
     best = None
     for i in range(1, n):
         x, y, w, h, _ = st[i]
-        if not (14 <= h <= 34 and w >= 40) or abs(x + w / 2 - W / 2) > 45:
+        if not (14 <= h <= min(34, bh - 6) and w >= 40) or abs(x + w / 2 - W / 2) > 45:
             continue
-        bx, by, bw, bh = x - 16, y + h // 2 - 27, w + 32, 55
+        bx, by, bw = x - 16, y + h // 2 - bh // 2, w + 32
         if bx < 0 or by < 0 or by + bh > img.shape[0]:
             continue
         reg = img[by:by + bh, bx:bx + bw]
@@ -86,7 +86,7 @@ def detect(a):
     for k, fr in enumerate(rd):
         full = np.frombuffer(fr, np.uint8).reshape(H, W, 3)
         img = full[Y0:Y1]
-        b = by_box(img, W) or by_text(img, W)
+        b = by_box(img, W, a.box_h) or by_text(img, W, a.box_h)
         if b:
             x, y, w, h = b[0], b[1] + Y0, b[2], b[3]
             b = [x, y, w, h]
@@ -200,6 +200,7 @@ def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
     d = sub.add_parser("detect"); d.add_argument("src"); d.add_argument("out_dir")
+    d.add_argument("--box-h", type=int, default=55, help="caption box height in pixels (measure one frame)")
     r = sub.add_parser("remove"); r.add_argument("src"); r.add_argument("boxes"); r.add_argument("out")
     r.add_argument("--manual", action="append", default=[], help="T0-T1:x,y,w,h")
     r.add_argument("--only", help="comma-separated times: write before/after PNGs instead of a video")

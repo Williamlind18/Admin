@@ -1,0 +1,77 @@
+Norrtvätt Maskinrent – video31 (svenska)
+Röst: ElevenLabs eleven_v4, language_code sv, voice ID OvO33bxTqNfwQfoR6mVh ("Äldre man 50-60 år - SE"), nio stycketagningar.
+Musik: ElevenLabs Music v2.5, instrumentalt underlag (140 s, loopat med övertoning till 269 s), ca 19 dB under rösten.
+Källa: GitHub-release video31 (samma Uproot-annons som video 2, längre klipp). Originaltexten lästes av från den inbrända texten, som har tagits bort ur bilden.
+Bortklippt: utställningen (251,0-254,6 s i originalet) och slutbilden med produkten (272,8-276,1 s). Videon är 269,2 s.
+Ingår INTE i norska listan (skapad efter 2026-10-27).
+
+SVENSKT MANUS (start - slut i videon)
+01    0.10-  4.01  Luktar tvätten unket, gömmer sig det här troligen i din maskin.
+02    4.21-  8.00  Efter nitton år som reparatör visar jag NASA-knepet som tar bort det.
+03    8.30-  8.71  Titta här.
+04    8.91- 10.87  Det är varken smuts eller tvättmedel.
+05   11.07- 16.22  Det är ett levande lager av djurhår, fett och mjäll som suttit bakom kundens trumma i månader.
+06   16.42- 19.43  Därför slutade hennes tvätt aldrig lukta blöt hund.
+07   19.63- 24.77  Varje tvätt spolade vatten genom beläggningen och förde bakterier och mögel tillbaka till kläderna.
+08   24.97- 26.67  Lukten var bara det hon märkte.
+09   26.87- 30.98  Det hon inte såg var att allt hon bar kom ut med det som växte där inne.
+10   31.18- 35.98  Jag har lagat tvättmaskiner i nitton år, och nu visar jag samma knep som jag visade henne.
+11   36.18- 41.80  Husdjursägare ringer mig alltid om samma sak, lukten av blöt hund på en nytvättad tröja.
+12   42.00- 45.39  Och nästan alla oroar sig tyst för att andra också känner den.
+13   45.59- 48.28  Nio gånger av tio är det inget fel på maskinen.
+14   48.48- 50.88  Problemet är något levande som växer där inne.
+15   51.08- 52.66  Sara var inget undantag.
+16   52.86- 57.92  Hon bytte tvättmedel, körde ättika, använde klorin och en maskintablett i månaden.
+17   58.12- 58.94  Inget hjälpte.
+18   59.14- 63.00  Jag sa att hon kokade kläderna i mögel, och hon trodde att jag var galen.
+19   63.20- 64.10  Så jag visade henne.
+20   64.40- 70.03  Bakom trumman finns ett förseglat utrymme som vattnet forsar igenom, men som du aldrig ser eller når.
+21   70.23- 75.77  Med husdjur samlas tvättmedel, sköljmedel, fett och djurhår där bak och försvinner aldrig.
+22   75.97- 77.59  Och sen händer det otäcka.
+23   77.79- 83.35  I fukten flyttar bakterier och mögel in, bygger en slemmig sköld över sig själva och gömmer sig under den.
+24   83.55- 86.39  Den kallas biofilm, och den fungerar som en rustning.
+25   86.59- 89.20  Därför överlever lukten allt du försöker med.
+26   89.40- 94.17  Den kan få fäste i en ny maskin på två veckor, och med husdjur får den mat hela tiden.
+27   94.37- 98.53  Bakom Saras trumma levde alltså en koloni som överlevt varje tvätt.
+28   98.73-101.60  Sen förklarade jag varför inget hon testat hade bitit.
+29  101.80-104.95  Ättika blir för utspädd så fort maskinen fylls med vatten.
+30  105.15-109.20  Klorin får bara ytan att lukta bättre en dag, medan kolonin ligger kvar.
+31  109.40-113.32  Varenda maskintablett i butiken bygger på syrebaserat blekmedel.
+32  113.52-117.12  En kemikalie från nittonhundrafyra, som används för att den är billigast.
+33  117.32-122.85  Den klarar tvålrester, men djurhår är protein, mjäll är fett, och biofilmen är samma sak.
+34  123.05-127.72  Blekmedel kan inte bryta ner protein eller fett, så det rengör bara runt biofilmen.
+35  127.92-131.50  Sara skrubbade alltså bara ytan, medan källan låg orörd.
+36  131.80-135.76  Då tog jag fram en tablett, släppte i den och startade ett varmt program.
+37  135.96-140.22  Den fräste till och skickade skum in bakom trumman och ner i avloppet.
+38  140.43-142.59  Jag erkänner att jag gillar den här delen.
+39  142.78-147.00  Det enda som bryter ner en biofilm är enzymer, de löser upp skölden.
+40  147.30-149.17  Och det här kommer från NASA:s forskning.
+41  149.37-154.70  Samma biofilm växer i rymdskeppens vattenledningar, där inget starkt får användas.
+42  155.00-158.72  Sjukhus och tvätterier använder enzymer, inte blekmedel.
+43  158.92-162.50  Proffsen har vetat i årtionden, men ingen har berättat det för dig.
+44  162.80-165.40  Den här tabletten har de tre enzymerna som spelar roll.
+45  165.60-170.43  Alfa-amylas löser upp hinnan som håller fast biofilmen, så att allt under blottas.
+46  170.63-174.21  Proteas bryter ner proteinet i djurhåren, så att de spolas ut.
+47  174.41-180.16  Och lipas tar bort det feta lagret som bakterierna lever av, så lukten inte kommer tillbaka.
+48  180.36-182.80  Ett blottar, ett förstör, och ett svälter ut resten.
+49  183.10-186.57  Tabletten heter Maskinrent, från svenska Norrtvätt.
+50  186.77-191.49  Just nu får du upp till femtio procent rabatt, fri frakt och trettio dagars garanti.
+51  191.69-194.70  Har du husdjur och unken tvätt, finns länken här nedanför.
+52  195.00-198.83  När programmet var klart såg vattnet ut som i början av videon.
+53  199.03-203.61  Blekmedel hade inte fått ut det på ett år, men ett enzymprogram klarade det på en tvätt.
+54  203.81-210.54  Nästa morgon ringde hon nästan chockad, ingen lukt alls, inte lavendel, inte havsbris, ingenting.
+55  210.74-215.55  Hon tvättade hundens filt, tryckte ansiktet mot den och sa att den äntligen var ren.
+56  215.75-219.71  Nu sätter jag alla husdjursägare på samma rutin, en tablett i månaden.
+57  219.91-224.90  Lukten släpper efter första tvätten och är borta efter ett par veckor, och ingen har ringt mig om den igen.
+58  225.20-229.57  Jag gav den till min kund som behövde den mest, en mamma med två schäfrar och en grand danois.
+59  229.77-231.86  Hennes maskin hade varit med om allt.
+60  232.06-235.37  Dagarna efter ringde hon: handdukarna luktade ingenting.
+61  235.57-237.70  Hon hade sniffat på dem som en galning.
+62  238.00-242.25  Hos en annan familj vägrade dottern sova med sin filt, den luktade.
+63  242.60-246.20  Snart kom en bild på henne under filten, hunden vid fötterna.
+64  246.55-247.81  Hon ville ha den tillbaka. Tack.
+65  248.30-253.57  Den heter Norrtvätt Maskinrent och är gjord för det som växer i husdjursägares maskiner.
+66  253.77-256.50  Den löser hår, fett och lukt och är skonsam mot alla ytor.
+67  256.80-260.17  Över femton tusen kunder har redan bytt.
+68  260.37-265.41  Just nu är det höstrea med fri frakt, och med fyrpacket blir det bara tjugo kronor per tablett.
+69  265.61-268.95  Och fungerar den inte får du pengarna tillbaka inom trettio dagar.

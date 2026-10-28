@@ -138,6 +138,12 @@ python3 $SK/render.py --video WORK/src.mp4 --audio WORK/vo.wav --ass WORK/captio
     --fonts WORK/fonts --out WORK/final.mp4 --preview WORK/preview.mp4 --check-frames 44.2,90.0 \
     [--bed music.mp3 --bed-db -16]
 ```
+**Music:** if the user wants music, generate an instrumental bed with ElevenLabs Music (`node_type: music`,
+`eleven_music_v2_5`, `instrumental: true`; describe the sound, not the story). It costs about 26 credits per
+second (270 s ≈ 7 200 credits), so for a long ad make a steady ~140 s piece, loop it with ffmpeg
+`acrossfade=d=4` and trim it to the video with a short fade-out, then pass it as `--bed` (`--bed-db -19` sat
+well under the voice). Check `estimate_only` first and tell the user the cost.
+
 The QA line must show 0.00 s of speech without a caption and no unintended pauses over 0.5 s. Open
 the check frames at the anchor times with Read, and confirm that the caption shown matches the visual
 (e.g. "det här" on the close-up).

@@ -78,7 +78,13 @@ def main():
     to_wav16k(a.out, tmp)
     y, _ = librosa.load(tmp, sr=16000)
     os.remove(tmp)
-    db = db_curve(y)
+    # with a music bed the mix is never quiet, so find speech and pauses in the voice track itself
+    yv = y
+    if a.bed:
+        to_wav16k(a.audio, tmp)
+        yv, _ = librosa.load(tmp, sr=16000)
+        os.remove(tmp)
+    db = db_curve(yv)
     speech = db > -45
     cov = np.zeros(len(db), bool)
     for s, e in ass_times(a.ass):

@@ -62,6 +62,15 @@
   takes with align_words.py and trim wording before planning. Trimming 80 characters across two
   paragraphs brought the maximum tempo from ~1.14 to 1.02.
 
+- Video31 (720x900, captions in 44 px boxes at y 0.88): `burned_captions.py detect --box-h 44` read all
+  606 captions, and the remove step needed one `--manual` box. Cutting parts of the footage (an exhibition,
+  the end card) is easiest on the cleaned video with ffmpeg `select='lt(n,A)+between(n,B,C)',setpts=N/30/TB`.
+  Map the original line times to the cut timeline before choosing anchors.
+- With a music bed the final mix is never quiet, so render.py now measures speech and pauses on the voice
+  track (`--audio`) instead of the mix.
+- A short exclamation ("Titta här.") came out ~100 Hz above the "Äldre man 50-60 år - SE" voice's median
+  in two takes in a row, with a flat contour. A regenerated take fixed the next sentence but not that
+  one. Mention such lines to the user rather than regenerating again and again.
 - Cutting a competitor end card (video23, the last 2.4 s): re-run `plan_timeline.py` with
   `--video-duration` at the cut (find it with ffmpeg `select='gt(scene,0.25)',showinfo`), cut the clean
   video with `-frames:v`, then rebuild the voice, captions and render. Drop or widen the late anchors so

@@ -56,7 +56,8 @@ which filters are available.
 ### 1. Intake
 Ask in **one** message for whatever is missing:
 - **The video.** See `references/delivery.md`. Files over 25 MB go through a GitHub release.
-- **The original voiceover text.** You cannot transcribe audio here.
+- **The original voiceover text.** If the video has burned-in captions, you can read them yourself
+  with `burned_captions.py read` (step 2), which also gives timestamps. Otherwise ask for it.
 - **Target language**, and whether to translate directly or adapt.
 - **The ElevenLabs voice ID.** Check that the ElevenLabs connector tools are available; see
   `references/elevenlabs.md`.
@@ -73,6 +74,13 @@ Note down:
 - **Background music** (the audio report says so). It cannot be separated, so warn the user now.
   Offer a generated instrumental bed if they have no music file (see `references/elevenlabs.md`).
 - **Other brands visible in the footage**, and any burned-in text that will remain.
+- **Burned-in captions to remove** (the user may ask for this). Find the caption box rows on one
+  frame, then run `python3 $SK/burned_captions.py read WORK/src.mp4 --box Y0-Y1 --out WORK/caps.json`
+  (OCR with timestamps plus `caps_N.png` mosaics to read by eye) and
+  `python3 $SK/burned_captions.py remove WORK/src.mp4 --box Y0-Y1 --out WORK/clean.mp4
+  [--hook R0-R1:SECONDS] [--end SECONDS]`. `--hook` also paints out a big hook text at the top,
+  `--end` cuts off an end card. Use `clean.mp4` as the video from then on, and put the new captions
+  at the box centre (`make_captions.py --y`) so they cover the inpainting smudge.
 
 ### 3. Write the script
 Follow `references/script-writing.md`. Save the result as `WORK/script.txt`, one sentence per line, in
@@ -93,8 +101,17 @@ Download with `bash $SK/download_clips.sh urls.txt WORK` (names `take` and `iso`
 real sentence pause (≥ ~0.35 s; v3 takes usually have 0.4-0.8 s) and no row should be marked
 `<-- check`. Keep a running total of credits for the report.
 
+**Better: transcribe the take with Scribe** (`creative_transcribe_audio`, connect_from = the take's
+node id; it costs 0 credits). It returns the text **with word timestamps** (`words_download_url`).
+Diff the text against the script (skipped or changed words mean a new take), save the words as
+`WORK/words.json` and split with `python3 $SK/split_take.py WORK/take.mp3 WORK/sent --words
+WORK/words.json`. That cuts at the real gaps even when the voice barely pauses (one voice had
+0.13-0.46 s sentence pauses and the pause-based split put five cuts mid-sentence), and it writes
+`NN.words.json`, which step 5 uses as the word timings. Then the flash reference is not needed.
+
 ### 5. Find the word timings
-`python3 $SK/align_words.py WORK/sent --lang sv`. For each boundary it takes the median of three
+`python3 $SK/align_words.py WORK/sent --lang sv`. With `NN.words.json` from `split_take.py --words`
+it uses the Scribe word times. Otherwise, for each boundary it takes the median of three
 estimates (syllables, espeak DTW, same-voice reference DTW). This was checked against the original
 project and reproduced its timings exactly. Note sentences whose "spread" is 0.6 s or more; those are
 the least certain.
@@ -159,7 +176,7 @@ Follow `references/delivery.md`:
 See `references/lessons.md`. It covers:
 - the blocked hosts,
 - why the voice must be one take that is split, not one clip per sentence, and why atempo beats rubberband,
-- why Scribe transcripts don't help with timing (but do catch skipped words),
+- Scribe transcripts (word timestamps, skipped words),
 - what to do when music, competitor branding or old burned-in text is in the footage.
 
 ## Security

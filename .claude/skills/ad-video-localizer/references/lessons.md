@@ -36,10 +36,30 @@
 - **Reuse the word reference.** After a script change, cut the old `iso.mp3` into words
   (`segment_isolated` in `align_words.py`) and only generate the new words ("ord. ord.") with
   flash. That cost 36 credits instead of about 1 100.
-- **Check the take with Scribe.** `creative_transcribe_audio` has no timestamps, but it is a cheap
-  way to confirm that eleven_v3 did not skip or change words. Pass the take's node id as
-  `connect_from`. Diff the text against `script.txt`, especially for sentences that came out much
-  faster than expected.
+- **Check the take with Scribe.** `creative_transcribe_audio` costs 0 credits and now returns word
+  timestamps. Diff its text against `script.txt` to confirm that eleven_v3 did not skip or change
+  words, and use its words for `split_take.py --words` (see the next section).
+
+## Burned-in captions and short pauses (learned on the "panel" video, voice "Äldre man 50-60 år")
+- The user asked me to **remove the original captions myself** and read the script from them.
+  `burned_captions.py read` OCRs every caption with its time (tesseract; read the `caps_N.png`
+  mosaics to fix OCR slips), and `remove` inpaints the boxes and the big red/white hook text, and
+  cuts off the competitor's end card (`--end`, find the first end-card frame with frame differences).
+  The inpainting leaves a soft smudge where the box was; captions placed at the box centre cover
+  most of it. Check the result by running the box detector on `clean.mp4` (0 frames should match).
+- Storing a crop per frame for 6 700 frames ran the sandbox out of memory. Stream frames instead.
+- This voice paused only 0.13-0.46 s between sentences, so the pause-based `split_take.py` put five
+  cuts inside sentences (a 47-character sentence came out as 1.9 s). Global DTW against an espeak
+  rendering found the right cuts, and Scribe's word timestamps confirmed them exactly; that is now
+  built in as `split_take.py --words`. Sanity check after any split: every sentence should run at
+  roughly 12-20 characters per second.
+- Scribe word *ends* run on into the next pause (sentence gaps looked like 0.03-0.08 s), so cut at
+  the quietest stretch between the last word's start and the next word's end, not at the word end.
+- The planner's ending was infeasible (offer + CTA needed 17 s after the last anchor, the footage had
+  13.7 s). Dropping the offer anchor and letting the product-name line start ~1 s before the box
+  appears fixed it at x1.06.
+- A 3:40 render at 720x1280 came out at 105.6 MB. GitHub refuses files over 100 MB, so re-encode
+  with `-crf 24 -preset slow -c:a copy` (74 MB) before committing.
 
 ## Audio
 - If the original ad has music under the voice, it cannot be separated here (source-separation models

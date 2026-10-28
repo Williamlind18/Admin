@@ -1,46 +1,52 @@
-Norrtvätt Maskinrent – video32 (svenska)
-Röst: ElevenLabs eleven_v4, language_code sv, voice ID OvO33bxTqNfwQfoR6mVh ("Äldre man 50-60 år - SE"), fem stycketagningar, atempo.
+Norrtvätt Maskinrent – video32 (svenska), version 2 (2026-10-28)
+Röst: ElevenLabs eleven_v4, language_code sv, voice ID OvO33bxTqNfwQfoR6mVh ("Äldre man 50-60 år - SE"), sex stycketagningar, atempo (högst x1,08).
 Musik: samma instrumentala ElevenLabs-underlag som video31, ca 19 dB under rösten.
 Källa: GitHub-release video32 (Uproot mot Affresh, jämförelsetest). Originaltexten lästes av från den inbrända texten, som har tagits bort ur bilden.
 Bortklippt (källans tider): 55,4-58,3 (kvinna med Uproot-kartong), 102,2-103,6 (Uproot-kartong i delad bild), 105,8-107,0 (kvinna med Uproot-kartong),
-  112,2-113,6 (Affresh i butik med $20), 117,0-117,7 (Uproot-kartong), 127,5-131,0 (slutbilden med deras produkt). Videon är 2:00.
-Svenska rutor över engelsk grafik: VANLIG TABLETT / NORRTVÄTT MASKINRENT (ikoner), UPPFUNNET 1904, VANLIG TABLETT RENGÖR BARA 20 %,
-  MASKINRENT BRYTER NER 80 %, SYREBASERAT BLEKMEDEL, PASSAR ALLA TVÄTTMASKINER (över EWG-loggan), 2 DAGAR, 2 MÅNADER +,
-  REA UPP TILL 50 % + FRI FRAKT, 20 KR PER TABLETT MED FYRPACKET, 30 DAGARS PENGARNA TILLBAKA.
+  109,3-112,2 (andra Uproot-erbjudandet; den suddiga bakgrunden 107,0-109,3 är nedsaktad och bär REA-texten), 112,2-113,6 (Affresh i butik med $20),
+  117,0-117,7 (Uproot-kartong), 127,5-131,0 (slutbilden med deras produkt). Videon är 2:00.
+Engelsk grafik är borttagen ur bilden (AI-borttagning med LaMa, körd lokalt, plus ren bakgrund från andra bildrutor) i stället för att täckas
+  med vita rutor: ikonerna, INVENTED 1904, CLEANS ONLY 20 % + Affresh-kartong, DEMOLISHES THE 80 % + Uproot-kartong, OXYGEN BLEACH,
+  EWG-loggan, 2 DAYS, 2 MONTHS +, BUY 2 GET 2 FREE + Uproot-kartonger och 60 DAY MONEY BACK GUARANTEE
+  (i rea- och garantibilden ligger texten på en frostad, suddig bakgrund).
+Nya svenska texter i annonsens stil, var och en tajmad till ordet i rösten: VANLIG TABLETT / MASKINRENT, UPPFUNNET 1904,
+  RENGÖR BARA 20 % (VANLIG TABLETT), DJURHÅR · MJÄLL · FETT och 80 % på "åttio", SYREBASERAT BLEKMEDEL, PASSAR ALLA TVÄTTMASKINER,
+  2 DAGAR, 2 MÅNADER +, REA, UPP TILL 50 %, + FRI FRAKT, MED FYRPACKET, 20 KR på "tjugo kronor", PER TABLETT, 30 DAGARS, PENGARNA TILLBAKA.
+Enzymerna: animationerna ALPHA AMYLASE / PROTEASE / LIPASE ligger kvar; rösten säger varje namn när det dyker upp (inom 0,1 s).
 Ingår INTE i norska listan (skapad efter 2026-10-27).
 
 SVENSKT MANUS (start - slut i videon)
-01    0.10-  3.70  Till vänster: vattnet som en vanlig maskintablett fick ut ur maskinen.
-02    4.00-  7.20  Till höger: det Maskinrent drog ut ur en likadan maskin.
-03    7.40- 11.90  Vi tog två likadana maskiner från samma djurhem, båda med unken lukt.
-04   12.20- 16.52  Den ena fick en vanlig tablett, den andra Maskinrent, på samma varma program.
-05   16.71- 21.00  Den vanliga gav grumligt, lite grått och skummigt vatten, och det var allt.
-06   21.30- 27.70  Maskinrents vatten kom ut nästan svart, tjockt av djurhår, fett och slam som gömt sig i månader.
-07   28.00- 31.72  Två likadana maskiner, och bara en tablett fick ut problemet.
-08   31.92- 33.54  Och det finns en enkel förklaring.
-09   33.74- 38.70  Vanliga tabletter bygger på syrebaserat blekmedel, uppfunnet redan nittonhundrafyra.
-10   39.00- 42.53  De stora märkena håller fast vid det av en anledning: det är billigast.
-11   42.73- 47.00  Det löser tvålrester och kalk, men det är bara tjugo procent av det som sitter i maskinen.
-12   47.30- 52.00  Djurhåren, mjället och fettet som bakterierna lever av är de andra åttio procenten.
-13   52.30- 54.54  Där sköljer blekmedlet bara rakt över.
-14   54.74- 57.41  Maskinrent bygger inte på blekmedel alls.
-15   57.61- 60.41  Den använder enzymer, och inte vilka som helst.
-16   60.61- 66.00  Samma sorts enzymer som NASA använder i slutna rymdsystem, där inget starkt får användas.
-17   66.30- 69.75  Alfa-amylas löser hinnan som håller fast allt mot trumman.
-18   69.94- 74.45  Proteas bryter ner proteinet i djurhåren, största källan till unken lukt.
-19   74.65- 77.77  Och lipas tar bort fettet som luktbakterierna lever av.
-20   77.97- 81.13  Det är det som spolar ut all dold beläggning, och lukten med.
-21   81.33- 84.78  Ändå passar den alla tvättmaskiner och skadar inte maskinen.
-22   84.98- 87.73  Därför håller resultatet i stället för att blekna.
-23   87.93- 92.42  Redan efter första programmet luktar kläderna fräscht, och folk omkring dig märker det.
-24   92.62- 95.03  Maskinen går tystare och tömmer snabbare.
-25   95.23- 97.80  Med den vanliga luktade det bättre i två dagar.
-26   98.10-100.77  Med Maskinrent har det hållit i två månader.
-27  101.10-104.90  Just nu är det rea med upp till femtio procent och fri frakt.
-28  105.20-109.50  Med fyrpacket blir det bara tjugo kronor per tablett, en tablett i månaden.
-29  109.80-113.80  Och du har trettio dagars pengarna-tillbaka-garanti, helt utan risk.
-30  114.10-117.65  Du har sett vattnet och vetenskapen, så du vet vad maskinen behöver.
-31  117.85-119.72  Klicka nedan medan rean pågår.
+01    0.10-  3.85  Till vänster: vattnet som en vanlig maskintablett fick ut ur maskinen.
+02    4.00-  7.26  Till höger: det Maskinrent drog ut ur en likadan maskin.
+03    7.46- 12.05  Vi tog två likadana maskiner från samma djurhem, båda med unken lukt.
+04   12.20- 16.59  Den ena fick en vanlig tablett, den andra Maskinrent, på samma varma program.
+05   16.79- 21.15  Den vanliga gav grumligt, lite grått och skummigt vatten, och det var allt.
+06   21.30- 28.15  Maskinrents vatten kom ut nästan svart, tjockt av djurhår, fett och slam som gömt sig i månader.
+07   28.30- 32.13  Två likadana maskiner, och bara en tablett fick ut problemet.
+08   32.33- 33.99  Och det finns en enkel förklaring.
+09   34.19- 39.30  Vanliga tabletter bygger på syrebaserat blekmedel, uppfunnet redan nittonhundrafyra.
+10   39.45- 43.23  De stora märkena håller fast vid det av en anledning: det är billigast.
+11   43.43- 48.00  Det löser tvålrester och kalk, men det är bara tjugo procent av det som sitter i maskinen.
+12   48.15- 52.00  Djurhåren, mjället och fettet är de andra åttio procenten.
+13   52.15- 54.54  Där sköljer blekmedlet bara rakt över.
+14   54.74- 56.83  Maskinrent bygger inte på blekmedel.
+15   57.03- 59.51  Den använder enzymer, och inte vilka som helst.
+16   59.71- 63.93  Samma sorts som NASA använder i rymden, där inget starkt får användas.
+17   64.08- 67.32  Alfa-amylas löser hinnan som fäster allt mot trumman.
+18   67.47- 71.12  Proteas bryter ner proteinet i djurhåren, största luktkällan.
+19   71.27- 74.56  Och lipas tar bort fettet som luktbakterierna lever av.
+20   74.79- 77.35  Det är det som spolar ut all dold beläggning, och lukten med.
+21   77.57- 83.14  Och trots att den är så stark mot beläggningen passar den alla tvättmaskiner, utan att skada dem.
+22   83.36- 86.55  Det är därför resultatet håller i stället för att blekna.
+23   86.70- 91.72  Redan efter första programmet luktar kläderna fräscht, och folk omkring dig märker det.
+24   92.00- 94.56  Maskinen går tystare och tömmer snabbare.
+25   94.83- 97.80  Med den vanliga luktade det bättre i två dagar.
+26   97.95-100.62  Med Maskinrent har det hållit i två månader.
+27  100.80-104.67  Just nu är det rea med upp till femtio procent och fri frakt.
+28  104.90-109.22  Med fyrpacket blir det bara tjugo kronor per tablett, en tablett i månaden.
+29  109.40-113.45  Och du har trettio dagars pengarna-tillbaka-garanti, helt utan risk.
+30  113.60-117.47  Du har sett vattnet och vetenskapen, så du vet vad maskinen behöver.
+31  117.69-119.72  Klicka nedan medan rean pågår.
 
 ORIGINAL (engelska, avläst från bilden, källans tider)
 0:00 On the left is the water Affresh drained out of this washer, and on the right is what Uproot pulled out of the same one.

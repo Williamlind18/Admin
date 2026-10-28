@@ -1,0 +1,68 @@
+Norrtvätt Maskinrent – video32 (svenska)
+Röst: ElevenLabs eleven_v4, language_code sv, voice ID OvO33bxTqNfwQfoR6mVh ("Äldre man 50-60 år - SE"), fem stycketagningar, atempo.
+Musik: samma instrumentala ElevenLabs-underlag som video31, ca 19 dB under rösten.
+Källa: GitHub-release video32 (Uproot mot Affresh, jämförelsetest). Originaltexten lästes av från den inbrända texten, som har tagits bort ur bilden.
+Bortklippt (källans tider): 55,4-58,3 (kvinna med Uproot-kartong), 102,2-103,6 (Uproot-kartong i delad bild), 105,8-107,0 (kvinna med Uproot-kartong),
+  112,2-113,6 (Affresh i butik med $20), 117,0-117,7 (Uproot-kartong), 127,5-131,0 (slutbilden med deras produkt). Videon är 2:00.
+Svenska rutor över engelsk grafik: VANLIG TABLETT / NORRTVÄTT MASKINRENT (ikoner), UPPFUNNET 1904, VANLIG TABLETT RENGÖR BARA 20 %,
+  MASKINRENT BRYTER NER 80 %, SYREBASERAT BLEKMEDEL, PASSAR ALLA TVÄTTMASKINER (över EWG-loggan), 2 DAGAR, 2 MÅNADER +,
+  REA UPP TILL 50 % + FRI FRAKT, 20 KR PER TABLETT MED FYRPACKET, 30 DAGARS PENGARNA TILLBAKA.
+Ingår INTE i norska listan (skapad efter 2026-10-27).
+
+SVENSKT MANUS (start - slut i videon)
+01    0.10-  3.70  Till vänster: vattnet som en vanlig maskintablett fick ut ur maskinen.
+02    4.00-  7.20  Till höger: det Maskinrent drog ut ur en likadan maskin.
+03    7.40- 11.90  Vi tog två likadana maskiner från samma djurhem, båda med unken lukt.
+04   12.20- 16.52  Den ena fick en vanlig tablett, den andra Maskinrent, på samma varma program.
+05   16.71- 21.00  Den vanliga gav grumligt, lite grått och skummigt vatten, och det var allt.
+06   21.30- 27.70  Maskinrents vatten kom ut nästan svart, tjockt av djurhår, fett och slam som gömt sig i månader.
+07   28.00- 31.72  Två likadana maskiner, och bara en tablett fick ut problemet.
+08   31.92- 33.54  Och det finns en enkel förklaring.
+09   33.74- 38.70  Vanliga tabletter bygger på syrebaserat blekmedel, uppfunnet redan nittonhundrafyra.
+10   39.00- 42.53  De stora märkena håller fast vid det av en anledning: det är billigast.
+11   42.73- 47.00  Det löser tvålrester och kalk, men det är bara tjugo procent av det som sitter i maskinen.
+12   47.30- 52.00  Djurhåren, mjället och fettet som bakterierna lever av är de andra åttio procenten.
+13   52.30- 54.54  Där sköljer blekmedlet bara rakt över.
+14   54.74- 57.41  Maskinrent bygger inte på blekmedel alls.
+15   57.61- 60.41  Den använder enzymer, och inte vilka som helst.
+16   60.61- 66.00  Samma sorts enzymer som NASA använder i slutna rymdsystem, där inget starkt får användas.
+17   66.30- 69.75  Alfa-amylas löser hinnan som håller fast allt mot trumman.
+18   69.94- 74.45  Proteas bryter ner proteinet i djurhåren, största källan till unken lukt.
+19   74.65- 77.77  Och lipas tar bort fettet som luktbakterierna lever av.
+20   77.97- 81.13  Det är det som spolar ut all dold beläggning, och lukten med.
+21   81.33- 84.78  Ändå passar den alla tvättmaskiner och skadar inte maskinen.
+22   84.98- 87.73  Därför håller resultatet i stället för att blekna.
+23   87.93- 92.42  Redan efter första programmet luktar kläderna fräscht, och folk omkring dig märker det.
+24   92.62- 95.03  Maskinen går tystare och tömmer snabbare.
+25   95.23- 97.80  Med den vanliga luktade det bättre i två dagar.
+26   98.10-100.77  Med Maskinrent har det hållit i två månader.
+27  101.10-104.90  Just nu är det rea med upp till femtio procent och fri frakt.
+28  105.20-109.50  Med fyrpacket blir det bara tjugo kronor per tablett, en tablett i månaden.
+29  109.80-113.80  Och du har trettio dagars pengarna-tillbaka-garanti, helt utan risk.
+30  114.10-117.65  Du har sett vattnet och vetenskapen, så du vet vad maskinen behöver.
+31  117.85-119.72  Klicka nedan medan rean pågår.
+
+ORIGINAL (engelska, avläst från bilden, källans tider)
+0:00 On the left is the water Affresh drained out of this washer, and on the right is what Uproot pulled out of the same one.
+0:06 We took two identical washers from the same pet home, both with that musty smell baked into them,
+0:11 and dropped an Affresh tablet in one and an Uproot tablet in the other before running them on the same hot cycle.
+0:16 The water from the Affresh machine ran cloudy, a little gray and a little soapy, and that was about it.
+0:22 Then the water from the Uproot machine came out almost black, thick with the pet hair, grease and sludge that had been hiding in there for months.
+0:28 Two machines that started out exactly the same, and only one of the tablets actually pulled the problem out. Here is why that happens.
+0:34 Affresh runs on oxygen bleach, which was invented all the way back in 1904, and the big brands still build their tablets around it
+0:40 for one simple reason: it is the cheapest thing they can put in a box. It dissolves soap scum and minerals,
+0:45 and that is only about 20% of what is actually sitting inside your machine. The pet hair, the dander and the greasy layer
+0:50 that bacteria feed on make up the other 80%, and an oxygen bleach just rinses right over all of it.
+0:55 Uproot works because it does not lean on that at all. It uses enzymes, and not just any enzymes: these are the same ones
+1:02 developed by NASA to break down biological waste in sealed space systems where nothing harsh could be used.
+1:07 Alpha amylase dissolves the film trapping everything against the drum. Protease breaks down the pet hair protein,
+1:12 that is the No. 1 source of the musty smell, and lipase strips the grease the odor bacteria live on.
+1:17 That is what finally makes all that hidden build up come flushing out, and it takes the smell right along with it.
+1:22 And even though they are that strong on the build up, they are completely safe for every kind of washing machine.
+1:27 That is why the results actually hold instead of fading. After the very first cycle, your laundry finally comes out smelling fresh again,
+1:33 and the people around you actually start to notice the difference. The machine even runs quieter and drains faster once that build up is not choking it anymore.
+1:40 The Affresh washer smelled better for maybe two days, while the Uproot washer has stayed completely odor free for two months and counting.
+1:46 Right now Uproot is running a buy 2 get 2 free deal with free shipping, which works out to about $9.99 a box, half the price of Affresh,
+1:54 for a tablet that actually reaches the 80% Affresh leaves behind. And it is all backed by a 60 day money back guarantee,
+2:00 so if it does not work for you, you do not pay a cent. You saw the drain water and you saw the science,
+2:04 so you already know which one your machine needs. Click below while the deal is still running.

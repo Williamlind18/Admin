@@ -43,7 +43,7 @@ def by_box(img, W, bh):
     white = (img.min(axis=2) >= 243).astype(np.uint8)
     closed = cv2.morphologyEx(white, cv2.MORPH_CLOSE, np.ones((21, 21), np.uint8))
     n, _, st, _ = cv2.connectedComponentsWithStats(closed, 8)
-    best = None
+    best = []
     for i in range(1, n):
         x, y, w, h, area = st[i]
         if not (0.8 * bh <= h <= 1.2 * bh and 70 <= w <= 700) or area / float(w * h) < 0.85:
@@ -51,8 +51,7 @@ def by_box(img, W, bh):
         dark = (img[y:y + h, x:x + w].max(axis=2) < 90).mean()
         if not (0.04 <= dark <= 0.45) or abs(x + w / 2 - W / 2) > 40:
             continue
-        if best is None or w * h > best[2] * best[3]:
-            best = (int(x), int(y), int(w), int(h))
+        best.append((int(x), int(y), int(w), int(h)))
     return best
 
 
@@ -61,7 +60,7 @@ def by_text(img, W, bh):
     near = cv2.dilate((img.min(axis=2) >= 235).astype(np.uint8), np.ones((5, 5), np.uint8))
     m = cv2.morphologyEx(dark & near, cv2.MORPH_CLOSE, np.ones((3, 19), np.uint8))
     n, _, st, _ = cv2.connectedComponentsWithStats(m, 8)
-    best = None
+    best = []
     for i in range(1, n):
         x, y, w, h, _ = st[i]
         if not (14 <= h <= min(34, bh - 6) and w >= 40) or abs(x + w / 2 - W / 2) > 45:
@@ -73,20 +72,45 @@ def by_text(img, W, bh):
         txt = cv2.dilate((reg.max(axis=2) < 140).astype(np.uint8), np.ones((3, 3), np.uint8))
         if not (txt == 0).any() or (reg.min(axis=2) >= 225)[txt == 0].mean() < 0.85:
             continue
-        if best is None or w > best[2]:
-            best = (int(bx), int(by), int(bw), int(bh))
+        best.append((int(bx), int(by), int(bw), int(bh)))
     return best
+
+
+def pick(img, W, bh, row):
+    """The caption box in one frame. A graphic (e.g. a white badge) can look like a caption box, so a
+    candidate on the usual caption row wins; otherwise the box-shape match, then the text match, as before."""
+    boxes, texts = by_box(img, W, bh), None
+    if row is not None:
+        near = [b for b in boxes if abs(b[1] + b[3] / 2 - row) <= 1.5 * bh]
+        if not near:
+            texts = by_text(img, W, bh)
+            near = [b for b in texts if abs(b[1] + b[3] / 2 - row) <= 1.5 * bh]
+        if near:
+            return max(near, key=lambda b: b[2] * b[3])
+    if boxes:
+        return max(boxes, key=lambda b: b[2] * b[3])
+    texts = by_text(img, W, bh) if texts is None else texts
+    return max(texts, key=lambda b: b[2]) if texts else None
 
 
 def detect(a):
     os.makedirs(a.out_dir, exist_ok=True)
     rd, (W, H), fps = frames(a.src)
     Y0, Y1 = int(H * 0.35), int(H * 0.92)
+    # the usual caption row, from a quick pass over every 15th frame
+    centres = []
+    for k, fr in enumerate(rd):
+        if k % 15 == 0:
+            b = pick(np.frombuffer(fr, np.uint8).reshape(H, W, 3)[Y0:Y1], W, a.box_h, None)
+            if b:
+                centres.append(b[1] + b[3] / 2)
+    row = float(np.median(centres)) if centres else None
+    rd, _, _ = frames(a.src)
     rows, sigs, crops = [], {}, {}
     for k, fr in enumerate(rd):
         full = np.frombuffer(fr, np.uint8).reshape(H, W, 3)
         img = full[Y0:Y1]
-        b = by_box(img, W, a.box_h) or by_text(img, W, a.box_h)
+        b = pick(img, W, a.box_h, row)
         if b:
             x, y, w, h = b[0], b[1] + Y0, b[2], b[3]
             b = [x, y, w, h]

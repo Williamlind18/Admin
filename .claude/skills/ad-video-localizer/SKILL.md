@@ -82,9 +82,13 @@ Note down:
   screen). Then use `clean.mp4` as the video for steps 7-8 and put the captions at the old y (`--y`). The
   result is a soft smudge, not a perfect fill. The paid Vmake subtitle removal is cleaner, so offer it.
 - **Background music** (the audio report says so). It cannot be separated, so warn the user now.
-- **Other brands visible in the footage**, and any burned-in text that will remain. Foreign labels in
-  the picture (e.g. "FILM / PROTEIN" on a close-up) can be covered with white label boxes in the target
-  language. See `references/lessons.md`.
+- **Other brands visible in the footage**, and any burned-in text that will remain. Foreign graphics in
+  the picture (prices, guarantees, "INVENTED 1904", certification logos, competitor icons) are covered
+  with white label cards in the target language and the user's own offer: `python3 $SK/label_cards.py
+  WORK/captions.ass WORK/cards.json --font WORK/fonts/Montserrat-ExtraBold.ttf` after step 7 (see its
+  docstring and `references/lessons.md`). Short clips that mainly show a competitor's box or end card are
+  better cut: ffmpeg `select='between(n,A,B)+...',setpts=N/30/TB` on the cleaned video, then map every
+  anchor and card time to the cut timeline.
 
 ### 3. Write the script
 Follow `references/script-writing.md`. Save the result as `WORK/script.txt`, one sentence per line, in

@@ -94,6 +94,17 @@
 - A short exclamation ("Titta här.") came out ~100 Hz above the "Äldre man 50-60 år - SE" voice's median
   in two takes in a row, with a flat contour. A regenerated take fixed the next sentence but not that
   one. Mention such lines to the user rather than regenerating again and again.
+- Video32 (Uproot vs Affresh side-by-side test, 131 s → 120 s):
+  - Five short competitor-box clips and the end card were cut.
+  - Fifteen label cards replaced the English graphics with Norrtvätt's offer: "REA / UPP TILL 50 % / + FRI
+    FRAKT", "20 KR PER TABLETT", "30 DAGARS PENGARNA TILLBAKA", and "PASSAR ALLA TVÄTTMASKINER" over an EWG
+    logo the user doesn't have.
+  - Fly-in icons need a moving card (`path`), and zoom-in titles a shrinking one (`zoom`).
+  - Cards back to back must not fade, or the graphic shows through for a few frames.
+  - A card may start before its graphic (e.g. in sync with the spoken words), as long as it covers the
+    graphic while it is visible.
+  - The detector had taken a white "MONEY BACK" badge for the caption box and missed the real caption
+    under it. `burned_captions.py` now finds the usual caption row first and prefers candidates on it.
 - Cutting a competitor end card (video23, the last 2.4 s): re-run `plan_timeline.py` with
   `--video-duration` at the cut (find it with ffmpeg `select='gt(scene,0.25)',showinfo`), cut the clean
   video with `-frames:v`, then rebuild the voice, captions and render. Drop or widen the late anchors so

@@ -100,3 +100,33 @@
   from the centroid and the angle: `y = cy + (cx - x_box) * tan(angle)`. Fit the band of a static,
   tilted highlight with a least-squares line through its pixels. Eyeballed angles were 3° off, and the
   box missed by half a line.
+
+## Removing burned-in captions and translating on-screen text (Maskinrent video 7)
+The user asked to remove the original captions themselves, so no script was supplied.
+- **Script with timestamps from the captions.** `scripts/ocr_captions.py SRC OUT` finds the white
+  caption box in every frame, groups frames into captions and reads each once with tesseract. The
+  result is the English script with exact times, and it also writes per-frame mask rectangles.
+  Fix obvious OCR slips by hand (`l` / `|` for `I`).
+- **Removing text: LaMa, not OpenCV.** OpenCV `inpaint` and xphoto FSR leave smeared bands on
+  anything but flat floors. LaMa (`scripts/lama_inpaint.py`, model from the simple-lama-inpainting
+  GitHub release) fills them invisibly. The auto-mode classifier blocks loading the downloaded
+  TorchScript model until the user allows it, so ask first. On the 4-core sandbox it does
+  ~0.7 s per frame (1.8 s with two parallel processes): a 5-minute video took ~2 h, so start it
+  early, run it in the background and do the other steps meanwhile.
+- **Big coloured headline texts** (enzyme names, offers): measure each text's box and frame range
+  from colour masks, remove it with LaMa, and draw the Swedish text in the same place: Montserrat
+  Black, vertical colour gradient, dark rim and soft drop shadow, with a short pop-in.
+  Time offer texts to the words in the new voice (`words_global.json`), not to the original frames,
+  when a cut has shifted the rhythm.
+- **Facebook posts and comments in the footage:** rebuild each view in Swedish with Swedish names
+  (Inter 400/600 at the measured size, ~16.9 px for post text at 720 px width), copy avatars and
+  emoji from the frame, keep blurred product names blurred, animate highlighter sweeps like the
+  original. Track every screenshot with SIFT + RANSAC homographies against a reference frame and
+  warp the overlay per frame (premultiplied alpha). For fast zooms where SIFT fails, multi-scale
+  template matching against the reference finds the crop. Clip overlays to the white card
+  during scroll transitions.
+- **Cut sections** (the competitor's trade fair, their end card): find the exact frames from
+  frame differences, drop them in the frame loop and cut the old captions mask the same way.
+- **Voice longer than the footage after cuts:** slowing the footage by 6 % (re-timed to
+  30/1.06 fps, no frame blending) was invisible and kept the voice at ≤ 1.07 tempo with all key
+  moments within ~1 s.

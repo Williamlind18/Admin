@@ -56,7 +56,9 @@ which filters are available.
 ### 1. Intake
 Ask in **one** message for whatever is missing:
 - **The video.** See `references/delivery.md`. Files over 25 MB go through a GitHub release.
-- **The original voiceover text.** You cannot transcribe audio here.
+- **The original voiceover text.** You cannot transcribe audio here. If the video has burned-in
+  captions, `scripts/ocr_captions.py` reads them with timestamps instead (see `references/lessons.md`,
+  "Removing burned-in captions"; `scripts/lama_inpaint.py` removes them from the picture).
 - **Target language**, and whether to translate directly or adapt.
 - **The ElevenLabs voice ID.** Check that the ElevenLabs connector tools are available; see
   `references/elevenlabs.md`.

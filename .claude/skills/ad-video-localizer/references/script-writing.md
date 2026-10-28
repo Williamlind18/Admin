@@ -30,6 +30,41 @@
   → discovery of the product → how to use it → what it does → result → before/after → who it's for →
   product facts and guarantee → offer and urgency → call to action.
 
+## Writing for a lively, human voice
+Video31 was the first time the user heard ElevenLabs sound like a real person "with stress and
+everything". These rules made the difference and work for any script, in any person or tone (not only
+"I" stories):
+
+- **Write for the ear.** Mostly short sentences of 6-15 words. Vary the length, and follow a long
+  sentence with a short punch: "Inget hjälpte." "Så jag visade henne."
+- **Let punctuation direct the voice.**
+  - A colon before a reveal gives a natural beat: "Dagarna efter ringde hon: handdukarna luktade ingenting."
+  - Commas mark breaths.
+  - Use real question marks for real questions.
+  - Avoid exclamation marks, ALL CAPS, long comma chains, parentheses and slashes. They make the
+    pitch jump or the reading stiff.
+- **Put the key word last.** Swedish stresses the end of a sentence, so end on the word that matters:
+  "...och det är därför lukten aldrig försvinner."
+- **Use lists of three and contrast pairs.** They give the voice a rhythm to play with: "Ett blottar,
+  ett förstör, och ett svälter ut resten." "Inte lavendel, inte havsbris, ingenting."
+- **Be concrete.** Use names, numbers and everyday objects instead of abstractions: "hundens filt", "en
+  mamma med två schäfrar", "en kemikalie från nittonhundrafyra". Give a person in the story a name.
+- **Use spoken Swedish, not written Swedish.** Write "sen", not "sedan". Prefer verbs over nouns ("den
+  löser upp", not "upplösning av") and active over passive. Use spoken links such as "Och sen", "Men",
+  "Så", "alltså" (sparingly). Avoid anglicisms and ad clichés.
+- **Talk to the listener.** Use "du" and the odd rhetorical question, also in third-person or product
+  scripts: "Har du husdjur och unken tvätt?"
+- **Keep the voice text clean.** Write numbers as words and avoid abbreviations and symbols.
+- **Avoid one- or two-word sentences that stand alone.** Keep them only as a deliberate punch.
+  "Titta här." came out ~100 Hz higher than the rest in two takes in a row, so check such lines in the
+  pitch report.
+- **Group sentences by story beat.** Group the paragraph takes along the story so that each take
+  reads as one thought. Don't split mid-thought.
+- **Fit the length before generating.** Generate the first take, measure the voice's characters per
+  second, and trim the rest so the planner stays at x0.95-1.05. Strong speed-ups kill the liveliness first.
+- **Add a quiet music bed** (see SKILL.md step 8). It hides the slight v4 echo and makes the whole thing
+  sound produced.
+
 ## Length budget (check before spending credits)
 `split_script.py … --video-duration D` estimates the speech length. Rules of thumb:
 - eleven_v3 Swedish runs at about **16 characters per second** (spaces included). The script must fit

@@ -80,6 +80,7 @@ the planner can still move sentences onto visuals and set tempo per section.
   why `align_words.py` combines three model-free methods.
 
 ## Writing text for TTS
+- For a lively, human delivery, follow "Writing for a lively, human voice" in `script-writing.md`.
 - Punctuation drives the pauses. A comma gives a short pause, "…" a longer one.
 - Write numbers and symbols as words: "fyra komma åtta av fem", "sextio dagars", "femtio procent".
 - If a brand name is mispronounced, spell it phonetically in the TTS text only, and keep the correct

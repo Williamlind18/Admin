@@ -16,6 +16,12 @@
   - v4 has a slight echo. Offer the ElevenLabs Voice Isolator (about 1 000 credits per minute) rather
     than running it unasked.
   - Pauses of about 0.2-0.3 s, never over about 0.5 s. Natural, flowing Swedish.
+  - Write every voice script for the ear (any person or tone), as in
+    `.claude/skills/ad-video-localizer/references/script-writing.md` "Writing for a lively, human voice":
+    - short, varied sentences with a short punch after a long one, and a colon before a reveal;
+    - the key word last, lists of three or contrasts, and concrete names, numbers and objects;
+    - spoken Swedish ("sen", active verbs) and "du" to the listener;
+    - no exclamation marks, caps or symbols, and no lone one- or two-word lines.
   - Never remove content the user wants to keep.
   - Captions are 1-3 words in Montserrat ExtraBold.
   - Deliver a preview in chat, full quality on GitHub and an .srt file.

@@ -27,6 +27,9 @@ for the original user), and keep them posted during slow steps (generation ~30 s
 - **Natural speed:** never speed the voice up past ~x1.08 (it sounds robotic); slowing down by up to
   5 % is fine (`--min-tempo 0.95`). v4 has a slight echo: offer the Voice Isolator, don't run it unasked.
 - **Pauses:** short and even, about 0.2-0.3 s between sentences, never over ~0.5 s. Long gaps were the main complaint.
+- **Script for a lively voice:** write for the ear, following "Writing for a lively, human voice" in
+  `references/script-writing.md`: short varied sentences, a colon before a reveal, the key word last, lists
+  of three, concrete details, spoken Swedish, no exclamation marks. This made video31 sound truly human.
 - **Script:** natural, flowing target language. You may rephrase for flow and fit, and should adapt it to
   their product, prices and offers.
 - **Never remove content the user wants kept.** Flag risky claims once and let them decide.

@@ -54,7 +54,8 @@ which filters are available.
 ### 1. Intake
 Ask in **one** message for whatever is missing:
 - **The video.** See `references/delivery.md`. Files over 25 MB go through a GitHub release.
-- **The original voiceover text.** You cannot transcribe audio here.
+- **The original voiceover text.** You cannot transcribe audio here. If the ad has burned-in captions,
+  you can read the script from them instead (step 2).
 - **Target language**, and whether to translate directly or adapt.
 - **The ElevenLabs voice ID.** Check that the ElevenLabs connector tools are available; see
   `references/elevenlabs.md`.
@@ -68,6 +69,13 @@ Note down:
 - **Key visual moments** a line must hit, e.g. "this", a close-up, before/after shots, the product
   appearing. Use the scene-cut times to get exact seconds.
 - **Where old captions sit**, often as blurred bars. The default y = 0.75 usually covers them.
+- **Burned-in captions in white boxes** (the common TikTok style): `python3 $SK/burned_captions.py detect
+  WORK/src.mp4 WORK/caps` writes crop sheets with one crop per caption and its start time. Read them to
+  get the original script and its timing when the user has no transcript. If the user wants the old text
+  gone, run `burned_captions.py remove WORK/src.mp4 WORK/caps/boxes.json WORK/clean.mp4` (test first with
+  `--only 3,30,60`; add `--manual T0-T1:x,y,w,h` for gaps the detect step reports while a caption is on
+  screen). Then use `clean.mp4` as the video for steps 7-8 and put the captions at the old y (`--y`). The
+  result is a soft smudge, not a perfect fill. The paid Vmake subtitle removal is cleaner, so offer it.
 - **Background music** (the audio report says so). It cannot be separated, so warn the user now.
 - **Other brands visible in the footage**, and any burned-in text that will remain.
 

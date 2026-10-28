@@ -50,8 +50,20 @@
 - Place captions where the old captions were (often blurred bars around 75 % of the height, visible on
   the contact sheets), so the new text covers them. Burned-in original text elsewhere cannot be removed.
   Say so.
-- Keep captions to 1-3 words, with no dangling "det / och / ditt" at the end of a chunk. That is already
-  handled by make_captions.py.
+- Keep captions to 1-3 words, with no dangling "och / i / ett" at the end of a chunk. make_captions.py
+  splits each phrase with a small search that penalises such endings and lone short words (strict 3-word limit).
+- Burned-in captions (video23, white rounded boxes with black text): `burned_captions.py detect` read all
+  96 captions with their times, and the script was written and timed from them. A plain white-threshold
+  box detector missed every box that touched a bright background (white machines, foam). The black-text
+  fallback fixed most of them. One 2 s caption still had to be added with `--manual`. Telea inpainting
+  plus a feathered blur leaves a soft smudge that the new captions mostly cover.
+- Voice speed differs a lot between voices: "äldre kvinna 60+ - SE" read eleven_v4 paragraph takes at
+  ~16.5 characters/s (1795 characters → 108.7 s), against ~18 for the video 2 voice. Measure the first
+  takes with align_words.py and trim wording before planning. Trimming 80 characters across two
+  paragraphs brought the maximum tempo from ~1.14 to 1.02.
+
+- After `split_takes.py` replaces sentence clips, `tighten_pauses.py` would restart from the old copies
+  in `sent/raw/`. split_takes.py now deletes those stale copies itself.
 
 ## Footage and content
 - Look for **other brands in the footage** (packaging, websites, logos) and warn the user. Offer to cover

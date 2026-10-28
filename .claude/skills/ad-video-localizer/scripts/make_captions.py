@@ -4,8 +4,8 @@
 Style that the user approved: 1-3 words at a time (max ~15 characters), bold
 white Montserrat ExtraBold with a thick black outline, centred at 75 % of the
 frame height (where UGC ads usually have their old - often blurred - captions,
-so the new text covers them). Chunks never end on a small function word
-("det", "och", "ditt" ...) and one-word tails are merged back when they fit.
+so the new text covers them). Each phrase is split into chunks by a small search
+that avoids ending a chunk on a small word ("och", "i", "ett" ...) and lone short words.
 Everything scales with the video resolution.
 
 Usage: make_captions.py WORK/words_global.json --video SRC.mp4 --out-dir WORK
@@ -25,6 +25,11 @@ FUNC = {
           "ni er ert era sin sitt sina hans hennes deras vid mot än utan under genom",
     "en": "the a an and or to of in on at for with your my our their is are was be it this that so as by from not "
           "you i we they he she its all just up out",
+}
+# words that must not end a chunk mid-phrase (conjunctions, prepositions, articles)
+DANGLE = {
+    "sv": "och i på till av som med för om att en ett mot från efter utan under genom vid än eller men så",
+    "en": "the a an and or to of in on at for with by from as but",
 }
 
 
@@ -53,29 +58,45 @@ def main():
     def L(ws):
         return len(" ".join(clean(c["w"]) for c in ws))
 
-    chunks, cur = [], []
+    dangle = set(DANGLE.get(a.lang, "").split())
+
+    def cost(c, last):
+        """Fewer chunks are better; a chunk that ends on a small word mid-phrase, a lone short word
+        or a chunk over the character limit costs extra."""
+        end = clean(c[-1]["w"]).lower()
+        k = 1.0 + 0.4 * max(0, L(c) - a.max_chars)
+        if not last:
+            k += 4.0 if end in dangle else 1.5 if end in func else 0.0
+        if len(c) == 1 and len(clean(c[0]["w"])) <= 4:
+            k += 1.5
+        return k
+
+    # phrases end at a sentence boundary or punctuation; inside each, pick the cheapest split into 1-3 words
+    phrases, cur = [], []
     for x in G:
-        if cur:
-            hard = cur[-1]["sent"] != x["sent"] or cur[-1]["w"][-1] in ",.!?…"
-            full = len(cur) >= a.max_words or L(cur + [x]) > a.max_chars
-            weak_end = clean(cur[-1]["w"]).lower() in func
-            if hard or (full and not (weak_end and len(cur) < a.max_words + 1 and L(cur + [x]) <= a.max_chars + 3)):
-                chunks.append(cur)
-                cur = []
+        if cur and (cur[-1]["sent"] != x["sent"] or cur[-1]["w"][-1] in ",.!?…"):
+            phrases.append(cur)
+            cur = []
         cur.append(x)
     if cur:
-        chunks.append(cur)
-    merged = []
-    for c in chunks:  # fold short one-word tails back into the previous chunk
-        prev = merged[-1] if merged else None
-        same = prev is not None and prev[-1]["sent"] == c[0]["sent"] and prev[-1]["w"][-1] not in ",.!?…"
-        if same and len(c) == 1 and len(clean(c[0]["w"])) <= 4 and L(prev + c) <= a.max_chars + 4:
-            merged[-1] = prev + c
-        elif same and len(c) == 1 and clean(prev[-1]["w"]).lower() in func and L(prev + c) <= a.max_chars + 3:
-            merged[-1] = prev + c
-        else:
-            merged.append(c)
-    chunks = merged
+        phrases.append(cur)
+    chunks = []
+    for ph in phrases:
+        n = len(ph)
+        best, back = [0.0] + [None] * n, [0] * (n + 1)
+        for i in range(1, n + 1):
+            for j in range(max(0, i - a.max_words), i):
+                c = ph[j:i]
+                if best[j] is None or (len(c) > 1 and L(c) > a.max_chars + 4):
+                    continue
+                v = best[j] + cost(c, i == n)
+                if best[i] is None or v < best[i]:
+                    best[i], back[i] = v, j
+        cut, i = [], n
+        while i > 0:
+            cut.append((back[i], i))
+            i = back[i]
+        chunks += [ph[j:i] for j, i in reversed(cut)]
 
     events = []
     for n, c in enumerate(chunks):

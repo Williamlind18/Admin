@@ -90,6 +90,10 @@ def main():
         subprocess.run([ffmpeg_exe(), "-loglevel", "error", "-y", "-i", tmp, "-c:a", "libmp3lame", "-b:a", "192k",
                         os.path.join(D, f"{i}.mp3")], check=True)
         os.remove(tmp)
+        # tighten_pauses.py restarts from raw/ copies: drop a stale one so the new take is used
+        stale = os.path.join(D, "raw", f"{i}.mp3")
+        if os.path.exists(stale):
+            os.remove(stale)
     share = [(L[k] - (L[k - 1] if k else 0)) / L[-1] * (T1 - T0) for k in range(len(ids))]
     ratio = [(cuts[k + 1] - cuts[k]) / share[k] for k in range(len(ids))]
     bad = [f"{i}:{r:.2f}" for i, r in zip(ids, ratio) if r < 0.75 or r > 1.35]

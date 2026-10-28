@@ -168,3 +168,32 @@
   sentence came out right with spreads ≤ 0.63 s. Scribe cost 1,360 credits for 239 s.
 - With a music bed, render.py's QA now measures speech on the voice track (the music had counted as
   4.5 s of "speech without caption").
+
+## A 7-minute ad in paragraph takes (learned on video33, 453 s → 399 s)
+- **Twelve eleven_v4 paragraph takes (6 480 characters) read about 16 characters/s**, so the voice was
+  ~25 s shorter than the footage. Slowing it to ×0.95 *and* stretching pauses to 0.4 s still left
+  0.6-3 s gaps before anchors. **Trimming B-roll fixed it:** removing ~16 s of redundant or competitor
+  shots (Affresh/Tide packs, a second "fabric softener" shot) gave ×0.95-1.03 with 0.2 s pauses. Cut
+  whole shots at frame-exact scene changes (frame differences around the analysis cut times).
+- **`split_takes.py` picked comma pauses in 3 of 12 takes** (colon/comma pauses of 0.3-0.45 s are as
+  long as sentence ends in v4). Connect a speech-to-text node (`eleven_scribe_v1`) to each TTS node
+  in the same flow (no upload needed; 0 credits in this workspace in Oct 2026). Then run
+  `scripts/cuts_from_words.py TAKE.mp3 WORDS.json SENT_DIR ids…` and pass its output to
+  `split_takes.py --cuts`. The cut goes in the quietest stretch between the last word of one sentence
+  and the first of the next.
+- **align_words.py was up to 1 s off in a few sentences** (a long first word such as
+  "Huskykvinnan"). Mapping the Scribe word starts into each tightened clip (take time − cut, minus the
+  pauses tighten_pauses removed) and replacing words that differ by > 0.25 s fixed it.
+- **burned_captions.py remove left captions on screen in two cases:**
+  - detection gaps where the caption text changes (the gap is only held when the boxes before and
+    after match),
+  - captions on a white background (e.g. a washer lid), which are never detected.
+
+  OCR the cleaned video (tesseract, every 0.5 s, only the kept parts) and re-clean those frames with
+  the union of the boxes before and after the gap, plus manual boxes.
+- **Pitch check with pyin:** for a deep male voice use `fmax ≈ 190`. With fmax 300 pyin jumped an
+  octave and flagged half the clips.
+- **Text message on screen:** a Swedish bubble in the same place, colour and size, with a short typing
+  stage first. The captions move below it (`\pos` y 1000) while it is shown.
+- **Full-screen cards** (product name, offer, "räcker i 4 år", end card) keep y 825-890 free for the
+  captions at y 0.67, and keep everything inside y 190-1090.

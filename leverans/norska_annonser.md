@@ -20,6 +20,9 @@ bilden. Ändra inte erbjudande eller påståenden på eget initiativ.
 - Röst: ElevenLabs `eleven_v3`. Fråga efter röst-ID för den norska rösten. Läs in i sammanhängande
   tagningar som i v2 (jämn röst), korta pauser på ca 0,2 s.
 - Captions 1–3 ord i Montserrat ExtraBold, plus en norsk .srt.
+- **Norsk version klar (2026-11-02):** `leverans/nordvask_maskinren_no.mp4` + `nordvask_maskinren_no.srt`,
+  manus `leverans/manus_nordvask_maskinren_no.txt`. Varumärke NORDVASK, produkt MASKINREN, samma erbjudanden.
+  Röst: kvinna (som den svenska), "medelålders kvinna - NO", eleven_v3, en sammanhängande tagning.
 
 ## Ingår inte
 - Uproot-testet, den första videon i sessionen (direktöversättning av Uproots egen annons med deras

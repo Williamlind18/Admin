@@ -1,0 +1,79 @@
+Nordvask Maskinren – video32 (norsk bokmål)
+Samme annonse som den svenske versjonen (leverans/norrtvatt_maskinrent_video32_sv.mp4): samme videomateriale, klipp, innhold, rekkefølge og tilbud.
+Stemme: ElevenLabs eleven_v4, language_code no, stemme "äldre man - NO" (AXN8BIfcphe16keZO2uW), mann som i den svenske versjonen.
+  Fem avsnittsopptak (setning 1–7, 8–13, 14–20, 21–26, 27–31), atempo x0,95–1,065, pauser 0,15–0,2 s.
+Musikk: samme instrumentale ElevenLabs-underlag som i den svenske versjonen, ca. 19 dB under stemmen.
+Merkevare: Nordvask, produkt: Maskinren. Samme tilbud i norske kroner; "rea" er blitt "salg".
+Den engelske grafikken er fjernet fra bildet som i den svenske versjonen. Nye norske tekster i annonsens stil, hver tidsatt til ordet i stemmen:
+  VANLIG TABLETT / MASKINREN, OPPFUNNET 1904, RENSER BARE 20 % (VANLIG TABLETT), DYREHÅR · FLASS · FETT og 80 % på "åtti",
+  OKSYGENBASERT BLEKEMIDDEL, PASSER TIL ALLE VASKEMASKINER, 2 DAGER, 2 MÅNEDER +, SALG, OPPTIL 50 %, + FRI FRAKT,
+  MED FIREPAKNINGEN, 20 KR på "tjue kroner", PER TABLETT, 30 DAGERS, PENGENE TILBAKE.
+Enzymene: animasjonene ALPHA AMYLASE / PROTEASE / LIPASE ligger igjen; stemmen sier hvert navn når det dukker opp (innen 0,04 s).
+  For å treffe dem er setning 16–18 litt kortere enn en direkte oversettelse.
+Bildetekster: 1–3 ord, Montserrat ExtraBold.
+
+NORSK MANUS (start - slutt i videoen)
+01  0:00.10-0:03.75  Til venstre: vannet som en vanlig maskintablett fikk ut av maskinen.
+02  0:03.90-0:07.35  Til høyre: det Maskinren dro ut av en helt lik maskin.
+03  0:07.55-0:12.05  Vi tok to helt like maskiner fra samme dyrehjem, begge med sur lukt.
+04  0:12.20-0:16.74  Den ene fikk en vanlig tablett, den andre Maskinren, på det samme varme programmet.
+05  0:16.94-0:21.15  Den vanlige ga grumsete, litt grått og skummende vann, og det var alt.
+06  0:21.30-0:27.85  Vannet fra Maskinren kom ut nesten svart, tykt av dyrehår, fett og slam som hadde gjemt seg i måneder.
+07  0:28.00-0:31.81  To helt like maskiner, og bare én tablett fikk ut problemet.
+08  0:32.01-0:33.71  Og det finnes en enkel forklaring.
+09  0:33.91-0:39.60  Vanlige tabletter bygger på oksygenbasert blekemiddel, oppfunnet allerede i nittenhundreogfire.
+10  0:39.75-0:43.57  De store merkene holder fast ved det av én grunn: det er billigst.
+11  0:43.77-0:48.35  Det løser såperester og kalk, men det er bare tjue prosent av det som sitter i maskinen.
+12  0:48.50-0:52.30  Dyrehårene, flasset og fettet er de andre åtti prosentene.
+13  0:52.50-0:54.74  Der skyller blekemiddelet bare rett over.
+14  0:54.94-0:57.25  Maskinren bygger ikke på blekemiddel.
+15  0:57.45-1:00.02  Den bruker enzymer, og ikke hvilke som helst.
+16  1:00.22-1:03.88  Samme som NASA bruker i rommet, der ingenting sterkt får brukes.
+17  1:04.03-1:07.42  Alfa-amylase løser hinnen som limer alt fast.
+18  1:07.57-1:10.88  Protease bryter ned dyrehår, den største luktkilden.
+19  1:11.03-1:14.77  Og lipase fjerner fettet som luktbakteriene lever av.
+20  1:14.97-1:18.07  Det er det som skyller ut alt skjult belegg, og lukten med.
+21  1:18.27-1:23.47  Og selv om den er så sterk mot belegget, passer den til alle vaskemaskiner, uten å skade dem.
+22  1:23.67-1:26.65  Det er derfor resultatet varer i stedet for å blekne.
+23  1:26.80-1:31.67  Allerede etter første program lukter klærne friskt, og folk rundt deg merker det.
+24  1:31.87-1:34.59  Maskinen går stillere og tømmer raskere.
+25  1:34.79-1:37.60  Med den vanlige luktet det bedre i to dager.
+26  1:37.75-1:40.71  Med Maskinren har det holdt seg i to måneder.
+27  1:40.90-1:44.95  Akkurat nå er det salg med opptil femti prosent og fri frakt.
+28  1:45.10-1:49.65  Med firepakningen blir det bare tjue kroner per tablett, én tablett i måneden.
+29  1:49.80-1:53.85  Og du har tretti dagers pengene-tilbake-garanti, helt uten risiko.
+30  1:54.00-1:57.66  Du har sett vannet og vitenskapen, så du vet hva maskinen trenger.
+31  1:57.86-1:59.72  Klikk nedenfor mens salget pågår.
+
+SVENSK ORIGINAL (leverans/manus_norrtvatt_video32.txt)
+01  Till vänster: vattnet som en vanlig maskintablett fick ut ur maskinen.
+02  Till höger: det Maskinrent drog ut ur en likadan maskin.
+03  Vi tog två likadana maskiner från samma djurhem, båda med unken lukt.
+04  Den ena fick en vanlig tablett, den andra Maskinrent, på samma varma program.
+05  Den vanliga gav grumligt, lite grått och skummigt vatten, och det var allt.
+06  Maskinrents vatten kom ut nästan svart, tjockt av djurhår, fett och slam som gömt sig i månader.
+07  Två likadana maskiner, och bara en tablett fick ut problemet.
+08  Och det finns en enkel förklaring.
+09  Vanliga tabletter bygger på syrebaserat blekmedel, uppfunnet redan nittonhundrafyra.
+10  De stora märkena håller fast vid det av en anledning: det är billigast.
+11  Det löser tvålrester och kalk, men det är bara tjugo procent av det som sitter i maskinen.
+12  Djurhåren, mjället och fettet är de andra åttio procenten.
+13  Där sköljer blekmedlet bara rakt över.
+14  Maskinrent bygger inte på blekmedel.
+15  Den använder enzymer, och inte vilka som helst.
+16  Samma sorts som NASA använder i rymden, där inget starkt får användas.
+17  Alfa-amylas löser hinnan som fäster allt mot trumman.
+18  Proteas bryter ner proteinet i djurhåren, största luktkällan.
+19  Och lipas tar bort fettet som luktbakterierna lever av.
+20  Det är det som spolar ut all dold beläggning, och lukten med.
+21  Och trots att den är så stark mot beläggningen passar den alla tvättmaskiner, utan att skada dem.
+22  Det är därför resultatet håller i stället för att blekna.
+23  Redan efter första programmet luktar kläderna fräscht, och folk omkring dig märker det.
+24  Maskinen går tystare och tömmer snabbare.
+25  Med den vanliga luktade det bättre i två dagar.
+26  Med Maskinrent har det hållit i två månader.
+27  Just nu är det rea med upp till femtio procent och fri frakt.
+28  Med fyrpacket blir det bara tjugo kronor per tablett, en tablett i månaden.
+29  Och du har trettio dagars pengarna-tillbaka-garanti, helt utan risk.
+30  Du har sett vattnet och vetenskapen, så du vet vad maskinen behöver.
+31  Klicka nedan medan rean pågår.

@@ -57,3 +57,14 @@ Den ingår inte här.
   - Samma erbjudanden i norska kronor, och "höstrea" har blivit "salg".
   - Exakt samma videomaterial, så Uproot-förpackningarna från cirka 4:12 ligger kvar.
   - Röst: användarens "Norsk äldre man 55-60 år" (`iWsqLB1KXhKYZqry79ma`), en man som i den svenska versionen.
+- **Klar 2026-11-02, på användarens uttryckliga begäran** ("kör bara dom som gjordes i denna session efter jag skrev det"):
+  de tre svenska annonserna som gjordes i sessionen efter 2026-10-27, alltså video23, video31 och video32. De stod inte på den låsta
+  listan, men användaren bad om dem.
+  - `leverans/norrtvatt_maskinrent_video23_no.mp4` + `.srt` och `leverans/manus_norrtvatt_video23_no.txt`. Rösten är
+    "medelålders kvinna - NO" (`wmWNq8zv8Au6slnVf0MZ`), en kvinna som i den svenska.
+  - `leverans/norrtvatt_maskinrent_video31_no.mp4` + `.srt` och `leverans/manus_norrtvatt_video31_no.txt`. Rösten är
+    "äldre man - NO" (`AXN8BIfcphe16keZO2uW`), en man som i den svenska. Samma musikunderlag.
+  - `leverans/norrtvatt_maskinrent_video32_no.mp4` + `.srt` och `leverans/manus_norrtvatt_video32_no.txt`. Rösten är
+    "äldre man - NO" (`AXN8BIfcphe16keZO2uW`). Samma musikunderlag, och skyltarna i bilden är på norska. Meningarna 16–18
+    är något kortare än en direkt översättning, så att enzymnamnen träffar animationerna.
+  - Samma videomaterial, klipp och erbjudanden som i de svenska, med priser i norska kronor och "salg" i stället för "rea".

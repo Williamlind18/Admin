@@ -1,0 +1,65 @@
+Nordvask Maskinren – video23 (norsk bokmål)
+Samme annonse som den svenske versjonen (leverans/norrtvatt_maskinrent_video23_sv.mp4): samme videomateriale, innhold, rekkefølge og tilbud.
+Stemme: ElevenLabs eleven_v4, language_code no, stemme "medelålders kvinna - NO" (wmWNq8zv8Au6slnVf0MZ), kvinne som i den svenske versjonen.
+  Fire avsnittsopptak (setning 1–5, 6–13, 14–20, 21–27), atempo x0,95–1,06, pauser 0,2–0,26 s.
+Merkevare: Nordvask, produkt: Maskinren. Samme tilbud; "rea" er blitt "salg".
+Den innbrente teksten er fjernet fra bildet, og sluttbildet med Uproots pakning og SHOP NOW er klippet bort, som i den svenske. Videoen er 106,3 s.
+Bildetekster: 1–3 ord, Montserrat ExtraBold. Ingen musikk, som i den svenske versjonen.
+
+NORSK MANUS (start - slutt i videoen)
+01  0:00.10-0:06.50  Dette skjer inne i vaskemaskinen til en dyreeier etter ett, to og tre enzymprogrammer, ett i uken.
+02  0:06.80-0:11.59  Allerede etter første program lukter det annerledes i maskinen hennes.
+03  0:11.79-0:14.39  Tabletten slapp ut et konsentrert enzymskum.
+04  0:14.59-0:21.85  Amylase, protease og lipase brøt ned hinnen av vaskemiddel, dyrehår og fett på trommelen, gummilisten og i slangene.
+05  0:22.05-0:26.30  Måneder med belegg ble løst opp og skylt ut på ett eneste varmt program.
+06  0:26.60-0:28.18  Så kjører hun neste vask.
+07  0:28.44-0:31.19  Klærne lukter ingenting, ikke parfyme, bare rent.
+08  0:31.45-0:36.90  Den sure lukten som overlevde hvert bytte av vaskemiddel og hver ekstra skylling, er borte.
+09  0:37.20-0:40.11  Etter andre uke blir forskjellen varig.
+10  0:40.31-0:42.49  Klærne får ikke lenger den fuktige lukten.
+11  0:42.69-0:47.80  Treningstrøyer lukter nøytralt, og hundens tepper kommer ut uten den gjenstridige lukten.
+12  0:48.00-0:53.11  Det er fordi det andre programmet når belegget som det første løsnet, men ikke fikk ut.
+13  0:53.31-0:58.20  Dypere lag av rester i yttertrommelen og slangene brytes nå ned og skylles bort.
+14  0:58.50-1:03.95  I uke tre går maskinen hennes stillere og tømmer raskere, uten belegg som struper vannstrømmen.
+15  1:04.15-1:06.13  Maskinen fungerer slik den er ment.
+16  1:06.33-1:10.40  Håndklær holder seg friske i flere dager i stedet for å surne med en gang.
+17  1:10.60-1:13.50  Selv dyrenes sengetøy kommer ut helt nøytralt.
+18  1:13.80-1:15.47  Hun bruker ikke mer vaskemiddel.
+19  1:15.67-1:17.41  Hun kjører ingen ekstra skyllinger.
+20  1:17.61-1:20.60  Hun lar ikke luken stå åpen og håper på det beste.
+21  1:20.90-1:22.42  Én tablett, ett varmt program.
+22  1:22.62-1:28.30  Én gang i uken i tre uker mot belegget, så én gang i måneden så det ikke kommer tilbake.
+23  1:28.60-1:31.22  Nordvask Maskinren er laget for hjem med kjæledyr.
+24  1:31.42-1:36.60  Der danner hår, flass og organiske rester belegg som vanlige rengjøringsmidler ikke klarer.
+25  1:36.90-1:40.00  Lukter klesvasken fortsatt surt, og har du kjæledyr?
+26  1:40.20-1:42.64  Prøv og kjenn forskjellen allerede i neste vask.
+27  1:42.84-1:46.05  Nå er det salg med fri frakt, og du kan prøve i tretti dager.
+
+SVENSK ORIGINAL (leverans/manus_norrtvatt_video23.txt)
+01  Det här händer inuti en husdjursägares tvättmaskin efter ett, två och tre enzymprogram, ett i veckan.
+02  Redan efter första programmet luktar det annorlunda i hennes maskin.
+03  Tabletten släppte ut ett koncentrerat enzymskum.
+04  Amylas, proteas och lipas bröt ner hinnan av tvättmedel, djurhår och fett på trumman, gummilisten och i slangarna.
+05  Månader av beläggning löstes upp och spolades ut på ett enda varmt program.
+06  Sen kör hon nästa tvätt.
+07  Kläderna luktar ingenting, inte parfym, bara rent.
+08  Den unkna lukten som överlevt varje byte av tvättmedel och varje extra sköljning är borta.
+09  Efter andra veckan blir skillnaden bestående.
+10  Kläderna får inte längre den där fuktiga lukten.
+11  Träningströjor luktar neutralt, och hundens filtar kommer ut utan den envisa lukten.
+12  Det beror på att andra programmet når beläggningen som det första lossade men inte fick ut.
+13  Djupare lager av rester i yttertrumman och slangarna bryts nu ner och spolas bort.
+14  Vecka tre går hennes maskin tystare och tömmer snabbare, utan beläggningar som stryper vattenflödet.
+15  Maskinen fungerar som den är tänkt.
+16  Handdukar håller sig fräscha i dagar i stället för att surna direkt.
+17  Även djurens bäddar kommer ut helt neutrala.
+18  Hon tar inte mer tvättmedel.
+19  Hon kör inga extra sköljningar.
+20  Hon lämnar inte luckan öppen och hoppas på det bästa.
+21  En tablett, ett varmt program.
+22  En gång i veckan i tre veckor mot beläggningen, sen en gång i månaden så att den inte kommer tillbaka.
+23  Norrtvätt Maskinrent är gjord för hem med husdjur.
+24  Där bildar hår, mjäll och organiska rester beläggningar som vanliga rengöringar inte klarar.
+25  Luktar tvätten fortfarande unket och har du husdjur?
+26  Testa och känn skillnaden redan i nästa tvätt.
+27  Nu är det höstrea med fri frakt, och du kan prova i trettio dagar.

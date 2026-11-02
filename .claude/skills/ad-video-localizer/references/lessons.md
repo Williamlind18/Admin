@@ -197,3 +197,18 @@
   stage first. The captions move below it (`\pos` y 1000) while it is shown.
 - **Full-screen cards** (product name, offer, "räcker i 4 år", end card) keep y 825-890 free for the
   captions at y 0.67, and keep everything inside y 190-1090.
+
+## Re-making a finished ad in another language (learned on Norwegian video30/33, 2026-11-02)
+- **The scratchpad from the first version may be gone.** Overlay times and splices can be recovered from
+  the delivered file: align it to the source with tiny grayscale thumbnails (36×64, a DP over a
+  non-decreasing frame offset finds the cuts), then diff it per overlay box against the new Vmake-cleaned
+  video (144×256, mean abs diff > 12) to get each box's on/off times to the frame. Sentence starts come
+  from the delivered .srt (match its chunks to the script word by word) and work directly as anchors,
+  because the translated script keeps one line per original line.
+- **Enzyme words move inside the sentence in another language** ("Det første, alfa-amylase" puts the
+  name ~0.7-1.2 s in). Shift the start anchor by the word's offset in `fused.json` so the name lands on
+  the label.
+- **ffmpeg splice pitfall:** `-ss T -t D -itsoffset T -i src.mp4` did *not* overlay at T (the shot stayed
+  the cleaned one). When the source shares the timeline, overlay the whole source input with
+  `enable='between(t,a,b)'` instead, and check a frame inside the splice.
+- Reusing the earlier music generation (`creative_get_flow_node` → `creative_get_generations`) costs nothing.

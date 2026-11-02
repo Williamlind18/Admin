@@ -37,3 +37,9 @@ naturlig norska (bokmål). Följ `.claude/skills/ad-video-localizer/SKILL.md` so
 - Norska priser, erbjudande och rea (NOK) och den norska produktsidan eller skärmdumpar. Slutrutans
   erbjudande måste stämma med den norska sidan.
 - Om det finns en norsk produktbild till slutrutan.
+
+## Uttryckligen beställda efter låsningen
+- **2026-11-02:** användaren bad uttryckligen om norska versioner av **video25, video30 och video33**
+  (de som gjordes i samma session efter att listan låstes). Manusutkast:
+  `leverans/underlag/norska_manus_25_30_33_utkast.txt`. Varumärket heter NORDVASK, produkten MASKINREN,
+  samma erbjudanden som i Sverige, "salg" i stället för "rea". Nyare annonser än så ingår fortfarande inte.

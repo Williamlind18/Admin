@@ -27,6 +27,9 @@ reliable channel is the GitHub repo attached to the session.
 - Longer videos pass 100 MB at render.py's crf 21 (4:05 came out at about 155 MB). Then make a
   two-pass copy at ~95 MB for GitHub: video kb/s = 95·8·1024 / seconds − 212, `-preset slow -pass 1/2`,
   AAC audio at 192k, `-movflags +faststart`. Say in the report that GitHub caps files at 100 MB.
+- **The user wants the best quality on GitHub** (2026-11-02), even when crf 21 is well under 100 MB.
+  Make the GitHub copy with `scripts/hq_encode.sh SRC captions.ass fonts final.mp4 OUT.mp4`: a two-pass
+  encode at ~95 MB, straight from the source, with final.mp4's mixed audio copied as is.
 - Never commit secrets. The repo may be public.
 
 ## Final report to the user (write it in their language; Swedish example)

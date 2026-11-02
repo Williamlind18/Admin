@@ -99,38 +99,40 @@ Använd med `plan_timeline.py SENT --video-duration D`.
 
 Videorna 11 och 14 har inga rutor.
 
-## Status 2026-11-02
+## Status 2026-11-02: alla fyra klara
 
 Användarens beslut:
 
 - **Varumärke och produkt:** "Maskinren fra Nordvask". Ordet "svensk(t)" används inte.
 - **Erbjudanden:** samma som i de svenska versionerna, i NOK.
-- **Röst, män (video 11, 14, 15):** användarens egen röst `iWsqLB1KXhKYZqry79ma` "Norsk äldre man 55-60 år".
-- **Röst, kvinna (video 5):** `MQAYoUOHgd6TGRNts3fx` "Norsk kvinna 40+". Den valde jag, eftersom den svenska
-  rösten var kvinnlig. Byt om användaren vill.
+- **Röster:**
+  - Män (video 11, 14, 15): användarens egen röst `iWsqLB1KXhKYZqry79ma` "Norsk äldre man 55-60 år".
+  - Kvinna (video 5): `wmWNq8zv8Au6slnVf0MZ` "medelålders kvinna - NO".
+  - "Norsk kvinna 40+" (`MQAYoUOHgd6TGRNts3fx`) stoppades av ElevenLabs. Den måste verifieras i kontot innan den
+    kan användas.
 - **language_code:** `no`.
 
-| Video | Status | Filer |
-|---|---|---|
-| 14 | Klar, x1.00 genom hela, bästa av tre tagningar | `leverans/norrtvatt_video14_no.mp4` + `.srt`, `leverans/manus_video14_no.txt` |
-| 15 | Klar, x1.00-1.01. Manuset är ~8 % stramare än en rak översättning. | `leverans/norrtvatt_video15_no.mp4` + `.srt`, `leverans/manus_video15_no.txt` |
-| 11 | **Väntar på ElevenLabs-credits.** Manuset är klart och förutsagt till högst x1.06. | `norska/video11/manus_no.txt` |
-| 5 | **Väntar på ElevenLabs-credits.** Manuset är en rak översättning. | `norska/video5/manus_no.txt` |
+| Video | Tempo | Pauser | Kvalitet på GitHub |
+|---|---|---|---|
+| 5 | x1.00 | ≤0,7 s; ~1,2 s vid kapitelbyten | ~95 MB |
+| 11 | x1.00, slutet x1.08 | — | ~95 MB, 2,75 Mbit/s (4:23 lång) |
+| 14 | x1.00 | — | 95 MB, 9,0 Mbit/s |
+| 15 | x1.00-1.01 | — | 95 MB, 6,3 Mbit/s |
 
-**Varför det väntar:** krediterna tog slut (234 kvar) när video 11 skulle läsas in. Misslyckade körningar
-debiteras inte. Noderna ligger klara i flödena:
+Kommentarer:
 
-- **Video 11:**
-  - flöde `Rf3iXvisYRzM1q58IVbr`
-  - inläsningsnod `fF2tQTNIlcKS9BxDzLnw`: 3 × 3 848 credits
-  - ordreferens `D0siCTegZz9YUWrVmC9u`: 2 197 credits
-- **Video 5:**
-  - flöde `etELwtkIkDpD80v6pUF2`
-  - inläsningsnod `4Dt7xsrEH19m5dae9rpe`: ≈ 3 × 3 600 credits
-  - ordreferens `N8daBIUaBPOXCMhDwN6K`: ≈ 2 100 credits
+- **Video 5:** rösten är snabb, cirka 18 tecken/s utan pauser. Därför används `--max-gap 0.7`.
+- **Video 11:** manuset är stramat i några block.
+- **Video 15:** manuset är ~8 % stramare.
 
-  Den kvinnliga rösten har inte mätts än. Kör **en** tagning först och mät med `predict_tempo.py`. Strama åt
-  manuset (och de två noderna) innan resten körs om något block behöver mer än cirka x1.06.
+**Leverans:** `leverans/norrtvatt_videoN_no.mp4` + `.srt` och `leverans/manus_videoN_no.txt`.
+
+**ElevenLabs-flöden:**
+
+- video 5: `etELwtkIkDpD80v6pUF2`
+- video 11: `Rf3iXvisYRzM1q58IVbr`
+- video 14: `KBSLJKipt9QLGvVDFWrE`
+- video 15: `U8nSFYJPQ94MOcTXTjxJ`
 
 **Norska rutor:**
 
@@ -146,3 +148,4 @@ debiteras inte. Noderna ligger klara i flödena:
 - Standardläget y = 0,75, samma som i de svenska versionerna.
 - Gör chunkarna med `make_captions.py --lang no --chunks-out chunks.txt`, rätta dem för hand och kör
   `chunk_captions.py` med rutorna.
+- Den slutliga kopian görs med `scripts/hq_encode.sh` (två pass, ~95 MB).

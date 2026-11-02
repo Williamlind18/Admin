@@ -202,3 +202,16 @@
 - **Setup:** `pip` and `python3` can be different Pythons (pip 3.13, python3 3.11), so every script
   failed with "No module named imageio_ffmpeg". `setup.sh` now uses `python3 -m pip` and checks the
   imports.
+- **Changing a node's voice drops its language.** `creative_update_node` with only `voice_id`
+  replaced `model_parameters`, so `language_code: "no"` vanished. One take of video 5 was made without
+  it (the result lists no "Language" setting). Always pass the full set:
+  `model_parameters: {"voice_id": ..., "language_code": "no"}`.
+- **A cloned voice can be blocked.** "Voice … may violate our Terms of Service and requires
+  verification" means the user must verify it in ElevenLabs. Nothing is charged. Use another of the
+  user's voices and tell them.
+- **Fast voices leave gaps.** The female "medelålders kvinna - NO" read 18.2 chars/s without pauses, so
+  video 5 had 1.9 s gaps before chapter anchors at `--max-gap 0.6`. `--max-gap 0.7` brought them to
+  ≤1.2 s. Pick the slower of equally clean takes when there is time to spare.
+- **Background ffmpeg:** `ffmpeg -i FILE` with no output exits 1. Under `set -o pipefail` that turned
+  `hq_encode.sh` into a silent exit. Also give background ffmpeg `-nostdin`, and never read a
+  `.status` file from an earlier run as the result of a new one.

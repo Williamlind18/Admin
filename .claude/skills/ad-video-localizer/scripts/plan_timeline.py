@@ -57,6 +57,8 @@ def main():
     ap.add_argument("--lead", type=float, default=0.10, help="first word starts here")
     ap.add_argument("--tail", type=float, default=0.25, help="last word ends this long before the video ends")
     ap.add_argument("--max-tempo", type=float, default=1.10, help="warn above this speed-up (aim <= 1.08)")
+    ap.add_argument("--min-tempo", type=float, default=1.0,
+                    help="allow slowing the voice down to this tempo when a block has spare time (e.g. 0.93)")
     ap.add_argument("--step", type=float, default=0.1)
     a = ap.parse_args()
 
@@ -100,8 +102,8 @@ def main():
                 return None
             f, gap, lead = S / room, a.gap, 0.0
             if f < 1.0:
-                f = 1.0
-                spare = (t1 - t0) - S
+                f = max(f, min(1.0, a.min_tempo))  # optional mild slow-down instead of long silences
+                spare = (t1 - t0) - S / f
                 gap = min(a.max_gap, spare / (n - 1)) if n > 1 else a.gap
                 leftover = spare - gap * (n - 1)
                 # keep an end-anchor exact: put leftover silence before the block

@@ -130,3 +130,28 @@ The user asked to remove the original captions themselves, so no script was supp
 - **Voice longer than the footage after cuts:** slowing the footage by 6 % (re-timed to
   30/1.06 fps, no frame blending) was invisible and kept the voice at ≤ 1.07 tempo with all key
   moments within ~1 s.
+
+## Translating a finished ad into another language (Norwegian versions of Maskinrent 3-6)
+The user wanted the same ads "exactly the same, only in Norwegian" (same footage, offer in NOK,
+brand and product renamed, a male voice where the Swedish one was male and a female voice where it
+was female).
+- **Reuse the delivered timing.** The Swedish .srt already holds the approved timing. Every SRT
+  entry belongs to one sentence, and a sentence ends at an entry ending in `.`, `?` or `!`. Parse the
+  sentence starts, translate line by line (1:1 sentences) and anchor the new sentences around those
+  starts with `optimize_anchors.py` + `plan_timeline.py` (every 3rd-5th sentence, ±1.5-2.5 s).
+- **When the translation is much shorter** (Norwegian was 22 % shorter on video 6), anchors leave
+  0.7-2.5 s holes. Use `plan_timeline.py --min-tempo 0.93` or a least-squares plan with even gaps
+  and a mild slow-down (0.93 sounded fine), so the pauses stay even.
+- **Voice rates differ a lot between Norwegian voices** (12-18 characters per second). Test a short
+  paragraph with each candidate before the full take. Some library voices are blocked ("may violate
+  our Terms of Service and requires verification"): pick another one.
+- **Labels from the old render.** Diff the delivered render against the source at half resolution
+  and keep white, nearly filled boxes. That gives every label's geometry per frame (minAreaRect),
+  so the new-language label goes in the same box: one ASS event per frame, `\frz` from the box angle,
+  times floored to centiseconds. Drop labels whose original text is already correct in the new
+  language (e.g. "Lipase").
+- **Music level.** Least-squares fit the original music track against the delivered mix (5 s blocks)
+  to get the voice-over-music ratio the user approved, then choose `--bed-db` so the new voice track
+  has the same ratio. On Maskinrent 4 the music sat only ~9 dB under the voice, not 15.
+- **Captions:** Norwegian function words are in `make_captions.py --lang no`. Show money and counts as
+  digits ("999 kroner", "30 dager", "15 000"); keep the number phrase together in the .srt too.

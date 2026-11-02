@@ -18,4 +18,7 @@
 - To remove watermarks, logos or burned-in text, or to restore or upscale images and video with Vmake, use the
   `vmake-skill` skill in `.claude/skills/vmake-skill/`. It is a paid API, so ask before uploading. Its keys are
   `MT_AK`/`MT_SK`, in environment variables or the gitignored `scripts/.env`.
+- Norwegian versions: when the user writes "gör alla annonser på norska", translate only the ads listed
+  in `leverans/norska_annonser.md` (list locked 2026-10-27). Ads made after that date are not included
+  unless the user asks for them by name or asks to add them to the list.
 - This repo is public. Never commit API keys or other secrets.

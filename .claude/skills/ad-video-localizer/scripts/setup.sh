@@ -9,7 +9,11 @@ set -u
 WORK="${1:-.}"
 mkdir -p "$WORK/fonts"
 
-pip install -q imageio-ffmpeg librosa soundfile numpy scipy opencv-python-headless 2>&1 | grep -vi "warning" | tail -2
+# Install for the python3 that runs the scripts: a bare `pip` can belong to another Python (2026-11-02:
+# pip was Python 3.13, python3 was 3.11, and every script failed with "No module named imageio_ffmpeg").
+python3 -m pip install -q imageio-ffmpeg librosa soundfile numpy scipy opencv-python-headless 2>&1 | grep -vi "warning" | tail -2
+python3 -c "import PIL.Image" 2>/dev/null || python3 -m pip install -q --ignore-installed pillow 2>&1 | grep -vi "warning" | tail -2
+python3 -c "import imageio_ffmpeg, librosa, cv2, PIL.Image" || { echo "setup: Python packages missing for $(python3 --version)"; exit 1; }
 
 if ! command -v espeak-ng >/dev/null 2>&1; then
   apt-get install -y -qq espeak-ng >/dev/null 2>&1 || \

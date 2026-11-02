@@ -98,3 +98,51 @@ Använd med `plan_timeline.py SENT --video-duration D`.
 | 15 | 1:51,2–1:52,6 | FRI FRAKT (följer lastbilen bild för bild) | GRATIS FRAKT |
 
 Videorna 11 och 14 har inga rutor.
+
+## Status 2026-11-02
+
+Användarens beslut:
+
+- **Varumärke och produkt:** "Maskinren fra Nordvask". Ordet "svensk(t)" används inte.
+- **Erbjudanden:** samma som i de svenska versionerna, i NOK.
+- **Röst, män (video 11, 14, 15):** användarens egen röst `iWsqLB1KXhKYZqry79ma` "Norsk äldre man 55-60 år".
+- **Röst, kvinna (video 5):** `MQAYoUOHgd6TGRNts3fx` "Norsk kvinna 40+". Den valde jag, eftersom den svenska
+  rösten var kvinnlig. Byt om användaren vill.
+- **language_code:** `no`.
+
+| Video | Status | Filer |
+|---|---|---|
+| 14 | Klar, x1.00 genom hela, bästa av tre tagningar | `leverans/norrtvatt_video14_no.mp4` + `.srt`, `leverans/manus_video14_no.txt` |
+| 15 | Klar, x1.00-1.01. Manuset är ~8 % stramare än en rak översättning. | `leverans/norrtvatt_video15_no.mp4` + `.srt`, `leverans/manus_video15_no.txt` |
+| 11 | **Väntar på ElevenLabs-credits.** Manuset är klart och förutsagt till högst x1.06. | `norska/video11/manus_no.txt` |
+| 5 | **Väntar på ElevenLabs-credits.** Manuset är en rak översättning. | `norska/video5/manus_no.txt` |
+
+**Varför det väntar:** krediterna tog slut (234 kvar) när video 11 skulle läsas in. Misslyckade körningar
+debiteras inte. Noderna ligger klara i flödena:
+
+- **Video 11:**
+  - flöde `Rf3iXvisYRzM1q58IVbr`
+  - inläsningsnod `fF2tQTNIlcKS9BxDzLnw`: 3 × 3 848 credits
+  - ordreferens `D0siCTegZz9YUWrVmC9u`: 2 197 credits
+- **Video 5:**
+  - flöde `etELwtkIkDpD80v6pUF2`
+  - inläsningsnod `4Dt7xsrEH19m5dae9rpe`: ≈ 3 × 3 600 credits
+  - ordreferens `N8daBIUaBPOXCMhDwN6K`: ≈ 2 100 credits
+
+  Den kvinnliga rösten har inte mätts än. Kör **en** tagning först och mät med `predict_tempo.py`. Strama åt
+  manuset (och de två noderna) innan resten körs om något block behöver mer än cirka x1.06.
+
+**Norska rutor:**
+
+- **Video 15:**
+  - `{\fs150}3 GRUNNER`
+  - `{\fs150}15 000+ KUNDER`
+  - `{\fs78}30 DAGERS\NPENGENE TILBAKE`
+  - `{\fs76}GRATIS\NFRAKT`: på `\fs84` blev ordet bredare än rutan.
+- **Video 5:** `{\fs42}TRYGG FOR\NAVLØP`. Den tomma rutan vid 121,40 är oförändrad.
+
+**Captions:**
+
+- Standardläget y = 0,75, samma som i de svenska versionerna.
+- Gör chunkarna med `make_captions.py --lang no --chunks-out chunks.txt`, rätta dem för hand och kör
+  `chunk_captions.py` med rutorna.

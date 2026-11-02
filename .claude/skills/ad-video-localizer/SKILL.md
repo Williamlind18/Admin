@@ -83,6 +83,10 @@ Note down:
 Follow `references/script-writing.md`. Save the result as `WORK/script.txt`, one sentence per line, in
 spoken order. Then check the length:
 `python3 $SK/split_script.py WORK/script.txt WORK/sent --video-duration D`.
+If you already have a take from the same voice (a sister video, another language version), predict the
+real tempos with your anchors before paying: `python3 $SK/predict_tempo.py OLD/sent/fused.json
+WORK/script.txt --scale 1.03 -- --video-duration D --max-gap 0.6 --anchor ...`. A new voice or language
+can be 10 % slower (Norwegian, see lessons.md).
 Show the user the complete numbered script and get approval before spending credits. Mention any
 compliance flags once in that same message.
 

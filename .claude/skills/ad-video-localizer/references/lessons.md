@@ -173,3 +173,32 @@
   land on their drawing) brought the peak to 1.066.
 - **Shell pitfall:** `until ! pgrep -f "some string"` waiting loops match their own command line and never
   end. Wait on a PID or on an output file instead.
+
+## Norwegian versions of finished ads (videos 14 and 15, 2026-11-02)
+- **Same footage, same anchors.** A line-by-line translation (same number of lines) reuses the Swedish
+  anchors and label positions unchanged. `leverans/norska/README.md` has the per-video settings.
+- **The Norwegian voice is slower.** The user's "Norsk äldre man 55-60 år" read 13.1-13.8 chars/s
+  (whole take with pauses) against 15.0 for the Swedish "Äldre man 50-60 år - SE". A straight
+  translation of video 15 needed x1.09-1.14, and those three takes (≈7 000 credits) were wasted.
+  Before paying for takes in a new voice or language, run `scripts/predict_tempo.py` calibrated on any
+  take from that voice. It matched the real takes to about 0.02. Then tighten wording only in the
+  blocks that need it (drop "helt", "allerede", "som om den aldri forsvant", and so on), without
+  dropping facts or claims. Video 15 came out ~8 % shorter at x1.00-1.01.
+- **Takes of the same script vary by up to 6 % in length.** Plan with `--scale 1.03-1.05` and pick the
+  take with `score_takes.py`. Also look at the worst per-syllable stretch, not just the count: video 15's
+  take C had 42 "drawn-out" words but its worst was 0.57 s/syllable, while take A's was 0.87 s ("to.").
+- **Norwegian in the tools:**
+  - `language_code: "no"` works for both eleven_v3 and flash v2.5.
+  - `align_words.py --lang no` uses espeak `nb`.
+  - `make_captions.py --lang no` has a Norwegian function-word list.
+  - `make_captions.py --chunks-out chunks.txt` writes the automatic chunks so you can fix them by hand
+    and add labels with `chunk_captions.py`.
+- **Labels.** Keep the box and fit the word with a PIL width ratio. "GRATIS" at `\fs84` measured 326 px
+  against "FRAKT"'s 296 px, so it went in at `\fs76`.
+- **Credits ran out mid-batch.** A failed run says "This request exceeds your quota … You have N
+  credits remaining". Failed generations are not charged. Tell the user how many credits each
+  remaining video needs (≈ 3 takes × characters + 0.55 × characters for the flash reference), and
+  leave the flow nodes ready so the next session only has to run them.
+- **Setup:** `pip` and `python3` can be different Pythons (pip 3.13, python3 3.11), so every script
+  failed with "No module named imageio_ffmpeg". `setup.sh` now uses `python3 -m pip` and checks the
+  imports.

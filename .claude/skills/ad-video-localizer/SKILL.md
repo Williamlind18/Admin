@@ -153,7 +153,11 @@ python3 $SK/make_captions.py WORK/words_global.json --video WORK/src.mp4 --out-d
 `build_voiceover.py` speeds up with atempo by default. Do not switch to `--stretch rubberband`: it
 sounded robotic to the user. Captions can be tuned with `--y` (vertical position), `--font`,
 `--size`, `--max-words`, `--max-chars` and `--upper`. Read the printed chunk list and fix any clumsy
-splits, e.g. "tre lager: filmen" should become "tre lager | filmen". See `references/lessons.md`
+splits, e.g. "tre lager: filmen" should become "tre lager | filmen". The automatic split only knows
+Swedish and English function words, so for longer scripts and other languages write the chunks by
+hand: one line per sentence, chunks separated by `|` (1-3 words, ≤ ~15 characters, no dangling
+"och/att/på"), and pass `--chunks WORK/chunks.txt`. The .srt then breaks each sentence at those
+chunk boundaries too. See `references/lessons.md`
 for hand-picked chunks and for covering burned-in foreign text with label boxes.
 
 ### 8. Render and check

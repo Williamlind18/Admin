@@ -44,6 +44,7 @@ def main():
     ap.add_argument("--max-words", type=int, default=3)
     ap.add_argument("--max-chars", type=int, default=15)
     ap.add_argument("--upper", action="store_true", help="ALL CAPS captions")
+    ap.add_argument("--chunks", help="hand-picked chunks: one line per sentence, chunks separated by |")
     a = ap.parse_args()
     G = load_json(a.words)
     info = probe(a.video)
@@ -76,6 +77,31 @@ def main():
         else:
             merged.append(c)
     chunks = merged
+    hand = None
+    if a.chunks:
+        hand = [ln.strip() for ln in open(a.chunks, encoding="utf-8") if ln.strip()]
+        norm = lambda w: re.sub(r"[^\w-]", "", w).lower()  # noqa: E731
+        sents = []
+        for x in G:
+            if not sents or sents[-1][0] != x["sent"]:
+                sents.append((x["sent"], []))
+            sents[-1][1].append(x)
+        if len(sents) != len(hand):
+            raise SystemExit(f"--chunks has {len(hand)} lines but the voice has {len(sents)} sentences")
+        chunks, hand_groups = [], []
+        for (sid_, ws), line in zip(sents, hand):
+            k, groups = 0, []
+            for part in line.split("|"):
+                toks = part.split()
+                grp = ws[k:k + len(toks)]
+                if [norm(t) for t in toks] != [norm(g["w"]) for g in grp]:
+                    raise SystemExit(f"--chunks line for sentence {sid_} does not match its words: {part!r}")
+                groups.append(grp)
+                k += len(toks)
+            if k != len(ws):
+                raise SystemExit(f"--chunks line for sentence {sid_} leaves words out")
+            chunks += groups
+            hand_groups.append(groups)
 
     events = []
     for n, c in enumerate(chunks):
@@ -118,22 +144,43 @@ def main():
     def srt_ts(t):
         ms = int(round(t * 1000))
         return f"{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}"
-    lines, n, order = [], 1, []
-    for x in G:
-        if x["sent"] not in order:
-            order.append(x["sent"])
-    for s in order:
-        ws = [x for x in G if x["sent"] == s]
-        groups, cur2 = [], []
-        for x in ws:
-            if cur2 and len(" ".join(y["w"] for y in cur2 + [x])) > 42:
-                groups.append(cur2)
-                cur2 = []
-            cur2.append(x)
-        groups.append(cur2)
-        for g in groups:
-            lines.append(f"{n}\n{srt_ts(g[0]['start'])} --> {srt_ts(g[-1]['end'] + 0.1)}\n{' '.join(y['w'] for y in g)}\n")
-            n += 1
+    entries = []
+    if hand:
+        import itertools
+        text = lambda gs: " ".join(w["w"] for g in gs for w in g)  # noqa: E731
+        for groups in hand_groups:   # fewest lines of <= 42 characters, balanced, prefer breaks after , :
+            best = None
+            for parts in range(1, len(groups) + 1):
+                for cuts in itertools.combinations(range(1, len(groups)), parts - 1):
+                    b = [0, *cuts, len(groups)]
+                    segs = [groups[b[i]:b[i + 1]] for i in range(parts)]
+                    L = [len(text(sg)) for sg in segs]
+                    if max(L) > 42:
+                        continue
+                    score = max(L) - min(L) - 15 * sum(text(sg).endswith((",", ":")) for sg in segs[:-1])
+                    if best is None or score < best[0]:
+                        best = (score, segs)
+                if best:
+                    break
+            for sg in best[1]:
+                entries.append([sg[0][0]["start"], sg[-1][-1]["end"] + 0.1, text(sg)])
+    else:
+        order = []
+        for x in G:
+            if x["sent"] not in order:
+                order.append(x["sent"])
+        for s_ in order:
+            ws = [x for x in G if x["sent"] == s_]
+            cur2 = []
+            for x in ws:
+                if cur2 and len(" ".join(y["w"] for y in cur2 + [x])) > 42:
+                    entries.append([cur2[0]["start"], cur2[-1]["end"] + 0.1, " ".join(y["w"] for y in cur2)])
+                    cur2 = []
+                cur2.append(x)
+            entries.append([cur2[0]["start"], cur2[-1]["end"] + 0.1, " ".join(y["w"] for y in cur2)])
+    for e1, e2 in zip(entries, entries[1:]):
+        e1[1] = min(e1[1], e2[0] - 0.02)
+    lines = [f"{n}\n{srt_ts(st)} --> {srt_ts(en)}\n{t}\n" for n, (st, en, t) in enumerate(entries, 1)]
     with open(os.path.join(a.out_dir, "subtitles.srt"), "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines))
     print(f"{len(events)} caption chunks -> {a.out_dir}/captions.ass, subtitles.srt  (font {a.font} {size}px at y={a.y})")

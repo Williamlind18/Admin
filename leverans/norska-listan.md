@@ -7,6 +7,9 @@ på norska.
 
 Listan låstes 2026-10-27, i sessionen där "tre misstag"-videon gjordes.
 
+Norska regler (2026-11-02): varumärket heter NORDVASK och produkten MASKINREN, samma erbjudanden i
+norska kronor, samma videomaterial, och rösten har samma kön som i den svenska versionen.
+
 ## 1. Norrtvätt Maskinrent – "tre misstag" (reparatören Danny)
 - Svensk leverans: `leverans/norrtvatt_tre_misstag_sv.mp4`, `norrtvatt_tre_misstag_sv.srt`,
   `manus_tre_misstag.txt` (38 meningar, godkänt manus).
@@ -17,6 +20,7 @@ Listan låstes 2026-10-27, i sessionen där "tre misstag"-videon gjordes.
   17,2-18,3 · 7 bakom trumman 19,6-20,3 · 11 misstag två 33,3-33,9 · 16 misstag tre 50,3-51,2 ·
   23 NASA 74,2-75,5 · 26 alfa-amylas 85,8-87,0 · 27 proteas 90,8-92,0 · 28 lipas 96,5-97,6 ·
   29 tabletten 102,4-103,6 · 32 "Den heter Maskinrent" 114,2-115,6. Planera med `balance_plan.py`.
-- Inför den norska versionen: fråga efter voice ID (norsk röst), och kontrollera pris, valuta,
-  frakt och garanti för Norge ("fyra paket till halva priset", "tjugo kronor per tablett",
-  "trettio dagars pengarna-tillbaka-garanti", "över femtontusen kunder").
+- **Norsk version levererad 2026-11-02:** `leverans/nordvask_tre_feil_no.mp4`, `nordvask_tre_feil_no.srt`,
+  `manus_tre_feil_no.txt`. Varumärke Nordvask, produkt Maskinren, samma erbjudande i norska kronor
+  (tjue kroner per tablett). Röst "Norsk äldre man 55-60 år" (`iWsqLB1KXhKYZqry79ma`), samma
+  videomaterial och musikbädd, ElevenLabs-flödet `vExp6yJXq07u91Wz5e5g`.

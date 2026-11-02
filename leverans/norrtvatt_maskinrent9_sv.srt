@@ -1,0 +1,352 @@
+1
+00:00:00,100 --> 00:00:02,767
+Jag har skött tvättstugorna i ett stort
+
+2
+00:00:02,787 --> 00:00:05,100
+bostadsområde i över tjugo år,
+
+3
+00:00:05,120 --> 00:00:07,666
+och jag vet exakt varför djurägares
+
+4
+00:00:07,686 --> 00:00:10,016
+tvätt alltid luktar unket.
+
+5
+00:00:10,096 --> 00:00:11,644
+Fyrtio maskiner som går
+
+6
+00:00:11,664 --> 00:00:12,838
+från morgon till kväll,
+
+7
+00:00:12,858 --> 00:00:14,359
+så jag vet vad som går fel
+
+8
+00:00:14,379 --> 00:00:15,552
+i en tvättmaskin.
+
+9
+00:00:15,632 --> 00:00:17,544
+Nästan varje vecka kommer en granne
+
+10
+00:00:17,564 --> 00:00:19,349
+med hund och säger att tvätten
+
+11
+00:00:19,369 --> 00:00:21,513
+luktar unket, vad de än gör.
+
+12
+00:00:21,662 --> 00:00:23,275
+De vill veta varför maskinerna
+
+13
+00:00:23,295 --> 00:00:25,438
+i tvättstugan aldrig luktar så.
+
+14
+00:00:25,518 --> 00:00:27,513
+I nio fall av tio är det inget
+
+15
+00:00:27,533 --> 00:00:28,996
+fel på deras maskin.
+
+16
+00:00:29,076 --> 00:00:30,464
+Den går som den ska.
+
+17
+00:00:30,544 --> 00:00:32,894
+Problemet är något de aldrig har sett:
+
+18
+00:00:32,914 --> 00:00:35,805
+ett slutet utrymme bakom trumman,
+
+19
+00:00:35,825 --> 00:00:38,062
+där vattnet rinner vid varje tvätt.
+
+20
+00:00:38,141 --> 00:00:39,987
+I ett hem med husdjur fastnar
+
+21
+00:00:40,007 --> 00:00:42,003
+tvättmedel, mjäll och djurhår,
+
+22
+00:00:42,023 --> 00:00:43,830
+täckt av hudfett som drar till sig mer.
+
+23
+00:00:43,910 --> 00:00:45,840
+Det blir ett fett lager
+
+24
+00:00:45,860 --> 00:00:48,658
+som bara växer, och varje tvätt
+
+25
+00:00:48,678 --> 00:00:50,532
+för det tillbaka till kläderna.
+
+26
+00:00:50,613 --> 00:00:52,682
+Lukten satt aldrig i tvätten.
+
+27
+00:00:52,761 --> 00:00:54,177
+Den satt i maskinen.
+
+28
+00:00:54,257 --> 00:00:56,083
+Och allt du redan har testat?
+
+29
+00:00:56,163 --> 00:00:57,785
+Vanliga maskinrengörare
+
+30
+00:00:57,805 --> 00:01:00,499
+är samma sak: syreblekmedel.
+
+31
+00:01:00,579 --> 00:01:02,593
+Det tar tvålrester och kalk,
+
+32
+00:01:02,613 --> 00:01:04,038
+men inte protein.
+
+33
+00:01:04,118 --> 00:01:05,740
+Och djurhår är protein,
+
+34
+00:01:05,760 --> 00:01:08,501
+så det sköljer rakt förbi det som luktar.
+
+35
+00:01:08,581 --> 00:01:11,202
+Ättika blir för utspädd, bikarbonat
+
+36
+00:01:11,222 --> 00:01:13,581
+rinner förbi, och rengöringsprogrammet
+
+37
+00:01:13,601 --> 00:01:14,858
+är bara varmt vatten.
+
+38
+00:01:14,938 --> 00:01:16,698
+Så lukten försvinner en dag
+
+39
+00:01:16,718 --> 00:01:18,254
+och kommer sen tillbaka.
+
+40
+00:01:18,514 --> 00:01:19,735
+Jag visste allt det här,
+
+41
+00:01:19,755 --> 00:01:21,954
+men jag hade inget riktigt att ge dem.
+
+42
+00:01:22,035 --> 00:01:24,245
+Sen berättade vår servicetekniker
+
+43
+00:01:24,265 --> 00:01:26,884
+vad proffsen använder: enzymer.
+
+44
+00:01:26,964 --> 00:01:28,157
+Och de kommer inte från ett
+
+45
+00:01:28,177 --> 00:01:30,740
+tvålföretag, utan från NASA.
+
+46
+00:01:30,820 --> 00:01:32,601
+De skulle bryta ner biologiskt
+
+47
+00:01:32,621 --> 00:01:34,952
+avfall i rymden, utan starka
+
+48
+00:01:34,972 --> 00:01:37,545
+kemikalier som förstör utrustningen.
+
+49
+00:01:37,625 --> 00:01:40,571
+Exakt samma problem som i en tvättmaskin.
+
+50
+00:01:40,651 --> 00:01:43,010
+Så de tog fram enzymer som angriper
+
+51
+00:01:43,030 --> 00:01:45,558
+var sin sorts beläggning, och Norrtvätt
+
+52
+00:01:45,578 --> 00:01:48,066
+samlade tre av dem i en tablett.
+
+53
+00:01:48,146 --> 00:01:50,552
+Alfa-amylas löser upp filmen
+
+54
+00:01:50,572 --> 00:01:52,678
+som håller fast allt mot trumman.
+
+55
+00:01:52,758 --> 00:01:54,931
+Proteas bryter ner proteinet
+
+56
+00:01:54,951 --> 00:01:56,153
+i själva håret,
+
+57
+00:01:56,173 --> 00:01:58,718
+som syreblekmedel inte rår på.
+
+58
+00:01:58,798 --> 00:02:00,999
+Och lipas tar det feta lagret
+
+59
+00:02:01,019 --> 00:02:03,134
+som luktbakterierna lever av.
+
+60
+00:02:03,214 --> 00:02:04,752
+Så lukten svälter ut
+
+61
+00:02:04,772 --> 00:02:06,328
+och kommer inte tillbaka.
+
+62
+00:02:06,408 --> 00:02:08,626
+Jag började berätta om det för grannarna.
+
+63
+00:02:08,706 --> 00:02:11,476
+En granne med två labradorer hörde av sig:
+
+64
+00:02:11,496 --> 00:02:13,641
+handdukarna luktade ingenting,
+
+65
+00:02:13,661 --> 00:02:15,590
+för första gången på ett år.
+
+66
+00:02:15,669 --> 00:02:17,543
+En annan hade slutat tvätta
+
+67
+00:02:17,563 --> 00:02:19,632
+hundbäddarna, på grund av lukten.
+
+68
+00:02:19,712 --> 00:02:22,109
+Efter en tablett skickade hon en bild:
+
+69
+00:02:22,129 --> 00:02:24,684
+barnen sov på nytvättade filtar,
+
+70
+00:02:24,704 --> 00:02:26,232
+med hunden mellan sig.
+
+71
+00:02:26,311 --> 00:02:28,708
+De hade gett upp tanken på ett rent hem
+
+72
+00:02:28,728 --> 00:02:31,524
+med hund, och en tablett ändrade det.
+
+73
+00:02:31,605 --> 00:02:34,256
+Det är Maskinrent från svenska Norrtvätt,
+
+74
+00:02:34,276 --> 00:02:36,634
+gjord för det som växer i maskinen.
+
+75
+00:02:36,814 --> 00:02:39,313
+Just nu har de höstrea med upp till
+
+76
+00:02:39,333 --> 00:02:41,701
+femtio procent rabatt, och fri frakt.
+
+77
+00:02:41,780 --> 00:02:43,572
+Det räcker för att hålla maskinen ren
+
+78
+00:02:43,592 --> 00:02:45,084
+i månader, och tabletterna
+
+79
+00:02:45,104 --> 00:02:47,135
+är inslagna en och en.
+
+80
+00:02:47,325 --> 00:02:48,826
+Och du har trettio dagars
+
+81
+00:02:48,846 --> 00:02:50,458
+pengarna-tillbaka-garanti.
+
+82
+00:02:50,538 --> 00:02:53,064
+Funkar den inte skickar du tillbaka den.
+
+83
+00:02:53,144 --> 00:02:56,267
+Femtontusen nöjda kunder har redan bytt.
+
+84
+00:02:56,347 --> 00:02:57,708
+Klarar den fyrtio maskiner
+
+85
+00:02:57,728 --> 00:02:59,089
+i våra tvättstugor,
+
+86
+00:02:59,109 --> 00:03:00,805
+så klarar den din hemma.
+
+87
+00:03:00,884 --> 00:03:02,320
+Klicka på länken nedan
+
+88
+00:03:02,340 --> 00:03:04,670
+och säkra rabatten medan den gäller.
+

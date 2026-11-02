@@ -1,0 +1,10 @@
+; Täckrutor (vit ruta = lager 1, svart text = lager 2) i norrtvatt_maskinrent8_sv.mp4, källa release video18.
+; Översätt bara texten efter sista }-blocket i lager 2-raderna.
+Dialogue: 1,0:00:38.55,0:00:41.80,Cap,,0,0,0,,{\an5\pos(365,826)\bord0\shad0\1c&HFFFFFF&\fscx80\fscy80\t(0,140,\fscx100\fscy100)\fad(0,150)\p1}m 30 0 l 490 0 b 520 0 520 0 520 30 l 520 170 b 520 200 520 200 490 200 l 30 200 b 0 200 0 200 0 170 l 0 30 b 0 0 0 0 30 0{\p0}
+Dialogue: 2,0:00:38.55,0:00:41.80,Cap,,0,0,0,,{\an5\pos(365,826)\q2\bord0\shad0\1c&H000000&\fscx80\fscy80\t(0,140,\fscx100\fscy100)\fad(0,150)}{\fs110}15 000\N{\fs56}NÖJDA KUNDER
+Dialogue: 1,0:00:51.00,0:00:53.12,Cap,,0,0,0,,{\an5\pos(464,942)\bord0\shad0\1c&HFFFFFF&\org(464,942)\frz-26.7\fscx85\fscy85\t(0,140,\fscx100\fscy100)\p1}m 30 0 l 870 0 b 900 0 900 0 900 30 l 900 140 b 900 170 900 170 870 170 l 30 170 b 0 170 0 170 0 140 l 0 30 b 0 0 0 0 30 0{\p0}
+Dialogue: 2,0:00:51.00,0:00:53.12,Cap,,0,0,0,,{\an5\pos(464,942)\q2\bord0\shad0\1c&H000000&\org(464,942)\frz-26.7\fscx85\fscy85\t(0,140,\fscx100\fscy100)}{\fs118}FRI FRAKT
+Dialogue: 1,0:00:53.12,0:00:55.12,Cap,,0,0,0,,{\an5\pos(540,811)\bord0\shad0\1c&HFFFFFF&\p1}m 0 0 l 1120 0 b 1120 0 1120 0 1120 0 l 1120 158 b 1120 158 1120 158 1120 158 l 0 158 b 0 158 0 158 0 158 l 0 0 b 0 0 0 0 0 0{\p0}
+Dialogue: 2,0:00:53.12,0:00:55.12,Cap,,0,0,0,,{\an5\pos(540,811)\q2\bord0\shad0\1c&H000000&}{\fs92}REAN SLUTAR SNART
+Dialogue: 1,0:00:55.12,0:00:57.42,Cap,,0,0,0,,{\an5\pos(540,742)\bord0\shad0\1c&HFFFFFF&\fscy225\t(0,200,\fscy100)\p1}m 34 0 l 696 0 b 730 0 730 0 730 34 l 730 471 b 730 505 730 505 696 505 l 34 505 b 0 505 0 505 0 471 l 0 34 b 0 0 0 0 34 0{\p0}
+Dialogue: 2,0:00:55.25,0:00:57.42,Cap,,0,0,0,,{\an5\pos(540,742)\q2\bord0\shad0\1c&H000000&\fad(90,0)}{\fs104}30 DAGARS\N{\fs84}PENGARNA\NTILLBAKA

@@ -30,4 +30,5 @@ Det svenska manuset till varje annons ligger i `leverans/manus_maskinrentN.txt`.
   stillbild av bildruta 1602.
 - `maskinrent7` blev över 100 MB och kodades om i två pass (~3200k) för att få plats på GitHub.
 - Fråga användaren innan start: **norskt röst-ID**, och om erbjudandet, valutan och varumärket är desamma i Norge.
-- Döp leveranserna till `norrtvatt_maskinrentN_no.mp4/.srt` och `manus_maskinrentN_no.txt`.
+- I Norge heter varumärket **NORDVASK** och produkten **MASKINREN** (samma erbjudande, i norska kronor).
+- Döp leveranserna till `nordvask_maskinrenN_no.mp4/.srt` och `manus_maskinrenN_no.txt`.

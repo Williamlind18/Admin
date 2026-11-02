@@ -18,4 +18,10 @@
 - To remove watermarks, logos or burned-in text, or to restore or upscale images and video with Vmake, use the
   `vmake-skill` skill in `.claude/skills/vmake-skill/`. It is a paid API, so ask before uploading. Its keys are
   `MT_AK`/`MT_SK`, in environment variables or the gitignored `scripts/.env`.
+- "Gör alla annonser på norska" means ONLY the ads listed in `leverans/norska-listan.md`, never ads
+  made later. Translate those to Norwegian and keep everything else the same.
+- Norrtvätt Maskinrent offer (the same unless the user says otherwise): four packs at half price,
+  20 kr per tablet, free shipping, 30-day money-back guarantee, 12 tablets last a year, over 15 000
+  customers. Never say "höstrea" (or any seasonal sale name); if you mention a sale, say
+  "Just nu är det rea".
 - This repo is public. Never commit API keys or other secrets.

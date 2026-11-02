@@ -13,7 +13,8 @@ wrong by 0.3-0.8 s for ~20 % of words; the median of three is good enough for
   3. reference  - DTW against a same-voice "word. by. word." take (iso.mp3,
                   cheap flash model), whose words are cut at the pauses
 
-Inputs in SENT_DIR: NN.txt + NN.mp3 per sentence (required); optional iso.mp3 +
+Inputs in SENT_DIR: NN.txt + NN.mp3 per sentence (required); optional NN.words.json
+(Scribe word timestamps written by split_take.py --words - used instead of the estimates); optional iso.mp3 +
 iso.txt + iso_map.json (from split_script.py) and isoNN.mp3 overrides for
 sentences regenerated after the reference was made.
 Output: SENT_DIR/fused.json (words with start/end, speech bounds, long internal
@@ -458,6 +459,12 @@ def main():
                 ref = reference_align(y, db, tokens, ref_y, iso_segs[o:o + cnt])
         est.append(ref)
         starts, spread = fuse(est, db, a0 / FPS, a1 / FPS)
+        # word timestamps from a Scribe transcript (split_take.py --words) beat the estimates
+        sw = load_json(os.path.join(D, f"{sid(i)}.words.json"))
+        if sw and len(sw) == len(tokens):
+            starts = [min(max(w["start"], a0 / FPS), a1 / FPS) for w in sw]
+            est = ["scribe"]
+            spread = 0.0
         ends = starts[1:] + [a1 / FPS]
         dur = (a1 - a0) / FPS
         eff = dur - sum(max(0.0, (e - s) - 0.22) for s, e in pauses)

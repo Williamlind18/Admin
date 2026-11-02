@@ -11,7 +11,12 @@ among the silences with dynamic programming: each sentence should last about as
 long as its syllable count predicts (or as the same sentence did in earlier
 clips, with --expect), and longer silences are preferred as sentence breaks.
 
-Usage: split_take.py TAKE.mp3 SENT_DIR [--expect durations.json]
+With --words (the word timestamps from an ElevenLabs Scribe transcript of the take), the
+cuts come from the transcript instead: every sentence runs from its first word to its
+last, so takes with very short sentence pauses (0.1-0.3 s) split correctly too. It also
+writes SENT_DIR/NN.words.json, which align_words.py then uses as the word timings.
+
+Usage: split_take.py TAKE.mp3 SENT_DIR [--expect durations.json] [--words scribe_words.json]
 Needs SENT_DIR/NN.txt from split_script.py. Writes SENT_DIR/NN.mp3 (320 kb/s)
 and prints one row per sentence - check that 'ratio' stays roughly 0.6-1.4 and
 that every 'pause_after' is a real pause (>= ~0.3 s). A pause under 0.2 s or a
@@ -20,6 +25,7 @@ ratio far off (both are marked '<-- check') means a cut landed inside a sentence
 import argparse
 import json
 import os
+import re
 import subprocess
 import sys
 
@@ -31,16 +37,85 @@ from common import db_curve, ffmpeg_exe, nsyl, sentence_ids, sid  # noqa: E402
 
 FPS = 100  # db_curve frames per second at 16 kHz / hop 160
 
+def norm(w):
+    return re.sub(r"[^\w-]", "", w.lower())
+
+
+def split_by_words(a, ids, texts):
+    """Cut at the gaps between sentences given by a Scribe transcript with word timestamps."""
+    W = json.load(open(a.words, encoding="utf-8"))
+    W = W.get("words", W) if isinstance(W, dict) else W
+    W = [w for w in W if w.get("type", "word") == "word"]
+    y, sr = librosa.load(a.take, sr=16000)
+    db = db_curve(y)
+    k, spans = 0, []
+    for i, txt in zip(ids, texts):
+        toks = txt.split()
+        seg = W[k:k + len(toks)]
+        if [norm(t) for t in toks] != [norm(w["text"]) for w in seg]:
+            got = " ".join(w["text"] for w in seg)
+            sys.exit(f"sentence {sid(i)} does not match the transcript:\n  script: {txt}\n  take:   {got}\n"
+                     "The take skipped or changed words - fix that before splitting.")
+        spans.append((seg, seg[0]["start"], seg[-1]["end"]))
+        k += len(toks)
+    if k != len(W):
+        print(f"note: the transcript has {len(W) - k} extra words at the end")
+    # Scribe word ends run on into the following pause, so find the real silence by energy
+    # in a window around each sentence gap: speech of sentence k ends where it starts.
+    quiet = db < -40
+    cuts = []
+    for n in range(len(spans) - 1):
+        seg, nseg = spans[n][0], spans[n + 1][0]
+        lo = max(seg[-1]["start"] + 0.05, spans[n][2] - 0.4)
+        hi = min(nseg[0]["end"] - 0.05, spans[n + 1][1] + 0.25)
+        lo_f, hi_f = int(lo * FPS), max(int(lo * FPS) + 1, int(hi * FPS))
+        best, j = None, lo_f
+        while j < hi_f:
+            if quiet[j]:
+                e = j
+                while e < hi_f and quiet[e]:
+                    e += 1
+                if best is None or e - j > best[1] - best[0]:
+                    best = (j, e)
+                j = e
+            else:
+                j += 1
+        if best is None:
+            m = lo_f + int(np.argmin(db[lo_f:hi_f]))
+            best = (m, m)
+        cuts.append((best[0] / FPS, best[1] / FPS))
+    ff = ffmpeg_exe()
+    print(f"take {len(y) / sr:.1f}s, {len(W)} words, {len(ids)} sentences (cut from the transcript)")
+    print(" id   start     end    dur  pause_after  text")
+    sp = np.where(db > -50)[0]
+    for n, (i, txt, (seg, _, _)) in enumerate(zip(ids, texts, spans)):
+        st = cuts[n - 1][1] if n > 0 else sp[0] / FPS
+        en = cuts[n][0] if n < len(cuts) else (sp[-1] + 1) / FPS
+        pause = (cuts[n][1] - cuts[n][0]) if n < len(cuts) else 0.0
+        a0 = max(0.0, st - 0.06)
+        b0 = en + (min(0.12, pause / 2) if n < len(cuts) else 0.3)
+        flag = "  <-- no pause found" if n < len(cuts) and pause < 0.03 else ""
+        print(f" {sid(i)} {st:7.2f} {en:7.2f} {en - st:6.2f}   {pause:5.2f}   {txt[:44]}{flag}")
+        subprocess.run([ff, "-hide_banner", "-loglevel", "error", "-y", "-i", a.take, "-ss", f"{a0:.3f}",
+                        "-to", f"{b0:.3f}", "-c:a", "libmp3lame", "-b:a", "320k",
+                        os.path.join(a.sent_dir, f"{sid(i)}.mp3")], check=True)
+        with open(os.path.join(a.sent_dir, f"{sid(i)}.words.json"), "w", encoding="utf-8") as fh:
+            json.dump([{"w": t, "start": round(w["start"] - a0, 3), "end": round(w["end"] - a0, 3)}
+                       for t, w in zip(txt.split(), seg)], fh, ensure_ascii=False)
+
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("take")
     ap.add_argument("sent_dir")
     ap.add_argument("--expect", help="json {id: seconds} with earlier per-sentence durations (optional)")
+    ap.add_argument("--words", help="Scribe word timestamps of the take (json list or {'words': [...]})")
     a = ap.parse_args()
 
     ids = sentence_ids(a.sent_dir)
     texts = [open(os.path.join(a.sent_dir, f"{sid(i)}.txt"), encoding="utf-8").read().strip() for i in ids]
+    if a.words:
+        return split_by_words(a, ids, texts)
     if a.expect:
         old = json.load(open(a.expect))
         w = np.array([float(old[str(i)]) for i in ids])

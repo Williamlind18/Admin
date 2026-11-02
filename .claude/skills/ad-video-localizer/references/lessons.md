@@ -40,6 +40,18 @@
   timestamps. Diff its text against `script.txt` to confirm that eleven_v3 did not skip or change
   words, and use its words for `split_take.py --words` (see the next section).
 
+## A take that is too fast for the footage (Norwegian Maskinren video 1, voice "medelålders kvinna - NO")
+- The first take had only 87.8 s of speech for 110 s of footage (the Swedish voice had ~105 s): the
+  planner needed 0.9 s pauses or a x0.88 slowdown. eleven_v3 has no speed setting, so a second take
+  with **`[slowly]` as the first word of the prompt** came out 13 % longer (113.5 s, 92.6 s of
+  speech) and still natural. Then `balance_plan.py --min-tempo 0.93 --target-gap 0.4 --max-gap 0.6`
+  gave even 0.25-0.61 s pauses, close to the voice's own rhythm. A take costs about 0.29 USD, so a
+  slower re-take beats heavy atempo slowdowns.
+- Scribe returns the tag as a "word" (`[slowly]`, 0-0.13 s). `split_take.py --words` now drops
+  bracketed tags; the text diff against the script should ignore them too.
+- The same voice read the 39-line video 2 script at a slower pace (17 characters/s against 19), so
+  check the speech total of every take against the footage before planning.
+
 ## Burned-in captions and short pauses (learned on the "panel" video, voice "Äldre man 50-60 år")
 - The user asked me to **remove the original captions myself** and read the script from them.
   `burned_captions.py read` OCRs every caption with its time (tesseract; read the `caps_N.png`

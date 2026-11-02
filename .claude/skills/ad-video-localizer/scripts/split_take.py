@@ -46,6 +46,8 @@ def split_by_words(a, ids, texts):
     W = json.load(open(a.words, encoding="utf-8"))
     W = W.get("words", W) if isinstance(W, dict) else W
     W = [w for w in W if w.get("type", "word") == "word"]
+    # audio tags such as [slowly] at the start of the prompt come back as "words"; they are not spoken
+    W = [w for w in W if not re.fullmatch(r"\[[^\]]*\]", w.get("text", "").strip())]
     y, sr = librosa.load(a.take, sr=16000)
     db = db_curve(y)
     k, spans = 0, []

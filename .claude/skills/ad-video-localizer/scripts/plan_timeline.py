@@ -58,6 +58,8 @@ def main():
     ap.add_argument("--tail", type=float, default=0.25, help="last word ends this long before the video ends")
     ap.add_argument("--max-tempo", type=float, default=1.10, help="warn above this speed-up (aim <= 1.08)")
     ap.add_argument("--step", type=float, default=0.1)
+    ap.add_argument("--min-tempo", type=float, default=1.0,
+                    help="lowest tempo factor; below 1.0 slows a voice that is shorter than the video (atempo, keep >= ~0.88)")
     a = ap.parse_args()
 
     F = load_json(os.path.join(a.sent_dir, "fused.json"))
@@ -99,9 +101,9 @@ def main():
             if room <= 0.05:
                 return None
             f, gap, lead = S / room, a.gap, 0.0
-            if f < 1.0:
-                f = 1.0
-                spare = (t1 - t0) - S
+            if f < a.min_tempo:
+                f = a.min_tempo
+                spare = (t1 - t0) - S / f
                 gap = min(a.max_gap, spare / (n - 1)) if n > 1 else a.gap
                 leftover = spare - gap * (n - 1)
                 # keep an end-anchor exact: put leftover silence before the block

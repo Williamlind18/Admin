@@ -23,6 +23,9 @@ FUNC = {
     "sv": "det den de en ett att och i på till av som med för om ditt din dina mina min mitt kan är har så ut från efter "
           "inte du jag man vi sig mig dig hela alla var vad när upp ner bara nu över fri tolv trettio femtio sextio "
           "ni er ert era sin sitt sina hans hennes deras vid mot än utan under genom",
+    "no": "det den de en et ei å og i på til av som med for om din ditt dine mine min mitt kan er har så ut fra etter "
+          "ikke du jeg man vi seg meg deg hele alle var hva når opp ned bare nå over gratis tolv tretti femti seksti "
+          "dere deres sin sitt sine hans hennes ved mot enn uten under gjennom",
     "en": "the a an and or to of in on at for with your my our their is are was be it this that so as by from not "
           "you i we they he she its all just up out",
 }
@@ -44,6 +47,7 @@ def main():
     ap.add_argument("--max-words", type=int, default=3)
     ap.add_argument("--max-chars", type=int, default=15)
     ap.add_argument("--upper", action="store_true", help="ALL CAPS captions")
+    ap.add_argument("--chunks", help="hand-made chunks: one line per sentence in spoken order, chunks split by |")
     a = ap.parse_args()
     G = load_json(a.words)
     info = probe(a.video)
@@ -76,6 +80,25 @@ def main():
         else:
             merged.append(c)
     chunks = merged
+
+    if a.chunks:  # hand-made chunks replace the automatic ones (same timing and style below)
+        lines = [ln.strip() for ln in open(a.chunks, encoding="utf-8") if ln.strip()]
+        sents = []
+        for x in G:
+            if not sents or sents[-1][-1]["sent"] != x["sent"]:
+                sents.append([])
+            sents[-1].append(x)
+        if len(lines) != len(sents):
+            raise SystemExit(f"--chunks has {len(lines)} lines but the voice has {len(sents)} sentences")
+        chunks = []
+        for line, ws in zip(lines, sents):
+            k = 0
+            for part in line.split("|"):
+                n = len(part.split())
+                chunks.append(ws[k:k + n])
+                k += n
+            if k != len(ws) or any(not c for c in chunks):
+                raise SystemExit(f"chunk words do not match the sentence: {line}")
 
     events = []
     for n, c in enumerate(chunks):

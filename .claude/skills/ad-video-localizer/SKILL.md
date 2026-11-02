@@ -115,6 +115,8 @@ python3 $SK/plan_timeline.py WORK/sent --video-duration D \
   - tighten wording,
   - drop "if it fits" extras.
   Ask the user before cutting anything they asked for.
+- **Voice shorter than the video** (common after translating, e.g. Norwegian): add `--min-tempo 0.88`
+  so the planner slows blocks down with atempo instead of leaving long silences.
 - **Gaps before an anchor.** If the voice runs ahead of the footage and leaves a long gap before an
   anchor, it is usually because a condensed passage lost detail. Restore some of it.
 - **Changed sentences.** Settle the script *before* the take. A sentence generated on its own later
@@ -131,8 +133,10 @@ python3 $SK/make_captions.py WORK/words_global.json --video WORK/src.mp4 --out-d
 ```
 `build_voiceover.py` speeds up with atempo by default. Do not switch to `--stretch rubberband`: it
 sounded robotic to the user. Captions can be tuned with `--y` (vertical position), `--font`,
-`--size`, `--max-words`, `--max-chars` and `--upper`. Read the printed chunk list and fix any clumsy
-splits, e.g. "tre lager: filmen" should become "tre lager | filmen". See `references/lessons.md`
+`--size`, `--max-words`, `--max-chars` and `--upper`. `--lang` picks the function-word list (sv, no,
+en). Read the printed chunk list and fix any clumsy
+splits, e.g. "tre lager: filmen" should become "tre lager | filmen", with `--chunks FILE` (one line
+per sentence, chunks split by `|`). See `references/lessons.md`
 for hand-picked chunks and for covering burned-in foreign text with label boxes.
 
 ### 8. Render and check

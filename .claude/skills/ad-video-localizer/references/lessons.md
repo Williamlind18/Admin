@@ -21,6 +21,10 @@
   better". `build_voiceover.py` now uses atempo by default.
 - A continuous take reads ~4 % faster than per-sentence clips and has clean 0.4-0.8 s sentence pauses,
   so the planner usually needs only 1.00-1.09.
+- **A translation can come out shorter than the video.** The Norwegian take of Maskinrent (same 25 sentences)
+  was ~17 % shorter than the Swedish one. Fill the gap by slowing the voice with atempo
+  (`plan_timeline.py --min-tempo 0.88`) plus pauses up to 0.45 s, rather than long silences. Keep the
+  offer/CTA close to 1.0 and ask the user to listen to the slowed parts.
 - A re-generated sentence is not guaranteed to be shorter, even with fewer words: a trimmed line came
   back 0.3 s longer. Settle the wording before the take.
 - The user's subscription allows 5 concurrent ElevenLabs requests; more fail with "Too many
@@ -49,8 +53,8 @@
 - Keep captions to 1-3 words, with no dangling "det / och / ditt" at the end of a chunk. That is already
   handled by make_captions.py. Still read the chunk list: it splits blindly at colons and lists
   ("tre lager: filmen" → "lager filmen"). When several are clumsy, write the chunks by hand, one line
-  per sentence with chunks separated by `|`, and build the Dialogue lines from `words_global.json`
-  with the same style and timing rule as make_captions.py (Maskinrent video 2 did this).
+  per sentence with chunks separated by `|`, and pass it as `make_captions.py --chunks FILE` (same
+  style and timing; it stops if the words don't match the voice). Norwegian needed this for most lines.
 - **Burned-in foreign text** in the footage (e.g. English labels "FILM / PROTEIN / GREASE" on a close-up):
   the user wanted it covered by **white rounded boxes with black Montserrat ExtraBold text in the
   target language**. Add them as extra ASS events: a `\p1` rounded-rectangle drawing on layer 1 and the

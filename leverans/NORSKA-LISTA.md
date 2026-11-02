@@ -43,3 +43,12 @@ naturlig norska (bokmål). Följ `.claude/skills/ad-video-localizer/SKILL.md` so
   (de som gjordes i samma session efter att listan låstes). Manusutkast:
   `leverans/underlag/norska_manus_25_30_33_utkast.txt`. Varumärket heter NORDVASK, produkten MASKINREN,
   samma erbjudanden som i Sverige, "salg" i stället för "rea". Nyare annonser än så ingår fortfarande inte.
+- **Status 2026-11-02:**
+  - video25 KLAR: `leverans/nordvask_video25_salget_slutter_no.mp4` (+ .srt, `manus_video25_salget_slutter_no.txt`).
+    Röst wmWNq8zv8Au6slnVf0MZ (kvinna), Vmake-rensad (SKM0003).
+  - video33 KLAR: `leverans/nordvask_video33_servicetekniker_no.mp4` (+ .srt, `manus_video33_servicetekniker_no.txt`).
+    Röst iWsqLB1KXhKYZqry79ma (man), gratis textborttagning (burned_captions + patch_cut), samma klipp och
+    musik som den svenska. Bara ALFA-AMYLASE täcks; PROTEASE och LIPASE stavas lika på norska.
+  - video30 VÄNTAR: rösten (iWsqLB1KXhKYZqry79ma) och textningen är klara, men Vmake gav `credit_required`.
+    Den svenska byggdes på en Vmake-rensad video. Antingen fyller användaren på Vmake-krediter eller så
+    används gratisborttagning med vita rutor.

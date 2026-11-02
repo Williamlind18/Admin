@@ -140,8 +140,9 @@ was female).
   sentence starts, translate line by line (1:1 sentences) and anchor the new sentences around those
   starts with `optimize_anchors.py` + `plan_timeline.py` (every 3rd-5th sentence, ±1.5-2.5 s).
 - **When the translation is much shorter** (Norwegian was 22 % shorter on video 6), anchors leave
-  0.7-2.5 s holes. Use `plan_timeline.py --min-tempo 0.93` or a least-squares plan with even gaps
-  and a mild slow-down (0.93 sounded fine), so the pauses stay even.
+  0.7-2.5 s holes. Use `plan_timeline.py --min-tempo 0.92` or a least-squares plan with even gaps
+  and a mild slow-down (video 6: tempo 0.92, pauses ~0.8 s). Always pin the first sentence to
+  ~0.15 s: a free optimizer once started the voice 2.1 s in, a silent hook.
 - **Voice rates differ a lot between Norwegian voices** (12-18 characters per second). Test a short
   paragraph with each candidate before the full take. Some library voices are blocked ("may violate
   our Terms of Service and requires verification"): pick another one.

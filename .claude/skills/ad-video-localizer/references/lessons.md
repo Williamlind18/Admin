@@ -62,9 +62,13 @@
   Say so.
 - Keep captions to 1-3 words, with no dangling "och / i / ett" at the end of a chunk. make_captions.py
   splits each phrase with a small search that penalises such endings and lone short words (strict 3-word limit).
-  Still read the chunk list. If several chunks are clumsy, write them by hand, one line per sentence with
-  chunks separated by `|`, and build the Dialogue lines from `words_global.json` with the same style and
-  timing rule as make_captions.py (another session did this for Maskinrent video 2).
+  Still read the chunk list. If several chunks are clumsy, write them by hand in `WORK/chunks.txt`, one line
+  per sentence with chunks separated by `|` (`12: Det bor noe | i vaskemaskinen din | akkurat nå`), and pass
+  `--chunks WORK/chunks.txt`; the other sentences keep the automatic split. A colon also ends a phrase.
+  The Norwegian video2 needed 37 of 73 sentences by hand (verb-subject order like "vet jeg", "grand danois").
+- The .srt holds one subtitle per sentence on up to two lines of about 42 characters, split evenly (a cut
+  after a comma is preferred); sentences over ~84 characters become several subtitles. The old rule
+  (start a new subtitle at 42 characters) left orphans like a lone "nå." for 0.3 s.
 - **Burned-in foreign text in the picture** (e.g. English labels "FILM / PROTEIN / GREASE" on a close-up):
   the user wanted it covered by **white rounded boxes with black Montserrat ExtraBold text in the target
   language**.
@@ -120,3 +124,16 @@
 - When the user sends a re-cut of a video you already did, run `analyze_video.py NEW --reference OLD`.
   Unchanged sections keep their timestamps, so earlier anchors can be reused.
 - Rendering 1080×1920 for 110 s takes about 3.5 min on the sandbox. Tell the user it's coming.
+- GitHub refuses files over 100 MB. render.py's crf 21 gave 182 MB for the 4:49 1080×1908 video2; re-encode
+  the final for GitHub with `-b:v 2450k -maxrate 3600k -bufsize 4900k -c:a copy` (94.9 MB) and send the
+  chat preview as usual.
+
+## Other languages (Norwegian video2, Nov 2026)
+- Norwegian: `language_code: "no"` for eleven_v4, `align_words.py --lang no` (espeak voice nb) and
+  `make_captions.py --lang no` (Norwegian small words). The user's own Norwegian voices are in the
+  workspace (e.g. "Norsk äldre man 55-60 år"); when the user asks for "the same gender as the Swedish
+  version", pick from those with `creative_list_voices(languages=["no"], gender=...)` and name the choice.
+- This voice reads story lines livelier than v3 (sentence medians 111-181 Hz around a 132 Hz voice median).
+  A regenerated take of the liveliest paragraph came back with the same pitch curve and the same timbre
+  (MFCC distance), so it was the delivery, not a second speaker. Compare timbre as well before regenerating
+  everything over the ±15 Hz rule.

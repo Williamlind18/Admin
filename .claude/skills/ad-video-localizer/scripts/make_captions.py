@@ -9,9 +9,13 @@ that avoids ending a chunk on a small word ("och", "i", "ett" ...) and lone shor
 Everything scales with the video resolution.
 
 Usage: make_captions.py WORK/words_global.json --video SRC.mp4 --out-dir WORK
-       [--y 0.75] [--font "Montserrat ExtraBold"] [--lang sv] [--max-words 3] [--max-chars 15]
+       [--y 0.75] [--font "Montserrat ExtraBold"] [--lang sv|en|no] [--max-words 3] [--max-chars 15]
+       [--chunks WORK/chunks.txt]
+--chunks sets the split by hand for the sentences it lists, one line per sentence: "12: word word | word word"
+(the words must be the sentence's own words, in order; a line that does not match is reported and ignored).
 """
 import argparse
+import itertools
 import os
 import re
 import sys
@@ -25,11 +29,15 @@ FUNC = {
           "ni er ert era sin sitt sina hans hennes deras vid mot än utan under genom",
     "en": "the a an and or to of in on at for with your my our their is are was be it this that so as by from not "
           "you i we they he she its all just up out",
+    "no": "det den de en et ett at og i på til av som med for om din ditt dine min mitt mine kan er har så ut fra etter "
+          "ikke du jeg man vi seg meg deg hele alle var hva når opp ned bare nå over fri tolv tretti femti seksti "
+          "dere deres sin sitt sine hans hennes ved mot enn uten under gjennom",
 }
 # words that must not end a chunk mid-phrase (conjunctions, prepositions, articles)
 DANGLE = {
     "sv": "och i på till av som med för om att en ett mot från efter utan under genom vid än eller men så",
     "en": "the a an and or to of in on at for with by from as but",
+    "no": "og i på til av som med for om at en et ett mot fra etter uten under gjennom ved enn eller men så å",
 }
 
 
@@ -49,6 +57,7 @@ def main():
     ap.add_argument("--max-words", type=int, default=3)
     ap.add_argument("--max-chars", type=int, default=15)
     ap.add_argument("--upper", action="store_true", help="ALL CAPS captions")
+    ap.add_argument("--chunks", help="hand-written splits for some sentences (see the docstring)")
     a = ap.parse_args()
     G = load_json(a.words)
     info = probe(a.video)
@@ -71,17 +80,44 @@ def main():
             k += 1.5
         return k
 
+    def norm(w):
+        return re.sub(r"[^\w-]", "", w.lower())
+
+    # hand-written splits: sentence id -> word counts per chunk
+    manual = {}
+    if a.chunks:
+        for line in open(a.chunks, encoding="utf-8"):
+            if ":" not in line or not line.split(":", 1)[0].strip().isdigit():
+                continue
+            sid, rest = line.split(":", 1)
+            parts = [p.split() for p in rest.split("|") if p.strip()]
+            ws = [norm(x["w"]) for x in G if x["sent"] == int(sid)]
+            if [norm(w) for p in parts for w in p] != ws:
+                print(f"--chunks: sentence {sid} does not match its words, ignored: {rest.strip()}")
+                continue
+            manual[int(sid)] = [len(p) for p in parts]
+
     # phrases end at a sentence boundary or punctuation; inside each, pick the cheapest split into 1-3 words
     phrases, cur = [], []
     for x in G:
-        if cur and (cur[-1]["sent"] != x["sent"] or cur[-1]["w"][-1] in ",.!?…"):
+        if cur and (cur[-1]["sent"] != x["sent"] or cur[-1]["w"][-1] in ",.!?…:"):
             phrases.append(cur)
             cur = []
         cur.append(x)
     if cur:
         phrases.append(cur)
     chunks = []
+    done = set()
     for ph in phrases:
+        sid = ph[0]["sent"]
+        if sid in manual:
+            if sid not in done:
+                ws, k = [x for x in G if x["sent"] == sid], 0
+                for m in manual[sid]:
+                    chunks.append(ws[k:k + m])
+                    k += m
+                done.add(sid)
+            continue
         n = len(ph)
         best, back = [0.0] + [None] * n, [0] * (n + 1)
         for i in range(1, n + 1):
@@ -143,21 +179,36 @@ def main():
     for x in G:
         if x["sent"] not in order:
             order.append(x["sent"])
+    def even_split(ws, parts):
+        """Cut ws into `parts` pieces of even length, preferring cuts after a comma."""
+        if parts < 2 or len(ws) < parts:
+            return [ws]
+
+        def score(cuts):
+            b = [0, *cuts, len(ws)]
+            longest = max(len(" ".join(y["w"] for y in ws[b[i]:b[i + 1]])) for i in range(len(b) - 1))
+            return longest - 8 * sum(1 for c in cuts if ws[c - 1]["w"][-1] in ",:;")
+        b = [0, *min(itertools.combinations(range(1, len(ws)), parts - 1), key=score), len(ws)]
+        return [ws[b[i]:b[i + 1]] for i in range(len(b) - 1)]
+
+    # one subtitle per sentence on up to two lines of ~42 characters; longer sentences get several
+    # subtitles of even length (no orphan "nå." at the end)
+    groups = []
     for s in order:
         ws = [x for x in G if x["sent"] == s]
-        groups, cur2 = [], []
-        for x in ws:
-            if cur2 and len(" ".join(y["w"] for y in cur2 + [x])) > 42:
-                groups.append(cur2)
-                cur2 = []
-            cur2.append(x)
-        groups.append(cur2)
-        for g in groups:
-            lines.append(f"{n}\n{srt_ts(g[0]['start'])} --> {srt_ts(g[-1]['end'] + 0.1)}\n{' '.join(y['w'] for y in g)}\n")
-            n += 1
+        groups += even_split(ws, -(-len(" ".join(y["w"] for y in ws)) // 84))
+    for k, g in enumerate(groups):
+        en = g[-1]["end"] + 0.1
+        if k + 1 < len(groups):
+            en = min(en, groups[k + 1][0]["start"])
+        rows = even_split(g, 2) if len(" ".join(y["w"] for y in g)) > 42 else [g]
+        text = "\n".join(" ".join(y["w"] for y in r) for r in rows)
+        lines.append(f"{n}\n{srt_ts(g[0]['start'])} --> {srt_ts(en)}\n{text}\n")
+        n += 1
     with open(os.path.join(a.out_dir, "subtitles.srt"), "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines))
-    print(f"{len(events)} caption chunks -> {a.out_dir}/captions.ass, subtitles.srt  (font {a.font} {size}px at y={a.y})")
+    print(f"{len(events)} caption chunks -> {a.out_dir}/captions.ass, subtitles.srt  (font {a.font} {size}px at y={a.y})"
+          + (f", {len(manual)} sentences split by hand" if manual else ""))
     print(" | ".join(e[2] for e in events[:40]) + (" ..." if len(events) > 40 else ""))
 
 

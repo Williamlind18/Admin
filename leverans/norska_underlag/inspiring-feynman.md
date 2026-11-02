@@ -50,3 +50,10 @@ Den ingår inte här.
 - Uppföljning som fortfarande är öppen från den svenska versionen: Uproot Cleans förpackningar syns från
   cirka 4:10. Användaren har inte svarat på om produktbilden ska läggas över dem.
 - Döp leveranserna till `norrtvatt_maskinrent_video2_no.mp4/.srt` och `manus_norrtvatt_video2_no.txt`.
+
+## Status
+- **Klar 2026-11-02:** `leverans/norrtvatt_maskinrent_video2_no.mp4` + `.srt` och `leverans/manus_norrtvatt_video2_no.txt`.
+  - Varumärket heter **Nordvask** och produkten **Maskinren** i Norge ("Den heter Maskinren, fra Nordvask.").
+  - Samma erbjudanden i norska kronor, och "höstrea" har blivit "salg".
+  - Exakt samma videomaterial, så Uproot-förpackningarna från cirka 4:12 ligger kvar.
+  - Röst: användarens "Norsk äldre man 55-60 år" (`iWsqLB1KXhKYZqry79ma`), en man som i den svenska versionen.

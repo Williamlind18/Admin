@@ -26,6 +26,11 @@ naturlig norska (bokmål). Följ `.claude/skills/ad-video-localizer/SKILL.md` so
 - **Captions:** de handvalda svenska bitarna finns i `leverans/underlag/maskinrent3_captions_sv.txt`
   som förebild.
 - **Uproots kartong får synas** (användarens beslut). Ingen musik, eftersom användaren lägger på den själv.
+- **Norsk version KLAR (2026-11-02):** `leverans/nordvask_maskinren3_no.mp4`, `.srt` och
+  `leverans/manus_maskinren3_no.txt`. I Norge heter varumärket **NORDVASK** och produkten **MASKINREN**
+  (samma erbjudanden som i Sverige). Röst-ID wmWNq8zv8Au6slnVf0MZ (kvinna, norska), eleven_v4 med
+  `language_code: no`. Norsk kartong: `leverans/underlag/maskinren_produktbild_no.png`. Slutruta
+  "SALG / Opptil 50 % rabatt". Captions: `leverans/underlag/maskinren3_captions_no.txt`.
 
 ## Att fråga om innan den norska versionen görs
 - Röst-ID för norska (fråga alltid).

@@ -232,3 +232,15 @@
   en bild vid varje videosnutt uproot syntes, så ska det inte vara"). Keep the original clips, packaging
   included, and replace only the competitor's still image at the very end with our end card. If the
   original has no end still, add none.
+
+## A 4-minute Uproot ad with captions in three bands (learned on video43, 2026-11-03)
+- Neither `find_boxes.py` nor `ocr_boxes.py` found every caption (white boxes merge with bright footage):
+  whole captions survived the first clean. What worked: treat captions as continuous (each one stays until
+  the next appears) and mask each OCR'd box from its first sample to the next caption; then list the spans
+  that no detected or manual box covers and mask them with a wide band box (here x 84-636, y 792-852).
+  The Swedish captions at y 0.645 sit on that band and hide most of the smudge.
+- Check the cleaned video with a 1 fps contact sheet of the caption bands, not only OCR: OCR missed
+  fully visible leftovers twice.
+- Trimming 20.7 s of B-roll (tails of shots at scene cuts, plus a map that said "Florida" and a badge shot)
+  brought a 251 s original to 230 s for 201 s of Swedish speech, with tempo ×0.95-1.05 and pauses ≤ 0.5 s.
+- ElevenLabs Music (140 s, instrumental) cost 2 100 credits although the estimate said 4 242.

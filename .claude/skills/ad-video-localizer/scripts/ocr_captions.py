@@ -62,6 +62,8 @@ def main():
     ap.add_argument("src"); ap.add_argument("out_dir")
     ap.add_argument("--band", default="0.70-0.86", help="vertical band (fractions of height) where captions sit")
     ap.add_argument("--pad", type=int, default=5)
+    ap.add_argument("--vpad", type=int, default=6, help="extra rows above/below the box in the masks (use ~12 for "
+                    "bands mode: its box can be a few rows short and leave a thin white edge after inpainting)")
     ap.add_argument("--box-h", default="0.030-0.047", help="caption box height range (fractions of height)")
     ap.add_argument("--fill", type=float, default=0.45, help="min share of white pixels in the box")
     ap.add_argument("--mode", choices=["cc", "bands"], default="cc",
@@ -148,7 +150,7 @@ def main():
                 if g: break
         if g:
             x, y, w, h = g
-            masks[fr] = [[max(0, x - a.pad), y - 6, min(Wd, x + w + a.pad), y + h + 6]]
+            masks[fr] = [[max(0, x - a.pad), y - a.vpad, min(Wd, x + w + a.pad), y + h + a.vpad]]
     json.dump({k: list(v) for k, v in det.items()}, open(os.path.join(a.out_dir, "det.json"), "w"))  # raw detections
     json.dump(out, open(os.path.join(a.out_dir, "segments.json"), "w"), ensure_ascii=False)
     json.dump(masks, open(os.path.join(a.out_dir, "masks.json"), "w"))

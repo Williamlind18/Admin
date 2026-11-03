@@ -156,3 +156,26 @@ was female).
   has the same ratio. On Maskinrent 4 the music sat only ~9 dB under the voice, not 15.
 - **Captions:** Norwegian function words are in `make_captions.py --lang no`. Show money and counts as
   digits ("999 kroner", "30 dager", "15 000"); keep the number phrase together in the .srt too.
+
+## Long competitor ads with hooks (Maskinrent videos 8-10, Uproot footage 720x1280)
+- **Small or merged caption boxes:** `ocr_captions.py --mode bands --band 0.15-0.75 --box-h 0.018-0.05`.
+  Bands mode can find the box a few rows short, and LaMa then leaves its top or bottom edge as a thin
+  white line (22 % of the frames on video 10). Pad the masks by about 12 rows (`--vpad 12`). Afterwards,
+  scan the cleaned video for bright rows just outside each old mask, and re-inpaint only those frames
+  with a taller mask. On video 10 that cut 1 459 frames down to 0 real remnants in about 15 min.
+- **Karaoke hooks** (big white uppercase words with a red box behind the word being spoken): remove
+  them with a fixed rectangle over the hook frames. Rebuild them in Swedish from the voice's word
+  times: Montserrat ExtraBold at ~62 px on 720 px width, a 3 px black rim, a red (#E40001) rounded box
+  with ~20 px padding, and 2-word groups. Measure each word's x-range by rendering it with libass in a
+  marker colour, not with PIL, so the box lines up with what libass draws.
+- **Different voices, very different speeds:** "äldre kvinna 60+ - SE" read one script at ~15 characters
+  per second and the next at ~12, a 63 s take for a 53 s video. "Äldre man 50-60 år - SE" reads at
+  ~15.2. Run a short rate test (about 220 credits) before a long take. When a take is far too long,
+  tighten the wording, keep every point, and take it again.
+- **Takes with uneven pauses:** use `split_take_ref.py`. When a cut lands in a dip instead of a pause,
+  compare the neighbouring lengths with espeak estimates. Recut by hand at the real pause if both
+  sentences get closer to their estimate.
+- **Uneven slack:** when the translation is shorter in one half and longer in the other, run
+  `optimize_anchors.py` with windows that are wider on the early side (about -3.5 to +1 s). Slack then
+  moves forward and the speed-up stays at or under 1.08, at the cost of 2-3 s of drift around the
+  middle.

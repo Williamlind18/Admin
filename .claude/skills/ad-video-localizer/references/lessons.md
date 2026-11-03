@@ -30,6 +30,10 @@
 - The user's subscription allows 5 concurrent ElevenLabs requests; more fail with "Too many
   concurrent requests" and must be started again.
 
+- **Voices with short sentence pauses.** "Äldre man 50-60 år - SE" paused only 0.1-0.3 s between
+  sentences. split_take.py on pauses alone then drifted 2-4 s over 15 sentences. With Scribe starts
+  (`--starts`), every cut was within 0.17 s.
+
 ## Audio
 - If the original ad has music under the voice, it cannot be separated here (source-separation models
   are blocked). The output is voice-only unless the user supplies the music file. Mix it with
@@ -64,6 +68,15 @@
   30 fps. Then check a 0.2 s grid of the render to confirm that nothing peeks out.
 
 ## Footage and content
+- **Competitor end card (a still product image at the end):** cut it and put the user's own product image
+  in its place. Take it from Shopify (`product.media` → `image.url` on cdn.shopify.com, which is reachable).
+  Place it on a blurred, colour-matched background at 9:16. It can run a little longer than the original
+  card to fit the CTA (video38: 3 s became 5.4 s). Keep the competitor's boxes in the clips if the user
+  says so.
+- **Burned-in captions (white box, black text) in competitor VSLs** (video26, video38): Tesseract
+  OCR of the detected boxes gives the original script with timestamps. Inpainting the boxes away
+  (OpenCV TELEA plus a soft blur) works well. White-on-white frames are missed by the detector, so
+  sheet the caption band in the gaps and add manual boxes.
 - Look for **other brands in the footage** (packaging, websites, logos) and warn the user. Offer to cover
   those shots with the user's product image if they upload one. On Maskinrent video 2 the user chose
   to keep the competitor's box shots.

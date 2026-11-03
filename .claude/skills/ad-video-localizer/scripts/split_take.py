@@ -11,7 +11,7 @@ among the silences with dynamic programming: each sentence should last about as
 long as its syllable count predicts (or as the same sentence did in earlier
 clips, with --expect), and longer silences are preferred as sentence breaks.
 
-Usage: split_take.py TAKE.mp3 SENT_DIR [--expect durations.json]
+Usage: split_take.py TAKE.mp3 SENT_DIR [--expect durations.json] [--starts dtw_starts.json]
 Needs SENT_DIR/NN.txt from split_script.py. Writes SENT_DIR/NN.mp3 (320 kb/s)
 and prints one row per sentence - check that 'ratio' stays roughly 0.6-1.4 and
 that every 'pause_after' is a real pause (>= ~0.3 s). A pause under 0.2 s or a
@@ -37,6 +37,9 @@ def main():
     ap.add_argument("take")
     ap.add_argument("sent_dir")
     ap.add_argument("--expect", help="json {id: seconds} with earlier per-sentence durations (optional)")
+    ap.add_argument("--starts", help="json {id: seconds}: rough sentence starts in the take (e.g. from a DTW "
+                    "against the word reference); cuts are pulled towards them. Use it when the voice "
+                    "has short sentence pauses")
     a = ap.parse_args()
 
     ids = sentence_ids(a.sent_dir)
@@ -64,6 +67,7 @@ def main():
         else:
             i += 1
     N, C = len(ids), len(cands)
+    guide = {int(k): float(v) for k, v in json.load(open(a.starts)).items()} if a.starts else {}
     exp = w / w.sum() * (s1 - s0) / FPS  # expected seconds per sentence, its share of pauses included
     starts = [s0] + [c[1] for c in cands]  # a sentence starts where the previous silence ends
     ends = [c[0] for c in cands] + [s1]   # and ends where the next silence starts
@@ -86,6 +90,9 @@ def main():
                 if dur > 2.2 * exp[k]:
                     break
                 c = dp[k][j] + 4 * np.log(dur / exp[k]) ** 2 + bonus(cands[e])
+                g = guide.get(ids[k + 1])
+                if g is not None:  # the next sentence starts where this silence ends
+                    c += 24 * (cands[e][1] / FPS - g) ** 2
                 if c < dp[k + 1][e + 1]:
                     dp[k + 1][e + 1] = c
                     bk[k + 1][e + 1] = j
@@ -102,6 +109,7 @@ def main():
         first[k - 1] = bk[k][first[k]]
 
     ff = ffmpeg_exe()
+    cuts = {}
     print(f"take {len(y) / sr:.1f}s, speech {s0 / FPS:.2f}-{s1 / FPS:.2f}s, {C} silences, {N} sentences")
     print(" id   start     end    dur  expect  ratio  pause_after  text")
     for k in range(N):
@@ -111,14 +119,21 @@ def main():
         if k + 1 < N:
             c = cands[first[k + 1] - 1]
             pause = (c[1] - c[0]) / FPS
-        flag = "  <-- check" if (k + 1 < N and pause < 0.35) or not 0.6 <= (en - st) / exp[k] <= 1.5 else ""
+        if guide:  # with guides, a short pause is fine; a cut far from its guide is not
+            off = [abs(x - guide[i]) for x, i in ((st, ids[k]),) if i in guide]
+            flag = "  <-- check" if off and off[0] > 0.6 else ""
+        else:
+            flag = "  <-- check" if (k + 1 < N and pause < 0.35) or not 0.6 <= (en - st) / exp[k] <= 1.5 else ""
         print(f" {ids[k]:02d} {st:7.2f} {en:7.2f} {en - st:6.2f} {exp[k]:6.2f}  {(en - st) / exp[k]:5.2f}"
               f"   {pause:5.2f}   {texts[k][:44]}{flag}")
         a0 = max(0.0, st - 0.06)
         b0 = en + (min(0.12, pause / 2) if k + 1 < N else 0.3)
+        cuts[ids[k]] = [round(a0, 3), round(b0, 3)]
         subprocess.run([ff, "-hide_banner", "-loglevel", "error", "-y", "-i", a.take, "-ss", f"{a0:.3f}",
                         "-to", f"{b0:.3f}", "-c:a", "libmp3lame", "-b:a", "320k",
                         os.path.join(a.sent_dir, f"{sid(ids[k])}.mp3")], check=True)
+    with open(os.path.join(a.sent_dir, "split.json"), "w") as fh:  # clip start/end in the take, for scribe_words.py
+        json.dump(cuts, fh)
 
 
 if __name__ == "__main__":

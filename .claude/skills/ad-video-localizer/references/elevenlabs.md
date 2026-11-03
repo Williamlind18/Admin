@@ -27,7 +27,7 @@ therefore has to come from how the audio is generated, which means **one take**.
 |---|---|---|---|
 | `eleven_v3` | final voice (user's choice, most natural) | ~1 per character | ~15.5-16 chars/s |
 | `eleven_multilingual_v2` | older default; ~13 % faster speech | ~1 per character | ~19 chars/s |
-| `eleven_flash_v2_5` | word-by-word timing reference only | ~0.5 per character | — |
+| `eleven_flash_v2_5` | word-by-word timing reference only (skip it when Scribe works) | ~1 per character (Nov 2026; was ~0.5) | — |
 | `eleven_v4` | offered by the connector, **untested** here | ? | ? |
 
 Pass `estimate_only: true` to price a call before generating. For a 135 s ad (≈2 100 characters),
@@ -67,6 +67,21 @@ It also speaks slightly faster. The same 2 103 characters were 135.5 s of speech
 140.4 s as 39 clips, so less speed-up is needed. Syncing still works because the take is cut into
 sentences at its pauses, and each sentence is then aligned and placed on its own exactly as before.
 
+## Scribe: checking and timing the take
+Run `creative_transcribe_audio` with `model_id: eleven_scribe_v1` and `connect_from: [<take's tts
+node_id>]` on the same flow. The status result has `transcripts[0].text`, a truncated `words` list and
+`words_download_url` (the full words.json). On video38, a 227 s Swedish take, it took a few seconds,
+cost 0 credits, and matched the script word for word. Download words.json and use
+`scripts/scribe_words.py` (see SKILL.md steps 4-5).
+
+## Music
+`node_type: music`, `model_id: eleven_music_v2_5`, `model_parameters: {"duration_seconds": <video
+length>, "lyrics_type": "instrumental", "instrumental": true}`, then `creative_run_flow_nodes` with
+`generations_count: 1` (the default is 4). Describe how it sounds: genre, instruments, tempo and the
+energy curve. A 210 s bed cost 3 150 credits, although the estimate said 6 364. It came at -14 LUFS
+with a natural fade at the end. Mix it with `render.py --bed music.mp3 --bed-db -18`, which put it
+about 16 dB under a -16.5 LUFS voice.
+
 ## Concurrency and failures
 The user's subscription allows **5 concurrent requests**. More parallel calls come back with
 `status: failed` and "Too many concurrent requests". With one take plus the flash reference this no
@@ -74,8 +89,8 @@ longer matters. If you do run many generations, start at most 5 at a time, and r
 that failed.
 
 ## Things that do not work
-- `creative_transcribe_audio` (Scribe) through the connector returns plain text with **no timestamps**,
-  so it is useless for syncing.
+- (Fixed by Nov 2026.) `creative_transcribe_audio` (Scribe) used to return plain text with no
+  timestamps. It now returns per-word `start`/`end` (see "Scribe" below).
 - Downloading speech-recognition models (Whisper and similar) is blocked in the cloud sandbox. That is
   why `align_words.py` combines three model-free methods.
 - Speeding the voice up with the **rubberband** filter. It sounded robotic to the user. `atempo` is

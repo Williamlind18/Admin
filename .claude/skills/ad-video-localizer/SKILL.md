@@ -84,19 +84,30 @@ compliance flags once in that same message.
 Follow `references/elevenlabs.md`. You need:
 - **one** `eleven_v3` take of the **whole script** (the lines of `script.txt` joined with spaces,
   `generations_count: 1`), saved as `WORK/take.mp3`,
-- one cheap `eleven_flash_v2_5` word-by-word reference made from `sent/iso.txt`, saved as `sent/iso.mp3`.
+- a **Scribe transcript of the take** (`creative_transcribe_audio` with `connect_from` = the take's tts
+  node; it cost 0 credits). Download its `words_download_url` as `WORK/words.json`. It has a start and
+  end time for every word.
+- only if Scribe is unavailable: the `eleven_flash_v2_5` word-by-word reference made from
+  `sent/iso.txt`, saved as `sent/iso.mp3`. It now costs about 1 credit per character, as much as the take.
 
-Download with `bash $SK/download_clips.sh urls.txt WORK` (names `take` and `iso`, then move
-`iso.mp3` into `sent/`). Then cut the take into sentences:
-`python3 $SK/split_take.py WORK/take.mp3 WORK/sent`. Check its table: every `pause_after` should be a
-real sentence pause (≥ ~0.35 s; v3 takes usually have 0.4-0.8 s) and no row should be marked
-`<-- check`. Keep a running total of credits for the report.
+Download with `bash $SK/download_clips.sh urls.txt WORK` (name `take`). Check the take against the
+script and get the sentence starts:
+`python3 $SK/scribe_words.py WORK/words.json WORK/script.txt WORK/sent --starts`. It stops if the take
+skips or changes words. Then cut the take into sentences:
+`python3 $SK/split_take.py WORK/take.mp3 WORK/sent --starts WORK/sent/scribe_starts.json`. With
+`--starts`, a row is marked `<-- check` only when a cut lands more than 0.6 s from its Scribe start.
+Without Scribe, every `pause_after` should be a real sentence pause (≥ ~0.35 s; v3 takes usually have
+0.4-0.8 s), and no row should be marked. Some voices pause only 0.1-0.3 s between sentences, and then
+the splitter without `--starts` drifts by several seconds. Keep a running total of credits for the report.
 
 ### 5. Find the word timings
 `python3 $SK/align_words.py WORK/sent --lang sv`. For each boundary it takes the median of three
 estimates (syllables, espeak DTW, same-voice reference DTW). This was checked against the original
 project and reproduced its timings exactly. Note sentences whose "spread" is 0.6 s or more; those are
-the least certain.
+the least certain. Then, with a Scribe transcript, run
+`python3 $SK/scribe_words.py WORK/words.json WORK/script.txt WORK/sent --apply`. It writes the Scribe
+word times into `fused.json` and prints how far they differ from align_words. Video38 had a median
+difference of 0.07 s.
 
 ### 6. Plan the timeline
 ```
@@ -159,7 +170,7 @@ Follow `references/delivery.md`:
 See `references/lessons.md`. It covers:
 - the blocked hosts,
 - why the voice must be one take that is split, not one clip per sentence, and why atempo beats rubberband,
-- why Scribe transcripts don't help,
+- using Scribe word timestamps to check and split the take,
 - what to do when music, competitor branding or old burned-in text is in the footage.
 
 ## Security

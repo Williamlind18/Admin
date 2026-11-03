@@ -137,3 +137,15 @@
   A regenerated take of the liveliest paragraph came back with the same pitch curve and the same timbre
   (MFCC distance), so it was the delivery, not a second speaker. Compare timbre as well before regenerating
   everything over the ±15 Hz rule.
+
+## Small burned-in captions and long videos (video40, Nov 2026)
+- Measure the caption box height before `burned_captions.py detect`: video40's boxes were 34 px high on
+  720×1280, and the default `--box-h 55` found only 2 216 of 11 161 frames (150 captions instead of 479).
+  With `--box-h 34` every caption was found. Run detect once more on the clean video: it found three
+  leftovers (captions raised inside a graphic and a single-frame caption).
+- When the planner leaves a long pause before an anchor (2.3 s before the OXYGEN BLEACH title), look at
+  the footage there first. A competitor-brand montage (Affresh, OxiClean) could simply be cut (1.9 s),
+  which fixed the pause and removed the other brands in one go.
+- For a long story (6 min) the voice was ~4 % longer than the picture in the first two minutes and the
+  offer at the end. Slowing those stretches of footage by 7-8 % (repeated frames, not blended ones, which
+  ghost on moving shots) and the middle by 3 % kept the voice at x0.95-1.05 with every anchor hit.

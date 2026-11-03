@@ -212,3 +212,20 @@
   the cleaned one). When the source shares the timeline, overlay the whole source input with
   `enable='between(t,a,b)'` instead, and check a frame inside the splice.
 - Reusing the earlier music generation (`creative_get_flow_node` → `creative_get_generations`) costs nothing.
+
+## Small caption boxes that move between two heights (learned on video34, 2026-11-03)
+- `burned_captions.py detect` missed most of them (boxes ~36 px high at y≈409 *and* y≈817, sometimes a
+  two-line box at 355). Two scripts in `scripts/` worked instead:
+  - `ocr_boxes.py VIDEO OUT.json 5` finds white boxes (closing fills the text) and OCRs them with
+    tesseract (`apt-get install tesseract-ocr`) to read the original script with times. **Set
+    `OMP_THREAD_LIMIT=1`** (the script does): with 4 parallel calls tesseract took ~50 s per crop instead
+    of 0.2 s.
+  - `find_boxes.py VIDEO OUT.json` lists the centred caption boxes in every frame for the inpaint.
+- **Gap filling across a scene cut smudged a face:** a top-band box from the next shot was painted over a
+  woman's eyes while her caption sat at the bottom. Only apply filled/neighbour boxes where the frame
+  really shows a white box there (`min(RGB) > 200` on more than 45 % of it), plus hand-checked manual
+  boxes. Then re-run `find_boxes.py`/`ocr_boxes.py` on the cleaned video: nothing readable should remain
+  outside the shots that get covered by cards.
+- **Trimming for a shorter voice:** cut the tails of B-roll shots at scene cuts (0.6-0.9 s each) where
+  the planner leaves gaps > 0.4 s, and cover competitor packaging with full-screen product cards (slow
+  `zoompan`) instead of cutting it when the voice needs the time.

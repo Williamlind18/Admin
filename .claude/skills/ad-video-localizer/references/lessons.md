@@ -227,5 +227,8 @@
   boxes. Then re-run `find_boxes.py`/`ocr_boxes.py` on the cleaned video: nothing readable should remain
   outside the shots that get covered by cards.
 - **Trimming for a shorter voice:** cut the tails of B-roll shots at scene cuts (0.6-0.9 s each) where
-  the planner leaves gaps > 0.4 s, and cover competitor packaging with full-screen product cards (slow
-  `zoompan`) instead of cutting it when the voice needs the time.
+  the planner leaves gaps > 0.4 s.
+- **The user does NOT want our product cards laid over the competitor's clips** (2026-11-03: "du har lagt in
+  en bild vid varje videosnutt uproot syntes, så ska det inte vara"). Keep the original clips, packaging
+  included, and replace only the competitor's still image at the very end with our end card. If the
+  original has no end still, add none.

@@ -282,3 +282,9 @@
 - **Script length.** At 16.3 chars/s the first full translation needed x1.21. Cutting about 17 %
   (repetitions, a second example, "after that I gave it to every pet owner" lines) fitted it at x1.00.
   It held up: the take was 3 818 characters, 235 s of speech.
+- **Emojis survive the caption remover.** Blue "⬇️⬇️⬇️" squares under "Link's right down below" stayed after
+  the white-text pass and then collided with the new "KÖP 2" overlay. Look at the last 10 s with the
+  new overlays on before the final encode. One second of `delogo` (`enable='between(n,A,B)'`) hid them
+  under the overlay.
+- **`pkill -f PATTERN` kills your own shell** when PATTERN also appears in the command you are running
+  (exit 144). List the PIDs with `ps -eo pid,args | grep ...` in one call and `kill PID` in the next.

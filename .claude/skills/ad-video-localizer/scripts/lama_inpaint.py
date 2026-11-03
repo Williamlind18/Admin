@@ -76,5 +76,6 @@ while True:
     f += 1
     if f % 300 == 0:
         print(f"frame {f}  inpainted {done}  {time.time()-t0:.0f}s", flush=True)
+dec.stdout.close(); dec.terminate(); dec.wait()  # stop the decoder quietly when --end is before the last frame
 enc.stdin.close(); enc.wait()
 print("done", f, done, f"{time.time()-t0:.0f}s")

@@ -90,9 +90,11 @@ def main():
     cuts = []
     for k in ids[1:]:
         tt = int(round(pred[k] * 100))
-        near = [s for s in sil if abs((s[0] + s[1]) / 2 - tt) <= 35]
+        def dist(s):  # 0 inside the silence, else frames to its nearest edge (long pauses are wide)
+            return 0 if s[0] <= tt <= s[1] else min(abs(s[0] - tt), abs(s[1] - tt))
+        near = [s for s in sil if dist(s) <= 35]
         if near:
-            s = max(near, key=lambda s: (s[1] - s[0]) - 0.2 * abs((s[0] + s[1]) / 2 - tt))
+            s = max(near, key=lambda s: (s[1] - s[0]) - 0.5 * dist(s))
             cuts.append((s[0], s[1], "silence"))
         else:
             m = tt - 35 + int(np.argmin(sm[tt - 35:tt + 35]))

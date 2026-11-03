@@ -80,6 +80,12 @@ expect about 2 100 credits for the voice take plus about 1 200 for the flash ref
      −0.06 s, end + half the pause.
    - Rerun align_words. A spread under ~0.25 s on both lines confirms the cut.
    Such a take often fits the video almost as it is, with tempos of about 1.00-1.03.
+   **Faster and more reliable:** `python3 scripts/split_take_ref.py WORK/take.mp3 WORK/sent`. It aligns
+   the whole take against the word reference `sent/iso.mp3` with DTW, predicts every sentence start and
+   snaps each cut to the nearest silence. On Maskinrent video 8 (the voice "äldre kvinna 60+ - SE",
+   all pauses 0.05-0.33 s) split_take.py misplaced 8 of 22 cuts even with espeak guesses, while
+   split_take_ref.py put all 22 on real pauses (align_words spreads ≤ 0.47 s afterwards). Generate the
+   iso reference before splitting when you expect short pauses.
 7. If you must change a sentence after the take, see "Changed sentences" in SKILL.md. The best option is
    a new whole take. A separately generated sentence will not sound like the same speaker. Give a
    changed sentence its own word reference, a small flash take of its words ("ord. ord.") saved as

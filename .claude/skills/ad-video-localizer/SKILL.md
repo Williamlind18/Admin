@@ -94,7 +94,9 @@ Download with `bash $SK/download_clips.sh urls.txt WORK` (names `take` and `iso`
 `iso.mp3` into `sent/`). Then cut the take into sentences:
 `python3 $SK/split_take.py WORK/take.mp3 WORK/sent`. Check its table: every `pause_after` should be a
 real sentence pause (≥ ~0.35 s; v3 takes usually have 0.4-0.8 s) and no row should be marked
-`<-- check`. Keep a running total of credits for the report.
+`<-- check`. If many rows are marked because the voice barely pauses, use
+`python3 $SK/split_take_ref.py WORK/take.mp3 WORK/sent` instead (DTW against `sent/iso.mp3`).
+Keep a running total of credits for the report.
 
 ### 5. Find the word timings
 `python3 $SK/align_words.py WORK/sent --lang sv`. For each boundary it takes the median of three

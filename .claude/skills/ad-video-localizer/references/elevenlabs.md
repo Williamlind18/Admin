@@ -45,6 +45,7 @@ take, so budget with about 0.9 × the test rate. Measured so far (eleven_v3, Swe
 | "Man mörk röst - SE" (UkRAtFubBAJ0Ggc3W2XX) | 13.0 chars/s | 13.6 chars/s (video 14) |
 | "kvinna energisk - SE" (tY9FLUZCUCQXwZYDwvWw) | 18.0 chars/s | 15.4-15.9 chars/s (video 29) |
 | "Norsk äldre man 55-60 år" (iWsqLB1KXhKYZqry79ma), `language_code: "no"` | — | 13.1-13.8 chars/s (video 15 NO); 12.7 with many short lines (video 14 NO) |
+| "kvinna 30-40 år skånsk - SE" (LzJuwbGODHbc1VvzbMrf) | — | 15.6-17.7 chars/s, sentence pauses only 0.06-0.22 s: split with `--words` (video 39) |
 
 The dark documentary voice paused only 0.15-0.3 s between sentences, so split_take.py marked most rows
 `<-- check`. That is expected for such a voice: confirm the ratios are near 1 and that the energy at

@@ -215,3 +215,40 @@
 - **Background ffmpeg:** `ffmpeg -i FILE` with no output exits 1. Under `set -o pipefail` that turned
   `hq_encode.sh` into a silent exit. Also give background ffmpeg `-nostdin`, and never read a
   `.status` file from an earlier run as the result of a new one.
+
+## A voice that barely pauses, free-floating overlay text (video 39, 2026-11-03)
+- **Splitting a take without pauses.** "kvinna 30-40 år skånsk - SE" (LzJuwbGODHbc1VvzbMrf) left only
+  0.06-0.15 s between sentences, so `split_take.py` marked every row `<-- check` and the ratios swung
+  0.58-1.37: the silences could not be told apart. Transcribe each take with Scribe (~5.5 credits/s;
+  91 s ≈ 500 credits) and run `split_take.py TAKE SENT --words words.json`. It matches the script to
+  Scribe's words (258 of 258) and cuts at the quietest point between sentences, with 0 checks.
+- **Scribe doubles as a pronunciation check.** One take came back as "körde vi *in* en" and
+  "alfa-*amilas*", another as "tvättmedelshinna" and "Nordtvätt". The take whose transcript matched the
+  script word for word was chosen.
+- **This voice's length varies a lot between generations.** A 1 700-character measuring take was 109 s
+  (15.6 chars/s). The three takes of the final 1 616 characters were 91-94 s (17.2-17.7 chars/s). Plan
+  with wide anchor windows. The planner then leaves ~1 s pauses at the topic changes rather than
+  speeding anything up.
+- **Free-floating white text** (a hook title, a "BUY 2 GET 2 FREE" graphic) has no box for
+  `remove_captions.py`. `scripts/remove_overlay_text.py` finds bright, unsaturated pixels in a region
+  and frame range, grows the mask over the outline and fills it with the same push-pull fill.
+  - `--blur` adds extra blur, e.g. so a defocused competitor box behind the offer can't be read.
+  - `--bridge` cross-fades over frames where the text fills the picture. Here that was a 15-frame zoom
+    of "money back guarantee". The zoom started 5 frames before the white-pixel count jumped, as
+    semi-transparent grey letters. Find the start from the frame-to-frame difference instead.
+- **New Swedish overlays in the same places.** Add them as ASS lines on layer 3 after `chunk_captions.py`:
+  - the title at `\fs58\bord3.5` at the original's y,
+  - the offer at `\fs140` ("KÖP 2", "FÅ 2 GRATIS"),
+  - "Fri frakt + 30 dagars / pengarna-tillbaka-garanti" at `\fs72`.
+
+  The original's captions sat higher for 3 s (55.6-58.4 s), so those caption lines were moved to the
+  patch with `\pos(540,708)`.
+- **Ending without the competitor's box.** The last 5 s were their packshot and end card. They were
+  cut, and three result shots from earlier in the ad were reused so the CTA had room: the black water
+  draining (for "se vad som kommer ut"), a woman with fresh clothes, and the dog blanket.
+- **Shell pitfall:** `cmd1 && cmd2 && (long job) &` sends the whole `&&` chain to the background,
+  including variable assignments. Start the background job on its own line.
+- **Competitor branding on a tablet wrapper.** "Cleaner Pro" was readable on the wrapper for 1.1 s, while
+  the voice said "Men Maskinrent från Norrtvätt klarar det". The wrapper moved too much to blur cleanly,
+  so the 34 frames were cut. The line now starts on the bare green tablet. Shift every later anchor
+  and overlay by the cut (−1.133 s), and widen the windows around a shot that got shorter.

@@ -74,7 +74,8 @@ Note down:
 - **Where old captions sit**, often as blurred bars. The default y = 0.75 usually covers them.
   If they are still readable (e.g. black text in white boxes), they give you the transcript with
   timestamps: `python3 $SK/caption_sheets.py WORK/src.mp4 WORK/caps --band T0-T1:Y0-Y1`, then read
-  the `caps_NN.png` sheets. When the user wants them gone, run `remove_captions.py` on the source
+  the `caps_NN.png` sheets. Free-floating overlay text (titles, offer graphics) goes with `remove_overlay_text.py`.
+  When the user wants them gone, run `remove_captions.py` on the source
   before anything else, and put the new captions at the old box's centre (see lessons.md, video 22).
 - **Background music** (the audio report says so). It cannot be separated, so warn the user now.
 - **Other brands visible in the footage**, and any burned-in text that will remain.
@@ -100,7 +101,9 @@ Download with `bash $SK/download_clips.sh urls.txt WORK` (names `take` and `iso`
 `iso.mp3` into `sent/`). Then cut the take into sentences:
 `python3 $SK/split_take.py WORK/take.mp3 WORK/sent`. Check its table: every `pause_after` should be a
 real sentence pause (≥ ~0.35 s; v3 takes usually have 0.4-0.8 s) and no row should be marked
-`<-- check`. Keep a running total of credits for the report.
+`<-- check`. Keep a running total of credits for the report. If the voice hardly pauses between sentences (every row
+marked, pauses ~0.1 s), transcribe the take with Scribe and split with `--words words.json` instead
+(lessons.md, video 39).
 
 ### 5. Find the word timings
 `python3 $SK/align_words.py WORK/sent --lang sv`. For each boundary it takes the median of three

@@ -40,6 +40,34 @@
   timestamps. Diff its text against `script.txt` to confirm that eleven_v3 did not skip or change
   words, and use its words for `split_take.py --words` (see the next section).
 
+## A dense English original (video36, Danny variant, voice "Äldre man 50-60 år - SE")
+- **No transcript given:** upload the source audio (`creative_create_asset_upload` -> PUT ->
+  `creative_finalize_asset_upload` with the flow) and run Scribe on it. Unlike Scribe on our own
+  takes, this **costs credits** (726 for 132 s, ~5.5 per second). Say so in the report.
+- A 535-word English voiceover in 132 s becomes ~40 % too long as straight Swedish. Starting from an
+  approved earlier Swedish version of the same ad and adding only what is new kept it close.
+- This voice read ~15.4 characters per second of pure speech; the first take had 136.5 s of speech
+  for 132 s of footage. The **re-take with four lines shortened came back 2.6 s longer** (slower
+  delivery), so a re-take is a gamble. What worked: keep the first take and **cut the approved
+  phrases out of its sentence clips** at word boundaries. Pick the cut from the spectrum, not from
+  Scribe's word end (Scribe ended "misstagen" 0.08 s before its final n; the s of the next word
+  shows as a jump in >4 kHz energy), add a 30-40 ms fade, update `NN.txt` and `NN.words.json`, and
+  rerun `align_words.py`. Result: x1.06 max with 0.15 s pauses, still one take.
+- Music: the estimate after setting `duration_seconds` said 4 030 credits for 133 s; the run cost
+  1 995. Report the real cost from the run result.
+- Burned-in English text other than captions (karaoke hook at the top, red "MISTAKE 1/2/3" flashes,
+  enzyme name labels) was covered with white rounded boxes holding black Swedish text, timed to the
+  label's lifetime (measure it on 0.1-s gridded crops; entrance/exit splashes count). In the hook the
+  box shows the current Swedish sentence, and the bottom captions for those sentences are dropped,
+  as in the original.
+- The user asked to replace the competitor's final product shot with theirs: their product image came
+  from the page screenshots they sent earlier (extracted from the session transcript). Cut the source
+  at the shot change (`burned_captions.py remove --end`), render a same-length clip (product on a
+  blurred copy of itself, slow 6 % zoom) and concat, so the video length and timings stay the same.
+- After inpainting, `box_extent` still flagged a few frames: faded empty boxes (no ink, so the first
+  pass missed them) and white packaging next to the smudge. A second inpaint pass on the flagged
+  frames +-3 cleaned the empty boxes; the rest is a faint streak under the new captions.
+
 ## A take that is too fast for the footage (Norwegian Maskinren video 1, voice "medelålders kvinna - NO")
 - The first take had only 87.8 s of speech for 110 s of footage (the Swedish voice had ~105 s): the
   planner needed 0.9 s pauses or a x0.88 slowdown. eleven_v3 has no speed setting, so a second take

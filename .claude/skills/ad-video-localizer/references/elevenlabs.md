@@ -27,7 +27,7 @@ therefore has to come from how the audio is generated, which means **one take**.
 |---|---|---|---|
 | `eleven_v3` | final voice (user's choice, most natural) | ~1 per character | ~15-16 chars/s |
 | `eleven_multilingual_v2` | older default; ~13 % faster speech | ~1 per character | ~19 chars/s |
-| `eleven_flash_v2_5` | word-by-word timing reference only | ~0.5 per character | — |
+| `eleven_flash_v2_5` | word-by-word timing reference only | ~0.5 per character; **~1 per character on 2026-11-03** (4 370 credits for a 4 539-character iso) | — |
 | `eleven_v4` | offered by the connector, **untested** here | ? | ? |
 
 Pass `estimate_only: true` to price a call before generating. For a 135 s ad (≈2 100 characters),
@@ -41,7 +41,7 @@ take, so budget with about 0.9 × the test rate. Measured so far (eleven_v3, Swe
 | voice | short test | whole take |
 |---|---|---|
 | "30 år kvinna" (p47LfPZdd7LXERMMfx1R) | — | 15.1 chars/s |
-| "Äldre man 50-60 år - SE" (OvO33bxTqNfwQfoR6mVh) | 16.5 chars/s | 15.0 chars/s (video 11) |
+| "Äldre man 50-60 år - SE" (OvO33bxTqNfwQfoR6mVh) | 16.5 chars/s | 15.0 chars/s (video 11); 15.0-15.6 chars/s whole take, 16.0 chars/s speech (video 45, three takes 244.7-253.9 s for 3 818 chars) |
 | "Man mörk röst - SE" (UkRAtFubBAJ0Ggc3W2XX) | 13.0 chars/s | 13.6 chars/s (video 14) |
 | "kvinna energisk - SE" (tY9FLUZCUCQXwZYDwvWw) | 18.0 chars/s | 15.4-15.9 chars/s (video 29) |
 | "Norsk äldre man 55-60 år" (iWsqLB1KXhKYZqry79ma), `language_code: "no"` | — | 13.1-13.8 chars/s (video 15 NO); 12.7 with many short lines (video 14 NO) |

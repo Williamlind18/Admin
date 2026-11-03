@@ -252,3 +252,33 @@
   the voice said "Men Maskinrent från Norrtvätt klarar det". The wrapper moved too much to blur cleanly,
   so the 34 frames were cut. The line now starts on the bare green tablet. Shift every later anchor
   and overlay by the cut (−1.133 s), and widen the windows around a shot that got shorter.
+
+## Outlined captions all through a 4.5-minute talking-head ad (video 45, 2026-11-03)
+- **White captions with a thin black outline and no box** ran under every line, and white things sat in
+  the same band (detergent bottles, the washer, white plastic in the drum). Plain white-pixel masking
+  would have smeared those. `remove_overlay_text.py --outlined --stroke 13 --grow 5 --min 185` only
+  takes white pixels that belong to a thin stroke (they vanish under a 13 px opening) and lie next to
+  a dark outline. Tune it first with `--test-frames N,N,... DIR` (before/after PNGs, about 20 s). The
+  smudge it leaves is hidden under the Swedish captions, so put them where the old ones were
+  (`--y 0.625` here, not 0.75).
+- **The competitor's box stood on the washer** in about 75 % of the frames (talking-head layout).
+  `--hide-color 30,640,280,980:80-100:0.02:9` blurs its teal pixels' bounding box in every frame
+  where they cover at least 2 % of the region. Measure the hue fraction per frame first: the box frames
+  gave 0.04-0.08, B-roll gave ~0, so the threshold was clean. Check that the region also covers wider
+  shots, where the box sits lower.
+- **Other brands in a PiP** (Afresh, OxiClean and Tide packs for 1.6 s while the voice says "alla
+  rengöringstabletter i butiken"). They were blurred with an ffmpeg `crop,gblur` + `overlay` limited to
+  those frames (`enable='between(n,2169,2216)'`). The same was done for a small competitor box in a
+  corner of the ending.
+- **Cutting a long video: use `select`, not `split=N` + `trim` + `concat`.** On a 4.6-minute source the
+  split branches buffer every frame that has not been consumed yet, and the job was killed for lack of
+  memory (exit 137). One `select='not(between(n,A,B)+...)',setpts=N/(30*TB)` pass needs no buffer.
+  The ffmpeg here no longer has `-filter_complex_script`. Use `-/filter_complex FILE` instead.
+  Do not load all frames as int64 in numpy either (8 312 small frames → 11 GB). Use `mmap_mode='r'`
+  and a slice.
+- **Planning: few, wide anchors.** 27 anchors (every visual cue) needed up to x1.35. With 9 anchors
+  (only the labelled graphics, the cut points and the offer) and windows of 1-2 s, the max tempo was
+  x1.046. A label box is timed to its graphic anyway, so the voice may be up to ~1 s off it.
+- **Script length.** At 16.3 chars/s the first full translation needed x1.21. Cutting about 17 %
+  (repetitions, a second example, "after that I gave it to every pet owner" lines) fitted it at x1.00.
+  It held up: the take was 3 818 characters, 235 s of speech.

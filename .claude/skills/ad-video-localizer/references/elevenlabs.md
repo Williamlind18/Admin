@@ -73,9 +73,26 @@ The user's subscription allows **5 concurrent requests**. More parallel calls co
 longer matters. If you do run many generations, start at most 5 at a time, and re-run only the ones
 that failed.
 
+## Long scripts and Scribe timestamps (learned November 2026)
+- **A speech prompt may hold at most 5 000 characters.** A longer call fails with "Prompt must be at
+  most 5000 characters" (failed generations are not charged). For a longer script, read it in as few
+  takes as possible (two for 5 000-10 000 characters) and split them at a natural turn in the story.
+  Then join the takes with about 0.7 s of silence into one `take.mp3`. The same limit applies to the
+  flash word reference.
+- **`creative_transcribe_audio` (Scribe) now returns per-word start/end times** (`words`, plus
+  `words_download_url` for the full list). Upload the take (`creative_create_asset_upload` → PUT →
+  `creative_finalize_asset_upload` with the flow_id) and transcribe it. That checks that every word
+  was spoken and gives word timings that are better than `align_words.py`'s. On a 7.7-minute take it
+  cost about 2 500 credits, though the estimate said 170. The flash word reference cost about 7 000
+  credits for the same script, so for long scripts Scribe is the cheaper way to get timings.
+  `split_take.py` cut wrongly where a voice made short (0.1-0.3 s) sentence pauses. Cutting
+  at the gaps between Scribe's words fixed it: save the downloaded words as `WORK/scribe_words.json` and
+  run `python3 scripts/scribe_split.py WORK`. It writes `sent/NN.mp3` and a `fused.json` that
+  `build_voiceover.py` reads unchanged, and it replaces both `split_take.py` and `align_words.py`.
+
 ## Things that do not work
-- `creative_transcribe_audio` (Scribe) through the connector returns plain text with **no timestamps**,
-  so it is useless for syncing.
+- Older note: `creative_transcribe_audio` (Scribe) used to return plain text with no timestamps. As of
+  November 2026 it returns word timestamps; see above.
 - Downloading speech-recognition models (Whisper and similar) is blocked in the cloud sandbox. That is
   why `align_words.py` combines three model-free methods.
 - Speeding the voice up with the **rubberband** filter. It sounded robotic to the user. `atempo` is

@@ -90,7 +90,18 @@ Kontots CPA de senaste 30 dagarna är cirka 124 kr. Alla fyra ligger som annonsg
 
 Röst: cirka 25 000–30 000 ElevenLabs-krediter för fyra koncept med tre hooks var. Musiken återanvänds.
 
-## Att godkänna
+## Status 4 nov: klart
+Alla 12 nya annonser är producerade (C1 fanns sedan tidigare). Filer i `leverans/batch6/`:
+| Annonsgrupp | Filer (H1–H3, mp4 + srt) | Längd |
+|---|---|---|
+| C2 (I2 av b4 C2) | `nb6_C2_H*_I2-b4C2_sv` | 3:23 |
+| C3 (I1 av b3.1 C8) | `nb6_C3_H*_I1-b3.1C8_sv` (4:5) | 3:09 |
+| C4 (I1 av b3 C3) | `nb6_C4_H*_I1-b3C3_sv` | 3:06 |
+| C5 (I1 av b1 C3) | `nb6_C5_H*_I1-b1C3_sv` | 3:06 |
+Rader märkta [OK?] är inspelade men inte med i annonserna. Säg till om de stämmer, så läggs de in utan ny inspelning.
+Konkurrenternas förpackningar i själva berättelsen får synas (ditt besked); bara Uproots produktdel i slutet är ersatt.
+
+## Att godkänna (före produktion, besvarat)
 1. **Rösten:** samma som i vinnarna, OvO33bxTqNfwQfoR6mVh ("Äldre man 50-60 år - SE").
 2. **Rader märkta [OK?]:** de fanns i de vinnande föräldrarna, men får bara användas om de fortfarande stämmer:
    - "över femton tusen kunder"

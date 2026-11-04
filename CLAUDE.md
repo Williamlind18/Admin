@@ -15,6 +15,10 @@
   - Never remove content the user wants to keep.
   - Captions are 1-3 words in Montserrat ExtraBold.
   - Deliver a preview in chat, full quality on GitHub and an .srt file.
+- For ad iterations (new versions, hooks or concepts from an existing ad, ad breakdowns, labeling
+  winners, planning the next batch), use the `ad-iterations` skill for any brand. For Norrtvätt /
+  Maskinrent / Uproot Clean, also use `norrtvatt-iterations`, which holds the brand facts, the ad
+  catalogue and the iteration backlog.
 - This repo is public. Never commit API keys or other secrets.
 
 ## Norwegian versions ("gör alla annonser på norska")

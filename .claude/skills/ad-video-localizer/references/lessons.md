@@ -179,3 +179,26 @@ was female).
   `optimize_anchors.py` with windows that are wider on the early side (about -3.5 to +1 s). Slack then
   moves forward and the speed-up stays at or under 1.08, at the cost of 2-3 s of drift around the
   middle.
+
+## Lip sync for AI presenters (video46 test, not produced)
+The user asked whether an AI presenter talking to camera could speak Swedish. The ElevenLabs connector
+offers several video-to-video lip-sync models. Each takes a `video` and an `audio` port; `sync_mode`
+defaults to cut_off.
+- **Getting files in:** `creative_attach_reference_file` needs a direct https URL. A clip and a voice
+  wav pushed to the public repo and fetched via raw.githubusercontent.com worked.
+- **Price per 10 s, measured with `estimate_only`:**
+
+  | Model | Credits per 10 s | Result |
+  |---|---|---|
+  | `veed-lipsync` | ~410 | The user found it "not good at all". |
+  | `veed-lipsync-v2` | ~4 250 | Not tested. |
+  | `sync-lipsync-v2-pro` | ~5 060 | Not tested. |
+  | `sync-lipsync-v3` | ~8 100 | "Pretty good, not perfect but enough". Colours stay closer to the source than Veed's. |
+
+- **The price depends only on duration.** A 360×360 crop of the face cost exactly the same as the
+  full 720×1280 frame.
+- **Measure the presenter's screen time first.** Count face-visible seconds with a Haar cascade at
+  2 fps (download `haarcascade_frontalface_default.xml` from the opencv GitHub repo; the pip wheel
+  ships without it). Price it before proposing anything: a 4:37 ad with the presenter on screen for
+  238 s would have cost ~190 000 credits with Sync 3, and the user dropped it. Offer a 45-75 s cut
+  instead.

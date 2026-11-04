@@ -154,3 +154,19 @@ enzymes) is the same in all of them unless noted. **Box** is filled in after lab
 - Edit: competitor brand shots (Affresh, OxiClean, Arm & Hammer) cut out, the Uproot product section
   replaced with Maskinrent pack shots from the shop, old captions removed, quiet music bed.
 - Box: ? (launch as one ad set with the three hooks). Learning: –
+
+## Live ads → files and sources (found 2026-11-04 by matching video length to the second)
+The user names live ads `ny batch N – Cn`. Several deliveries live on other branches of this repo.
+
+| Live ad | Delivery (branch) | Source tag | Script | Box (lifetime, 2026-11-04) |
+|---|---|---|---|---|
+| b4 C2 | `norrtvatt_video22_sv.mp4` (claude/quirky-mayer-tsglxb) | video22 | `manus_video22.txt` | Breakthrough |
+| b3.1 C8 | `norrtvatt_maskinrent7_sv.mp4` (claude/zealous-dijkstra-nzvyw0) | video16 (4:5) | `manus_maskinrent7.txt` | Breakthrough |
+| b3 C3 | `norrtvatt_video11_sv.mp4` (claude/quirky-mayer-tsglxb) | video11 | `manus_video11.txt` | Breakthrough, borderline on KPI |
+| b1 C3 | `norrtvatt_maskinrent_video2_sv.mp4` (claude/inspiring-feynman-uo7z24) | video2 | `manus_norrtvatt_video2.txt` | Spend winner |
+
+Learning (2026-11-04): b4 C2 and b3.1 C8 are the same technician-teardown body with different hooks, and
+both are breakthroughs, so that body is our proven concept. The hook naming the cleaner the viewer
+already runs (C2, ROAS 6.3) beat the "scrap the machine" hook (C8, ROAS 4.7). All four top ads use a
+repairman as the authority. The sources in releases video2, video11 and video16 have no burned-in
+captions. Batch 6 plan: `leverans/batch6/batchplan_b6.md`.

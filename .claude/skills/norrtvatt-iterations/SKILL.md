@@ -32,6 +32,9 @@ the grandpa original and the grandpa/status iteration. Details: `references/upro
   for 999 kr, about 250 kr per pack and about 20 kr per tablet, free shipping, 30-day money-back
   guarantee. Earlier offers (autumn sale up to 50 %, two years for 619 kr) are expired. Don't reuse
   them without asking.
+- **Offer in the live "ny batch 4" ads** (B11; confirmed by the user 2026-11-04 for B12): 50 % rabatt,
+  one pack (12 tablets) lasts a whole year, 30 days money back. Shop price 499 kr. Ask which offer to use
+  when a new ad is made.
 - **Numbers in TTS:** write them as words ("niohundranittionio kronor", "trettio dagar").
 
 ## Claims that need the user's OK before reuse
@@ -63,6 +66,8 @@ source videos are GitHub releases on this repo, named by tag.
 | B08 | Maskinrent 8, laundry tricks | video35 | Three tricks you do wrong | List format | Unaware |
 | B09 | Maskinrent 9, enzymes | video41 | Three enzymes others lack | The mechanism itself | Product |
 | B10 | Maskinrent 10, technician | video44 | See what came out after one wash | Technician teardown | Problem |
+| B11 | C2 in "ny batch 4", monthly cleaner | video22 | Don't scrap it; shelf cleaners can't reach | Technician teardown | Solution |
+| B12 | I1-B11, the owner tells it (3 hooks) | video22 | Same, told by the older male owner | Technician (3rd person) + teardown | Solution |
 
 Norwegian versions of B03-B06 exist (`nordvask_maskinren*_no.mp4`). Name them `B03-NO` and so on.
 Per CLAUDE.md, only Maskinrent 3-6 get Norwegian versions unless the user names others.
@@ -99,5 +104,11 @@ and "Därför luktar tvätten mögel" for the mold angle. Check that the offer o
 ad.
 
 ## Learnings so far (dated)
-- 2026-11-04: No labels yet. Everything above about what wins is still Spencer's evidence from Uproot,
-  not ours.
+- 2026-11-04: First labels (Meta + Trackpanda, last 30 days). **B11 (C2 in "ny batch 4") is a
+  breakthrough**: ~76 % of its CBO's spend, CPA 82.5 kr vs the account's 124.5 kr, Trackpanda ROAS 6.4.
+  Next best: C8 in batch 3.1 (driveway teardown, ROAS 4.7), C3 in batch 3 (B04 biofilm footage, KPI
+  winner, ROAS 4.1), C3 in batch 1 (pipes, spend winner, ROAS 2.3). Pattern: every top ad is a long-form
+  technician teardown story, so third-person authority plus visual proof is our strongest component
+  so far. First iteration: B12 (I1-B11).
+- Product shots for end cards: the shop's product images (Shopify product "MASKINRENT - Maskinvård för
+  tvättmaskiner") work as clean pack shots in place of Uproot's product section.

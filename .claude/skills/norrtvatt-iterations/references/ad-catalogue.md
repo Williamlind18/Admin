@@ -119,3 +119,38 @@ enzymes) is the same in all of them unless noted. **Box** is filled in after lab
 - Awareness: problem aware. Emotion: unpleasant, high (the brown layer), relief at the end.
 - Positioning: "not another bleach". Urgency: the offer.
 - Format: teardown demonstration. Box: ? Learning: –
+
+## B11 – C2 in "ny batch 4", the owner who ran a cleaner every month
+- Source tag: video22 (Uproot technician teardown). Live in Ads Manager as C2 in "ny batch 4" since
+  2026-10-29. Same body as B10; only the hook differs.
+- Hook: the Swedish version of video22's "The owner of this machine ran Affresh every single month …"
+  (solution aware: names the failed solution in line one).
+- Angle: don't scrap your machine; the smell lives behind the panel and shelf cleaners can't reach it.
+- Avatar: a pet home that has tried everything on the shelf. Desire: money (not buying a new machine)
+  and fresh laundry.
+- Authority: technician 19 years, 1,000+ machines, and a teardown demonstration before and after.
+- Awareness: solution aware. Emotion: unpleasant, high (the brown layer), relief at the end.
+- Positioning: "not another bleach", three enzymes. Urgency: the offer (50 %).
+- Format: long-form teardown story (about 4.5 min), fast B-roll, small captions.
+- **Box (2026-11-04): Breakthrough.** About 76 % of its CBO's spend since launch (25,423 of
+  ~33,500 kr), CPA 82.5 kr against the account's 124.5 kr, ROAS 6.4 in Trackpanda (8.2 in Meta), profit
+  ~93k kr. The campaign's daily spend rose from ~3,000 to ~4,800 kr.
+- Learning: a solution-aware hook that names the shelf cleaner the viewer already uses, followed by
+  third-person teardown proof, wins. B10 has the same body with a "look at this" hook, which makes
+  their difference a free hook test.
+
+## B12 – I1-B11, the owner tells it himself (2026-11-04)
+- Files: `manus_maskinrent11_agaren.txt`, `norrtvatt_maskinrent11_agaren_h1_sv.mp4`, `_h2_`, `_h3_`
+  (+ .srt). Source tag: video22, re-cut.
+- What changed from B11: the narrator is the machine's owner, an older man (voice "Äldre man 50-60 år"),
+  with the technician as the third-person authority (the structure of Uproot's grandpa ad). The desire
+  leans on shame/status ("I stopped inviting people over") and money ("I wanted to scrap it").
+- Inherited learning: the solution-aware hook (monthly cleaning that didn't help), the teardown proof,
+  the three-enzyme mechanism, the long-form format and the offer.
+- Hooks: H1 "Jag körde maskinrengöring i tvättmaskinen varje månad. Ändå luktade allt jag tvättade
+  hund." (inherited, solution aware) · H2 "En tekniker öppnade min tvättmaskin och sa åt mig att slänga
+  allt rengöringsmedel jag köpt." (authority) · H3 "Jag slutade bjuda hem folk, för handdukarna luktade
+  hund. Och jag rengjorde ändå maskinen varje månad." (status).
+- Edit: competitor brand shots (Affresh, OxiClean, Arm & Hammer) cut out, the Uproot product section
+  replaced with Maskinrent pack shots from the shop, old captions removed, quiet music bed.
+- Box: ? (launch as one ad set with the three hooks). Learning: –

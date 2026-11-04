@@ -5,9 +5,11 @@
   script to the user's product, use the `ad-video-localizer` skill in `.claude/skills/ad-video-localizer/`
   and follow its SKILL.md step by step.
 - Standing preferences for video work:
-  - ElevenLabs `eleven_v3`. Ask for the voice ID in every project.
-  - Read the whole script in ONE take and cut it into sentences with `split_take.py`. Never generate one
-    clip per sentence: it sounds robotic and like different people.
+  - ElevenLabs `eleven_v4` with `language_code: "sv"` (the user confirmed v4 on 2026-11-04). Ask for the
+    voice ID in every project.
+  - Read the script in a few long takes, one per paragraph of 5-8 sentences (all hooks in the first take),
+    and cut them into sentences (`split_takes.py` in the account's ad-video-localizer skill). Never
+    generate one clip per sentence: it sounds robotic and like different people.
   - Speed the voice up only with `atempo` (the default in `build_voiceover.py`), never rubberband, which
     sounds robotic. Keep speed-ups at or under about 1.08.
   - Cover burned-in foreign text in the footage with white boxes holding black Swedish text.

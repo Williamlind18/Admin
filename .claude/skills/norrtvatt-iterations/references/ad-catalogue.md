@@ -170,3 +170,22 @@ both are breakthroughs, so that body is our proven concept. The hook naming the 
 already runs (C2, ROAS 6.3) beat the "scrap the machine" hook (C8, ROAS 4.7). All four top ads use a
 repairman as the authority. The sources in releases video2, video11 and video16 have no burned-in
 captions. Batch 6 plan: `leverans/batch6/batchplan_b6.md`.
+
+## Batch 6 (produced 2026-11-04, launch planned 2026-11-11)
+Ads Manager names: `ny batch 6 – Cn Hm (In av bX Cy)`. Files in `leverans/batch6/` (`nb6_<C>_<H>_sv.mp4` + .srt),
+scripts `manus_b6_*.txt`, plan `batchplan_b6.md`. Voice OvO33bxTqNfwQfoR6mVh, eleven_v4 paragraph takes.
+Lines marked [OK?] in the scripts (over 15,000 customers, NASA, "gentle, no harsh chemicals") were
+recorded but left out of the ads until the user confirms they are true.
+Production method (new): each sentence is matched to the parent ad's subtitles and the footage is cut
+so it shows what the winning parent showed for that line ("voice-first edit"); the parent's .srt on its
+branch gives the timings. Competitor product shots inside the story stay (user's call 2026-11-04);
+only Uproot's product/end section is replaced with Maskinrent pack shots.
+
+| Ad set | Parent | What changes | Authority | Source |
+|---|---|---|---|---|
+| C1 (I1 av b4 C2) | b4 C2 | the owner tells it (= B12) | technician (3rd person) + teardown | video22 |
+| C2 (I2 av b4 C2) | b4 C2 | unaware "Visste du att…" hooks | technician + teardown | video22 |
+| C3 (I1 av b3.1 C8) | b3.1 C8 | money desire, result first (before/after), 4:5 like the parent | technician + before/after | video16 |
+| C4 (I1 av b3 C3) | b3 C3 | C2's hook learning, status and urgency hooks | repairman + gasket demo | video11 |
+| C5 (I1 av b1 C3) | b1 C3 (spend winner) | proof shown at ~25 s, tighter mechanism, ~3 min | repairman + panel off on camera | video2 + video22 |
+Box: ? (label on 2026-11-20).

@@ -89,7 +89,9 @@ learnings by themselves:
 2. **Learnings.** Update the component cards with what the labels show, starting with the built-in
    test pairs. Date every learning.
 3. **Iterate.** Pick from `references/backlog.md` or write new briefs with the `ad-iterations`
-   templates. Show the user the brief and the script before generating any voice.
+   templates. Every brief names a clear, true authority (a requirement; the technician with a teardown
+   is our proven one, the Uproot grandpa is only Spencer's example). Show the user the brief and the
+   script before generating any voice.
 4. **Produce.** Use `ad-video-localizer`. Ask for the voice ID. Read all three hooks in the same take.
    New competitor source videos go up as the next free GitHub release tag (video48, video49…).
 5. **Name.** Every new ad gets the next free batch number (B11, B12 and so on). An iteration adds a

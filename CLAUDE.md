@@ -21,6 +21,9 @@
   winners, planning the next batch), use the `ad-iterations` skill for any brand. For Norrtvätt /
   Maskinrent / Uproot Clean, also use `norrtvatt-iterations`, which holds the brand facts, the ad
   catalogue and the iteration backlog.
+- Authority is a requirement in every ad (Spencer's rule, confirmed by the user on 2026-11-04). Every
+  brief names who says it and what proves it. The Uproot grandpa is only an example of authority; don't
+  fixate on it.
 - This repo is public. Never commit API keys or other secrets.
 
 ## Norwegian versions ("gör alla annonser på norska")

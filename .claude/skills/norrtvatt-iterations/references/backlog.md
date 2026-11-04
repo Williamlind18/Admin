@@ -3,9 +3,14 @@
 Ready briefs in the `ad-iterations` format, with Swedish hooks. Each gets the next free batch number
 when it is launched (B11, B12 and so on), plus its parent pointer, for example `B12 | I1-B06`. Pick by the latest labels. Before any
 labels exist, this order makes sense:
-1. **The grandpa batch**, the Uproot grandpa ads. They are proven breakthroughs at Uproot and missing in our account.
+1. **Authority first.** Every ad needs a clear authority (Spencer's rule; the user confirmed it as a
+   requirement on 2026-11-04). Iterate on the ads that won and make sure each brief names its
+   authority; if the parent has none, add one. Our proven authority is the technician with a teardown
+   on camera (B10, B11 and the other top ads).
 2. **I1-B06**, Spencer's own suggestion: iteration 2 with an authority added.
-3. **A format swap** of whichever ad labels best.
+3. **The grandpa ads** below are one way to get authority, Spencer's example from Uproot. Use them when
+   the source video is available and they fit the batch, not as a must.
+4. **A format swap** of whichever ad labels best.
 
 Show the user the brief and the full script before generating a voice. Check every hook against
 "Claims that need the user's OK" in SKILL.md. Hooks with persona stories need the user's decision.

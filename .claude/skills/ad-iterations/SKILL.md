@@ -113,6 +113,15 @@ Change several components when the ad needs it. Changing exactly one variable of
 of the ad, because marketing is creative flow more than lab science. Keep what the learnings say is
 working.
 
+**Every ad needs a clear authority.** This is Spencer's point, not a style choice: authority is the
+component he highlights among the nine, it is one of the big four, and his Quick Win says that if you
+can't identify one of the big four in your best ad, add it in. One authority switch in his talk took
+$15k a day. Every brief must therefore name its authority: who says it and what proves it. If the
+parent ad has none, adding one is the first change. The grandpa in the Uproot ad is only his example of
+authority, not a template to copy. Any true authority works: a professional (technician, expert,
+doctor), a demonstration, test or teardown on camera, real numbers or reviews, or an education bias
+built through a list format. See the guardrail below: it has to be true.
+
 Choose the move from the box:
 
 | Box | What it tells you | Move |

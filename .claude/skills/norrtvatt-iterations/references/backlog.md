@@ -1,15 +1,16 @@
 # Iteration backlog for Maskinrent
 
-Ready briefs in the `ad-iterations` format, with Swedish hooks. Pick by the latest labels. Before any
+Ready briefs in the `ad-iterations` format, with Swedish hooks. Each gets the next free batch number
+when it is launched (B11, B12 and so on), plus its parent pointer, for example `B12 | I1-B06`. Pick by the latest labels. Before any
 labels exist, this order makes sense:
-1. **B11**, the Uproot grandpa ads. They are proven breakthroughs at Uproot and missing in our account.
-2. **B06-I01**, Spencer's own suggestion: iteration 2 with an authority added.
+1. **The grandpa batch**, the Uproot grandpa ads. They are proven breakthroughs at Uproot and missing in our account.
+2. **I1-B06**, Spencer's own suggestion: iteration 2 with an authority added.
 3. **A format swap** of whichever ad labels best.
 
 Show the user the brief and the full script before generating a voice. Check every hook against
 "Claims that need the user's OK" in SKILL.md. Hooks with persona stories need the user's decision.
 
-## B11-I00 – The grandpa (Uproot's original)
+## New batch – The grandpa (Uproot's original)
 - **What:** a Swedish version of Uproot's grandpa ad. Solution aware, with grandpa as the authority.
 - **Why:** Spencer's verified breakthrough. Grandpa authority is the one Uproot learning we have never
   tested. He says the authority tells what is wrong and recommends the mechanism, not the brand.
@@ -23,8 +24,8 @@ Show the user the brief and the full script before generating a voice. Check eve
   - H3 (unaware): "Visste du att de flesta tvättmaskiner möglar inuti, fast tvätten ser ren ut?"
 - **Check:** a grandpa told by an AI voice is a persona story. Flag it once.
 
-## B11-I01 – The grandpa, status version (Uproot's iteration 1)
-- **Changes from B11-I00:** avatar broad (anyone who never cleans the machine), desire status,
+## I1 of the grandpa batch – status version (Uproot's iteration 1)
+- **Changes from the grandpa original:** avatar broad (anyone who never cleans the machine), desire status,
   awareness problem aware. Urgency tied to the story, but only if it is true.
 - **Inherits:** the grandpa, the angle, the mechanism.
 - **Hooks:**
@@ -33,7 +34,7 @@ Show the user the brief and the full script before generating a voice. Check eve
   - H3 (authority): "Min morfar sa alltid att tvättmaskiner är riktigt smutsiga inuti. Jag trodde inte
     på honom."
 
-## B06-I01 – Mold with an authority
+## I1-B06 – Mold with an authority
 - **Parent:** B06 (Uproot iteration 2).
 - **Changes:** add a third-person authority (technician or laundromat owner) and name the three
   enzymes, because B06's mechanism is vague.
@@ -45,7 +46,7 @@ Show the user the brief and the full script before generating a voice. Check eve
     att mögla."
   - H3 (inversion): "Tre varningstecken på att din tvättmaskin möglar inuti."
 
-## B04-I01 or B10-I01 – Did you know (awareness down)
+## I<n>-B04 or I<n>-B10 – Did you know (awareness down)
 - **Parent:** the better labeled of B04, B07 and B10.
 - **Changes:** awareness from problem or solution aware to unaware; higher intensity in line one.
 - **Inherits:** the authority, the story, the mechanism, the offer.

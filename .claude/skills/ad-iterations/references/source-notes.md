@@ -1,9 +1,9 @@
 # Source notes: "The science of iterations"
 
-Keynote by Spencer (agency owner, founder of the Evolve community), Commerce Roundtable, 2026,
-about 45 minutes including Q&A. The full Swedish notes are in the Claude Doc "Annonsiterationer –
+Keynote by Spencer Pawliw (agency owner, founder of the Evolve community), Commerce Roundtable San Diego,
+2026, 44:58 including Q&A. The full Swedish notes are in the Claude Doc "Annonsiterationer –
 anteckningar från Spencer (Evolve)" (https://claude.ai/artifact/B9Mfg2KZsMwC9vKNmeC13p). Timestamps
-below point into the video.
+below point into the video. Every second of the video, slide by slide, is in `video-tidslinje.md`.
 
 ## Results that frame the talk (0:00–4:23)
 - After Meta's Andromeda update many think iterations no longer work. He turned his iteration process
@@ -95,3 +95,56 @@ end of `components.md`. Key points:
 - **Hook testing under $50k/month:** always. One concept, three hooks, each analysed by component.
 - **First breakthrough:** test many angles broadly, then go deep on the one that works. Imitation ads:
   run learnings on competitors' top ads and iterate on them.
+
+## Details from the slides and footage (second pass, every second checked)
+- **Meta's diversification ladder (0:38):** same concept + same format → new concept + same format → new
+  concept + new format (most differentiated).
+- **Jeffrey's $5M/month route (1:52):** "Getting to 1M a month was basically about cracking the unique
+  mechanism. Fine-tuning it so the audience believes it, it's easy to understand, and it puts all the
+  alternatives out of play. That, combined with finding your main winning angle. Having a really good
+  mechanism also makes scriptwriting so much easier. … You have your main angle and your mechanism. Then
+  it's time to build winning concepts, and of course you start by testing different formats to see what
+  works, find a few winners, and scale those."
+- **How he labels (4:22):** Ads Manager at ad level, filter "Ad name contains EAM" (brand prefix), one year,
+  sorted by amount spent; columns spend, purchases, cost per purchase, AOV, CVR, purchase value, CPM. The top
+  ad had about 10 % of $2.12M. The data behind the talk (4:54): 57 accounts, $162,345,577 spent in 2026.
+- **The box rule is campaign share:** "10-30%+ of camp spend" after 7 days. The Quick Win uses account share.
+- **Naming (8:18):** "Batch#5 Iter#2-Batch#3": every test gets a new batch number plus a pointer to its
+  parent. The long example decodes as brand prefix, batch, parent batch, iteration, landing page, format,
+  two people, version, concepts, hooks, page.
+- **Learnings board (8:54):** ads grouped per test, losers and breakthroughs side by side, coloured notes
+  with the learnings for each group. His breakdown pages (11:48) are tagged with format ("UGC VIDEO"), a
+  title ("Show Don't Tell") and awareness level.
+- **Team (10:23):** "Creative Engine": growth manager → 2 creative strategists → 3 senior editors/designers
+  → 4 editors/designers.
+- **Component slide wording:** Angle "the main reason you're giving someone to buy"; Avatar "who the ad is
+  speaking to (not just demographics)"; Desire "the wants/needs of the customer"; Mechanism "how the product
+  actually works"; Authority "the reason they trust you (belief)"; Awareness "the stage you start the ad
+  at"; Emotion "what it makes them feel, and how hard"; Positioning "why you, not everyone else"; Urgency
+  "why now, not later".
+- **Playbook doc (21:48):** "Spend Winner & Breakthrough Ad Iterations. Problem we're trying to solve: how to
+  turn spend winners into breakthroughs and how to turn a single breakthrough into multiple breakthroughs
+  that can scale further." Script iterations "#1 – Components Rewrite": break the winner down by the nine
+  components and the copywriting program; identify what is working, what can be optimized and how to
+  execute the same components differently; test a more optimized hook, bridge and hold.
+- **Colour code on the iteration grids:** grey = same, green = changed, green frame + "!!!!!" = the inherited
+  learning, red = changed but weak (sales urgency). Iteration 1 angle reads "Same Angle (avoid due to
+  awareness level)"; iteration 2 authority reads "Built through execution (but I would test adding)".
+- **Visual execution of the Uproot ads:** fast B-roll, about one shot per spoken line (~2 s), small white
+  caption mid-screen; the grandpa is an older man in a cap shown sniffing the washer; the tablet dissolves
+  in a cyan foam graphic. Iteration 1 uses teardown footage of a machine and an office scene for the status
+  desire. Iteration 2 opens with a big headline overlay "SLOW COOKING YOUR CLOTHES IN MOLD" and labels each
+  point "MISTAKE #1" and so on.
+- **Format swap example (27:50):** a dog product, not Uproot: UGC man ("If your dog eats grass DO THIS EVERY
+  DAY!") → AI-animated puppy → podcast ("I asked a Vet WHY My Dog Eats Grass") → AI voiceover over close-ups.
+- **Quick Win exact wording (29:02):** 1 Take your best ad from the last 30 days. 2 [Label] calculate the
+  percentage of spend it has in your ad account (filter by spend), go back to when it was launched and see
+  how much it allowed you to increase your budget. 3 [Learnings] spend 20-30 minutes identifying angle (the
+  reason someone is going to buy), authority (the reason they trust you), unique mechanism (how the product
+  will deliver the result), urgency (why now, not later). 4 [Iterations] if you can't identify one, add it
+  in; if you identify all, think how to add more or change authority, add more urgency, make the mechanism
+  easier to understand or more unique. 5 Use this info to make another ad with intent.
+- **Not shown:** the valence/intensity chart (only gestured), the IM8 example and the magnesium/cortisol
+  landing page (only spoken). All resource links and the QR code are blurred.
+- **Unanswered audience question on screen (Slido):** whether adding new ads makes your evergreen ads drop,
+  and how to avoid it.

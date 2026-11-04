@@ -64,7 +64,7 @@ source videos are GitHub releases on this repo, named by tag.
 | B09 | Maskinrent 9, enzymes | video41 | Three enzymes others lack | The mechanism itself | Product |
 | B10 | Maskinrent 10, technician | video44 | See what came out after one wash | Technician teardown | Problem |
 
-Norwegian versions of B03-B06 exist (`nordvask_maskinren*_no.mp4`). Name them `B03-I00-NO` and so on.
+Norwegian versions of B03-B06 exist (`nordvask_maskinren*_no.mp4`). Name them `B03-NO` and so on.
 Per CLAUDE.md, only Maskinrent 3-6 get Norwegian versions unless the user names others.
 
 **Built-in tests once labeled.** Several pairs differ in one or two components, so their labels are
@@ -78,7 +78,8 @@ learnings by themselves:
 ## How to run a round for Norrtvätt
 1. **Label.** Read the last 30 days per ad from the Meta Ads connector and the Trackpanda connector
    ("Norrtvätt sverige"). The account is in SEK, so pass `--fx` (SEK per USD, about 10-11; check the
-   rate). The account is under 100k USD a month, so a breakthrough takes at least 30 % of spend. Map
+   rate). The account is under 100k USD a month, so a breakthrough takes at least 30 % of its campaign's
+   spend after 7 days (the script's default). Map
    ad names to batch numbers with the catalogue above, then add the box to `references/ad-catalogue.md`.
 2. **Learnings.** Update the component cards with what the labels show, starting with the built-in
    test pairs. Date every learning.
@@ -86,8 +87,9 @@ learnings by themselves:
    templates. Show the user the brief and the script before generating any voice.
 4. **Produce.** Use `ad-video-localizer`. Ask for the voice ID. Read all three hooks in the same take.
    New competitor source videos go up as the next free GitHub release tag (video48, video49…).
-5. **Name.** Use `B<batch>-I<iteration>-H<hook>`. Iterations of existing ads keep their batch number.
-   A new concept or a new Uproot source gets B11, B12 and so on.
+5. **Name.** Every new ad gets the next free batch number (B11, B12 and so on). An iteration adds a
+   pointer to its parent: `B11 | I1-B06 | angle | authority | awareness | format | H1` is iteration 1
+   of B06. A new Uproot source with no parent has no I part.
 6. **Record.** Add the new ad to the catalogue and the learning to the dated list below.
 
 ## Landing pages

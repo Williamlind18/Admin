@@ -9,6 +9,10 @@
 | Time | How long it keeps running and holding spend | Longer is better. |
 
 ## The four boxes
+The slide's exact rule: the ad gets "10-30%+ of camp spend" after 7 days, so the share is of its
+**campaign's** spend. The Quick Win doc instead uses the share of the whole account's spend over the last
+30 days. `label_ads.py` uses campaign share by default and account share with `--share-base account`.
+
 - **Loser:** below the spend threshold and misses KPI after 7 days. A flop.
 - **KPI winner:** hits KPI after 7 days but stays below the spend threshold. Results without spend.
   Many people call this a winner. In this system it does not count, because it scales nothing.
@@ -70,22 +74,28 @@ brand file does not say.
 - A competitor's top ad cannot be labeled exactly, so say how confident you are.
 
 ## Naming scheme
-The point is to see at a glance how many iterations each batch has and how they did.
+The point is to see at a glance how many iterations each test has and how they did.
 
-Minimum: `B<batch>-I<iteration>` – for example `B03-I02` is iteration two of batch three.
-- A **batch** is a new concept or test. Number batches in order and never reuse a number.
-- **I00** is the original. Iterations count up from there.
-- An iteration of an iteration keeps the original batch number and gets the next free I number. Note
-  its parent in the brief.
+The talk's scheme ("Batch#5 Iter#2-Batch#3", 8:18):
+- Every new test or concept gets the **next free batch number**, never reused.
+- An iteration also carries a **pointer to its parent**: `I2-B03` is the second iteration of batch 3.
+  So "Batch#5 Iter#2-Batch#3" is batch 5, which is iteration 2 of batch 3.
+- A brand-new concept has no I part.
+- Then you can ask "how many iterations have we made on our breakthroughs?" by counting the ads that
+  point to each breakthrough.
 
-Recommended full name (keeps Ads Manager sortable):
+Recommended name (keeps Ads Manager sortable and filterable):
 
 ```
-B07-I02-H1 | angle | authority | awareness | format | LP
-B07-I02-H1 | mold-free | list | unaware | ai-vo | evergreen
+B12 | I2-B03 | angle | authority | awareness | format | H1
+B12 | I2-B03 | mold-free | list | unaware | ai-vo | H1
 ```
 
 `H1-H3` are the three hooks of the same concept. Add a language suffix such as `-NO` for translated
-versions of the same ad. The agency's own long version also lists concept and hook numbers, the
-editor and strategist, the version and the landing page, for example:
-`BATCH#96 (BATCH#89 iteration) - ITER#2 - LP: Quiz Funnel - Static - <editor> - <strategist> - V3 - C#21,#27 - H#6,#7`.
+versions of the same ad. Put a brand prefix first if one Ads Manager account runs several brands; the
+agency filters on it ("Ad name contains EAM").
+
+The agency's long version, as shown in the talk:
+`EAM BATCH#96 … (BATCH#89 iteration) - ITER#2 - LP: Quiz Funnel - Static - Valter - Kat - V3 - C#21, #27 - H#6, #7 - Whitelist Page`
+= brand prefix, batch 96, iteration 2 of batch 89, landing page "Quiz Funnel", format static, two people
+(maker and strategist), version 3, concepts 21 and 27, hooks 6 and 7, run from a whitelisted page.

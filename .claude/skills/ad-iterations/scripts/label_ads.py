@@ -11,6 +11,8 @@ Example:
   python3 label_ads.py ads.json --kpi roas --target 2.0 --json labels.json
 
 The spend threshold comes from the account's monthly spend in USD (see references/labeling.md).
+The share is of the ad's campaign spend by default (the four-box rule); use --share-base account
+for the Quick Win view (share of the whole account).
 Use --fx (account currency per USD) when the account is not in USD, or --threshold to override.
 """
 import argparse
@@ -121,7 +123,8 @@ def main():
                     help="account spend per month in account currency (default: from the file)")
     ap.add_argument("--fx", type=float, default=1.0, help="account currency units per 1 USD (SEK about 10-11)")
     ap.add_argument("--threshold", type=float, help="override the spend share, e.g. 0.3 or 30")
-    ap.add_argument("--share-base", choices=["account", "campaign"], default="account")
+    ap.add_argument("--share-base", choices=["account", "campaign"], default="campaign",
+                    help="campaign = the four-box rule (share of campaign spend after 7 days); account = Quick Win")
     ap.add_argument("--today", help="YYYY-MM-DD for age (default today)")
     ap.add_argument("--min-days", type=float, default=7)
     ap.add_argument("--json", help="also write the labels to this JSON file")

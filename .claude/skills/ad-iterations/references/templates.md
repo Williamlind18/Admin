@@ -5,7 +5,7 @@ Komponentkort, Memo, Iterationsbrief, Batchplan, Fredagsrapport).
 
 ## Component card
 ```
-Ad: <name, e.g. B04-I00>   Box: <Breakthrough / Spend winner / KPI winner / Loser / Too early>
+Ad: <name, e.g. B04>   Box: <Breakthrough / Spend winner / KPI winner / Loser / Too early>
 Numbers: <spend, share of spend, CPA or ROAS, days running, budget change>
 
 | Component   | What it is in this ad | Line that carries it | Strength |
@@ -34,12 +34,15 @@ How:   <format, authority, hook approach, footage, length, landing page>
 
 ## Iteration brief
 ```
-Name:    B<batch>-I<iteration>   Parent: B<batch>-I<n>   Box of parent: <…>
+Name:    B<next free batch> | I<n>-B<parent batch>   Box of parent: <…>
 Memo:    What / Why / How (as above)
 
-| Component   | Parent | This iteration | Inherited? |
-|-------------|--------|----------------|------------|
-| …nine rows… |        |                | yes / changed |
+| Component   | Parent | This iteration | Status |
+|-------------|--------|----------------|--------|
+| …nine rows… |        |                | kept / changed / INHERITED LEARNING (!!!!!) / weak |
+
+Script parts to test (Components Rewrite): hook / bridge (from hook into the body) / hold (what keeps
+them watching).
 
 Hooks (same concept, different lead component):
   H1 (<component>): "<line>"
@@ -54,15 +57,15 @@ Claims to check: <anything that needs proof or the user's OK>
 
 ## Batch plan (one breakthrough)
 ```
-Parent: B07-I00 (Breakthrough, 41 % of spend)
+Parent: B07 (Breakthrough, 41 % of campaign spend)
 Learning: <the components we believe drive it>
 
-| Name   | Changes                         | Inherits                | Hooks |
-|--------|---------------------------------|-------------------------|-------|
-| B07-I01 | authority: X → Y               | angle, mechanism, urgency | 3   |
-| B07-I02 | awareness down ("Did you know") | authority, mechanism     | 3   |
-| B07-I03 | desire: health → status         | authority, angle         | 3   |
-| B07-I04 | format: AI-animated             | everything else          | 1   |
+| Name | Parent | Changes                         | Inherits                  | Hooks |
+|------|--------|---------------------------------|---------------------------|-------|
+| B11 | I1-B07 | authority: X → Y                | angle, mechanism, urgency | 3     |
+| B12 | I2-B07 | awareness down ("Did you know") | authority, mechanism      | 3     |
+| B13 | I3-B07 | desire: health → status         | authority, angle          | 3     |
+| B14 | I4-B07 | format: AI-animated             | everything else           | 1     |
 ```
 
 ## Friday report

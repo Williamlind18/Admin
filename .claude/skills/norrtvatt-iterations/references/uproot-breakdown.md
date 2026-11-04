@@ -24,6 +24,13 @@ Lines shown or heard in the talk:
   protein in pet hair, lipase strips the greasy layer from oils; "first and only enzyme-based
   cleaning tablet".
 
+**On screen:** fast B-roll, about one shot per spoken line (~2 s), with a small white caption mid-screen.
+The hook text sits on a close-up of the drum. Then a woman sniffing a blanket, detergent being poured, a
+golden retriever by the washer and a man on a sofa sniffing. Clip 2 shows the door gasket being scrubbed
+and a machine-cleaner pack. The grandpa is on camera: an older man in a cap in a yellow laundry room
+leaning in to sniff. The mechanism part shows the tablet over the drum dissolving in a cyan foam graphic,
+then a clean drum.
+
 | Component | In the original |
 |---|---|
 | Angle | It will fix your bad-smelling laundry |
@@ -46,6 +53,12 @@ Lines shown or heard in the talk:
   aware, agitates). Urgency became "people are realizing how nasty their machines are, so it's selling
   out".
 - Inherited: the grandpa authority. Same angle, mechanism, emotion and positioning.
+- Slide wording: Angle "Same Angle (avoid due to awareness level)", Avatar "New BROAD avatar", Desire "New
+  STATUS focused desire", Authority "!!!!! Same Grandpa authority" (the inherited learning), Awareness
+  "Moved to PROBLEM aware", Urgency in red: "People realizing how nasty their machines are, so it's
+  selling out".
+- On screen: teardown footage (the inner drum pulled out, brown gunk on the outer tub) for "a filthy mess",
+  an embarrassed young woman with black clothes, and a woman at work for the co-worker line.
 
 ## Iteration 2 (mistakes list; unaware, high intensity) – Uproot's top ad
 - "How your dirty washer is slow cooking your clothes in mold, especially if you have pets. Let's fix
@@ -56,6 +69,11 @@ Lines shown or heard in the talk:
 - Inherited: the mold urgency, moved to the first line. Avatar and desire stay close to the original.
 - Spencer would add the grandpa to it, and Uproot runs that version too.
 - Copy tip: "mistakes" and "red flags" beat "best ways".
+- Slide wording: Angle "Will keep your washing machine clean", Avatar "Similar pet avatar", Desire "Same
+  health desire", Authority "Built through execution (but I would test adding)", Awareness "Moved to
+  unaware", Emotion "Low valence, high intensity", Urgency "!!!!! Brought urgency to the front".
+- On screen: a big cyan headline overlay "SLOW COOKING YOUR CLOTHES IN MOLD" over the drum, the detergent
+  drawer for "let's fix three of the most common mistakes", and a "MISTAKE #1" label before each mistake.
 
 ## Our versions
 | Uproot ad | Our closest version | Status |

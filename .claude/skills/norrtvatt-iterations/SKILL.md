@@ -40,7 +40,8 @@ the grandpa original and the grandpa/status iteration. Details: `references/upro
 ## Claims that need the user's OK before reuse
 These appear in earlier scripts. Ask once whether they are still true before using them again, and
 flag the story-type ones once:
-- "Över femtontusen kunder", "betyget fyra komma åtta av fem".
+- (Confirmed true by the user on 2026-11-09, no longer needs asking: "över femtontusen kunder" / "15 000+ nöjda
+  kunder" and the rating "4,8 av 5" / "4,8/5". Use them freely, e.g. on end stills.)
 - The enzymes "come from NASA" research.
 - "Skonsam mot maskinen och utan starka kemikalier", "avkalkar".
 - Persona authority: technician for 10 or 19 years with over a thousand machines taken apart; a

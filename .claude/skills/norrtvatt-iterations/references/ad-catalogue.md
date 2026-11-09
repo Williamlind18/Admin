@@ -189,3 +189,23 @@ only Uproot's product/end section is replaced with Maskinrent pack shots.
 | C4 (I1 av b3 C3) | b3 C3 | C2's hook learning, status and urgency hooks | repairman + gasket demo | video11 |
 | C5 (I1 av b1 C3) | b1 C3 (spend winner) | proof shown at ~25 s, tighter mechanism, ~3 min | repairman + panel off on camera | video2 + video22 |
 Box: ? (label on 2026-11-20).
+
+## Batch 5 live ads → files (found 2026-11-09 by matching Meta video length to the second)
+| Live ad | Delivery (branch) | Source tag | Voice |
+|---|---|---|---|
+| b5 C2 | `norrtvatt_vsl_reparator.mp4` (claude/video-editing-15noqg), 720x1280 | video38 | OvO33bxTqNfwQfoR6mVh, eleven_v3 |
+| b5 C5 | `norrtvatt_maskinrent9_enzymer_sv.mp4` (= B09) | video41 | UPl4IVQHmNGPUn6Qs7Uf ("äldre kvinna 60+"), eleven_v3 |
+| b5.1 C3 | `norrtvatt_video43_tre_enzymer_sv.mp4` (claude/focused-hamilton-930j6d) | video43 | LzJuwbGODHbc1VvzbMrf ("kvinna 30-40 år skånsk"), eleven_v4 |
+Early numbers (Trackpanda, 3 days, 2026-11-09): b5 C2 2,580 kr ROAS 4.8; b5 C5 1,631 kr ROAS 5.3; b5.1 C3 2,306 kr ROAS 4.2.
+b1 C3 was voiced with rvkyA7fVC0tIPFdQWCLS ("Äldre man 1", eleven_v4 paragraph takes), not OvO33.
+
+## Black Friday versions (made 2026-11-09)
+Seven ads reused for Black Week / Black Friday: b4 C2, b3.1 C8, b3 C3, b1 C3, b5 C2, b5 C5, b5.1 C3.
+Files in `leverans/blackfriday/` (`bf_<ad>_sv.mp4` + .srt), new ending lines in `manus_blackfriday.txt`.
+- A black scrolling ticker "BLACK FRIDAY | 50% RABATT | FRI FRAKT" runs through the whole video (9:16: y = 15 %
+  of the height, inside the 4:5 feed crop and under the Reels header; 4:5: near the top).
+- Everything before the offer line is the original (picture, voice, captions, music). From the offer line on, a
+  new ending is read in one take with the ad's own voice and model ("Just nu är det Black Friday … Bättre pris
+  än så här får du inte …"), shown on dark Black Friday pack-shot cards (−50 % / FRI FRAKT stickers); lines
+  that are not about the offer keep their original clean footage. The original music continues under the new
+  ending (music found in the ElevenLabs flows of each ad and phase-aligned; b1 C3 has no music).

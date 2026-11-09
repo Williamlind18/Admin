@@ -17,8 +17,9 @@
   - Never remove content the user wants to keep.
   - Captions are 1-3 words in Montserrat ExtraBold.
   - While the voice talks about the offer, show ONE offer image with every offer on it (clean, light, centred:
-    NORRTVÄTT wordmark, product, black pill, offer, a small trust row), hold it as long as needed, then let the
-    original footage continue. Never a quick series of product cards (user, 2026-11-09).
+    the store's own NORRTVÄTT logo, product, black pill, offer, a small trust row), hold it as long as needed, then let the
+    original footage continue. Never a quick series of product cards (user, 2026-11-09). Logo file:
+    `.claude/skills/norrtvatt-iterations/assets/norrtvatt_logo.png` (from the norrtvatt.se header); never redraw it.
   - End every ad with a closing still in the same style that repeats the offer and norrtvatt.se. The
     voiceover does not need to mention it.
   - Deliver a preview in chat, full quality on GitHub and an .srt file.

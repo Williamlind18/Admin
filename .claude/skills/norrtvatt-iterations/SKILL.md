@@ -99,6 +99,12 @@ learnings by themselves:
    of B06. A new Uproot source with no parent has no I part.
 6. **Record.** Add the new ad to the catalogue and the learning to the dated list below.
 
+## Brand assets
+- Logo: `assets/norrtvatt_logo.png` (black NORRTVÄTT wordmark, transparent background, taken from the
+  norrtvatt.se header on 2026-11-09). Use this file on end cards and offer images; never redraw the logo
+  in another font or weight.
+- Shop domain: norrtvatt.se.
+
 ## Landing pages
 Keep the evergreen product page for all ads. When an angle wins, make an angle page whose first
 screen repeats the ad's hook, for example "Unken tvätt trots att du har testat allt?" for pet homes

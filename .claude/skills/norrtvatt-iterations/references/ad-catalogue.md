@@ -206,6 +206,9 @@ Files in `leverans/blackfriday/` (`bf_<ad>_sv.mp4` + .srt), new ending lines in 
   of the height, inside the 4:5 feed crop and under the Reels header; 4:5: near the top).
 - Everything before the offer line is the original (picture, voice, captions, music). From the offer line on, a
   new ending is read in one take with the ad's own voice and model ("Just nu är det Black Friday … Bättre pris
-  än så här får du inte …"), shown on dark Black Friday pack-shot cards (−50 % / FRI FRAKT stickers); lines
-  that are not about the offer keep their original clean footage. The original music continues under the new
-  ending (music found in the ElevenLabs flows of each ad and phase-aligned; b1 C3 has no music).
+  än så här får du inte …"). Version 2 (user feedback 2026-11-09: no rapid series of cards): while the voice
+  talks about the offer, ONE light offer card (NORRTVÄTT wordmark, product, BLACK FRIDAY pill, 50% RABATT,
+  "Fri frakt | 30 dagars pengarna tillbaka"); then the original footage for that line continues (old captions
+  removed with LaMa where no clean source exists); then a 3 s closing still (product, wordmark,
+  BLACK FRIDAY · 50% RABATT, trust row, norrtvatt.se). The original music continues under the new ending
+  (found in each ad's ElevenLabs flow and phase-aligned; b1 C3 has no music).

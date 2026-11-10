@@ -20,8 +20,13 @@
     the store's own NORRTVÄTT logo, product, black pill, offer, a small trust row), hold it as long as needed, then let the
     original footage continue. Never a quick series of product cards (user, 2026-11-09). Logo file:
     `.claude/skills/norrtvatt-iterations/assets/norrtvatt_logo.png` (from the norrtvatt.se header); never redraw it.
-  - End every ad with a closing still in the same style that repeats the offer and norrtvatt.se. The
-    voiceover does not need to mention it.
+  - End an ad with a closing still in the same style that repeats the offer and norrtvatt.se (rating
+    "4,8/5" and "15 000+ nöjda kunder" are confirmed). The voiceover does not need to mention it.
+  - Never show images back to back (offer image, the original's own product card, closing still). Keep
+    at least ~6 s of real footage between the offer image and the closing still; if there is less, end on the
+    footage and skip the still. If the offer image would run into another image, cut it when the script moves
+    on from the offer (e.g. at "Bättre pris än så här …") and return to the original clips (user, 2026-11-10).
+  - Cut clips on the original's scene cuts: no slivers of another shot at the start or end of a clip.
   - Deliver a preview in chat, full quality on GitHub and an .srt file.
 - For ad iterations (new versions, hooks or concepts from an existing ad, ad breakdowns, labeling
   winners, planning the next batch), use the `ad-iterations` skill for any brand. For Norrtvätt /

@@ -1,6 +1,6 @@
 import pathlib
 W = pathlib.Path(__file__).resolve().parent
-BG = (W.parent / "bfai" / "ros3_fix.png").as_uri()
+BG = (W.parent / "bfai" / "ros3_fix2.png").as_uri()
 css = f"""
 body{{background:#222 url('{BG}') center/cover no-repeat}}
 .t{{position:absolute;left:0;right:0;top:56px;text-align:center;color:#fff}}

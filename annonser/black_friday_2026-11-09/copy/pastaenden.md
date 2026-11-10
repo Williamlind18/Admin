@@ -18,4 +18,5 @@
    - Kartongfronten är din riktiga produktbild, inklistrad i perspektiv med bildens ljus. Felstavad AI-text på kartonger och kalkylator är borttagen.
    - All text, neonskylten, hänglappen, bokstäverna på tavlan och kvittona är satta i HTML, inte av AI.
    - Logotypen på tvättmaskinen i neonbilden är borttagen.
+   - BF_08 och BF_09 använder AI-fotot utan inklistrad front, eftersom tabletterna och bandet ligger framför kartongerna. Trycket är kontrollerat mot den riktiga kartongen. I BF_09 är raden "FORMULERAD FÖR HUSDJURSÄGARE" på högra kartongen utbytt mot den riktiga, eftersom AI hade stavat fel där.
    - Rosetten, kassen, tejpen och neonskylten är rekvisita. Förpackningen ser inte ut så.

@@ -25,6 +25,6 @@ Alla tio klarar BOF-testet: tar man bort erbjudandet finns ingen annons kvar.
 - `bilder/*_ai.jpg`: rå AI-miljöer.
 - `bilder/*_bas.jpg`: efter fix, alltså riktig kartongfront plus text på lapp, tavla, kvitto och neon, före rubrikerna.
 - `tools/`: samma verktyg som i `../bof_omgang4_2026-11-09/`, med några tillägg:
-  - `paste_face.py` har fått `--keep-dark` (band och kasse framför kartongen), `--clip-y` och `--exclude` (för en andra kartong).
+  - `paste_face.py` har fått `--keep-dark` (band och kasse framför kartongen), `--clip-y`, `--exclude` (för en andra kartong) och `--region=u0,v0,u1,v1`, som byter ut bara en del av fronten, till exempel en felstavad rad.
   - `warp_html.py` har fått `blend: "screen"` för neon.
 - `specar/`: en spec per annons. Sökvägarna pekar på sessionens scratchpad. Peka om dem till `kalla/bilder/` innan de körs.

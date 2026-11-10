@@ -1,6 +1,6 @@
 import pathlib
 W = pathlib.Path(__file__).resolve().parent
-BG = (W.parent / "bfai" / "svart_fix.png").as_uri()
+BG = (W.parent / "bfai" / "svart.png").as_uri()
 def tape(text, top, rot, n=6):
     seg = f"<span>{text}</span><i></i>" * n
     return f'<div class="tape" style="top:{top}px;transform:rotate({rot}deg)"><div class="in">{seg}</div></div>'

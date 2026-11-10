@@ -39,7 +39,8 @@ def main():
         q = boxlib.quad_from_plane(q, 0, 1, -ext, 1)
     rgb, al = boxlib.warp_to_quad(tex, q, (W, H))
     # inset mask so worn edges / box outline of the photo stay
-    qi = boxlib.quad_from_plane(q, inset, 1 - inset, inset, 1 - inset)
+    reg = next((list(map(float, a.split("=")[1].split(","))) for a in sys.argv if a.startswith("--region=")), None)
+    qi = boxlib.quad_from_plane(q, *(([reg[0], reg[2], reg[1], reg[3]]) if reg else (inset, 1 - inset, inset, 1 - inset)))
     m = np.zeros((H, W), np.float32); cv2.fillPoly(m, [np.int32(np.round(qi * 4))], 1, shift=2)
     if "--keep-dark" in sys.argv:   # dark things in front of the box (bag edge, handles, ribbon) stay
         lum_ai = img.astype(np.float32) @ np.float32([.299, .587, .114]); lum_tx = rgb @ np.float32([.299, .587, .114])
@@ -53,7 +54,7 @@ def main():
     cy = next((int(a.split("=")[1]) for a in sys.argv if a.startswith("--clip-y=")), None)
     if cy:   # something in front of the box from this row down (e.g. the bag)
         m[cy:] = 0
-    m = cv2.GaussianBlur(m, (0, 0), 1.5) * al
+    m = cv2.GaussianBlur(m, (0, 0), 4.0 if reg else 1.5) * al
     f = img.astype(np.float32)
     side = np.linalg.norm(q[1] - q[0])
     s = max(10, side / 5)

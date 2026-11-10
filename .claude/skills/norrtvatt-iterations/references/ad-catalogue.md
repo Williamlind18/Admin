@@ -212,3 +212,25 @@ Files in `leverans/blackfriday/` (`bf_<ad>_sv.mp4` + .srt), new ending lines in 
   removed with LaMa where no clean source exists); then a 3 s closing still (product, wordmark,
   BLACK FRIDAY · 50% RABATT, trust row, norrtvatt.se). The original music continues under the new ending
   (found in each ad's ElevenLabs flow and phase-aligned; b1 C3 has no music).
+
+### BF wave 1 iterations (made 2026-11-10)
+Nine hook iterations of three BF heroes, three hooks each (Spencer: H1 leads with urgency = Black Friday first,
+H2 with desire/problem, H3 unaware "Visste du att"); the CTA always builds on Black Friday. Files in
+`leverans/blackfriday/vag1/` (`bfv1_<ad>_H<n>_sv.mp4` + .srt), scripts in `manus_vag1.txt`.
+- b4 C2: H1 "Köp ingen maskinrengörare på Black Friday förrän du sett det här." H2 "Lägg inte dina Black
+  Friday-pengar på en ny tvättmaskin." H3 "Visste du att maskinrengöraren i hyllan inte biter på det som luktar?"
+- b3.1 C8: H1 "Köp ingen ny tvättmaskin på Black Friday." H2 "Luktar tvätten unket fast du testat allt?"
+  H3 "Visste du att en maskin med unken tvätt nästan aldrig är trasig?"
+- b5 C2: H1 "Köp inget mot tvättlukten på Black Friday förrän du sett det här." H2 "Har du husdjur och tvätt som
+  luktar fast du testat allt?" H3 "Visste du att lukten inte sitter i kläderna, utan i maskinen?"
+How they are built (the user rejected a first test that only put a new line in front of the unchanged video:
+"no music under the hook" and "a pasted-in video is not good scriptwriting"; the rebuilt test was approved):
+- The new opening REPLACES the winner's own hook, voiced as one paragraph that leads straight into the winner's
+  next line, over the winner's own opening shots (old captions removed with LaMa, or the clean source), with the
+  captions where the original hook had them. The b-roll is slowed/sped (about 0.9-1.2x) to fit; the shot that
+  runs on into the body stays at 1x.
+- The original music runs from the first frame without a seam: the opening plays the winner's bed shifted to
+  line up with the body; when the opening is longer than the original, it starts on a later repeat of the same
+  phrase and crossfades back under the voice.
+- The BF ending's first line calls back to the hook ("Så om du köper något … på Black Friday, gör det till den
+  här: …", "Så lägg Black Friday-pengarna på den här i stället: …"), then the hero's offer lines and visuals.

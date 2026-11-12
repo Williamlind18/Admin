@@ -52,6 +52,7 @@ intensiteten eller byt format, så att annonsen når fler. För ett genombrott: 
 - **Röst:** OvO33bxTqNfwQfoR6mVh, eleven_v3, sv.
 - Hookarna ersätter originalets öppning ("Jag har plockat isär över sextusen tvättmaskiner…", 7,6 s) och leder in i
   "Jag åker runt i min servicebil…".
+- Uproot Clean-förpackningarna i originalet (2:34–3:24) är bytta mot Maskinrent-produktbilder, i C1 och C5.
 - **H1, lösningsmedveten** (b4 C2:s lärdom: nämn det tittaren redan testat): "Kör du maskinrengöring varje månad och
   luktar tvätten ändå? Jag har plockat isär över sextusen tvättmaskiner, och jag vet exakt varför."
 - **H2, omedveten:** "Det finns ett utrymme i din tvättmaskin som aldrig torkar. Jag har plockat isär över sextusen
@@ -66,7 +67,8 @@ intensiteten eller byt format, så att annonsen når fler. För ett genombrott: 
   leder in i "Alfa-amylas, proteas och lipas."
 - **H1, problemmedveten:** "Luktar tvätten hund igen bara dagar efter maskinrengöringen?"
 - **H2, omedveten:** "Det här saknar alla maskinrengörare i butiken:"
-- **H3, intensitet:** "Din tvättmaskin är full av gammalt hundfett. Tre enzymer löser det:"
+- **H3, intensitet:** "Din tvättmaskin är full av gammalt hundfett. Det här löser det:" (nästa replik räknar
+  upp de tre enzymerna, så "tre enzymer" stod två gånger i rad)
 
 ### C3 – `ny batch 7 – C3 (I1 av b5.1 C3)`: nya hooks, samma berättelse
 - **Ärvs:** hela berättelsen (3:50), berättaren, mekanismen och erbjudandet.
@@ -77,24 +79,29 @@ intensiteten eller byt format, så att annonsen når fler. För ett genombrott: 
 - **H2, omedveten:** "Jag trodde länge att det var hunden som luktade. Det var tvättmaskinen."
 - **H3, status:** "Jag slutade låna ut handdukar när vi hade gäster, för de luktade hund."
 
-### C4 – `ny batch 7 – C4 (I3 av b4 C2, kort format)`: formatbyte av genombrottet
+### C4 – `ny batch 7 – C4 (I3 av b4 C2, kort)`: formatbyte av genombrottet
 - **Ändras:** en kort version, cirka 60–75 s, klippt av b4 C2:s egna repliker och bilder, med originalrösten.
   Hooken, isärplockningen ("Ser du det brunaktiga lagret…"), varför butikens medel inte räcker, de tre enzymerna,
   resultatet och erbjudandet.
 - **Ärvs:** allt utom längden. Längden är det som testas.
 - **H1, ärvd** (originalrösten): "Ägaren körde maskinrengörare varje månad men den unkna lukten kom ändå tillbaka. Jag
   fixade det på trettio sekunder och nu köper hon aldrig sånt igen."
-- **H2, omedveten:** "Det här växer bakom trumman i nästan varje tvättmaskin i ett hem med hund."
-- **H3, auktoritet:** "Jag har lagat tvättmaskiner i nitton år, och det här är det första jag letar efter."
+- **H2, omedveten:** "Det här växer bakom trumman i nästan varje tvättmaskin i ett hem med hund. Och inget
+  rengöringsprogram når dit."
+- **H3, pengar:** "Innan du köper en ny tvättmaskin, titta på det här. Det sitter i nästan varje maskin i ett
+  hem med hund." (Den planerade auktoritetshooken upprepade kroppens första replik, "Jag har lagat tvättmaskiner
+  i nitton år…", så den byttes.)
 - **Röst för H2 och H3:** OvO33bxTqNfwQfoR6mVh, eleven_v3, sv, [confident], som originalet.
 
-### C5 – `ny batch 7 – C5 (I2 av b5 C2, kort format)`: formatbyte av den bästa KPI-vinnaren
+### C5 – `ny batch 7 – C5 (I2 av b5 C2, kort)`: formatbyte av den bästa KPI-vinnaren
 - Samma upplägg som C4, cirka 60–75 s av b5 C2:s egna repliker och bilder.
 - Testar om det korta formatet (lärdomen från b5 C5) ger reparatören räckvidd.
 - **H1, ärvd** (originalrösten): "Jag har plockat isär över sextusen tvättmaskiner, och jag vet exakt varför din tvätt
   fortfarande luktar, särskilt om du har husdjur."
-- **H2, problem:** "Tvättar du allt två gånger för att få bort hundlukten?"
-- **H3, omedveten:** "Nio av tio tvättmaskiner jag kallas till är inte ens trasiga."
+- **H2, problem:** "Tvättar du allt två gånger för att få bort hundlukten? Jag har plockat isär över sextusen
+  tvättmaskiner, och jag vet varför den sitter kvar."
+- **H3, omedveten:** "Nio av tio tvättmaskiner jag kallas till är inte ens trasiga. Jag har plockat isär över
+  sextusen, och problemet sitter nästan alltid på samma ställe."
 - **Röst för H2 och H3:** OvO33bxTqNfwQfoR6mVh, eleven_v3, sv, som originalet.
 
 ## Upplägg i Meta
@@ -104,4 +111,5 @@ intensiteten eller byt format, så att annonsen når fler. För ett genombrott: 
 - Rör inte b4 C2.
 
 ## Kostnad
-13 nya öppningar, två tagningar var, cirka 3 300 ElevenLabs-krediter. H1 i C4 och C5 använder originalrösten.
+13 nya öppningar, två tagningar var: 2 678 ElevenLabs-krediter. Transkriberingen för ordtiderna kostade 0 krediter.
+H1 i C4 och C5 använder originalrösten.

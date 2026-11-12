@@ -234,3 +234,26 @@ How they are built (the user rejected a first test that only put a new line in f
   phrase and crossfades back under the voice.
 - The BF ending's first line calls back to the hook ("Så om du köper något … på Black Friday, gör det till den
   här: …", "Så lägg Black Friday-pengarna på den här i stället: …"), then the hero's offer lines and visuals.
+
+## Batch 7 (produced 2026-11-12, launch planned 2026-11-18)
+Labeling 5-11 Nov: b4 C2 breakthrough (69 % of "CBO - Maskinrent", ROAS 5.7 Meta), b5 C2 / b5.1 C3 / b5 C5 KPI
+winners. Files in `leverans/batch7/C<n>_…/` (`nb7_C<n>_H<m>_I<k>-<parent>_sv.mp4` + .srt + manus), Meta setup in
+`leverans/batch7/README.md`, plan in `batchplan_b7.md`. Ad sets: `ny batch 7 – C<n> (I<k> av <parent>)`.
+Fixes the batch 6 mistake (every script cut to ~3:05-3:23): hook iterations keep the parent's whole body, ending
+and length, and only the opening is replaced (same method as BF wave 1, without the BF parts; tool
+`plainopen.py`). Length changes only where length is the test (C4, C5 short cut-downs of the parent's own lines,
+voice and picture, original music laid again without a seam).
+
+| Ad set | Parent | What changes | Voice |
+|---|---|---|---|
+| C1 (I1 av b5 C2) | b5 C2, 3:31 | H1 solution aware, H2 unaware, H3 status | OvO33, v3 sv |
+| C2 (I1 av b5 C5) | b5 C5, 53 s | awareness lowered from product aware (H1 problem, H2 unaware, H3 intensity) | UPl4, v3 |
+| C3 (I1 av b5.1 C3) | b5.1 C3, 3:51 | H1 problem, H2 unaware, H3 status | LzJu, v4 sv |
+| C4 (I3 av b4 C2, kort) | b4 C2 | ~70-74 s short of the breakthrough; H1 = original hook | OvO33, v3 sv [confident] |
+| C5 (I2 av b5 C2, kort) | b5 C2 | ~73-76 s short; H1 = original hook | OvO33, v3 sv |
+- b5 C2 (video38) shows Uproot Clean packaging at ~2:34-3:24. For C1 and C5 those shots are replaced with
+  Maskinrent product photos with the original burned-in captions composited back (`replace_spans.py`).
+  The live b5 C2, its BF hero and BF wave 1 b5-C2 H1-H3 still have the Uproot shots (reported 2026-11-12).
+- An opening shorter than the original drops whole shots (or the still end of a shot) instead of speeding the
+  picture up (`keep` in the spec); a longer one slows the b-roll (C3 H1 1.26x, C5 H2/H3 1.29-1.33x).
+Box: ? (label on 2026-11-25).

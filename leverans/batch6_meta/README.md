@@ -65,29 +65,35 @@ och slå av automatisk textning. .srt-filerna är bara referens.
 
 ## Annonsgrupper och annonser
 
-Namn i Ads Manager, enligt Spencers metod:
+Namn i Ads Manager (enkelt, enligt Spencers metod: konceptets nummer + vilken vinnare det är en iteration av).
+Annonserna heter exakt som filerna, utan ".mp4".
 
-`ny batch 6 – C2 | I2-b4C2 | vinkel | auktoritet | medvetenhet | format`
+**Annonsgrupp 1: `ny batch 6 – C1 (I1 av b4 C2)`**
+- norrtvatt_maskinrent11_agaren_h1_sv
+- norrtvatt_maskinrent11_agaren_h2_sv
+- norrtvatt_maskinrent11_agaren_h3_sv
 
-- **`ny batch 6 – C2`** är konceptets unika nummer, Spencers "Batch#". Det återanvänds aldrig.
-- **`I2-b4C2`** pekar på föräldern: iteration 2 av b4 C2. Söker du på "b4C2" i Ads Manager ser du alla iterationer av
-  vinnaren och hur de gick.
-- **Vinkel, auktoritet, medvetenhet och format** visar vad som skiljer konceptet från andra, så att du kan filtrera
-  på en komponent när du märker vinnare.
-- **Annonserna** får samma början plus hooknummer och vilken komponent hooken leder med, till exempel
-  `ny batch 6 – C2 H1 | I2-b4C2 | omedveten`.
+**Annonsgrupp 2: `ny batch 6 – C2 (I2 av b4 C2)`**
+- nb6_C2_H1_I2-b4C2_sv
+- nb6_C2_H2_I2-b4C2_sv
+- nb6_C2_H3_I2-b4C2_sv
 
-| Annonsgrupp | Annonser |
-|---|---|
-| `ny batch 6 – C1 \| I1-b4C2 \| lukten bakom panelen \| ägaren + teknikern \| lösningsmedveten \| berättelse` | `ny batch 6 – C1 H1 \| I1-b4C2 \| lösningsmedveten` · `… C1 H2 \| I1-b4C2 \| auktoritet` · `… C1 H3 \| I1-b4C2 \| status` |
-| `ny batch 6 – C2 \| I2-b4C2 \| lukten bakom panelen \| teknikern + isärplockning \| omedveten \| berättelse` | `ny batch 6 – C2 H1 \| I2-b4C2 \| omedveten` · `… C2 H2 \| I2-b4C2 \| intensitet` · `… C2 H3 \| I2-b4C2 \| auktoritet` |
-| `ny batch 6 – C3 \| I1-b3.1C8 \| slipp köpa ny maskin \| teknikern + före/efter \| problemmedveten \| berättelse 4:5` | `ny batch 6 – C3 H1 \| I1-b3.1C8 \| pengar` · `… C3 H2 \| I1-b3.1C8 \| resultatet först` · `… C3 H3 \| I1-b3.1C8 \| auktoritet + pengar` |
-| `ny batch 6 – C4 \| I1-b3C3 \| mögel i gummilisten \| reparatören + gummilisten \| problemmedveten \| berättelse` | `ny batch 6 – C4 H1 \| I1-b3C3 \| lösningsmedveten` · `… C4 H2 \| I1-b3C3 \| status` · `… C4 H3 \| I1-b3C3 \| auktoritet + brådska` |
-| `ny batch 6 – C5 \| I1-b1C3 \| det bor något i maskinen \| reparatören + panelen av \| omedveten \| berättelse` | `ny batch 6 – C5 H1 \| I1-b1C3 \| ärvd hook` · `… C5 H2 \| I1-b1C3 \| auktoritet + bevis` · `… C5 H3 \| I1-b1C3 \| husdjur` |
+**Annonsgrupp 3: `ny batch 6 – C3 (I1 av b3.1 C8)`**
+- nb6_C3_H1_I1-b3.1C8_sv
+- nb6_C3_H2_I1-b3.1C8_sv
+- nb6_C3_H3_I1-b3.1C8_sv
 
-I tabellen ovan står `…` för `ny batch 6 –`.
+**Annonsgrupp 4: `ny batch 6 – C4 (I1 av b3 C3)`**
+- nb6_C4_H1_I1-b3C3_sv
+- nb6_C4_H2_I1-b3C3_sv
+- nb6_C4_H3_I1-b3C3_sv
 
-### C1 – ägaren berättar (`ny batch 6 – C1 | I1-b4C2 | …`)
+**Annonsgrupp 5: `ny batch 6 – C5 (I1 av b1 C3)`**
+- nb6_C5_H1_I1-b1C3_sv
+- nb6_C5_H2_I1-b1C3_sv
+- nb6_C5_H3_I1-b1C3_sv
+
+### C1 – ägaren berättar
 Mapp `C1_I1-b4C2_agaren/`. Förälder b4 C2 (genombrott). Ändrat: ägaren berättar i stället för teknikern. Auktoritet:
 teknikern (i tredje person) och isärplockningen i bild.
 
@@ -97,7 +103,7 @@ teknikern (i tredje person) och isärplockningen i bild.
 | H2 (auktoritet) | "En tekniker öppnade min tvättmaskin och sa åt mig att slänga allt rengöringsmedel jag köpt." | [norrtvatt_maskinrent11_agaren_h2_sv.mp4](https://github.com/williamlind18/Admin/raw/claude/funny-rubin-truuco/leverans/batch6_meta/C1_I1-b4C2_agaren/norrtvatt_maskinrent11_agaren_h2_sv.mp4) |
 | H3 (status) | "Jag slutade bjuda hem folk, för handdukarna luktade hund. Och jag rengjorde ändå maskinen varje månad." | [norrtvatt_maskinrent11_agaren_h3_sv.mp4](https://github.com/williamlind18/Admin/raw/claude/funny-rubin-truuco/leverans/batch6_meta/C1_I1-b4C2_agaren/norrtvatt_maskinrent11_agaren_h3_sv.mp4) |
 
-### C2 – "Visste du att…" (`ny batch 6 – C2 | I2-b4C2 | …`)
+### C2 – "Visste du att…"
 Mapp `C2_I2-b4C2_visste-du/`. Förälder b4 C2. Ändrat: medvetenheten sänks till omedveten, och första raden får
 högre intensitet. Auktoritet: teknikern och isärplockningen i bild.
 
@@ -107,7 +113,7 @@ högre intensitet. Auktoritet: teknikern och isärplockningen i bild.
 | H2 (intensitet) | "Bakom trumman i din tvättmaskin lever det något just nu. …" | [nb6_C2_H2_I2-b4C2_sv.mp4](https://github.com/williamlind18/Admin/raw/claude/funny-rubin-truuco/leverans/batch6_meta/C2_I2-b4C2_visste-du/nb6_C2_H2_I2-b4C2_sv.mp4) |
 | H3 (auktoritet) | "Efter nitton år som reparatör vet jag var lukten i tvätten kommer ifrån. …" | [nb6_C2_H3_I2-b4C2_sv.mp4](https://github.com/williamlind18/Admin/raw/claude/funny-rubin-truuco/leverans/batch6_meta/C2_I2-b4C2_visste-du/nb6_C2_H3_I2-b4C2_sv.mp4) |
 
-### C3 – före/efter, pengar, 4:5 (`ny batch 6 – C3 | I1-b3.1C8 | …`)
+### C3 – före/efter, pengar, 4:5
 Mapp `C3_I1-b3.1C8_fore-efter/`. Förälder b3.1 C8 (genombrott). Ändrat: drivkraften blir pengar, och resultatet
 visas först. Auktoritet: teknikern och före/efter i bild.
 
@@ -117,7 +123,7 @@ visas först. Auktoritet: teknikern och före/efter i bild.
 | H2 (resultatet först) | "Samma tvättmaskin, före och efter en enda tablett. …" | [nb6_C3_H2_I1-b3.1C8_sv.mp4](https://github.com/williamlind18/Admin/raw/claude/funny-rubin-truuco/leverans/batch6_meta/C3_I1-b3.1C8_fore-efter/nb6_C3_H2_I1-b3.1C8_sv.mp4) |
 | H3 (auktoritet och pengar) | "En kund bad mig skrota sin tre år gamla tvättmaskin. Det enda som var fel satt bakom panelen." | [nb6_C3_H3_I1-b3.1C8_sv.mp4](https://github.com/williamlind18/Admin/raw/claude/funny-rubin-truuco/leverans/batch6_meta/C3_I1-b3.1C8_fore-efter/nb6_C3_H3_I1-b3.1C8_sv.mp4) |
 
-### C4 – reparatören och gummilisten (`ny batch 6 – C4 | I1-b3C3 | …`)
+### C4 – reparatören och gummilisten
 Mapp `C4_I1-b3C3_gummilisten/`. Förälder b3 C3 (genombrott, på gränsen till KPI-målet). Ändrat: tre nya hooks,
 där H1 bär C2:s lärdom, och en stramare mitt. Auktoritet: reparatören, som drar undan gummilisten i bild.
 
@@ -127,7 +133,7 @@ där H1 bär C2:s lärdom, och en stramare mitt. Auktoritet: reparatören, som d
 | H2 (status) | "Hon visste aldrig om kollegorna kände lukten när hon satt bredvid dem. …" | [nb6_C4_H2_I1-b3C3_sv.mp4](https://github.com/williamlind18/Admin/raw/claude/funny-rubin-truuco/leverans/batch6_meta/C4_I1-b3C3_gummilisten/nb6_C4_H2_I1-b3C3_sv.mp4) |
 | H3 (auktoritet och brådska) | "Efter nitton år som reparatör säger jag samma sak i varje hem med hund: du långkokar kläderna i mögel." | [nb6_C4_H3_I1-b3C3_sv.mp4](https://github.com/williamlind18/Admin/raw/claude/funny-rubin-truuco/leverans/batch6_meta/C4_I1-b3C3_gummilisten/nb6_C4_H3_I1-b3C3_sv.mp4) |
 
-### C5 – beviset i bild (`ny batch 6 – C5 | I1-b1C3 | …`)
+### C5 – beviset i bild
 Mapp `C5_I1-b1C3_beviset/`. Förälder b1 C3 (spendvinnare: Meta gillar den, men den säljer dyrt). Ändrat:
 - Panelen skruvas av och beviset visas redan efter cirka 25 s.
 - Mekanismen är stramare.

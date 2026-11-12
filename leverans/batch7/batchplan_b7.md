@@ -42,7 +42,7 @@ och håller KPI-nivån.
   Black Friday-iterationerna (ny öppning som leder in i originalets nästa replik, musiken obruten, samma röst).
   Längden ändras bara när längden är det vi testar (C4 och C5).
 
-## 3. Batch 7: 5 annonsgrupper, 11 annonser
+## 3. Batch 7: 5 annonsgrupper, 15 annonser (5 koncept × 3 hooks)
 
 Spencers drag för en KPI-vinnare: behåll vinkel, mekanism och erbjudande. Byt hook, sänk medvetenheten, höj
 intensiteten eller byt format, så att annonsen når fler. För ett genombrott: ärv mest möjligt och testa formatbyten.
@@ -81,17 +81,27 @@ intensiteten eller byt format, så att annonsen når fler. För ett genombrott: 
 - **Ändras:** en kort version, cirka 60–75 s, klippt av b4 C2:s egna repliker och bilder, med originalrösten.
   Hooken, isärplockningen ("Ser du det brunaktiga lagret…"), varför butikens medel inte räcker, de tre enzymerna,
   resultatet och erbjudandet.
-- **Ärvs:** allt utom längden. Längden är det enda som testas. Inga nya röster, så det kostar inga krediter.
+- **Ärvs:** allt utom längden. Längden är det som testas.
+- **H1, ärvd** (originalrösten): "Ägaren körde maskinrengörare varje månad men den unkna lukten kom ändå tillbaka. Jag
+  fixade det på trettio sekunder och nu köper hon aldrig sånt igen."
+- **H2, omedveten:** "Det här växer bakom trumman i nästan varje tvättmaskin i ett hem med hund."
+- **H3, auktoritet:** "Jag har lagat tvättmaskiner i nitton år, och det här är det första jag letar efter."
+- **Röst för H2 och H3:** OvO33bxTqNfwQfoR6mVh, eleven_v3, sv, [confident], som originalet.
 
 ### C5 – `ny batch 7 – C5 (I2 av b5 C2, kort format)`: formatbyte av den bästa KPI-vinnaren
 - Samma upplägg som C4, cirka 60–75 s av b5 C2:s egna repliker och bilder.
 - Testar om det korta formatet (lärdomen från b5 C5) ger reparatören räckvidd.
+- **H1, ärvd** (originalrösten): "Jag har plockat isär över sextusen tvättmaskiner, och jag vet exakt varför din tvätt
+  fortfarande luktar, särskilt om du har husdjur."
+- **H2, problem:** "Tvättar du allt två gånger för att få bort hundlukten?"
+- **H3, omedveten:** "Nio av tio tvättmaskiner jag kallas till är inte ens trasiga."
+- **Röst för H2 och H3:** OvO33bxTqNfwQfoR6mVh, eleven_v3, sv, som originalet.
 
 ## Upplägg i Meta
 - Lägg in i "CBO - Maskinrent" som egna annonsgrupper med minsta spend 170 kr/dag, som batch 5 och 6.
-- C1–C3 har tre annonser var. C4 och C5 har en var.
+- Alla fem annonsgrupper har tre annonser (H1–H3).
 - Annonserna heter som filerna.
 - Rör inte b4 C2.
 
 ## Kostnad
-9 nya öppningar, två tagningar var, cirka 2 500 ElevenLabs-krediter. C4 och C5 använder originalrösten.
+13 nya öppningar, två tagningar var, cirka 3 300 ElevenLabs-krediter. H1 i C4 och C5 använder originalrösten.

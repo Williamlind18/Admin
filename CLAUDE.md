@@ -40,12 +40,59 @@
   `MT_AK`/`MT_SK`, in environment variables or the gitignored `scripts/.env`.
 - This repo is public. Never commit API keys or other secrets.
 
-## The seven Swedish winners (use these for every new market)
+## The launch set: the 26 videos every new market gets
 
-When the user wants "the winners" or "all winning ads" in a new market or language, use exactly these seven.
-They were checked against the live ads in Ads Manager on 2026-11-19, and the length and content match. Don't search
-Ads Manager or GitHub for them again. ("Gör alla annonser på norska" still means the closed Norwegian list
-below.) Each source is a finished Swedish delivery: footage, Swedish voice, music
+These are the Norwegian ads in Ads Manager: "Ad account 3", campaign "CBO - Norrtvätt NO", ad sets A1 - Hero and
+A2-A5 with ads C1-C5. That is 25 ads and 26 videos, because A2 C5 runs one ad in two formats. They were matched to
+their files by length on 2026-11-19. Don't search Ads Manager or GitHub for them again.
+
+- **Before every launch in a new market or language, make exactly these 26 first, and nothing else,** unless the
+  user names more. "Gör alla annonser på <språk>" and "gör lanseringsannonserna för <land>" mean these 26.
+- **Same ad, new language.** Keep the footage, content, offer and structure. Change only the language, brand
+  name, currency and domain. Translate from the Swedish script, and use the Norwegian one as support. Scripts and
+  .srt files sit next to the videos (`manus_*.txt`, same name `.srt`).
+- **Ask the user first,** before anything costs credits: the voices (gender and age per ad), the brand and
+  product names, the price in local currency and the domain.
+- **Already in Danish:** A1 C1, A1 C2 and A1 C3 are among the seven winners below (b1 C3, b3 C3 and b3.1 C8).
+
+| Meta | Ad | Norwegian delivery (`leverans/`) @ branch | Swedish source (`leverans/`) @ branch | Length |
+|---|---|---|---|---|
+| A1 C1 | Maskinrent video 2 (= b1 C3) | `norrtvatt_maskinrent_video2_no.mp4` @ `claude/inspiring-feynman-uo7z24` | `norrtvatt_maskinrent_video2_sv.mp4` @ same | 4:49 |
+| A1 C2 | video11 (= b3 C3) | `norrtvatt_video11_no.mp4` @ `claude/quirky-mayer-tsglxb` | `norrtvatt_video11_sv.mp4` @ same | 4:23 |
+| A1 C3 | Maskinrent 7 (= b3.1 C8) | `nordvask_maskinren7_no.mp4` @ `claude/zealous-dijkstra-nzvyw0` | `norrtvatt_maskinrent7_sv.mp4` @ same | 3:42 |
+| A1 C4 | Maskinrent 4, biofilm | `nordvask_maskinren4_biofilm_no.mp4` @ `main` | `norrtvatt_maskinrent4_biofilm_sv.mp4` @ `main` | 5:13 |
+| A1 C5 | video32 | `norrtvatt_maskinrent_video32_no.mp4` @ `claude/inspiring-feynman-uo7z24` | `norrtvatt_maskinrent_video32_sv.mp4` @ same | 2:00 |
+| A2 C1 | Three mistakes | `nordvask_tre_feil_no.mp4` @ `claude/ecstatic-thompson-it7k4c` | `norrtvatt_tre_misstag_sv.mp4` @ same | 2:20 |
+| A2 C2 | Maskinrent 2 | `nordvask_maskinren2_no.mp4` @ `claude/ecstatic-thompson-it7k4c` | `norrtvatt_maskinrent2_sv.mp4` @ same | 2:15 |
+| A2 C3 | Maskinrent 1 | `nordvask_maskinren_no.mp4` @ `claude/ecstatic-thompson-it7k4c` | `norrtvatt_maskinrent_sv.mp4` @ same | 1:50 |
+| A2 C4 | Maskinrent 3, 30 s version | `nordvask_maskinren3_no.mp4` @ `claude/focused-hamilton-930j6d` | `norrtvatt_maskinrent3_sv.mp4` @ same | 0:30 |
+| A2 C5 | video25, sale ends (4:5 and 9:16) | `nordvask_video25_salget_slutter_no.mp4` (4:5) @ `claude/focused-hamilton-930j6d`; the 9:16 version is only in Meta | `norrtvatt_video25_rean_slutar_idag_sv.mp4` @ same | 0:20 |
+| A3 C1 | video5 | `norrtvatt_video5_no.mp4` @ `claude/quirky-mayer-tsglxb` | `norrtvatt_video5_sv.mp4` @ same | 4:05 |
+| A3 C2 | Maskinrent 4 | `nordvask_maskinren4_no.mp4` @ `claude/zealous-dijkstra-nzvyw0` | `norrtvatt_maskinrent4_sv.mp4` @ same | 4:09 |
+| A3 C3 | Maskinrent 3, 4-minute version | `nordvask_maskinren3_no.mp4` @ `claude/zealous-dijkstra-nzvyw0` | `norrtvatt_maskinrent3_sv.mp4` @ same | 4:00 |
+| A3 C4 | video15 | `norrtvatt_video15_no.mp4` @ `claude/quirky-mayer-tsglxb` | `norrtvatt_video15_sv.mp4` @ same | 2:00 |
+| A3 C5 | video14 | `norrtvatt_video14_no.mp4` @ `claude/quirky-mayer-tsglxb` | `norrtvatt_video14_sv.mp4` @ same | 1:25 |
+| A4 C1 | Maskinrent 6 | `nordvask_maskinren6_no.mp4` @ `claude/zealous-dijkstra-nzvyw0` | `norrtvatt_maskinrent6_sv.mp4` @ same | 0:59 |
+| A4 C2 | Maskinrent 5 | `nordvask_maskinren5_no.mp4` @ `claude/zealous-dijkstra-nzvyw0` | `norrtvatt_maskinrent5_sv.mp4` @ same | 0:56 |
+| A4 C3 | Maskinrent 3, UV test | `nordvask_maskinren3_uvtest_no.mp4` @ `main` | `norrtvatt_maskinrent3_uvtest_sv.mp4` @ `main` | 1:42 |
+| A4 C4 | Maskinrent 8 | `nordvask_maskinren8_no.mp4` @ `claude/zealous-dijkstra-nzvyw0` | `norrtvatt_maskinrent8_sv.mp4` @ same | 1:02 |
+| A4 C5 | Maskinrent 5, three mistakes | `nordvask_maskinren5_trefeil_no.mp4` @ `main` | `norrtvatt_maskinrent5_tremisstag_sv.mp4` @ `main` | 2:16 |
+| A5 C1 | video31 | `norrtvatt_maskinrent_video31_no.mp4` @ `claude/inspiring-feynman-uo7z24` | `norrtvatt_maskinrent_video31_sv.mp4` @ same | 4:29 |
+| A5 C2 | video23 | `norrtvatt_maskinrent_video23_no.mp4` @ `claude/inspiring-feynman-uo7z24` | `norrtvatt_maskinrent_video23_sv.mp4` @ same | 1:46 |
+| A5 C3 | Maskinrent 6, mold | `nordvask_maskinren6_mugg_no.mp4` @ `main` | `norrtvatt_maskinrent6_mogel_sv.mp4` @ `main` | 1:40 |
+| A5 C4 | video30, NASA enzymes | `nordvask_video30_nasa_enzymer_no.mp4` @ `claude/focused-hamilton-930j6d` | `norrtvatt_video30_nasa_enzymer_sv.mp4` @ same | 4:08 |
+| A5 C5 | video33, service technician | `nordvask_video33_servicetekniker_no.mp4` @ `claude/focused-hamilton-930j6d` | `norrtvatt_video33_servicetekniker_sv.mp4` @ same | 6:39 |
+
+`nordvask_maskinren3_no.mp4` and `norrtvatt_maskinrent3_sv.mp4` exist in two different ads under the same name.
+Take the 30 s one from `claude/focused-hamilton-930j6d` (A2 C4) and the 4-minute one from
+`claude/zealous-dijkstra-nzvyw0` (A3 C3).
+
+## The seven Swedish winners
+
+When the user asks for "the winners" or "all winning ads", use exactly these seven. For a launch in a new market,
+use the launch set above. Three of the seven are in it, and the notes below apply when they are made. The seven
+were checked against the live ads in Ads Manager on 2026-11-19, and the length and content match. Don't search
+Ads Manager or GitHub for them again. Each source is a finished Swedish delivery: footage, Swedish voice, music
 and burned-in captions. Fetch it with `git show <branch>:<path>`. The script and the .srt sit next to the mp4
 (`manus_*.txt`, same name `.srt`).
 
@@ -81,17 +128,8 @@ and burned-in captions. Fetch it with `git show <branch>:<path>`. The script and
 - **Method:** see "Danish versions" in `.claude/skills/ad-video-localizer/references/lessons.md`. The Danish
   delivery is `leverans/danmark/`.
 
-## Norwegian versions ("gör alla annonser på norska")
+## Norwegian versions
 
-When the user writes "gör alla annonser på norska", translate ONLY the four ads below to Norwegian.
-This is a closed list, fixed on 2026-10-27. Ads made after that date stay Swedish unless the user names
-them. The Norwegian version is the same ad (same footage, content, offer and structure) with only the
-language changed. Translate from the Swedish script in `leverans/`, and use the source video in the
-GitHub release named after the tag.
-
-| Ad | Source (release tag) | Swedish script | Swedish delivery |
-|---|---|---|---|
-| Maskinrent 3, UV test | `video8` | `leverans/manus_maskinrent3_uvtest.txt` | `leverans/norrtvatt_maskinrent3_uvtest_sv.mp4` |
-| Maskinrent 4, biofilm | `video9` | `leverans/manus_maskinrent4_biofilm.txt` | `leverans/norrtvatt_maskinrent4_biofilm_sv.mp4` |
-| Maskinrent 5, three mistakes | `video17` | `leverans/manus_maskinrent5_tremisstag.txt` | `leverans/norrtvatt_maskinrent5_tremisstag_sv.mp4` |
-| Maskinrent 6, mold | `video19` | `leverans/manus_maskinrent6_mogel.txt` | `leverans/norrtvatt_maskinrent6_mogel_sv.mp4` |
+All 26 ads in the launch set exist in Norwegian; their files are in the launch-set table. The old closed list of
+four (2026-10-27) is part of the set. The original competitor footage for those four is in the GitHub releases
+`video8` (Maskinrent 3, UV test), `video9` (4, biofilm), `video17` (5, three mistakes) and `video19` (6, mold).

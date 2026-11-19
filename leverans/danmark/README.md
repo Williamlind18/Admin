@@ -39,6 +39,25 @@ Erbjudandet är detsamma som i Sverige och Norge, i DKK: köp två, få två på
 - **Slutbilder:** b5 C2 slutar med Nordvask-produktbilden i stället för den svenska Maskinrent-bilden. b5.1 C3 har
   en dansk slutbild (4,8 ud af 5, +15.000 kunder, UDSALG, 4 PAKKER –50 %, FRI FRAGT, SIKR DIG TILBUDDET).
 
+## Lanseringsannonserna (de 26 från Norge)
+
+Samma 26 videor som i den norska kampanjen "CBO - Norrtvätt NO" (Ad account 3). A1 C1, A1 C2 och A1 C3 finns redan
+ovan (b1 C3, b3 C3 och b3.1 C8). Resten görs i omgångar om fem, i ordning efter hur mycket de spenderat i Norge.
+
+| Meta | Annons | Video | Undertexter | Manus | Längd | Röst |
+|---|---|---|---|---|---|---|
+| A5 C4 | video30, NASA-enzymer | [mp4](nordvask_dk_A5-C4_da.mp4) | [srt](nordvask_dk_A5-C4_da.srt) | [manus](manus/manus_A5-C4_da.txt) | 4:08 | dansk man 40–50 år |
+| A5 C5 | video33, servicetekniker | [mp4](nordvask_dk_A5-C5_da.mp4) | [srt](nordvask_dk_A5-C5_da.srt) | [manus](manus/manus_A5-C5_da.txt) | 6:39 | dansk man 40–50 år |
+| A3 C1 | video5 | [mp4](nordvask_dk_A3-C1_da.mp4) | [srt](nordvask_dk_A3-C1_da.srt) | [manus](manus/manus_A3-C1_da.txt) | 4:05 | dansk kvinna 30–40 år |
+| A5 C1 | video31 | [mp4](nordvask_dk_A5-C1_da.mp4) | [srt](nordvask_dk_A5-C1_da.srt) | [manus](manus/manus_A5-C1_da.txt) | 4:29 | dansk man 40–50 år |
+| A1 C4 | Maskinrent 4, biofilm | [mp4](nordvask_dk_A1-C4_da.mp4) | [srt](nordvask_dk_A1-C4_da.srt) | [manus](manus/manus_A1-C4_da.txt) | 5:13 | dansk man 40–50 år |
+
+Alla svenska texter i bild är bytta mot danska på samma plats och i samma stil: skyltar (SEBUM/HUNDENS HUDFEDT,
+DYREHÅR = PROTEIN, SEBUM = FEDT, Alfa-amylase/Protease/Lipase, AFKALKER MASKINEN, PASSER TIL ALLE VASKEMASKINER,
+SIKKER FOR AFLØB, Iltblegemiddel på ingredienslistorna), CNN-rubriken (FORSKERE SKABER "SUPERENZYM"), sms:et,
+erbjudandekorten (UDSALG, 4 PAKKER –50 %, 20 KR / TABLET, HOLDER I 4 ÅR, FRI FRAGT), garantiremsorna (PENGENE
+TILBAGE I 30 DAGE) och slutbilderna (NORDVASK, 4,8 ud af 5, +15.000 kunder, SIKR DIG TILBUDDET).
+
 ## Att tänka på
 
 - **Förpackningen på produktbilden är den norska** (Nordvask Maskinren, "rengjøringstabletter", "utviklet for

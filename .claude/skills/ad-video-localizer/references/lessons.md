@@ -181,6 +181,31 @@ was female).
 - **Captions:** `make_captions.py --lang da`. Merge "den/det/de her" into one token, don't end a chunk on a bare
   number word, and show money, percentages and counts ≥ 10 as digits ("999 kroner", "50 %", "15.000 kunder").
 
+## Danish launch set (the 26 Norwegian ads, from the Swedish deliveries, November 2026)
+- **Find every leftover Swedish text after Vmake.** Vmake removes captions and the text inside white boxes, but not
+  text drawn on graphics, badges or cards. Three passes found everything on five ads:
+  1. OCR the cleaned video at 2 fps with tesseract `--psm 11`, one thread per process
+     (`OMP_THREAD_LIMIT=1 ... | xargs -P 4`). With the default threading four parallel tesseracts took ~4 min per
+     frame; single-threaded it is ~0.25 s.
+  2. Diff source against clean outside the caption band: what Vmake removed (box text, and sometimes stylised words
+     such as "= PROTEIN" that must be put back).
+  3. Contact sheets every 4 s for the full-frame cards.
+- **Reuse the Norwegian builders.** The Swedish and Norwegian deliveries of the same ad use identical overlay
+  coordinates (`leverans/underlag/video30_*_no.py`, `video33_build_ov33_no.py` on `claude/focused-hamilton-930j6d`),
+  so only the text changes. Find each overlay's span in the Swedish source with a per-frame white-box tracker or a
+  region MAD scan; voice-anchored switches (offer card → "holder i 4 år" → guarantee bar) go on the Danish sentence
+  starts.
+- **Restore what Vmake wiped from the source:** overlay a crop of the Swedish source video (e.g. the red "= PROTEIN")
+  on the clean video for the same frames.
+- **Moving labels** (Syreblekmedel on a tilting ingredient list): diff the Swedish render against the original
+  footage release (same timeline) to get each frame's minAreaRect, smooth it over 5 frames, and overlay a PNG
+  sequence of the new label with the same size, angle and text size.
+- **Match the Swedish text size**, not just the box: measure the dark-pixel extent of the Swedish words (deskew
+  first) and pick the font size that gives the same width. The first "SIKKER FOR AFLØB" fitted to the box was 40 %
+  too big.
+- **Captions moved for a graphic:** where the Swedish captions sat lower to clear an SMS bubble (A5 C5, y 0.78
+  instead of 0.67), move the Danish ones for the same seconds.
+
 ## Long competitor ads with hooks (Maskinrent videos 8-10, Uproot footage 720x1280)
 - **Small or merged caption boxes:** `ocr_captions.py --mode bands --band 0.15-0.75 --box-h 0.018-0.05`.
   Bands mode can find the box a few rows short, and LaMa then leaves its top or bottom edge as a thin

@@ -1,0 +1,120 @@
+Nordvask Maskinren – b3.1 C8 – kunden som ville skrota maskinen (dansk version)
+Röst: "dansk man 40-50 år", ElevenLabs eleven_v4, språkkod da. Samma bild, innehåll och erbjudande som den svenska vinnaren.
+Varje mening: dansk text, och under den den svenska meningen den ersätter.
+
+ 1. En kunde bad mig skrotte en tre år gammel vaskemaskine.
+    (sv: En kund bad mig skrota en tre år gammal tvättmaskin.)
+ 2. Se nu, hvordan jeg får den som ny igen.
+    (sv: Se nu hur jag får den som ny igen.)
+ 3. Jeg har repareret vaskemaskiner i nitten år, over tusind af dem.
+    (sv: Jag har lagat tvättmaskiner i nitton år, över tusen stycken.)
+ 4. Sidste måned bad en kunde mig om at tage hendes og skrotte den.
+    (sv: Förra månaden bad en kund mig ta hennes och skrota den.)
+ 5. Den var kun tre år, men alt, hun vaskede, lugtede indelukket.
+    (sv: Den var bara tre år, men allt hon tvättade luktade unket.)
+ 6. Håndklæder, børnenes tøj, hundens tæpper.
+    (sv: Handdukar, barnens kläder, hundens filtar.)
+ 7. Hun havde prøvet alt på hylden og givet op.
+    (sv: Hon hade testat allt på hyllan och gett upp.)
+ 8. Hun ville købe en ny og glemme den her.
+    (sv: Hon ville köpa en ny och glömma den här.)
+ 9. Så i stedet for at skrotte den åbner jeg den og viser, hvorfor tøjet aldrig blev rent.
+    (sv: Så i stället för att skrota den öppnar jag den och visar varför tvätten aldrig blev ren.)
+10. Først tager vi panelet af.
+    (sv: Först tar vi av panelen.)
+11. Det her er ydertromlen, væggen bag tromlen, der snurrer.
+    (sv: Det här är yttertrumman, väggen bakom trumman som snurrar.)
+12. Hver vask skyller vand herind, men ingen svamp eller rengøringsprogram når herind.
+    (sv: Varje tvätt spolar vatten här, men ingen svamp eller rengöringsprogram når hit.)
+13. Den er forseglet fra fabrikken.
+    (sv: Den är förseglad från fabriken.)
+14. Og i et hjem med kæledyr sker det her.
+    (sv: Och i ett hem med husdjur händer det här.)
+15. Vaskemiddel og skyllemiddel efterlader en klæbrig film overalt.
+    (sv: Tvätt- och sköljmedel lämnar en kladdig film överallt.)
+16. Dyrehår sætter sig fast i filmen og bliver siddende.
+    (sv: Djurhår fastnar i filmen och sitter kvar.)
+17. Skæl og hudfedt lægger sig ovenpå.
+    (sv: Mjäll och hudfett lägger sig ovanpå.)
+18. Så flytter bakterier ind, og for dem er alt det der mad.
+    (sv: Sen flyttar bakterier in, och för dem är allt det där mat.)
+19. Kan du se det brungule lag, der dækker alt?
+    (sv: Ser du det brungula lagret som täcker allt?)
+20. Det er ikke snavs.
+    (sv: Det är inte smuts.)
+21. Det er et skjold, som bakterierne har bygget over sig.
+    (sv: Det är en sköld som bakterierna byggt över sig.)
+22. Fagfolk kalder det biofilm.
+    (sv: Proffsen kallar det biofilm.)
+23. Den lever, den er pansret, og den har overlevet hver eneste vask.
+    (sv: Den lever, den är pansrad och har överlevt varenda tvätt.)
+24. Hver vask går lige igennem belægningen, så lugten kom altid tilbage, uanset hvor meget hun rengjorde det, hun kunne se.
+    (sv: Varje tvätt går rakt genom beläggningen, så lukten kom alltid tillbaka, hur mycket hon än rengjorde det hon såg.)
+25. Og det her fik mig til at reagere.
+    (sv: Och det här fick mig att reagera.)
+26. Skabet over maskinen var fyldt med maskintabletter, iltpulver, eddike og natron, alt det, man skal bruge.
+    (sv: Skåpet ovanför maskinen var fullt av maskintabletter, syrepulver, ättika och bikarbonat, allt man ska använda.)
+27. Men læs etiketterne i butikken: de fleste bygger på det samme stof, iltbaseret blegemiddel.
+    (sv: Men läs etiketterna i butiken: de flesta bygger på samma ämne, syrebaserat blekmedel.)
+28. De klarer overfladerester og kalk, men ikke en film af protein og fedt fuld af dyrehår.
+    (sv: De klarar ytrester och kalk, men inte en film av protein och fett full av djurhår.)
+29. Måned efter måned skyllede de hen over skjoldet og efterlod bakterierne.
+    (sv: Månad efter månad sköljde de över skölden och lämnade bakterierna kvar.)
+30. Det var ikke hendes skyld.
+    (sv: Det var inte hennes fel.)
+31. Intet i skabet var lavet til det her.
+    (sv: Inget i skåpet var gjort för det här.)
+32. Det, der nedbryder den slags, er ikke endnu et blegemiddel.
+    (sv: Det som bryter ner sånt här är inte ännu ett blekmedel.)
+33. Det er enzymer.
+    (sv: Det är enzymer.)
+34. De skyller ikke bare hen over, de nedbryder laget stykke for stykke, og hvert enzym tager sit eget lag.
+    (sv: De sköljer inte bara över, de bryter ner lagret bit för bit, och varje enzym tar sitt eget lager.)
+35. Så jeg testede på netop den her maskine.
+    (sv: Så jag testade på just den här maskinen.)
+36. Én enzymtablet, ét varmt program, intet andet.
+    (sv: En enzymtablett, ett varmt program, inget annat.)
+37. Mens den kørte, skete det her indeni.
+    (sv: Medan den gick hände det här inuti.)
+38. Amylase tager den klæbrige film, der holder det hele sammen.
+    (sv: Amylas tar den kladdiga filmen som håller ihop allt.)
+39. Protease tager proteinresterne, altså dyrehårene.
+    (sv: Proteas tar proteinresterna, alltså djurhåret.)
+40. Og lipase tager det fedtede lag, som bakterierne lever af.
+    (sv: Och lipas tar det feta lagret som bakterierna lever av.)
+41. Et bryder filmen op, et tager proteinet, et skærer igennem fedtet.
+    (sv: Ett bryter upp filmen, ett tar proteinet, ett skär igenom fettet.)
+42. Se på vandet, der kom ud.
+    (sv: Titta på vattnet som kom ut.)
+43. Tre år af det, du så bag panelet, nedbrudt og skyllet ud.
+    (sv: Tre år av det du såg bakom panelen, nedbrutet och utspolat.)
+44. Så jeg åbnede den igen.
+    (sv: Så jag öppnade den igen.)
+45. Samme panel, samme ydertromle.
+    (sv: Samma panel, samma yttertrumma.)
+46. Se nu.
+    (sv: Titta nu.)
+47. Én tablet og ét varmt program klarede det, som ingen andre midler eller husråd kunne.
+    (sv: En tablett och ett varmt program fixade det som inga andra medel eller huskurer klarade.)
+48. Maskinen, hun ville skrotte, fik hun tilbage.
+    (sv: Maskinen hon ville skrota fick hon tillbaka.)
+49. Hun vaskede håndklæder og ringede dagen efter: de lugtede af absolut ingenting.
+    (sv: Hon tvättade handdukar och ringde dagen efter: de luktade ingenting alls.)
+50. For første gang i tre år.
+    (sv: För första gången på tre år.)
+51. Hun troede, maskinen var død, men den var aldrig i stykker.
+    (sv: Hon trodde maskinen var död, men den var aldrig trasig.)
+52. Der boede bare noget i den, og tabletten smed det ud med det samme.
+    (sv: Det bodde bara något i den, och tabletten vräkte ut det på en gång.)
+53. Nu bruger hun én tablet om måneden, så belægningen aldrig kommer tilbage.
+    (sv: Nu kör hon en tablett i månaden så beläggningen aldrig kommer tillbaka.)
+54. Tabletten hedder Maskinren, fra Nordvask, udviklet til hjem med kæledyr.
+    (sv: Tabletten heter Maskinrent, från svenska Norrtvätt, framtagen för hem med husdjur.)
+55. Lige nu: op til halvtreds procent rabat og fri fragt.
+    (sv: Just nu: upp till femtio procent rabatt och fri frakt.)
+56. Virker den ikke, får du pengene tilbage inden for tredive dage.
+    (sv: Funkar den inte får du pengarna tillbaka inom trettio dagar.)
+57. Før du giver hunden, vaskemidlet eller maskinen skylden: tænk på, hvad der sad bag panelet.
+    (sv: Innan du skyller på hunden, tvättmedlet eller maskinen: tänk på vad som satt bakom panelen.)
+58. Klik på linket nedenfor.
+    (sv: Klicka på länken nedan.)

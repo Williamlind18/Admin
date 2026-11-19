@@ -26,6 +26,9 @@ FUNC = {
     "no": "det den de en et ei å og i på til av som med for om din ditt dine mine min mitt kan er har så ut fra etter "
           "ikke du jeg man vi seg meg deg hele alle var hva når opp ned bare nå over gratis tretti femti seksti "
           "dere sin sitt sine hans hennes deres ved mot enn uten under gjennom",
+    "da": "det den de en et at og i på til af som med for om din dit dine mine min mit kan er har så ud fra efter "
+          "ikke du jeg man vi sig mig dig hele alle var hvad når op ned bare nu over fri der her hun han dem deres "
+          "sin sit sine hans hendes ved mod end uden under gennem eller men to tre fire fem seks syv otte ni ti",
     "en": "the a an and or to of in on at for with your my our their is are was be it this that so as by from not "
           "you i we they he she its all just up out",
 }

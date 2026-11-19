@@ -157,6 +157,30 @@ was female).
 - **Captions:** Norwegian function words are in `make_captions.py --lang no`. Show money and counts as
   digits ("999 kroner", "30 dager", "15 000"); keep the number phrase together in the .srt too.
 
+## Danish versions of the seven Swedish winners (Nordvask Maskinren, November 2026)
+- **Check the source against Meta first.** Download the live video (`download_hd_url`) and compare it with the
+  GitHub source at 2 fps plus the audio envelope. b1 C3 matched in picture but the live one had a music bed that
+  our file lacked: extract it as `live − H(f)·ours` per frequency bin in 8 s blocks (STFT), then a Wiener-style
+  mask against the leftover voice. That left the old voice ~32 dB under the voice level, masked by the new voice.
+- **Burned-in text: Vmake `SKM0002` (remove subtitles)** keeps fps and length and is clean on captions. It also
+  wipes text inside white label boxes but can leave the empty box (FÖRE/EFTER on b5 C2). Scan for white boxes whose
+  dark text disappeared between source and clean (`find_labels`-style diff) and put the new-language label in the
+  same box. Product cards with the Swedish brand are not removed: replace them with the local brand's product image.
+- **Paragraph takes on eleven_v4 barely pause between some sentences.** `split_takes.py` (vowel-proportional
+  guess) put ~16 of 49 boundaries on comma pauses. `scripts/espeak_cuts.py` (DTW against an espeak-ng reading of
+  the same sentences, snapped to real silences) matched the ElevenLabs Scribe word times on every checked boundary;
+  feed its cuts to `split_takes.py --cuts`. Scribe (`creative_transcribe_audio`, 0 credits) gives word times, but
+  they run ~0.15-0.3 s late and every status call dumps all words into the context, so use it only to verify.
+- **Timing:** `scripts/plan_on_reference.py` puts each sentence near the original sentence start (from the .srt),
+  with tempo 0.92-1.08 and pauses 0.2-1.2 s. Danish ran 5-23 % shorter than Swedish; c8 needed 0.92 and ~0.8 s
+  pauses, and where the Swedish voice itself was slow (one sentence 9 s vs 6 s) let the pauses there grow rather
+  than drift 2 s off the footage.
+- **Loudness:** Danish v4 voices peak higher than the Swedish deliveries, so scaling to the Swedish RMS clips.
+  Mix voice + bed at the Swedish voice/music ratio, then two-pass `loudnorm` to the Swedish ad's integrated loudness
+  (≈ −15 LUFS, TP −1.5).
+- **Captions:** `make_captions.py --lang da`. Merge "den/det/de her" into one token, don't end a chunk on a bare
+  number word, and show money, percentages and counts ≥ 10 as digits ("999 kroner", "50 %", "15.000 kunder").
+
 ## Long competitor ads with hooks (Maskinrent videos 8-10, Uproot footage 720x1280)
 - **Small or merged caption boxes:** `ocr_captions.py --mode bands --band 0.15-0.75 --box-h 0.018-0.05`.
   Bands mode can find the box a few rows short, and LaMa then leaves its top or bottom edge as a thin

@@ -64,6 +64,9 @@ and burned-in captions. Fetch it with `git show <branch>:<path>`. The script and
   - b3.1 C8 loops every 53.058 s and b5.1 C3 every 136.0 s.
   - b1 C3's file has no music, but the live ad does. `musik_b1-C3.mp3` was extracted from the live ad.
   - Match the Swedish voice/music ratio, then loudness-match the result to the Swedish ad (about −15 LUFS).
+- **Text-free footage is ready:** `leverans/underlag/textfri_vinnare/textfri_<ad>.mp4`. These are the seven
+  winners with the Swedish captions removed by Vmake. They have no audio and are packed to about 93 MB each. Start
+  from these; don't spend Vmake credits again. The notes below say what is still left in them.
 - **Text removal:** Vmake `SKM0002` removes the captions.
   - It leaves empty boxes where b5 C2's FÖRE/EFTER labels were (2:41-2:44, boxes at x 177 and 550, y 914 in
     720x1280). Put the new language's labels there.

@@ -37,6 +37,44 @@
   fixate on it.
 - This repo is public. Never commit API keys or other secrets.
 
+## The seven Swedish winners (use these for every new market)
+
+When the user wants "the winners" or "all winning ads" in a new market or language, use exactly these seven.
+They were checked against the live ads in Ads Manager on 2026-11-19, and the length and content match. Don't search
+Ads Manager or GitHub for them again. ("Gör alla annonser på norska" still means the closed Norwegian list
+below.) Each source is a finished Swedish delivery: footage, Swedish voice, music
+and burned-in captions. Fetch it with `git show <branch>:<path>`. The script and the .srt sit next to the mp4
+(`manus_*.txt`, same name `.srt`).
+
+| Meta name | Swedish delivery (path @ branch) | Swedish script | Length, size | Speaker |
+|---|---|---|---|---|
+| b4 C2 (breakthrough) | `leverans/norrtvatt_video22_sv.mp4` @ `claude/quirky-mayer-tsglxb` | `manus_video22.txt` | 3:48, 1080x1920 | man |
+| b1 C3 | `leverans/norrtvatt_maskinrent_video2_sv.mp4` @ `claude/inspiring-feynman-uo7z24` | `manus_norrtvatt_video2.txt` | 4:49, 1080x1908 | man |
+| b3.1 C8 | `leverans/norrtvatt_maskinrent7_sv.mp4` @ `claude/zealous-dijkstra-nzvyw0` | `manus_maskinrent7.txt` | 3:42, 1080x1368 | man |
+| b3 C3 | `leverans/norrtvatt_video11_sv.mp4` @ `claude/quirky-mayer-tsglxb` | `manus_video11.txt` | 4:23, 1080x1908 | man |
+| b5 C2 | `leverans/norrtvatt_vsl_reparator.mp4` @ `claude/video-editing-15noqg` | `manus_vsl_reparator.txt` | 3:30, 720x1280 | man |
+| b5.1 C3 | `leverans/norrtvatt_video43_tre_enzymer_sv.mp4` @ `claude/focused-hamilton-930j6d` | `manus_video43_tre_enzymer.txt` | 3:51, 720x1280 | woman 30-40 |
+| b5 C5 | `leverans/norrtvatt_maskinrent9_enzymer_sv.mp4` @ `claude/funny-rubin-truuco` | `manus_maskinrent9_enzymer.txt` | 0:53, 720x1280 | woman |
+
+- **Ask the user for the voices.** In Danish, the five men's ads used one man aged 40-50, b5.1 C3 a woman aged
+  30-40 and b5 C5 a woman aged 40-50.
+- **Translate from the Danish scripts** in `leverans/danmark/manus/`. Each has the Danish line with the Swedish
+  line under it, 1:1 with the Swedish .srt sentences. Brand and offer are already swapped there.
+- **Music beds** for all seven, cut to start at 0 s of each ad, are in `leverans/underlag/musik_vinnare/`.
+  - b3.1 C8 loops every 53.058 s and b5.1 C3 every 136.0 s.
+  - b1 C3's file has no music, but the live ad does. `musik_b1-C3.mp3` was extracted from the live ad.
+  - Match the Swedish voice/music ratio, then loudness-match the result to the Swedish ad (about −15 LUFS).
+- **Text removal:** Vmake `SKM0002` removes the captions.
+  - It leaves empty boxes where b5 C2's FÖRE/EFTER labels were (2:41-2:44, boxes at x 177 and 550, y 914 in
+    720x1280). Put the new language's labels there.
+  - b5 C2 ends on the Swedish Maskinrent product card (3:24.6 to the end). Replace it with the market's product
+    image.
+  - b5.1 C3 ends on a Swedish closing card (3:47.5 to the end). Replace it with a closing card in the market's
+    language.
+- **Caption height** (`--y`): b4 C2 0.714, b5 C2 0.652, b5.1 C3 0.645, the rest 0.75.
+- **Method:** see "Danish versions" in `.claude/skills/ad-video-localizer/references/lessons.md`. The Danish
+  delivery is `leverans/danmark/`.
+
 ## Norwegian versions ("gör alla annonser på norska")
 
 When the user writes "gör alla annonser på norska", translate ONLY the four ads below to Norwegian.

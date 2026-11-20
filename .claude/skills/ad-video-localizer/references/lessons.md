@@ -231,6 +231,13 @@ was female).
     drums. `pillmasks.py` finds the pill from its padding instead: a column is pill where the white strips just above
     and below the text are white, and the run must hold dark text. Check a contact sheet of the cleaned band
     before using the clean film.
+- **When the release isn't text-free, start from the closest sister delivery.** `video32` (A1 C5) has English captions
+  and labels. The Swedish and Norwegian deliveries share the edit, the blur patches and the label layout, and Norwegian
+  is closest to Danish (MASKINREN, 2 MÅNEDER +, PASSER TIL ALLE VASKEMASKINER need no change). `a1c5_labels.py` finds
+  each Norwegian label by colour (red, cyan, light blue, or light text with a dark rim), masks its text for LaMa together
+  with the Norwegian captions, and draws the Danish text in the same colour, size, outline and position with the
+  Norwegian label's per-frame opacity. Pills are redrawn wider instead of inpainted; a word-by-word reveal is copied word
+  by word. Measure pill text from ink components that don't touch the pill edge: the rounded corners show background.
 - **Captions (DP splitter, `make_captions_da.py`):** a colon ends a phrase ("to eddike" ran across "Fejl nummer to:
   eddike"), and Danish time phrases stay together: "Dagene efter | ringede hun", not "Dagene | efter ringede hun";
   also "Næste morgen", "En uge senere", "et år siden", "I flere år". Count the words inside merged tokens ("den her",

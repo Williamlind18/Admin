@@ -3,6 +3,14 @@
 import json, re, sys
 RULES = [
     (["ni", "hundrede", "og", "nioghalvfems"], "999"),
+    (["seks", "hundrede", "og", "nitten"], "619"),
+    (["hundrede", "og", "halvfems"], "190"),
+    (["hundrede", "og", "firs"], "180"),
+    (["nioghalvfems", "procent"], "99 %"),
+    (["firs", "procent"], "80 %"),
+    (["tyve", "procent"], "20 %"),
+    (["femogtyve"], "25"),
+    (["tres"], "60"),
     (["nitten", "hundrede", "og", "fire"], "1904"),
     (["nittenhundredetallet"], "1900-tallet"),
     (["to", "hundrede", "og", "halvtreds"], "250"),

@@ -219,6 +219,17 @@ was female).
   - Find the music beds in the Swedish session's ElevenLabs flow (a music node in the flow named after the release).
     Map 3 s windows of the Swedish audio to music time to read a loop's period: A3 C2 loops every 53.325 s and A3 C3
     every 55.577 s on 60 s beds.
+  - **The Swedish edit can differ from the release.** Map every Swedish frame to its best original frame
+    (`framemap.py`, tiny grey thumbnails with the caption band masked). A3 C4 replaced 3.5 s with a stock shot
+    (14.37–17.90 s) and slowed 1.4 s of the original down to fill 2.8 s, skipping a foreign "60 MOI" card
+    (105.2–108.0 s). The clean film then follows the Swedish edit: the stock shot taken from the Swedish delivery
+    with its captions removed by LaMa (`textmasks.py`: white strokes next to a black rim; fill the fade frames from
+    their neighbours), and the slowed part rebuilt from original frames.
+  - Check `clean/*.mp4` before writing to it: a clean file that is a symlink to `orig/` would truncate the original.
+- **Captions (DP splitter, `make_captions_da.py`):** a colon ends a phrase ("to eddike" ran across "Fejl nummer to:
+  eddike"), and Danish time phrases stay together: "Dagene efter | ringede hun", not "Dagene | efter ringede hun";
+  also "Næste morgen", "En uge senere", "et år siden", "I flere år". Count the words inside merged tokens ("den her",
+  "30 dage") against the 1–3 word cap.
 
 ## Long competitor ads with hooks (Maskinrent videos 8-10, Uproot footage 720x1280)
 - **Small or merged caption boxes:** `ocr_captions.py --mode bands --band 0.15-0.75 --box-h 0.018-0.05`.

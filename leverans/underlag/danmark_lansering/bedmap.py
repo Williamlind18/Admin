@@ -8,13 +8,15 @@ k = sys.argv[1]; sv = load(f"vid/{k}.mp4"); m = load(f"music/{k}.mp3")
 W = 3*SR
 from numpy.fft import rfft, irfft
 out = []
+c2 = np.concatenate([[0], np.cumsum(m**2)])
+menergy = c2[W:] - c2[:-W]          # sliding energy of the music (was an O(N*W) convolve)
 for t0 in np.arange(0, len(sv)/SR - 3, 6.0):
     s = sv[int(t0*SR):int(t0*SR)+W]; s = s - s.mean()
     n = len(m) + W
     nf = 1 << int(np.ceil(np.log2(n)))
     c = irfft(rfft(m, nf) * np.conj(rfft(s, nf)), nf)[:len(m)-W]
     # normalise by local music energy
-    e = np.sqrt(np.convolve(m**2, np.ones(W), 'valid')[:len(c)] * (s@s)) + 1e-9
+    e = np.sqrt(menergy[:len(c)] * (s@s)) + 1e-9
     r = c / e; j = int(np.argmax(r))
     out.append(f"{t0:5.0f}:{j/SR:6.2f}({r[j]:.2f})")
 print(" ".join(out))

@@ -51,12 +51,13 @@ def main():
     ap.add_argument("--sv", required=True); ap.add_argument("--da", required=True)
     ap.add_argument("--roi"); ap.add_argument("--ref", type=float); ap.add_argument("--radius", type=float, default=0.12)
     ap.add_argument("--min-area", type=float, default=0.004)
+    ap.add_argument("--base", help="text-free video on the Swedish timeline (default orig/KEY.mp4)")
     a = ap.parse_args()
     k = a.key
     W, H, fps = probe(f"vid/{k}.mp4")
     roi = [int(v) for v in a.roi.split(",")] if a.roi else [0, 0, W, H]
     geo, svf = [], []
-    for i, (s, o) in enumerate(zip(frames(f"vid/{k}.mp4", a.t0, a.t1, W, H), frames(f"orig/{k}.mp4", a.t0, a.t1, W, H))):
+    for i, (s, o) in enumerate(zip(frames(f"vid/{k}.mp4", a.t0, a.t1, W, H), frames(a.base or f"orig/{k}.mp4", a.t0, a.t1, W, H))):
         d = (np.abs(s.astype(int) - o.astype(int)).max(2) > 40).astype(np.uint8)
         d = cv2.dilate(d, np.ones((9, 9), np.uint8))
         hsv = cv2.cvtColor(s, cv2.COLOR_BGR2HSV)

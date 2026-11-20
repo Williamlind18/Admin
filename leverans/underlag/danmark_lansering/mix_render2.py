@@ -26,6 +26,11 @@ CONF = {
     "a3c2": dict(bed=("loop", 53.325, 6.70)),
     "a3c3": dict(bed=("loop", 55.577, 4.45)),
     "a2c5": dict(bed=None),   # the Swedish ad has no music
+    "a3c4": dict(bed="linear"),
+    "a2c1": dict(bed="linear"),
+    "a4c3": dict(bed="linear"),
+    "a4c2": dict(bed=("offset", 3.0)),   # the Swedish bed starts 3 s into the music
+    "a5c2": dict(bed=None),
 }
 
 
@@ -73,6 +78,8 @@ def make_bed(key, total):
         bed = np.zeros(j + len(b))
         bed[:len(a)] += a
         bed[j:j + len(b)] += b
+    elif isinstance(mode, tuple) and mode[0] == "offset":
+        bed = m[int(mode[1] * SR):]
     else:
         bed = m
     if len(bed) < n:

@@ -10,3 +10,19 @@ en arbetsmapp med `vid/<nyckel>.mp4` (svensk leverans), `clean/<nyckel>_clean.mp
 - `preview_ov.py`: QA-ark, svensk källa bredvid dansk version.
 - `numbers_da.py`, `pairs_da.py`, `measure_caps.py`: siffror och par i undertexterna, undertexthöjd.
 - `mix_render2.py`: röst + musik på svensk nivå, loudnorm, rendering med skyltar och undertexter.
+
+Från omgång 2 bygger vi på originalfilmerna i GitHub-releaserna i stället för Vmake (`orig/<nyckel>.mp4`):
+
+- `added.py`, `framemap.py`, `thumbmatch.py`: vad den svenska versionen lade till eller klippte om, jämfört med
+  originalet (diff utanför undertextbandet, och bildruta för bildruta vilken originalruta som visas).
+- `relabel.py`: bygger om en vit svensk skylt på ett annat språk, ruta för ruta (läge, storlek, vinkel och
+  textstorlek från den svenska). `--base` väljer en annan textfri film än originalet.
+- `retext.py`: byter bara orden på en skylt som sitter på ett vitt föremål (svensk utsnitt + nya ord).
+- `title_box.py`: en stillastående rubrikruta i samma storlek och med samma textstorlek som den svenska.
+- `capmasks.py`, `textmasks.py`: masker för inbrända undertexter (vita rutor med svart text, respektive vit text med
+  svart kant) till LaMa (`lama_inpaint.py` i ad-video-localizer).
+- `assemble_a3c4.py`: exempel på ren film när den svenska versionen bytt ut ett klipp och saktat ner ett annat.
+- `bedmap.py`: hur den svenska musiken ligger (linjär, loop, hopp eller förskjuten) så att den danska får samma.
+- `make_captions_da.py`: undertexterna (1–3 ord). Varje fras delas med en liten sökning: inte sluta på småord,
+  bryt vid kolon, håll ihop tidsuttryck ("Dagene efter", "Næste morgen", "et år siden").
+- `rerender.sh`: rendera om och gör små förhandsvisningar (högst cirka 10 MB per del, H.264 Main).

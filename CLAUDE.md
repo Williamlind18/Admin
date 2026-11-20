@@ -53,7 +53,8 @@ their files by length on 2026-11-19. Don't search Ads Manager or GitHub for them
   .srt files sit next to the videos (`manus_*.txt`, same name `.srt`).
 - **Ask the user first,** before anything costs credits: the voices (gender and age per ad), the brand and
   product names, the price in local currency and the domain.
-- **Already in Danish:** A1 C1, A1 C2 and A1 C3 are among the seven winners below (b1 C3, b3 C3 and b3.1 C8).
+- **Already in Danish:** all 26 (2026-11-20), in `leverans/danmark/` on `claude/funny-rubin-truuco`: A1 C1-C3 are the
+  winners b1 C3, b3 C3 and b3.1 C8, the other 22 are `nordvask_dk_<A?-C?>_da.mp4`. Only A2 C5's 9:16 version is missing.
 
 | Meta | Ad | Norwegian delivery (`leverans/`) @ branch | Swedish source (`leverans/`) @ branch | Length |
 |---|---|---|---|---|
@@ -89,8 +90,10 @@ release instead of removing the Swedish text with Vmake; only the Swedish overla
 have to be rebuilt in the new language (diff the Swedish delivery against the release to find them):
 A1 C4 `video9`, A2 C1 `video4`, A2 C2 `maskinrent2`, A2 C3 `video1`, A2 C4 `video3`, A3 C2 `video10`, A3 C3 `video6`,
 A3 C4 `video15`, A3 C5 `video14` (480x832, the Swedish is upscaled), A4 C1 `video13`, A4 C2 `video12` (480x848),
-A4 C3 `video8`, A4 C4 `video18`, A4 C5 `video17`, A5 C2 `video23` (the Swedish ends 2.4 s earlier), A5 C3 `video19`.
-A1 C5 is a re-cut of `video32` (120 of 131 s; later segments shifted by about 3 and 7.6 s). A2 C5 does not match
+A4 C3 `video8`, A4 C4 `video18`, A4 C5 `video17`, A5 C2 `video23` (the Swedish ends 2.4 s earlier; it has burned-in
+English caption pills), A5 C3 `video19`. A3 C4's Swedish edit replaces 14.4-17.9 s and slows 105.4-108 s of `video15`.
+A1 C5 is a re-cut of `video32` (120 of 131 s; later segments shifted by about 3 and 7.6 s), and `video32` has English
+captions and labels: start from the Norwegian delivery instead (same edit, Norwegian labels are closest to Danish). A2 C5 does not match
 `video25` frame for frame. A5 C4, A5 C5, A3 C1 and A5 C1 were not checked (their Danish versions came from Vmake).
 
 `nordvask_maskinren3_no.mp4` and `norrtvatt_maskinrent3_sv.mp4` exist in two different ads under the same name.

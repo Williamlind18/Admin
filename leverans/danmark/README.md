@@ -42,7 +42,7 @@ Erbjudandet är detsamma som i Sverige och Norge, i DKK: köp två, få två på
 ## Lanseringsannonserna (de 26 från Norge)
 
 Samma 26 videor som i den norska kampanjen "CBO - Norrtvätt NO" (Ad account 3). A1 C1, A1 C2 och A1 C3 finns redan
-ovan (b1 C3, b3 C3 och b3.1 C8). Resten görs i omgångar om fem, i ordning efter hur mycket de spenderat i Norge.
+ovan (b1 C3, b3 C3 och b3.1 C8). Alla 22 övriga finns här nedan. A2 C5:s 9:16-version finns bara i Meta och är inte gjord.
 
 | Meta | Annons | Video | Undertexter | Manus | Längd | Röst |
 |---|---|---|---|---|---|---|
@@ -56,6 +56,32 @@ ovan (b1 C3, b3 C3 och b3.1 C8). Resten görs i omgångar om fem, i ordning efte
 | A4 C4 | Maskinrent 8 | [mp4](nordvask_dk_A4-C4_da.mp4) | [srt](nordvask_dk_A4-C4_da.srt) | [manus](manus/manus_A4-C4_da.txt) | 1:02 | dansk kvinna 40–50 år |
 | A3 C2 | Maskinrent 4 | [mp4](nordvask_dk_A3-C2_da.mp4) | [srt](nordvask_dk_A3-C2_da.srt) | [manus](manus/manus_A3-C2_da.txt) | 4:09 | dansk kvinna 40–50 år |
 | A3 C3 | Maskinrent 3, 4-minutersversionen | [mp4](nordvask_dk_A3-C3_da.mp4) | [srt](nordvask_dk_A3-C3_da.srt) | [manus](manus/manus_A3-C3_da.txt) | 4:00 | dansk kvinna 40–50 år |
+| A3 C4 | video15 | [mp4](nordvask_dk_A3-C4_da.mp4) | [srt](nordvask_dk_A3-C4_da.srt) | [manus](manus/manus_A3-C4_da.txt) | 2:00 | dansk man 40–50 år |
+| A2 C1 | tre misstag | [mp4](nordvask_dk_A2-C1_da.mp4) | [srt](nordvask_dk_A2-C1_da.srt) | [manus](manus/manus_A2-C1_da.txt) | 2:20 | dansk man 40–50 år |
+| A4 C3 | Maskinrent 3, UV-test | [mp4](nordvask_dk_A4-C3_da.mp4) | [srt](nordvask_dk_A4-C3_da.srt) | [manus](manus/manus_A4-C3_da.txt) | 1:42 | dansk man 40–50 år |
+| A4 C2 | Maskinrent 5 | [mp4](nordvask_dk_A4-C2_da.mp4) | [srt](nordvask_dk_A4-C2_da.srt) | [manus](manus/manus_A4-C2_da.txt) | 0:56 | dansk kvinna 40–50 år |
+| A5 C2 | video23 | [mp4](nordvask_dk_A5-C2_da.mp4) | [srt](nordvask_dk_A5-C2_da.srt) | [manus](manus/manus_A5-C2_da.txt) | 1:46 | dansk kvinna 40–50 år |
+| A4 C1 | Maskinrent 6 | [mp4](nordvask_dk_A4-C1_da.mp4) | [srt](nordvask_dk_A4-C1_da.srt) | [manus](manus/manus_A4-C1_da.txt) | 0:59 | dansk kvinna 40–50 år |
+| A2 C2 | Maskinrent 2 | [mp4](nordvask_dk_A2-C2_da.mp4) | [srt](nordvask_dk_A2-C2_da.srt) | [manus](manus/manus_A2-C2_da.txt) | 2:15 | dansk kvinna 40–50 år |
+| A3 C5 | video14 | [mp4](nordvask_dk_A3-C5_da.mp4) | [srt](nordvask_dk_A3-C5_da.srt) | [manus](manus/manus_A3-C5_da.txt) | 1:25 | dansk man 40–50 år |
+| A2 C4 | Maskinrent 3, 30-sekundersversionen | [mp4](nordvask_dk_A2-C4_da.mp4) | [srt](nordvask_dk_A2-C4_da.srt) | [manus](manus/manus_A2-C4_da.txt) | 0:30 | dansk kvinna 40–50 år |
+| A2 C3 | Maskinrent 1 | [mp4](nordvask_dk_A2-C3_da.mp4) | [srt](nordvask_dk_A2-C3_da.srt) | [manus](manus/manus_A2-C3_da.txt) | 1:50 | dansk kvinna 40–50 år |
+| A1 C5 | video32 | [mp4](nordvask_dk_A1-C5_da.mp4) | [srt](nordvask_dk_A1-C5_da.srt) | [manus](manus/manus_A1-C5_da.txt) | 2:00 | dansk man 40–50 år |
+| A5 C3 | Maskinrent 6, mögel | [mp4](nordvask_dk_A5-C3_da.mp4) | [srt](nordvask_dk_A5-C3_da.srt) | [manus](manus/manus_A5-C3_da.txt) | 1:40 | dansk kvinna 40–50 år |
+
+Omgång 3 och 4 är byggda på samma sätt. Det som skiljer:
+
+- **A3 C4:** den svenska klippningen bytte ut ett klipp (14–18 s) och saktade ner ett annat (105–108 s). Den rena filmen
+  följer den svenska klippningen. Skyltarna är 3 GRUNDE, 15.000+ KUNDER, 30 DAGES PENGENE TILBAGE och FRI FRAGT.
+- **A5 C2:** originalet (video23) har engelska undertexter. De är borttagna med LaMa, även de som satt mot ljus bakgrund.
+- **A4 C2:** rubrikrutan "Det her gør enzymskum / i de dele af vaskemaskinen / du aldrig har rengjort".
+- **A4 C3:** samma erbjudande som i Norge, 619 kroner för tabletter till två år och cirka 25 kroner per tablett.
+- **A2 C2:** FILM / PROTEIN / FEDT. **A2 C4:** slutkortet visar Nordvask-förpackningen och UDSALG / Op til 50 % rabat.
+- **A1 C5:** originalet (video32) har engelska undertexter och skyltar. Den danska versionen bygger därför på den norska
+  leveransen: de norska undertexterna är borttagna, och skyltarna är på danska (ALMINDELIG TABLET, OPFUNDET, RENSER KUN,
+  DYREHÅR · SKÆL · FEDT, ILTBASERET BLEGEMIDDEL, 2 DAGE, UDSALG / OP TIL 50 % / + FRI FRAGT, MED FIREPAKKEN,
+  PER TABLET, 30 DAGES / PENGENE TILBAGE). Skyltarna som heter likadant på norska och danska är kvar (MASKINREN,
+  PASSER TIL ALLE VASKEMASKINER, 2 MÅNEDER +, 20 %, 80 %, 20 KR).
 
 Omgång 2 (A4 C5, A4 C4, A3 C2, A3 C3) är byggd på originalfilmerna i GitHub-releaserna (video17, video18, video10,
 video6), som är samma klipp utan svensk text. Bara det den svenska versionen lade till är gjort om på danska:

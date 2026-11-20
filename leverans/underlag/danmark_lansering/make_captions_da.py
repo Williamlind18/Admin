@@ -74,7 +74,7 @@ def main():
                  "minutter", "nat"}
         first = {"dagene": {"efter"}, "dagen": {"efter"}, "ugen": {"efter"}, "samme": {"aften", "dag", "nat"},
                  "næste": {"morgen", "dag", "uge", "år", "måned", "nat"}, "flere": {"år", "uger", "måneder", "dage"}}
-        return v in first.get(u, ()) or (v in ("senere", "siden") and u in units)
+        return v in first.get(u, ()) or (v in ("senere", "siden") and u in units) or (u == "dag" and v[:1].isdigit())
 
     def cost(c, last):
         """Fewer chunks are better; a chunk that ends on a small word mid-phrase, a lone short word

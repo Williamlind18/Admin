@@ -1,0 +1,111 @@
+Norrtvätt NO batch 2 - C3: norsk manus (Nordvask Maskinren), 1:1 med svenska meningar
+Svensk källa: leverans/norrtvatt_vsl_reparator.mp4 @ claude/video-editing-15noqg (Norrtvätt ny batch 5 - C2.mp4, Meta b5 C2)
+Röst: ElevenLabs eleven_v3, language_code no, röst iWsqLB1KXhKYZqry79ma (Norsk äldre man 55-60 år), en tagning
+Manuset är något åtstramat i formuleringarna (alla poänger kvar) så att rösten ryms med tempo högst 1,08.
+
+01 NO: Jeg har tatt fra hverandre over seks tusen vaskemaskiner, og jeg vet hvorfor vasken din fortsatt lukter, særlig med kjæledyr.
+   SV: Jag har plockat isär över sextusen tvättmaskiner, och jag vet exakt varför din tvätt fortfarande luktar, särskilt om du har husdjur.
+02 NO: Jeg kjører rundt i servicebilen, og nesten hver telefon handler om det samme.
+   SV: Jag åker runt i min servicebil, och nästan varje samtal jag får handlar om samma sak.
+03 NO: Noens vask lukter innestengt.
+   SV: Någons tvätt luktar unket.
+04 NO: De har prøvd alt, og de vil vite om det er feil på maskinen.
+   SV: De har testat allt, och de vill veta om det är fel på maskinen.
+05 NO: Ni av ti ganger er maskinen helt fin.
+   SV: Nio gånger av tio fungerar maskinen fint.
+06 NO: Ingen mekaniske feil overhodet.
+   SV: Inga mekaniska fel alls.
+07 NO: Problemet er noe de ikke ser.
+   SV: Problemet är något de inte ser.
+08 NO: Ser du?
+   SV: Ser du?
+09 NO: Det er et mellomrom mellom inner- og yttertrommelen som de fleste ikke vet om.
+   SV: Det finns ett mellanrum mellan inner- och yttertrumman som de flesta inte ens vet om.
+10 NO: Det er et lukket rom.
+   SV: Det är ett slutet utrymme.
+11 NO: Hver gang du vasker, blir det igjen vann der.
+   SV: Varje gång du tvättar blir det vatten kvar där.
+12 NO: Det tørker aldri helt.
+   SV: Det torkar aldrig helt.
+13 NO: Over tid bygges det opp et belegg på flatene, og det blir bare verre.
+   SV: Med tiden byggs en beläggning upp på ytorna, och den blir bara värre.
+14 NO: Det hadde ikke gjort så mye om det ble der. Men det gjør det ikke.
+   SV: Det hade inte gjort så mycket om den stannade där. Men det gör den inte.
+15 NO: Hver vask renner gjennom samme mellomrom, drar med seg det som vokser der og fører det ut på klærne, håndklærne, sengetøyet, hele familiens klær.
+   SV: Varje ny tvätt rinner genom samma mellanrum, drar med sig det som växer där och för ut det på dina kläder, handdukar, lakan, hela familjens kläder.
+16 NO: Det er derfra lukten kommer.
+   SV: Det är därifrån lukten kommer.
+17 NO: Ikke fra vaskemiddelet, ikke fra at vasken lå for lenge, men fra selve maskinen.
+   SV: Inte från tvättmedlet, inte från att tvätten legat kvar för länge, utan från själva maskinen.
+18 NO: Alt det der. Eddiken, blekemiddelet, rengjøringsprogrammet.
+   SV: Allt det där. Ättikan, blekmedlet, rengöringsprogrammet.
+19 NO: Vannet fører det dit. Det når mellomrommet.
+   SV: Vattnet för med sig det dit. Det når mellanrummet.
+20 NO: Men her er problemet.
+   SV: Men här är problemet.
+21 NO: Ingenting av det er laget for å bryte ned sånt belegg.
+   SV: Inget av det är gjort för att bryta ner den sortens beläggning.
+22 NO: Det skyller bare over, belegget blir sittende, og lukten er tilbake etter en dag eller to, fordi ingenting ble rent.
+   SV: Det sköljer bara över, beläggningen sitter kvar, och lukten är tillbaka efter en dag eller två, eftersom inget blev rent.
+23 NO: Du skylte bare vann over det.
+   SV: Du spolade bara vatten över det.
+24 NO: Med kjæledyr er det ærlig talt ti ganger verre, fordi hundehår brytes ned i vasken.
+   SV: Och har du husdjur är det ärligt talat tio gånger värre, eftersom hundhår går sönder i tvätten.
+25 NO: Oljene løsner, flasset slipper, og alt trekkes inn der vannet står.
+   SV: Oljorna lossnar, mjället släpper, och allt dras in där vattnet står.
+26 NO: Det gjødsler i praksis belegget.
+   SV: Det göder i princip beläggningen.
+27 NO: Derfor finner jeg de verste maskinene alltid hos dyreeiere.
+   SV: Därför finns de värsta maskinerna jag öppnar alltid hos husdjursägare.
+28 NO: En kvinne gråt faktisk, fordi datterens skoleklær luktet så vondt at et annet barn sa noe.
+   SV: En kvinna grät faktiskt, eftersom dotterns skolkläder luktade så illa att ett annat barn sa något.
+29 NO: Og hun hadde gjort alt riktig.
+   SV: Och hon hade gjort allt rätt.
+30 NO: Eddik, blekemiddel, rengjøringsprogram, alt.
+   SV: Ättika, blekmedel, rengöringsprogram, allt.
+31 NO: Lenge følte jeg at jeg sviktet folk, for jeg visste hva som ga lukten.
+   SV: Länge kändes det som att jag svek folk, för jag visste vad som orsakade lukten.
+32 NO: Jeg kunne vise dem det, men hadde ingenting som løste det.
+   SV: Jag kunde visa dem, men jag hade inget som löste det.
+33 NO: For omtrent et år siden ringte en kunde tilbake.
+   SV: För ungefär ett år sedan ringde en kund tillbaka.
+34 NO: En kvinne med to store hunder og en frontmatet maskin som knapt var tre år.
+   SV: En kvinna med två stora hundar och en frontmatad maskin som knappt var tre år gammal.
+35 NO: Jeg hadde vist henne belegget, gitt de vanlige rådene og trodde det var det.
+   SV: Jag hade visat henne beläggningen, gett de vanliga råden och tänkt att det var det.
+36 NO: Men da hun ringte, klaget hun ikke.
+   SV: Men när hon ringde klagade hon inte.
+37 NO: Hun sa at lukten var helt borte.
+   SV: Hon sa att lukten var helt borta.
+38 NO: Hun hadde funnet en tablett på nettet som bryter ned belegget med enzymer, i stedet for å skylle over det som alt annet.
+   SV: Hon hade hittat en tablett på nätet som med enzymer bryter ner beläggningen där inne, i stället för att bara skölja över den som allt annat.
+39 NO: Jeg var litt skeptisk.
+   SV: Jag var lite skeptisk.
+40 NO: Jeg har sett alle maskinrensene i butikkene, og de fleste gjør det samme som rengjøringsprogrammet.
+   SV: Jag har sett varenda maskinrengöring i butikerna, och de flesta gör samma sak som rengöringsprogrammet.
+41 NO: Men hun sa at selv hundeteppene kom ut og luktet ingenting.
+   SV: Men hon sa att till och med hundfiltarna kom ut och luktade ingenting.
+42 NO: Jeg leste meg opp, og vitenskapen bak overrasket meg faktisk.
+   SV: Jag läste på, och vetenskapen bakom överraskade mig faktiskt.
+43 NO: Tabletten når rommet mellom trommelen og kabinettet, der jeg har vist folk i årevis, og den er laget for å bryte ned belegget.
+   SV: Tabletten når utrymmena mellan trumman och höljet, precis där jag har visat folk i åratal, och den är gjord för att bryta ner beläggningen.
+44 NO: Da jeg forsto hvordan den virket, begynte jeg å anbefale den til hver kunde.
+   SV: När jag förstod hur den fungerade började jag rekommendera den till varje kund.
+45 NO: Det var for omtrent et år siden, forresten.
+   SV: Det var för ungefär ett år sedan, förresten.
+46 NO: Siden har jeg anbefalt den til sikkert over to hundre kunder, kanskje flere.
+   SV: Sedan dess har jag rekommenderat den till säkert över tvåhundra kunder, kanske fler.
+47 NO: Jeg har mistet tellingen på hvor mange som har meldt seg en uke senere og sagt det samme.
+   SV: Jag har tappat räkningen på hur många som hört av sig en vecka senare och sagt exakt samma sak.
+48 NO: Lukten er borte. Ikke litt bedre. Ikke nesten borte. Borte.
+   SV: Lukten är borta. Inte lite bättre. Inte nästan borta. Borta.
+49 NO: Produktet heter Maskinren fra Nordvask, et lite selskap som selv har hund og bare lager dette produktet.
+   SV: Produkten heter Maskinrent från Norrtvätt, ett litet företag som själva har hund och bara gör just den här produkten.
+50 NO: Lukter klærne innestengt og har du allerede prøvd eddik, natron og rengjøringsprogrammet, vet du at ingenting av det hjelper.
+   SV: Om dina kläder luktar unket och du redan testat ättika, bikarbonat och rengöringsprogrammet, vet du att inget av det hjälper.
+51 NO: Dette gjør det.
+   SV: Det här gör det.
+52 NO: Akkurat nå sparer du opptil femti prosent, med tretti dagers pengene-tilbake-garanti.
+   SV: Just nu sparar du upp till femtio procent, med trettio dagars pengarna-tillbaka-garanti.
+53 NO: Klikk på lenken nedenfor og se selv.
+   SV: Klicka på länken nedan och se själv.

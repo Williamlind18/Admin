@@ -1,0 +1,107 @@
+Norrtvätt NO batch 2 - C2: norsk manus (Nordvask Maskinren), 1:1 med svenska meningar
+Svensk källa: leverans/batch6/nb6_C4_H1_I1-b3C3_sv.mp4 @ claude/funny-rubin-truuco (ny batch 6 – C4 H1 (I1 av b3 C3).mp4)
+Röst: ElevenLabs eleven_v3, language_code no, röst iWsqLB1KXhKYZqry79ma (Norsk äldre man 55-60 år), en tagning
+Bild: video11-release klippt exakt som den svenska (bildrutekarta), norska CTA-kort från Nordvask-produktbilden.
+
+01 NO: Kjører du maskinrens hver måned, og lukter vasken likevel hund?
+   SV: Kör du maskinrengöring varje månad och luktar tvätten ändå hund?
+02 NO: Da gjemmer dette seg i maskinen din.
+   SV: Då gömmer sig det här i din maskin.
+03 NO: Se på dette.
+   SV: Titta på det här.
+04 NO: Det er ikke skitt, og det er ikke såpe.
+   SV: Det är inte smuts, och det är inte tvål.
+05 NO: Det er dyrehår, fett og flass som har pakket seg inn bak trommelen i flere måneder.
+   SV: Det är djurhår, fett och mjäll som packats in bakom trumman i månader.
+06 NO: Det var det som ga lukten av våt hund som kunden min aldri ble kvitt.
+   SV: Det var det som gav lukten av blöt hund som min kund aldrig blev av med.
+07 NO: Hver vask skylte det rett tilbake inn i klærne, med bakterier og mugg.
+   SV: Varje tvätt sköljde det rakt tillbaka in i kläderna, med bakterier och mögel.
+08 NO: I flere måneder hadde alt kommet ut surt: håndklær, t-skjorter, til og med undertøyet.
+   SV: I flera månader hade allt kommit ut unket: handdukar, t-shirts, till och med underkläderna.
+09 NO: Det verste var å aldri vite om andre kjente lukten når hun klemte noen eller satt ved siden av en kollega.
+   SV: Det värsta var att aldrig veta om andra kände lukten, när hon kramade någon eller satt bredvid en kollega.
+10 NO: Hun byttet vaskemiddel to ganger.
+   SV: Hon bytte tvättmedel två gånger.
+11 NO: Så skyldte hun på hunden, for hva ellers når huset lukter våt pels?
+   SV: Sen skyllde hon på hunden, för vad annars när huset luktar blöt päls?
+12 NO: Hun prøvde ekstra skylling, eddik og klor.
+   SV: Hon testade extra sköljning, ättika och klorin.
+13 NO: Hun kjørte til og med maskinrens hver måned.
+   SV: Hon körde till och med maskinrengöring varje månad.
+14 NO: Lukten forsvant en dag eller to og kom så tilbake.
+   SV: Lukten försvann en dag eller två, och kom sen tillbaka.
+15 NO: Jeg spurte først om hun hadde kjæledyr.
+   SV: Jag frågade först om hon hade husdjur.
+16 NO: Ja, en hund.
+   SV: Ja, en hund.
+17 NO: Da småkoker du klærne i mugg, sa jeg.
+   SV: Då långkokar du kläderna i mögel, sa jag.
+18 NO: Hun trodde jeg tullet.
+   SV: Hon trodde att jag skämtade.
+19 NO: Så jeg dro unna gummipakningen og viste hva som gjemte seg under.
+   SV: Så jag drog undan gummilisten och visade vad som gömde sig under.
+20 NO: Et tykt lag med slimete, gråbrunt belegg.
+   SV: Ett tjockt lager slemmig, gråbrun beläggning.
+21 NO: Vaskemiddel, tøymykner og klumper av vått hundehår.
+   SV: Tvättmedel, sköljmedel och klumpar av blött hundhår.
+22 NO: Hun ble forferdet, men jeg var ikke overrasket, for jeg ser det hver dag.
+   SV: Hon blev förfärad, men jag var inte förvånad, för jag ser det varje dag.
+23 NO: Og det var bare en tredjedel.
+   SV: Och det var bara en tredjedel.
+24 NO: Resten satt dypere: bak trommelen, i slangene og i pumpen nederst.
+   SV: Resten satt djupare: bakom trumman, i slangarna och i pumpen längst ner.
+25 NO: Steder du aldri når, uansett hvor hardt du skrubber.
+   SV: Ställen du aldrig når, hur hårt du än skrubbar.
+26 NO: Og med kjæledyr er det alltid verst, for dyrehårene binder seg til restene og laget bare vokser.
+   SV: Och med husdjur är det alltid värst, för djurhåren binder till resterna och lagret bara växer.
+27 NO: Så forklarte jeg hvorfor ingenting hadde virket.
+   SV: Sen förklarade jag varför inget hade fungerat.
+28 NO: Eddik blir så utvannet i en hel vask at den ikke trenger gjennom noe.
+   SV: Ättika blir så utspädd i en hel tvätt att den inte tar sig igenom någonting.
+29 NO: Og nesten hver maskinrens i butikken bygger på det samme: oksygenblekemiddel.
+   SV: Och nästan varje maskinrengöring i butiken bygger på samma sak: syreblekmedel.
+30 NO: Det takler såpe og kalk, men ikke dyrehår eller fettet fra flass og hudfett.
+   SV: Det klarar tvål och kalk, men inte djurhår eller fettet från mjäll och hudfett.
+31 NO: Det rengjør bare rundt det.
+   SV: Det rengör bara runt omkring.
+32 NO: Så hver måned skrubbet hun overflaten og lot kilden være urørt.
+   SV: Så varje månad skrubbade hon ytan och lämnade källan orörd.
+33 NO: Så tok jeg fram en liten tablett, slapp den i trommelen og kjørte et varmt program.
+   SV: Sen tog jag fram en liten tablett, släppte den i trumman och körde ett varmt program.
+34 NO: Den freste opp skum i hele maskinen: bak trommelen, i gummipakningen og ned i avløpet.
+   SV: Den fräste upp skum i hela maskinen: bakom trumman, i gummilisten och ner i avloppet.
+35 NO: Det eneste som rengjør kilden, er enzymer.
+   SV: Det enda som rengör källan är enzymer.
+36 NO: Og denne tabletten har alle tre som betyr noe.
+   SV: Och den här tabletten har alla tre som spelar roll.
+37 NO: Alfa-amylase løser opp hinnen av vaskemiddel og tøymykner, så det under kommer fram.
+   SV: Alfa-amylas löser upp hinnan av tvätt- och sköljmedel, så att det under kommer fram.
+38 NO: Protease bryter ned proteinet i dyrehårene, så de skylles ut i stedet for å bli igjen.
+   SV: Proteas bryter ner proteinet i djurhåren, så att de spolas ut i stället för att stanna kvar.
+39 NO: Og lipase fjerner fettlaget fra flass som luktbakteriene lever av.
+   SV: Och lipas tar bort fettlagret från mjäll som luktbakterierna lever av.
+40 NO: Uten fett får lukten ingen næring.
+   SV: Utan fett får lukten ingen näring.
+41 NO: Da programmet var ferdig, var det vannet jeg viste i starten.
+   SV: När programmet var klart var det vattnet jag visade i början.
+42 NO: Neste morgen ringte hun meg, nesten sjokkert.
+   SV: Nästa morgon ringde hon mig, nästan chockad.
+43 NO: Ingen lukt i det hele tatt.
+   SV: Ingen lukt alls.
+44 NO: Ingen lavendel, ingen havbris, bare ingenting.
+   SV: Ingen lavendel, ingen havsbris, bara ingenting.
+45 NO: Hun kjørte hundens teppe i neste vask, begravde ansiktet i det og sa at det endelig var rent.
+   SV: Hon körde hundens filt i nästa tvätt, borrade ner ansiktet i den och sa att den äntligen var ren.
+46 NO: Jeg ba henne kjøre én tablett i måneden, og det er rutinen jeg gir alle hjem med kjæledyr.
+   SV: Jag sa åt henne att köra en tablett i månaden, och det är rutinen jag ger alla hem med husdjur.
+47 NO: Den heter Maskinren, fra Nordvask, og er laget for hjem med kjæledyr.
+   SV: Den heter Maskinrent, från svenska Norrtvätt, och är gjord för hem med husdjur.
+48 NO: Én pakke holder et helt år.
+   SV: Ett paket räcker ett helt år.
+49 NO: Akkurat nå er det femti prosent rabatt, og merker du ingen forskjell innen tretti dager, får du pengene tilbake.
+   SV: Just nu är det femtio procent rabatt, och märker du ingen skillnad inom trettio dagar får du pengarna tillbaka.
+50 NO: Så slutt å småkoke klærne.
+   SV: Så sluta långkoka kläderna.
+51 NO: Klikk på lenken og bestill din nå.
+   SV: Klicka på länken och beställ din nu.

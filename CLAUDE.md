@@ -146,3 +146,14 @@ and burned-in captions. Fetch it with `git show <branch>:<path>`. The script and
 All 26 ads in the launch set exist in Norwegian; their files are in the launch-set table. The old closed list of
 four (2026-10-27) is part of the set. The original competitor footage for those four is in the GitHub releases
 `video8` (Maskinrent 3, UV test), `video9` (4, biofilm), `video17` (5, three mistakes) and `video19` (6, mold).
+
+## NO batch 2 (2026-11-20)
+
+Seven more Swedish ads exist in Norwegian:
+- **Files:** `leverans/norge_batch2/Norrtvätt NO batch 2 - C1.mp4` to `C7.mp4` on `claude/funny-rubin-truuco`, each with an
+  .srt and a script.
+- **Sources:** the README there maps each file to its Swedish source file and its Meta ad (b4 C2, b6 C4 H1, b5 C2,
+  b5.1 C3, b6 C3 H3, b5 C5, b5 C6).
+- **Voices:** "Norsk äldre man 55-60 år" `iWsqLB1KXhKYZqry79ma` for men, "medelålders kvinna - NO" `wmWNq8zv8Au6slnVf0MZ`
+  for women.
+

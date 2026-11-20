@@ -288,3 +288,21 @@ defaults to cut_off.
   ships without it). Price it before proposing anything: a 4:37 ad with the presenter on screen for
   238 s would have cost ~190 000 credits with Sync 3, and the user dropped it. Offer a 45-75 s cut
   instead.
+
+## Norwegian versions of Swedish ads, batch 2 (Nordvask, November 2026)
+- **Breaths eat the budget.** "Norsk äldre man 55-60 år" (eleven_v3, one take) reads ~15.5 characters per second of
+  speech but breathes audibly for ~0.4 s before every sentence; with the breaths the takes looked 11-18 % too long.
+  `trim_breaths.py` (in `leverans/underlag/norge_batch2/`) cuts each clip from 0.1 s before the onset; run it before
+  `align_words.py`.
+- **Long takes with list pauses.** `split_take.py` slipped by one sentence for six sentences in a 262 s take (it cut at
+  the pauses inside "én enzymtablett, ett varmt program, ingenting annet"). espeak DTW over the whole take at a 20 ms hop
+  (`espeak_cuts_hop.py`, HOP=320, ~3 GB RAM) found every boundary; cut with `split_takes.py --cuts`.
+- **Voice slower than the Swedish one** (b5 C2 needed tempo 1.13): tighten the wording ~4-5 %, keep every point and the
+  offer, and take it again. **Voice faster** ("medelålders kvinna - NO"): keep the sync with ~0.8 s pauses (cap 0.95 s).
+  Capping pauses at 0.5-0.6 s drifted 5-16 s from the footage and left 10-20 s of silence at the end.
+- **Batch 6 ads** (cut from a release plus CTA cards) are rebuilt frame-exact from the release:
+  - Map every frame with `globalmap.py` (24x42 grey thumbnails, L2 via one matrix product).
+  - Group the frames into runs of constant offset, then render with `b6_clean.py`.
+  - Seek to `(frame - 0.5) / fps`. Seeking to `frame / fps` lands one frame late in every segment.
+- **Music beds made with ElevenLabs music** are kept in the Swedish project's flow, e.g. "Video 39 – musikbädd" in
+  "Norrtvätt video 39 – svensk voiceover". Check the flows (`creative_list_flows`) before trying to separate the music.

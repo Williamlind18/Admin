@@ -1,0 +1,69 @@
+Norrtvätt NO batch 2 - C7: norsk manus (Nordvask Maskinren), 1:1 med svenska meningar
+Svensk källa: leverans/norrtvatt_video39_sv.mp4 @ claude/quirky-mayer-tsglxb (Norrtvätt ny batch 5 - C6.mp4, Meta b5 C6)
+Röst: ElevenLabs eleven_v3, language_code no, röst wmWNq8zv8Au6slnVf0MZ (medelålders kvinna - NO), en tagning
+Bild: svenska leveransen med svensk text borttagen (LaMa); titel och KJØP 2 / FÅ 2 GRATIS / Fri frakt + 30 dagers pengene-tilbake-garanti omgjorda på norska.
+
+01 NO: Denne vaskemaskinen så ren ut.
+   SV: Den här tvättmaskinen såg ren ut.
+02 NO: Så kjørte vi én enzymtablett.
+   SV: Sen körde vi en enzymtablett.
+03 NO: Dette kom ut.
+   SV: Det här kom ut.
+04 NO: Slik ser det ut i trommelen med de riktige enzymene.
+   SV: Så här ser det ut i trumman med rätt enzymer.
+05 NO: I de første minuttene av et varmt program løser alfa-amylase opp vaskemiddelhinnen.
+   SV: Under de första minuterna av ett varmt program löser alfa-amylas upp tvättmedelshinnan.
+06 NO: Hinnen holder dyrehår, flass og bakterier fast i trommelen.
+   SV: Hinnan håller kvar djurhår, mjäll och bakterier i trumman.
+07 NO: Uten å få den bort først blir ingenting annet rent.
+   SV: Utan att få bort den först blir inget annat rent.
+08 NO: Når vannet varmes opp, går protease løs på dyrehårene.
+   SV: När vattnet värms upp går proteas loss på djurhåren.
+09 NO: Den bryter ned proteinet i håret, så det løses opp og skylles ut.
+   SV: Det bryter ner proteinet i håret så att det löses upp och spolas ut.
+10 NO: Dette er håret du ikke ser, små hår i gummipakningen og slangene.
+   SV: Det här är håret du inte ser, små strån i gummilisten och slangarna.
+11 NO: Så tar lipase seg av det fete laget fra tøymykner, hudfett og flass.
+   SV: Sen tar lipas hand om det feta lagret från sköljmedel, hudfett och mjäll.
+12 NO: Bakteriene lever av det laget.
+   SV: Bakterierna lever på det lagret.
+13 NO: Når det er borte, forsvinner lukten ved kilden.
+   SV: När det är borta försvinner lukten vid källan.
+14 NO: Uten lipase skjuler du bare lukten med vaskemiddel.
+   SV: Utan lipas döljer du bara lukten med tvättmedel.
+15 NO: Bakteriene blir igjen, og lukten kommer tilbake.
+   SV: Bakterierna blir kvar och lukten kommer tillbaka.
+16 NO: Etter programmet er måneder med belegg borte.
+   SV: Efter programmet är månader av beläggning borta.
+17 NO: Vannet som renner ut, er svart, helt svart.
+   SV: Vattnet som rinner ut är svart, helt svart.
+18 NO: Alt det lot den gamle rensen din bli igjen.
+   SV: Allt det lämnade din gamla rengörare kvar.
+19 NO: Klærne slutter å lukte innestengt.
+   SV: Kläderna slutar lukta unket.
+20 NO: Håndklærne holder seg friske.
+   SV: Handdukarna håller sig fräscha.
+21 NO: Og hundens teppe lukter rent.
+   SV: Och hundens filt luktar rent.
+22 NO: Men det virker bare hvis enzymene tåler varme, vanntrykk og lange programmer.
+   SV: Men det fungerar bara om enzymerna klarar värme, vattentryck och långa program.
+23 NO: De fleste gjør ikke det.
+   SV: De flesta gör inte det.
+24 NO: Vanlige enzymtabletter gir opp for tidlig.
+   SV: Vanliga enzymtabletter ger upp för tidigt.
+25 NO: Og mange maskinrens er bare oksygenblekemiddel.
+   SV: Och många maskinrengörare är bara syreblekmedel.
+26 NO: De tar såperester, ikke dyreprotein.
+   SV: De tar tvålrester, inte djurprotein.
+27 NO: Men Maskinren fra Nordvask klarer det.
+   SV: Men Maskinrent från Norrtvätt klarar det.
+28 NO: Den eneste formelen med alle tre enzymene, utviklet for hjem med kjæledyr.
+   SV: Den enda formulan med alla tre enzymerna, framtagen för hem med husdjur.
+29 NO: Akkurat nå får du fire pakker for prisen av to og gratis frakt.
+   SV: Just nu får du fyra paket för priset av två och fri frakt.
+30 NO: Og tretti dagers pengene-tilbake-garanti.
+   SV: Och trettio dagars pengarna-tillbaka-garanti.
+31 NO: Har du aldri prøvd enzymer, må du se hva som kommer ut.
+   SV: Har du aldrig testat enzymer måste du se vad som kommer ut.
+32 NO: Klikk på lenken mens tilbudet gjelder.
+   SV: Klicka på länken medan erbjudandet gäller.

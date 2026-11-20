@@ -51,6 +51,17 @@ ovan (b1 C3, b3 C3 och b3.1 C8). Resten görs i omgångar om fem, i ordning efte
 | A3 C1 | video5 | [mp4](nordvask_dk_A3-C1_da.mp4) | [srt](nordvask_dk_A3-C1_da.srt) | [manus](manus/manus_A3-C1_da.txt) | 4:05 | dansk kvinna 30–40 år |
 | A5 C1 | video31 | [mp4](nordvask_dk_A5-C1_da.mp4) | [srt](nordvask_dk_A5-C1_da.srt) | [manus](manus/manus_A5-C1_da.txt) | 4:29 | dansk man 40–50 år |
 | A1 C4 | Maskinrent 4, biofilm | [mp4](nordvask_dk_A1-C4_da.mp4) | [srt](nordvask_dk_A1-C4_da.srt) | [manus](manus/manus_A1-C4_da.txt) | 5:13 | dansk man 40–50 år |
+| A4 C5 | Maskinrent 5, tre misstag | [mp4](nordvask_dk_A4-C5_da.mp4) | [srt](nordvask_dk_A4-C5_da.srt) | [manus](manus/manus_A4-C5_da.txt) | 2:16 | dansk man 40–50 år |
+| A2 C5 | video25, rean slutar idag (4:5) | [mp4](nordvask_dk_A2-C5_da.mp4) | [srt](nordvask_dk_A2-C5_da.srt) | [manus](manus/manus_A2-C5_da.txt) | 0:20 | dansk kvinna 40–50 år |
+| A4 C4 | Maskinrent 8 | [mp4](nordvask_dk_A4-C4_da.mp4) | [srt](nordvask_dk_A4-C4_da.srt) | [manus](manus/manus_A4-C4_da.txt) | 1:02 | dansk kvinna 40–50 år |
+| A3 C2 | Maskinrent 4 | [mp4](nordvask_dk_A3-C2_da.mp4) | [srt](nordvask_dk_A3-C2_da.srt) | [manus](manus/manus_A3-C2_da.txt) | 4:09 | dansk kvinna 40–50 år |
+| A3 C3 | Maskinrent 3, 4-minutersversionen | [mp4](nordvask_dk_A3-C3_da.mp4) | [srt](nordvask_dk_A3-C3_da.srt) | [manus](manus/manus_A3-C3_da.txt) | 4:00 | dansk kvinna 40–50 år |
+
+Omgång 2 (A4 C5, A4 C4, A3 C2, A3 C3) är byggd på originalfilmerna i GitHub-releaserna (video17, video18, video10,
+video6), som är samma klipp utan svensk text. Bara det den svenska versionen lade till är gjort om på danska:
+15.000 TILFREDSE KUNDER, FRI FRAGT, UDSALGET SLUTTER SNART och 30 DAGES PENGENE TILBAGE. Den svenska "Lipas"-etiketten
+i A4 C5 behövs inte, för originalets "Lipase" är redan rätt på danska. A2 C5 har rubriken NORDVASK / 2-PAK −40 % /
+SIDSTE CHANCE / KUN 25 KR/TABLET. Dess 9:16-version finns bara i Meta och görs separat.
 
 Alla svenska texter i bild är bytta mot danska på samma plats och i samma stil: skyltar (SEBUM/HUNDENS HUDFEDT,
 DYREHÅR = PROTEIN, SEBUM = FEDT, Alfa-amylase/Protease/Lipase, AFKALKER MASKINEN, PASSER TIL ALLE VASKEMASKINER,

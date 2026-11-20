@@ -1,0 +1,39 @@
+1
+00:00:00,100 --> 00:00:01,870
+Hvad, slutter udsalget i dag?
+
+2
+00:00:01,970 --> 00:00:03,941
+Ja, udsalget slutter i dag!
+
+3
+00:00:04,041 --> 00:00:06,085
+Det her er sidste chance for at købe
+
+4
+00:00:05,985 --> 00:00:08,244
+Maskinren på Nordvasks bedste udsalg
+
+5
+00:00:08,144 --> 00:00:09,059
+nogensinde.
+
+6
+00:00:09,159 --> 00:00:11,367
+Benyt chancen, og køb to i dag, for
+
+7
+00:00:11,267 --> 00:00:12,830
+det her er de sidste timer.
+
+8
+00:00:12,930 --> 00:00:14,713
+Det her er din sidste chance.
+
+9
+00:00:14,911 --> 00:00:17,061
+Et tilbud som det her finder du ikke igen
+
+10
+00:00:16,961 --> 00:00:18,281
+i meget lang tid.

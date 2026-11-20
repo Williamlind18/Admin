@@ -21,6 +21,11 @@ CONF = {
     "a5c1": dict(bed=("loop", 136.0, 4.04)),
     "a3c1": dict(bed="linear"),
     "a1c4": dict(bed="linear"),
+    "a4c5": dict(bed="linear"),
+    "a4c4": dict(bed="linear"),
+    "a3c2": dict(bed=("loop", 53.325, 6.70)),
+    "a3c3": dict(bed=("loop", 55.577, 4.45)),
+    "a2c5": dict(bed=None),   # the Swedish ad has no music
 }
 
 
@@ -94,8 +99,8 @@ def mix(key):
     src = os.path.join(D, "vid", f"{key}.mp4")
     sv = load(src)[:n]
     sv = np.concatenate([sv, np.zeros(max(0, n - len(sv)))])
-    bed = make_bed(key, dur)
-    g = float(sv @ bed / (bed @ bed))
+    bed = make_bed(key, dur) if CONF[key]["bed"] else np.zeros(n)
+    g = float(sv @ bed / (bed @ bed)) if CONF[key]["bed"] else 0.0
     sv_voice = sv - g * bed
     vo, vsr = sf.read(os.path.join(D, "work", key, "vo.wav"))
     if vo.ndim > 1:

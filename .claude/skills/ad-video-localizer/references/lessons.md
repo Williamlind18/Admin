@@ -205,6 +205,20 @@ was female).
   too big.
 - **Captions moved for a graphic:** where the Swedish captions sat lower to clear an SMS bubble (A5 C5, y 0.78
   instead of 0.67), move the Danish ones for the same seconds.
+- **Start from the release, not Vmake.** Most launch-set ads are a GitHub release's original footage on the same
+  timeline (CLAUDE.md lists which). Diff the Swedish delivery against the release outside the caption band
+  (`leverans/underlag/danmark_lansering/`): what differs is exactly what the Swedish session added. On A4 C5, A4 C4,
+  A3 C2 and A3 C3 that was five white labels in total; A3 C3 had nothing but captions.
+  - `relabel.py` rebuilds a white label per frame: the label is the white area that differs from the original
+    (white ∩ diff, minAreaRect), and each Swedish line's ink box sets the new line's size and position.
+  - `retext.py` handles a white label on a white object (the box edge can't be found): copy the label region from
+    the Swedish delivery (`src` crop) and paint the new words over the Swedish ones (ink = dark in the Swedish frame,
+    light in the original).
+  - Where the Swedish version hid an English animation (A4 C4: "SALE ENDS SOON" flying in), do the same: hold the
+    original's settled frame for those frames and put the label on top.
+  - Find the music beds in the Swedish session's ElevenLabs flow (a music node in the flow named after the release).
+    Map 3 s windows of the Swedish audio to music time to read a loop's period: A3 C2 loops every 53.325 s and A3 C3
+    every 55.577 s on 60 s beds.
 
 ## Long competitor ads with hooks (Maskinrent videos 8-10, Uproot footage 720x1280)
 - **Small or merged caption boxes:** `ocr_captions.py --mode bands --band 0.15-0.75 --box-h 0.018-0.05`.

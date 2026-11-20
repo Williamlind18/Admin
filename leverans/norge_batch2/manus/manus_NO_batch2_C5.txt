@@ -1,0 +1,111 @@
+Norrtvätt NO batch 2 - C5: norsk manus (Nordvask Maskinren), 1:1 med svenska meningar
+Svensk källa: leverans/batch6/nb6_C3_H3_I1-b3.1C8_sv.mp4 @ claude/funny-rubin-truuco (ny batch 6 – C3 H3 (I1 av b3.1 C8).mp4)
+Röst: ElevenLabs eleven_v3, language_code no, röst iWsqLB1KXhKYZqry79ma (Norsk äldre man 55-60 år), en tagning
+Bild: video16-release klippt exakt som den svenska (bildrutekarta), norska 4:5 CTA-kort från Nordvask-produktbilden.
+
+01 NO: En kunde ba meg vrake den tre år gamle vaskemaskinen sin.
+   SV: En kund bad mig skrota sin tre år gamla tvättmaskin.
+02 NO: Det eneste som var galt, satt bak panelet.
+   SV: Det enda som var fel satt bakom panelen.
+03 NO: Jeg har reparert vaskemaskiner i nitten år, over tusen stykker.
+   SV: Jag har lagat tvättmaskiner i nitton år, över tusen stycken.
+04 NO: Forrige måned ba en kunde meg ta vaskemaskinen hennes og vrake den.
+   SV: Förra månaden bad en kund mig ta hennes tvättmaskin och skrota den.
+05 NO: Den var bare tre år, men alt hun vasket luktet innestengt.
+   SV: Den var bara tre år, men allt hon tvättade luktade unket.
+06 NO: Håndklær, barnas klær, hundens tepper.
+   SV: Handdukar, barnens kläder, hundens filtar.
+07 NO: Hun hadde prøvd alt på hylla og gitt opp.
+   SV: Hon hade testat allt på hyllan och gett upp.
+08 NO: Hun ville bruke flere tusen kroner på en ny og glemme denne.
+   SV: Hon ville lägga flera tusen kronor på en ny och glömma den här.
+09 NO: Så i stedet for å vrake den åpnet jeg den, for å vise hva hun holdt på å kaste.
+   SV: Så i stället för att skrota den öppnade jag den, för att visa vad hon höll på att slänga.
+10 NO: Først tar vi av panelet.
+   SV: Först tar vi av panelen.
+11 NO: Dette er yttertrommelen, veggen bak trommelen som snurrer.
+   SV: Det här är yttertrumman, väggen bakom trumman som snurrar.
+12 NO: Hver vask spyler vann her, men ingen svamp og intet rengjøringsprogram når hit.
+   SV: Varje tvätt spolar vatten här, men ingen svamp och inget rengöringsprogram når hit.
+13 NO: Den er forseglet fra fabrikken.
+   SV: Den är förseglad från fabriken.
+14 NO: Og i et hjem med kjæledyr skjer dette.
+   SV: Och i ett hem med husdjur händer det här.
+15 NO: Vaskemiddel og tøymykner legger igjen en klissete film overalt.
+   SV: Tvättmedel och sköljmedel lämnar en kladdig film överallt.
+16 NO: Dyrehår setter seg fast i filmen og blir sittende.
+   SV: Djurhår fastnar i filmen och sitter kvar.
+17 NO: Flass og hudfett legger seg oppå.
+   SV: Mjäll och hudfett lägger sig ovanpå.
+18 NO: Så flytter bakteriene inn, og for dem er alt det der mat.
+   SV: Sen flyttar bakterierna in, och för dem är allt det där mat.
+19 NO: Ser du det brungule laget som dekker alt?
+   SV: Ser du det brungula lagret som täcker allt?
+20 NO: Det er ikke skitt, det er et skjold bakteriene har bygget over seg.
+   SV: Det är inte smuts, det är en sköld som bakterierna byggt över sig.
+21 NO: Proffene kaller det biofilm.
+   SV: Proffsen kallar det biofilm.
+22 NO: Den lever, den er pansret, og den har overlevd hver eneste vask.
+   SV: Den lever, den är pansrad och den har överlevt varenda tvätt.
+23 NO: Hvert program går rett gjennom belegget, så lukten kom alltid tilbake.
+   SV: Varje program går rakt genom beläggningen, så lukten kom alltid tillbaka.
+24 NO: Maskinen var aldri ødelagt, den var bare gjengrodd.
+   SV: Maskinen var aldrig trasig, den var bara igenväxt.
+25 NO: Skapet over var fullt av maskintabletter, oksygenpulver, eddik og natron.
+   SV: Skåpet ovanför var fullt av maskintabletter, syrepulver, ättika och bikarbonat.
+26 NO: Hun hadde brukt penger på alt man skal bruke.
+   SV: Hon hade lagt pengar på allt man ska använda.
+27 NO: Men les etikettene i butikken: de fleste bygger på det samme stoffet, oksygenbasert blekemiddel.
+   SV: Men läs etiketterna i butiken: de flesta bygger på samma ämne, syrebaserat blekmedel.
+28 NO: Det klarer overflaterester og kalk, men ikke en film av protein og fett full av dyrehår.
+   SV: Det klarar ytrester och kalk, men inte en film av protein och fett full av djurhår.
+29 NO: Måned etter måned skylte hun over skjoldet og lot bakteriene bli igjen.
+   SV: Månad efter månad sköljde hon över skölden och lämnade bakterierna kvar.
+30 NO: Det var ikke hennes feil, ingenting i skapet var laget for dette.
+   SV: Det var inte hennes fel, inget i skåpet var gjort för det här.
+31 NO: Det som bryter ned sånt, er ikke enda et blekemiddel, det er enzymer.
+   SV: Det som bryter ner sånt här är inte ännu ett blekmedel, det är enzymer.
+32 NO: De bryter ned laget bit for bit, og hvert enzym tar sitt eget lag.
+   SV: De bryter ner lagret bit för bit, och varje enzym tar sitt eget lager.
+33 NO: Så jeg testet på akkurat denne maskinen: én enzymtablett, ett varmt program, ingenting annet.
+   SV: Så jag testade på just den här maskinen: en enzymtablett, ett varmt program, inget annat.
+34 NO: Amylase tar den klissete filmen som holder alt sammen.
+   SV: Amylas tar den kladdiga filmen som håller ihop allt.
+35 NO: Protease tar proteinet, altså dyrehårene.
+   SV: Proteas tar proteinet, alltså djurhåren.
+36 NO: Og lipase tar det fete laget som bakteriene lever av.
+   SV: Och lipas tar det feta lagret som bakterierna lever av.
+37 NO: Se på vannet som kom ut.
+   SV: Titta på vattnet som kom ut.
+38 NO: Tre år av det du så bak panelet, brutt ned og skylt ut.
+   SV: Tre år av det du såg bakom panelen, nedbrutet och utspolat.
+39 NO: Så åpnet jeg den igjen.
+   SV: Sen öppnade jag den igen.
+40 NO: Samme panel, samme yttertrommel.
+   SV: Samma panel, samma yttertrumma.
+41 NO: Se nå.
+   SV: Titta nu.
+42 NO: Ingen ny maskin, ingen reservedeler, bare én tablett og ett varmt program.
+   SV: Ingen ny maskin, inga reservdelar, bara en tablett och ett varmt program.
+43 NO: Hun fikk beholde maskinen hun ville vrake, og slapp å kjøpe en ny.
+   SV: Hon fick behålla maskinen hon ville skrota, och slapp köpa en ny.
+44 NO: Hun vasket håndklær og ringte dagen etter: de luktet ingenting i det hele tatt.
+   SV: Hon tvättade handdukar och ringde dagen efter: de luktade ingenting alls.
+45 NO: For første gang på tre år.
+   SV: För första gången på tre år.
+46 NO: Hun trodde maskinen var død, men den var aldri ødelagt.
+   SV: Hon trodde att maskinen var död, men den var aldrig trasig.
+47 NO: Det bodde bare noe i den, og tabletten kastet det ut med én gang.
+   SV: Det bodde bara något i den, och tabletten vräkte ut det på en gång.
+48 NO: Nå kjører hun én tablett i måneden, så belegget aldri kommer tilbake.
+   SV: Nu kör hon en tablett i månaden, så att beläggningen aldrig kommer tillbaka.
+49 NO: Tabletten heter Maskinren, fra Nordvask, og er laget for hjem med kjæledyr.
+   SV: Tabletten heter Maskinrent, från svenska Norrtvätt, och är gjord för hem med husdjur.
+50 NO: Én pakke holder et helt år, og koster en brøkdel av en ny vaskemaskin.
+   SV: Ett paket räcker ett helt år, och kostar en bråkdel av en ny tvättmaskin.
+51 NO: Akkurat nå er det femti prosent rabatt, og merker du ingen forskjell innen tretti dager, får du pengene tilbake.
+   SV: Just nu är det femtio procent rabatt, och märker du ingen skillnad inom trettio dagar får du pengarna tillbaka.
+52 NO: Så før du kjøper en ny vaskemaskin, test én tablett.
+   SV: Så innan du köper en ny tvättmaskin, testa en tablett.
+53 NO: Klikk på lenken og bestill din nå.
+   SV: Klicka på länken och beställ din nu.

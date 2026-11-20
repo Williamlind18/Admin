@@ -1,0 +1,31 @@
+Norrtvätt NO batch 2 - C6: norsk manus (Nordvask Maskinren), 1:1 med svenska meningar
+Svensk källa: leverans/norrtvatt_maskinrent9_enzymer_sv.mp4 @ claude/funny-rubin-truuco (Norrtvätt ny batch 5 - C5.mp4, Meta b5 C5)
+Röst: ElevenLabs eleven_v3, language_code no, röst wmWNq8zv8Au6slnVf0MZ (medelålders kvinna - NO), en tagning
+Pris: 999 kroner för fire pakker (som NO batch 1).
+
+01 NO: Hvorfor virker Maskinren når andre slutter å virke etter tre dager?
+   SV: Varför funkar Maskinrent när andra slutar verka efter tre dagar?
+02 NO: Alfa-amylase, protease og lipase.
+   SV: Alfa-amylas, proteas och lipas.
+03 NO: Tre enzymer som de andre mangler.
+   SV: Tre enzymer som de andra saknar.
+04 NO: Dyrehår, flass og fett danner et belegg som vanlige midler ikke klarer.
+   SV: Djurhår, mjäll och fett bildar en beläggning som vanliga medel inte klarar.
+05 NO: Alle de store merkene bruker oksygenblekemiddel.
+   SV: Alla stora märken använder syreblekmedel.
+06 NO: Uten kjæledyr virker det, men med kjæledyr kommer lukten tilbake.
+   SV: Utan husdjur funkar det, men med husdjur kommer lukten tillbaka.
+07 NO: Maskinren er laget for protein fra kjæledyr.
+   SV: Maskinrent är gjord för protein från husdjur.
+08 NO: Tre enzymer: alfa-amylase, protease og lipase.
+   SV: Tre enzymer: alfa-amylas, proteas och lipas.
+09 NO: De bryter ned belegget som gir lukten.
+   SV: De bryter ner beläggningen som ger lukten.
+10 NO: Flere kjæledyr eller en hund som røyter? Da er den laget for deg.
+   SV: Flera husdjur eller en hund som fäller? Då är den gjord för dig.
+11 NO: Akkurat nå: kjøp to, få to på kjøpet, og gratis frakt.
+   SV: Just nu: köp två, få två på köpet, och fri frakt.
+12 NO: Ni hundre og nittini kroner for fire års ren vask.
+   SV: 999 kronor för fyra års ren tvätt.
+13 NO: Klikk på lenken og bestill nå.
+   SV: Klicka på länken och beställ nu.

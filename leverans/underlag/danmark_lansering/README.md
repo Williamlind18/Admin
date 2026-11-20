@@ -19,8 +19,10 @@ Från omgång 2 bygger vi på originalfilmerna i GitHub-releaserna i stället f�
   textstorlek från den svenska). `--base` väljer en annan textfri film än originalet.
 - `retext.py`: byter bara orden på en skylt som sitter på ett vitt föremål (svensk utsnitt + nya ord).
 - `title_box.py`: en stillastående rubrikruta i samma storlek och med samma textstorlek som den svenska.
-- `capmasks.py`, `textmasks.py`: masker för inbrända undertexter (vita rutor med svart text, respektive vit text med
-  svart kant) till LaMa (`lama_inpaint.py` i ad-video-localizer).
+- `capmasks.py`, `textmasks.py`, `pillmasks.py`: masker för inbrända undertexter till LaMa (`lama_inpaint.py` i
+  ad-video-localizer): vita rutor med svart text, vit text med svart kant, och vita textrutor på ljus bakgrund (hittas
+  på de vita kanterna ovanför och under texten).
+- `measure_box.py`: läge och textrader för en stillastående svensk skylt (till `title_box.py`).
 - `assemble_a3c4.py`: exempel på ren film när den svenska versionen bytt ut ett klipp och saktat ner ett annat.
 - `bedmap.py`: hur den svenska musiken ligger (linjär, loop, hopp eller förskjuten) så att den danska får samma.
 - `make_captions_da.py`: undertexterna (1–3 ord). Varje fras delas med en liten sökning: inte sluta på småord,

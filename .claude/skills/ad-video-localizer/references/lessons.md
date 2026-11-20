@@ -226,6 +226,11 @@ was female).
     with its captions removed by LaMa (`textmasks.py`: white strokes next to a black rim; fill the fade frames from
     their neighbours), and the slowed part rebuilt from original frames.
   - Check `clean/*.mp4` before writing to it: a clean file that is a symlink to `orig/` would truncate the original.
+  - **Caption pills on bright footage** (A5 C2, video23: white rounded boxes with black text at a fixed height). A
+    white-blob search found only 1 798 of 2 992 caption frames, because the pill merges with white foam, towels and
+    drums. `pillmasks.py` finds the pill from its padding instead: a column is pill where the white strips just above
+    and below the text are white, and the run must hold dark text. Check a contact sheet of the cleaned band
+    before using the clean film.
 - **Captions (DP splitter, `make_captions_da.py`):** a colon ends a phrase ("to eddike" ran across "Fejl nummer to:
   eddike"), and Danish time phrases stay together: "Dagene efter | ringede hun", not "Dagene | efter ringede hun";
   also "Næste morgen", "En uge senere", "et år siden", "I flere år". Count the words inside merged tokens ("den her",

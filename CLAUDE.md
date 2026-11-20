@@ -83,6 +83,16 @@ their files by length on 2026-11-19. Don't search Ads Manager or GitHub for them
 | A5 C4 | video30, NASA enzymes | `nordvask_video30_nasa_enzymer_no.mp4` @ `claude/focused-hamilton-930j6d` | `norrtvatt_video30_nasa_enzymer_sv.mp4` @ same | 4:08 |
 | A5 C5 | video33, service technician | `nordvask_video33_servicetekniker_no.mp4` @ `claude/focused-hamilton-930j6d` | `norrtvatt_video33_servicetekniker_sv.mp4` @ same | 6:39 |
 
+**Text-free originals (GitHub releases, checked frame by frame on 2026-11-20).** Most launch-set ads are the original
+footage from a release with Swedish captions, labels and cards added on top, on the same timeline. Start from the
+release instead of removing the Swedish text with Vmake; only the Swedish overlays (labels, offer cards, end cards)
+have to be rebuilt in the new language (diff the Swedish delivery against the release to find them):
+A1 C4 `video9`, A2 C1 `video4`, A2 C2 `maskinrent2`, A2 C3 `video1`, A2 C4 `video3`, A3 C2 `video10`, A3 C3 `video6`,
+A3 C4 `video15`, A3 C5 `video14` (480x832, the Swedish is upscaled), A4 C1 `video13`, A4 C2 `video12` (480x848),
+A4 C3 `video8`, A4 C4 `video18`, A4 C5 `video17`, A5 C2 `video23` (the Swedish ends 2.4 s earlier), A5 C3 `video19`.
+A1 C5 is a re-cut of `video32` (120 of 131 s; later segments shifted by about 3 and 7.6 s). A2 C5 does not match
+`video25` frame for frame. A5 C4, A5 C5, A3 C1 and A5 C1 were not checked (their Danish versions came from Vmake).
+
 `nordvask_maskinren3_no.mp4` and `norrtvatt_maskinrent3_sv.mp4` exist in two different ads under the same name.
 Take the 30 s one from `claude/focused-hamilton-930j6d` (A2 C4) and the 4-minute one from
 `claude/zealous-dijkstra-nzvyw0` (A3 C3).

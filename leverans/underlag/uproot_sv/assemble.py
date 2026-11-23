@@ -6,7 +6,8 @@ ap = argparse.ArgumentParser(); ap.add_argument('base'); ap.add_argument('out');
 ap.add_argument('--patch', action='append', default=[]); ap.add_argument('--overlay', action='append', default=[])
 ap.add_argument('--hold', type=float, default=0.0)
 a = ap.parse_args()
-W, H = 720, 1280; n = W * H * 3
+_pr = json.loads(subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'json', a.base], capture_output=True, text=True).stdout)['streams'][0]
+W, H = _pr['width'], _pr['height']; n = W * H * 3
 def reader(p):
     pr = subprocess.Popen(['ffmpeg', '-v', 'error', '-i', p, '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], stdout=subprocess.PIPE)
     while True:

@@ -325,3 +325,11 @@ defaults to cut_off.
     layers frame by frame; inside a wipe, use the convex hull of the revealed region to splice ours in.
 - **End stills:** Uproot's long product/offer still is replaced by our closing card (`endcard_sv.py`), with the caption
   band left free when the voice still talks over it.
+- **Vmake SKM0002 on Uproot's white caption pills (video56, 4:5):** the text goes, but in about two thirds of the frames
+  it leaves the empty pill, a blurred white bar or its top and bottom edge as thin lines. Treat Vmake as a first pass:
+  find the leftovers where the source had a pill (`vmake_remnants.py`, `vmake_bars.py`, `vmake_lines.py` in
+  `leverans/underlag/uproot_sv/`) and LaMa them, and check a few frames by eye after each pass. Vmake also blurs
+  burned-in titles into a grey smear, so redraw titles over a LaMa'd area, not over Vmake's smear.
+- **`lama_inpaint.py` needs sides that are multiples of 8.** 720x900 crashed at the bottom edge; the script now pads by
+  reflection.
+- **Caption ASS for a 4:5 video:** set `PlayResY` to the real height (900), or libass scales every caption down.

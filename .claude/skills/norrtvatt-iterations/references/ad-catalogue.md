@@ -155,7 +155,7 @@ enzymes) is the same in all of them unless noted. **Box** is filled in after lab
   replaced with Maskinrent pack shots from the shop, old captions removed, quiet music bed.
 - Box: ? (launch as one ad set with the three hooks). Learning: –
 
-## B13–B15 – Uproot video48, video49, video50 made 1:1 in Swedish (2026-11-23)
+## B13–B16 – Uproot video48, video49, video50 and video56 made 1:1 in Swedish (2026-11-23)
 New Uproot sources, no parent, made 1:1 per CLAUDE.md (same footage, cuts, story, tone and length; authority only
 where the original has it). Files in `leverans/uproot_sv/` on `claude/funny-rubin-truuco`: `Maskinrent videoNN sv.mp4`
 + .srt, scripts in `manus/` (Swedish with start times, Uproot's English below). Numbers follow the source tags; other
@@ -176,6 +176,15 @@ sessions on 2026-11-23 also used "B13" for video51, video54 and video55, so renu
   themselves. Awareness: solution aware. Mechanism shown with SYRE-/BLEKMEDEL and AMYLAS/PROTEAS/LIPAS titles in
   Swedish. Urgency: köp två få två, fri frakt, 50 %, 30 dagar, "innan de tar slut". Uproot's end still replaced by
   our closing card; the last caption runs over it in a free band.
+- **B16 – video56, the four-month-old machine (4:45, 4:5).** Hook: "Hon var nära att lämna tillbaka en tvättmaskin
+  som aldrig var trasig." Angle: a new machine isn't the fix; pet hair builds up behind the drum whatever the price.
+  Avatar: pet owner (yellow lab + shepherd mix) who already ran the self-clean program weekly. Authority: washer
+  technician, almost 20 years (same as the original), teardown shots, dark drain water. Mechanism: alfa-amylas, proteas,
+  lipas (titles redrawn in Swedish). Positioning: shelf cleaners are oxygen bleach + perfume. Urgency: köp två få två,
+  30 dagar, "medan rean pågår". Voice "manlig röst 40-50 år skånsk" (`PLzKW5f9DmyCn5Vot26M`). Uproot's review collage
+  (4:14-4:18, reviews of another product) replaced by six real norrtvatt.se reviews, verbatim; "the same people behind
+  those famous pet hair removal tools" dropped; one tablet a month instead of every two weeks. Text removed with Vmake
+  (SKM0002) plus two LaMa passes for the bars Vmake left. Our closing card in 4:5.
 - Shared changes: Uproot → Maskinrent/Norrtvätt, no competitor names spoken (their boxes stay in the footage),
   Pro/Ultra removed, 60 → 30 days, ElevenLabs eleven_v4 paragraph takes, new ElevenLabs music beds (flow "Uproot → SV:
   video48–50"), white pill captions like Uproot's.

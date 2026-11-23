@@ -479,5 +479,23 @@ defaults to cut_off.
   drawn with PIL: logo file, pack shot in a rounded tile, black pill "KÖP 2 – FÅ 2 PÅ KÖPET", price, a
   trust row with a drawn star (Montserrat has no ★), and a teal "HANDLA PÅ NORRTVATT.SE" button, laid over
   the upscaled edit with an ffmpeg `overlay` + 0.25 s alpha fade from the original card's first frame.
+- **Translated titles without boxes (user, 2026-11-23): "the big white boxes weren't nice; remove the old text
+  and put Swedish text in the same place, ideally without a white background; if that gets blurry, a white box,
+  but smaller".** What worked (`scripts/lama_text_remove.py`, needs torch CPU + big-lama.pt, ~1 s per frame):
+  - Per-frame colour masks per title, grown over the outline/glow, filled by LaMa only inside the mask:
+    `silver` for white-to-grey titles, `white3d` for 3D titles (white faces + the grey extrusion next to them;
+    a plain rect let LaMa rebuild letter shapes from the extrusion), `cyan` for glowing cyan letters (keeps
+    green bubbles), `yellow` with a 24 px grow (13 px left a yellow glow ghost), `green`/`red`/`dark` for
+    stickers and pills.
+  - **Check the first and last frames of every title.** Titles fade or fly in semi-transparent and grey
+    (the 3D title from 94.62, 0.6 s before it turns white); the colour masks miss those frames. Fill the whole
+    band with `rect` for the fade-in frames and start the Swedish title at the same frame.
+  - A big glowing title ("AS LITTLE AS 2 WEEKS") leaves a frosted blur where its glow was. Copying the
+    original's layout (left-aligned, white glow, the two white bars, a soft white haze) makes the blur read
+    as part of the design.
+  - Set the Swedish text in the original's style (colour, glow, slant) and let it follow the original's
+    motion per segment (straight while it types in, then the same tilt), else the cleaned spot shows.
+  - Sheet the cleaned video in each title's region every ~0.25 s (no overlays) before rendering; that is
+    where every leftover was found.
 - Music bed: 140 s piece (2 100 credits, half the estimate) looped with `acrossfade=d=4` (second copy from
   20 s) and trimmed to the video with a 2.5 s fade-out, `--bed-db -19`.

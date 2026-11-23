@@ -226,3 +226,13 @@ defaults to cut_off.
   ships without it). Price it before proposing anything: a 4:37 ad with the presenter on screen for
   238 s would have cost ~190 000 credits with Sync 3, and the user dropped it. Offer a 45-75 s cut
   instead.
+
+## Uproot 1:1 with Vmake (video54, November 2026)
+- **Vmake `SKM0002` (remove subtitles) leaves the empty white caption pills.** `SKM0005` (Smart Removal Pro) removes
+  the pills together with the text, and also big coloured headline texts. Test a 6 s clip first (cheap). Where
+  SKM0005 misses something, cut just those frames into one short clip, run `SKM0003` (Smart Removal) on it and splice
+  the frames back by frame number (Vmake keeps the frame count). SKM0003 can leave dark streaks where a large
+  headline was; OpenCV Telea inpainting on the flat background around them was enough.
+- **Keep captions at one height.** Following the original's caption boxes made the Swedish captions jump between
+  y 535 and 850, and the user disliked it. Once the old pills are removed, put every caption at one fixed height (the
+  original's most common one) and move a redrawn headline a little instead when the two would overlap.

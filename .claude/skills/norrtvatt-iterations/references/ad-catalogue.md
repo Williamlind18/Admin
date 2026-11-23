@@ -168,9 +168,13 @@ enzymes) is the same in all of them unless noted. **Box** is filled in after lab
   pengarna-tillbaka-garanti. The user confirmed every claim as true (including that Maskinrent contains oxygen bleach
   and costs less per pack than the shelf cleaner).
 - Voice "kvinna energisk - SE" `tY9FLUZCUCQXwZYDwvWw`, eleven_v4 sv, six paragraph takes; tempo 1.00-1.08.
-- Picture: Vmake SKM0002 removed the English caption text but left the white pills; Swedish captions are black text
-  in those pills (user's choice). English graphics are white boxes with black Swedish text; Uproot's end still is
-  replaced by the Norrtvätt offer still from 81.13 s. All Uproot and Affresh box shots stay.
+- Picture (v2, user 2026-11-23): Vmake SKM0005 (Smart Removal Pro) removed the English captions with their white
+  pills and the cyan offer headlines; SKM0003 (Smart Removal) cleaned the four spots SKM0005 missed (52.5, 74.8,
+  76.7 s and "CLICK BELOW"). Swedish captions sit at one fixed height (y 760 of 1280, white with black rim) for the
+  whole ad, as the user asked ("den hoppar upp och ner för mycket"). The offer headlines are redrawn in Swedish in
+  the original's cyan style; three were moved a little so they never touch the captions. The enzyme tags on the 3D
+  molecules stay burned in and are covered by tracked white tags. Uproot's end still is replaced by the Norrtvätt
+  offer still from 81.13 s. All Uproot and Affresh box shots stay.
 - Box: ? Learning: –
 
 ## Live ads → files and sources (found 2026-11-04 by matching video length to the second)

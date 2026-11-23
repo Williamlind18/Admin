@@ -44,10 +44,15 @@ def inpaint(img, rects):
     m = np.zeros(crop.shape[:2], np.float32)
     for x0, y0, x1, y1 in rects:
         m[max(0, y0 - c0):max(0, y1 - c0), max(0, x0 - d0):max(0, min(W, x1) - d0)] = 1
+    # the model needs sides that are multiples of 8; frames like 720x900 end on a partial block, so pad by reflection
+    ch, cw = crop.shape[:2]
+    ph, pw = (-ch) % 8, (-cw) % 8
+    cp = np.pad(crop, ((0, ph), (0, pw), (0, 0)), mode="reflect") if ph or pw else crop
+    mp = np.pad(m, ((0, ph), (0, pw)), mode="constant") if ph or pw else m
     with torch.no_grad():
-        ti = torch.from_numpy(crop).permute(2, 0, 1)[None].float() / 255
-        tm = torch.from_numpy(m)[None, None]
-        out = model(ti, tm)[0].permute(1, 2, 0).clamp(0, 1).numpy() * 255
+        ti = torch.from_numpy(np.ascontiguousarray(cp)).permute(2, 0, 1)[None].float() / 255
+        tm = torch.from_numpy(np.ascontiguousarray(mp))[None, None]
+        out = model(ti, tm)[0].permute(1, 2, 0).clamp(0, 1).numpy()[:ch, :cw] * 255
     res = img.copy()
     mm = m[..., None]
     res[c0:c1, d0:d1] = (out * mm + crop * (1 - mm)).astype(np.uint8)

@@ -30,6 +30,14 @@ therefore has to come from how the audio is generated, which means **one take**.
 | `eleven_flash_v2_5` | word-by-word timing reference only | ~0.5 per character; **~1 per character on 2026-11-03** (4 370 credits for a 4 539-character iso) | — |
 | `eleven_v4` | offered by the connector, **untested** here | ? | ? |
 
+**The speaking rate depends on the voice.** The eleven_v3 rate above was measured with the female voice
+of the first projects. On Maskinrent video 3 ("UV-testet") the voice "Äldre man 1" read at only
+**~13.9 chars/s**. A script budgeted at 16.3 chars/s came back as a 149 s take for a 101.6 s video and had
+to be shortened and taken again, which wasted about 1 700 credits. With a voice you have not measured,
+generate the first 3-4 lines once with eleven_v3 (~150-250 credits) and divide their characters by the
+seconds of speech. Then pass that rate as `split_script.py --rate R`. If the voice was used in an earlier
+project, use the rate measured there.
+
 Pass `estimate_only: true` to price a call before generating. For a 135 s ad (≈2 100 characters),
 expect about 2 100 credits for the voice take plus about 1 200 for the flash reference.
 On video 5 a 3 737-character take ran slower than estimated: 242.6 s of speech (≈15.1 chars/s) and
@@ -82,9 +90,15 @@ sound (genre, instruments, tempo, "even energy, no big drops, sits under a voice
    `voice_id` and **`generations_count: 1`**. The default is 4, which costs 4× as much. A 2 141-character
    script was accepted in one call. It took about 2 minutes to generate and came back as 158.6 s of
    audio, sentence pauses included.
+   **A call takes at most 5 000 characters,** counting the spaces between the joined lines. A longer
+   call fails ("Prompt must be at most 5000 characters"). For a 5-minute ad, trim the script to fit
+   (`paste -sd' ' script.txt | wc -m`) rather than splitting the voice into two takes.
 3. **The timing reference.** One call with `eleven_flash_v2_5`, the same voice, and the whole of
    `sent/iso.txt` as the prompt ("word. word. word."). This is only the timing reference and is never
    heard in the video. Save it as `sent/iso.mp3`.
+   If `iso.txt` is over 5 000 characters, split it at a sentence boundary and generate the parts.
+   Then join them in order with ffmpeg into one `sent/iso.mp3`, with a 0.6 s pause between parts.
+   Splitting is fine here because nobody hears it.
 4. Poll `creative_get_flow_run_status` with the `session_ids`. For the long take, wait between polls,
    e.g. with a background `until`-loop of ~45 s, instead of polling every few seconds. Never call
    generate again to "retry", because that charges again.
@@ -96,6 +110,24 @@ sound (genre, instruments, tempo, "even energy, no big drops, sits under a voice
    `sent/NN.mp3`. In the tested take every sentence pause was 0.42-0.78 s and comma pauses were shorter.
    The first version of the splitter cut at a 0.30 s comma pause, which is why long pauses now weigh
    much more. Check the printed table: no row should be marked `<-- check`.
+   **Takes with very short pauses.** The voice "manlig röst 40-50 år skånsk - SE" once read a whole script
+   with sentence pauses of only 0.1-0.2 s (Maskinrent video 5). Every row was then marked `<-- check`,
+   and the syllable guide put some cuts mid-sentence. For example, a 45-character line came out as
+   1.8 s and the next line 0.6 s too long.
+   - Make better length guesses with espeak: run `espeak-ng -v sv -s 170 -w NN.wav "<line>"` for each
+     line, trim the silence, and write the result as `{id: seconds}` JSON. Rerun with
+     `split_take.py … --expect that.json`.
+   - Any pair that still has a ratio below ~0.7 next to one above ~1.15 needs fixing. Recut those two
+     clips by hand at the short silence between them, with the same padding as split_take: start
+     −0.06 s, end + half the pause.
+   - Rerun align_words. A spread under ~0.25 s on both lines confirms the cut.
+   Such a take often fits the video almost as it is, with tempos of about 1.00-1.03.
+   **Faster and more reliable:** `python3 scripts/split_take_ref.py WORK/take.mp3 WORK/sent`. It aligns
+   the whole take against the word reference `sent/iso.mp3` with DTW, predicts every sentence start and
+   snaps each cut to the nearest silence. On Maskinrent video 8 (the voice "äldre kvinna 60+ - SE",
+   all pauses 0.05-0.33 s) split_take.py misplaced 8 of 22 cuts even with espeak guesses, while
+   split_take_ref.py put all 22 on real pauses (align_words spreads ≤ 0.47 s afterwards). Generate the
+   iso reference before splitting when you expect short pauses.
 7. If you must change a sentence after the take, see "Changed sentences" in SKILL.md. The best option is
    a new whole take. A separately generated sentence will not sound like the same speaker. Give a
    changed sentence its own word reference, a small flash take of its words ("ord. ord.") saved as

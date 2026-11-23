@@ -1,0 +1,110 @@
+Nordvask Maskinren – b5 C2 – reparatören med 6 000 maskiner (dansk version)
+Röst: "dansk man 40-50 år", ElevenLabs eleven_v4, språkkod da. Samma bild, innehåll och erbjudande som den svenska vinnaren.
+Varje mening: dansk text, och under den den svenska meningen den ersätter.
+
+ 1. Jeg har skilt over seks tusind vaskemaskiner ad, og jeg ved præcis, hvorfor dit vasketøj stadig lugter, især hvis du har kæledyr.
+    (sv: Jag har plockat isär över sextusen tvättmaskiner, och jag vet exakt varför din tvätt fortfarande luktar, särskilt om du har husdjur.)
+ 2. Jeg kører rundt i min servicevogn, og næsten hvert opkald, jeg får, handler om det samme.
+    (sv: Jag åker runt i min servicebil, och nästan varje samtal jag får handlar om samma sak.)
+ 3. Nogens vasketøj lugter indelukket.
+    (sv: Någons tvätt luktar unket.)
+ 4. De har prøvet alt, og de vil vide, om der er noget galt med maskinen.
+    (sv: De har testat allt, och de vill veta om det är fel på maskinen.)
+ 5. Ni ud af ti gange fungerer maskinen fint.
+    (sv: Nio gånger av tio fungerar maskinen fint.)
+ 6. Ingen mekaniske fejl overhovedet.
+    (sv: Inga mekaniska fel alls.)
+ 7. Problemet er noget, de ikke kan se.
+    (sv: Problemet är något de inte ser.)
+ 8. Kan du se?
+    (sv: Ser du?)
+ 9. Der er et mellemrum mellem inder- og ydertromlen, som de fleste ikke engang kender til.
+    (sv: Det finns ett mellanrum mellan inner- och yttertrumman som de flesta inte ens vet om.)
+10. Det er et lukket rum.
+    (sv: Det är ett slutet utrymme.)
+11. Hver gang du vasker, bliver der vand stående derinde.
+    (sv: Varje gång du tvättar blir det vatten kvar där.)
+12. Det tørrer aldrig helt.
+    (sv: Det torkar aldrig helt.)
+13. Med tiden bygges der en belægning op på overfladerne, og den bliver bare værre.
+    (sv: Med tiden byggs en beläggning upp på ytorna, och den blir bara värre.)
+14. Det havde ikke gjort så meget, hvis den blev der. Men det gør den ikke.
+    (sv: Det hade inte gjort så mycket om den stannade där. Men det gör den inte.)
+15. Hver ny vask løber gennem det samme mellemrum, tager det med, der vokser der, og fører det ud på dit tøj, håndklæder, sengetøj, hele familiens tøj.
+    (sv: Varje ny tvätt rinner genom samma mellanrum, drar med sig det som växer där och för ut det på dina kläder, handdukar, lakan, hela familjens kläder.)
+16. Det er derfra, lugten kommer.
+    (sv: Det är därifrån lukten kommer.)
+17. Ikke fra vaskemidlet, ikke fra at vasketøjet har ligget for længe, men fra selve maskinen.
+    (sv: Inte från tvättmedlet, inte från att tvätten legat kvar för länge, utan från själva maskinen.)
+18. Alt det der. Eddiken, blegemidlet, rengøringsprogrammet.
+    (sv: Allt det där. Ättikan, blekmedlet, rengöringsprogrammet.)
+19. Vandet fører det derhen. Det når mellemrummet.
+    (sv: Vattnet för med sig det dit. Det når mellanrummet.)
+20. Men her er problemet.
+    (sv: Men här är problemet.)
+21. Intet af det er lavet til at nedbryde den slags belægning.
+    (sv: Inget av det är gjort för att bryta ner den sortens beläggning.)
+22. Det skyller bare hen over, belægningen bliver siddende, og lugten er tilbage efter en dag eller to, fordi intet blev rent.
+    (sv: Det sköljer bara över, beläggningen sitter kvar, och lukten är tillbaka efter en dag eller två, eftersom inget blev rent.)
+23. Du skyllede bare vand hen over det.
+    (sv: Du spolade bara vatten över det.)
+24. Og har du kæledyr, er det ærligt talt ti gange værre, fordi hundehår går i stykker i vasken.
+    (sv: Och har du husdjur är det ärligt talat tio gånger värre, eftersom hundhår går sönder i tvätten.)
+25. Olierne løsner sig, skællet slipper, og det hele trækkes ind, hvor vandet står.
+    (sv: Oljorna lossnar, mjället släpper, och allt dras in där vattnet står.)
+26. Det fodrer i princippet belægningen.
+    (sv: Det göder i princip beläggningen.)
+27. Derfor er de værste maskiner, jeg åbner, altid hos kæledyrsejere.
+    (sv: Därför finns de värsta maskinerna jag öppnar alltid hos husdjursägare.)
+28. En kvinde græd faktisk, fordi datterens skoletøj lugtede så slemt, at et andet barn sagde noget.
+    (sv: En kvinna grät faktiskt, eftersom dotterns skolkläder luktade så illa att ett annat barn sa något.)
+29. Og hun havde gjort alt rigtigt.
+    (sv: Och hon hade gjort allt rätt.)
+30. Eddike, blegemiddel, rengøringsprogram, alt.
+    (sv: Ättika, blekmedel, rengöringsprogram, allt.)
+31. Længe føltes det, som om jeg svigtede folk, for jeg vidste, hvad der forårsagede lugten.
+    (sv: Länge kändes det som att jag svek folk, för jag visste vad som orsakade lukten.)
+32. Jeg kunne vise dem det, men jeg havde ikke noget, der løste det.
+    (sv: Jag kunde visa dem, men jag hade inget som löste det.)
+33. For omkring et år siden ringede en kunde tilbage.
+    (sv: För ungefär ett år sedan ringde en kund tillbaka.)
+34. En kvinde med to store hunde og en frontbetjent maskine, der knap var tre år gammel.
+    (sv: En kvinna med två stora hundar och en frontmatad maskin som knappt var tre år gammal.)
+35. Jeg havde vist hende belægningen, givet de sædvanlige råd og tænkt, at det var det.
+    (sv: Jag hade visat henne beläggningen, gett de vanliga råden och tänkt att det var det.)
+36. Men da hun ringede, klagede hun ikke.
+    (sv: Men när hon ringde klagade hon inte.)
+37. Hun sagde, at lugten var helt væk.
+    (sv: Hon sa att lukten var helt borta.)
+38. Hun havde fundet en tablet på nettet, som med enzymer nedbryder belægningen derinde i stedet for bare at skylle hen over den som alt andet.
+    (sv: Hon hade hittat en tablett på nätet som med enzymer bryter ner beläggningen där inne, i stället för att bara skölja över den som allt annat.)
+39. Jeg var lidt skeptisk.
+    (sv: Jag var lite skeptisk.)
+40. Jeg har set hver eneste maskinrens i butikkerne, og de fleste gør det samme som rengøringsprogrammet.
+    (sv: Jag har sett varenda maskinrengöring i butikerna, och de flesta gör samma sak som rengöringsprogrammet.)
+41. Men hun sagde, at selv hundetæpperne kom ud og lugtede af ingenting.
+    (sv: Men hon sa att till och med hundfiltarna kom ut och luktade ingenting.)
+42. Jeg læste op på det, og videnskaben bag overraskede mig faktisk.
+    (sv: Jag läste på, och vetenskapen bakom överraskade mig faktiskt.)
+43. Tabletten når mellemrummene mellem tromlen og kabinettet, præcis der, hvor jeg har vist folk i årevis, og den er lavet til at nedbryde belægningen.
+    (sv: Tabletten når utrymmena mellan trumman och höljet, precis där jag har visat folk i åratal, och den är gjord för att bryta ner beläggningen.)
+44. Da jeg forstod, hvordan den virkede, begyndte jeg at anbefale den til hver eneste kunde.
+    (sv: När jag förstod hur den fungerade började jag rekommendera den till varje kund.)
+45. Det var for omkring et år siden, i øvrigt.
+    (sv: Det var för ungefär ett år sedan, förresten.)
+46. Siden da har jeg anbefalet den til sikkert over to hundrede kunder, måske flere.
+    (sv: Sedan dess har jag rekommenderat den till säkert över tvåhundra kunder, kanske fler.)
+47. Jeg har mistet tællingen på, hvor mange der har skrevet en uge senere og sagt præcis det samme.
+    (sv: Jag har tappat räkningen på hur många som hört av sig en vecka senare och sagt exakt samma sak.)
+48. Lugten er væk. Ikke lidt bedre. Ikke næsten væk. Væk.
+    (sv: Lukten är borta. Inte lite bättre. Inte nästan borta. Borta.)
+49. Produktet hedder Maskinren fra Nordvask, en lille virksomhed, der selv har hund og kun laver netop det her produkt.
+    (sv: Produkten heter Maskinrent från Norrtvätt, ett litet företag som själva har hund och bara gör just den här produkten.)
+50. Hvis dit tøj lugter indelukket, og du allerede har prøvet eddike, natron og rengøringsprogrammet, ved du, at intet af det hjælper.
+    (sv: Om dina kläder luktar unket och du redan testat ättika, bikarbonat och rengöringsprogrammet, vet du att inget av det hjälper.)
+51. Det her gør.
+    (sv: Det här gör det.)
+52. Lige nu sparer du op til halvtreds procent, med tredive dages pengene-tilbage-garanti.
+    (sv: Just nu sparar du upp till femtio procent, med trettio dagars pengarna-tillbaka-garanti.)
+53. Klik på linket nedenfor, og se selv.
+    (sv: Klicka på länken nedan och se själv.)

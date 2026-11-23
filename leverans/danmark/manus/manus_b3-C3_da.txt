@@ -1,0 +1,128 @@
+Nordvask Maskinren – b3 C3 – reparatören och gummilisten (dansk version)
+Röst: "dansk man 40-50 år", ElevenLabs eleven_v4, språkkod da. Samma bild, innehåll och erbjudande som den svenska vinnaren.
+Varje mening: dansk text, och under den den svenska meningen den ersätter.
+
+ 1. Lugter dit tøj indelukket, gemmer det her sig sandsynligvis i din maskine.
+    (sv: Luktar kläderna unket, gömmer sig det här troligen i din maskin.)
+ 2. Efter nitten år som reparatør vil jeg vise dig fem-minutters-tricket fra NASA, der fjerner det.
+    (sv: Efter nitton år som reparatör ska jag visa dig femminuterstricket från NASA som får bort det.)
+ 3. Se lige det her.
+    (sv: Titta på det här.)
+ 4. Det er ikke snavs, og det er ikke sæbe.
+    (sv: Det är inte smuts, och det är inte tvål.)
+ 5. Det er dyrehår, fedt og skæl, der er pakket ind bag tromlen i månedsvis.
+    (sv: Det är djurhår, fett och mjäll som packats in bakom trumman i månader.)
+ 6. Det var det, der gav lugten af våd hund, som hun aldrig blev af med.
+    (sv: Det var det som gav lukten av blöt hund som hon aldrig blev av med.)
+ 7. Hver vask skyllede det lige tilbage i tøjet, med bakterier og skimmel.
+    (sv: Varje tvätt sköljde det rakt tillbaka in i kläderna, med bakterier och mögel.)
+ 8. Jeg vil vise dig det samme trick, som jeg viste hende.
+    (sv: Jag ska visa dig samma trick som jag visade henne.)
+ 9. I flere måneder var alt kommet ud indelukket, håndklæder, t-shirts, selv undertøj.
+    (sv: I flera månader hade allt kommit ut unket, handdukar, t-shirts, till och med underkläder.)
+10. Det værste var aldrig at vide, om andre kunne lugte det, når hun krammede dem eller sad ved siden af nogen på arbejdet.
+    (sv: Det värsta var att aldrig veta om andra kände lukten när hon kramade dem, eller satt bredvid någon på jobbet.)
+11. Hun skiftede vaskemiddel to gange.
+    (sv: Hon bytte tvättmedel två gånger.)
+12. Så gav hun hunden skylden, for hvad ellers, når huset lugter af våd pels?
+    (sv: Sen skyllde hon på hunden, för vad annars när huset luktar blöt päls?)
+13. Hun prøvede ekstra skylning, eddike og klor.
+    (sv: Hon testade extra sköljning, ättika och klorin.)
+14. Hun kørte endda en maskinrens hver måned.
+    (sv: Hon körde till och med en maskinrengöring varje månad.)
+15. Lugten forsvandt en dag eller to og kom så tilbage.
+    (sv: Lukten försvann en dag eller två och kom sen tillbaka.)
+16. Og jeg hører den samme historie i næsten hvert hjem med kæledyr.
+    (sv: Och jag hör samma historia i nästan varje hem med husdjur.)
+17. Jeg spurgte først, om hun havde kæledyr.
+    (sv: Jag frågade först om hon hade husdjur.)
+18. Ja, en hund.
+    (sv: Ja, en hund.)
+19. Så langkoger du tøjet i skimmel.
+    (sv: Då långkokar du kläderna i mögel.)
+20. Hun troede, jeg var skør.
+    (sv: Hon trodde att jag var galen.)
+21. Så jeg trak gummilisten til side og viste, hvad der gemte sig nedenunder.
+    (sv: Så jag drog undan gummilisten och visade vad som gömde sig under.)
+22. Et tykt lag slimet, gråbrun belægning.
+    (sv: Ett tjockt lager slemmig, gråbrun beläggning.)
+23. Vaskemiddel, skyllemiddel og klumper af vådt hundehår.
+    (sv: Tvättmedel, sköljmedel och klumpar av blött hundhår.)
+24. Hun blev forfærdet, men jeg var ikke overrasket, for jeg ser det hver dag.
+    (sv: Hon blev förfärad, men jag var inte förvånad, för jag ser det varje dag.)
+25. Så måtte jeg fortælle hende sandheden: det var kun en tredjedel.
+    (sv: Sen fick jag säga sanningen: det var bara en tredjedel.)
+26. Resten sad dybere, bag tromlen, i slangerne og i pumpen helt nede i bunden.
+    (sv: Resten satt djupare, bakom trumman, i slangarna och i pumpen längst ner.)
+27. Steder, du aldrig når, uanset hvor hårdt du skrubber.
+    (sv: Ställen du aldrig når, hur hårt du än skrubbar.)
+28. Og i hjem med kæledyr er det altid værst, for dyrehårene binder sig til resterne, og laget bare vokser.
+    (sv: Och i hem med husdjur är det alltid värst, för djurhåren binder till resterna och lagret bara växer.)
+29. Så forklarede jeg, hvorfor intet havde virket.
+    (sv: Sen förklarade jag varför inget hade fungerat.)
+30. Eddike bliver så fortyndet i en hel vask, at den ikke trænger igennem noget som helst.
+    (sv: Ättika blir så utspädd i en hel tvätt att den inte tar sig igenom någonting.)
+31. Overfladen lugter bedre en dag, men laget sidder der stadig.
+    (sv: Ytan luktar bättre en dag, men lagret sitter kvar.)
+32. Og hver eneste maskinrens i butikken bygger på det samme.
+    (sv: Och varenda maskinrengöring i butiken bygger på samma sak.)
+33. Iltblegemiddel.
+    (sv: Syreblekmedel.)
+34. Et kemikalie fra starten af nittenhundredetallet, som de store mærker bruger, fordi det er billigst.
+    (sv: En kemikalie från början av nittonhundratalet, som de stora märkena använder för att den är billigast.)
+35. Det klarer sæbe og kalk, men ikke dyrehår eller fedtet fra skæl og hudfedt.
+    (sv: Den klarar tvål och kalk, men inte djurhår eller fettet från mjäll och hudfett.)
+36. Det rengør bare rundt om.
+    (sv: Den rengör bara runt omkring.)
+37. Så hver måned skrubbede hun overfladen og lod kilden være urørt.
+    (sv: Så varje månad skrubbade hon ytan och lämnade källan orörd.)
+38. Så tog jeg en lille tablet frem, smed den i tromlen og kørte et varmt program.
+    (sv: Sen tog jag fram en liten tablett, släppte i den i trumman och körde ett varmt program.)
+39. Den skummede op i hele maskinen, bag tromlen, i gummilisten og ned i afløbet.
+    (sv: Den fräste upp skum i hela maskinen, bakom trumman, i gummilisten och ner i avloppet.)
+40. De fleste prøver at dræbe bakterier eller skylle rester væk, men det behandler kun symptomerne.
+    (sv: De flesta försöker döda bakterier eller skölja bort rester, men det behandlar bara symptomen.)
+41. Det eneste, der rengør kilden, er enzymer, den samme slags som NASA udviklede til lukkede vandsystemer.
+    (sv: Det enda som rengör källan är enzymer, samma sort som NASA tog fram för slutna vattensystem.)
+42. Og det er den eneste tablet, jeg har fundet med alle tre, der betyder noget.
+    (sv: Och det är den enda tablett jag har hittat med alla tre som spelar roll.)
+43. Alfa-amylase opløser hinden af vaskemiddel og skyllemiddel, så det nedenunder kommer frem.
+    (sv: Alfa-amylas löser upp hinnan av tvätt- och sköljmedel, så att det under kommer fram.)
+44. Protease nedbryder keratinen i dyrehårene, så de skylles ud i stedet for at blive i maskinen.
+    (sv: Proteas bryter ner keratinet i djurhåren, så att de spolas ut i stället för att stanna i maskinen.)
+45. Og lipase fjerner fedtlaget fra skæl, som lugtbakterierne lever af.
+    (sv: Och lipas tar bort fettlagret från mjäll som luktbakterierna lever av.)
+46. Uden fedt får lugten ingen næring.
+    (sv: Utan fett får lukten ingen näring.)
+47. Da programmet var færdigt, var det vandet, jeg viste i starten.
+    (sv: När programmet var klart var det vattnet jag visade i början.)
+48. Iltblegemiddel kunne have kørt i maskinen i et år uden at få det ud.
+    (sv: Syreblekmedel hade kunnat gå i maskinen i ett år utan att få ut det.)
+49. Én enkelt enzymvask klarede det.
+    (sv: En enda enzymtvätt fixade det.)
+50. Næste morgen ringede hun til mig, næsten chokeret.
+    (sv: Nästa morgon ringde hon mig, nästan chockad.)
+51. Ingen lugt overhovedet.
+    (sv: Ingen lukt alls.)
+52. Ingen lavendel, ingen havbrise, bare ingenting.
+    (sv: Ingen lavendel, ingen havsbris, bara ingenting.)
+53. Tromlen, gummilisten, selv de dele, hun aldrig tænker på, alt friskt igen.
+    (sv: Trumman, gummilisten, till och med delarna hon aldrig tänker på, allt fräscht igen.)
+54. Hun kørte hundens tæppe i næste vask, borede ansigtet ned i det og sagde, at det endelig var rent.
+    (sv: Hon körde hundens filt i nästa tvätt, borrade ner ansiktet i den och sa att den äntligen var ren.)
+55. Jeg sagde, hun skulle bruge én tablet om måneden, og det er den rutine, jeg giver alle hjem med kæledyr.
+    (sv: Jag sa åt henne att köra en tablett i månaden, och det är rutinen jag ger alla hem med husdjur.)
+56. Maskinen lugter af ingenting, håndklæderne holder sig friske i flere dage, og dyrehårene holder op med at sidde fast.
+    (sv: Maskinen luktar ingenting, handdukarna håller sig fräscha i flera dagar, och djurhåren slutar fastna.)
+57. Og den er skånsom mod alle dele i maskinen.
+    (sv: Och den är skonsam mot alla delar i maskinen.)
+58. Intet blegemiddel og ingen stærke kemikalier, bare enzymer, der gør arbejdet, og derfor stoler jeg på den.
+    (sv: Inget blekmedel och inga starka kemikalier, bara enzymer som gör jobbet, och det är därför jag litar på den.)
+59. Den hedder Maskinren, fra Nordvask.
+    (sv: Den heter Maskinrent, från svenska Norrtvätt.)
+60. Tre enzymer, lavet til hjem med kæledyr.
+    (sv: Tre enzymer, gjorda för hem med husdjur.)
+61. Over femten tusind kunder har allerede skiftet.
+    (sv: Över femton tusen kunder har redan bytt.)
+62. Lige nu får du fire pakker til prisen for to, fri fragt og tredive dages pengene-tilbage-garanti.
+    (sv: Just nu får du fyra paket för priset av två, fri frakt och trettio dagars pengarna-tillbaka-garanti.)

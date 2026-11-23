@@ -35,6 +35,12 @@
 - Authority is a requirement in every ad (Spencer's rule, confirmed by the user on 2026-11-04). Every
   brief names who says it and what proves it. The Uproot grandpa is only an example of authority; don't
   fixate on it.
+- **Exception: Uproot ads made into Swedish 1:1** (user, 2026-11-23). These are not iterations. Copy the Uproot video
+  exactly: same footage, cuts, structure, story and tone. Add authority only if the original has it.
+  - Keep every clip, including clips where Uproot's box shows.
+  - Replace the ending only when it is a long still of their box and offer: put our offer image there.
+  - Don't add an offer image or closing still that the original lacks.
+  - Upload sources as the next free GitHub release tag (`video48`, `video49` …).
 - To remove watermarks, logos or burned-in text, or to restore or upscale images and video with Vmake, use the
   `vmake-skill` skill in `.claude/skills/vmake-skill/`. It is a paid API, so ask before uploading. Its keys are
   `MT_AK`/`MT_SK`, in environment variables or the gitignored `scripts/.env`.

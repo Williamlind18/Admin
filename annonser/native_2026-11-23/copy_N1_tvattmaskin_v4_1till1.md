@@ -10,7 +10,18 @@ Användaren låter sin advokat granska texten innan den publiceras. Advokaten b�
 - att Dr. Beckmann nämns vid namn
 - att påståendena om andra produkter kan beläggas
 
----
+## Rubrik
+**Därför luktar tvätten trots ättikan** (rekommenderad)
+
+Alternativ:
+- Lukten sitter där du aldrig når
+- Har du husdjur? Läs innan du köper ättika
+- Det dolda stället i maskinen som luktar
+- Reparatören: ättikan når aldrig dit
+
+Beskrivning: Vad som faktiskt växer bakom trumman i hem med husdjur.
+
+## Primary text
 
 VARNING till dig med husdjur som rengör tvättmaskinen regelbundet:
 

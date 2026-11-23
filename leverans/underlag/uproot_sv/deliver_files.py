@@ -22,12 +22,17 @@ w = json.load(open(f'{S}/work/{v}/words_global.json')); w = w['words'] if isinst
 sv = [l.strip() for l in open(f'{S}/manus/{v}.txt', encoding='utf-8') if l.strip()]
 starts = {}
 for x in w: starts.setdefault(x['sent'], x['start'])
-ut = open(f'{S}/manus/user_transcripts.txt', encoding='utf-8').read()
-key = {'v48': 'video48', 'v49': 'video49', 'v50': 'video50'}[v]
-seg = ut[ut.index(key + ' manus'):]
-nxt = [ut.index(k + ' manus') for k in ('video49', 'video50') if (k + ' manus') in ut and ut.index(k + ' manus') > ut.index(key + ' manus')]
-seg = seg[:min(nxt) - ut.index(key + ' manus')] if nxt else seg
-lines = [l.strip() for l in seg.split('\n') if l.strip() and l.strip() not in ('Ask AI', 'Copy')][1:]
+key = 'video' + v[1:]
+if os.path.exists(f'{S}/manus/user_transcript_{v}.txt'):
+    # one transcript per file: everything from the first mm:ss line on
+    lines = [l.strip() for l in open(f'{S}/manus/user_transcript_{v}.txt', encoding='utf-8') if l.strip() and l.strip() not in ('Ask AI', 'Copy')]
+    lines = lines[next(i for i, l in enumerate(lines) if re.fullmatch(r'\d\d:\d\d', l)):]
+else:
+    ut = open(f'{S}/manus/user_transcripts.txt', encoding='utf-8').read()
+    seg = ut[ut.index(key + ' manus'):]
+    nxt = [ut.index(k + ' manus') for k in ('video49', 'video50') if (k + ' manus') in ut and ut.index(k + ' manus') > ut.index(key + ' manus')]
+    seg = seg[:min(nxt) - ut.index(key + ' manus')] if nxt else seg
+    lines = [l.strip() for l in seg.split('\n') if l.strip() and l.strip() not in ('Ask AI', 'Copy')][1:]
 en = []
 for l in lines:
     if re.fullmatch(r'\d\d:\d\d', l): en.append([l, ''])

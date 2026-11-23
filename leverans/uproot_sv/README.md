@@ -47,7 +47,7 @@ engelska original under.
     norrtvatt.se, ordagrant (bara emojis borttagna).
   - Meningen om "the same people behind those famous pet hair removal tools" är borttagen; en tablett i månaden i
     stället för varannan vecka.
-  - Texten togs bort med Vmake (SKM0002) och två LaMa-pass för de vita rester Vmake lämnade.
+  - Texten togs bort med Vmake (SKM0002) och tre LaMa-pass för de vita kanter och streck Vmake lämnade (`vmake_remnants.py`, `vmake_lines.py`, `vmake_bars3.py`).
   - Vår slutbild i 4:5.
 
 ## Att tänka på

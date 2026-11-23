@@ -330,6 +330,13 @@ defaults to cut_off.
   find the leftovers where the source had a pill (`vmake_remnants.py`, `vmake_bars.py`, `vmake_lines.py` in
   `leverans/underlag/uproot_sv/`) and LaMa them, and check a few frames by eye after each pass. Vmake also blurs
   burned-in titles into a grey smear, so redraw titles over a LaMa'd area, not over Vmake's smear.
+  - video56 needed three LaMa passes: the remnants, then the lines (2,490 frames), then `vmake_bars3.py`. After pass 2,
+    `vmake_lines.py` still found bars in about 130 frames, because the masks covered only part of each bar. Pass 3 masks
+    a box centred on the caption, past the far end of the detected line, on the frames before and after too. What the
+    detector still finds after that is packaging text and drum edges.
+  - A full LaMa pass over a 4:45 video writes about 160 MB and takes 75 minutes. Check free disk first (`df -h /`):
+    the session allowance ran out at the end of a pass, and the mp4 without its index could not be used, so the pass
+    was lost. Delete delivered intermediates (`*_p1.mp4`, old renders, `~/.cache/pip`) before starting.
 - **`lama_inpaint.py` needs sides that are multiples of 8.** 720x900 crashed at the bottom edge; the script now pads by
   reflection.
 - **Caption ASS for a 4:5 video:** set `PlayResY` to the real height (900), or libass scales every caption down.

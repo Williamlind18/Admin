@@ -155,6 +155,32 @@ enzymes) is the same in all of them unless noted. **Box** is filled in after lab
   replaced with Maskinrent pack shots from the shop, old captions removed, quiet music bed.
 - Box: ? (launch as one ad set with the three hooks). Learning: –
 
+## B13–B15 – Uproot video48, video49, video50 made 1:1 in Swedish (2026-11-23)
+New Uproot sources, no parent, made 1:1 per CLAUDE.md (same footage, cuts, story, tone and length; authority only
+where the original has it). Files in `leverans/uproot_sv/` on `claude/funny-rubin-truuco`: `Maskinrent videoNN sv.mp4`
++ .srt, scripts in `manus/` (Swedish with start times, Uproot's English below). Numbers follow the source tags; other
+sessions on 2026-11-23 also used "B13" for video51, video54 and video55, so renumber those by tag (video51 → B16 …).
+- **B13 – video48, the sale (0:49).** Hook: "Husdjursägarnas högst rankade maskinrengörare har rea: köp två, få två.
+  Det varar inte länge." Banner over the first 6 s: "Köp 2 få 2 GRATIS – REA / ENDAST 21 kr/rengöring / SLUTAR
+  SNART!" (no captions under it, like the original). Angle: shelf tablets are oxygen bleach; three enzymes take pet
+  hair, mold and odour. Authority: "högst rankade", NASA-godkända enzymer, one pet owner's line. Awareness: product
+  aware (offer first). Urgency: the sale ends soon. Ends on footage (no end still in the original).
+- **B14 – video49, "is it safe for my machine?" (1:48).** Hook: "Det första jag undrade innan jag testade
+  enzymtabletter för tvättmaskinen var om de skulle skada min maskin." Angle: objection handling (every machine type,
+  nothing abrasive or corrosive, safe for septic systems, no bleach on the seals). Avatar: pet owner with a front
+  loader, septic tank and two big dogs. Authority: her own two months of use; badges "Inget slipande" / "INGET
+  FRÄTANDE". Awareness: solution aware. Offer graphic rebuilt in Swedish: KÖP 2 FÅ 2 GRATIS, FRI FRAKT truck badge,
+  "30 dagars pengarna tillbaka". Uproot's end still replaced by our closing card.
+- **B15 – video50, the two labels (1:58).** Hook: "Här är en vanlig rengörares etikett. Här är Maskinrents. Döm
+  själv." Angle: oxygen bleach + fillers + perfume vs three enzymes, one job each. Authority: the ingredient lists
+  themselves. Awareness: solution aware. Mechanism shown with SYRE-/BLEKMEDEL and AMYLAS/PROTEAS/LIPAS titles in
+  Swedish. Urgency: köp två få två, fri frakt, 50 %, 30 dagar, "innan de tar slut". Uproot's end still replaced by
+  our closing card; the last caption runs over it in a free band.
+- Shared changes: Uproot → Maskinrent/Norrtvätt, no competitor names spoken (their boxes stay in the footage),
+  Pro/Ultra removed, 60 → 30 days, ElevenLabs eleven_v4 paragraph takes, new ElevenLabs music beds (flow "Uproot → SV:
+  video48–50"), white pill captions like Uproot's.
+- Box: ? Learning: –
+
 ## Live ads → files and sources (found 2026-11-04 by matching video length to the second)
 The user names live ads `ny batch N – Cn`. Several deliveries live on other branches of this repo.
 

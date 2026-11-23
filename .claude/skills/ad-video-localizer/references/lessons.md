@@ -306,3 +306,22 @@ defaults to cut_off.
   - Seek to `(frame - 0.5) / fps`. Seeking to `frame / fps` lands one frame late in every segment.
 - **Music beds made with ElevenLabs music** are kept in the Swedish project's flow, e.g. "Video 39 – musikbädd" in
   "Norrtvätt video 39 – svensk voiceover". Check the flows (`creative_list_flows`) before trying to separate the music.
+
+## Uproot ads made 1:1 in Swedish (video48-50, November 2026)
+- **`ffmpeg -ss T -i … -f rawvideo` can repeat the first frame.** With video49 (30 fps) the stream started with two
+  copies of frame N, so every later frame was labelled one too high; video50 (23.976 fps) did not. Add
+  `-fps_mode passthrough` whenever frames read after a seek are matched to frame numbers, and check one frame against a
+  full decode. One frame is ~50 px during a slide-in, which left English letters next to the Swedish ones.
+- **Caption detectors hit packaging.** The white-box/centred-text detectors also marked "VALUE PACK", "WASHING
+  MACHINE" and similar box text, and LaMa smeared it. List every mask run outside the caption band(s), look at one
+  frame of each, keep the real ones (a second caption height, editorial labels) and re-inpaint the rest from the
+  source with only the caption masks (`redo_ranges.py` in `leverans/underlag/uproot_sv/`).
+- **Do the 1:1 copy for the overlays too.** Where the original shows a banner or an offer graphic instead of
+  captions, hide our captions there (`hide_caps.py`). Rebuild graphics in Swedish with the same timing and motion:
+  - text that slides or bobs: track each part separately (icon, text and ribbon of one badge moved differently);
+  - text on a flat ribbon or badge: Telea-inpaint only the letter pixels found by local contrast
+    (median-blur background minus pixel), which survives the glare pulse a fixed threshold misses;
+  - a motion graphic over blurred footage: inpaint the bright/blue graphic pixels, blur the fill, draw the new
+    layers frame by frame; inside a wipe, use the convex hull of the revealed region to splice ours in.
+- **End stills:** Uproot's long product/offer still is replaced by our closing card (`endcard_sv.py`), with the caption
+  band left free when the voice still talks over it.

@@ -69,6 +69,9 @@ source videos are GitHub releases on this repo, named by tag.
 | B10 | Maskinrent 10, technician | video44 | See what came out after one wash | Technician teardown | Problem |
 | B11 | C2 in "ny batch 4", monthly cleaner | video22 | Don't scrap it; shelf cleaners can't reach | Technician teardown | Solution |
 | B12 | I1-B11, the owner tells it (3 hooks) | video22 | Same, told by the older male owner | Technician (3rd person) + teardown | Solution |
+| B13 | Uproot video48 1:1, the sale | video48 | Offer first; shelf tablets are only oxygen bleach | "Highest rated", NASA enzymes | Product |
+| B14 | Uproot video49 1:1, safe for my machine? | video49 | Objection: safe for machine and septic | Own use, 2 months | Solution |
+| B15 | Uproot video50 1:1, the two labels | video50 | Read the label: bleach vs three enzymes | The ingredient lists | Solution |
 
 Norwegian versions of B03-B06 exist (`nordvask_maskinren*_no.mp4`). Name them `B03-NO` and so on.
 Per CLAUDE.md, only Maskinrent 3-6 get Norwegian versions unless the user names others.

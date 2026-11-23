@@ -149,3 +149,16 @@
 - For a long story (6 min) the voice was ~4 % longer than the picture in the first two minutes and the
   offer at the end. Slowing those stretches of footage by 7-8 % (repeated frames, not blended ones, which
   ghost on moving shots) and the middle by 3 % kept the voice at x0.95-1.05 with every anchor hit.
+
+## 1:1 versions of Uproot ads (video53, B13, Nov 2026)
+- Plan on the original's sentence times first (`plan_on_reference.py` on main) to see how far the Swedish is from each
+  slot. Where Swedish lines are shorter, pauses grow to 0.5-1.1 s before anchors; fix it with slightly fuller wording
+  that is closer to the original ("faktiskt", "samma formel", "i några dagar, och sen"), not with slower speech. Re-read
+  only the paragraph takes that changed, add `isoNN.mp3` word references for the changed sentences, then plan with
+  `plan_timeline.py` anchors on the key cards and `--max-gap 0.4`.
+- Animated text cards (enzyme cards that slide in and flip) can be relabelled by multi-scale template matching of each
+  English text block per frame, a median over ±2 frames, and a card-coloured box with black Swedish text. For flips,
+  also try horizontally squeezed templates near the last position, and draw the text squeezed to the box width.
+- Badges that pop in and fade or wipe out: keep the white box at the badge's fixed spot, cover only the rows the badge
+  still has (wipe), or fade the box over a clean plate taken just after the badge is gone (fade).
+- A data-sheet highlight is easiest by colour: fill each yellow component and write the Swedish word in a document font.

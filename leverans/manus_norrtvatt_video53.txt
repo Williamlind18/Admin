@@ -1,0 +1,53 @@
+Norrtvätt Maskinrent – video53 (svenska), B13: Uproot-annons "Tre skäl" gjord 1:1
+Källa: GitHub-release video53 (Uproot Clean: "Three reasons every washer cleaner at Target stops working"), 1:39.
+Samma bild, klipp, struktur, berättelse, ton och längd som originalet. 34 meningar som originalet, i samma ordning och med samma
+  påståenden; varje svensk mening ligger där originalets mening ligger i bilden (i snitt 0,3 s ifrån; Skäl-korten och enzymkorten på bildrutan).
+Röst: ElevenLabs eleven_v4, language_code sv, voice ID LzJuwbGODHbc1VvzbMrf ("kvinna 30-40 år skånsk - SE"), fem stycketagningar
+  (meningarna 1–8, 9–16, 17–22, 23–28, 29–34), atempo x0,95–1,04, pauser 0,25–0,4 s.
+Musik: ny instrumental ElevenLabs Music v2.5 i originalets stil (lätt pop, 144 BPM, D-dur), ca 19 dB under rösten.
+Utbytt: Uproot -> "Maskinrent från Norrtvätt", "a small brand out of Florida" -> "ett litet svenskt företag", "at Target" -> "i butiken",
+  "get the Ultra" -> "ta den här" (ingen Ultra-variant), erbjudandet -> köp två, få två, plus fri frakt. Inga konkurrenter nämns.
+Bild: alla klipp behålls (även Uproots kartong och butikshyllorna med Affresh, OxiClean och Tide). De gamla undertexterna är borttagna och
+  ersatta med svenska på samma plats (1–3 ord, Montserrat ExtraBold; överst vid 1:10–1:16 som i originalet).
+  Svensk text i bild: "Skäl 1/2/3" på de blå korten, "Natriumperkarbonat" i datablads-markeringen, enzymkorten (ENZYM AVSLÖJAS,
+  ALFA-AMYLAS / Löser upp tvättmedelshinnan, PROTEAS / Bryter ner keratin i djurhår, LIPAS / Tar bort fettet som bakterierna lever av),
+  vita rutor över märkena: KÖP 2 FÅ 2 + FRI FRAKT och 30 DAGARS PENGARNA TILLBAKA.
+  Slutbilden (Uproot-logga, kartong, LIMITED STOCK) är bytt mot vår i samma stil: NORRTVÄTT-loggan, Maskinrent-kartongen,
+  KÖP 2 FÅ 2 + FRI FRAKT, 4,8/5 och 15 000+ nöjda kunder, 30 dagars pengarna tillbaka och norrtvatt.se.
+Obs (taget upp med användaren): "Ingen parfym" och personliga påståenden ("två hundar ... två månader") med AI-röst.
+
+SVENSKT MANUS (start - slut i videon | originalets start | original)
+01  0:00.13-0:03.89  |0:00.13|  Tre skäl till att maskinrengörare i butiken slutar funka.  (Three reasons every washer cleaner at Target stops working,)
+02  0:04.29-0:05.92  |0:03.00|  Och den som faktiskt funkar.  (and the one that actually does.)
+03  0:06.25-0:07.11  |0:06.05|  Skäl ett.  (Reason one.)
+04  0:07.51-0:11.54  |0:06.88|  Har du husdjur bygger varenda tablett på den hyllan på samma sak.  (If you have pets, every tablet on that aisle is built on the same thing.)
+05  0:11.95-0:13.77  |0:12.89|  Syrebaserat blekmedel.  (Oxygen bleach.)
+06  0:14.17-0:17.30  |0:14.01|  Olika kartonger, men samma aktiva ingrediens.  (Different boxes, same active ingredient.)
+07  0:17.70-0:21.90  |0:17.30|  Så när en slutade fungera för mig hjälpte det inte ett dugg att byta märke.  (So when one stopped working for me, switching brands didn't fix anything.)
+08  0:22.30-0:25.98  |0:22.60|  Jag köpte bara exakt samma formel, fast i en annan förpackning.  (I was just buying the same formula in different packaging.)
+09  0:26.30-0:27.20  |0:26.61|  Skäl två.  (Reason 2.)
+10  0:27.48-0:31.68  |0:27.81|  Syrebaserat blekmedel kan bara rengöra det som det kommer åt.  (Oxygen bleach can only clean what it can reach.)
+11  0:31.95-0:33.22  |0:32.11|  Det sköljer ytan.  (It rinses the surface.)
+12  0:33.49-0:36.75  |0:33.57|  Det kan inte bryta ner det som faktiskt orsakar lukten.  (It can't break down what's actually causing the smell.)
+13  0:37.00-0:41.01  |0:37.07|  Djurhår, mjäll och hudfett som byggs upp inne i din maskin.  (Pet hair, dander, and skin oils building up inside your machine.)
+14  0:41.26-0:44.68  |0:41.87|  Lukten försvinner i några dagar, och sen kommer den tillbaka.  (The smell goes away for a few days, then comes back.)
+15  0:44.93-0:45.92  |0:44.62|  Varje gång.  (Every time.)
+16  0:46.17-0:48.65  |0:45.83|  Eftersom själva källan aldrig rördes.  (Because the source was never touched.)
+17  0:48.90-0:49.87  |0:48.80|  Skäl tre.  (Reason 3.)
+18  0:50.13-0:53.21  |0:49.83|  För att bryta ner djurprotein behöver du enzymer.  (To break down pet protein, you need enzymes.)
+19  0:53.47-0:55.20  |0:54.13|  Specifika enzymer.  (Specific ones.)
+20  0:55.45-0:58.30  |0:55.55|  Alfa-amylas, som löser upp tvättmedelshinnan.  (Alpha-amylase, to dissolve the detergent film.)
+21  0:58.55-1:01.55  |0:58.59|  Proteas, som bryter ner keratinet i djurhår.  (Protease, to break down the keratin in pet hair.)
+22  1:01.80-1:05.25  |1:01.40|  Lipas, som tar bort fettet som bakterierna lever av.  (Lipase, to strip the grease that bacteria feed on.)
+23  1:05.50-1:08.01  |1:05.55|  Ingen tablett i butiken har alla tre.  (No tablet at Target has all three.)
+24  1:08.26-1:10.20  |1:08.22|  De flesta har inte en enda.  (Most don't have any.)
+25  1:10.45-1:13.11  |1:10.30|  Nu använder jag Maskinrent från Norrtvätt.  (What I use now is Uproot Ultra,)
+26  1:13.39-1:16.75  |1:12.64|  Ett litet svenskt företag som gjort den för hem med husdjur.  (a small brand out of Florida formulated specifically for pet households.)
+27  1:17.00-1:19.96  |1:16.85|  Alla tre enzymerna, en tablett, ett program.  (All three enzymes, one tablet, one cycle.)
+28  1:20.21-1:23.26  |1:20.28|  Ingen parfym, inget syrebaserat blekmedel.  (No fragrance, no oxygen bleach,)
+29  1:23.51-1:25.24  |1:22.78|  Två hundar, en tablett.  (two dogs, one tablet.)
+30  1:25.49-1:28.25  |1:24.90|  Lukten har inte kommit tillbaka på två månader.  (The smell has not come back in two months.)
+31  1:28.50-1:31.26  |1:28.12|  Har du flera hundar eller en som fäller, ta den här.  (If you have multiple dogs or heavy shedders, get the Ultra.)
+32  1:31.51-1:32.15  |1:31.74|  Den kör jag.  (That's what I use.)
+33  1:32.40-1:36.15  |1:32.62|  Just nu kör de köp två, få två, plus fri frakt.  (Right now, they're running a buy two, get two free, plus free shipping sale.)
+34  1:36.40-1:39.05  |1:36.30|  Klicka på länken nedanför medan lagret räcker.  (Click the link below to get yours now while they're still in stock.)

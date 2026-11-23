@@ -301,3 +301,24 @@ defaults to cut_off.
   ships without it). Price it before proposing anything: a 4:37 ad with the presenter on screen for
   238 s would have cost ~190 000 credits with Sync 3, and the user dropped it. Offer a 45-75 s cut
   instead.
+
+## A 1:1 Uproot ad with every sentence kept (video55, B13, voice `OvO33bxTqNfwQfoR6mVh`)
+- **Keeping every claim costs tempo.** The original speaks about 23 characters per second, and the
+  Swedish lines run longer. Keeping all 81 sentences, as the user asked, needed atempo about 1.14 on
+  average (max 1.20) to fit each sentence where its English one sits. Show that figure before the voice
+  is made, and let the user choose between cutting words or a faster voice.
+- **eleven_v4 with Swedish:** create the node with `creative_generate_speech` (estimate only), set
+  `{"language_code":"sv"}` and the voice ID with `creative_update_flow_nodes`, then run it with
+  `creative_run_flow_nodes`, at most 5 at a time.
+- **Never run `split_takes.py --gaps` without `--cuts`.** It overwrites the sentence clips with its own
+  cut points. Get the cut points with `espeak_cuts.py TAKE sent IDs --lang sv` and pass them with
+  `--cuts`.
+- **Even out the speed-ups:** `plan_on_reference.py` with the default `--mu` put 53 of 81 sentences at
+  `--tmax`. `--mu 300 --tmax 1.2` spread them evenly (mean 1.14).
+- **Pill-shaped caption boxes:** `ocr_captions.py` found nothing until `--round 0.5` was added: the side
+  check now samples inside the rounded corners. Tesseract may need `apt-get install tesseract-ocr`. When
+  OCR still misses sentences, use the user's timestamped script and interpolate each word's start with
+  difflib.
+- **Vmake SKM0002 on a long ad:** one run removed the captions from the whole 4:36 ad. A first run can
+  fail with `credit_required` (api_code 60002); tell the user and rerun only after they add credits. A
+  few faint lines stay where the boxes were, and the new captions at the same height cover most of them.

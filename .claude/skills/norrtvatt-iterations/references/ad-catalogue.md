@@ -155,6 +155,28 @@ enzymes) is the same in all of them unless noted. **Box** is filled in after lab
   replaced with Maskinrent pack shots from the shop, old captions removed, quiet music bed.
 - Box: ? (launch as one ad set with the three hooks). Learning: –
 
+## B13 – Uproot video55 1:1, the technician and the woman with three dogs (2026-11-23)
+- Files: `manus_video55_tekniker_sarah.txt`, `norrtvatt_video55_tekniker_sarah_sv.mp4` (+ .srt), on
+  branch `claude/ecstatic-thompson-it7k4c`. Source tag: video55. 4:36, 720x1280.
+- Made 1:1 to the user's brief of 2026-11-23: the same footage, cuts, story and length, and all 81
+  sentences in the same order. All claims kept at the user's request ("allt kan beläggas"), including
+  "En tablett varannan vecka".
+- Swaps: Uproot → "Maskinrent från Norrtvätt"; their offer → köp två, få två (4 paket för 999 kr, about
+  250 kr per pack), fri frakt, 30 dagars pengarna-tillbaka-garanti; their customer count → "Över
+  femtontusen kunder"; their US company → "ett litet svenskt företag"; competitors not named.
+- Hook: "Har du husdjur och unken tvätt, är det här som sitter i din maskin."
+- Angle: the smell lives in a living layer behind the drum, and one wash with the "NASA trick" gets it
+  out. Avatar: pet owners with musty laundry who worry that others can smell it.
+- Authority: a repairman with 19 years, a teardown before and after, and customer stories (the mother
+  with two German shepherds and a Great Dane, the daughter's blanket).
+- Awareness: problem aware. Emotion: disgust (the layer), shame, then relief.
+- Positioning: enzymes vs oxygen bleach ("en kemikalie från 1904"). Urgency: the offer.
+- Format: long-form teardown story with B-roll, the original's Uproot box shots kept.
+- Production: voice `OvO33bxTqNfwQfoR6mVh`, eleven_v4 sv, 11 paragraph takes split into sentences;
+  atempo mean about 1.14 (max 1.20), because every sentence was kept; captions removed with Vmake
+  SKM0002; the last still (their box and offer, from 272.77 s) replaced with our offer card; new music bed.
+- Box: ? Learning: –
+
 ## Live ads → files and sources (found 2026-11-04 by matching video length to the second)
 The user names live ads `ny batch N – Cn`. Several deliveries live on other branches of this repo.
 

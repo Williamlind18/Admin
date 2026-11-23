@@ -69,6 +69,9 @@ def main():
     ap.add_argument("--mode", choices=["cc", "bands"], default="cc",
                     help="cc: box = white connected component (default). bands: box = matching white rows above "
                          "and below the text; use it when the box touches white backgrounds or the text is large")
+    ap.add_argument("--round", type=float, default=0.0,
+                    help="pill-shaped (fully rounded) boxes: check the side columns this share of the box height in "
+                         "(0.5 for pills; Uproot's 720x1280 captions needed it)")
     a = ap.parse_args()
     os.makedirs(a.out_dir, exist_ok=True)
     info = probe(a.src); Wd, Hd = info["width"], info["height"]
@@ -103,7 +106,8 @@ def main():
             x, y, w, h, area = st[j]
             if hmin <= h <= hmax and w >= 40 and w <= 0.75 * Wd and area >= a.fill * w * h:
                 sub = (lab[y:y + h, x:x + w] == j)
-                if sub[1].mean() > 0.85 and sub[-2].mean() > 0.6 and sub[:, 1].mean() > 0.85 and sub[:, -2].mean() > 0.85:
+                sx = max(1, int(a.round * h))  # pill-shaped boxes: test the sides where the rounding ends
+                if sub[1].mean() > 0.85 and sub[-2].mean() > 0.6 and sub[:, sx].mean() > 0.85 and sub[:, -1 - sx].mean() > 0.85:
                     if best is None or area > best[4]: best = (int(x), int(y + Y0), int(w), int(h), int(area))
         if best:
             x, y, w, h, _ = best

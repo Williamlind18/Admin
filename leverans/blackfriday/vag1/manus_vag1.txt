@@ -1,0 +1,79 @@
+BF våg 1 – iterationer av tre BF-hjältar (2026-11-10)
+Metod (godkänd på testet b4 C2 H1): hooken skrivs om till en ny öppning som går rakt in i originalets berättelse,
+över originalets egna öppningsklipp (gamla texten borttagen), med originalmusiken under hela videon utan skarv.
+Berättelsen däremellan är oförändrad. Black Friday-slutet börjar med en mening som knyter an till hooken, sedan
+samma erbjudande som i hjälteversionen (en erbjudandebild, sedan originalklippen).
+Spencer: tre hooks per annons som leder med olika komponent – H1 brådska (Black Friday först), H2 begär/problem,
+H3 omedveten ("Visste du att"). CTA bygger alltid på Black Friday.
+
+======================================================================
+B4 C2 – teknikern som plockar isär maskinen (röst OvO33, eleven_v3, sv, [confident])
+Berättelsen fortsätter med: "Jag har lagat tvättmaskiner i nitton år och plockat isär över tusen. …"
+Slutet fortsätter med: "Bättre pris än så här får du inte. Fungerar den inte får du pengarna tillbaka inom
+trettio dagar, inga frågor. Klicka på länken och säkra Black Friday-priset medan det gäller."
+
+H1 (brådska) – bfv1_b4-C2_H1_sv.mp4
+  Öppning: Köp ingen maskinrengörare på Black Friday förrän du sett det här. Ägaren körde en varje månad, men
+           lukten kom ändå tillbaka. Jag fixade det på trettio sekunder.
+  Slut:    Så om du köper något till tvättmaskinen på Black Friday, gör det till den här: femtio procent rabatt
+           och fri frakt.
+
+H2 (begär: pengar) – bfv1_b4-C2_H2_sv.mp4
+  Öppning: Lägg inte dina Black Friday-pengar på en ny tvättmaskin. Ägaren av den här var på väg att göra det.
+           Jag fixade hennes gamla på trettio sekunder.
+  Slut:    Så lägg Black Friday-pengarna på den här i stället: femtio procent rabatt och fri frakt.
+
+H3 (omedveten) – bfv1_b4-C2_H3_sv.mp4
+  Öppning: Visste du att maskinrengöraren i hyllan inte biter på det som luktar? Ägaren körde en varje månad,
+           och lukten satt kvar. Jag fixade det på trettio sekunder.
+  Slut:    Så välj den som faktiskt biter, och just nu är det Black Friday: femtio procent rabatt och fri frakt.
+
+======================================================================
+B3.1 C8 – kunden som ville skrota en treårig maskin (röst OvO33, eleven_v3, utan språkkod som originalet)
+Berättelsen fortsätter med: "Jag har lagat tvättmaskiner i nitton år, över tusen stycken. Förra månaden bad
+en kund mig ta hennes och skrota den. …"
+Slutet fortsätter med: "Bättre pris än så här får du inte. Funkar den inte får du pengarna tillbaka inom trettio
+dagar. Innan du skyller på hunden, tvättmedlet eller maskinen: tänk på vad som satt bakom panelen. Klicka på
+länken nedan medan Black Friday pågår." (+ slutbilden)
+
+H1 (brådska) – bfv1_b3.1-C8_H1_sv.mp4
+  Öppning: Köp ingen ny tvättmaskin på Black Friday. Se först hur jag får en treårig maskin som ny igen.
+  Slut:    Så skippa den nya maskinen och ta den här på Black Friday: femtio procent rabatt och fri frakt.
+
+H2 (problem) – bfv1_b3.1-C8_H2_sv.mp4
+  Öppning: Luktar tvätten unket fast du testat allt? Se hur jag får en treårig maskin som ny igen.
+  Slut:    Har du testat allt annat, så testa den här på Black Friday: femtio procent rabatt och fri frakt.
+
+H3 (omedveten) – bfv1_b3.1-C8_H3_sv.mp4
+  Öppning: Visste du att en maskin med unken tvätt nästan aldrig är trasig? Se hur jag får den här som ny igen.
+  Slut:    Din maskin är troligen inte trasig, och just nu är det Black Friday: femtio procent rabatt och fri frakt.
+
+======================================================================
+B5 C2 – servicetekniker med över sextusen maskiner (röst OvO33, eleven_v3, sv)
+Berättelsen fortsätter med: "Jag åker runt i min servicebil, och nästan varje samtal jag får handlar om samma
+sak. Någons tvätt luktar unket. …"
+Slutet fortsätter med: "Bättre pris än så här får du inte. Klicka på länken nedan och se själv."
+
+H1 (brådska) – bfv1_b5-C2_H1_sv.mp4
+  Öppning: Köp inget mot tvättlukten på Black Friday förrän du sett det här. Jag har plockat isär över sextusen
+           tvättmaskiner, och jag vet varför den sitter kvar.
+  Slut:    Så om du köper något mot tvättlukten på Black Friday, gör det till den här: femtio procent rabatt och
+           fri frakt, med trettio dagars pengarna-tillbaka-garanti.
+
+H2 (problem + husdjur) – bfv1_b5-C2_H2_sv.mp4
+  Öppning: Har du husdjur och tvätt som luktar fast du testat allt? Jag har plockat isär över sextusen
+           tvättmaskiner, och jag vet exakt varför.
+  Slut:    Har du husdjur och unken tvätt är det här lösningen, och just nu är det Black Friday: femtio procent
+           rabatt och fri frakt, med trettio dagars pengarna-tillbaka-garanti.
+
+H3 (omedveten) – bfv1_b5-C2_H3_sv.mp4
+  Öppning: Visste du att lukten inte sitter i kläderna, utan i maskinen? Jag har plockat isär över sextusen
+           tvättmaskiner och ser det varje gång.
+  Slut:    Så rengör maskinen i stället för kläderna, och just nu är det Black Friday: femtio procent rabatt och
+           fri frakt, med trettio dagars pengarna-tillbaka-garanti.
+
+======================================================================
+Förslag på annonsnamn i Meta (ad set "BF – Iter våg 1"):
+  BFv1 | I-B4C2 | brådska först | tekniker | problem | berättelse | H1   (H2 = begär, H3 = omedveten)
+  BFv1 | I-C8   | brådska först | tekniker | problem | berättelse | H1
+  BFv1 | I-B5C2 | brådska först | servicetekniker | problem | berättelse | H1

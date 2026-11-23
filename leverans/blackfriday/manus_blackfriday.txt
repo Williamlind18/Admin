@@ -1,0 +1,54 @@
+Black Friday-versioner av vinnarna – nya slutrader
+
+Allt före erbjudandet är exakt som i originalet. Från tidpunkten nedan läses ett nytt slut in med annonsens egen röst och modell.
+Rullande banner genom hela videon: BLACK FRIDAY | 50% RABATT | FRI FRAKT.
+
+## b4 C2  (källa video22, original norrtvatt_video22_sv (claude/quirky-mayer-tsglxb)), nytt slut från 3:36
+Röst: OvO33bxTqNfwQfoR6mVh ("Äldre man 50-60 år - SE"), eleven_v3, language_code sv, en tagning för hela slutet.
+1. Just nu är det Black Friday: femtio procent rabatt och fri frakt.
+2. Bättre pris än så här får du inte.
+3. Fungerar den inte får du pengarna tillbaka inom trettio dagar, inga frågor.
+4. Klicka på länken och säkra Black Friday-priset medan det gäller.
+
+## b3.1 C8  (källa video16 (4:5), original norrtvatt_maskinrent7_sv (claude/zealous-dijkstra-nzvyw0)), nytt slut från 3:27
+Röst: OvO33bxTqNfwQfoR6mVh ("Äldre man 50-60 år - SE"), eleven_v3, en tagning för hela slutet.
+1. Just nu är det Black Friday: femtio procent rabatt och fri frakt.
+2. Bättre pris än så här får du inte.
+3. Funkar den inte får du pengarna tillbaka inom trettio dagar.
+4. Innan du skyller på hunden, tvättmedlet eller maskinen: tänk på vad som satt bakom panelen.
+5. Klicka på länken nedan medan Black Friday pågår.
+
+## b3 C3  (källa video11, original norrtvatt_video11_sv (claude/quirky-mayer-tsglxb)), nytt slut från 4:16
+Röst: OvO33bxTqNfwQfoR6mVh ("Äldre man 50-60 år - SE"), eleven_v3, en tagning för hela slutet.
+1. Just nu är det Black Friday: femtio procent rabatt, fri frakt och trettio dagars pengarna-tillbaka-garanti.
+2. Bättre pris än så här får du inte.
+3. Klicka på länken medan Black Friday pågår.
+
+## b1 C3  (källa video2, original norrtvatt_maskinrent_video2_sv (claude/inspiring-feynman-uo7z24)), nytt slut från 4:34
+Röst: rvkyA7fVC0tIPFdQWCLS ("Äldre man 1"), eleven_v4, language_code sv, en tagning för hela slutet.
+1. Just nu är det Black Friday, med femtio procent rabatt och fri frakt, från tjugo kronor per tablett.
+2. Bättre pris än så här får du inte.
+3. Och du har trettio dagars pengarna-tillbaka-garanti.
+4. Har du husdjur och unken tvätt, sluta med medel som aldrig var gjorda för biofilm.
+5. Klicka på länken medan Black Friday pågår.
+
+## b5 C2  (källa video38, original norrtvatt_vsl_reparator (claude/video-editing-15noqg)), nytt slut från 3:22
+Röst: OvO33bxTqNfwQfoR6mVh ("Äldre man 50-60 år - SE"), eleven_v3, language_code sv, en tagning för hela slutet.
+1. Just nu är det Black Friday: femtio procent rabatt och fri frakt, med trettio dagars pengarna-tillbaka-garanti.
+2. Bättre pris än så här får du inte.
+3. Klicka på länken nedan och se själv.
+
+## b5.1 C3  (källa video43, original norrtvatt_video43_tre_enzymer_sv (claude/focused-hamilton-930j6d)), nytt slut från 3:31
+Röst: LzJuwbGODHbc1VvzbMrf ("kvinna 30-40 år skånsk - SE"), eleven_v4, language_code sv, en tagning för hela slutet.
+1. Just nu är det Black Friday: femtio procent rabatt och fri frakt.
+2. Bättre pris än så här får du inte.
+3. Tabletten avkalkar också maskinen och passar alla tvättmaskiner.
+4. Du kan prova i trettio dagar, annars får du pengarna tillbaka.
+5. Klicka på länken innan Black Friday tar slut.
+
+## b5 C5  (källa video41, original norrtvatt_maskinrent9_enzymer_sv (denna branch)), nytt slut från 0:40
+Röst: UPl4IVQHmNGPUn6Qs7Uf ("äldre kvinna 60+ - SE"), eleven_v3, en tagning för hela slutet.
+1. Just nu är det Black Friday: femtio procent rabatt och fri frakt.
+2. Niohundranittionio kronor för fyra års ren tvätt.
+3. Bättre pris än så här får du inte.
+4. Klicka på länken och beställ nu.

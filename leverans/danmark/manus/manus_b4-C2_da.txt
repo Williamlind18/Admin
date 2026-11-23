@@ -1,0 +1,128 @@
+Nordvask Maskinren – b4 C2 – teknikern som plockar isär maskinen (dansk version)
+Röst: "dansk man 40-50 år", ElevenLabs eleven_v4, språkkod da. Samma bild, innehåll och erbjudande som den svenska vinnaren.
+Varje mening: dansk text, och under den den svenska meningen den ersätter.
+
+ 1. Ejeren brugte maskinrens hver måned, men den indelukkede lugt kom alligevel tilbage.
+    (sv: Ägaren körde maskinrengörare varje månad men den unkna lukten kom ändå tillbaka.)
+ 2. Jeg fiksede det på tredive sekunder, og nu køber hun aldrig den slags igen.
+    (sv: Jag fixade det på trettio sekunder och nu köper hon aldrig sånt igen.)
+ 3. Jeg har repareret vaskemaskiner i nitten år og skilt over tusind ad.
+    (sv: Jag har lagat tvättmaskiner i nitton år och plockat isär över tusen.)
+ 4. Sidste måned bad en kunde mig om at tage hendes og smide den ud.
+    (sv: Förra månaden bad en kund mig att ta hennes och slänga den.)
+ 5. Den var kun tre år gammel, men alt, hun vaskede, lugtede indelukket.
+    (sv: Den var bara tre år gammal men allt hon tvättade luktade unket.)
+ 6. Håndklæder, børnenes tøj og hundens tæpper.
+    (sv: Handdukar, barnens kläder och hundens filtar.)
+ 7. Hun havde prøvet alt på hylden og orkede ikke mere.
+    (sv: Hon hade testat allt i hyllan och orkade inte mer.)
+ 8. Hun ville købe en ny og glemme, at den her nogensinde havde eksisteret.
+    (sv: Hon ville köpa en ny och glömma att den här funnits.)
+ 9. I stedet for at skrotte den åbner jeg den og viser, hvorfor tøjet aldrig blev rent.
+    (sv: I stället för att skrota den öppnar jag den och visar varför tvätten aldrig blev ren.)
+10. Først tager vi panelet af.
+    (sv: Först tar vi av panelen.)
+11. Det her er ydertromlen, væggen bag tromlen.
+    (sv: Det här är yttertrumman, väggen bakom trumman.)
+12. Hver vask sender vand gennem sprækken mellem dem.
+    (sv: Varje tvätt skickar vatten genom glipan mellan dem.)
+13. Men overfladerne her kan hverken en svamp eller et rengøringsprogram nå.
+    (sv: Men ytorna här når varken svamp eller rengöringsprogram.)
+14. De er forseglet fra fabrikken, og med kæledyr sker det her.
+    (sv: De är förseglade från fabriken och med husdjur händer det här.)
+15. Vaskemiddel og skyllemiddel efterlader en klæbrig hinde på hver overflade.
+    (sv: Tvätt- och sköljmedel lämnar en kladdig hinna på varje yta.)
+16. Dyrehårene sætter sig fast i hinden og bliver siddende.
+    (sv: Djurhåren fastnar i hinnan och sitter kvar.)
+17. Skæl og hudfedt lægger sig ovenpå, og bakterierne spiser af det hele.
+    (sv: Mjäll och hudfett lägger sig ovanpå och bakterierna äter av allt.)
+18. Kan du se det brunlige lag, der dækker alt?
+    (sv: Ser du det brunaktiga lagret som täcker allt?)
+19. Det er ikke snavs, det er et skjold, som kolonien har bygget over sig selv.
+    (sv: Det är inte smuts, det är en sköld som kolonin byggt över sig själv.)
+20. Fagfolk kalder det biofilm.
+    (sv: Proffsen kallar det biofilm.)
+21. Den lever, den er pansret, og den har overlevet hver eneste vask.
+    (sv: Den lever, den är pansrad och har överlevt varenda tvätt.)
+22. Hvert program sender vand lige igennem belægningen.
+    (sv: Varje program skickar vatten rakt igenom beläggningen.)
+23. Derfor kom lugten tilbage, uanset hvor tit hun rengjorde de dele, hun kunne se.
+    (sv: Därför kom lukten tillbaka, hur ofta hon än rengjorde delarna hon såg.)
+24. Og nu kommer det, der fik mig.
+    (sv: Och nu kommer det som fick mig.)
+25. Hun viste mig skabet over maskinen, og det var fyldt.
+    (sv: Hon visade mig skåpet ovanför maskinen och det var fullt.)
+26. Maskinrens, pletfjerner, eddike, natron, alt det, man skal bruge.
+    (sv: Maskinrengörare, fläckborttagare, ättika, bikarbonat, allt man ska använda.)
+27. Og her er sagen.
+    (sv: Och här är grejen.)
+28. Læs etiketterne i butikken.
+    (sv: Läs etiketterna i butiken.)
+29. De fleste bygger på det samme stof, iltblegemiddel.
+    (sv: De flesta bygger på samma ämne, syreblekmedel.)
+30. De hjælper mod overfladiske rester, kalk og sæberester.
+    (sv: De hjälper mot ytliga rester, kalk och tvålrester.)
+31. Men de kan ikke klare en hinde af protein og fedt fuld af dyrehår.
+    (sv: Men de klarar inte en hinna av protein och fett full av djurhår.)
+32. Måned efter måned skyllede de bare hen over skjoldet.
+    (sv: Månad efter månad sköljde de bara över skölden.)
+33. Det var ikke hendes skyld, intet i det skab var lavet til det her.
+    (sv: Det var inte hennes fel, inget i det där skåpet var gjort för det här.)
+34. Det, der nedbryder den her belægning, er ikke endnu et blegemiddel.
+    (sv: Det som bryter isär den här beläggningen är inte ännu ett blekmedel.)
+35. Det er enzymer.
+    (sv: Det är enzymer.)
+36. De skyller ikke bare hen over laget som alt det andet, du prøver.
+    (sv: De sköljer inte bara över lagret som allt annat du testar.)
+37. De nedbryder det stykke for stykke, og hvert enzym tager sit eget lag.
+    (sv: De bryter ner det bit för bit och varje enzym tar ett eget lager.)
+38. Så jeg testede på den her maskine: én enzymtablet, ét varmt program, intet andet.
+    (sv: Så jag testade på den här maskinen, en enzymtablett, ett varmt program, inget annat.)
+39. Mens programmet kørte, skete det her derinde.
+    (sv: Medan programmet gick hände det här där inne.)
+40. Blandingen angriber de stoffer, der sidder fast i belægningen.
+    (sv: Blandningen angriper ämnena som sitter fast i beläggningen.)
+41. Amylase tager sig af den klæbrige hinde, der holder det hele sammen.
+    (sv: Amylas tar hand om den kladdiga hinnan som håller ihop allt.)
+42. Protease tager sig af proteinet, altså dyrehårene.
+    (sv: Proteas tar hand om proteinet, alltså djurhåren.)
+43. Og lipase tager sig af fedtet, som bakterierne lever af.
+    (sv: Och lipas tar hand om fettet som bakterierna lever av.)
+44. Et bryder hinden, et angriber proteinet, og et skærer igennem fedtet.
+    (sv: En bryter hinnan, en angriper proteinet och en skär igenom fettet.)
+45. Se nu, hvad der kom ud i afløbsvandet.
+    (sv: Titta nu på vad som kom ut i avloppsvattnet.)
+46. Tre år af det, du så bag panelet, der bliver brudt op og skyllet ud.
+    (sv: Tre år av det du såg bakom panelen, som bryts isär och spolas ut.)
+47. Så jeg åbnede den igen for at se selv.
+    (sv: Så jag öppnade den igen för att se själv.)
+48. Samme panel, samme ydertromle.
+    (sv: Samma panel, samma yttertrumma.)
+49. Se på den nu.
+    (sv: Titta på den nu.)
+50. Én tablet og ét varmt program klarede det, som ingen andre midler kunne rokke ved.
+    (sv: En tablett och ett varmt program fixade det som inga andra medel kunde rubba.)
+51. Så maskinen, hun ville skrotte, fik hun tilbage.
+    (sv: Så maskinen hon ville skrota fick hon tillbaka.)
+52. Hun vaskede håndklæder og ringede dagen efter: de lugtede absolut ingenting.
+    (sv: Hon tvättade handdukar och ringde dagen efter, de luktade absolut ingenting.)
+53. Første gang i tre år.
+    (sv: Första gången på tre år.)
+54. Hun troede, maskinen var død, men der var aldrig noget galt med den.
+    (sv: Hon trodde att maskinen var död men det var aldrig något fel på den.)
+55. Der levede bare noget i den, og den her lille tablet smed det ud.
+    (sv: Det var bara något som levde i den och den här lilla tabletten vräkte ut det.)
+56. Nu bruger hun én tablet om måneden, så det aldrig kommer tilbage.
+    (sv: Nu kör hon en tablett i månaden så att det aldrig kommer tillbaka.)
+57. Tabletten hedder Maskinren, fra Nordvask.
+    (sv: Tabletten heter Maskinrent, från svenska Norrtvätt.)
+58. Tre enzymer, lavet til hjem med kæledyr.
+    (sv: Tre enzymer, gjorda för hem med husdjur.)
+59. Over femten tusind kunder har allerede skiftet.
+    (sv: Över femton tusen kunder har redan bytt.)
+60. Lige nu får du fire pakker til prisen for to og fri fragt.
+    (sv: Just nu får du fyra paket för priset av två och fri frakt.)
+61. Virker den ikke, får du pengene tilbage inden for tredive dage, ingen spørgsmål.
+    (sv: Fungerar den inte får du pengarna tillbaka inom trettio dagar, inga frågor.)
+62. Klik på linket, og sikr dig tilbuddet, mens det gælder.
+    (sv: Klicka på länken och säkra erbjudandet medan det gäller.)

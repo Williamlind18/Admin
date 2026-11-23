@@ -155,6 +155,24 @@ enzymes) is the same in all of them unless noted. **Box** is filled in after lab
   replaced with Maskinrent pack shots from the shop, old captions removed, quiet music bed.
 - Box: ? (launch as one ad set with the three hooks). Learning: –
 
+## B13 – Uproot 1:1, label comparison (video54, made 2026-11-23)
+- Files: `leverans/norrtvatt_video54_jamforelse_sv.mp4` (+ .srt), script `leverans/manus_video54_jamforelse.txt`.
+  Source tag: video54 (Uproot "Affresh vs. Uproot", 84 s). A 1:1 Swedish version, not an iteration: same footage,
+  cuts, 39 sentences and claims. Affresh is "en vanlig maskinrengörare / den vanliga"; no competitor is named.
+- Hook: "Här är etiketten på en vanlig maskinrengörare. Här är Maskinrents. Döm själv."
+- Angle: both have oxygen bleach; only Maskinrent adds the three enzymes, so the protein and fat stay in the other
+  machine. Avatar: pet owners who already run a shelf cleaner.
+- Authority: the side-by-side test (same pet hair, same cycle) and the drained water; no person.
+- Awareness: solution aware. Emotion: curiosity, then disgust at the dark water. Urgency: the offer.
+- Offer (user, 2026-11-23): köp 2 få 2 = 4 paket för 999 kr (~250 kr/paket), fri frakt, 30 dagars
+  pengarna-tillbaka-garanti. The user confirmed every claim as true (including that Maskinrent contains oxygen bleach
+  and costs less per pack than the shelf cleaner).
+- Voice "kvinna energisk - SE" `tY9FLUZCUCQXwZYDwvWw`, eleven_v4 sv, six paragraph takes; tempo 1.00-1.08.
+- Picture: Vmake SKM0002 removed the English caption text but left the white pills; Swedish captions are black text
+  in those pills (user's choice). English graphics are white boxes with black Swedish text; Uproot's end still is
+  replaced by the Norrtvätt offer still from 81.13 s. All Uproot and Affresh box shots stay.
+- Box: ? Learning: –
+
 ## Live ads → files and sources (found 2026-11-04 by matching video length to the second)
 The user names live ads `ny batch N – Cn`. Several deliveries live on other branches of this repo.
 

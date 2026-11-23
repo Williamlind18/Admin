@@ -69,6 +69,7 @@ source videos are GitHub releases on this repo, named by tag.
 | B10 | Maskinrent 10, technician | video44 | See what came out after one wash | Technician teardown | Problem |
 | B11 | C2 in "ny batch 4", monthly cleaner | video22 | Don't scrap it; shelf cleaners can't reach | Technician teardown | Solution |
 | B12 | I1-B11, the owner tells it (3 hooks) | video22 | Same, told by the older male owner | Technician (3rd person) + teardown | Solution |
+| B13 | video52, Danny 1:1 (no parent) | video52 | Shelf cleaners are a 1904 bleach scandal; enzymes reach the source | Technician 19 yrs, case story + drained water | Problem |
 
 Norwegian versions of B03-B06 exist (`nordvask_maskinren*_no.mp4`). Name them `B03-NO` and so on.
 Per CLAUDE.md, only Maskinrent 3-6 get Norwegian versions unless the user names others.

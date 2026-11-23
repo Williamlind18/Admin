@@ -155,6 +155,27 @@ enzymes) is the same in all of them unless noted. **Box** is filled in after lab
   replaced with Maskinrent pack shots from the shop, old captions removed, quiet music bed.
 - Box: ? (launch as one ad set with the three hooks). Learning: –
 
+## B13 – video52, Danny the technician, 1:1 Uproot (2026-11-23)
+- Files: `manus_video52_danny_tekniker.txt`, `norrtvatt_video52_danny_tekniker_sv.mp4` (+ .srt).
+  Source tag: video52. A 1:1 Swedish version of the Uproot ad, not an iteration: same footage, cuts,
+  story, tone and length (4:43). No parent.
+- Hook: "Här är mitt knep mot hundlukten i tvätten på en körning, mot beläggningen som butikens
+  tabletter aldrig klarar."
+- Angle: the smell lives in a sealed space behind the drum, and shelf cleaners (oxygen bleach) can't
+  break down pet protein and grease. A "silent scandal": the big brands keep selling a cheap 1904 formula.
+- Avatar: pet home (dog) that has tried everything. Desire: fresh laundry, not being the one who smells.
+- Authority: Danny, technician 19 years, case story with a pet owner, the drained water and the gasket
+  shown on camera. NASA enzyme line and "15 000+ kunder" approved by the user (2026-11-23).
+- Awareness: problem aware. Emotion: disgust (slimy gasket) and anger (the scandal), relief at the end.
+- Mechanism: three enzymes (alfa-amylas, proteas, lipas). Positioning: enzymes vs oxygen bleach, made for
+  pet homes. Urgency: the offer (köp två, få två, fri frakt, ~250 kr/paket, 30 days money back).
+- Edit: all clips kept (incl. the Uproot box overlay at ~4:37), old captions removed, Swedish captions at
+  the old height, new ElevenLabs music bed, Uproot's blue end still replaced with a Maskinrent offer still
+  in the same style. Competitors are not named (the label shot says "de tre stora märkena").
+- Voice: PLzKW5f9DmyCn5Vot26M ("manlig röst 40-50 år skånsk"), eleven_v4, 11 paragraph takes,
+  placed on the original's sentence starts (read off its burned-in captions with OCR).
+- Box: ? Learning: –
+
 ## Live ads → files and sources (found 2026-11-04 by matching video length to the second)
 The user names live ads `ny batch N – Cn`. Several deliveries live on other branches of this repo.
 

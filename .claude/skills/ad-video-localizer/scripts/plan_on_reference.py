@@ -7,6 +7,7 @@ subject to  gap_i in [GMIN, GMAX],  tempo in [TMIN, TMAX],  s_0 = first Swedish 
 the last sentence ending before the video ends.
 
 Usage: plan_on_reference.py SENT_DIR SV_TXT --video-duration D [--tmin 0.94 --tmax 1.08 --gmin 0.2 --gmax 0.9]
+                            [--pin 22:82.6:83.4 ...]
 Writes SENT_DIR/plan.json in build_voiceover.py's format.
 """
 import argparse
@@ -31,6 +32,8 @@ def main():
     ap.add_argument("--nu", type=float, default=0.6)
     ap.add_argument("--tail", type=float, default=0.3)
     ap.add_argument("--first", type=float, default=None, help="pin first start (default: Swedish first start)")
+    ap.add_argument("--pin", action="append", default=[],
+                    help="ID:LO:HI keeps sentence ID's start inside [LO, HI] s (a key visual it must hit); repeatable")
     a = ap.parse_args()
     F = json.load(open(os.path.join(a.sent_dir, "fused.json")))["sentences"]
     F.sort(key=lambda s: s["id"])
@@ -55,10 +58,14 @@ def main():
     cons.append({"type": "eq", "fun": lambda x: x[0] - first})
     cons.append({"type": "ineq", "fun": lambda x: a.video_duration - a.tail - (x[n - 1] + d[n - 1] * x[2 * n - 1])})
     bounds = [(0, a.video_duration)] * n + [(1 / a.tmax, 1 / a.tmin)] * n
+    ids = [int(f["id"]) for f in F]
+    for p in a.pin:
+        k, lo, hi = p.split(":")
+        bounds[ids.index(int(k))] = (float(lo), float(hi))
     # feasible-ish start: sequential from Swedish starts
     s0 = [first]
     for i in range(1, n):
-        s0.append(max(S[i], s0[-1] + d[i - 1] + a.gmin))
+        s0.append(min(max(S[i], s0[-1] + d[i - 1] + a.gmin, bounds[i][0]), bounds[i][1]))
     x0 = np.concatenate([np.array(s0), np.ones(n)])
     r = minimize(obj, x0, method="SLSQP", bounds=bounds, constraints=cons,
                  options={"maxiter": 2000, "ftol": 1e-9})

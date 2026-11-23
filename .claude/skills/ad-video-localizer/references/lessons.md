@@ -405,3 +405,18 @@ defaults to cut_off.
   ships without it). Price it before proposing anything: a 4:37 ad with the presenter on screen for
   238 s would have cost ~190 000 credits with Sync 3, and the user dropped it. Offer a 45-75 s cut
   instead.
+
+## 1:1 Uproot ads with a long Swedish script (video52, Danny the technician, 2026-11-23)
+- **Take the original's sentence starts from its burned-in captions, not from a pasted transcript.** The
+  user's YouTube-style timestamps were off by up to 4 s (e.g. "Some very smart people" listed at 0:52, on
+  screen at 0:49). OCR the caption band at 5 fps, merge identical frames into segments, and align the
+  caption words to the English sentences with `difflib`; each sentence's first matched caption is its start.
+- **Swedish runs ~4 % longer than Danny's English.** At tempo 1.08 everywhere the plan fitted overall but
+  drifted up to 5 s where the English was dense (the bucket and her story, 82-117 s). Shorten wording only
+  in the paragraphs that overflow (keep the claims), re-voice those paragraph takes, and pin the key visuals
+  with `plan_on_reference.py --pin ID:LO:HI` ("Titta på det här vattnet" on the bucket cut, the gasket
+  pull). A re-voiced take can come out barely shorter (more pauses), so simulate the plan with estimated
+  durations before spending credits, and expect a second small trim.
+- **Caption boxes on bright footage** (foam, white tubs) are missed by the white-box detector. Mask every
+  OCR caption segment with the union of the boxes detected inside it (or a size estimated from the text),
+  fill gaps under ~1 s between segments, then OCR the cleaned band again to catch leftovers.

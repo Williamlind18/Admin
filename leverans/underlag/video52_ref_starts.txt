@@ -1,0 +1,77 @@
+1	0.00	8.60	Här är mitt knep mot hundlukten i tvätten på en körning, mot beläggningen som butikens tabletter aldrig klarar.
+2	8.60	13.00	Efter den här videon ser du aldrig på tvätten eller rengöringshyllan på samma sätt igen.
+3	13.00	16.40	Om du inte känner mig: jag är Danny och har lagat tvättmaskiner i nitton år.
+4	16.40	19.40	Den unkna hundlukten i ren tvätt är inte bara en lukt.
+5	19.40	22.60	Den betyder att mögel och bakterier växer i maskinen.
+6	22.60	25.40	I djurhem gäller det nästan varje maskin jag öppnar.
+7	25.40	27.60	Så när du tvättar tvättar du inte kläderna.
+8	27.60	28.80	Du långkokar dem i mögel.
+9	28.80	38.15	Handduken till ansiktet, skjortan till kyrkan, barnbarnens lakan: allt får lukten på sig, och andra märker den före dig.
+10	38.15	40.40	En väninna backar lite när ni kramas.
+11	40.40	42.00	Du undrar om kollegan bredvid känner den.
+12	42.00	47.40	Så du tvättar om ren tvätt, sprejar allt och köper ännu en rengörare.
+13	47.40	49.00	Och här är det som borde göra dig arg.
+14	49.00	55.15	Smarta människor lärde sig tjäna på lukten för länge sedan, kanske den största tysta skandalen i svenska djurhem.
+15	55.15	58.40	Den tömmer plånboken varje månad, och knappt någon vet det.
+16	58.40	62.80	Lukten kommer från ett slutet utrymme mellan trumman och höljet.
+17	62.80	64.80	De flesta vet inte att det finns.
+18	64.80	66.60	Det försluts på fabriken.
+19	66.60	70.80	Det finns i nästan varje maskin i dag, och vatten forsar igenom vid varje tvätt.
+20	70.80	77.40	I djurhem packas hår, fett och mjäll in där, tvätt efter tvätt, och vattnet bär det till kläderna.
+21	77.40	82.20	Nu visar jag femminuterstricket som tog bort lukten hos en djurägare förra veckan.
+22	82.20	83.80	Titta på det här vattnet.
+23	83.80	85.00	Det rann ut ur hennes maskin.
+24	85.00	86.60	Det är inte smuts och inte tvål.
+25	86.60	90.20	Det är djurhår, fett och mjäll som suttit bakom trumman i månader.
+26	90.20	93.20	Därför luktade tvätten unket, vad hon än gjorde.
+27	93.20	94.80	När jag kom dit berättade hon allt.
+28	94.80	95.60	I månader hade allt luktat unket.
+29	95.60	97.35	Handdukar, t-shirts, till och med underkläder.
+30	97.35	99.60	Hon skyllde på tvättmedlet och bytte märke två gånger.
+31	99.60	102.75	Sen hunden, för vad annars när huset luktar fuktig päls?
+32	102.75	106.60	Hon testade extra sköljning, ättika i varmt vatten och klorin på gummilisten.
+33	106.60	108.60	Hon körde till och med en maskinrengörare i månaden, som kartongen sa.
+34	108.60	112.20	Lukten försvann en dag, kanske två, och kom sen tillbaka.
+35	112.20	114.20	När hon ringde fasade hon för tvättdagen.
+36	114.20	116.35	Så jag frågade först om hon hade djur.
+37	116.35	117.40	Hon sa: ja, en hund.
+38	117.40	120.95	Och jag sa: då långkokar du kläderna i mögel.
+39	120.95	121.90	Hon tittade på mig som om jag var galen.
+40	121.90	126.20	Så jag drog undan gummilisten och visade vad som gömdes under.
+41	126.20	135.40	Ett tjockt, slemmigt gråbrunt lager av tvättmedel, sköljmedel och hundhår i vecken, och det var bara en tredjedel.
+42	135.40	139.20	Resten satt djupare: bakom trumman, i yttertrumman och i avloppet.
+43	139.20	141.80	Där når du aldrig för hand, hur du än skrubbar.
+44	141.80	143.20	Och här är skandalen jag nämnde.
+45	143.20	148.00	Ta en tablett från de tre stora märkena, dra av etiketten och läs innehållet.
+46	148.00	149.80	Huvudingrediensen är samma i alla tre.
+47	149.80	150.20	Syrebaserat blekmedel.
+48	150.20	152.80	Tre kartonger, tre priser och en formel från nittonhundrafyra.
+49	152.80	158.80	Det tar tvålrester och kalk, men djurhår är protein och mjäll är fett.
+50	158.80	161.20	Och blekmedlet rår inte på protein eller fett.
+51	161.20	166.55	Det skummar över, doftar parfym en dag, tömmer plånboken och lämnar källan kvar.
+52	166.55	175.80	Företagen kunde ha löst det för länge sedan, men den gamla formeln är billig, så några kostymer i styrelsen valde att fortsätta sälja samma kartong.
+53	175.80	180.00	Varje gång lukten kommer tillbaka köper du en ny, och deras vinst ser fin ut.
+54	180.00	184.80	Och ättika är inte bättre: i en hel tvätt blir den för utspädd för att bita.
+55	184.80	190.60	Så i stället för en borste tog jag fram en liten tablett, la den i trumman och körde varmt.
+56	190.60	195.60	Den fräste och skickade skum bakom trumman, in i gummilisten och ner i avloppet.
+57	195.60	198.00	Det enda som tar bort källan är enzymer.
+58	198.00	203.60	Samma sort som NASA tog fram mot beläggning i rymdfarkosters slutna vattensystem, där inget starkt fick användas.
+59	203.60	208.95	Sjukhus och tvätterier har använt enzymer i åratal, och det här är den enda tabletten jag hittat med alla tre.
+60	208.95	215.00	Alfa-amylas löser upp hinnan av tvätt- och sköljmedel som håller fast allt, så att det under blottas.
+61	215.00	219.55	Proteas bryter ner keratinet i djurhåren, så att de spolas ut i stället för att sitta kvar.
+62	219.55	226.00	Och lipas tar bort fettet som luktbakterierna lever på, så att lukten svälts ut och inte kommer tillbaka.
+63	226.00	228.80	Ett blottar, ett förstör och ett svälter ut resten.
+64	228.80	231.00	När programmet var klart var det vattnet du såg.
+65	231.00	235.00	Blekmedel hade kunnat gå i ett år utan att få ut det.
+66	235.00	237.20	En enzymtvätt gjorde det på en körning.
+67	237.20	239.20	Hon ringde nästa morgon och kunde knappt tro det.
+68	239.20	240.60	Tvätten luktade inte unket alls.
+69	240.60	242.20	Den luktade faktiskt riktigt fräscht.
+70	242.20	247.00	Hon tvättade hundens filt, borrade ner ansiktet i den och sa att den var ren på riktigt för första gången på månader.
+71	247.00	251.20	Jag sa åt henne att köra en tablett i månaden, och det är min rutin för alla djurhem nu.
+72	251.20	256.40	Den är skonsam mot alla ytor, utan blekmedel och starka kemikalier i trumman och rören.
+73	256.40	264.40	Den heter Maskinrent från Norrtvätt, från ett litet svenskt företag som gör den för djurhem, inte blekmedel med parfym.
+74	264.40	267.40	Tre enzymer för precis den beläggning som djur skapar.
+75	267.40	270.20	Över femtontusen kunder har redan bytt.
+76	270.20	277.40	Just nu är det köp två, få två och fri frakt, runt tvåhundrafemtio kronor paketet, med trettio dagars pengarna-tillbaka-garanti.
+77	277.40	279.20	Funkar det inte skickar du tillbaka det.

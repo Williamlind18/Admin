@@ -162,3 +162,18 @@
 - Badges that pop in and fade or wipe out: keep the white box at the badge's fixed spot, cover only the rows the badge
   still has (wipe), or fade the box over a clean plate taken just after the badge is gone (fade).
 - A data-sheet highlight is easiest by colour: fill each yellow component and write the Swedish word in a document font.
+
+## Long 1:1 versions with moving captions (video58, B14, Nov 2026)
+- `burned_captions.py detect` only searches 35-92 % of the frame height and one-line boxes. Video58's captions sat at five
+  heights (y 150, 205, 270, 336, 450 and 638 on 720×900) and some were two-line boxes, so check every "no box" range it
+  prints. A second pass over the empty frames on the whole height (`pick()` on 4-95 %), and `by_box` with a taller box
+  height (≈1.75 × the one-line height) for two-line captions, found them all; the rest went in as `--manual` boxes.
+- Put each new caption on the row where the original caption was at that moment (median box centre over the caption's
+  time, nearest box within 1.5 s otherwise) by rewriting `\pos` in the .ass. Keep the main row at one steady y.
+- An opening hook that shows both first sentences as one two-line box: replace it with one white box with black Swedish
+  text in the same place, and start the 1-3-word captions after it.
+- `plan_on_reference.py` with an extra weight on the key-visual sentences, and a slightly higher pause cap only in the stretch
+  before them, kept the enzyme words within ~1 s when the Swedish was shorter than the English for 20 sentences in a row.
+- Green graphics (an EWG badge, FREE tags and banner) are easy to track by colour on the source: the bbox of the green pixels,
+  a median over ±2 frames, and a white box that pops in at full opacity (a half-transparent box over the graphic looks messy).
+- A third-party seal we don't have (EWG VERIFIED) goes under a white box with a true claim ("SKONSAM MOT ALLA YTOR").

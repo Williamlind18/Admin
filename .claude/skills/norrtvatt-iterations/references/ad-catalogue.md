@@ -281,3 +281,29 @@ actually does", 1:39). Delivery on branch claude/inspiring-feynman-uo7z24: `leve
   "medan lagret räcker".
 - Flags raised with the user: "ingen parfym" (unscented?) and the first-person pet story read by an AI voice.
 Box: ? (label after 7 days live).
+
+## B14 – Maskinrent 14, husband fixed washers (made 2026-11-23, 1:1 of an Uproot ad)
+Source: release video58 (Uproot Clean, "My husband used to fix washing machines as a hobby. This is what he told me to do
+about the smell", 6:51). Delivery on branch claude/inspiring-feynman-uo7z24: `leverans/norrtvatt_maskinrent_video58_sv.mp4`
++ `.srt`, script `leverans/manus_norrtvatt_video58.txt`. No parent (a new Uproot source), so no I part.
+- Made 1:1: same shots, cuts, structure, story, tone and length; 98 sentences as in the original, each placed where the
+  original's sentence sits (mean 0.8 s off; alfa-amylas, proteas, lipas, the product name, the map and the offer within ~1 s).
+- Voice LzJuwbGODHbc1VvzbMrf ("kvinna 30-40 år skånsk - SE", same gender and age as the original speaker), eleven_v4 sv,
+  15 paragraph takes, atempo 0.95-1.06, pauses 0.2-0.48 s. New ElevenLabs music bed in the original's style (light pop,
+  ~152 BPM, D major, 70 s loop) at -19 dB.
+- Swaps: "Uproot Washing Machine Cleaner Pro" → "Maskinrent, från Norrtvätt", "a small company out of Florida" → "ett litet
+  svenskt företag", "Affresh from Walmart" → "maskinrengörare i butiken", "EWG rated and safe" → "skonsamma", offer →
+  köp två, få två, plus fri frakt, 60-day → 30 dagars pengarna-tillbaka-garanti. No competitor named; Uproot packaging and
+  the Uproot store display stay in the footage. The user confirmed every claim is true.
+- Picture: the Florida map (6:05-6:08) is replaced by a rendered map of Sweden ("Sverige"), at the user's request. Old
+  captions removed and replaced at the same spots; the original's captions move between five heights, and ours follow.
+  The opening two-line hook box is a white box with black Swedish text. White boxes with black text over the glowing
+  enzyme words (ALFA-AMYLAS, PROTEAS, LIPAS), over the EWG VERIFIED badge ("SKONSAM MOT ALLA YTOR", tracked frame by frame;
+  we have no EWG rating), over the FREE tags (GRATIS) and the FREE SHIPPING banner (FRI FRAKT). The 3.1 s Uproot end card is
+  replaced by ours in the same layout (NORRTVÄTT logo, four Maskinrent packs, KÖP 2 FÅ 2 GRATIS, + FRI FRAKT, HANDLA NU,
+  4,8/5, 15 000+ nöjda kunder).
+- Components: angle "store cleaners and vinegar only rinse the surface; the real buildup (pet hair, grease) sits behind the
+  drum and needs enzymes"; avatar pet owner with musty laundry; desire laundry that smells clean again; mechanism three
+  enzymes (alfa-amylas, proteas, lipas); authority the husband who fixed washers as a hobby (3rd person) plus the mechanism;
+  awareness problem aware; format long first-person story (6:51); urgency offer + "medan erbjudandet gäller".
+Box: ? (label after 7 days live).

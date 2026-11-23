@@ -70,6 +70,7 @@ source videos are GitHub releases on this repo, named by tag.
 | B11 | C2 in "ny batch 4", monthly cleaner | video22 | Don't scrap it; shelf cleaners can't reach | Technician teardown | Solution |
 | B12 | I1-B11, the owner tells it (3 hooks) | video22 | Same, told by the older male owner | Technician (3rd person) + teardown | Solution |
 | B13 | Maskinrent 13, three reasons (1:1 of Uproot) | video53 | Three reasons store cleaners stop working, and the one that does | Product mechanism + own pet story | Solution |
+| B14 | Maskinrent 14, husband fixed washers (1:1 of Uproot) | video58 | Husband who fixed washers as a hobby shows the real buildup and the enzyme fix | Husband (washer hobby repairer, 3rd person) + mechanism | Problem |
 
 Norwegian versions of B03-B06 exist (`nordvask_maskinren*_no.mp4`). Name them `B03-NO` and so on.
 Per CLAUDE.md, only Maskinrent 3-6 get Norwegian versions unless the user names others.

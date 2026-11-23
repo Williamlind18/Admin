@@ -19,7 +19,9 @@ MODE picks the text pixels (RGB):
   red     dark red text: R > 70, R > G + 40, R > B + 25, G < 90, plus the green underline bars
   green   white letters on a green sticker (white pixels next to green ones)
   dark    dark text inside the largest light shape (a pill): max(R,G,B) < 190
-  rect    the whole rectangle
+  white3d white letter faces plus the grey 3D extrusion next to them (3D titles)
+  cyan    light cyan/white glowing letters (keeps green bubbles)
+  rect    the whole rectangle (LaMa may rebuild letter shapes from what is left at the edges)
 GROW (px, default 6) dilates the mask over the outline/shadow.
 Video 51: the white "YOUR WASHER IS ALREADY CONTAMINATED", "AS LITTLE AS 2 WEEKS", "HOW DO YOU BREAK IT?",
 the yellow "PROTEASE"/"LIPASE", "ALPHA AMYLASE", "FREE SHIPPING" and the text of the "60 day" pill. A
@@ -68,6 +70,14 @@ def text_mask(crop, mode):
         if cnts:
             cv2.drawContours(inside, [max(cnts, key=cv2.contourArea)], -1, 1, -1)
         m = (mx < 190) & (inside > 0)
+    elif mode == "white3d":  # white letter faces plus their grey 3D extrusion (only next to the faces)
+        import cv2
+        face = ((mn >= 205) & (mx - mn < 40)).astype(np.uint8)
+        face = cv2.morphologyEx(face, cv2.MORPH_OPEN, np.ones((3, 3), np.uint8))
+        near = cv2.dilate(face, np.ones((19, 19), np.uint8)) > 0
+        m = (face > 0) | (near & (mn >= 95) & (mx - mn < 45))
+    elif mode == "cyan":  # light cyan/white glowing letters (green bubbles left alone)
+        m = ((mn >= 160) & (mx - mn < 80) & (B >= G - 25)) | ((B > 170) & (G > 160) & (R > 100) & (B >= G - 10) & (G - R < 110))
     elif mode == "rect":
         m = np.ones(R.shape, bool)
     else:

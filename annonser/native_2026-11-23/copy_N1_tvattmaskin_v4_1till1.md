@@ -10,16 +10,14 @@ Användaren låter sin advokat granska texten innan den publiceras. Advokaten b�
 - att Dr. Beckmann nämns vid namn
 - att påståendena om andra produkter kan beläggas
 
-## Rubrik
-**Därför luktar tvätten trots ättikan** (rekommenderad)
+## Rubrik (utgår från berättelsen)
+**"Mina handdukar luktar bara handdukar"** (rekommenderad)
 
 Alternativ:
-- Lukten sitter där du aldrig når
-- Har du husdjur? Läs innan du köper ättika
-- Det dolda stället i maskinen som luktar
-- Reparatören: ättikan når aldrig dit
-
-Beskrivning: Vad som faktiskt växer bakom trumman i hem med husdjur.
+- Varning till dig med husdjur
+- Hon provade allt. Lukten satt bakom trumman
+- Reparatören: "Ättikan rinner rakt förbi"
+- 19 år som reparatör – det här ser jag mest
 
 ## Primary text
 

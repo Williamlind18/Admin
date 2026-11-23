@@ -177,6 +177,39 @@ enzymes) is the same in all of them unless noted. **Box** is filled in after lab
   SKM0002; the last still (their box and offer, from 272.77 s) replaced with our offer card; new music bed.
 - Box: ? Learning: –
 
+## B14 – Uproot video57 1:1, Danny stopped recommending shelf cleaners (2026-11-23)
+- Files: `manus_video57_danny_slutade.txt`, `norrtvatt_video57_danny_slutade_sv.mp4` (+ .srt), on
+  branch `claude/ecstatic-thompson-it7k4c`. Source tag: video57. 7:13, 720x1280.
+- Made 1:1 to the same brief as B13: the same footage, cuts and story, all 107 sentences in order,
+  all claims kept.
+- Swaps:
+  - Affresh/Tide/OxiClean become "maskinrengöringarna på hyllan" or "vanlig maskinrengöring", and
+    "OxiClean has it in the name" becomes "Vissa har det till och med i namnet: oxi".
+  - Danny's "van in Jacksonville, Florida" becomes "Jag kör runt med min servicebil".
+  - "A small company out of Florida, the same people who make pet hair tools" becomes "ett litet
+    svenskt företag som gör den för hem med husdjur".
+  - The 60-day guarantee becomes 30 days. The offer is the same: köp två, få två, fri frakt.
+- Picture:
+  - The Florida map clip (1.9 s) is cut; the comment card holds instead.
+  - The Facebook comments are re-set in Swedish, with Gilla/Svara and the highlights kept.
+  - The text message reads "Första gången de inte luktar blöt hund. Tack".
+  - Their 1.8 s white end card (box, BUY 2 GET 2) is replaced with ours in the same light style.
+  - "Likes" on the tilted Instagram posts (225-234 s) stays in English.
+- Hook: "För ett år sedan slutade jag tipsa husdjursägare om maskinrengöring, oavsett märke." (lines 1-2
+  shortened slightly so "Jag heter Danny" lands on his shot).
+- Angle: shelf cleaners are oxygen bleach and can't break down protein; the enzyme tablet can.
+- Avatar: pet owners whose clean laundry still smells musty.
+- Authority: repairman Danny, 19 years, a repair techs' Facebook group (third-party proof), and
+  customer stories (two huskies, the sister's golden retriever and the kids' blankets).
+- Awareness: solution aware. Emotion: frustration, then relief.
+- Positioning: three enzymes vs oxygen bleach, vinegar, baking soda and the self-clean cycle.
+- Urgency: the offer. Format: long-form technician story with mechanism B-roll.
+- Production:
+  - Voice `PLzKW5f9DmyCn5Vot26M` ("manlig röst 40-50 år skånsk - SE"), eleven_v4 sv, 16 paragraph
+    takes; atempo mean 1.03 (max 1.12).
+  - Captions removed with Vmake SKM0002; new music bed (150 s, looped).
+- Box: ? Learning: –
+
 ## Live ads → files and sources (found 2026-11-04 by matching video length to the second)
 The user names live ads `ny batch N – Cn`. Several deliveries live on other branches of this repo.
 

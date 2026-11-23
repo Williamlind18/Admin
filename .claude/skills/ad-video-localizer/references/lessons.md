@@ -322,3 +322,38 @@ defaults to cut_off.
 - **Vmake SKM0002 on a long ad:** one run removed the captions from the whole 4:36 ad. A first run can
   fail with `credit_required` (api_code 60002); tell the user and rerun only after they add credits. A
   few faint lines stay where the boxes were, and the new captions at the same height cover most of them.
+
+## A 7-minute 1:1 Uproot ad with 107 sentences (video57, B14, voice `PLzKW5f9DmyCn5Vot26M`)
+- **Contact-sheet times are about 1 s late.** `analyze_video.py` builds its sheets with `fps=1/2`, which
+  keeps the last frame of each 2 s slot. Tile k shows the picture at about 2k+1 s, not 2k. Reading
+  captions off the sheets as if they were at 2k put "I'm Danny" on the wrong shot. Check a key moment
+  with an exact frame (`ffmpeg -ss T -frames:v 1`) before trusting sheet times.
+- **Planning 100+ sentences:** `plan_on_reference.py` (SLSQP) stopped with "Positive directional
+  derivative", with every gap at either gmin or gmax and sentences up to 1.8 s off. `plan_lsq.py` solves
+  the same problem as bounded least squares and converged:
+  - command: `--mu 50 --nu 10 --tmin 0.96 --tmax 1.12 --gmax 0.4`
+  - result: mean deviation 0.42 s, mean tempo 1.03, gaps averaging 0.21 s
+  - `--pin 3:40` holds a key line, such as the name on the speaker's shot.
+- **A name on a short shot:** the hook lines left "Jag heter Danny" 1.4 s late. Shortening the two hook
+  lines (same claims) and regenerating that one paragraph take (590 credits) fixed it. Starting the first
+  line at 0.38 s instead of 0.15 s gave the last 0.2 s.
+- **Burned-in UI cards** (a Facebook comment thread, a text-message bubble) that stand still can be
+  re-set in Swedish as full-frame PNG overlays:
+  - Paint each bubble's text area in the bubble colour, then set the text in Liberation Sans at the
+    measured cap-top rows.
+  - Keep names, avatars and emoji (copy the emoji pixels).
+  - "Like/Reply" becomes "Gilla/Svara". Switch to a highlighted PNG at the frame where the original's
+    highlights appear.
+- **ffmpeg pitfalls in the composite:**
+  - `freezeframes` needs two inputs. Use `[0:v]split[a][b];[a][b]freezeframes=first=F1:last=F2:replace=F0`,
+    or it takes the next PNG input and freezes on black.
+  - Give looped PNGs `-framerate 30`.
+  - Use `enable='between(t,..)'`, not `n`: in overlay, `n` counted the 25 fps image frames.
+- **Cutting a clip that contradicts our script** (a map zooming to Florida while the voice says "ett litet
+  svenskt företag"): hold the previous static shot over its frames with freezeframes, so the timing and
+  length stay the same.
+- **Captions on the end card:** when the CTA runs onto our end still, move those captions under the
+  still's text (y about 0.96) so they don't cover the offer.
+- **Vmake on a 7-minute video** needed more credits than a 4.5-minute one. The first run failed with
+  `credit_required` after the upload. It ran once the user had topped up.
+- **`tighten_pauses.py`** now finds clips 100.mp3 and up (it only globbed two digits before).

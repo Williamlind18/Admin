@@ -14,6 +14,7 @@ MODE picks the text pixels (RGB):
   glow    min >= 170 and max-min < 70 (soft glowing white/cyan text)
   silver  min >= 140 and max-min < 60 (white titles that shade to grey)
   faint   min >= 110 and max-min < 50 (the first second of a title that fades in)
+  fainter min >= 80 and max-min < 40 (what is left of it over a grey scene)
   yellow  R > 235, G > 225, 90 < B < 200 (pale yellow titles; orange/white highlights are left alone)
   red     dark red text: R > 70, R > G + 40, R > B + 25, G < 90, plus the green underline bars
   green   white letters on a green sticker (white pixels next to green ones)
@@ -47,6 +48,8 @@ def text_mask(crop, mode):
         m = (mn >= 170) & (mx - mn < 70)
     elif mode == "faint":  # a title still fading in (semi-transparent letters)
         m = (mn >= 110) & (mx - mn < 50)
+    elif mode == "fainter":  # the last trace of a fading title over a grey scene
+        m = (mn >= 80) & (mx - mn < 40)
     elif mode == "silver":  # white-to-grey 3D titles: everything light and unsaturated
         m = (mn >= 140) & (mx - mn < 60)
     elif mode == "yellow":

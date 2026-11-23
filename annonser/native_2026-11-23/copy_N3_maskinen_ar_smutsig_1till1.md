@@ -14,6 +14,10 @@ Meningen om att företaget "började med verktyg för djurhår" är struken, eft
 ## Rubrik
 **Din maskin är inte trasig. Den är smutsig.**
 
+Alternativ (översatt från konkurrentens rubrik):
+- Jag sa åt husdjursägare att köra ättika… fast jag visste att det inte skulle fungera
+- Kortare: Jag rekommenderade ättika. Jag visste att det inte funkade.
+
 ## Till advokaten
 - raden "jag får inte betalt… ingen kod, ingen provision"
 - att personen och kundfallen är fiktiva

@@ -1,0 +1,30 @@
+BF våg 1 – iteration av BF b4 C2 (teknikern som plockar isär maskinen), H1: Black Friday först
+Version 2 (2026-11-10): ny öppning som går rakt in i berättelsen, originalmusiken under hela videon,
+nytt Black Friday-slut som knyter an till hooken.
+
+Röst: OvO33bxTqNfwQfoR6mVh (Äldre man 50-60 år - SE), eleven_v3, sv, [confident] – samma som originalet.
+
+NY ÖPPNING (ersätter originalets hook, 0–10,7 s, över originalets egna klipp, text högst upp som i originalet)
+Köp ingen maskinrengörare på Black Friday förrän du sett det här.
+Ägaren körde en varje månad, men lukten kom ändå tillbaka.
+Jag fixade det på trettio sekunder.
+
+BERÄTTELSEN (oförändrad från vinnaren)
+Jag har lagat tvättmaskiner i nitton år och plockat isär över tusen. Förra månaden bad en kund mig att ta
+hennes och slänga den. ... (hela kroppen som i bf_b4-C2_sv) ...
+Läs etiketterna i butiken. De flesta bygger på samma ämne, syreblekmedel. ...
+Tabletten heter Maskinrent, från svenska Norrtvätt. Tre enzymer, gjorda för hem med husdjur.
+Över femton tusen kunder har redan bytt.
+
+NYTT SLUT (erbjudandebilden från första ordet till och med garantin, sedan originalklippet)
+Så om du köper något till tvättmaskinen på Black Friday, gör det till den här: femtio procent rabatt och fri frakt.
+Bättre pris än så här får du inte.
+Fungerar den inte får du pengarna tillbaka inom trettio dagar, inga frågor.
+Klicka på länken och säkra Black Friday-priset medan det gäller.
+
+Spencer-komponenter
+- Ärvt: hela berättelsen, teknikern som auktoritet (19 år, över tusen maskiner, visar biofilmen), mekanismen
+  (tre enzymer mot hinna, protein och fett), positioneringen (syreblekmedel sköljer bara över).
+- Ändrat: brådska först. Black Friday står i första meningen och kopplas till berättelsens poäng
+  (köp inte fel produkt), och slutet sluter cirkeln ("om du köper något … gör det till den här").
+- Förslag på annonsnamn i Meta: BFv1 | I-B4C2 | brådska först | tekniker | problem | berättelse | H1

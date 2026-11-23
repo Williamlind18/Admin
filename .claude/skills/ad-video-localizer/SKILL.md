@@ -56,8 +56,11 @@ which filters are available.
 ### 1. Intake
 Ask in **one** message for whatever is missing:
 - **The video.** See `references/delivery.md`. Files over 25 MB go through a GitHub release.
-- **The original voiceover text.** If the video has burned-in captions, you can read them yourself
-  with `burned_captions.py read` (step 2), which also gives timestamps. Otherwise ask for it.
+- **The original voiceover text.** You cannot transcribe audio here. If the video has burned-in
+  captions, `scripts/ocr_captions.py` reads them with timestamps instead (see `references/lessons.md`,
+  "Removing burned-in captions"; `scripts/lama_inpaint.py` removes them from the picture).
+  If the user's ElevenLabs connector is available, Scribe can also transcribe the source audio
+  (upload it to a flow); unlike Scribe on your own takes this costs credits (~5.5 per second).
 - **Target language**, and whether to translate directly or adapt.
 - **The ElevenLabs voice ID.** Check that the ElevenLabs connector tools are available; see
   `references/elevenlabs.md`.
@@ -85,7 +88,9 @@ Note down:
 ### 3. Write the script
 Follow `references/script-writing.md`. Save the result as `WORK/script.txt`, one sentence per line, in
 spoken order. Then check the length:
-`python3 $SK/split_script.py WORK/script.txt WORK/sent --video-duration D`.
+`python3 $SK/split_script.py WORK/script.txt WORK/sent --video-duration D [--rate R]`.
+The speaking rate depends on the voice. For a voice you have not measured, check its rate first (see
+`references/elevenlabs.md`).
 Show the user the complete numbered script and get approval before spending credits. Mention any
 compliance flags once in that same message.
 
@@ -99,7 +104,9 @@ Download with `bash $SK/download_clips.sh urls.txt WORK` (names `take` and `iso`
 `iso.mp3` into `sent/`). Then cut the take into sentences:
 `python3 $SK/split_take.py WORK/take.mp3 WORK/sent`. Check its table: every `pause_after` should be a
 real sentence pause (≥ ~0.35 s; v3 takes usually have 0.4-0.8 s) and no row should be marked
-`<-- check`. Keep a running total of credits for the report.
+`<-- check`. If many rows are marked because the voice barely pauses, use
+`python3 $SK/split_take_ref.py WORK/take.mp3 WORK/sent` instead (DTW against `sent/iso.mp3`).
+Keep a running total of credits for the report.
 
 **Better: transcribe the take with Scribe** (`creative_transcribe_audio`, connect_from = the take's
 node id; it costs 0 credits). It returns the text **with word timestamps** (`words_download_url`).
@@ -133,8 +140,17 @@ python3 $SK/plan_timeline.py WORK/sent --video-duration D \
   - tighten wording,
   - drop "if it fits" extras.
   Ask the user before cutting anything they asked for.
+- **Many anchors (long videos).** plan_timeline.py tries every combination of window times, so with more
+  than about 6 windows it coarsens its grid and the result gets worse. For a long video (Maskinrent
+  video 4 had 21 key moments in 5 min), run `optimize_anchors.py` with the same `--gap`,
+  `--anchor-gap`, `--tail` and windows. Then pass the exact `--anchor` times it prints to
+  plan_timeline.py. Wide windows (±1-2 s) give it room to move slack from loose passages to dense ones.
 - **Gaps before an anchor.** If the voice runs ahead of the footage and leaves a long gap before an
   anchor, it is usually because a condensed passage lost detail. Restore some of it.
+- **Take shorter than the video.** When the whole take with ~0.3 s pauses ends before the footage and its
+  natural flow already lands near the key moments, skip the anchors. They only push the slack into long
+  silences (0.8-2 s on Maskinrent video 6) in front of each anchor. Plan with even gaps instead
+  (`--gap 0.3 --max-gap 0.34 --lead 0.15 --tail 0.3`) and let the music carry the last seconds.
 - **Voice shorter than the video.** If most blocks sit at x1.00 with 0.45 s gaps, run
   `balance_plan.py` with the same arguments instead. It spreads the spare time evenly over the pauses
   and may slow a block down to x0.96 (inaudible), so there are no long silences before anchors.

@@ -1,0 +1,150 @@
+Nordvask Maskinren – b1 C3 – reparatören, biofilm och NASA (dansk version)
+Röst: "dansk man 40-50 år", ElevenLabs eleven_v4, språkkod da. Samma bild, innehåll och erbjudande som den svenska vinnaren.
+Varje mening: dansk text, och under den den svenska meningen den ersätter.
+
+ 1. Der bor noget i din vaskemaskine lige nu.
+    (sv: Det bor något i din tvättmaskin just nu.)
+ 2. Efter nitten år som reparatør ved jeg, at intet middel på hylden kan klare det.
+    (sv: Efter nitton år som reparatör vet jag att inget medel på hyllan rår på det.)
+ 3. Og få kæledyrsejere kender tricket, der fjerner det på en enkelt vask.
+    (sv: Och få husdjursägare känner till knepet som tar bort det på en enda tvätt.)
+ 4. Jeg har skilt over tusind maskiner ad, og i hjem med kæledyr er samtalen altid den samme.
+    (sv: Jag har plockat isär över tusen maskiner, och i husdjurshem är samtalet alltid detsamma.)
+ 5. Håndklæder, der lugter indelukket, før de overhovedet er tørre.
+    (sv: Handdukar som luktar unket innan de ens torkat.)
+ 6. Den svage duft af våd hund i en nyvasket trøje.
+    (sv: Den svaga doften av blöt hund i en nytvättad tröja.)
+ 7. Du skammer dig i al hemmelighed og spekulerer på, om det er dig, der lugter.
+    (sv: Du skäms i smyg och undrar om det är du som luktar.)
+ 8. Så du skifter vaskemiddel, bruger eddike og tager en maskintablet om måneden.
+    (sv: Så du byter tvättmedel, kör ättika och tar en maskintablett i månaden.)
+ 9. Lugten forsvinder en dag, så kryber den tilbage.
+    (sv: Lukten försvinner en dag, sen kryper den tillbaka.)
+10. Men her er det, der overrasker alle.
+    (sv: Men här är det som överraskar alla.)
+11. Ni ud af ti gange er maskinen helt fejlfri.
+    (sv: Nio gånger av tio är maskinen helt felfri.)
+12. Lugten kommer fra noget, der lever.
+    (sv: Lukten kommer från något som lever.)
+13. Bag tromlen er der et forseglet rum, som vandet fosser igennem, men som du aldrig ser eller når.
+    (sv: Bakom trumman finns ett förseglat utrymme som vattnet forsar genom, men som du aldrig ser eller når.)
+14. Det lukkes på fabrikken, og ingen fortæller dig, at det er der, problemerne starter.
+    (sv: Det försluts på fabriken, och ingen berättar att det är där problemen börjar.)
+15. Vaskemiddel og skyllemiddel efterlader en klæbrig hinde på alt derbagved.
+    (sv: Tvättmedel och sköljmedel lämnar en kladdig hinna på allt där bakom.)
+16. Dyrehår sætter sig fast for altid, og skæl og hudfedt lægger sig ovenpå.
+    (sv: Djurhår fastnar för gott, och mjäll och hudfett lägger sig ovanpå.)
+17. Så kommer bakterierne, som ser alt det der som mad.
+    (sv: Sen kommer bakterierna, som ser allt det där som mat.)
+18. Og de bygger et slimet skjold og gemmer sig under det.
+    (sv: Och de bygger en slemmig sköld och gömmer sig under den.)
+19. Skjoldet kaldes biofilm, og derfor overlever det alt, hvad du prøver.
+    (sv: Skölden kallas biofilm, och därför överlever den allt du försöker med.)
+20. Med kæledyr kan den få fat i en ny maskine på to uger og vokser så hver måned.
+    (sv: Med husdjur kan den få fäste i en ny maskin på två veckor, och växer sen varje månad.)
+21. Så lige nu lever der en koloni bag din tromle, under en rustning, den selv har bygget.
+    (sv: Så just nu lever det en koloni bakom din trumma, under en rustning den byggt själv.)
+22. Den har overlevet hver vask og giver lugten i dit tøj.
+    (sv: Den har överlevt varje tvätt och ger lukten i dina kläder.)
+23. Lugten er et signal om, at bakterier og skimmel følger med ud og sætter sig i alt, hvad du har på.
+    (sv: Lukten är en signal om att bakterier och mögel följer med ut och sätter sig i allt du bär.)
+24. Vasketøjet var aldrig snavset, det er blevet vasket i kolonien hele tiden.
+    (sv: Tvätten var aldrig smutsig, den har tvättats i kolonin hela tiden.)
+25. Og det er derfor, intet af det, du har prøvet, har virket.
+    (sv: Och det är därför inget du testat har fungerat.)
+26. Eddike er en svag syre, og i en fuld maskine bliver den for fortyndet til at gøre noget.
+    (sv: Ättika är en svag syra, och i en full maskin blir den för utspädd för att göra något.)
+27. Natron får aldrig chancen, det opløses knap i koldt vand og skylles væk med det samme.
+    (sv: Bikarbonat får aldrig chansen, den löser sig knappt i kallt vatten och spolas bort direkt.)
+28. Rengøringsprogrammet er bare varmt vand, men maskinen er jo altid varm og fugtig.
+    (sv: Rengöringsprogrammet är bara varmt vatten, men maskinen är ju alltid varm och fuktig.)
+29. Kolonien har levet i varmt vand hele livet, det kan den tåle.
+    (sv: Kolonin har levt i varmt vatten hela livet, det tål den.)
+30. Så har vi det, jeg kalder branchens største skandale.
+    (sv: Sen har vi det jag kallar branschens största skandal.)
+31. Vend de store mærkers pakker om, og læs, hvad der er i.
+    (sv: Vänd på de stora märkenas paket och läs vad som finns i.)
+32. Det er det samme kemikalie i dem alle sammen, iltbaseret blegemiddel.
+    (sv: Det är samma kemikalie i allihop, syrebaserat blekmedel.)
+33. Forskellige pakninger og priser, men den samme formel fra nitten hundrede og fire.
+    (sv: Olika förpackningar och priser, men samma formel från nittonhundrafyra.)
+34. Det kan irritere huden, men bryder alligevel ikke igennem biofilm.
+    (sv: Den kan irritera huden, men bryter ändå inte igenom biofilm.)
+35. Uden kæledyr betyder det mindre, så er der knap mad til en koloni.
+    (sv: Utan husdjur spelar det mindre roll, då finns knappt mat för en koloni.)
+36. Men et hjem med kæledyr er en helt anden verden.
+    (sv: Men ett hem med husdjur är en helt annan värld.)
+37. Dyrehår er protein, skæl er fedt, og skjoldet er det samme.
+    (sv: Djurhår är protein, mjäll är fett, och skölden är samma sak.)
+38. Og blegemidlet kan ikke nedbryde protein eller fedt, det er ren kemi.
+    (sv: Och blekmedlet kan inte bryta ner protein eller fett, det är ren kemi.)
+39. Det skummer bare, skyller hen over skjoldet og efterlader kolonien.
+    (sv: Det skummar bara, sköljer över skölden och lämnar kolonin kvar.)
+40. Lugten kommer tilbage, og du tror, du har købt det forkerte produkt.
+    (sv: Lukten kommer tillbaka, och du tror att du köpt fel produkt.)
+41. Men intet af det var nogensinde lavet til det her.
+    (sv: Men inget av dem var någonsin gjort för det här.)
+42. Det, der nedbryder biofilm, er ikke kemikalier, men enzymer.
+    (sv: Det som bryter ner biofilm är inte kemikalier, utan enzymer.)
+43. Enzymer opløser skjoldet, fordi hvert enzym nedbryder et bestemt stof.
+    (sv: Enzymer löser upp skölden, eftersom varje enzym bryter ner ett specifikt ämne.)
+44. Det er ingen konspiration, det kommer fra NASAs forskning.
+    (sv: Det är ingen konspiration, det kommer från NASA:s forskning.)
+45. I rumskibe vokser der biofilm i rørene, hvor intet stærkt må bruges.
+    (sv: I rymdskepp växer biofilm i ledningarna, där inget starkt får användas.)
+46. Så de udviklede enzymer, der kun nedbryder biofilmen.
+    (sv: Så de tog fram enzymer som bara bryter ner biofilmen.)
+47. Så fulgte hospitaler og vaskerier efter, og ingen af dem bruger blegemiddel.
+    (sv: Sen tog sjukhus och tvätterier efter, och ingen av dem använder blekmedel.)
+48. Fagfolk har vidst det i årtier, men du har aldrig fået det at vide.
+    (sv: Proffsen har vetat i årtionden, men du har aldrig fått höra det.)
+49. For blegemiddel er billigt at fremstille og tjener penge på hylden.
+    (sv: För blekmedel är billigt att tillverka och tjänar pengar på hyllan.)
+50. Derfor har få kæledyrsejere haft en ren maskine eller rent tøj.
+    (sv: Därför har få husdjursägare haft en ren maskin eller rena kläder.)
+51. Men nu findes de tre enzymer, der betyder noget, i én enkelt tablet.
+    (sv: Men nu finns de tre enzymerna som spelar roll i en enda tablett.)
+52. Alfa-amylase opløser hinden, der holder kolonien fast, så alt nedenunder blotlægges.
+    (sv: Alfa-amylas löser upp hinnan som håller fast kolonin, så att allt under blottas.)
+53. Protease nedbryder proteinet i dyrehårene, som blegemiddel ikke kan klare, så hårene skylles ud.
+    (sv: Proteas bryter ner proteinet i djurhåren, det blekmedel inte rår på, så att håren spolas ut.)
+54. Og lipase fjerner det fedtede lag, som bakterierne lever af, så lugten ikke kommer tilbage.
+    (sv: Och lipas tar bort det feta lagret som bakterierna lever av, så lukten inte kommer tillbaka.)
+55. Et blotlægger, et ødelægger, og et udsulter resten.
+    (sv: Ett blottar, ett förstör, och ett svälter ut resten.)
+56. Jeg gav den til den kunde, der havde mest brug for den, en mor med to schæferhunde og en grand danois.
+    (sv: Jag gav den till min kund som behövde den mest, en mamma med två schäfrar och en grand danois.)
+57. Hun havde prøvet alt, jeg havde været der tre gange.
+    (sv: Hon hade testat allt, jag hade varit där tre gånger.)
+58. Dagene efter ringede hun: håndklæderne lugtede af ingenting.
+    (sv: Dagarna efter ringde hon: handdukarna luktade ingenting.)
+59. Hun havde snuset til dem som en sindssyg.
+    (sv: Hon hade sniffat på dem som en galning.)
+60. Så jeg skruede selv panelet af.
+    (sv: Så jag skruvade loss panelen själv.)
+61. Laget var ikke løsnet, det var helt skyllet væk.
+    (sv: Lagret var inte lossat, det var helt bortspolat.)
+62. Én tablet klarede det, intet andet havde klaret på nitten år.
+    (sv: En tablett klarade det inget annat klarat på nitton år.)
+63. Siden da tipper jeg alle kæledyrsejere.
+    (sv: Sen dess tipsar jag alla husdjursägare.)
+64. Hos en familie nægtede datteren at sove med tæppet, det lugtede.
+    (sv: Hos en familj vägrade dottern sova med filten, den luktade.)
+65. Snart kom der et billede af hende under tæppet med hunden ved fødderne.
+    (sv: Snart kom en bild på henne under filten, hunden vid fötterna.)
+66. Hun ville have det tilbage. Tak.
+    (sv: Hon ville ha den tillbaka. Tack.)
+67. Den hedder Maskinren, fra Nordvask.
+    (sv: Den heter Maskinrent, från svenska Norrtvätt.)
+68. Den er lavet til kæledyrsejere og fjerner hår, fedt og lugt uden at skade maskinen.
+    (sv: Den är gjord för husdjursägare och löser hår, fett och lukt utan att skada maskinen.)
+69. Over femten tusind kunder har allerede skiftet.
+    (sv: Över femton tusen kunder har redan bytt.)
+70. Lige nu er der udsalg med op til halvtreds procent rabat og fri fragt, fra tyve kroner per tablet.
+    (sv: Just nu är det höstrea med upp till femtio procent rabatt och fri frakt, från tjugo kronor per tablett.)
+71. Og du har tredive dages pengene-tilbage-garanti.
+    (sv: Och du har trettio dagars pengarna-tillbaka-garanti.)
+72. Har du kæledyr og indelukket vasketøj, så stop med midler, der aldrig var lavet til biofilm.
+    (sv: Har du husdjur och unken tvätt, sluta med medel som aldrig var gjorda för biofilm.)
+73. Klik på linket, mens udsalget varer.
+    (sv: Klicka på länken medan rean pågår.)

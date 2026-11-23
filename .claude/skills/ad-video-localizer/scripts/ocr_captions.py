@@ -6,7 +6,8 @@ rectangles of the caption box for removing it with lama_inpaint.py.
 
 Usage:
   ocr_captions.py SRC.mp4 OUT_DIR [--band 0.70-0.86] [--pad 5] [--box-h 0.030-0.047] [--fill 0.45]
-Small caption boxes (e.g. 720x1280 with 36 px boxes) need --box-h 0.022-0.05 --fill 0.38.
+Small caption boxes (e.g. 720x1280 with 36 px boxes) need --box-h 0.022-0.05 --fill 0.38; rounded
+corners also need --inset 5.
 Writes OUT_DIR/captions_ocr.txt (start-end text, one caption per line),
 OUT_DIR/segments.json and OUT_DIR/masks.json ({frame: [[x0, y0, x1, y1]]}).
 Needs tesseract (apt-get install tesseract-ocr) and opencv-python-headless.
@@ -66,6 +67,9 @@ def main():
                     "bands mode: its box can be a few rows short and leave a thin white edge after inpainting)")
     ap.add_argument("--box-h", default="0.030-0.047", help="caption box height range (fractions of height)")
     ap.add_argument("--fill", type=float, default=0.45, help="min share of white pixels in the box")
+    ap.add_argument("--inset", type=int, default=1,
+                    help="row/column inside the box edge that must be white; use ~5 for boxes with rounded "
+                         "corners (video 51: 35 px boxes; nothing was found with 1, and 9 already hit the text)")
     ap.add_argument("--mode", choices=["cc", "bands"], default="cc",
                     help="cc: box = white connected component (default). bands: box = matching white rows above "
                          "and below the text; use it when the box touches white backgrounds or the text is large")
@@ -103,7 +107,9 @@ def main():
             x, y, w, h, area = st[j]
             if hmin <= h <= hmax and w >= 40 and w <= 0.75 * Wd and area >= a.fill * w * h:
                 sub = (lab[y:y + h, x:x + w] == j)
-                if sub[1].mean() > 0.85 and sub[-2].mean() > 0.6 and sub[:, 1].mean() > 0.85 and sub[:, -2].mean() > 0.85:
+                i = a.inset
+                if sub[i].mean() > 0.85 and sub[-1 - i].mean() > 0.6 and sub[:, i].mean() > 0.85 and \
+                        sub[:, -1 - i].mean() > 0.85:
                     if best is None or area > best[4]: best = (int(x), int(y + Y0), int(w), int(h), int(area))
         if best:
             x, y, w, h, _ = best

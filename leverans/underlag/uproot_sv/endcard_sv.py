@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 S0 = '/tmp/claude-0/-home-user-Admin/d39b7636-1eba-5c6d-b314-8084f5795d40/scratchpad/'
 P = S0 + 'prodimg/'
 FD = S0 + 'bf/fonts/Montserrat-%d.ttf'
-W, H = 720, 1280
+W, H = 720, int(os.environ.get('CARD_H', '1280'))
 Z = 2
 W2, H2 = W * Z, H * Z
 BG = (244, 243, 240)
@@ -190,7 +190,7 @@ def build(outpath, band=(780, 862)):
                  ('rate', rating_row(34 * u * 2), 26 * u * 2),
                  ('row', trust_row(['Fri frakt', '30 dagars pengarna tillbaka'], 32 * u * 2), 0)]
     upper_bottom = (band[0] - 30) * Z
-    top = 70 * Z
+    top = int(os.environ.get('CARD_TOP', '70')) * Z
     rest = sum(p[1][0] for p in top_parts if p[1]) + sum(p[2] for p in top_parts)
     side = int(min(0.66 * W2, upper_bottom - top - rest))
     st = Stack()
@@ -205,4 +205,5 @@ def build(outpath, band=(780, 862)):
     img.convert('RGB').save(outpath)
     print('photo', side / Z, 'content top', y0 / Z, 'url y', band[1] + 48)
 if __name__ == '__main__':
-    build(sys.argv[1])
+    b = tuple(int(x) for x in os.environ.get('CARD_BAND', '780,862').split(','))
+    build(sys.argv[1], b)

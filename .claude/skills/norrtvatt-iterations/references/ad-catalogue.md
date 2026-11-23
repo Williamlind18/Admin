@@ -155,6 +155,33 @@ enzymes) is the same in all of them unless noted. **Box** is filled in after lab
   replaced with Maskinrent pack shots from the shop, old captions removed, quiet music bed.
 - Box: ? (launch as one ad set with the three hooks). Learning: –
 
+## B13 – Video 51, the technician's "biofilm in two weeks" (1:1 Uproot, 2026-11-23)
+- Files: `leverans/manus_video51.txt`, `leverans/norrtvatt_video51_sv.mp4` (+ .srt). Source tag: video51
+  (Uproot Clean ad, 4:06). New Uproot source, no parent, made 1:1 after the user's brief of 2026-11-23: same
+  shots, cuts, story, tone and length; 58 sentences translated one for one and each placed where the
+  original sentence sits (OCR'd caption times).
+- Hook: "Jag är vitvarutekniker. I hem med husdjur är tvättmaskinen redan förorenad, och du vet inte ens om
+  det." Title over the opening: "DIN TVÄTTMASKIN ÄR REDAN FÖRORENAD".
+- Angle: biofilm starts within two weeks in a pet home (week two → month two → month three timeline), and
+  vinegar, bleach and oxygen bleach can't reach it; three enzymes, one job each.
+- Avatar: pet owners who wash every other day. Desire: a clean, odour-free machine without work.
+- Authority: appliance technician, 15+ years, every machine type, teardown footage. Same authority as the
+  original (brief: keep the original's authority, add none).
+- Awareness: problem/unaware ("you don't even know it"). Emotion: disgust (black biofilm), then relief.
+- Mechanism: alfa-amylas (film), proteas (keratin in pet hair), lipas (the fat bacteria feed on).
+- Positioning: "inte syreblekmedel med parfym". Urgency: köp två få två, fri frakt, 30 dagar ("innan
+  erbjudandet tar slut").
+- Changes from the original: Uproot → "Maskinrent från Norrtvätt, ett litet svenskt företag"; Affresh not
+  named ("från butiken"); "once every two weeks" → "en gång i månaden"; 60 → 30 days; Uproot's end card →
+  Norrtvätt closing still (logo, pack shot, KÖP 2 – FÅ 2 PÅ KÖPET, 4 paket för 999 kr, fri frakt, 30 dagar,
+  4,8/5, 15 000+, norrtvatt.se). All clips kept, including the Uproot box/booth at 3:18-3:24 and the
+  Affresh/Tide shots (user's brief).
+- Edit: eleven_v4 paragraph takes (8), max tempo x1.02, no slow-down (spare time in pauses, ~0.6 s, ~1.2 s at
+  chapter starts). Old captions removed (`remove_captions.py`, two passes for captions that move up),
+  "WEEK/MONTH TWO/THREE" labels redrawn in Swedish frame by frame (`relabel_boxes.py`), other English titles
+  covered with white boxes, new music bed (ElevenLabs, 140 s looped).
+- Box: ? Learning: –
+
 ## Live ads → files and sources (found 2026-11-04 by matching video length to the second)
 The user names live ads `ny batch N – Cn`. Several deliveries live on other branches of this repo.
 

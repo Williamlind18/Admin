@@ -450,3 +450,34 @@ defaults to cut_off.
   ships without it). Price it before proposing anything: a 4:37 ad with the presenter on screen for
   238 s would have cost ~190 000 credits with Sync 3, and the user dropped it. Offer a 45-75 s cut
   instead.
+
+## A 1:1 Uproot ad with moving labels and an end card (video 51 / B13, 2026-11-23)
+- **The user's brief for 1:1 ads:** same shots, cuts, story, tone and length; translate sentence for sentence
+  (same count, order and claims) and place every sentence where the original's sentence sits. Keep all
+  clips (also Uproot's box), cover English titles with white boxes, replace the end card only when it is
+  a still with their box/offer. The user's pasted transcript had segment times only, so the sentence
+  starts came from `ocr_captions.py` (needed `--inset 5` for rounded 35 px boxes, see the script).
+- **Swedish v4 ran ~10 % shorter than the English VO** (209 s of speech for a 4:06 video). With no slow-down
+  allowed, the planner put ~0.6 s between sentences and ~1.2 s before the chapter anchors. Anchor only
+  the visual cues (titles, enzyme names, cuts, offer) with windows of about -0.3 to +0.9 s (-1.2 s where a
+  gap piled up); anchoring all 58 sentences gave uneven 1-1.4 s gaps and x1.16 in a fast passage.
+- **Captions that move:** the original's caption box sat at y 828 most of the time, but at 641, 355 and
+  258 in four passages. The first `remove_captions.py` pass logs "no box found at" ranges; check those
+  frames, run a second pass with bands for the other positions, and move the new captions to the same y
+  in those time windows (post-process the layer-0 `\pos` in the ASS).
+- **Moving white labels with black text** ("WEEK | TWO", "MONTH | THREE"): `scripts/relabel_boxes.py`
+  finds the black words with white around them frame by frame and draws the Swedish word in a white box
+  at the same letter height. A box-outline detector failed where the box touched a white background or
+  the frame edge; a wide letter-joining kernel bridged the box margin into dark backgrounds.
+- **ASS font size is not the letter size.** Montserrat's ascent+descent make `\fs` render the capitals at
+  only ~0.57 x the size. Label boxes sized by eye came out with text ~40 % too small; check one frame of
+  every label before the full render (`ffmpeg -ss T -copyts -i edit.mp4 -vf ass=... -frames:v 1`).
+- **`render.py` cuts the video at the end of the audio.** The end card after the last word (242.7-245.8 s)
+  disappeared until the voice track was padded: `ffmpeg -i vo.wav -af apad=whole_dur=<video length>`.
+- **End card from the shop:** the product photos come from the Shopify connector (`products(query:
+  "title:*MASKINRENT*") { media { preview { image { url } } } }`; `images` is deprecated). The card is
+  drawn with PIL: logo file, pack shot in a rounded tile, black pill "KÖP 2 – FÅ 2 PÅ KÖPET", price, a
+  trust row with a drawn star (Montserrat has no ★), and a teal "HANDLA PÅ NORRTVATT.SE" button, laid over
+  the upscaled edit with an ffmpeg `overlay` + 0.25 s alpha fade from the original card's first frame.
+- Music bed: 140 s piece (2 100 credits, half the estimate) looped with `acrossfade=d=4` (second copy from
+  20 s) and trimmed to the video with a 2.5 s fade-out, `--bed-db -19`.

@@ -6,6 +6,7 @@ Usage: tighten_pauses.py SENT_DIR [--min 0.20] [--keep 0.16]
 Originals are kept in SENT_DIR/raw/ (re-running starts from them). Run before align_words.py.
 """
 import glob
+import re
 import os
 import shutil
 import subprocess
@@ -25,7 +26,8 @@ def main():
     KEEP = float(sys.argv[sys.argv.index("--keep") + 1]) if "--keep" in sys.argv else 0.16
     os.makedirs(os.path.join(D, "raw"), exist_ok=True)
     total = 0.0
-    for p in sorted(glob.glob(os.path.join(D, "[0-9][0-9].mp3"))):
+    clips = [p for p in glob.glob(os.path.join(D, "*.mp3")) if re.fullmatch(r"\d+\.mp3", os.path.basename(p))]
+    for p in sorted(clips, key=lambda p: int(os.path.basename(p)[:-4])):
         raw = os.path.join(D, "raw", os.path.basename(p))
         if not os.path.exists(raw):
             shutil.copy(p, raw)

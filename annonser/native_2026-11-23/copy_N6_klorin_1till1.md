@@ -12,7 +12,9 @@ Försvenskat:
 ## Rubrik
 **Klorin gör inte rent din tvättmaskin**
 
-Alternativ: Jag vägrar städa tvättmaskiner numera
+Alternativ:
+- Jag vägrar städa tvättmaskiner numera
+- Det värsta du kan göra om din tvättmaskin luktar (översatt från konkurrentens rubrik)
 
 ## Till advokaten
 - Meningen "jag jobbar inte för Norrtvätt, de har inte anlitat mig" och att personen är fiktiv.

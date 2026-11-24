@@ -16,7 +16,10 @@ Rogers replik säger "samma typ av enzymer" i stället för att veterinärklinik
 ## Rubrik
 **Min fru slutade tvätta i vår maskin**
 
-Alternativ: Sluta köpa maskinrengöring om du har hund
+Alternativ:
+- Sluta köpa maskinrengöring om du har hund
+- Jag lagar tvättmaskiner. Min egen kunde jag inte laga. (översatt från konkurrentens rubrik)
+- Kortare: Jag lagar tvättmaskiner – men inte min egen
 
 ## Kontrollera
 Produktfakta:

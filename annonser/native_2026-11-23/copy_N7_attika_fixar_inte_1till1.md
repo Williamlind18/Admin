@@ -14,7 +14,10 @@ Försvenskat och ändrat:
 ## Rubrik
 **Ättika fixar inte din tvättmaskin**
 
-Alternativ: Det här kommer göra husdjursägare arga
+Alternativ:
+- Det här kommer göra husdjursägare arga
+- Jag slutade säga åt husdjursägare att köra ättika. Här är varför (översatt från konkurrentens rubrik)
+- Därför slutade jag tipsa om ättika (kortare variant av konkurrentens rubrik)
 
 ## Till advokaten
 - "Jag säljer den inte… ingen provision" och att personen och kundfallen är fiktiva.

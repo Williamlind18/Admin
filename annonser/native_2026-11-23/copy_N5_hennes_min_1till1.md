@@ -14,7 +14,9 @@ Försvenskat:
 ## Rubrik
 **Han tvättade sina skjortor hos sin mamma**
 
-Alternativ: Jag kom på min man med en sopsäck
+Alternativ:
+- Jag kom på min man med en sopsäck
+- Jag kom på min man när han smög ut med en sopsäck (översatt från konkurrentens rubrik)
 
 ## Kontrollera
 - Ser tabletterna turkosprickiga ut?

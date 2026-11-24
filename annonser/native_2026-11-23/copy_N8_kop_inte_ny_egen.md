@@ -25,6 +25,9 @@ Alternativ:
 - Min tvättmaskin var inte trasig. Den var smutsig.
 - 1 395 kronor för att höra att jag borde köpa en ny
 - Jag var två veckor från att köpa en ny tvättmaskin
+- Köp inte ny tvättmaskin för att tvätten luktar
+- 14 år gammal. Inte trasig. Bara smutsig.
+- Jag var nära att bära ut en tvättmaskin som inte var trasig
 
 ## Till advokaten
 - Lennart, Sven-Åke och hela berättelsen är påhittade. Det är en egen text, inte en översättning. Överväg en rad om att

@@ -25,6 +25,7 @@ for b in open(srt, encoding='utf-8').read().strip().split('\n\n'):
     for f in range(int(round(a * 30)) + 1, int(round(c * 30)) - 1):
         if cap(f) or 1660 <= f <= 1765: continue
         rs = cap(f - 1) + cap(f + 1)
-        if rs: out2.setdefault(f, []).append([min(r[0] for r in rs), min(r[1] for r in rs), max(r[2] for r in rs), max(r[3] for r in rs)])
+        box = [min(r[0] for r in rs), min(r[1] for r in rs), max(r[2] for r in rs), max(r[3] for r in rs)] if rs else None
+        if box and box not in out2.get(f, []): out2.setdefault(f, []).append(box)
 json.dump({str(k): v for k, v in sorted(out2.items())}, open(o2, 'w'))
 print(len(out), len(out2))

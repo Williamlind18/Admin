@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Render clean video + mix + captions (+ PNG overlays) to a full-quality mp4 (<= ~93 MB) and preview parts.
-usage: render_no.py CLEAN.mp4 MIX.wav CAPTIONS.ass OUT.mp4 [--ov png:t0:t1 ...] [--prev-dir DIR --prev-name NAME]"""
+usage: render_no.py CLEAN.mp4 MIX.wav CAPTIONS.ass OUT.mp4 [--ov=png:t0:t1 ...] [--seq=PATTERN%05d.png:START_FRAME ...]
+       [--prev-dir DIR --prev-name NAME]   (--seq: a PNG sequence overlaid from START_FRAME, e.g. a line that fades in)"""
 import json, os, subprocess, sys
 FONTS = "/tmp/claude-0/-home-user-Admin/d39b7636-1eba-5c6d-b314-8084f5795d40/scratchpad/v22it/fonts"
 clean, mix, ass, out = sys.argv[1:5]
@@ -15,6 +16,11 @@ for i, spec in enumerate(ovs):
     png, t0, t1 = spec.rsplit(":", 2)
     inputs += ["-loop", "1", "-i", png]
     chain.append(f"[{last}][{i + 2}:v]overlay=0:0:enable='between(t,{t0},{t1})':shortest=1[o{i}]"); last = f"o{i}"
+seqs = [a.split("=", 1)[1] for a in sys.argv if a.startswith("--seq=")]
+for j, spec in enumerate(seqs):
+    pat, f0 = spec.rsplit(":", 1); n = inputs.count("-i")
+    inputs += ["-framerate", fps, "-start_number", f0, "-i", pat]
+    chain.append(f"[{n}:v]setpts=PTS-STARTPTS+{int(f0)}/({fps})/TB[s{j}];[{last}][s{j}]overlay=0:0:eof_action=pass[q{j}]"); last = f"q{j}"
 chain.append(f"[{last}]ass='{ass}':fontsdir='{FONTS}'[v]")
 vmax = int(93 * 8 * 1024 / dur - 170)
 subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y"] + inputs + ["-filter_complex", ";".join(chain), "-map", "[v]", "-map", "1:a",

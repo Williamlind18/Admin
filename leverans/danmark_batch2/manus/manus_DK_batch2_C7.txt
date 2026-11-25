@@ -1,0 +1,69 @@
+Nordvask DK batch 2 - C7: b5 C6 (video39) – en enzymtablet, det her kom ud (dansk version)
+Svensk källa: leverans/norrtvatt_video39_sv.mp4 @ claude/quirky-mayer-tsglxb
+Röst: "dansk kvinna 40-50 år (B1bvPObPV34zuzdnfbgb)", ElevenLabs eleven_v4, språkkod da. Samma bild, innehåll och erbjudande som den svenska annonsen.
+Varje mening: dansk text, och under den den svenska meningen den ersätter.
+
+ 1. Den her vaskemaskine så ren ud.
+    (sv: Den här tvättmaskinen såg ren ut.)
+ 2. Så kørte vi én enzymtablet.
+    (sv: Sen körde vi en enzymtablett.)
+ 3. Det her kom ud.
+    (sv: Det här kom ut.)
+ 4. Sådan ser det ud i tromlen med de rigtige enzymer.
+    (sv: Så här ser det ut i trumman med rätt enzymer.)
+ 5. I de første minutter af et varmt program opløser alfa-amylase hinden af vaskemiddel.
+    (sv: Under de första minuterna av ett varmt program löser alfa-amylas upp tvättmedelshinnan.)
+ 6. Hinden holder dyrehår, skæl og bakterier fast i tromlen.
+    (sv: Hinnan håller kvar djurhår, mjäll och bakterier i trumman.)
+ 7. Uden at få den væk først bliver intet andet rent.
+    (sv: Utan att få bort den först blir inget annat rent.)
+ 8. Når vandet bliver varmt, går protease i gang med dyrehårene.
+    (sv: När vattnet värms upp går proteas loss på djurhåren.)
+ 9. Den nedbryder proteinet i håret, så det opløses og skylles ud.
+    (sv: Det bryter ner proteinet i håret så att det löses upp och spolas ut.)
+10. Det her er det hår, du ikke ser, små hår i gummilisten og slangerne.
+    (sv: Det här är håret du inte ser, små strån i gummilisten och slangarna.)
+11. Så tager lipase sig af det fedtede lag fra skyllemiddel, hudfedt og skæl.
+    (sv: Sen tar lipas hand om det feta lagret från sköljmedel, hudfett och mjäll.)
+12. Bakterierne lever af det lag.
+    (sv: Bakterierna lever på det lagret.)
+13. Når det er væk, forsvinder lugten ved kilden.
+    (sv: När det är borta försvinner lukten vid källan.)
+14. Uden lipase dækker du bare lugten med vaskemiddel.
+    (sv: Utan lipas döljer du bara lukten med tvättmedel.)
+15. Bakterierne bliver, og lugten kommer tilbage.
+    (sv: Bakterierna blir kvar och lukten kommer tillbaka.)
+16. Efter programmet er måneders belægning væk.
+    (sv: Efter programmet är månader av beläggning borta.)
+17. Vandet, der løber ud, er sort, helt sort.
+    (sv: Vattnet som rinner ut är svart, helt svart.)
+18. Alt det lod din gamle rens blive tilbage.
+    (sv: Allt det lämnade din gamla rengörare kvar.)
+19. Tøjet holder op med at lugte indelukket.
+    (sv: Kläderna slutar lukta unket.)
+20. Håndklæderne holder sig friske.
+    (sv: Handdukarna håller sig fräscha.)
+21. Og hundens tæppe lugter rent.
+    (sv: Och hundens filt luktar rent.)
+22. Men det virker kun, hvis enzymerne kan klare varme, vandtryk og lange programmer.
+    (sv: Men det fungerar bara om enzymerna klarar värme, vattentryck och långa program.)
+23. Det kan de fleste ikke.
+    (sv: De flesta gör inte det.)
+24. Almindelige enzymtabletter giver op for tidligt.
+    (sv: Vanliga enzymtabletter ger upp för tidigt.)
+25. Og mange maskinrens er bare iltblegemiddel.
+    (sv: Och många maskinrengörare är bara syreblekmedel.)
+26. De tager sæberester, ikke dyreprotein.
+    (sv: De tar tvålrester, inte djurprotein.)
+27. Men Maskinren fra Nordvask kan.
+    (sv: Men Maskinrent från Norrtvätt klarar det.)
+28. Den eneste formel med alle tre enzymer, udviklet til hjem med kæledyr.
+    (sv: Den enda formulan med alla tre enzymerna, framtagen för hem med husdjur.)
+29. Lige nu får du fire pakker til prisen for to og fri fragt.
+    (sv: Just nu får du fyra paket för priset av två och fri frakt.)
+30. Og tredive dages pengene-tilbage-garanti.
+    (sv: Och trettio dagars pengarna-tillbaka-garanti.)
+31. Har du aldrig prøvet enzymer, skal du se, hvad der kommer ud.
+    (sv: Har du aldrig testat enzymer måste du se vad som kommer ut.)
+32. Klik på linket, mens tilbuddet gælder.
+    (sv: Klicka på länken medan erbjudandet gäller.)

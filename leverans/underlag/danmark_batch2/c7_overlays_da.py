@@ -55,6 +55,12 @@ for g, (a, b) in RNG.items():
             layer = Image.new('RGBA', (W, H), (0, 0, 0, 0))
             layer.putalpha(sh.point(lambda v: int(v * 0.6 * al)))
             white = Image.new('RGBA', (W, H), (255, 255, 255, 0)); white.putalpha(txt.point(lambda v: int(v * al)))
-            canvas = Image.alpha_composite(canvas, layer); canvas = Image.alpha_composite(canvas, white)
+            canvas = Image.alpha_composite(canvas, layer)
+            if s < 60:   # the Swedish title has a dark 2 px outline round the letters as well as the shadow
+                st = Image.new('L', (W, H), 0)
+                ImageDraw.Draw(st).text((540, bl), da, font=font(s), fill=255, anchor='ms', stroke_width=2, stroke_fill=255)
+                rim = Image.new('RGBA', (W, H), (20, 20, 20, 0)); rim.putalpha(st.point(lambda v: int(v * 0.85 * al)))
+                canvas = Image.alpha_composite(canvas, rim)
+            canvas = Image.alpha_composite(canvas, white)
         canvas.save(os.path.join(OUT, f"{'title' if g == 't' else 'offer'}_{f:05d}.png"), compress_level=1)
 print({k: (sum(1 for x in v if x > 0), max(v)) for k, v in alpha.items()})

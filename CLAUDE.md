@@ -163,3 +163,11 @@ Seven more Swedish ads exist in Norwegian:
 - **Voices:** "Norsk äldre man 55-60 år" `iWsqLB1KXhKYZqry79ma` for men, "medelålders kvinna - NO" `wmWNq8zv8Au6slnVf0MZ`
   for women.
 
+## DK batch 2 (2026-11-25)
+
+The same seven ads in Danish: `leverans/danmark_batch2/Nordvask DK batch 2 - C1.mp4` to `C7.mp4` on
+`claude/funny-rubin-truuco`, each with an .srt and a script. C1, C3, C4 and C6 are the existing Danish b4 C2, b5 C2,
+b5.1 C3 and b5 C5 (same files as in `leverans/danmark/`); C2, C5 and C7 are new. The README there maps each file to its
+Swedish source. Voices as the other Danish ads: "dansk man 40-50 år" `Fc1E2eP0cRA7NC70Jdgt` (C2, C5), "dansk kvinna
+40-50 år" `B1bvPObPV34zuzdnfbgb` (C7).
+

@@ -304,6 +304,22 @@ defaults to cut_off.
   - Map every frame with `globalmap.py` (24x42 grey thumbnails, L2 via one matrix product).
   - Group the frames into runs of constant offset, then render with `b6_clean.py`.
   - Seek to `(frame - 0.5) / fps`. Seeking to `frame / fps` lands one frame late in every segment.
+  - **DK batch 2 (2026-11-25): even the −0.5 frame seek landed one frame late in about half the segments** of
+    video11 and video16 (a repeated first frame). Seek up to 30 frames early and drop them with
+    `trim=start_frame=K` (`leverans/underlag/danmark_batch2/b6_clean.py`); after that the body matched the Swedish edit
+    exactly (thumbnail diff ≤ 0.38). Check with a shift test: compare each rebuilt frame with Swedish frames k−1, k and
+    k+1; most frames must match best at k.
+  - **The batch-6 music bed** is `music120.mp3` (v22it) played from 0 to 108 s, cross-faded (0.5 s) back to 7.5 s, then a
+    0.3 s fade-in and 2.2 s fade-out over the ad. Rebuild it that way when `bed_loop.wav` is gone; it lines up with the
+    Swedish audio at lag 0.
+- **video39 (b5 C6) text:** the title (frames 0–158) and the offer lines (KÖP 2 fades in from frame ~2814, FÅ 2 GRATIS
+  from ~2838, the two small lines pop at 2898, all end at the cut at 2940) are Montserrat Bold (wght 700): title 38 px,
+  big offer lines 92–93 px, small lines 48 px, centred on x 540, with a soft dark drop shadow. The captions sit at
+  y 0.71, except 55.6–58.6 s where they are at y 0.365 (the shots have the drum rim at the usual height): move the new
+  captions there too and mask that band separately. `c7_overlays_da.py` measures each Swedish line's opacity per frame
+  as (Swedish − clean) / (255 − clean) on that line's ink and draws the new line with it.
+- **Don't render while LaMa runs.** LaMa on 1080x1920 frames with two crops (title and caption) took 34 min for the first
+  300 frames while two renders shared the 4 cores.
 - **Music beds made with ElevenLabs music** are kept in the Swedish project's flow, e.g. "Video 39 – musikbädd" in
   "Norrtvätt video 39 – svensk voiceover". Check the flows (`creative_list_flows`) before trying to separate the music.
 

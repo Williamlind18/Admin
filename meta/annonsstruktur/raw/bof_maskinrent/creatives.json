@@ -1,0 +1,6051 @@
+{
+ "ad_creatives": [
+  {
+   "id": "1047472188352994",
+   "name": "Sista chansen – upp till 50% 2026-11-12-ec46c5fef0e7955b6f1d798da9090a23",
+   "object_type": "SHARE",
+   "body": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Sista chansen – upp till 50%",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "92c5c26b967c2708f92e06e66c171183",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122122358979491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17990862627087750",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "92c5c26b967c2708f92e06e66c171183",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Sista chansen – upp till 50%"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1655540436309319",
+   "name": "Sista chansen – upp till 50% 2026-11-12-54e27e3273d94aa39dfa8eaa72f9fc74",
+   "object_type": "SHARE",
+   "body": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Sista chansen – upp till 50%",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "1cb6e9e54a6a62b6af65743b268d4305",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122122359027491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18130558600911343",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "1cb6e9e54a6a62b6af65743b268d4305",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Sista chansen – upp till 50%"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1695186305565755",
+   "name": "Sista chansen – upp till 50% 2026-11-12-d80f1459b4bfc2d0c138b2222d006b12",
+   "object_type": "SHARE",
+   "body": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Sista chansen – upp till 50%",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "1cd7307186c139951648482943825e02",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122122358991491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18101923022412482",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "1cd7307186c139951648482943825e02",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Sista chansen – upp till 50%"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1359827059470051",
+   "name": "Sista chansen – upp till 50% 2026-11-12-5f9080002864f20bc1225c73cb987e0c",
+   "object_type": "SHARE",
+   "body": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Sista chansen – upp till 50%",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "38c37997e3643f5327736a3cfa91e9dc",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122122359009491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17886568551626601",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "38c37997e3643f5327736a3cfa91e9dc",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Sista chansen – upp till 50%"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1176361681623913",
+   "name": "Sista chansen – upp till 50% 2026-11-12-864023525c83391c481d4048a9717593",
+   "object_type": "SHARE",
+   "body": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Sista chansen – upp till 50%",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "99838f8df4cee2f8e4e77104a1c70f8f",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122122359057491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17957077326036799",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "99838f8df4cee2f8e4e77104a1c70f8f",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Sista chansen – upp till 50%"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "4081578622147784",
+   "name": "Sista chansen – upp till 50% 2026-11-12-bbc0e1234c2fc686ea882b83f1b26814",
+   "object_type": "SHARE",
+   "body": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Sista chansen – upp till 50%",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "7cb3f0f2fac73b98b752148e85d99be5",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122122358961491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18105383765456304",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "7cb3f0f2fac73b98b752148e85d99be5",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Sista chansen – upp till 50%"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "2028232847892461",
+   "name": "Sista chansen – upp till 50% 2026-10-29-a9ad6ca7102d7b59b5cedec3749ffbe8",
+   "object_type": "SHARE",
+   "body": "Nu säger vi farväl 👋 Årets största Maskinrent-kampanj avslutas ikväll kl. 23:59 – sista chansen till upp till 50 % rabatt.\n\nTabletten som håller tvättmaskinen fri från unken lukt och djurhår, en gång i månaden.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Sista chansen – upp till 50%",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "90d49d08ee53153fc8b4f6118c884345",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122117455017491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18131091922750947",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "90d49d08ee53153fc8b4f6118c884345",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Nu säger vi farväl 👋 Årets största Maskinrent-kampanj avslutas ikväll kl. 23:59 – sista chansen till upp till 50 % rabatt.\n\nTabletten som håller tvättmaskinen fri från unken lukt och djurhår, en gång i månaden.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Sista chansen – upp till 50%"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1777148080275356",
+   "name": "Köp fler, spara mer – upp till 50% 2026-10-13-bd45fe652044ceda40c0f1ac16d517ed",
+   "object_type": "SHARE",
+   "body": "📦 Köp fler, spara mer – upp till 50% rabatt på Maskinrent, bara till ikväll 23:59.\n\nFrån 37 kr ner till 21 kr per tablett. En tablett i månaden mot unken lukt i tvättmaskinen.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Köp fler, spara mer – upp till 50%",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "e3167c232be7b761cdeea35b5b9db307",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122111315085491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18113074406016983",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "e3167c232be7b761cdeea35b5b9db307",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "📦 Köp fler, spara mer – upp till 50% rabatt på Maskinrent, bara till ikväll 23:59.\n\nFrån 37 kr ner till 21 kr per tablett. En tablett i månaden mot unken lukt i tvättmaskinen.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Köp fler, spara mer – upp till 50%"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1498655852321841",
+   "name": "Köp 2 – spara 379 kr 2026-10-29-3d857b4354b00cb0c0a50a1ec6dd9b5b",
+   "object_type": "SHARE",
+   "body": "✍️ KÖP 2 OCH SPARA 379 KR – höstrea med upp till 50 % rabatt på Maskinrent.\n\n24 tabletter räcker i två år och håller trumma och gummilist fräscha.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Köp 2 – spara 379 kr",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "f27b4179d24f20adfad731706b0f2090",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122117454951491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17917712394532751",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "f27b4179d24f20adfad731706b0f2090",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "✍️ KÖP 2 OCH SPARA 379 KR – höstrea med upp till 50 % rabatt på Maskinrent.\n\n24 tabletter räcker i två år och håller trumma och gummilist fräscha.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Köp 2 – spara 379 kr"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1818775012796860",
+   "name": "Köp 2 & spara mer 2026-10-29-6bf54ec8c89f836383f89ceaf96e0fc0",
+   "object_type": "SHARE",
+   "body": "Snabb påminnelse 📝\n\n✓ Köp 2 och spara mer \n✓ Nu upp till 50 % rabatt – sista chansen \n✓ 30 dagars pengarna-tillbaka-garanti\nMaskinrent – tabletten som tar bort unken lukt ur tvättmaskinen.",
+   "title": "Köp 2 & spara mer",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "9cf14ef2ca21f53102a1c70d31dd0ee8",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122117454987491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18068036558615809",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "9cf14ef2ca21f53102a1c70d31dd0ee8",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Snabb påminnelse 📝\n\n✓ Köp 2 och spara mer \n✓ Nu upp till 50 % rabatt – sista chansen \n✓ 30 dagars pengarna-tillbaka-garanti\nMaskinrent – tabletten som tar bort unken lukt ur tvättmaskinen."
+     }
+    ],
+    "titles": [
+     {
+      "text": "Köp 2 & spara mer"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "2393279061481162",
+   "name": "Spara 379 kr – rean slutar ikväll 2026-10-29-bc788a9125ed903cbcc9607312511269",
+   "object_type": "SHARE",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "effective_object_story_id": "1234301249776145_122117454855491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18290266255292129",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628"
+   },
+   "asset_feed_spec": {
+    "videos": [
+     {
+      "video_id": "28916283511354804"
+     },
+     {
+      "video_id": "1585504516216418"
+     }
+    ],
+    "bodies": [
+     {
+      "text": "🧾 Upp till 50% rabatt – du sparar 379 kr på 2-pack Maskinrent. Höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Spara 379 kr – rean slutar ikväll"
+     }
+    ],
+    "link_urls": [
+     {
+      "website_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+     }
+    ],
+    "call_to_action_types": [
+     "SHOP_NOW"
+    ],
+    "ad_formats": [
+     "AUTOMATIC_FORMAT"
+    ],
+    "optimization_type": "PLACEMENT",
+    "asset_customization_rules": [
+     {
+      "priority": 1,
+      "publisher_platforms": [
+       "facebook",
+       "instagram",
+       "audience_network"
+      ],
+      "facebook_positions": [
+       "instream_video",
+       "story",
+       "facebook_reels",
+       "facebook_reels_overlay"
+      ],
+      "instagram_positions": [
+       "story",
+       "reels",
+       "ig_search"
+      ],
+      "audience_network_positions": [
+       "classic",
+       "rewarded_video"
+      ],
+      "video_label": "placement_asset_fc6c68a697ee90d97",
+      "video_id": "1585504516216418",
+      "body_label": "placement_asset_f1db8169649b38338",
+      "title_label": "placement_asset_f8471a83dbe3d2eed",
+      "link_url_label": "placement_asset_fb063412957446665"
+     },
+     {
+      "priority": 2,
+      "video_label": "placement_asset_fd4f2d792c8fd1c8e",
+      "video_id": "28916283511354804",
+      "body_label": "placement_asset_fed7b31aeffb65261",
+      "title_label": "placement_asset_f93bef91c829ea697",
+      "link_url_label": "placement_asset_fa06ea09542472968"
+     }
+    ]
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "pac_recomposition",
+     "display_name": "pac_recomposition"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "pac_recomposition",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1132489455963691",
+   "name": "Lagerrea – spara upp till 50% 2026-10-29-e898b7f3ad658334f9661a5ac738ca70",
+   "object_type": "SHARE",
+   "body": "🚨 LAGERREA – vi har fått in alldeles för många Maskinrent! Spara upp till 50 % + fri frakt.\n\nEn tablett i månaden och tvätten slutar lukta unket, även när hundfiltarna åker in i maskinen.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Lagerrea – spara upp till 50%",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "88b2ca5d069493b5e79a75f05f773877",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122117455029491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18073953722769227",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "88b2ca5d069493b5e79a75f05f773877",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "🚨 LAGERREA – vi har fått in alldeles för många Maskinrent! Spara upp till 50 % + fri frakt.\n\nEn tablett i månaden och tvätten slutar lukta unket, även när hundfiltarna åker in i maskinen.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Lagerrea – spara upp till 50%"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "29861865690081894",
+   "name": "Höstrea – upp till 50% + fri frakt 2026-10-29-7cd5c2eec4c0c3a7131df5530a3c20c3",
+   "object_type": "SHARE",
+   "body": "📦 HÖSTREA: upp till 50 % rabatt på Maskinrent + fri frakt. Köp 2 och spara mer.\n\nTabletten som löser upp tvättmedelsrester, djurhår och lukt i tvättmaskinen.\n\n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Höstrea – upp till 50% + fri frakt",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "59ddb408727062524ce22c852178d427",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122117454975491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17991451875075538",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "59ddb408727062524ce22c852178d427",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "📦 HÖSTREA: upp till 50 % rabatt på Maskinrent + fri frakt. Köp 2 och spara mer.\n\nTabletten som löser upp tvättmedelsrester, djurhår och lukt i tvättmaskinen.\n\n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Höstrea – upp till 50% + fri frakt"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "979327487873879",
+   "name": "Spara 379 kr – rean slutar ikväll 2026-10-13-dcdf372ef1fa0d51a1ec872b0cb383a8",
+   "object_type": "SHARE",
+   "body": "🧾 Upp till 50% rabatt – du sparar 379 kr på 2-pack Maskinrent. Höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Spara 379 kr – rean slutar ikväll",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "4b21f36dcdfbb81528a00427a80e59ed",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122111315037491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18116472368082630",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "4b21f36dcdfbb81528a00427a80e59ed",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "🧾 Upp till 50% rabatt – du sparar 379 kr på 2-pack Maskinrent. Höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Spara 379 kr – rean slutar ikväll"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1433516208883963",
+   "name": "Köp 2 & spara mer – upp till 50% 2026-10-13-11b19eba27ebd5ea1b3b3dc950df6eef",
+   "object_type": "SHARE",
+   "body": "Snabb påminnelse 📝\n\n✓ Köp 2 och spara mer \n✓ Just nu upp till 50% rabatt – sista chansen \n✓ 30 dagars pengarna-tillbaka-garanti\n\nMaskinrent – en tablett i månaden mot unken lukt i tvätten.",
+   "title": "Köp 2 & spara mer – upp till 50%",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "d895ab713905787d26aff1055b58edee",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122111315061491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18429178696150438",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "d895ab713905787d26aff1055b58edee",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Snabb påminnelse 📝\n\n✓ Köp 2 och spara mer \n✓ Just nu upp till 50% rabatt – sista chansen \n✓ 30 dagars pengarna-tillbaka-garanti\n\nMaskinrent – en tablett i månaden mot unken lukt i tvätten."
+     }
+    ],
+    "titles": [
+     {
+      "text": "Köp 2 & spara mer – upp till 50%"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "2629343910837487",
+   "name": "Vi tar farväl - rean slutar ikväll! 2026-10-13-3994f3790c4d39326d4c12b18efe69d6",
+   "object_type": "SHARE",
+   "body": "Nu säger vi farväl 👋 \n\nVår tidiga höstrea avslutas ikväll kl. 23:59 – sista chansen till upp till 50 % rabatt på Maskinrent.\nEn tablett i månaden och tvättmaskinen slutar lukta unket, även när hundfiltarna går i samma maskin.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Vi tar farväl - rean slutar ikväll!",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "7b9c8f3b048d5cf54f3f701107c73fd8",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122111315109491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18220380355352307",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "7b9c8f3b048d5cf54f3f701107c73fd8",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Nu säger vi farväl 👋 \n\nVår tidiga höstrea avslutas ikväll kl. 23:59 – sista chansen till upp till 50 % rabatt på Maskinrent.\nEn tablett i månaden och tvättmaskinen slutar lukta unket, även när hundfiltarna går i samma maskin.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Vi tar farväl - rean slutar ikväll!"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1088336393809735",
+   "name": "Upp till 50 % – sista chansen 2026-10-13-2c0d99a9e98bdaed215ecb29945c20c3",
+   "object_type": "SHARE",
+   "body": "⏳ SISTA CHANSEN – upp till 50% rabatt på Maskinrent.\n\nTabletten som tar bort unken lukt och djurhår ur tvättmaskinen, en gång i månaden.\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Upp till 50 % – sista chansen",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "2b3a63a1e86d23be3c24faf67d28aa5a",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122111315007491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18132045172688679",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "2b3a63a1e86d23be3c24faf67d28aa5a",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "⏳ SISTA CHANSEN – upp till 50% rabatt på Maskinrent.\n\nTabletten som tar bort unken lukt och djurhår ur tvättmaskinen, en gång i månaden.\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Upp till 50 % – sista chansen"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "3051223451900118",
+   "name": "Klipp till – upp till 50% till ikväll 2026-10-13-8cc00ca6e8d65b7568db8ceeab9acf9f",
+   "object_type": "SHARE",
+   "body": "✂️ Klipp till! Upp till 50 % rabatt på Maskinrent – ingen kod behövs. Gäller till ikväll 23:59.\n\nEn tablett i månaden för en fräsch tvättmaskin, även med hund och katt hemma.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Klipp till – upp till 50% till ikväll",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "188b7fc9a8ae24a8f9c9439c2721c5ab",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122111315157491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17918044968461183",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "188b7fc9a8ae24a8f9c9439c2721c5ab",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "✂️ Klipp till! Upp till 50 % rabatt på Maskinrent – ingen kod behövs. Gäller till ikväll 23:59.\n\nEn tablett i månaden för en fräsch tvättmaskin, även med hund och katt hemma.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Klipp till – upp till 50% till ikväll"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "2367452077122615",
+   "name": "Sista dagarna – upp till 50% rabatt 2026-10-13-04167774a50f61c47d8414f3c44471f4",
+   "object_type": "SHARE",
+   "body": "Vi säger hejdå till höstrean 👋 \n\nIkväll kl. 23:59 är den slut – sista chansen till upp till 50% rabatt på Maskinrent.\n\nFräsch tvätt och en ren maskin, även i hem med hund och katt.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Sista dagarna – upp till 50% rabatt",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "aa36ccee7f19338616b936d3114fe99b",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122111315091491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18105058874577250",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "aa36ccee7f19338616b936d3114fe99b",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Vi säger hejdå till höstrean 👋 \n\nIkväll kl. 23:59 är den slut – sista chansen till upp till 50% rabatt på Maskinrent.\n\nFräsch tvätt och en ren maskin, även i hem med hund och katt.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Sista dagarna – upp till 50% rabatt"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "2166902207536482",
+   "name": "2-pack 619 kr – rean slutar ikväll 2026-10-13-37bdcb8a511953ad12bc6f3be7b9d16f",
+   "object_type": "SHARE",
+   "body": "🏷️ HÖSTREA: 2-pack Maskinrent 619 kr (ord. 998 kr) – upp till 50% rabatt till ikväll 23:59.\n\n24 tabletter räcker i två år och håller tvättmaskinen fri från unken lukt.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "2-pack 619 kr – rean slutar ikväll",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "c85dc92f00d9e4e6a3d8109a9476678c",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122111315019491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18064941458685310",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "c85dc92f00d9e4e6a3d8109a9476678c",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "🏷️ HÖSTREA: 2-pack Maskinrent 619 kr (ord. 998 kr) – upp till 50% rabatt till ikväll 23:59.\n\n24 tabletter räcker i två år och håller tvättmaskinen fri från unken lukt.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "2-pack 619 kr – rean slutar ikväll"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "2241189466779438",
+   "name": "Upp till 50% – bara till ikväll 2026-10-13-631c5697d69f639b26438edc94533383",
+   "object_type": "SHARE",
+   "body": "🔴 UPP TILL 50% RABATT – höstrean avslutas ikväll 23:59.\n\nMaskinrent rengör trumma och gummilist och tar bort unken lukt, en tablett i månaden.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+   "title": "Upp till 50% – bara till ikväll",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "da63a118b4cd69f931b6c8c08fbe8af9",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122111315043491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18193664617397147",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "da63a118b4cd69f931b6c8c08fbe8af9",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "🔴 UPP TILL 50% RABATT – höstrean avslutas ikväll 23:59.\n\nMaskinrent rengör trumma och gummilist och tar bort unken lukt, en tablett i månaden.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti"
+     }
+    ],
+    "titles": [
+     {
+      "text": "Upp till 50% – bara till ikväll"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1058940580511141",
+   "name": "50% RABATT 2026-10-10-ad1068564055df4b2ec943de778aee97",
+   "object_type": "SHARE",
+   "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+   "title": "50% RABATT",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "53fd902bda6e3b0a2f5725a322e46e06",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122109868989491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18105213515194801",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "53fd902bda6e3b0a2f5725a322e46e06",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna."
+     }
+    ],
+    "titles": [
+     {
+      "text": "50% RABATT"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1102691992591742",
+   "name": "50% RABATT 2026-10-10-dcb1326a007de6976cc9f9e7833690e8",
+   "object_type": "SHARE",
+   "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+   "title": "50% RABATT",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "0caa21d383a877458f7e522331c7dacf",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122109868941491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17894855898674675",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "0caa21d383a877458f7e522331c7dacf",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna."
+     }
+    ],
+    "titles": [
+     {
+      "text": "50% RABATT"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1473611194657884",
+   "name": "50% RABATT 2026-10-10-dc8eebe12885abe1f23f1835339c23ac",
+   "object_type": "SHARE",
+   "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+   "title": "50% RABATT",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "3ba1752c268a3e261542b0226a63c26d",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122109869055491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17989360401024079",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "3ba1752c268a3e261542b0226a63c26d",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna."
+     }
+    ],
+    "titles": [
+     {
+      "text": "50% RABATT"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1115702304706423",
+   "name": "50% RABATT 2026-10-10-41cc60512904d5dcfbc257f58cb4bf7c",
+   "object_type": "SHARE",
+   "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+   "title": "50% RABATT",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "375a4cefcb6e3e2b2cfeee7b1374eb6b",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122109868935491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18104415557630164",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "375a4cefcb6e3e2b2cfeee7b1374eb6b",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna."
+     }
+    ],
+    "titles": [
+     {
+      "text": "50% RABATT"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "963043613524279",
+   "name": "50% RABATT 2026-10-10-917bffa69aedb2fd10c881a62b593ace",
+   "object_type": "SHARE",
+   "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+   "title": "50% RABATT",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "5a1aeef7c60bec4854f33b4335af9b71",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122109868911491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17978364365924933",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "5a1aeef7c60bec4854f33b4335af9b71",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna."
+     }
+    ],
+    "titles": [
+     {
+      "text": "50% RABATT"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "29197790753172310",
+   "name": "50% RABATT 2026-10-10-869eff460412f69f2c2aa58c0df4aa62",
+   "object_type": "SHARE",
+   "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+   "title": "50% RABATT",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "026d792b6bca0cc248deae606fcb7873",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122109869085491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18179641900436574",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "026d792b6bca0cc248deae606fcb7873",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna."
+     }
+    ],
+    "titles": [
+     {
+      "text": "50% RABATT"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1584228912889600",
+   "name": "50% RABATT 2026-10-10-e906c62e26318040199a19b9f279c5ed",
+   "object_type": "SHARE",
+   "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+   "title": "50% RABATT",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "3c8dc0aebc452224f7f6056c5efbcc7d",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122109868905491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18065151728512636",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "3c8dc0aebc452224f7f6056c5efbcc7d",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna."
+     }
+    ],
+    "titles": [
+     {
+      "text": "50% RABATT"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1437486438357213",
+   "name": "50% RABATT 2026-10-10-784c161a8983a8345d97d797da6bb353",
+   "object_type": "SHARE",
+   "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+   "title": "50% RABATT",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "da811547be308ce1de2771a533bdb8c2",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122109868971491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18495740890185875",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "da811547be308ce1de2771a533bdb8c2",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna."
+     }
+    ],
+    "titles": [
+     {
+      "text": "50% RABATT"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1836096911153468",
+   "name": "50% RABATT 2026-10-10-f5d204529efd4092cfcdc0b9cdd23e8a",
+   "object_type": "SHARE",
+   "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+   "title": "50% RABATT",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "688fd8b21032fc87907e0b2c0ab1d71a",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122109869025491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18111373976590571",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "688fd8b21032fc87907e0b2c0ab1d71a",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna."
+     }
+    ],
+    "titles": [
+     {
+      "text": "50% RABATT"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1117737150598509",
+   "name": "50% RABATT 2026-10-10-4e771f708fb68e6fb7e07467906fc716",
+   "object_type": "SHARE",
+   "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+   "title": "50% RABATT",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "ffcf8bc894ee84fb3091fed420d4eb64",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122109868965491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17877870027562140",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "ffcf8bc894ee84fb3091fed420d4eb64",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna."
+     }
+    ],
+    "titles": [
+     {
+      "text": "50% RABATT"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "2274515620163426",
+   "name": "50% RABATT 2026-10-10-d574b35008c0d5ee0ffb720a2bd6ec3c",
+   "object_type": "SHARE",
+   "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+   "title": "50% RABATT",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "image_hash": "9b11cf760f16fdfcfa27a5b2067b1ca6",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122109868977491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18139181476622621",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+     "image_hash": "9b11cf760f16fdfcfa27a5b2067b1ca6",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna."
+     }
+    ],
+    "titles": [
+     {
+      "text": "50% RABATT"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  }
+ ],
+ "client_conversation_id": "Nt7kQ2wLm9Xa4Rp8Vz3B"
+}

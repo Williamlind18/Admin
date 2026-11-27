@@ -1,0 +1,1555 @@
+{
+ "accounts": [
+  {
+   "account": "Ad account 3",
+   "account_id": "516758837558365",
+   "ads": [
+    {
+     "id": "120252920196750505",
+     "adset_id": "120252920196730505",
+     "campaign_id": "120251844607370505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "C1",
+     "creative": {
+      "id": "2083218105683332",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252977655200505",
+     "adset_id": "120252977589060505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "990644350332776",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252977601710505",
+     "adset_id": "120252977589060505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "1141044695300120",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252977697600505",
+     "adset_id": "120252977589060505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "1459830506359999",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252977722470505",
+     "adset_id": "120252977589060505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "1511691410810259",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252977551320505",
+     "adset_id": "120252977493020505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "1689421229196456",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252977579640505",
+     "adset_id": "120252977493020505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "1034576162993043",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252977556780505",
+     "adset_id": "120252977493020505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "1561564252224102",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252977492990505",
+     "adset_id": "120252977493020505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "988263567281270",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252977544920505",
+     "adset_id": "120252977493020505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "1886789855811241",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252977589070505",
+     "adset_id": "120252977589060505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "1858666728736073",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252931801970505",
+     "adset_id": "120252920196730505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C6",
+     "creative": {
+      "id": "966057659680247",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252931703520505",
+     "adset_id": "120252920196730505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "1676794737355066",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252932090540505",
+     "adset_id": "120252920196730505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C7",
+     "creative": {
+      "id": "2985126058486511",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252920693290505",
+     "adset_id": "120252920196730505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "1139306245467891",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252932263340505",
+     "adset_id": "120252920196730505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C8",
+     "creative": {
+      "id": "4578183012464048",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252920527300505",
+     "adset_id": "120252920196730505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "2081801329200738",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252932378180505",
+     "adset_id": "120252920196730505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C9",
+     "creative": {
+      "id": "1476146394399256",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252931525420505",
+     "adset_id": "120252920196730505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "1021619053580999",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252837017610505",
+     "adset_id": "120252837017620505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H1",
+     "creative": {
+      "id": "1987459779296170",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252837404930505",
+     "adset_id": "120252837374240505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H2",
+     "creative": {
+      "id": "1468457662124715",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252837171340505",
+     "adset_id": "120252837077280505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H3",
+     "creative": {
+      "id": "1996559754653237",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252837374220505",
+     "adset_id": "120252837374240505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H1",
+     "creative": {
+      "id": "1851697249351269",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252837300690505",
+     "adset_id": "120252837210530505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H3",
+     "creative": {
+      "id": "1110875251776716",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252837077300505",
+     "adset_id": "120252837077280505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H1",
+     "creative": {
+      "id": "1446775863702758",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252836963570505",
+     "adset_id": "120252836843320505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H2",
+     "creative": {
+      "id": "1631064742104236",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252837414770505",
+     "adset_id": "120252837374240505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H3",
+     "creative": {
+      "id": "1323080313245040",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252837134240505",
+     "adset_id": "120252837077280505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H2",
+     "creative": {
+      "id": "2597823704072624",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252836843300505",
+     "adset_id": "120252836843320505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H1",
+     "creative": {
+      "id": "1478105021121532",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252836994660505",
+     "adset_id": "120252836843320505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H3",
+     "creative": {
+      "id": "1126140846942528",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252837263750505",
+     "adset_id": "120252837210530505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H2",
+     "creative": {
+      "id": "1452506957050807",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252837210560505",
+     "adset_id": "120252837210530505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H1",
+     "creative": {
+      "id": "1542089404643456",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252837067920505",
+     "adset_id": "120252837017620505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H3",
+     "creative": {
+      "id": "1695091248650744",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252837059450505",
+     "adset_id": "120252837017620505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H2",
+     "creative": {
+      "id": "1881577696304585",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252693366870505",
+     "adset_id": "120252690943900505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H3",
+     "creative": {
+      "id": "980780788442853",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252693411670505",
+     "adset_id": "120252693381810505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H3",
+     "creative": {
+      "id": "1410826144409915",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252693504540505",
+     "adset_id": "120252693422170505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H2",
+     "creative": {
+      "id": "1941511700164436",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252693422190505",
+     "adset_id": "120252693422170505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H1",
+     "creative": {
+      "id": "1131911569747154",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252693401040505",
+     "adset_id": "120252693381810505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H2",
+     "creative": {
+      "id": "1540584081307266",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252690943890505",
+     "adset_id": "120252690943900505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H1",
+     "creative": {
+      "id": "1598296298646031",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252693381840505",
+     "adset_id": "120252693381810505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H1",
+     "creative": {
+      "id": "4131220863845458",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252694048140505",
+     "adset_id": "120252693984770505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H3",
+     "creative": {
+      "id": "1891944998461812",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252693852150505",
+     "adset_id": "120252693852160505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H1",
+     "creative": {
+      "id": "1083655221304020",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252693358140505",
+     "adset_id": "120252690943900505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H2",
+     "creative": {
+      "id": "2240932443119218",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252693984740505",
+     "adset_id": "120252693984770505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H1",
+     "creative": {
+      "id": "1111955455145486",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252694043560505",
+     "adset_id": "120252693984770505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H2",
+     "creative": {
+      "id": "1737912750615477",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252693969940505",
+     "adset_id": "120252693852160505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H2",
+     "creative": {
+      "id": "2396717831136943",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252693975050505",
+     "adset_id": "120252693852160505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H3",
+     "creative": {
+      "id": "1665111435120938",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252693516630505",
+     "adset_id": "120252693422170505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "H3",
+     "creative": {
+      "id": "2655008578261355",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252419946310505",
+     "adset_id": "120252419822200505",
+     "campaign_id": "120251844607370505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "C9",
+     "creative": {
+      "id": "2779851542410483",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252546887870505",
+     "adset_id": "120252546887890505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "1634652811492299",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252547018250505",
+     "adset_id": "120252546887890505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "2601963006981337",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252546958320505",
+     "adset_id": "120252546887890505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "1710391650655588",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252546723850505",
+     "adset_id": "120252546602200505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "1666709584986698",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252547071540505",
+     "adset_id": "120252546887890505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "3307307352790045",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252547053920505",
+     "adset_id": "120252546887890505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "2036940430573291",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252546863760505",
+     "adset_id": "120252546602200505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C6",
+     "creative": {
+      "id": "4073913982914992",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252546850440505",
+     "adset_id": "120252546602200505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "29652373367680044",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252546808670505",
+     "adset_id": "120252546602200505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "2716863485451093",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252546602180505",
+     "adset_id": "120252546602200505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "1135616029183895",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252546758730505",
+     "adset_id": "120252546602200505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "1112513708412830",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120251926558200505",
+     "adset_id": "120251926558160505",
+     "campaign_id": "120251844607370505",
+     "status": "PAUSED",
+     "effective_status": "WITH_ISSUES",
+     "name": "C1",
+     "creative": {
+      "id": "916462964641083",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252420014840505",
+     "adset_id": "120252419822200505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C10",
+     "creative": {
+      "id": "1947255772916256",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252419735900505",
+     "adset_id": "120252419387910505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "1785518479347245",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252419822230505",
+     "adset_id": "120252419822200505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C6",
+     "creative": {
+      "id": "1430350942553617",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252419655490505",
+     "adset_id": "120252419387910505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "4968738733353834",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252420095250505",
+     "adset_id": "120252419822200505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C11",
+     "creative": {
+      "id": "1586514359445730",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252419919300505",
+     "adset_id": "120252419822200505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C8",
+     "creative": {
+      "id": "2899096037136448",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252419678060505",
+     "adset_id": "120252419387910505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "2578584962567089",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252419387930505",
+     "adset_id": "120252419387910505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "1474845867902239",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252419864230505",
+     "adset_id": "120252419822200505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C7",
+     "creative": {
+      "id": "1990513124957191",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252419714790505",
+     "adset_id": "120252419387910505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "1824556665527817",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252206761110505",
+     "adset_id": "120252205865740505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "1135753682351594",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252206996400505",
+     "adset_id": "120252206996450505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C6",
+     "creative": {
+      "id": "3684119408403887",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252206841260505",
+     "adset_id": "120252205865740505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "1469951385278979",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252207047230505",
+     "adset_id": "120252206996450505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C10",
+     "creative": {
+      "id": "1659910698880839",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252206962470505",
+     "adset_id": "120252205865740505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "1487259093451778",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252206983830505",
+     "adset_id": "120252205865740505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "885171581252672",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252206996430505",
+     "adset_id": "120252206996450505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C9",
+     "creative": {
+      "id": "1454690779880515",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252206996420505",
+     "adset_id": "120252206996450505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C8",
+     "creative": {
+      "id": "1107328608853708",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252205865750505",
+     "adset_id": "120252205865740505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "1161712143199071",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252206996410505",
+     "adset_id": "120252206996450505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C7",
+     "creative": {
+      "id": "1071598732376984",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252119728490505",
+     "adset_id": "120252119610310505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C6",
+     "creative": {
+      "id": "1463561835681152",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252119716580505",
+     "adset_id": "120252119610310505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "2600285007158678",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252119739350505",
+     "adset_id": "120252119610310505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C7",
+     "creative": {
+      "id": "1100712232369946",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252119707860505",
+     "adset_id": "120252119610310505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "1807054393825026",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252119741900505",
+     "adset_id": "120252119610310505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C8",
+     "creative": {
+      "id": "1871316317560310",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252119746080505",
+     "adset_id": "120252119610310505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C9",
+     "creative": {
+      "id": "1420631163380412",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252119610300505",
+     "adset_id": "120252119610310505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "1789982875468460",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252119668640505",
+     "adset_id": "120252119610310505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "4048431188796288",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252119699800505",
+     "adset_id": "120252119610310505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "1509915694309034",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120251926137240505",
+     "adset_id": "120251925906650505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "1107498312214639",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120251926911470505",
+     "adset_id": "120251926558160505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ADSET_PAUSED",
+     "name": "C5",
+     "creative": {
+      "id": "992691183860207",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120251926405050505",
+     "adset_id": "120251925906650505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "28419080604425435",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120251926096330505",
+     "adset_id": "120251925906650505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "940121285377493",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120251926558190505",
+     "adset_id": "120251926558160505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ADSET_PAUSED",
+     "name": "C4",
+     "creative": {
+      "id": "28231513196544390",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120251926558170505",
+     "adset_id": "120251926558160505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ADSET_PAUSED",
+     "name": "C3",
+     "creative": {
+      "id": "1798625091412545",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120251926558180505",
+     "adset_id": "120251926558160505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ADSET_PAUSED",
+     "name": "C2",
+     "creative": {
+      "id": "3147558752109053",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120251925906660505",
+     "adset_id": "120251925906650505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "28668706642763836",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120251844607600505",
+     "adset_id": "120251844607400505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ADSET_PAUSED",
+     "name": "C1",
+     "creative": {
+      "id": "28775810775377422",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120251846433950505",
+     "adset_id": "120251846433960505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ADSET_PAUSED",
+     "name": "C3",
+     "creative": {
+      "id": "1620372006124003",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120251846486750505",
+     "adset_id": "120251846486760505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ADSET_PAUSED",
+     "name": "C4",
+     "creative": {
+      "id": "1419368603500478",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120251846416050505",
+     "adset_id": "120251846416060505",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ADSET_PAUSED",
+     "name": "C2",
+     "creative": {
+      "id": "1101577358946002",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

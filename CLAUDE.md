@@ -133,3 +133,30 @@ and burned-in captions. Fetch it with `git show <branch>:<path>`. The script and
 All 26 ads in the launch set exist in Norwegian; their files are in the launch-set table. The old closed list of
 four (2026-10-27) is part of the set. The original competitor footage for those four is in the GitHub releases
 `video8` (Maskinrent 3, UV test), `video9` (4, biofilm), `video17` (5, three mistakes) and `video19` (6, mold).
+
+## Meta ad structure (Ad account 3, exported 2026-11-27)
+
+When the user asks to set up, copy or rebuild campaigns, ad sets or ads ("lägg in annonsgrupperna", "bygg upp
+kampanjen på det nya kontot"), use `meta/annonsstruktur/`. It holds a full, checked export of the five campaigns
+in Ad account 3 (516758837558365): CBO - Maskinrent, CBO - Norrtvätt SE - BLACK WEEK, CBO - Norrtvätt NO, CBO -
+Norrtvätt DK and BOF - Maskinrent. That is 41 ad sets and 227 ads, with every setting, text, link, post id and AI
+enhancement. `README.md` there lists the shared settings and what must be shared to a new account. Don't export
+Ad account 3 again unless the user asks for a fresh copy.
+
+- **Build from the files, never from memory.** Use `struktur.json` and the raw API answers in `raw/`.
+- **Use the existing post** (`effective_object_story_id`) for every ad. It keeps likes and comments, and the video
+  and image ids belong to Ad account 3.
+- **Create everything PAUSED**, with the same names, statuses, floors, cost cap, attribution, targeting, placements,
+  `url_tags` and AI enhancements per ad. Meta switches enhancements on by default for new creatives, so set each one
+  as it was.
+- **Compare field by field** against the export afterwards and show the user every difference. Start nothing without
+  the user's yes.
+- **Check the new account's currency and time zone first.** Ad account 3 is SEK and Europe/Stockholm.
+- **Learning does not carry over** to another ad account. The pixel's history and the posts' social proof do.
+- **Plan for the agency account** (user, 2026-11-27):
+  - A direct copy of all 41 ad sets and 227 ads.
+  - CBO - Maskinrent at 5 000 kr/day. The others keep their budgets: NO 1 440, Black Week 1 000, DK 1 000, BOF
+    1 000.
+  - Floors stay as they are.
+  - Before building, the agency account must be visible in the Meta connector, and pixel 1262459122680812, the
+    three pages and their Instagram accounts must be shared to it.

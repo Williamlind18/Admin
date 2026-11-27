@@ -1,0 +1,1563 @@
+{
+ "accounts": [
+  {
+   "account": "Ad account 3",
+   "account_id": "516758837558365",
+   "adsets": [
+    {
+     "id": "120252977589060505",
+     "name": "ny batch 8.1",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "daily_min_spend_target": "17000",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-27T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-26T12:49:08+0100",
+     "updated_time": "2026-11-26T12:49:30+0100"
+    },
+    {
+     "id": "120252977493020505",
+     "name": "ny batch 8",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "daily_min_spend_target": "17000",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-27T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-26T12:49:08+0100",
+     "updated_time": "2026-11-26T12:49:28+0100"
+    },
+    {
+     "id": "120252920196730505",
+     "name": "Natives",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "daily_min_spend_target": "20000",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-25T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-24T10:51:04+0100",
+     "updated_time": "2026-11-24T10:51:24+0100"
+    },
+    {
+     "id": "120252837374240505",
+     "name": "ny batch 7 – C5 | I2 av b5 C2 |",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-20T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-19T12:01:03+0100",
+     "updated_time": "2026-11-26T13:06:09+0100"
+    },
+    {
+     "id": "120252837210530505",
+     "name": "ny batch 7 – C4 | I3 av b4 C2 |",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "daily_min_spend_target": "17000",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-20T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-19T12:00:53+0100",
+     "updated_time": "2026-11-19T12:01:13+0100"
+    },
+    {
+     "id": "120252837077280505",
+     "name": "ny batch 7 – C3 | I1 av b5.1 C3",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-20T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-19T12:01:01+0100",
+     "updated_time": "2026-11-23T11:06:58+0100"
+    },
+    {
+     "id": "120252837017620505",
+     "name": "ny batch 7 – C2 | I1 av b5 C5",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "daily_min_spend_target": "17000",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-20T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-19T12:00:53+0100",
+     "updated_time": "2026-11-19T12:01:11+0100"
+    },
+    {
+     "id": "120252836843320505",
+     "name": "ny batch 7 – C1 - H1 (I1 av b5 C2)",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-20T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-19T12:01:09+0100",
+     "updated_time": "2026-11-23T11:06:58+0100"
+    },
+    {
+     "id": "120252693984770505",
+     "name": "ny batch 6 – C5 (I1 av b1 C3)",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-13T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-12T14:42:57+0100",
+     "updated_time": "2026-11-16T15:37:44+0100"
+    },
+    {
+     "id": "120252693852160505",
+     "name": "ny batch 6 – C4 (I1 av b3 C3)",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-13T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-12T14:43:08+0100",
+     "updated_time": "2026-11-16T15:37:23+0100"
+    },
+    {
+     "id": "120252693422170505",
+     "name": "ny batch 6 – C3 (I1 av b3.1 C8)",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-13T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-12T14:42:57+0100",
+     "updated_time": "2026-11-19T11:21:23+0100"
+    },
+    {
+     "id": "120252693381810505",
+     "name": "ny batch 6 – C2 (I2 av b4 C2)",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-13T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-12T14:43:08+0100",
+     "updated_time": "2026-11-16T15:37:44+0100"
+    },
+    {
+     "id": "120252690943900505",
+     "name": "ny batch 6 – C1 (I1 av b4 C2)",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-13T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-12T14:43:18+0100",
+     "updated_time": "2026-11-19T11:21:29+0100"
+    },
+    {
+     "id": "120252546887890505",
+     "name": "ny batch 5.1",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "daily_min_spend_target": "17000",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-05T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-04T20:41:37+0100",
+     "updated_time": "2026-11-04T20:41:59+0100"
+    },
+    {
+     "id": "120252546602200505",
+     "name": "ny batch 5",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "daily_min_spend_target": "17000",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-05T03:00:00+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-11-04T20:41:37+0100",
+     "updated_time": "2026-11-04T20:41:57+0100"
+    },
+    {
+     "id": "120252419822200505",
+     "name": "ny batch 4.1",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-10-29T08:56:14+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-10-29T08:56:14+0100",
+     "updated_time": "2026-11-12T14:44:14+0100"
+    },
+    {
+     "id": "120252419387910505",
+     "name": "ny batch 4",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "daily_min_spend_target": "17000",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-10-29T08:56:17+0100",
+     "is_dynamic_creative": false,
+     "created_time": "2026-10-29T08:56:14+0100",
+     "updated_time": "2026-10-29T08:56:36+0100"
+    },
+    {
+     "id": "120252206996450505",
+     "name": "ny batch 3.1 - LP",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "daily_min_spend_target": "17000",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "brand_safety_content_filter_levels": [
+       "FACEBOOK_RELAXED",
+       "AN_RELAXED"
+      ],
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-10-17T03:00:00+0200",
+     "is_dynamic_creative": false,
+     "created_time": "2026-10-16T13:10:59+0200",
+     "updated_time": "2026-10-16T13:11:22+0200"
+    },
+    {
+     "id": "120252205865740505",
+     "name": "ny batch 3 - LP",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "brand_safety_content_filter_levels": [
+       "FACEBOOK_RELAXED",
+       "AN_RELAXED"
+      ],
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-10-17T03:00:00+0200",
+     "is_dynamic_creative": false,
+     "created_time": "2026-10-16T13:10:59+0200",
+     "updated_time": "2026-11-06T14:25:56+0100"
+    },
+    {
+     "id": "120252119610310505",
+     "name": "ny batch 2 - MOF - Bilder",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "brand_safety_content_filter_levels": [
+       "FACEBOOK_RELAXED",
+       "AN_RELAXED"
+      ],
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-10-12T03:00:00+0200",
+     "is_dynamic_creative": false,
+     "created_time": "2026-10-11T21:36:30+0200",
+     "updated_time": "2026-10-11T21:36:48+0200"
+    },
+    {
+     "id": "120251926558160505",
+     "name": "ny batch 2 - LP",
+     "campaign_id": "120251844607370505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "brand_safety_content_filter_levels": [
+       "FACEBOOK_RELAXED",
+       "AN_RELAXED"
+      ],
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-09-30T12:25:46+0200",
+     "is_dynamic_creative": false,
+     "created_time": "2026-09-30T12:25:44+0200",
+     "updated_time": "2026-11-04T19:47:00+0100"
+    },
+    {
+     "id": "120251925906650505",
+     "name": "ny batch 1 - LP",
+     "campaign_id": "120251844607370505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "brand_safety_content_filter_levels": [
+       "FACEBOOK_RELAXED",
+       "AN_RELAXED"
+      ],
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-09-30T12:25:44+0200",
+     "is_dynamic_creative": false,
+     "created_time": "2026-09-30T12:25:44+0200",
+     "updated_time": "2026-10-29T08:09:13+0100"
+    },
+    {
+     "id": "120251846486760505",
+     "name": "K4",
+     "campaign_id": "120251844607370505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "brand_safety_content_filter_levels": [
+       "FACEBOOK_RELAXED",
+       "AN_RELAXED"
+      ],
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-09-25T03:00:00+0200",
+     "is_dynamic_creative": false,
+     "created_time": "2026-09-24T14:41:36+0200",
+     "updated_time": "2026-10-22T16:54:53+0200"
+    },
+    {
+     "id": "120251846433960505",
+     "name": "K3",
+     "campaign_id": "120251844607370505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "brand_safety_content_filter_levels": [
+       "FACEBOOK_RELAXED",
+       "AN_RELAXED"
+      ],
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-09-25T03:00:00+0200",
+     "is_dynamic_creative": false,
+     "created_time": "2026-09-24T14:41:46+0200",
+     "updated_time": "2026-10-22T16:54:49+0200"
+    },
+    {
+     "id": "120251846416060505",
+     "name": "K2",
+     "campaign_id": "120251844607370505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "brand_safety_content_filter_levels": [
+       "FACEBOOK_RELAXED",
+       "AN_RELAXED"
+      ],
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-09-25T03:00:00+0200",
+     "is_dynamic_creative": false,
+     "created_time": "2026-09-24T14:41:36+0200",
+     "updated_time": "2026-10-22T16:54:44+0200"
+    },
+    {
+     "id": "120251844607400505",
+     "name": "K1",
+     "campaign_id": "120251844607370505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "SE"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "brand_safety_content_filter_levels": [
+       "FACEBOOK_RELAXED",
+       "AN_RELAXED"
+      ],
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-09-25T03:00:00+0200",
+     "is_dynamic_creative": false,
+     "created_time": "2026-09-24T14:41:46+0200",
+     "updated_time": "2026-10-22T16:54:39+0200"
+    }
+   ]
+  }
+ ]
+}

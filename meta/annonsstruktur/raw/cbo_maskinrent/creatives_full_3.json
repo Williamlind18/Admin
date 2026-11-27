@@ -1,0 +1,440 @@
+{
+ "ad_creatives": [
+  {
+   "id": "1620372006124003",
+   "name": "50% RABATT 2026-09-24-1e27a7df87100d4a0be3160d6b39a3e4",
+   "object_type": "VIDEO",
+   "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+   "title": "50% RABATT",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "video_id": "28065795016442343",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122097001365491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18487152958108591",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "2594683980994985",
+     "image_hash": "671b257059552274cbc6155fdd84a49e",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQLYNlG4BTFXaKQQtq1MyAL7zFSLyjy_3EMG3Yj8mWyxfDejc-vhPRFZoNytUNX0a9M23vaTJAJcHBJLFooRgy79h2lyb5-RFJF9RP7BhJ5TCx4Qui1KzSt8QaJr2VtRoGsstsCMhrvhDz_dgeBfXcHO",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      }
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna."
+     }
+    ],
+    "titles": [
+     {
+      "text": "50% RABATT"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1419368603500478",
+   "name": "50% RABATT 2026-09-24-f9821cabe1c8f59c293a3242b282f346",
+   "object_type": "VIDEO",
+   "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+   "title": "50% RABATT",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "video_id": "1653360589723241",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122097001323491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17957102025242341",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "1766991584564609",
+     "image_hash": "cd971524d6e550d0a033404e9bc10c72",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQKebx6Ymw1auk97_M6k6SvIbJpkHbzMgqgOiGPVYVqXPi78n_7hVBdEQuV5wgXVG1oquua5mSUiYddHzcyiDhXH3VsMJY0wa-jbyhU4T3U27ZnfFSoXjKYmrwqOPOdfRi86Kps8kV6ndXGDTgX3uuY9",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      }
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna."
+     }
+    ],
+    "titles": [
+     {
+      "text": "50% RABATT"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1101577358946002",
+   "name": "50% RABATT 2026-09-24-c867027f4ff46bd0f996475f7d94ce8b",
+   "object_type": "VIDEO",
+   "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+   "title": "50% RABATT",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0",
+   "video_id": "2311710656347801",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122097001311491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17904180537589938",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "1156189933755623",
+     "image_hash": "86b8ce7a74a0f0260a7af466d012257f",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQIRfUROBD13VD3x3XE43eFGcEFDqAv6tUhMosDReJkJ5CPDDR247YKLaQyv5GlMa4yuQbzt87kgFS5iFVpzuXPWMhoVsZ1BcHILdMlOjHo6att9U3spf_B9f4_qivHgh0zQZ2ISA0G6YD7w9tNosW0Z",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      }
+     }
+    }
+   },
+   "asset_feed_spec": {
+    "bodies": [
+     {
+      "text": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna."
+     }
+    ],
+    "titles": [
+     {
+      "text": "50% RABATT"
+     }
+    ],
+    "optimization_type": "DEGREES_OF_FREEDOM"
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "product_browsing",
+     "display_name": "product_browsing"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  }
+ ],
+ "client_conversation_id": "Nt7kQ2wLm9Xa4Rp8Vz3B"
+}

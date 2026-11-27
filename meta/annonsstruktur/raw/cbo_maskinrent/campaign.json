@@ -1,0 +1,23 @@
+{
+ "accounts": [
+  {
+   "account": "Ad account 3",
+   "account_id": "516758837558365",
+   "campaigns": [
+    {
+     "id": "120251844607370505",
+     "name": "CBO - Maskinrent",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "objective": "OUTCOME_SALES",
+     "buying_type": "AUCTION",
+     "daily_budget": "1440000",
+     "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+     "start_time": "2026-09-25T03:00:00+0200",
+     "created_time": "2026-09-24T14:41:35+0200",
+     "updated_time": "2026-11-26T00:47:20+0100"
+    }
+   ]
+  }
+ ]
+}

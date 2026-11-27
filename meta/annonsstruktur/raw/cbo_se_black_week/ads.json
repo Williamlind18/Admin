@@ -1,0 +1,550 @@
+{
+ "accounts": [
+  {
+   "account": "Ad account 3",
+   "account_id": "516758837558365",
+   "ads": [
+    {
+     "id": "120252770985230505",
+     "adset_id": "120252770985280505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "1143504598234377",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-0c2f25f0ae36f9c95c58ab1babf7b68c",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/901235656_1838597324132517_7289658094224945528_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=tWVDzZ_3p1oQ7kNvwFNiuVE&_nc_oc=AdpwD2YEgOpJ-1KgfWw_eGL7cCIGLy5747iqD494nT6H5ayIiFWE-SXVRGPzoPapYGU&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQL2BWOTSSCqXUCV78alViISef6G1qXTbnYy4_WDjFr_S9cZy8Afku6IxIzeOdGCsIOYBmbOCyb5&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQW5y-IhbdBqeKyiFMSwy8pZbkwpoHNg-mkuvFlTwoq7aA&oe=6B0F56C1",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252769735380505",
+     "adset_id": "120252767909850505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "1070103696045124",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-17c1141928eda5736b72ec0159ae1121",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/902372608_1012856428530332_7021762799662191393_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=gDuI2b7CTkAQ7kNvwGddiW1&_nc_oc=AdrhgfC3Cxzho5lV6XE8l1gbIzJ8Kr7ybnPWMpBmuJdkz3CAWg_vGT_fCpYURDaXEkc&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQIVnBRJZDP3G0ytnuaXRaYT579xxM7HHOui4-HRIPAJAPeRcuKsmzSqvQRxo1LXl_wStW8ENqt7&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQVm5ErMjktjdz8OuNLnA1GAhqrgapbWgMFZG2t7cipJGQ&oe=6B0F66B7",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252772329370505",
+     "adset_id": "120252769910430505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "1027393107056587",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-beab68566718b85db6941ee32593909b",
+      "thumbnail_url": "https://external-lhr11-1.xx.fbcdn.net/emg1/v/t13/5373584584615895636?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQJ20wIfPNDWZX7FPvRTYnruGMfX-iXLqDI3RzxWa35c1B0CbYHHrQ7yt6bt1GBrdhvTZsBrPjfjld1wnasE99FYnBAhuEbva0VWNVDXCYE6OmCSQgEMlIbe_ZAn9fRXKgq78sYF82o8Mn7Mj4-A85HW&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr11-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=hnoXHO24uREOU69AOxYGYw&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQIOcu0OwT9_96yeyPwNS1yF7geTIvp70dleJNL7cJN93rmhzL7G2oO8gURDAmGbszFOIGIy9Qi_&_nc_enc=UryvK6O0XtMv67WP1-UbUaRhOJwk152x-FfGstGiAI0VKv62mFB15w4pg2uhMvWJEhDO-e5C74pKp-FTohhiLOMwSRP-zRNB5MvcCXOXwKxmnkE&oh=06_Q3_FAV7bWhORxKlbEMKqgRaeSk9T-lOiWvVAzTaQNt8ritmd&oe=6B0B8C59",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252769800550505",
+     "adset_id": "120252767909850505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "2511798859343651",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-0a98a8057936636a2628306e69cd95de",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/896977503_1691346242718194_3292142037946891111_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=4Qve6A7dh3AQ7kNvwEjTeUB&_nc_oc=Adr-4EjGNrq_x8nq4fsTRZzTC6ttQEv7gSu3t-Ai-Ci6jtSbqFQCmUMdhqygkZ3Efu0&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQIRoKIsDAzX5L3tohKbApYSE1ABvR29HhzXhaf57FYe-SVHIKVa5Pzl5IMQrGesC0JeYbh9VM9E&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQXKVW4Kil_4Vz5BirKOsCgqFySPbE2hPbeYmCMfiuwhqw&oe=6B0F74DC",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252770985310505",
+     "adset_id": "120252770985280505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "1118105477667566",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-b686747eaa9d06f31b085a5c43044903",
+      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/899824863_1399036488971737_1555872798274744289_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=jU0Si1VifT8Q7kNvwHuFcch&_nc_oc=AdrHiz-BlMJF9r1YMgCVN0RrzqJ_5RqoZMx8PFhaDjPuGh1cYL9Oz_NrTbFG9gb7Tpc&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQJwb2CoBXU0d_aWdq28LaHoRobJek0lqq6TY53K9BfIvb4ENK6gnQiLUSe8hmejEF3FG5txg_NB&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQXSAloNIhLrSHl9UeFoPuIyyZfFo1LBCUrGP4fz-hLSsw&oe=6B0F6B2D",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252769836900505",
+     "adset_id": "120252767909850505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C6",
+     "creative": {
+      "id": "1475089951196784",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-9326971042e513bd6e3a8c0b80b2b872",
+      "thumbnail_url": "https://scontent-lhr6-2.xx.fbcdn.net/v/t15.5256-10/899686711_1722218996184776_1158369150988883985_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=OwEmcj7hhXIQ7kNvwEOVWEd&_nc_oc=AdrRVLx-5Kn3Vk4UFgI27R430hcC34OtafbpdsOZ-kMzbxFIXoiyTUlDDM4KURDBR8k&_nc_zt=23&_nc_ht=scontent-lhr6-2.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQLKt3rnez2o06c1bO3d6YZ-TsL2KKjironTcKNa--ZK2dTy64g9AM_ohIdWsdhZblFY75PEf0Ck&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQUPg8kO3s59UO-7tFRivm-wMd0xFlXp-Gzg7-3fEaFFQA&oe=6B0F70D3",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252770985290505",
+     "adset_id": "120252770985280505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "1906052137436195",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-fb7a49e4ddbdf79392e8f75f6c086a15",
+      "thumbnail_url": "https://scontent-lhr6-2.xx.fbcdn.net/v/t15.5256-10/894606267_2114054372557966_7641932286976866241_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=VUQ1knAkrmkQ7kNvwHPckkb&_nc_oc=AdoO8XKKdVvPOdTzTUQNgU8bB7v7r36sPN8K1ZgmFZkCL3fHDPOQS9-Gze-F6nb3gsg&_nc_zt=23&_nc_ht=scontent-lhr6-2.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQLhzyEHTMN-PuxXqzVt1d-aq45yXIsmpb7nlnK_09OxNfLKCDvOiJijIk2lHwpI8rspIWQr0FQK&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQXCTRzzhya2d4J6X36-jD5rfdUL4yVwmsLzndpK0PVQdg&oe=6B0F764E",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252771273800505",
+     "adset_id": "120252769910430505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "1163671583275431",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-b07c5d4e20e84d4776054a2cf590b18a",
+      "thumbnail_url": "https://external-lhr11-1.xx.fbcdn.net/emg1/v/t13/18338514393261632639?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQJOhn76SwKMNdW0lVN4zCBdd_js-8QUzO2qOV-k1h4NRzYggDgXW30t9e_J5X9vyb6zoiIRtggpZ2UgYh6sEmZ0CULbtE9_XrdIFGLQlss4Gv-TO9Bahzv8I5F3sug9scXYHJ7shmTLLpqM9Mkm4dKN&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr11-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=hnoXHO24uREOU69AOxYGYw&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQJGHj2dVbTe0RwLUwuVwQ04UMxXYRT3s0WImex4gXNKeu_PbtemDOYL-ueNm_xOJN3F50WWw3ox&_nc_enc=Uv4RZbdeWdYDMN8wPzm1RVlwC0X540Gfui_eG8KGIQHueJMKVS9PELW4lno63qDBl3s1mAVOwpcUgSbWOWH6PSVPDbTKmWtS_OSe05iReQ1CPqQ&oh=06_Q3_FAaRk4zR9SqIb1toTkB5fl5KO7CQr0uVmkp6hs7yx8Vta&oe=6B0B5816",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252772498020505",
+     "adset_id": "120252769910430505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C8",
+     "creative": {
+      "id": "1881821843242462",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-21e1f6c6917e1128229c1bdf9bfb3b1e",
+      "thumbnail_url": "https://external-lhr11-1.xx.fbcdn.net/emg1/v/t13/5591123066885254725?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQKqqQzk1Yb2H4R6hidtMXGzrC_FvHzYLlN7brzbD3KJf3F-QuE66M3tsvwbmQ6CvgnFg_2ewKovfjoB7XuMfddg1eBocuD5plDLN1-9-1zd2THGnUrwzOgelQRJfefA25FLYJcPSEEHG9O7diRqfo2z&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr11-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=hnoXHO24uREOU69AOxYGYw&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQL3L4ht2nm4A0oDIwbh5ZeQVkP101IoScN0-JhtUCex9E9JxZWE2E9ECO3NTzI0e5gKJ215IbRm&_nc_enc=UjoWdsBSGS_TDddAltXMC0P3p_6p7AK40PXS8lsglrRZVxH0Fs9vkcpMNp9MmTW1fyNk89OUl6EgnSGzwiFqtgkbKXNbpkvTPkaUcbx3AKySsZ0&oh=06_Q3_FAYAE7Ad3u4VkoD3K-pkBenZR3hoQm_VoI8wZjgm89-8c&oe=6B0B84D5",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252772591570505",
+     "adset_id": "120252769910430505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C10",
+     "creative": {
+      "id": "1691007745745486",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-209f2d75dbd325849aca5e8989d398f0",
+      "thumbnail_url": "https://external-lhr11-1.xx.fbcdn.net/emg1/v/t13/852163989454414718?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQKcfSo3CcDNk3WFLGglzEkpjp9XQRV2hyVxXII4-5p1fk0MdtFKc03QKAIVf0GWqsAr2CR6Kr2sLS5ht8Ov_7YICfOUAvFB6fuuE0Pbo2bcKtyO6S1L4wgiuncCMARp0n_Tzu5cXGhiM-hT82rm5SMr&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr11-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=hnoXHO24uREOU69AOxYGYw&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQKsRnYZ06EVsdk-Rt9K51PCSraMbm1iQKmsf38L_u5pL8-2o4PjKsEo0JBH2eWLU1q8F0ediOBU&_nc_enc=UkiPohC47dYdCcJCmwuDPXMa29f3kALp9Sou9gOLlUD4C89N7xUlDvea2WOQj7rxckmWtsZiM8X9fF-D52N8aSIpgA58yDp3gzsMxl6PKVpVUfs&oh=06_Q3_FAU7K3k4h5GMxKv2spddiXslHaR4AEAKL4oSUZ6HKPWKo&oe=6B0B86B6",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252770985250505",
+     "adset_id": "120252770985280505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C7",
+     "creative": {
+      "id": "2321288545301103",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-b41d53c37353b4b1379dfd917f665326",
+      "thumbnail_url": "https://scontent-lhr6-2.xx.fbcdn.net/v/t15.5256-10/901097123_29220057754300212_6612895278702594140_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=GrXmppLT01wQ7kNvwHSAkNn&_nc_oc=Adr0ZfL2SZ4WfR2KUQbZD0WC_I2Etw3mqH8yRsEEbjEpMM4fghGuI0k8pMNE92wfOIU&_nc_zt=23&_nc_ht=scontent-lhr6-2.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQJmNRFG0B7gZTYDWNk0xf5ig7fvLxJ6_x26j67nu9zOGl3hgaLhDXdts29ggkg-eUNAFNXjH3oV&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQVthrmpYlNU2tYzTa6n-iq9LIyXh9nroMnDTOgLCsN_sg&oe=6B0F62E1",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252769703170505",
+     "adset_id": "120252767909850505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "1206988088327495",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-1099450b53abf396f2e5b34e898f0f78",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/899630785_1095887483494120_1260992508405606252_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=Ow36zX3XT0sQ7kNvwFPu-dI&_nc_oc=AdroJ6158HlLqZRclJhkLhzyoiikQ448epN3ONdYuNmcMUT6HKpDxpy3Egmo72BFw-k&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQLb-_owHjo-_ggeiO9JRFN-IzJg71PR4UH-Gnt-olc38thdDJSvIeB_G77q-4Q81kwPQWJeq3GC&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQUaWl1qwWVaSDNOzQegsLKCY-grWEuERSZmhpGZF_4NNw&oe=6B0F769D",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252770985260505",
+     "adset_id": "120252770985280505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C8",
+     "creative": {
+      "id": "1161501409632577",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-b46b43aa68cc33cc701b05f7fc324987",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/896074630_1615892639807654_4709748136853381401_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=6DprpUv1FL0Q7kNvwHHq5qj&_nc_oc=Adolll6NgVhE5bawrTXkmJD3mDW12wy-KLDmhWeUW2zCadwAu_3vNfstYKbPZzBNwks&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQJZVPsI-UtOH7nYLI7f5UpG7EaKL34Ohys4j5lnTpKcLy_R6SSvTOsb-BJ7K_0gR2dhL1LBThcb&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQX35SpILbhOWnnBGdeXvbOb_vhsCtm_7BUh-1IAYq_zKQ&oe=6B0F51CC",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252770985240505",
+     "adset_id": "120252770985280505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C6",
+     "creative": {
+      "id": "1448146133502380",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-77655c26c6ae032acdd6e786b825c114",
+      "thumbnail_url": "https://scontent-lhr6-2.xx.fbcdn.net/v/t15.5256-10/901297531_1039165665877465_8873237050755438526_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=RCoQQpg_mbwQ7kNvwHu4E5Z&_nc_oc=AdpuS0jKNuNh5BmQQLMVCdWo3jEDrT5PkN-zxN5H0VavgXIvxl5BLHdXrh6A9W3fLWI&_nc_zt=23&_nc_ht=scontent-lhr6-2.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQL9H9DAXHC7GAiVHHaKh_VRHY1QJFwfAw9PtHUBjVUr57MLhaOzmvcJkvqwupFLbFssqQ_uEhgl&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQWzlkq1H6E50HYSSBliffFeAjztGMnRd2ZB9rXtM3brFg&oe=6B0F5B3F",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252767909700505",
+     "adset_id": "120252767909850505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "1493175832686232",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-04d6eba2174a01fdc6a34e72435d42d5",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/904519503_1649966199912940_6424078386419690717_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=veOsiBp8zGIQ7kNvwGA212P&_nc_oc=Ado8khIm1nX2srUP5lw49xl8wzX0Oi-Mp0TlAnNLGbZ4rCVKKVj9HEZumATrbJCJQLc&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQKjY5Q2coMrnnhXsydvfbJeeCCqv04pitBf8EE5Qi-FcUQN6edfOOL9oDisS9cDglpUxqkB4dLu&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQX_Nss7GRtES9xU2BVFGW9D-J3rXsnHyn2B-sdzODzo2w&oe=6B0F6373",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252772431520505",
+     "adset_id": "120252769910430505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C6",
+     "creative": {
+      "id": "1149615118027651",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-dbadeceea41c27d844f03972eed7f532",
+      "thumbnail_url": "https://external-lhr11-1.xx.fbcdn.net/emg1/v/t13/5461076523498330969?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLip6_OeRxBOPNmZ-nMBeZbtcEu9RW7Ob7i1zH6lmYynGNBFs2Bj0YtGsqpvz2vd41ipMBEEg7Sk0VrK2ydnfvH9uYq2iOsf8Ca27IMlt1uAdEsDGFE-9okQunMy_TV__RlpnT2l5aiE_QvecBaKU1j&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr11-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=hnoXHO24uREOU69AOxYGYw&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQJ5X_JBp_TZPVaiVYo7EfE-UBSRj9Dg4QVxPqPWnHU0K2_RZ117vldcu38B4wjqooNkjfkpUKdz&oh=06_Q3_FAT-5nTGG7oSsdc6bUCXqrUwNKrNqLPgk23dQMFCpgUfd&oe=6B0B785E",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252769875000505",
+     "adset_id": "120252767909850505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C7",
+     "creative": {
+      "id": "960555456882510",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-826b0f7df133fde4d1f3cc991495bab0",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/895705509_1464809821678596_168188852887649387_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=ugAYSCjJ8yUQ7kNvwHhoasK&_nc_oc=AdrVz7kQdAa6u_y0OguRh7mGcdYLVILR7BS_ejKq-ccl-e92fnyDDYUDXytE6Y_-CyY&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQIUm1NzB0ENlokCCV598WkSL7p9-VZgYm-8g8Jv0AxdsSx2uOVLuTfDyqOgtsD7BZiYK1Gy9Dlc&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQX5jdbi-C_pjNWQJCdV87DFwU4YEWdiYp-qqB-8EukCHg&oe=6B0F7D08",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252772453110505",
+     "adset_id": "120252769910430505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C7",
+     "creative": {
+      "id": "1685890193194445",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-d0f14d178ea55f1533a0831a79417746",
+      "thumbnail_url": "https://external-lhr11-1.xx.fbcdn.net/emg1/v/t13/8991815502796915237?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQKsa5-Z5o49MqyFcudFDKVkYo8mOV6NAEQo75YYocdViIgdBNqL06Zm89P5UN8kXbuBD8qyvVKhKBPCu6Q-UD-ZqPwo4sZh2JMAuhZpnvUlUBcvFq4NT803cCmx_E58FyvRKRI4Fxu_eCxCQkKX7v1W&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr11-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=hnoXHO24uREOU69AOxYGYw&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQI6Zh5adeV6L0s4Ooy6IM-CJGJs_8Hd9tO59ntUp5u1Ljow2m4psPE3VoRq80r7CW64fkBnRYwU&oh=06_Q3_FAdxkpoprBhrd3OTp8JEcSJ1A2F9a6LM1SMFU7_wr48Vr&oe=6B0B8B94",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252769910400505",
+     "adset_id": "120252769910430505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "2177218966198975",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-48a93bf3b61bdd471e5e5bba02efb760",
+      "thumbnail_url": "https://external-lhr11-1.xx.fbcdn.net/emg1/v/t13/15074648007517079967?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQI-mWecIxho-InOgAFdh5ylS5tWiPdniC58m15buE1dV-i9z7ddua8TYt_fOvXtCfZ8JVZPcNC1z5VWvxKIAPbd-A3EDE_qevzcr3DkC56kfPim7lpF9bsAR-8A4TVOZc5sK74GppgK4K9KNafRfd2b&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr11-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=hnoXHO24uREOU69AOxYGYw&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQIXMu6gqTYSvO9ptdZRWfSmu14hHZOJSW7qNybVfwRrQtdG_TCvOLre4ayS-ndCEXexR31b0YRQ&oh=06_Q3_FAcGQE7nooWr2XyAS3yb4tN9HJZzqfbgG8QDtlY6uAD-7&oe=6B0B7A67",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252770985330505",
+     "adset_id": "120252770985280505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C10",
+     "creative": {
+      "id": "1503975031651666",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-2982e704a2c84f05898a062063b39b26",
+      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/902761185_1123891453716880_7027654251803652382_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=6NG7znuPN7wQ7kNvwHURxJm&_nc_oc=AdomSL4DMMyCxULE2OzNOfwdtSWVsddhXctwgJUCAZ3TSXfWhc2Ij0gkLtWlVsWK2JM&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQJ5hmhcrka1OAzXBrcGxD812HeiL8fidhoJbfwKuEb7oHRytP9_fQeBrUue74juO5EtUS4gRLwp&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQVD8njcObhzbXWpmDESDRctqzjU2E7VA6qmwzNeCQXjBg&oe=6B0F54D6",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252769191790505",
+     "adset_id": "120252767909850505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "1786985525907014",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-083e67be442503a3e263252013256b08",
+      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/901242354_1532000218756596_5279606956112017949_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=bglWNOcJYY4Q7kNvwGKkhCE&_nc_oc=Adr9Lit1s6W7Mz6YFqdcSV_t79U5GH9cCBygSfmoRjOY42lNye7-i3JyunOaokFhARI&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQIfk230Lfk-CKXJaODZhsMWYnw1SZ2h_8Jqe2yQEhiDxXNmW_NY-rYLojdD4avqbdalvXlVqUg6&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQVtKfkhMOApEz60uyRK-nsIfLRHTUBwCfAc0jS8ESO_cw&oe=6B0F4E06",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252770985300505",
+     "adset_id": "120252770985280505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "1480849334190344",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-484aa23ab595fa6b99cd289b42b57920",
+      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/896684021_1759819109485510_3361932889783884282_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=rK7rVgmBAzMQ7kNvwFjaumn&_nc_oc=Adpc37XnX9Rn0ZfdnRlBzy4HGwIA2izZbnt_oDa0yaVYRu_hap5lh0gO3kI_Y6mDjgA&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQLW-6vH0v-CCTsa0xJ8JFqXYghKchqxKGYi19IkL8a-inR-DnFXoWhPV5dKVVfIECC6n_utA4rh&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQVCOyn_mEoLejD869LWoF5DoejND7CbszNVUQMilMoFbw&oe=6B0F71CF",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252772520550505",
+     "adset_id": "120252769910430505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C9",
+     "creative": {
+      "id": "1010486494727666",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-18cd677dc0d4520746f547c63da651f7",
+      "thumbnail_url": "https://external-lhr11-1.xx.fbcdn.net/emg1/v/t13/17701738984536291319?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQIL_Ctbh0JarwJsApOkJI2E3r1lD3vcPN5QL7Kxz86-xkivHyhSbVTNX8yMT-vnlZxRlIi8nHjn4bgvTDdLTDR95xJrQT_hVHr0dAC5ugZAkn4m5OvGGrYRkI-kHW1zjC9D23qADJ52Mp3WkyliWXA8&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr11-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=hnoXHO24uREOU69AOxYGYw&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQKvg9A0Gtg_15ZE00zIiTmNU5bdO0zKOFMOwD1069s05hf8LP5TibEXovJndqfd7YFu37gAJDg4&_nc_enc=UhOujiXuUlTULBcAJxrMYKQkzNiCV4aIulk2bx1TKM2e4TUV_wwVTIZcL7zMhEn4LTKUK_lXHyZUfgaBRh0xV2y22FLLRSP-900P-f473FhKi2w&oh=06_Q3_FAUwgdC_c-1OQQfPP0iJ8-419A02S5YkbKHltrGh6gCeQ&oe=6B0B830C",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252770985320505",
+     "adset_id": "120252770985280505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C9",
+     "creative": {
+      "id": "1842854776962202",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-0c940207431c9260067571155c9702b5",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/904421847_1481083680612286_929214517467243295_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=Q5U2S2PI5ogQ7kNvwEY-L2q&_nc_oc=AdrkWlcnPCAClOzni7BrIs8K_dd4j30w64POZxMV0YMy7FDB7tQS24XEFSx9UO5BRZM&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQJe9ZY8DDYBPPjMgrmrK7mECH7gj8kycmXpHR05wcTcq9bv5kQSondA7_i5zVnR68Sf9NLqfEPi&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQXmPrg1IHGrDgGck9tc61knE_fBSgtuaijPRd3TGcXBKw&oe=6B0F54CC",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252770985220505",
+     "adset_id": "120252770985280505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "1500369031939449",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-ab92558de597471fc9d442b77a94adc3",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/896203684_2210768779536417_3053030220930194841_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=JGaay42ExgwQ7kNvwGC2zwT&_nc_oc=AdooVegFgJIpX8zWm8rA21jecV8TAbL5rP15M_HlW2cny6VbPxm_2L4a1XbxvI7CHII&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=hnoXHO24uREOU69AOxYGYw&_nc_tpa=Q5bMBQIrA7GlzZIKxmUxLAg0V86T3axz80UCgflYrwWxl4ygXTiyu6dODH-fq-PU3mYFDtBXbUWa43Dn&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQXlPw7HzcgPS7wKq4WWoMGl5RI3S5tuHp_XGQaMH_i2Fg&oe=6B0F77AA",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252772312500505",
+     "adset_id": "120252769910430505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "1088757180852529",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-df922305513ed122c0020225bec25e74",
+      "thumbnail_url": "https://external-lhr11-1.xx.fbcdn.net/emg1/v/t13/11896618316464734047?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQK9Unrm9kK2ExD4CN8-nM-4HqM52c4jJegIFQyCVL7Xe1o7IPAcnVHq1EzKv5fEnoXfFaBnsXftmHEJDzNlw12pFic0wv0yo_zrMGPmwwHWpTP5xHBrf_01Fg3T4whwCs6lVeAqbgYBZoQNWnZLHKDB&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr11-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=hnoXHO24uREOU69AOxYGYw&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQLkak4K6E8qQc7EwTgSiHm1TuWGtcLqSIOX7kfj8P2huQ_AcykImFR4gPKtzs5CQwHh3HiW-nsl&_nc_enc=UuWTa9K0wMsdiPk3b4voCno_u0bCyDqNkRUujFgXSK0b0uZQZxSc5q1hd0OX9JZhtvr1usyRdb1bVkUZmIBoKs45knNlIcZsuqbWLwlUWlUS2nU&oh=06_Q3_FAU9fZLWTuhuazG3S6J2aJS3G2TGIylmXw_T_V9gZeLQk&oe=6B0B6972",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    },
+    {
+     "id": "120252771304690505",
+     "adset_id": "120252769910430505",
+     "campaign_id": "120252767909710505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "1778106683476450",
+      "body": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Black Week: 50% på Maskinrent 2026-11-16-3d621d010c3ca03ffb1b67b46800e370",
+      "thumbnail_url": "https://external-lhr11-1.xx.fbcdn.net/emg1/v/t13/745628147694774316?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQKttpRq00pHO5ABNnK-kdC1Gl2kAjnp35I8YwhUNvS4LGVvGglVjGe8-OJn5232eplX6wcpfusd3mtY-Ll5MNwpG7nPyieQqAg2U_B3Dbf-dtzfP3kx5eDaXaFgidsl8apllk7YGjgO23Ae22S_oyfq&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr11-1.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=hnoXHO24uREOU69AOxYGYw&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQLHmFCDRahyu8KgzsF0J5PSeFp9Ni11LPEUrDYiuPKctgKB6FH43CEOaSu_wETa5gIdcx2ytyHV&oh=06_Q3_FAbED7CYETMnPX9PyrNPHKKkSrqagyoMXJ2scxRh-zit0&oe=6B0B59E0",
+      "title": "Black Week: 50% på Maskinrent",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner"
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

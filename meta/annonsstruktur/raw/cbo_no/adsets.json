@@ -1,0 +1,348 @@
+{
+ "accounts": [
+  {
+   "account": "Ad account 3",
+   "account_id": "516758837558365",
+   "adsets": [
+    {
+     "id": "120252904581190505",
+     "name": "A6 - Hero 2",
+     "campaign_id": "120252801527820505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "daily_min_spend_target": "17000",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "NO"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-24T03:00:00+0100",
+     "is_dynamic_creative": false
+    },
+    {
+     "id": "120252802331370505",
+     "name": "A5",
+     "campaign_id": "120252801527820505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "NO"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-18T03:00:00+0100",
+     "is_dynamic_creative": false
+    },
+    {
+     "id": "120252802180980505",
+     "name": "A4",
+     "campaign_id": "120252801527820505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "NO"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-18T03:00:00+0100",
+     "is_dynamic_creative": false
+    },
+    {
+     "id": "120252801930870505",
+     "name": "A3",
+     "campaign_id": "120252801527820505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "NO"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-18T03:00:00+0100",
+     "is_dynamic_creative": false
+    },
+    {
+     "id": "120252801667350505",
+     "name": "A2",
+     "campaign_id": "120252801527820505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "NO"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-18T03:00:00+0100",
+     "is_dynamic_creative": false
+    },
+    {
+     "id": "120252801527850505",
+     "name": "A1 - Hero",
+     "campaign_id": "120252801527820505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "daily_min_spend_target": "17000",
+     "billing_event": "IMPRESSIONS",
+     "optimization_goal": "OFFSITE_CONVERSIONS",
+     "promoted_object": {
+      "pixel_id": "1262459122680812",
+      "custom_event_type": "PURCHASE",
+      "smart_pse_enabled": false
+     },
+     "attribution_spec": [
+      {
+       "event_type": "CLICK_THROUGH",
+       "window_days": 7
+      },
+      {
+       "event_type": "VIEW_THROUGH",
+       "window_days": 1
+      },
+      {
+       "event_type": "ENGAGED_VIDEO_VIEW",
+       "window_days": 1
+      }
+     ],
+     "destination_type": "UNDEFINED",
+     "targeting": {
+      "age_max": 65,
+      "age_min": 18,
+      "age_range": [
+       18,
+       65
+      ],
+      "geo_locations": {
+       "countries": [
+        "NO"
+       ],
+       "location_types": [
+        "frequently_in",
+        "home",
+        "recent"
+       ]
+      },
+      "targeting_automation": {
+       "advantage_audience": 1,
+       "individual_setting": {
+        "age": 1,
+        "gender": 1
+       }
+      }
+     },
+     "start_time": "2026-11-18T03:00:00+0100",
+     "is_dynamic_creative": false
+    }
+   ]
+  }
+ ]
+}

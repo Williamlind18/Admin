@@ -1,0 +1,647 @@
+{
+ "accounts": [
+  {
+   "account": "Ad account 3",
+   "account_id": "516758837558365",
+   "ads": [
+    {
+     "id": "120252697409230505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 3 - C1",
+     "creative": {
+      "id": "1047472188352994",
+      "body": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Sista chansen – upp till 50% 2026-11-12-ec46c5fef0e7955b6f1d798da9090a23",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/9688882203366289310?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLnlBzJeB_PfhVDPApz7nXSjBm2UOKKvkiSMGV2jJwzYjmUUMH3hx23PLJFRRkNp1aM5cQsWWtxfic5E-5rvS-cc5TIy4tVG3NpqAsOKJgUH-y2OgXZ1tSGn5qnOxBM0Z6WUmELS0LOojxt19OhTw0q&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQJrx0rOxMwav5wvV_3Tzm5giRcX7g5dVbexvoU0Ceq02z3xxhBWl7EIJGPkhairIqa55UUHY_Ga&oh=06_Q3_FAZ36AraPNPd0hw-Jh9sxcaCw7N5qG3MVRhzi-Jlp79Nv&oe=6B0B6AEC",
+      "title": "Sista chansen – upp till 50%",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252697559360505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 3 - C5",
+     "creative": {
+      "id": "1655540436309319",
+      "body": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Sista chansen – upp till 50% 2026-11-12-54e27e3273d94aa39dfa8eaa72f9fc74",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/14777517292871470178?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQKgOnAWi7AQcdnEqqqGIv9xEWI0HVTOt-uvjewrgbXYdajMkrKuOjPHrr9fFUlVaBCbXk7VqZJPBlmUwLLixaCTTOZ3PX90U3bB1wzrZTPjWPjHoVpajPW7edovOWq7gRRoR5ud1W9db4572sWeSXj7&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQK0ZO4kWN3WfQ1P4pL2RXQXMRGUHfD07MWwpHfcXAforWa4teA-L4TakHNgjg1bpNPMiLr2hMZE&oh=06_Q3_FAdZdiBGHhpscDjwcamSvJRoIWTYEx6Axt4DjxdAHS6dC&oe=6B0B7A0A",
+      "title": "Sista chansen – upp till 50%",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252697483320505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 3 - C2",
+     "creative": {
+      "id": "1695186305565755",
+      "body": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Sista chansen – upp till 50% 2026-11-12-d80f1459b4bfc2d0c138b2222d006b12",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/5148253009150038288?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQJ0BmLN7t16j1tQD9sZMUM0EGLU_tn_PnGIMvblu1z0iE1JFsEQrsqlhiD-UyZHAC1x5uKT_3mbF9ZMBhPcqLmk0kmN7AEY4qYHNDViIIvom_CBk7OnjnfddjmD8z6vHzDTJdf3iUg25geCFw26siB5&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQJz8cuOuAi95cQ36aFmQZTf3wN9ES-DrnIH8-Hbe8L__Z3IrGKip2onQelrJcp6TFAbqT8GK4at&oh=06_Q3_FAZ_IH0vP08KvXo6OtLQ1tRaSzrI1ghrp3VLlOAXfVmB-&oe=6B0B8B0C",
+      "title": "Sista chansen – upp till 50%",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252697569310505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 3 - C6",
+     "creative": {
+      "id": "1359827059470051",
+      "body": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Sista chansen – upp till 50% 2026-11-12-5f9080002864f20bc1225c73cb987e0c",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/5590126938175271371?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLqLiF59VrVXY1ICeMg_MvfsIQ67G8EzOT-1NKN1AuGlW1NCYmH9NO_hoUTs1dQ3k8keEOEjUsSaobmzP-57QMAgxBCfSG5Qcrbs8gF4usOH0kf67xxGATZZCpndGMp3j2N3JCIcGCHtSdjwljX_ntE&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQITaah5m6GSqNpvI8tDUoss4ARw8bo1N0Cp4HICo4i3pQoGtbeEPu56mHBbB9CiJLaPQEzYcEV1&_nc_enc=UiBkGEBuOzQ4tEhWsGw-DM1g1QejAc-qbu3JK0ZeUewSWzhx2cRbD5LkQmLgZ5ItLhKk2PP0ekMapcChVBe5DI-BRrVLSoiF1wiRVJa-wlODQVs&oh=06_Q3_FAQDbi5zocOyA3POz27z4tsT0gsVzHgXZAMwTzrOMl_jr&oe=6B0B7194",
+      "title": "Sista chansen – upp till 50%",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252697552480505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 3 - C4",
+     "creative": {
+      "id": "1176361681623913",
+      "body": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Sista chansen – upp till 50% 2026-11-12-864023525c83391c481d4048a9717593",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/16768064375142957134?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLVzaY-H29EmEki3V_RhVioeDfGmsACHZKqprVheE8oYlRcyILguLBQXuXVp3sMOLhIJsItEhWSRLY-h7euqJ2U5XF3gWLPzRL53W8dia3mr_88_1PMcPwdPEJwsTqjP0KGqnQYEOrTegypXhh-nMuk&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQIIYtWb6e2tOYICjKQ2qTWdGcshPfvaiquqAk2iE_RheFcEwxytTudVhPjG2gWVIrbh0mrBS1gC&_nc_enc=UqaFP2lKCis7lS6gnFZPerdNvd0lBvP9Ph5QP3YQYXUhqWlODc-V_Mjs0KgkNBB_vcIUpQDyTNItfDpFxo2tICnDkqAh71ot5FgJBY2H-OjQG_8&oh=06_Q3_FAZu14L2Nb4hEqApOY8x1N6kfckwBVbY7Q6wa-3lokxVP&oe=6B0B71DA",
+      "title": "Sista chansen – upp till 50%",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252697531550505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 3 - C3",
+     "creative": {
+      "id": "4081578622147784",
+      "body": "Du sparar 379 kr på 2-pack Maskinrent – upp till 50 % rabatt, höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Sista chansen – upp till 50% 2026-11-12-bbc0e1234c2fc686ea882b83f1b26814",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/7677116180120617553?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQJBR3B83R62-X3cv_1FWjeGl5ncjpwXvL4jl2DhRsWbkXOi74BPqNl11PixagtAeSvLdjeDOnGiRuyuqnbsbk3zdWQwiws7UapECwtEC3r9HEWZnqfEt5Leaa-0cTFU5_yA9zdmjmU5JLaEexxADWSR&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQKZDvL1C0H6CDoXaThPZFk3fLCPZ17J59H8KJ0-BxIl5D3TDOTLUzPc0X8K1OUgcgdZbIZnJnb7&oh=06_Q3_FAeea8_pzh8_7U1NmthlB5G3fbImzw3HIEnjc4Q3OWWl8&oe=6B0B8484",
+      "title": "Sista chansen – upp till 50%",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252420756600505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "BOF - ny batch 2 - C1",
+     "creative": {
+      "id": "2028232847892461",
+      "body": "Nu säger vi farväl 👋 Årets största Maskinrent-kampanj avslutas ikväll kl. 23:59 – sista chansen till upp till 50 % rabatt.\n\nTabletten som håller tvättmaskinen fri från unken lukt och djurhår, en gång i månaden.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Sista chansen – upp till 50% 2026-10-29-a9ad6ca7102d7b59b5cedec3749ffbe8",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/3679680088739097814?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQK_xyYhfGwEKvy6NJoFau0HHKgdSFvc95Vbdohh6nJKlvQDzjB89duoJqTSNGZCLu2xaZ77grsP28lrIphNi7eL_A7A8HtDI1WjQU6TBcEbzTPW3L2nc2WlCjPAcLQhH9w-tSOwxPxwVc2LdP5D7QBn&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQIPzO6xCLd_8Aj1Y2CeF2oJGThcFZXIH74KOgjEljlINvs4KFeLI1zfMHlnuhBYw1xVde0iuC15&_nc_enc=Uo1MZCTapNed0BlNhG3Y8ngpEU-Poma9J0oGNodVOP3qSYWG-c2zKeIb-pfvnVjU29zFpRLtXRMdo5g9rtNSdsFrOkCL_YINdM-FLH06KyN1Vio&oh=06_Q3_FAXJ_L-JdmFVLq0jNvN776ETawiZ0IsmDCw88eULHcxe8&oe=6B0B5C7A",
+      "title": "Sista chansen – upp till 50%",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252144915130505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "BOF - ny batch 1 - C4",
+     "creative": {
+      "id": "1777148080275356",
+      "body": "📦 Köp fler, spara mer – upp till 50% rabatt på Maskinrent, bara till ikväll 23:59.\n\nFrån 37 kr ner till 21 kr per tablett. En tablett i månaden mot unken lukt i tvättmaskinen.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Köp fler, spara mer – upp till 50% 2026-10-13-bd45fe652044ceda40c0f1ac16d517ed",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/17039663326945333047?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQKfU0819P8v1C4gbXdUXokvrHZDNRSNeKw0w3c0CXH3qsyi4fL8pnqJcp5Acih6iayh6XAXkZuf5FdCpfOTehc8lImQNj8e9vdCCCcaNM_lsPmfADuRDPOfJIKjz9QLlKGP8lUrhpxRLre8KcG8ow9X&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQJvd36dstcIx2EkGT2KaNk8fmp0Iqt8VeI_AlB-txbjW807urKkyBgrnjmI17S3N2hQRxMKjOxv&_nc_enc=UmZCI4JRMf3-cU6I4NcRc-_mFfLfakCvCHhkm8lm8n2atqRZ-4nE_n4HRnxks2Fn89PS62Y4ckWz32z9RWO1jvIJTUCQQ9XKRwzGq_KSaU8bGTg&oh=06_Q3_FAfsRZDu6yPRbsnCR3yWMpiv_4egMLFbYjpl3zSzj7YIP&oe=6B0B6C9F",
+      "title": "Köp fler, spara mer – upp till 50%",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252420872320505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "BOF - ny batch 2 - C4",
+     "creative": {
+      "id": "1498655852321841",
+      "body": "✍️ KÖP 2 OCH SPARA 379 KR – höstrea med upp till 50 % rabatt på Maskinrent.\n\n24 tabletter räcker i två år och håller trumma och gummilist fräscha.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Köp 2 – spara 379 kr 2026-10-29-3d857b4354b00cb0c0a50a1ec6dd9b5b",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/17609701719227317068?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLf6YfXMtEM_Hk0wkZhUDzc4IogRpn8bn_DYTyMwj3xgOeZOU5ZchToSIM07mcnR8nL58FZOAoNfglIBAbtYD8VOpOeQaQIr-dJ9Kmpv4Zav22vZ0UwDCKD3Q4QxzVUKuSZi9itZnxl9nMgeA9RCQfI&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQL6LrcAqxdeDg68VQm3ki1jK7MuQpk0dtrX6T8cMcfJplFsA7B0kFRnqRwz96eIw-Z8X8uy2sxl&_nc_enc=UlKPEvUpJPE5frXsZzaKh78ow32FsASDMVvEdK0NxOw3xzuApGqvgcwg7gSWTpbMDYLtwEnXQt2H7M15r5dQTj4WfDJJJeAPIhjMpk1Htunetj8&oh=06_Q3_FAdrfEFRsrLt_0ZlmGS9CBcZPqlsMlLH51YE2KSuvfM4K&oe=6B0B7BAF",
+      "title": "Köp 2 – spara 379 kr",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252420846060505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "BOF - ny batch 2 - C3",
+     "creative": {
+      "id": "1818775012796860",
+      "body": "Snabb påminnelse 📝\n\n✓ Köp 2 och spara mer \n✓ Nu upp till 50 % rabatt – sista chansen \n✓ 30 dagars pengarna-tillbaka-garanti\nMaskinrent – tabletten som tar bort unken lukt ur tvättmaskinen.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Köp 2 & spara mer 2026-10-29-6bf54ec8c89f836383f89ceaf96e0fc0",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/5945647055274585503?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQI7883eAlE1fI3k4IC_CMaqvsZhN-yzsfGOl7wU2l07bZ7Ls_C4SF0k4DjFgQL1trcKYmgLGB_880BZOuv02fxGTHqtRTUPv8Gn0KievF4bpsIsSJjKgrLm5gXtjliAsg1stOBmRz1VqyYmgH570OnS&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQKyPe-YZRh_jIRQYab7RrcMXN4bQIEXiQt44eEF2rZv0JxXptXf8LXBmDA5-ZlJP3WW32tC8R9T&_nc_enc=UiqZTlAO1oMJko3sKyBr3zYfqS-xs-XzKM0Mqfumni0ReGitFqA2azPRRVQAP2FW2KIWbKQwZ_cbaTL1VQKHd9UAJUD3-qSBjzudmm-9lrNhGxs&oh=06_Q3_FAbcno5ygWrTD1AuzOow83IVgKcEEMUU8-c2Q5FD8B-pK&oe=6B0B5841",
+      "title": "Köp 2 & spara mer",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252420928220505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 2 - C6",
+     "creative": {
+      "id": "2393279061481162",
+      "name": "Spara 379 kr – rean slutar ikväll 2026-10-29-bc788a9125ed903cbcc9607312511269",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/877088417_3403840209818734_7793777359176172684_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=MsHokF3si7UQ7kNvwEuFW0e&_nc_oc=Adr58_Tkt0fCXHf7TItjX_T0wCQBfPyQ1AF_liNLU4YG1CeuPgKi-Lm-K_jSMqrh4Cs&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&_nc_tpa=Q5bMBQKxDRHOSwSo8fVlMSEc0H3thIkawz3T8G3Fp64sV5kWhsrg8YxUceH5O7yyQZP71CJO3rrUpUfc&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=28e8fc&_nc_sid=58080a&oh=00_AQVukW17whpwRrX_d9Now6gQLGwR9w4kJVmvnB5xtdr79A&oe=6B0F5B80",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252420785180505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 2 - C2",
+     "creative": {
+      "id": "1132489455963691",
+      "body": "🚨 LAGERREA – vi har fått in alldeles för många Maskinrent! Spara upp till 50 % + fri frakt.\n\nEn tablett i månaden och tvätten slutar lukta unket, även när hundfiltarna åker in i maskinen.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Lagerrea – spara upp till 50% 2026-10-29-e898b7f3ad658334f9661a5ac738ca70",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/14131552540428688454?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLwY0Z-5iesyBTkNZtpehBI27cdx5HqV_7pvyociSk2UUETHA1Kmbo3yNLbBXi-X3YqSONalCYNd26mqwPkgEQsN8F8A-kVymeG4-wwwqzer7PYA_VHcP_-7ak9RKqBX9_aA9qf1Cu5G8dP6ltc5cYD&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQL2Aad98g-KocU15f4pf6rbKfFSnNIu_tjYQYsG_FE-ThaPsN8K5mLQbzSELuW9qKo3iANfu56Y&oh=06_Q3_FAfI8IAoBBB7kKuOUsQS2BVdVebN_RoeAjVBlS3Na0cFk&oe=6B0B6FCF",
+      "title": "Lagerrea – spara upp till 50%",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252420890010505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 2 - C5",
+     "creative": {
+      "id": "29861865690081894",
+      "body": "📦 HÖSTREA: upp till 50 % rabatt på Maskinrent + fri frakt. Köp 2 och spara mer.\n\nTabletten som löser upp tvättmedelsrester, djurhår och lukt i tvättmaskinen.\n\n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Höstrea – upp till 50% + fri frakt 2026-10-29-7cd5c2eec4c0c3a7131df5530a3c20c3",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/14805745031369635710?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQL74h9Ej8hyUak6OKxBdt1NeUA-davAI8yRdfwIrSbPRylKJ8lKBguCd3eyc2Ks3rTNrmtKLM4nUlF4ag6rsEPRZ5J9IohhWv4WZc0Af0HMRJjGnXURaia5B_4Pt_yJL4Yp122WMHSuecztR9YgtzbS&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQJiQ-WeKrGinWobtbI4OJOE9KqkBcp-WurkMt_R1PePWqkP09MofSQoz0Okeaj-7uf-hGZE_T-V&oh=06_Q3_FAb1AjXGv2GQT2KU1H-LPmHJmmrHwpQl-ADWulStIAQbe&oe=6B0B7B7E",
+      "title": "Höstrea – upp till 50% + fri frakt",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252145118070505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 1 - C6",
+     "creative": {
+      "id": "979327487873879",
+      "body": "🧾 Upp till 50% rabatt – du sparar 379 kr på 2-pack Maskinrent. Höstrean avslutas ikväll 23:59.\n\n24 tabletter, en i månaden, och tvättmaskinen slutar lukta unket.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Spara 379 kr – rean slutar ikväll 2026-10-13-dcdf372ef1fa0d51a1ec872b0cb383a8",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/8936856206938479118?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQISfeX3PJzHXHF_N5XhfieayZA4oqAGuTPUrtiMtJhWBjGNKweUP4UYQul0zPcCbT342x1CgaSP3F89U4ws57CLLzfOvV8LLtLZQD4jIiNQ1hDMDGfQs855KJhWRHaXUIrPh7zOHAXZgXIEV-fyKw0p&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQKam-Ru8qSXksTlnwmNE5ZEJFLicv7cmQUjocnaiWq90sj5LEBYsa4PigcajW4dIOKT3xpqsPFB&oh=06_Q3_FASXFmwHYrYbRExm4pjfV04K9oA2TKGUM7aFcJJEadrgK&oe=6B0B7C95",
+      "title": "Spara 379 kr – rean slutar ikväll",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252144776300505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 1 - C2",
+     "creative": {
+      "id": "1433516208883963",
+      "body": "Snabb påminnelse 📝\n\n✓ Köp 2 och spara mer \n✓ Just nu upp till 50% rabatt – sista chansen \n✓ 30 dagars pengarna-tillbaka-garanti\n\nMaskinrent – en tablett i månaden mot unken lukt i tvätten.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Köp 2 & spara mer – upp till 50% 2026-10-13-11b19eba27ebd5ea1b3b3dc950df6eef",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/10398197757007662456?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLCOb28YoBPlyYqbdlzdFQHasagZxwgrLa0eSkdT4Alfpx7GzhPGvwB6M8-pptiamAu-Hs-OdrPxalPMkvYDcSBvv2UsKHjhWPacopT_hc6kcR69szYBTwgbv7yrs2v4sXeWX2NrXwQFa717HhWtUL2&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQKnvANnelyFyTBEbVuYsohxPkIjwdKN7tvuLbbLXDRpbda-508B0JFQjQrjnN75FevIL6qyJBai&_nc_enc=UorXmHxR6pUM3wXYbHm0CGHLrj2FWR6Q9tMRh1yGOcwPSfQqYaArGR-NaorDcEKF1KIkc-WGlrSw0esPQQJ7D0bgiUYBc0Hl8igd-w86dnpbs6U&oh=06_Q3_FAVytbdeXywWO9YRC1bFK5dQq_0LdA_nnVjK-iSiJpzxh&oe=6B0B65E3",
+      "title": "Köp 2 & spara mer – upp till 50%",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252144838360505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 1 - C3",
+     "creative": {
+      "id": "2629343910837487",
+      "body": "Nu säger vi farväl 👋 \n\nVår tidiga höstrea avslutas ikväll kl. 23:59 – sista chansen till upp till 50 % rabatt på Maskinrent.\nEn tablett i månaden och tvättmaskinen slutar lukta unket, även när hundfiltarna går i samma maskin.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Vi tar farväl - rean slutar ikväll! 2026-10-13-3994f3790c4d39326d4c12b18efe69d6",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/10653484576966356086?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQJ4zMqo5DsLH9PGuZ-IJYzRjZ1c4-hmMHQLk5ClA3jvZm-EVLGhOrVdi93sIcdHdGKUKOkO0jNS3xqyokbxMmoHwRXB68Dj7jgm1_2GUlk1tmMJwnz19wz4ZZKhneoXN8mG7wDXe7P0VGESHKhys4hz&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQJmYT200KGmSiCos9uXs-OWPsC-3AFU8Nspld9utgs4cTAvdnk6Akxv8Bl_pvMrrZvymdPac8Rp&_nc_enc=UqQi1xqprIR0xoUcJ5fnSVW_41H_Yg1M2I_JXcvQ0u5oa82JnPLQjl2T7XS2Iz4Qx5usDiBNVc2DENI92QHnNVIEAHkqgJcJd_-0jKyqLhTeCLM&oh=06_Q3_FAQZ_Io8TDNr1stKROt9TY_xcLhacGaggb_5YdcKnLCD-&oe=6B0B57F8",
+      "title": "Vi tar farväl - rean slutar ikväll!",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252144604180505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 1 - C1",
+     "creative": {
+      "id": "1088336393809735",
+      "body": "⏳ SISTA CHANSEN – upp till 50% rabatt på Maskinrent.\n\nTabletten som tar bort unken lukt och djurhår ur tvättmaskinen, en gång i månaden.\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Upp till 50 % – sista chansen 2026-10-13-2c0d99a9e98bdaed215ecb29945c20c3",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/8296817518596798450?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQKF2U8q8qv-vCvDsznixPk5UeTlFqDEyGR6TtzqaqVTxDKpcGNZAvGpQbSzabMPpo7lxjdcW2BM-6JO35Vu8aRTz0eymWPJek42AF-iMTwJyGY754_I7TC0tdO4wiy7prGR5mb4-dM4dws18QuKgOiV&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQL8VgWXTvuT-JotaCCVe8N0_X9ozZPUNraqicGhKBnrGuvDOt--XFuKYMahqF68c30pZ79o2uvm&oh=06_Q3_FAek_y9fG9Mdq59wKjJmpF3_V5hDPeVw_clYTiMSDOGAP&oe=6B0B81F8",
+      "title": "Upp till 50 % – sista chansen",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252145149410505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 1 - C7",
+     "creative": {
+      "id": "3051223451900118",
+      "body": "✂️ Klipp till! Upp till 50 % rabatt på Maskinrent – ingen kod behövs. Gäller till ikväll 23:59.\n\nEn tablett i månaden för en fräsch tvättmaskin, även med hund och katt hemma.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Klipp till – upp till 50% till ikväll 2026-10-13-8cc00ca6e8d65b7568db8ceeab9acf9f",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/10555439966012878269?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLvH1Jzf5Lb198riAcdZ5q_TPZtzKx5tHo37n7MTBFtK3e7EFrf43bKZoxQLFULUbRDM1Hczj-Z88RVhYtQ6dYH23iwPMODVNdO8uOTM-uUemQrU0b6yEoE1URVF3bx1zV-ypUkqMufx5XV_ssCOvlU&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQLEh3dUvV4Ng9lzpz1DAMLsVSCC2pEs_oUKzVDAUSRHB6Q2OL1K3vSwd-IvJ3HpbR3TdyyVAfrl&oh=06_Q3_FAemsyBGLFpAyKbxT7kSFgJ39qootsm6wSLGUxWdeM6OX&oe=6B0B8FD4",
+      "title": "Klipp till – upp till 50% till ikväll",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252145193750505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 1 - C8",
+     "creative": {
+      "id": "2367452077122615",
+      "body": "Vi säger hejdå till höstrean 👋 \n\nIkväll kl. 23:59 är den slut – sista chansen till upp till 50% rabatt på Maskinrent.\n\nFräsch tvätt och en ren maskin, även i hem med hund och katt.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Sista dagarna – upp till 50% rabatt 2026-10-13-04167774a50f61c47d8414f3c44471f4",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/772070617287124339?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLlIJuGlmr7L8VOceVyU9LeVyjpGRQHgd5HLvmXC1lhXmISFPEMwJayeAIi3QdMyI5FtJ0xHp6n-H_PR2vbob5oiFyjJYVwWxHmPKyaAAW4mBnijJehbXrvHa7vO06Y161mbQAdKjp1Jj2hWy0L1ngt&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQJvAFD-8MeMELhBRWX5GgYMckze2H01w1cfieWLxvzArHV9f9Mr20uANvcxq9liwZK30NRuMKRR&oh=06_Q3_FAXvcoUtdBRKdKRA7eGj8MbUsjXdaaKgah7BIXJZUZNYu&oe=6B0B6FE1",
+      "title": "Sista dagarna – upp till 50% rabatt",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252145247440505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 1 - C9",
+     "creative": {
+      "id": "2166902207536482",
+      "body": "🏷️ HÖSTREA: 2-pack Maskinrent 619 kr (ord. 998 kr) – upp till 50% rabatt till ikväll 23:59.\n\n24 tabletter räcker i två år och håller tvättmaskinen fri från unken lukt.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "2-pack 619 kr – rean slutar ikväll 2026-10-13-37bdcb8a511953ad12bc6f3be7b9d16f",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/2259813861309218454?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQIJs0LbXsweLii_pq0JrWt-XZPYiFWLXeDHW3WZVQFC2IJB1J26ecC6X5nbIPU4F4eYdEs3NOqb3-Px39XtbeCAio0HKTI9F2PaB6VtkhAEPDsV3XcqwclLgfyMLRsZy3dMRKheW2HH6jfJbC2IfaQS&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQKqf5UwjCDu-zfV-OTAcuUHWTNg2ccASjO-UN9we6VIIaBG0hupUPDMy89wNum5-xDfmk5YeEQx&oh=06_Q3_FAdc0oNLA5-M2hdc8feK3wxzTE8--VQDBxfPAOWYxPSQR&oe=6B0B7E7B",
+      "title": "2-pack 619 kr – rean slutar ikväll",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252145002910505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "BOF - ny batch 1 - C5",
+     "creative": {
+      "id": "2241189466779438",
+      "body": "🔴 UPP TILL 50% RABATT – höstrean avslutas ikväll 23:59.\n\nMaskinrent rengör trumma och gummilist och tar bort unken lukt, en tablett i månaden.\n\n✓ Fri frakt \n✓ 30 dagars pengarna-tillbaka-garanti",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "Upp till 50% – bara till ikväll 2026-10-13-631c5697d69f639b26438edc94533383",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/18147642327241451695?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQIxEfkMtK3Fi2wnQT1n92_NGJxViQwyeoaE52jJdAlCidOZfZ8UU_oOTNAhXP_UlZrsMVU-peXbx_-H68KyRh3ALPFZb6lgMU370soEl-TQWbDgLPxhYc7Z5udxFGuM0xZgHhVIio5GRYO3GZEm_vZa&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQKvcqDOXR_oeFC5iP3yfb8sBHYUMnJTMZW1garz21Xk3oQoOOxwsokweu-iKXLjS9oc-pPVKXw9&oh=06_Q3_FATYwIY8YeLANb6MSEmnLdlPJ5CVjbmCKOigxnNGU4Dx6&oe=6B0B77CA",
+      "title": "Upp till 50% – bara till ikväll",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252105311300505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "C4",
+     "creative": {
+      "id": "1058940580511141",
+      "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABATT 2026-10-10-ad1068564055df4b2ec943de778aee97",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/2488801673806370344?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLdYT2zZIxl_LGV_90PVnzun4B-kU1QxZMKoNaRRN63TVoqzCi_4y3fxPw1dDCmOYetKWsQc-beNKcwHk42LlhwxviAJ355lzSpcowTBfohR2Vc41AF7CwADSY4cqz4Jd0mBUFLYGtXVZN_6yg0bmnr&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQJHRMUEg_A_yvwxtCN61FRr0QcRmscsCPiX0h-TP4Ae0vFIG5vV7i72edPOz6M5Sj-GCktsvfmr&oh=06_Q3_FAcJB9Mipp6sODVOPQb2SXdKhOOQOqeWFRlsee_tgWNxE&oe=6B0B6339",
+      "title": "50% RABATT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252105344400505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "C8",
+     "creative": {
+      "id": "1102691992591742",
+      "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABATT 2026-10-10-dcb1326a007de6976cc9f9e7833690e8",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/13995671058221717407?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQKDQuUOydW8xQtE2G_05Yrzb2yh_5hTEjtsaUcZTJCpnMRkeBdRQJSf1_dRHpnJsEhUXz57n1DcdL2ITv0hcoNYpA-DfgiSyySiOSl2pdBYVImflt3-N0-t1feRJcqjuvTkN_T13GEiGH4MhVvpLfJf&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQJ4YBJeJLS5PHCw2LGbnNLFgpAh0oGmq6KxW7RGiPV4Oa5mArKhdZW6cEv8feCPMqxQucgGkHXR&_nc_enc=UjA77kum2jXFVvz7-dKu3t3TRrOS5Ijz-pnJVmDBTXQGVv7hlpq6gMoZLfXnG9rlWCurpXrAAt-dr4X4u68-sSM4SIXHtfM_CJmNOYrvFkK9YJk&oh=06_Q3_FAXp_Vc0B7R-i998Ix7YaNox0gJJAF2rcDVWJbRFIgQb0&oe=6B0B6BCE",
+      "title": "50% RABATT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252105207990505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "C1",
+     "creative": {
+      "id": "1473611194657884",
+      "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABATT 2026-10-10-dc8eebe12885abe1f23f1835339c23ac",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/8762865948773185765?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQKuYDrIBhrQ6IsXdYUFmJLmUWr1JHtGXKiBne28CQr7d0QctH6Xi3yP68Zmv_GRazFmRQwG9sVosmGQ5hjj45QWPqyrPFHN0BEEsXZaIfB08hNhRqW0l73uHZjGoCPC0Z3w9_B4-6kQE3Vl18sV-aNe&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQIcO_iyc3mtMvMWXQCWV4ki07awWXdKJ8vkCNk5qicKaDVSBOtldRxt0_3Oabj41IEmGuq49Ixb&oh=06_Q3_FARUhwiqtJj8pCO78vn6nTKktBXtwqJXfmzXjYrbn_zs2&oe=6B0B603D",
+      "title": "50% RABATT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252105442810505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "C11",
+     "creative": {
+      "id": "1115702304706423",
+      "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABATT 2026-10-10-41cc60512904d5dcfbc257f58cb4bf7c",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/11519568430129775129?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQKrYsbeAtUQSxyozwCUvu5RwAqg1JrPOHuBzDqn6e3tn55JG2eOAvyXuZ1fR8A7My67IVQdhZQAyFQuyrzJ7GAYvAsYriU_8DWtRAJ6ReLJFFFJGXKD44b8vAGmuqSBh3UwIMF83B887DqZJlqn_LPC&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQIB7qk2e73kr0JQTNEskUDwykOV7ZQndLUUqnMbPYhwDoOKujQ4uonrNTp9Fta-UxbLmHvglOT6&_nc_enc=Ug8KSHhOFsnpQ2W_VKwkrrZ05x_GC2pJY8hzzCwEgSGG7phRUg55Nowgbp3J91GWJoTh-rlPVkwZReG5gA9wbo8PQeV1HtZdb-me43eS27xRNHI&oh=06_Q3_FAex3qi9NBNvDUYdsiJ82cRQZYMOMuyE5yAmjPfF_A9Ze&oe=6B0B7B69",
+      "title": "50% RABATT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252105352860505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "C9",
+     "creative": {
+      "id": "963043613524279",
+      "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABATT 2026-10-10-917bffa69aedb2fd10c881a62b593ace",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/642864718439051990?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQL7YOPGF9nNiTEX89-4JuC-tn4gZx7PoorX74LckQO-oidFE7_cOmXEClMHRCFRdtayTyqaUmjHNTmFH2S-_UM_h2BKVZmtmH73wpTTtOb1pQLHlGrMe2WVA2b0aaJJuBsnUkmmoyjGvWnxz_yXhbai&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQJoe0KdznC7EXMNa7xmGXWT68E5J9gy0Dk2haO8iNVzYwgb-Ly9tg488MWT59vdUyVh-1BIWhAh&oh=06_Q3_FAfRE8FcANFlrQ18ypav_4Nj_66kCQNcp9IVsvZ8XyNRz&oe=6B0B89FF",
+      "title": "50% RABATT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252105318000505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "C5",
+     "creative": {
+      "id": "29197790753172310",
+      "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABATT 2026-10-10-869eff460412f69f2c2aa58c0df4aa62",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/997988364257001011?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQIF2xQUlQalpDJBWTIIN4_X9wrunlVmM6gf5G74yjpWQOfiL6lkyDg2LTVLo2wW5LZuzoSoOaRyHNXYMFyT4xAF2HJqK34uoZDtHJK2O7DVZrX_qEEXtB5o2WUkIEuM0N_elbhwgOlSrXINumxoxiz4&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQJkUhmgt8OZ5OcsxClVPxsFCUEcUWIlXkIfXyrTnQIugIRXpLz4ov2OG9iuasfMebi7XNqGlzBQ&_nc_enc=UolKDhkapVRH9v-4D-tfef_km93HQHaW4EwloqleigtaQvbFVTIQFviNnBKDdwj7Rx-x0t5VSRMdIuzRJ4_JSvsmCD00iWx_w8D3WStxnMJkquY&oh=06_Q3_FAcFh73q7_OGsKLXMPtrwsHJGjdn078nnmN7Tg-MtipiT&oe=6B0B7443",
+      "title": "50% RABATT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252105293640505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "C2",
+     "creative": {
+      "id": "1584228912889600",
+      "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABATT 2026-10-10-e906c62e26318040199a19b9f279c5ed",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/8777865228237036835?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQL7L1jB2O-nrH0Cy-xJC75kjpE_YCoEE8P7nBfcNv_aPtLfFP0keFdYvUgcRuujIkPPlw29w3Pl9xyoHtEAdf3WZix64ziTFnbewLynv-cwuLrArXiwE_s9HewSAQ_jnJMrk0F_6zgu8TTCcC1csoqi&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQL_E51vZOYYjZiqavMEJnpSErE4wH0D2IxR-A0yISHXY8wQfrz-L_DkGJWvZnCUsgjzRr8Al8tW&oh=06_Q3_FAfH9AkQw3V_tN2mpYXAMKGC8Gno6Ady3XHyc64Ip1RFo&oe=6B0B6B61",
+      "title": "50% RABATT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252105435870505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "C10",
+     "creative": {
+      "id": "1437486438357213",
+      "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABATT 2026-10-10-784c161a8983a8345d97d797da6bb353",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/5258035778200798250?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLH53GnU79vYT6JFP9CvPI-vexOZITsZb8ei7zS7F3-ZNf1U7FDvcKjEiOnI-QD5ZNnvq8ZIs6waLz0iKNzjWbOo_iA2voKyEo7zbq8WlBQ86MzKT3lPZusUGaaJh3e_AnG4HMQ7ICwMpshcADX7G_o&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQLgiUbZZpg76ZuiHK6BwyUOJeFCCuOYe6WSOXQpIo0ZlNGPzvEUk-0GiiWIc0N3mF-XSDrNaJaA&oh=06_Q3_FAe15DmZFA39vUpTzAMFrmkcsOwtXTEqbprLNe3ybc8hl&oe=6B0B6226",
+      "title": "50% RABATT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252105339020505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "PAUSED",
+     "effective_status": "PAUSED",
+     "name": "C7",
+     "creative": {
+      "id": "1836096911153468",
+      "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABATT 2026-10-10-f5d204529efd4092cfcdc0b9cdd23e8a",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/1847311693565797482?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQL6eG9Go8-uPZ7K5n7Keqc2UjNiGo1q7zc6bkZL4fyHT61n8jwcTb4zaC2mnycCfJoYUMWdROZadt3wd39WiZ8Q4Tjd0Te-O7lBSGb-ZKvzT53Luq0NqBYxttmlxFfPUOE_QCSxddMhM9rJOK-genuu&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQI-3LJEX_z5f4KAGP-xDuuljwesYguL-x0Ghxd6HACCIo3BeeVl5hkeSiOvT-4FoJct3ypH1rPJ&oh=06_Q3_FAfmrem3GAvBELd8EtwLKWrKdbeWDg2PgWqEEQb-Qzwvw&oe=6B0B7482",
+      "title": "50% RABATT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252105455000505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3 - ny",
+     "creative": {
+      "id": "1117737150598509",
+      "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABATT 2026-10-10-4e771f708fb68e6fb7e07467906fc716",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/415264177957091995?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQLZuh8IUumu-N1AjmlVAEI4UAaeMQTJohx1iMJgtmLR2MDSWOLR2xcufuKMY7DJviHGFm0xXLMSrMj2qXAEFgzKAX6X5Ljzyz5iCYxJARgVOibmgUR2egzBX8PmVHf8PheLiYYiwzIKxcricXBiABok&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQKS5PC9cg-tXSPQ1nips_JcDQbavgc-UsbPWPyzVM60-JbOqggFeUd9HXqCY-rxJLFJCM2YtJSw&_nc_enc=UnbKG2TXPnigc0NnSrbC5J1o_GSW2W7d5p3hWGJAYN6VID2s3vrtBcEXCzgMzeYtpMejqzOOSbAVvc8CRiFe5Ix6QOV6ZfHJnKc1hkZInLwXWgY&oh=06_Q3_FAXQeECGZMbQN3lD-eBu5DP9MgEhXokKnqz44M-kPuUuF&oe=6B0B6300",
+      "title": "50% RABATT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    },
+    {
+     "id": "120252105330900505",
+     "adset_id": "120252105207820505",
+     "campaign_id": "120252105207900505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C6",
+     "creative": {
+      "id": "2274515620163426",
+      "body": "Har du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Då ska du läsa det här. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABATT 2026-10-10-d574b35008c0d5ee0ffb720a2bd6ec3c",
+      "thumbnail_url": "https://external-lhr6-2.xx.fbcdn.net/emg1/v/t13/12765856925932924134?url=https%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3Fd%3DAQJh0cp0CCnuD4-fNPtCfQ09e5pYY_z1WMJl01RSX0Tyr_BG4sz7wFMS5WeH5LzKmWolS5RmIv-YbrzBushLuC_qpTYr1y6tWVdLUx_ETid7ZoBHefh_5brFE_ZwnmAGm_H-AulX-AgzikD1MySSlf-u&fb_obo=1&utld=facebook.com&_nc_sid=58080a&_nc_ht=external-lhr6-2.xx.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ccb=18-1&_nc_gid=LmQY5lg2MwqnI50LYeoGJQ&edm=ACTJxZ4EAAAA&_nc_zt=3&_nc_tpa=Q5bMBQIuxnk7a-AgDgJjX3JJRMFPXnQGUHcvCz8s5HuuSIQG85bftd07O9FwYT71a7143tIvrEiw7rN2&_nc_enc=Ug9_jr0pAU5S_al5uuuNb6Pv-94CwMSysuKa5HVZCkLwind_lLfvXTj2vy5M-0COlB46j-2SmuS1t5lP8yeMiu0Q2tsVL-ByN5t84T3NGyxAcjk&oh=06_Q3_FAQMGCWMZ6L0bBjfTWhj6ZEy894p314b1Cg1lJWarPHRd&oe=6B0B672A",
+      "title": "50% RABATT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner?pb=0"
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

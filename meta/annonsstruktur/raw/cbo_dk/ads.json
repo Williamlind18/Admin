@@ -1,0 +1,670 @@
+{
+ "accounts": [
+  {
+   "account": "Ad account 3",
+   "account_id": "516758837558365",
+   "ads": [
+    {
+     "id": "120252955779260505",
+     "adset_id": "120252955779240505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "1514897688376927",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-26-ab59df2bad68c373dbc7f1c2be5a3912",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/901326608_1146328385027694_4760211019313866811_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=dMHSIuY0zjoQ7kNvwGqCUbA&_nc_oc=AdoexUHZxW3VvbGNRk5WWhU2FLBfPnWY_NAxPzjX_W_AAnUSoA15IU0hGnvswxk_ktQ&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQL8alTZYKv4ZdPlb6B0WznPai-eHxrHrXD9mbycG09vOhrx3pJk6RWBefdvMXpip8iWZ_32yKh3&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQWJoOxRU9sqkLbNtqwVbpAYC9_ePwnU03dK6qGGZGNvJg&oe=6B0F5788",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955733550505",
+     "adset_id": "120252955656300505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "2633391690469093",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-fb947bc72c856d998b5a21ba7a32cec7",
+      "thumbnail_url": "https://scontent-lhr6-2.xx.fbcdn.net/v/t15.5256-10/904223824_1134392029498792_1869272267995372831_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=LVBOCazaTpEQ7kNvwEc4LkG&_nc_oc=AdqzYeSWx108PU93kjYSYHjkYkmn_xl1bBKJBU1vZborhBYUdZv6viJZC7mEwVhBRs8&_nc_zt=23&_nc_ht=scontent-lhr6-2.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQL-BVcXFIThkGQZ0Al0TfWlwzrUJk5WZKcS8w4ske4Pk1RD-CqoqxWhMxv_-haG36WaRxjJHNE0&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQWBlrS0umYg9hLHzzfRVm35N-_XFcGdqdSEcxWo4yz2Sg&oe=6B0F6271",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252954540540505",
+     "adset_id": "120252954377010505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "2227304111155350",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-a1a014b68862991c52669be3ab8b4016",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/904255129_1127415326841759_2719696685640383116_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=omSHBJ4IZp8Q7kNvwFZfvhQ&_nc_oc=AdoTmMJgjP2D6G-FC7xmdTA1nHgdgNjxtXpG6QbVvsktnMCn2D3qcs3kvwm_NdQ7i1c&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQIH8xOboksZbBu_9dH5tcsbIrImZijg-VKYttUSy3PFJgI1j4m2w9WNwb23PbCzCcvKtOdk_XoP&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQXzgCj10AMdqcmCLzAJX02VKJoXavIU0sibHzXNCxg7zw&oe=6B0F4B95",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252954922780505",
+     "adset_id": "120252954377010505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C6",
+     "creative": {
+      "id": "2383838512454085",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-2ae08323e7a062f13f054c1b20478445",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/901621443_1681085693186940_1682261950419137393_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=LVSwNbmV1aoQ7kNvwG3P87I&_nc_oc=AdqyMS2_7FDwKEoT9mMnKYEIh_1m_9YVFnTWWpfhHAGtfFlS-57MvBduWSzjCx-UyAI&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQKRocVJH8Av88YvxLytN5CkrjgKMokQrdSS2ZlGYmJeHv25EgbXTRh48izSYSj9CM3EU8iY8Nxd&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQUad3EQ1ndFgL7VKKd366y_Qe9BK4JRHEgVrOtf9klS5A&oe=6B0F4F88",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955878180505",
+     "adset_id": "120252955779240505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C6",
+     "creative": {
+      "id": "1710210590700742",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-9f896955d8f482b352fd9b161b381305",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/896777305_3592358677600311_5339716327388119514_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=sbDO_A1oPXcQ7kNvwGGyTxr&_nc_oc=AdpH9i78UGetBooZ_m8y9_pOF9JEzpHziSrfq_O9bWtwGtq_0yESyg48L-z514n7Anc&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQKX95_kJrsz9M4YcuuzgfvW7KG5RpHj-8o9wEW3PqcGVZqgk8iACT96mauaSlYCfx093MlYH940&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQWkVpq6HiIB1sBrn5uwhJIIVACX2S3kuyW_z0AHkgsYuA&oe=6B0F588F",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955146050505",
+     "adset_id": "120252955146040505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "1834613210920308",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-7661b5a9811cd974f22d37abeea84a4d",
+      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/894747025_2551508302024196_7025305915705251053_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=7fQhPb4eSAEQ7kNvwE8yQUZ&_nc_oc=AdpqLN8sUD5VSq-EKjnAetMpbhiEdy_woR_9gLiIVBiEANm3QeHXSaGwz4H3MNIObnQ&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQLA0HLNOQsy2_AYeUB2rqRseLiQLBS-jTdrcDs32XmOfM-mYhVDufqvxVX5wmqSVS9jFUKeNMkk&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQWjvnfT2P0eYI2exqD4lWFZzFpDbtf0S16f0vkeV9lGtQ&oe=6B0F55BA",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955622550505",
+     "adset_id": "120252955146040505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "1666267208576201",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-d51e5259a04b4fb5801215e168cd5c60",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/903235009_1016276328196521_99838343533193782_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=AxCCHD2drfIQ7kNvwGLNxY1&_nc_oc=AdrPHE6gj7PCIThDYryTuCzNqw2s6ZsGldUVL8rYuCK8ufxO5YJ1Iv1R0ThFFq9Awwk&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQI2efdr2ZQGfUAykR-ghO-ncU6ehUbG7E768snwX2ayf0wj9Py88QqE5pL8eaWC47Tz6cf87thf&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQU-zOzcqMTH_8hsCsWaP8L7J4_eOlzFf-g3vv0apIrIsA&oe=6B0F5880",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955841620505",
+     "adset_id": "120252955779240505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "3760398044137420",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-37875e93ce3eb0f552c02877e5d8b033",
+      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/902391027_2377936649710350_4847062107783966645_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=yiahwR1SeVYQ7kNvwE2QxM0&_nc_oc=AdpCTLA9jdeRbbX76X81RVv1V6sUDr0RyaLodVwUzfClC7SBwHPbLnZQjn5-aS0_BnE&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQL1oKUBuLLhugplezmIrzV2YAS0Qo6R7WwUNCLBHDeCWqUZg18CFGlEPQ4Xg4JNxmfYQgqteDWq&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQV2cSSWnwWwA4qxwlKGpFWOVCFpi3U9r0OI_w3XV58oxA&oe=6B0F7C0C",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252954532920505",
+     "adset_id": "120252954377010505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "2980796468938027",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-092ec80fb219b08deaeb5874ae5b8670",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/903179624_1115411861117229_1332719878741123769_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=sAjvu1WzgD4Q7kNvwE-_LWh&_nc_oc=AdpPfVrLZDUIjKWiF3BoNq6wcBzJyHbyvwEPRsdCos5Uc_b_5qkud3mzeZ8MFdKSFo0&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQKiod0RdZZeilh24YBj8hx4QWHUf3rOtXSRS8PDXy1k1PcfOfIpIXBtOO8h2v2oc0W0yXGgkNea&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQUu13hP9dhF6r6Xq-eIXoXOVEPwAIbUkbG3qQpnig-Uhw&oe=6B0F5E53",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955890410505",
+     "adset_id": "120252955779240505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C7",
+     "creative": {
+      "id": "1130743723160922",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-14f2c376756b3047b6aa7aef38cf5b79",
+      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/895206548_1699936208261523_8189990174566249874_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=zxwts3wWlvsQ7kNvwGlOtR-&_nc_oc=Adqo_Fjgy512S8ZHr6nttbJnjeQUmEime8p_D6FJyT-8NYZn79849_-2XnxFNonZ8s4&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQLXSThmSO9DQN4NFFRS60CFfPkyiZov3NUKeYrzDrSccR6aqR7nOX9R1ljGuNc0gUVMzSKksNd1&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQWdvbY-GRMaplFcKNv3k6-FHBxlANOOa46HzKZ747CuoA&oe=6B0F675F",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955132360505",
+     "adset_id": "120252954999860505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C6",
+     "creative": {
+      "id": "2229120301351589",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-659353df83e259c556be48b3fafbca4b",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/901550212_3645871642256868_7947678887111839138_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=TiCfU1JEeVgQ7kNvwHhdriM&_nc_oc=AdpyCPA7Y2lFjmHWkZkzmmEXD3LI8JKM0KVvdWvMm6PrcHY9RZXrW-V62MgxxmmBdUI&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQKPzbE2n2s4i0_X0d9-iWq9oAQm2lDK2wS0kmTlInmXPmvNPwYQxvt5pvM9k0bAd7sQi5oo8zWf&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQUkE66jAAFXPZJxkaPCJQfP9MjlwT94KgiYBxXCBaCw6A&oe=6B0F5E5B",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252954903360505",
+     "adset_id": "120252954377010505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "2861672060893066",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-21ec6e6db936bc6ebba5f28f23d28d5d",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/895464784_1147680791184329_1536802362158555194_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=4DdkIASayVcQ7kNvwHJ7KRy&_nc_oc=AdohOlcW69fA2gT3CrO-adQy-DAJC7wx3ibDZMlSC6Gl32djlDWs_KGgaAoZD4wUzDQ&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQLpAY8pYRhkeRr0ivMinO_Gd8DxBjerPku1EgBsUCF_nubjWIW-Tl7uLXEWl9gMXGNZk9g7TXCI&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQXKTrMN9Mki-FsBOBe-ky0X6D6Y04RpvBuEDliroOvWIA&oe=6B0F7DB6",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955771180505",
+     "adset_id": "120252955656300505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "29232445273103704",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-68a81d4b20696a3a5490fbba7e27713a",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/906071764_4469526939975433_5733672038779358075_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=uDcvTmFHYXEQ7kNvwGhGnx3&_nc_oc=AdoZBJ92A5E02NjSVhPhkiBL8cUbjZKz7vNAl2WL4q6YE1sxwgdk_AqQyV-ZJrFEVnk&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQInd7HrunI2944M9eXFC39g1TvySe7Pl9_Klj2FWaB5jzV-PmZLUR7HdzGqrwkRpJacrey1w42A&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQUxvzWNzfP_M96TzRfWIGr1Q_hwRujxka3gU2OT9UeZnw&oe=6B0F7833",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252954890630505",
+     "adset_id": "120252954377010505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "1148008757808606",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-8e85b256f419056889f208cd9688568e",
+      "thumbnail_url": "https://scontent-lhr6-2.xx.fbcdn.net/v/t15.5256-10/895826508_1454668572894867_4125612495039739906_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=j8bkQztBRcsQ7kNvwGJaBnY&_nc_oc=AdrSziPOUb4GhbHCJWRAw6qQkmxT3vgfi9LqEVD2-wS0kbO1PWLvxUwsq8zmupUm32A&_nc_zt=23&_nc_ht=scontent-lhr6-2.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQKeH-JkMtT8-KeQkFb_TUQdJ3S3D-VJ3N3NQFt5xKkfI2WyCqWDF3I9dDxDYBGFzLOsxTJf9i_m&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQVuPCTWnhe5a1Ni8JcQ5pIj2J51QnNSF9FqFuWDYzHsqA&oe=6B0F7FCC",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955656350505",
+     "adset_id": "120252955656300505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "1137441612614529",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-ea7ae48d4baed94949687068977b2eeb",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/903179652_2628169967646513_2468981137883109151_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=TT0lVY4hjmUQ7kNvwEOOu-H&_nc_oc=AdrsVLtL_UfRYTWJg6OnPQuEGdXm7xTBTEWmzA97JQHIXBOqZ9aIAZ9vPNoouGHweu8&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQJbig31qbiz5Zl2gfjCJ91EzM6kR1BgocDJ0WivyZWAC7b0je3QTKUT8fbSrONMW7k_l-oJFAtX&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQW6_jSPuCPXOSZvcDmkwCZO29Og4RtFccVTo5eM_Z0iew&oe=6B0F6748",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955140220505",
+     "adset_id": "120252954999860505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C7",
+     "creative": {
+      "id": "2710544066069932",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-03cab8e4484a8da025a73a23347edf8e",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/905063813_1500598098637965_7911430400914660175_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=BSH9pu71l2sQ7kNvwG1lIjk&_nc_oc=Adqu0VmwqKYMRTwHv4KO4XJhJbmSr8XXPI02ibFDLP-UCLyMYHXffoSKFSbtwzH6_cw&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQIOi2y2I8ZpNekjFl6fQ4K7YAM52hSfoZnYedahnGHrR11rfp1y8F7HsIi1NLEAU8nWvDqZw6ui&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQVuMLfIrpKf5W79dVdt0s9NE-7J6UgeER83ToNYoV-S2w&oe=6B0F5441",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252954999830505",
+     "adset_id": "120252954999860505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "1648824043392685",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-d08b1e689417edee8eaff482ffb2a1df",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/895573073_1018307527280739_791509210138804101_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=RUTzynrt2m0Q7kNvwF4rYC-&_nc_oc=AdoqOnrDd4uYOsBSIUbItTI6nDPbtbQJQ6mEHewcb0ALbbvnkhb6CWYAnqrZF_s-Y0I&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQLzVTy0DhzsFJs6lHYxGH6uqquTTV8HjzLuFMssvPPe6Koj8Tq9C7AuxexG2aCVDQWBQP1L57ty&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQVCthJDEhxlO1JB3HMJJBzF8kyqw967By9HOdshIjyGxQ&oe=6B0F638A",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955775820505",
+     "adset_id": "120252955656300505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C6",
+     "creative": {
+      "id": "1583317093551846",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-d27fc184be7ba3dbcbdb9d4c04edadb9",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/906215710_1707567784117202_2057687205857719649_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=x0Rbo_lMgNgQ7kNvwGIxBGS&_nc_oc=Adry9XeUeR6t7OMoycLe4o-epuF6abSL4e2KgKq4uSskOmfGWTABWc6aQihXTrMwrAI&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQLYzFBW2J_QNOFBuTPNlvT7vc91tvKRu4K7OAHi1UewlxbVYIXOOFnIVpxU9g0gPMbeHSygCTMN&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQVueUsiQ0HCuFjOs0SOwWIrRuolKp9HRsqdyDn2KJvnUg&oe=6B0F7B10",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955835050505",
+     "adset_id": "120252955779240505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "2453653248737357",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-a7126eec5fa1e0e91cbc66de9f79d0f9",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/896936464_2301946780536613_6830951736276773358_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=RjhAFy8spEsQ7kNvwFeGYFl&_nc_oc=AdpwAwApqOtaPuJ_lKpx9cfMZA6iKlnp95r7Qcc3lEQbbveLdI6I56ez5qS-6QT_lFc&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQI8YHDEYdCpk0Huz286uAfpQnirfnDe5tsvlR7Pi-yNwOx-sDn__Z-FcQn5vf86sAUEfLFqHzem&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQXt4sk9qw4WulwqZHtwZYVpasFQ7MM37CGcCPy4_Q36Dw&oe=6B0F70B2",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955855740505",
+     "adset_id": "120252955779240505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "1121500450517679",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-eaa12d50526bc4904ae5c7bab62e29fb",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/896991490_2961943907494332_1812326779482577620_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=1GYH8bM7g00Q7kNvwELOvJE&_nc_oc=Adoyl5E2s3ssT1LMPisITBI1ssEvItYq4OKt64FXnfInmZcNXQseE3LM-SkKcbROCeI&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQJgxUPAEmtGrAb1cdVp8h-8tKMXRzMlJwXXKRktpGfw8ky-6PDfWrU6Ib7JHe2hCAWTEmcg-0sI&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQVL01hDt55YECxOgGzRsmIVVbw7Mo91lW9OVVanrNNBrA&oe=6B0F6CE8",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955121370505",
+     "adset_id": "120252954999860505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "2724216734686986",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-4ae5d942db9aac5818e7904fe4670968",
+      "thumbnail_url": "https://scontent-lhr6-2.xx.fbcdn.net/v/t15.5256-10/904544038_1051165144677568_8276101373277035977_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=ZCevtzB8Uw4Q7kNvwEP-7Kx&_nc_oc=AdreI1o2k9FDwEEUm8VF0ibKWC6f14WesXk7V-467HeiV_baIOxTAGUiRev6I48uewA&_nc_zt=23&_nc_ht=scontent-lhr6-2.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQIQ5otT1dDI5DqGITn4yzw4dnLoPtkd4LU1ya11Hb6_JD_623NnSgxoZBiXUO_1WRYmbOZENXp9&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQXtjVg1o9TnMUioWT35MHFESAAHwtGKmJVvOBLxPHLpOg&oe=6B0F4CB9",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955753800505",
+     "adset_id": "120252955656300505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C3",
+     "creative": {
+      "id": "1128331973346727",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-867018afab10cb2c3f5932ed88348a23",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/906131988_1192042040162513_4750323749656764508_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=EzhbhY3xytsQ7kNvwEY5AGI&_nc_oc=AdpoK8HlAkWxQbhqR9x_UmJNS7_Pl8CmPfDW7ywwJzBn9IUEVFgyjKYgAGPHPPmIKSQ&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQLN7-pPqhbolMELEB-WZTdTx1s2OmUXL4IVkeLbQkd3ehh9NGeCUzOK_986rvrtEF5m9RARL6gM&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQU3piwR1q6Tf4nFJAp_3n7LhiEK33wzFlw4UQ6VBX7IyA&oe=6B0F7C59",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955646960505",
+     "adset_id": "120252955146040505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "2254642065400667",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-deb9583495ec927cb3a5abcfdb1b912d",
+      "thumbnail_url": "https://scontent-lhr6-2.xx.fbcdn.net/v/t15.5256-10/907518965_2232474821014266_6389148183429747644_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=9F1zP9JeKhIQ7kNvwFJNzDb&_nc_oc=AdovC8_yuHU0c69aH2Ao5oejvfjupQmYSkwGLxlEte_oCw4BnDG88mu2k35v3echW50&_nc_zt=23&_nc_ht=scontent-lhr6-2.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQLvfadpB2U9JL1XNiAf_gjnpRHjbl2jfuabIRFbpGph9sAa8f8EsACx_m1SQ6aIGaaw8SvCj5o4&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQVPbbXll1VmzelLAur2BP-9rHYukA51vj2SXUYcdfGrIQ&oe=6B0F62A7",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252954966150505",
+     "adset_id": "120252954377010505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C7",
+     "creative": {
+      "id": "1856264272177158",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-22ebd4741cc858be7ee1bf72f60933d6",
+      "thumbnail_url": "https://scontent-lhr6-2.xx.fbcdn.net/v/t15.5256-10/906015835_2470259706837229_4545807034707139890_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=H1NOF-HINqAQ7kNvwGWNHS_&_nc_oc=Adp0NMeiPxfo_mI0_gUmuw9Mk5pODjRBdVUA03Wf8fdGpmwDkksvzKuTrfJD6lTIrZA&_nc_zt=23&_nc_ht=scontent-lhr6-2.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQLyUrdPtjSpvNHxOD9KjoyU1K_SZ6lfWEPEWdSf4xXgTbob03er6Vk2TZxwnX5Xg5sfdcc91QkP&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQWvolcAvjhCUy5-msFr9yu_WPqy_VpJk9_zsLcaCjvfCw&oe=6B0F5D19",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955124530505",
+     "adset_id": "120252954999860505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "1160450153571528",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-bcd7fcf59f63a438da2c01bd18078709",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/904442294_1078767358509794_604792129291894844_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=pxzLn9r4GmYQ7kNvwF-Ur_p&_nc_oc=AdpJsgKlpAUx3UKjSVrnhXINQ5Z7jgnRmkmnQpM_-4EbgMxinSD8_HJlhKGKpb0agp4&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQI1Neb9YOmmYG1YPbPln79DhvuHAo0hOd4eLKMl8ymF3sI6TQEsfY5LySfM2x9HvBnoe1iL0wcN&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQU2LCK4OiPDNkE7JW6L4ArMdWfvgD-71UdQBsPk6MzWCQ&oe=6B0F4FE7",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955847890505",
+     "adset_id": "120252955779240505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "4725960007649282",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-67a345a6a679175c78464098f462e7a0",
+      "thumbnail_url": "https://scontent-lhr6-1.xx.fbcdn.net/v/t15.5256-10/907567856_994800773698121_639866985354813520_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=YSNM2skcs58Q7kNvwFHXRHu&_nc_oc=Adp62I_zvhORnjFjpuRusnFMJm79-jfCgWIgswCR8SqraxgRPeh7L1F5qyiWdEU6XqM&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQKxq37Jcln9tjwujNfuCBa3WuVVo2NxPMSA-olsqzOTFCEYdiV9f8DKeKEdfnt_zeX6e969AAbl&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQXIJXCVE90LnCWfpbp1YdvmWBPaGeS5RSinkx86xQs1Ng&oe=6B0F4F18",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955651860505",
+     "adset_id": "120252955146040505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C6",
+     "creative": {
+      "id": "1510638570909008",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-e6ad658ec667d7a66af7ebbfc489b3f7",
+      "thumbnail_url": "https://scontent-lhr6-2.xx.fbcdn.net/v/t15.5256-10/901687212_2877020366013186_2709796053482203307_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=6iOS3erLyIkQ7kNvwGHCLLK&_nc_oc=AdqP7CRTLuKjlYELoK4yd4xbY5HMRAW0ikZFyfDxupBar0YloXje-L-KGoT-Yp5dnTY&_nc_zt=23&_nc_ht=scontent-lhr6-2.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQKCoX7ZXvTHKiqbu5kgDm-x43LCkCvEQU9SF2ujfPI1p1q55NivMt3rOlwOiOGcuRLZezMOGt-z&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQWeoZliEHc0txV89_qh_nj9jE2steCxrHUJkvPRVbJFTA&oe=6B0F7C88",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252954377060505",
+     "adset_id": "120252954377010505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C1",
+     "creative": {
+      "id": "1839276270650474",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-a95d1363f60ac43b76824c910e2dac61",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/906014642_2046232109428180_4827747755474921069_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=OkA8yi-tcK8Q7kNvwHGmZ95&_nc_oc=AdqvMknLHBWnhySOpIy9ItZwFq33LCrEsAvnmTNqjShAtSm5myrhxL7s8Y7iQY8ylTU&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQJNPVGvExt-lLV3Q6pGC_xqEpX4Hg8kpgfQ7Gye4whNUKvxJVninTMULXSYPhdSnUB4tv9OMO1A&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQUDMJknVwhz3RCIIVQsPn5L2U5ml26l4fTwtbATiD-_ng&oe=6B0F6212",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955117170505",
+     "adset_id": "120252954999860505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "1155637120394996",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-0b7dde357c3801b1d566a8ec11933a02",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/902715477_1095211876899054_8382004034311278566_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=1qmBav2Je8EQ7kNvwGFRDKn&_nc_oc=AdpsdU61z_laNe58qi6AlMWhjalfiL1z7ePW25ePxOPr5VrX9lOw9WD2VunLFt3QM0o&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQJQS7QQQxPsqXlylEt-v8IBHM_Tv7Up2GU-Nt1DYwMLiZK8E_tBHc_ATjPA_3I0QQa9ffP1vPOC&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQWyduV_kCob0eF_rkURu-GPX9ZDC0hjqmpOi2K46maXlA&oe=6B0F7BC3",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955635020505",
+     "adset_id": "120252955146040505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "30179667934968896",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-9908a21a9f3830a787d675a1af0292ab",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/901457374_1466427712279016_2482516485791142932_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=Wvq3I69UqusQ7kNvwHID26i&_nc_oc=AdoeJHB9q1xJ1jh9bR2bau1r5MWbAWN7u3h9omoOKWOqMRHdbjE9PO_nVKcV12PCZoY&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQLZeeYESIuhFDqC1-2Jxf_n8BVkSTvGY0FnTa8WzJFDzksWN0m8KPiyZZ0DCxivb7dgSLzkE5kC&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQXvdvS8xObg2xl6N8dQxOfBoYai7GF_O51zLqz07IdA0A&oe=6B0F5D55",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955762190505",
+     "adset_id": "120252955656300505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C4",
+     "creative": {
+      "id": "1908225923492063",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-9bd5bf63a97aadee86cbe985fd980ec1",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/897478862_1801130677773459_1516020316244075995_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=VjN0AqYNIPgQ7kNvwHUjG-c&_nc_oc=Adp3xrP_pTmzR91f_lAPRsWzOlCdgfjjID0gomaPyjbxMesE9vB7qrxayYQ4YHjQ7DA&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQKQs35ZsvLVJBg99TT608l-8Zzuad5sZhzTGylNDV5cKOVhH8-5q7AgpympSp0Iub4O8zWJaCj3&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQWzy_apeAIB_2wEuaBXtPvlFCvuVXiROXunM4DeLXvKNA&oe=6B0F7078",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955607950505",
+     "adset_id": "120252955146040505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C2",
+     "creative": {
+      "id": "1763833688458879",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-2ae4d31e154bed48e48eacc0b9c62f56",
+      "thumbnail_url": "https://scontent-lhr11-1.xx.fbcdn.net/v/t15.5256-10/896176712_29217195707944652_6742591964257170009_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=2iSilYUwbnYQ7kNvwEXAozx&_nc_oc=Adq-PK1lJhePfY2yO8wQtdMqwuk9YzVhxDH7YUS8IfjK5uMAoKdFxRKiXxa4gTuFswE&_nc_zt=23&_nc_ht=scontent-lhr11-1.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQJLvUN9Mg2AxHdGQHmXLO09XXewCPfK8RtXRBHp3iIgjjpO_-GWvM86cDPIBio7lFttuWUbEzs-&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQWS4Qb0bhR5STMyleSWOq5Ds0SmBbYnXjsRNUixPGnOqA&oe=6B0F548D",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    },
+    {
+     "id": "120252955127520505",
+     "adset_id": "120252954999860505",
+     "campaign_id": "120252954376960505",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "name": "C5",
+     "creative": {
+      "id": "1080993368292986",
+      "body": "Har du nogensinde vasket det samme tøj om, fordi det stadig lugtede af hund eller kat? Så skal du læse det her. 👇\n\nLugten sidder ikke i tøjet. Den sidder i vaskemaskinen.\n\nDyrehår og dyreskæl efterlader fedt, som samler sig i maskinen og bliver til føde for bakterier. Bakterierne danner en biofilm – et beskyttende lag på tromlen og gummipakningen, som overlever hver eneste vask.\n\nVasker du tøjet om, bliver det bare kørt igennem det samme beskidte vand én gang til.\n\nNORDVASK MASKINREN opløser biofilmen i tromlen, gummipakningen og slangerne under et tomt, varmt program. Når biofilmen er væk, holder dyrelugten op med at sætte sig i tøjet.\n\nLæg én tablet i maskinen om måneden, så klarer den resten. Én pakke rækker et helt år.\n\n✅ Du slipper for at skrubbe gummipakningen\n✅ Du slipper for gamle tricks med eddike\n✅ Du slipper for at vaske tøj om, der stadig lugter\n\nVi er så sikre på, at det virker, at du kan prøve det i 30 dage. Mærker du ingen forskel, får du pengene tilbage.",
+      "call_to_action_type": "SHOP_NOW",
+      "name": "50% RABAT 2026-11-25-caabdace972c08ea7ec5a6819dcd47ba",
+      "thumbnail_url": "https://scontent-lhr6-2.xx.fbcdn.net/v/t15.5256-10/907587226_1741915800873007_8468177783713312593_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_ohc=e5YbANDmEBYQ7kNvwFIxHts&_nc_oc=AdoIk1ETuy8UBGjEITVmrUuwn0cYoLrzAPciIvqipMKdlo3iwKioqSyGoxKdWo1rN9k&_nc_zt=23&_nc_ht=scontent-lhr6-2.xx&edm=ACTJxZ4EAAAA&_nc_gid=ya0TkipX0isebW4femDYqQ&_nc_tpa=Q5bMBQJGvgAA9-m8UR_I79_xhEg1QyQGkijY25BgfHzEPyAxQCYDUcRv2mkDVLM7XGb31f6RG2TIm44u&stp=c0.5000x0.5000f_dst-emg0_p64x64_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQVn2Udivu6YRAAfeBucbdkZYTfPfR4RG9yp1W8-dL7Ppw&oe=6B0F5D6E",
+      "title": "50% RABAT",
+      "url_tags": "ad_id={{ad.id}}",
+      "links": [
+       "https://shopnordvask.dk/pages/darfor-luktar-tvatten"
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "accounts": [
+  {
+   "account": "Ad account 3",
+   "account_id": "516758837558365",
+   "campaigns": [
+    {
+     "id": "120252105207900505",
+     "name": "BOF - Maskinrent",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "objective": "OUTCOME_SALES",
+     "buying_type": "AUCTION",
+     "daily_budget": "100000",
+     "bid_strategy": "COST_CAP",
+     "start_time": "2026-10-11T03:00:00+0200",
+     "created_time": "2026-10-10T17:11:15+0200",
+     "updated_time": "2026-11-19T15:58:43+0100"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "accounts": [
+  {
+   "account": "Ad account 3",
+   "account_id": "516758837558365",
+   "campaigns": [
+    {
+     "id": "120252954376960505",
+     "name": "CBO - Norrtvätt DK",
+     "status": "ACTIVE",
+     "effective_status": "ACTIVE",
+     "objective": "OUTCOME_SALES",
+     "buying_type": "AUCTION",
+     "daily_budget": "100000",
+     "bid_strategy": "LOWEST_COST_WITHOUT_CAP",
+     "start_time": "2026-11-26T03:00:00+0100",
+     "created_time": "2026-11-25T17:12:27+0100",
+     "updated_time": "2026-11-25T17:12:27+0100"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,4097 @@
+{
+ "ad_creatives": [
+  {
+   "id": "1143504598234377",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-0c2f25f0ae36f9c95c58ab1babf7b68c",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "1136900748713273",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344551491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18104206427367957",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "1196901489565230",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "6ac7bc64607f4ec04d0cb7354834d635",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQIo1NOJxJH8a9FNcoqQwT7asFefwD1QpYISh6chv94mn8PPcBlB5jVRa077UvxATa6NwYZkK6t7k0zHqdcVef8HsmLPLmPcVeLV9o3XOUUm45udoLOvYC_438AuduOGs2nQ445CXN_a6V3B0L9Zzumg",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1070103696045124",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-17c1141928eda5736b72ec0159ae1121",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "1060581970370682",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344647491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18382248331243341",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "4765407790341978",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "d953add2f3976a85eab856918f1325fb",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQL2bplpFudPf-Hc2p5TnFOqjNZUVnADw15zi9akX6zrfzqxeutNWKBqJKJuf_4CMVFCXTzT-szZ5YxEXyxoWMMHrLs5qgBLQsKA9hkNzSg_oRIAlreio1a7XbeKEGNWrQgQCpd4sLmcwaYYa2ErqOTQ",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1027393107056587",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-beab68566718b85db6941ee32593909b",
+   "object_type": "SHARE",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+   "image_hash": "f75c685e3bc67128000441b0f9744cf2",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344503491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18096179579692745",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "name": "Black Week: 50% på Maskinrent",
+     "image_hash": "f75c685e3bc67128000441b0f9744cf2",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "2511798859343651",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-0a98a8057936636a2628306e69cd95de",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "2307831940617246",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344593491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18135908452599315",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "29725417953708870",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "0781d4bf72b04c5f624d343aa3340b8e",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQL5KBqvAcgM3BaQXjwjHkEqTV265ulw1yG1S-VqEMZjCLPuTRDPyODnt8H-T93brlFm0YjIapD-w98ZPlcgBr2-3SoE3Li9gnNDM0Ua1ItBKidvr54MU3voqc4J3VTl4qUYsQO3Vdu26uCBYXMbKpRd",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1118105477667566",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-b686747eaa9d06f31b085a5c43044903",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "1121339557318785",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344449491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18101637812429990",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "1487338920020436",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "f71da1b02cb6b8fb8a9cd00b2a6aad1c",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQJ2rQfWikDGIwyPt2OMlS8OidRuI8GfNG2nm4y7keUuZU5FTUy9ACL31-5A39_zjvnMIm4eOEIlwBunQxeAMTyC4hUyjtxjdVuIXx2pkuVD_DMO3THDSTwSXDq6IRGgVFDppM3VK1rbeMEXooQLcY3K",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1475089951196784",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-9326971042e513bd6e3a8c0b80b2b872",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "1122529447241177",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344629491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18016985186985619",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "2568559126972308",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "7ced32958ec48a7fd060ec51bddaeb72",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQJy3pI9QY8ZkFbRTogTx0x71UEo3PluSfiKnPVU4fyWGDjdvcnv9CBbvloemL4iqGkVVWuy5UCXM8BTp4i6WqlWetvBvYZL07hsxKnFHNQb8ahbxOXzbWIb9bbI8vwnrw4c9RHFG6i1fazq345tGSvC",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1906052137436195",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-fb7a49e4ddbdf79392e8f75f6c086a15",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "991738820221171",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344563491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18109996880253765",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "2255032285053413",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "cfa143c4ae50a81170f9330c0ab28c0c",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQI6PSfnLieK6r29cLkTTP24QRFhONDTta93E4ISe7I9ccqvaMWtIseBQMVTLUjUwz3BGoJoC-dQ2v73xiAMTTO3zAIMKrt60NYHZAVKpqXwsvsz8HBY8__UgQdcOtaF2yAMWsckAp5F-sa31bAMJXkL",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1163671583275431",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-b07c5d4e20e84d4776054a2cf590b18a",
+   "object_type": "SHARE",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+   "image_hash": "8b967f52b3101dd7fe1f024854a45ad9",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344395491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18130232284925313",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "name": "Black Week: 50% på Maskinrent",
+     "image_hash": "8b967f52b3101dd7fe1f024854a45ad9",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1881821843242462",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-21e1f6c6917e1128229c1bdf9bfb3b1e",
+   "object_type": "SHARE",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+   "image_hash": "51a9bd3ae7973475fe85a810d13a4fe7",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344353491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18109024792984843",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "name": "Black Week: 50% på Maskinrent",
+     "image_hash": "51a9bd3ae7973475fe85a810d13a4fe7",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1691007745745486",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-209f2d75dbd325849aca5e8989d398f0",
+   "object_type": "SHARE",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+   "image_hash": "4aec548050effac33b1a9de08958ac03",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344497491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17981827526922804",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "name": "Black Week: 50% på Maskinrent",
+     "image_hash": "4aec548050effac33b1a9de08958ac03",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "2321288545301103",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-b41d53c37353b4b1379dfd917f665326",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "2341556136658218",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344431491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17979576591159287",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "1447796357526297",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "00fd15fad5e652b21a42b99d31439652",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQJlnid2XoLBvqOcL8Ndvni8mgpxol3pZ1S0t0y6ZktsXYDtpoTcJElo7PhxL8iySrxkTKha-HzX87HHPS-8L90UvUZuHVlk2Vxa12LxgL-APdcjsmU07W06e53dBiO7ZCX0x2OxkQ7jOs2CQTJMufdW",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1206988088327495",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-1099450b53abf396f2e5b34e898f0f78",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "1899163794576200",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344623491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18200993653342931",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "1809863293389297",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "3cfdb98d9b01132c18eda37aa4b8bd1f",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQKU9nLNJBdGxE7aolq8Irua1kRM3_l-VgRcA-xWZzYu9I57CHc3YBwbuuh-CPrIJ8nBncuAvnjz1aSpIsNz0SiZpZ4_NGAicwf3OnHJI2JWngxEoRNRUqoRjOmCqjA-hMIgXEPWzn2SCGxIowgx6R4N",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1161501409632577",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-b46b43aa68cc33cc701b05f7fc324987",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "1454733809574437",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344599491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18133859800836109",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "1429113282370618",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "8876c86ca04caefa825e9f71856f1c7c",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQKsIA7oarBR8XH5raP8SbIIXub9CjhjCDUWlZYyBnL_rdXLF1ZNeF8r0_nAIdbiN6nkdRA3SFMRbZE5xcvLwlbbWwa23rALAWNLAj42HflG4-phIUwtQRCJVYsknZOdj2MbMC5mA7pA9Di4VQMtpDCN",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1448146133502380",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-77655c26c6ae032acdd6e786b825c114",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "1162204969637429",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344509491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "17993587923073497",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "2641032322990507",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "cfa143c4ae50a81170f9330c0ab28c0c",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQI6PSfnLieK6r29cLkTTP24QRFhONDTta93E4ISe7I9ccqvaMWtIseBQMVTLUjUwz3BGoJoC-dQ2v73xiAMTTO3zAIMKrt60NYHZAVKpqXwsvsz8HBY8__UgQdcOtaF2yAMWsckAp5F-sa31bAMJXkL",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1493175832686232",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-04d6eba2174a01fdc6a34e72435d42d5",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "2334577920448390",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344695491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18388073974238856",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "1474758674871514",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "b701e91dd98f7233222f005707283d8d",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQIAxlJEEpS3Yh8NiJbRnnbgeANVwGcLb_sh860i26PhvVX9iUnvWWFfydT5XWR8AodYLBlT20HAV2Ek25LKcQ3D2e-D3CpToMN48K9oiKdbZftCKkUJ0HXopZQBlnzKebNuTncafEvFIOJ1Ng6QIKnL",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1149615118027651",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-dbadeceea41c27d844f03972eed7f532",
+   "object_type": "SHARE",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+   "image_hash": "9bfdbe97bba8a125bd619458c71d5c94",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344419491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18116860784144955",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "name": "Black Week: 50% på Maskinrent",
+     "image_hash": "9bfdbe97bba8a125bd619458c71d5c94",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "960555456882510",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-826b0f7df133fde4d1f3cc991495bab0",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "1013179907775275",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344587491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18239553559319323",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "2205689843657721",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "b091919da0c5950a2ef9bebc0cbec85d",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQK2-GKZQlhFjga1j5CdY21CVozE1CfwsekFS7z09Ckb33XwJWSD13X-xMkL9OCNa87xmlHAKBnhDdSn8RjY2Rth2jyNYpKR8r46C3O2BWz2G-S6nuTCYb-1ODzyWNXnsYx04KgA9jRE01-O4wFbevRj",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1685890193194445",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-d0f14d178ea55f1533a0831a79417746",
+   "object_type": "SHARE",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+   "image_hash": "48976a17558753ec41ed255fd0d48a09",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344365491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18158230066518774",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "name": "Black Week: 50% på Maskinrent",
+     "image_hash": "48976a17558753ec41ed255fd0d48a09",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "2177218966198975",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-48a93bf3b61bdd471e5e5bba02efb760",
+   "object_type": "SHARE",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+   "image_hash": "8d0374ea1df7add22cda5d7f4d593e3e",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344611491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18113156531263483",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "name": "Black Week: 50% på Maskinrent",
+     "image_hash": "8d0374ea1df7add22cda5d7f4d593e3e",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1503975031651666",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-2982e704a2c84f05898a062063b39b26",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "28939427432366796",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344371491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18172000228485192",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "2270974276808259",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "0dda1af9eab665add58ed9f75301e9a3",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQIksGHzK22CwqoWc13i6AfT6kM2egWzRxbDIFbCovztF6Y9VRoyWsWjx2zlrlFApUaIAtMypNTUYotzWS2HvbWhXuKteeYdoV-wmWGnyl60OLX3wiEJZWDhOXKVcTComWhaQu0JmsYXeP_TEYpmF7Lc",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1786985525907014",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-083e67be442503a3e263252013256b08",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "1155485093539413",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344473491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18142928914547663",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "1153699657156754",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "be691398c64c9cc55a787852ea862aff",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQJviWhEElPF21c-bVb5lwTQWZO2ZmStKySORezIRKpzPtpGclq2uMuRINt42_nYf65Nz39y7U6CvgONpA4-_OCGNbQhfstqIU1NUo8ak2_flzBN26t9kcH0I8AchrK9IiPB-hnEmQhh4XJQbnUl2Mhw",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1480849334190344",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-484aa23ab595fa6b99cd289b42b57920",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "2398183824332329",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344389491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18122204969086103",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "2749434965471425",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "3f424cd5006a5d4084243c2f206fbd25",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQJOxiKH5HuBYybAko3OBvh6j8nKLzJd_AdosouDo5ZCmVrgLn3zarI2M5FBZpclUKH-9h0fKhpe47QYkmmob_UnPyNAiX8davH9Flohhq5Axl0SMapwtP53oodVuB5mfcOcXF0pLyjDn6781nBKUndE",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1010486494727666",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-18cd677dc0d4520746f547c63da651f7",
+   "object_type": "SHARE",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+   "image_hash": "aede859e4aa0c9ad3e8c05fb2df60a1d",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344455491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18026287667930641",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "name": "Black Week: 50% på Maskinrent",
+     "image_hash": "aede859e4aa0c9ad3e8c05fb2df60a1d",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "image_text_translation",
+     "display_name": "image_text_translation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "image_text_translation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1842854776962202",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-0c940207431c9260067571155c9702b5",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "1775653386838407",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344425491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18092999327305995",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "4749692845268032",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "60496b8ec8d782075e316d13989cc558",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQJiBiQHgNyVKzhJS31ilCH5asnI6ukAr3MUdx12m4Mkthrb3yCfbriRYTYgwBZX6EXKCqnhLNbea3Or5AOWsQKZSh2wXQ7hQbds7Hd-5fr7SPxobO-8Y7sWwMZ8J9SfpEgef6wWP3aEYO5FUd7cCYOB",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "translate_voiceover",
+     "display_name": "translate_voiceover"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "translate_voiceover",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1500369031939449",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-ab92558de597471fc9d442b77a94adc3",
+   "object_type": "VIDEO",
+   "link_url": "https://norrtvatt.se/pages/darfor-luktar-tvatten",
+   "video_id": "1836359294056620",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344659491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18117256595137411",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "video_data": {
+     "video_id": "1884755145985034",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "title": "Black Week: 50% på Maskinrent",
+     "image_hash": "8ecb26061bf5efe055e704854846bade",
+     "image_url": "https://www.facebook.com/ads/image/?d=AQJcOMEKVFGIk5DC9_yOPkuq3STMFzYtGgz_iuqIdtO1fWeZaXTI5kjJXPmtE_kQ4XqQZhB3DZoTyTQCIo2-e3FFZks_FBY7CyEB8onl0mZpDIRqtoSgbIY-bbHjxyK1-iueFs8PLVhz61RrgvQ4nplc",
+     "call_to_action": {
+      "type": "SHOP_NOW",
+      "value": {
+       "link": "https://norrtvatt.se/pages/darfor-luktar-tvatten"
+      }
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1088757180852529",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-df922305513ed122c0020225bec25e74",
+   "object_type": "SHARE",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+   "image_hash": "45ebd952ab4e4ffe661f022951b03ca3",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344737491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18586013362072247",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "name": "Black Week: 50% på Maskinrent",
+     "image_hash": "45ebd952ab4e4ffe661f022951b03ca3",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  },
+  {
+   "id": "1778106683476450",
+   "name": "Black Week: 50% på Maskinrent 2026-11-16-3d621d010c3ca03ffb1b67b46800e370",
+   "object_type": "SHARE",
+   "link_url": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+   "image_hash": "7b84c9823c9b23898d5670343d1de485",
+   "call_to_action_type": "SHOP_NOW",
+   "effective_object_story_id": "1234301249776145_122123344707491498",
+   "instagram_user_id": "17841423637282628",
+   "effective_instagram_media_id": "18639214450030631",
+   "page_id": "1234301249776145",
+   "object_story_spec": {
+    "page_id": "1234301249776145",
+    "instagram_user_id": "17841423637282628",
+    "link_data": {
+     "link": "https://norrtvatt.se/products/norrtvatt-maskinvard-for-tvattmaskiner",
+     "message": "🖤 BLACK WEEK: 50 % rabatt + fri frakt på Maskinrent 🖤\n\nHar du någon gång tvättat om samma tvätt för att den fortfarande luktade hund eller katt? Läs det här innan Black Week tar slut. 👇\n\nLukten sitter inte i kläderna. Den sitter i tvättmaskinen.\n\nDjurhår och mjäll lämnar fett som samlas i maskinen och blir föda åt bakterier. Bakterierna bildar en biofilm, ett skyddande lager på trumman och gummilisten som överlever varje tvätt.\n\nTvättar du om kläderna körs de bara igenom samma smutsiga vatten en gång till.\n\nNORRTVÄTT MASKINRENT löser upp biofilmen i trumman, gummilisten och slangarna under ett tomt, varmt program. När biofilmen är borta slutar djurlukten att fastna i tvätten.\n\nLägg i en tablett i månaden, så sköter maskinen resten. Ett paket räcker ett helt år, och under Black Week får du det till halva priset.\n\n✅ Du slipper skrubba gummilisten\n✅ Du slipper gamla ättikstrick\n✅ Du slipper tvätta om tvätt som fortfarande luktar\n\n⭐ 4,8/5 från över 15 000 nöjda kunder\n\nVi är så säkra på att det fungerar att du får prova i 30 dagar. Märker du ingen skillnad får du tillbaka pengarna.\n\n🔥 50 % rabatt och fri frakt gäller bara under Black Week.\n👉 Tryck på “Köp nu” och säkra Black Week-priset.",
+     "name": "Black Week: 50% på Maskinrent",
+     "image_hash": "7b84c9823c9b23898d5670343d1de485",
+     "call_to_action": {
+      "type": "SHOP_NOW"
+     }
+    }
+   },
+   "url_tags": "ad_id={{ad.id}}",
+   "advantage_plus_creative_enhancements": [
+    {
+     "feature": "inline_comment",
+     "display_name": "Relevant comments"
+    },
+    {
+     "feature": "image_brightness_and_contrast",
+     "display_name": "Adjust brightness and contrast"
+    },
+    {
+     "feature": "enhance_cta",
+     "display_name": "Enhance CTA"
+    },
+    {
+     "feature": "image_animation",
+     "display_name": "image_animation"
+    },
+    {
+     "feature": "ads_with_benefits",
+     "display_name": "ads_with_benefits"
+    },
+    {
+     "feature": "video_filtering",
+     "display_name": "video_filtering"
+    },
+    {
+     "feature": "reveal_details_over_time",
+     "display_name": "reveal_details_over_time"
+    },
+    {
+     "feature": "show_destination_blurbs",
+     "display_name": "show_destination_blurbs"
+    },
+    {
+     "feature": "site_extensions",
+     "display_name": "site_extensions"
+    },
+    {
+     "feature": "video_uncrop",
+     "display_name": "video_uncrop"
+    },
+    {
+     "feature": "text_optimizations",
+     "display_name": "text_optimizations"
+    },
+    {
+     "feature": "cv_transformation",
+     "display_name": "cv_transformation"
+    },
+    {
+     "feature": "image_templates",
+     "display_name": "image_templates"
+    },
+    {
+     "feature": "video_auto_crop",
+     "display_name": "video_auto_crop"
+    },
+    {
+     "feature": "image_touchups",
+     "display_name": "image_touchups"
+    }
+   ],
+   "degrees_of_freedom_spec": {
+    "creative_features": [
+     {
+      "feature": "image_animation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "advantage_plus_creative",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "product_extensions",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "ads_with_benefits",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_filtering",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "reveal_details_over_time",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "standard_enhancements",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "show_destination_blurbs",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "site_extensions",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_uncrop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "text_optimizations",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_brightness_and_contrast",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "cv_transformation",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_templates",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "product_browsing",
+      "enroll_status": "OPT_OUT"
+     },
+     {
+      "feature": "inline_comment",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "video_auto_crop",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "image_touchups",
+      "enroll_status": "OPT_IN"
+     },
+     {
+      "feature": "enhance_cta",
+      "enroll_status": "OPT_IN"
+     }
+    ]
+   }
+  }
+ ],
+ "client_conversation_id": "Nt7kQ2wLm9Xa4Rp8Vz3B"
+}

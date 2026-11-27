@@ -171,6 +171,8 @@ Ad account 3 again unless the user asks for a fresh copy.
 
   - No floor on ny batch 7 – C4, ny batch 7 – C2, ny batch 5.1, ny batch 3.1 - LP or Natives. NO keeps its floors:
     170 kr on A1 - Hero and A6 - Hero 2.
+  - The pause rule applies only to the Swedish campaigns (user, 2026-11-27). In NO and DK every ad set is built
+    active, as in Ad account 3. ny batch 3 - LP and BF - Statics stay active: Meta was still spending on them.
   - Build these PAUSED. They had no purchase (last or first click) in the 14 days to 2026-11-26, and Meta was barely
     spending on them:
 
@@ -181,12 +183,9 @@ Ad account 3 again unless the user asks for a fresh copy.
     | CBO - Maskinrent | ny batch 6 – C2 | 120252693381810505 |
     | CBO - Maskinrent | ny batch 6 – C5 | 120252693984770505 |
     | CBO - Maskinrent | ny batch 2 - MOF - Bilder | 120252119610310505 |
-    | CBO - Norrtvätt NO | A2 | 120252801667350505 |
-    | CBO - Norrtvätt NO | A3 | 120252801930870505 |
-    | CBO - Norrtvätt NO | A4 | 120252802180980505 |
     | BOF - Maskinrent | Adset 1 | 120252105207820505 |
 
-    Pausing Adset 1 leaves the BOF campaign with nothing live. DK stays fully active, since it had run only one day.
+    Pausing Adset 1 leaves the BOF campaign with nothing live.
     Ad sets already paused in Ad account 3 (K1-K4 and ny batch 2 - LP) stay paused.
   - Before building, the agency account must be visible in the Meta connector, and pixel 1262459122680812, the
     three pages and their Instagram accounts must be shared to it.

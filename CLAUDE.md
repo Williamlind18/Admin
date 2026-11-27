@@ -183,9 +183,8 @@ Ad account 3 again unless the user asks for a fresh copy.
     | CBO - Maskinrent | ny batch 6 – C2 | 120252693381810505 |
     | CBO - Maskinrent | ny batch 6 – C5 | 120252693984770505 |
     | CBO - Maskinrent | ny batch 2 - MOF - Bilder | 120252119610310505 |
-    | BOF - Maskinrent | Adset 1 | 120252105207820505 |
 
-    Pausing Adset 1 leaves the BOF campaign with nothing live.
+    BOF - Maskinrent stays active (user, 2026-11-27). Its COST_CAP of 150 kr means it only spends when it can buy at that cost.
     Ad sets already paused in Ad account 3 (K1-K4 and ny batch 2 - LP) stay paused.
   - Before building, the agency account must be visible in the Meta connector, and pixel 1262459122680812, the
     three pages and their Instagram accounts must be shared to it.

@@ -157,6 +157,36 @@ Ad account 3 again unless the user asks for a fresh copy.
   - A direct copy of all 41 ad sets and 227 ads.
   - CBO - Maskinrent at 5 000 kr/day. The others keep their budgets: NO 1 440, Black Week 1 000, DK 1 000, BOF
     1 000.
-  - Floors stay as they are.
+  - Maskinrent floors (`daily_min_spend_target`), moved onto the winners. That is 1 690 kr/day, about a third of the
+    budget:
+
+    | Ad set | Id | Floor |
+    |---|---|---|
+    | ny batch 4 | 120252419387910505 | 500 kr |
+    | ny batch 6 – C3 | 120252693422170505 | 350 kr |
+    | ny batch 5 | 120252546602200505 | 250 kr |
+    | ny batch 6 – C4 | 120252693852160505 | 250 kr |
+    | ny batch 8 (new test) | 120252977493020505 | 170 kr |
+    | ny batch 8.1 (new test) | 120252977589060505 | 170 kr |
+
+  - No floor on ny batch 7 – C4, ny batch 7 – C2, ny batch 5.1, ny batch 3.1 - LP or Natives. NO keeps its floors:
+    170 kr on A1 - Hero and A6 - Hero 2.
+  - Build these PAUSED. They had no purchase (last or first click) in the 14 days to 2026-11-26, and Meta was barely
+    spending on them:
+
+    | Campaign | Ad set | Id |
+    |---|---|---|
+    | CBO - Maskinrent | ny batch 7 – C3 | 120252837077280505 |
+    | CBO - Maskinrent | ny batch 6 – C1 | 120252690943900505 |
+    | CBO - Maskinrent | ny batch 6 – C2 | 120252693381810505 |
+    | CBO - Maskinrent | ny batch 6 – C5 | 120252693984770505 |
+    | CBO - Maskinrent | ny batch 2 - MOF - Bilder | 120252119610310505 |
+    | CBO - Norrtvätt NO | A2 | 120252801667350505 |
+    | CBO - Norrtvätt NO | A3 | 120252801930870505 |
+    | CBO - Norrtvätt NO | A4 | 120252802180980505 |
+    | BOF - Maskinrent | Adset 1 | 120252105207820505 |
+
+    Pausing Adset 1 leaves the BOF campaign with nothing live. DK stays fully active, since it had run only one day.
+    Ad sets already paused in Ad account 3 (K1-K4 and ny batch 2 - LP) stay paused.
   - Before building, the agency account must be visible in the Meta connector, and pixel 1262459122680812, the
     three pages and their Instagram accounts must be shared to it.
